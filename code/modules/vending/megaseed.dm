@@ -7,7 +7,6 @@
 	panel_type = "panel2"
 	light_mask = "seeds-light-mask"
 	products = list(/obj/item/seeds/aloe = 3,
-					/obj/item/seeds/ambrosia = 3,
 					/obj/item/seeds/apple = 3,
 					/obj/item/seeds/banana = 3,
 					/obj/item/seeds/berry = 3,
@@ -39,7 +38,6 @@
 					/obj/item/seeds/potato = 3,
 					/obj/item/seeds/poppy = 3,
 					/obj/item/seeds/pumpkin = 3,
-					/obj/item/seeds/replicapod = 3,
 					/obj/item/seeds/wheat/rice = 3,
 					/obj/item/seeds/soya = 3,
 					/obj/item/seeds/sugarcane = 3,
@@ -51,15 +49,8 @@
 					/obj/item/seeds/watermelon = 3,
 					/obj/item/seeds/wheat = 3,
 					/obj/item/seeds/whitebeet = 3)
-	contraband = list(/obj/item/seeds/amanita = 2,
-					  /obj/item/seeds/liberty = 2,
-					  /obj/item/seeds/nettle = 2,
-					  /obj/item/seeds/plump = 2,
-					  /obj/item/seeds/reishi = 2,
-					  /obj/item/seeds/cannabis = 3,
-					  /obj/item/seeds/starthistle = 2,
-					  /obj/item/seeds/fungus = 3,
-					  /obj/item/seeds/random = 3)
+	contraband = list(/obj/item/seeds/reishi = 2,
+					  /obj/item/seeds/cannabis = 3)
 	premium = list(/obj/item/reagent_containers/spray/waterflower = 1)
 	armor = list(MELEE = 100, BULLET = 100, LASER = 100, ENERGY = 100, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 50)
 	resistance_flags = FIRE_PROOF
@@ -78,17 +69,22 @@
 	name = "\improper Seed Servitor"
 	product_slogans = "THIS'S WHERE TH' SEEDS LIVE! GIT YOU SOME!;Hands down the best seed selection on the station for intrepid gardeners!"
 	products = list(/obj/item/seeds/apple = 2,
-					/obj/item/seeds/banana = 2,
 					/obj/item/seeds/cocoapod = 2,
+					/obj/item/seeds/coffee = 2,
+					/obj/item/seeds/corn = 2,
+					/obj/item/seeds/cucumber = 2,
 					/obj/item/seeds/grape = 2,
 					/obj/item/seeds/grass = 2,
+					/obj/item/seeds/lemon = 2,
+					/obj/item/seeds/lime = 2,
 					/obj/item/seeds/orange = 2,
 					/obj/item/seeds/poppy = 2,
+					/obj/item/seeds/potato = 2,
 					/obj/item/seeds/watermelon = 2,
 					/obj/item/seeds/wheat = 2)
 	contraband = list(/obj/item/seeds/cannabis = 1)
 	premium = list(/obj/item/seeds/sugarcane = 2,
 					/obj/item/seeds/tower = 2)
 	refill_canister = /obj/item/vending_refill/hydroseeds
-	default_price = 15
+	default_price = 5
 	extra_price = 40

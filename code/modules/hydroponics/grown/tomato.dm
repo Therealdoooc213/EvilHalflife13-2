@@ -11,7 +11,7 @@
 	icon_grow = "tomato-grow"
 	icon_dead = "tomato-dead"
 	genes = list(/datum/plant_gene/trait/squash, /datum/plant_gene/trait/repeated_harvest)
-	mutatelist = list(/obj/item/seeds/tomato/blue, /obj/item/seeds/tomato/blood, /obj/item/seeds/tomato/killer)
+	mutatelist = list(/obj/item/seeds/tomato/blue, /obj/item/seeds/tomato/blood)
 	reagents_add = list(/datum/reagent/consumable/nutriment = 0.1)
 
 /obj/item/reagent_containers/food/snacks/grown/tomato
@@ -60,7 +60,7 @@
 	product = /obj/item/reagent_containers/food/snacks/grown/tomato/blue
 	yield = 2
 	icon_grow = "bluetomato-grow"
-	mutatelist = list(/obj/item/seeds/tomato/blue/bluespace)
+	mutatelist = list()
 	genes = list(/datum/plant_gene/trait/slip, /datum/plant_gene/trait/repeated_harvest)
 	reagents_add = list(/datum/reagent/lube = 0.2, /datum/reagent/consumable/nutriment = 0.1)
 	rarity = 20

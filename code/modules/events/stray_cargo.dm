@@ -3,7 +3,7 @@
 	name = "Stray Cargo Pod"
 	typepath = /datum/round_event/stray_cargo
 	weight = 20
-	max occurrences = 0
+	max occurrences = 2
 	earliest_start = 10 MINUTES
 
 ///Spawns a cargo pod containing a random cargo supply pack on a random area of the station
@@ -13,7 +13,7 @@
 	var/static/list/stray_spawnable_supply_packs = list() ///List of default spawnable supply packs, filtered from the cargo list
 
 /datum/round_event/stray_cargo/announce(fake)
-	priority_announce("Stray cargo pod detected on long-range scanners. Expected location of impact: [impact_area.name].", "Collision Alert")
+	priority_announce("Stray cargo dropship pod detected on City 13 Airwatch Scanners. Expected location of impact: [impact_area.name].", "Airwatch Alert")
 
 /**
 * Tries to find a valid area, throws an error if none are found
