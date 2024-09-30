@@ -7,11 +7,13 @@
  */
 
 import fs from 'fs';
-import { get } from 'http';
+import https from 'https';
 import { env } from 'process';
 import Juke from './juke/index.js';
 import { DreamDaemon, DreamMaker, NamedVersionFile } from './lib/byond.js';
 import { yarn } from './lib/yarn.js';
+
+const TGS_MODE = process.env.CBT_BUILD_MODE === 'TGS';
 
 Juke.chdir('../..', import.meta.url);
 Juke.setup({ file: import.meta.url }).then((code) => {
@@ -21,10 +23,30 @@ Juke.setup({ file: import.meta.url }).then((code) => {
     Juke.logger.error('Please inspect the error and close the window.');
     return;
   }
-  process.exit(code);
+
+  if (TGS_MODE) {
+    // workaround for ESBuild process lingering
+    // Once https://github.com/privatenumber/esbuild-loader/pull/354 is merged and updated to, this can be removed
+    setTimeout(() => process.exit(code), 10000);
+  }
+  else {
+    process.exit(code);
+  }
 });
 
 const DME_NAME = 'yogstation';
+
+// Stores the contents of dependencies.sh as a key value pair
+// Best way I could figure to get ahold of this stuff
+const dependencies = fs.readFileSync('dependencies.sh', 'utf8')
+  .split("\n")
+  .map((statement) => statement.replace("export", "").trim())
+  .filter((value) => !(value == "" || value.startsWith("#")))
+  .map((statement) => statement.split("="))
+  .reduce((acc, kv_pair) => {
+    acc[kv_pair[0]] = kv_pair[1];
+    return acc
+  }, {})
 
 export const DefineParameter = new Juke.Parameter({
   type: 'string[]',
@@ -38,7 +60,7 @@ export const PortParameter = new Juke.Parameter({
 
 export const DmVersionParameter = new Juke.Parameter({
   type: 'string',
-})
+});
 
 export const CiParameter = new Juke.Parameter({ type: 'boolean' });
 
@@ -46,6 +68,44 @@ export const WarningParameter = new Juke.Parameter({
   type: 'string[]',
   alias: 'W',
 });
+
+export const NoWarningParameter = new Juke.Parameter({
+  type: 'string[]',
+  alias: 'I',
+});
+
+async function download_file(url, file) {
+  return new Promise((resolve, reject) => {
+    let file_stream = fs.createWriteStream(file);
+    https.get(url, function(response) {
+      if (response.statusCode === 302) {
+        file_stream.close();
+        download_file(response.headers.location, file)
+          .then((value) => resolve());
+        return;
+      }
+      if (response.statusCode !== 200) {
+        Juke.logger.error(`Failed to download ${url}: Status ${response.statusCode}`);
+        file_stream.close();
+        reject()
+        return
+      }
+      response.pipe(file_stream);
+
+      // after download completed close filestream
+      file_stream.on("finish", () => {
+        file_stream.close();
+        resolve()
+      });
+
+    }).on("error", (err) => {
+      file_stream.close();
+      Juke.rm(download_into);
+      Juke.logger.error(`Failed to download ${url}: ${err.message}`);
+      reject()
+    });
+  });
+}
 
 export const DmMapsIncludeTarget = new Juke.Target({
   executes: async () => {
@@ -65,12 +125,13 @@ export const DmMapsIncludeTarget = new Juke.Target({
 });
 
 export const DmTarget = new Juke.Target({
-  parameters: [DefineParameter, DmVersionParameter],
+  parameters: [DefineParameter, DmVersionParameter, WarningParameter, NoWarningParameter],
   dependsOn: ({ get }) => [
     get(DefineParameter).includes('ALL_MAPS') && DmMapsIncludeTarget,
   ],
   inputs: [
     '_maps/map_files/generic/**',
+    'maps/**/*.dm',
     'code/**',
     'html/**',
     'icons/**',
@@ -92,21 +153,24 @@ export const DmTarget = new Juke.Target({
     await DreamMaker(`${DME_NAME}.dme`, {
       defines: ['CBT', ...get(DefineParameter)],
       warningsAsErrors: get(WarningParameter).includes('error'),
+      ignoreWarningCodes: get(NoWarningParameter),
       namedDmVersion: get(DmVersionParameter),
     });
   },
 });
 
 export const DmTestTarget = new Juke.Target({
-  parameters: [DefineParameter, DmVersionParameter],
+  parameters: [DefineParameter, DmVersionParameter, WarningParameter, NoWarningParameter],
   dependsOn: ({ get }) => [
     get(DefineParameter).includes('ALL_MAPS') && DmMapsIncludeTarget,
+    IconCutterTarget,
   ],
   executes: async ({ get }) => {
     fs.copyFileSync(`${DME_NAME}.dme`, `${DME_NAME}.test.dme`);
     await DreamMaker(`${DME_NAME}.test.dme`, {
       defines: ['CBT', 'CIBUILDING', ...get(DefineParameter)],
       warningsAsErrors: get(WarningParameter).includes('error'),
+      ignoreWarningCodes: get(NoWarningParameter),
       namedDmVersion: get(DmVersionParameter),
     });
     Juke.rm('data/logs/ci', { recursive: true });
@@ -132,9 +196,10 @@ export const DmTestTarget = new Juke.Target({
 });
 
 export const AutowikiTarget = new Juke.Target({
-  parameters: [DefineParameter, DmVersionParameter],
+  parameters: [DefineParameter, DmVersionParameter, WarningParameter, NoWarningParameter],
   dependsOn: ({ get }) => [
     get(DefineParameter).includes('ALL_MAPS') && DmMapsIncludeTarget,
+    IconCutterTarget,
   ],
   outputs: [
     'data/autowiki_edits.txt',
@@ -144,6 +209,7 @@ export const AutowikiTarget = new Juke.Target({
     await DreamMaker(`${DME_NAME}.test.dme`, {
       defines: ['CBT', 'AUTOWIKI', ...get(DefineParameter)],
       warningsAsErrors: get(WarningParameter).includes('error'),
+      ignoreWarningCodes: get(NoWarningParameter),
       namedDmVersion: get(DmVersionParameter),
     });
     Juke.rm('data/autowiki_edits.txt');
@@ -206,7 +272,7 @@ export const TguiTarget = new Juke.Target({
     'tgui/.yarn/install-target',
     'tgui/webpack.config.js',
     'tgui/**/package.json',
-    'tgui/packages/**/*.+(js|cjs|ts|tsx|scss)',
+    'tgui/packages/**/*.+(js|cjs|ts|tsx|jsx|scss)',
   ],
   outputs: [
     'tgui/public/tgui.bundle.css',
@@ -312,8 +378,6 @@ export const CleanTarget = new Juke.Target({
   dependsOn: [TguiCleanTarget],
   executes: async () => {
     Juke.rm('*.{dmb,rsc}');
-    Juke.rm('*.mdme*');
-    Juke.rm('*.m.*');
     Juke.rm('_maps/templates.dm');
   },
 });
@@ -350,6 +414,5 @@ export const TgsTarget = new Juke.Target({
   },
 });
 
-const TGS_MODE = process.env.CBT_BUILD_MODE === 'TGS';
 
 export default TGS_MODE ? TgsTarget : BuildTarget;
