@@ -3,10 +3,6 @@
 #Project dependencies file
 #Final authority on what's required to fully build the project
 
-# byond version
-export BYOND_MAJOR=515
-export BYOND_MINOR=1633
-
 #rust_g git tag
 export RUST_G_VERSION=1.2.0-yogs2
 
