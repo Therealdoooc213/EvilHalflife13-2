@@ -7,3 +7,4 @@
 	rack_sound = "sound/weapons/shotgunpump.ogg"
 	load_sound = "sound/weapons/halflife/shotgunreload.ogg"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com
+	recoil = 1.5

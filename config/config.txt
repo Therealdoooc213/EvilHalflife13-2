@@ -170,8 +170,8 @@ VOTE_PERIOD 600
 ## disable abandon mob
 #NORESPAWN
 
-## Respawn delay (deciseconds), which doesn't allow to return to lobby. 10 minutes by default.
-RESPAWN_DELAY 6000
+## Respawn delay (deciseconds), which doesn't allow to return to lobby. 20 minutes by default.
+RESPAWN_DELAY 12000
 
 ## disables calling del(src) on newmobs if they logout before spawnin in
 # DONT_DEL_NEWMOB

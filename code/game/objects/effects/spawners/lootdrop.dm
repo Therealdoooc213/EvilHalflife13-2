@@ -757,12 +757,16 @@
 				/obj/item/ammo_casing/reusable/arrow/rebar,
 				/obj/item/flashlight/seclite,
 				/obj/item/kitchen/knife/makeshift,
-				/obj/item/lighter/greyscale,
-				/obj/item/stack/tape,
+				/obj/item/lighter/greyscale = 2,
+				/obj/item/stack/tape = 2,
 				/obj/item/camera,
-				/obj/item/stack/cable_coil/yellow,
+				/obj/item/stack/cable_coil/yellow = 2,
 				/obj/item/stack/sheet/cloth,
 				/obj/item/stack/sheet/metal/five,
+				/obj/item/stack/sheet/metal = 2,
+				/obj/item/stack/sheet/glass = 2,
+				/obj/item/stack/sheet/mineral/wood = 2,
+				/obj/item/weaponcrafting/receiver = 3,
 				/obj/item/reagent_containers/syringe,
 				/obj/item/reagent_containers/medspray/sterilizine,
 				/obj/item/reagent_containers/pill/patch/medkit,
@@ -848,16 +852,19 @@
 				/obj/item/ammo_box/magazine/m45
 				)
 
-//guns, armor
+//guns, armor, and some lesser items occasionally
 /obj/effect/spawner/lootdrop/halflife/loot/rare
 	name = "rare loot"
 
 	loot = list(
-				/obj/item/gun/ballistic/automatic/pistol/usp = 2,
-				/obj/item/gun/ballistic/automatic/pistol/usp/no_mag = 2,
-				/obj/item/gun/ballistic/automatic/mp7 = 3,
+				/obj/item/gun/ballistic/automatic/pistol/usp,
+				/obj/item/gun/ballistic/automatic/pistol/usp/no_mag,
+				/obj/item/weaponcrafting/frame/usp = 2,
+				/obj/item/gun/ballistic/automatic/mp7,
+				/obj/item/weaponcrafting/frame/mp7 = 2,
 				/obj/item/clothing/suit/armor/civilprotection = 3,
 				/obj/item/radio/off/halflife,
+				/obj/item/crowbar/large,
 				/obj/item/clothing/under/citizen/rebel,
 				/obj/item/gun/ballistic/shotgun/spas12,
 				/obj/item/gun/ballistic/revolver/coltpython,

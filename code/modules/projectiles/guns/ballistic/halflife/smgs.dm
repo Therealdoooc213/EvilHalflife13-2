@@ -10,3 +10,6 @@
 	show_bolt_icon = FALSE
 	burst_size = 3
 	fire_delay = 1
+
+/obj/item/gun/ballistic/automatic/mp7/no_mag
+	spawnwithmagazine = FALSE

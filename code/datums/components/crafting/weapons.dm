@@ -56,3 +56,23 @@
 	reqs = list(/obj/item/stack/rods = 3)
 	time = 12 SECONDS
 	category = CAT_WEAPON_RANGED
+
+/datum/crafting_recipe/usp
+	name = "USP Match"
+	result = /obj/item/gun/ballistic/automatic/pistol/usp/no_mag
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/weaponcrafting/frame/usp = 1,
+				/obj/item/weaponcrafting/receiver = 1,
+				/obj/item/stack/tape = 1)
+	time = 10 SECONDS
+	category = CAT_WEAPON_RANGED
+
+/datum/crafting_recipe/mp7
+	name = "MP7"
+	result = /obj/item/gun/ballistic/automatic/mp7/no_mag
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/weaponcrafting/frame/mp7 = 1,
+				/obj/item/weaponcrafting/receiver = 1,
+				/obj/item/stack/tape = 1)
+	time = 10 SECONDS
+	category = CAT_WEAPON_RANGED
