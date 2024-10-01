@@ -6,6 +6,7 @@
 	item_state = "arg"
 	fire_sound = "sound/weapons/halflife/ar2fire.ogg"
 	mag_type = /obj/item/ammo_box/magazine/ar2
+	force = 10
 	spread = 3
 	fire_delay = 2
 	burst_size = 2
@@ -28,6 +29,7 @@
 	eject_sound = "sound/weapons/rifleunload.ogg"
 	eject_empty_sound = "sound/weapons/rifleunload.ogg"
 	mag_type = /obj/item/ammo_box/magazine/m4a1
+	force = 10
 	fire_delay = 2
 	burst_size = 2
 	spread = 4 

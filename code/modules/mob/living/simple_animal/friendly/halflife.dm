@@ -52,7 +52,7 @@
 	maxHealth = 50
 	unsuitable_atmos_damage = 0
 	wander = 0
-	speed = -0.25
+	speed = -0.33
 	healable = 0
 	gender = NEUTER
 	mob_biotypes = MOB_ROBOTIC

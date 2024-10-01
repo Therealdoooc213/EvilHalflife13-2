@@ -80,10 +80,10 @@
 				offet_matrix[2] = 1
 				dirlook = NORTH
 			if(EAST)
-				offet_matrix[1] = -5
+				offet_matrix[1] = -2
 				dirlook = WEST
 			if(WEST)
-				offet_matrix[1] = 5
+				offet_matrix[1] = 2
 				dirlook = EAST
 		if(dirlook)
 			T = get_step(T, dirlook)

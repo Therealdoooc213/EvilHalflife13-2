@@ -55,11 +55,11 @@
 	var/mood_message = span_nicegreen("This area is pretty nice!\n")
 
 	/// The color of the light tubes' light in this area
-	var/lighting_colour_tube = "#FFF6ED"
+	var/lighting_colour_tube = "#c0ae9c"
 	/// The color of the light bulb's light in this area
-	var/lighting_colour_bulb = "#FFE6CC"
+	var/lighting_colour_bulb = "#c0ae9c"
 
-	var/lighting_colour_night = "#FFDBB5"
+	var/lighting_colour_night = "#bea083"
 
 	var/power_equip = TRUE
 	var/power_light = TRUE
