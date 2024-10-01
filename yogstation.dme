@@ -1314,6 +1314,7 @@
 #include "code\game\objects\items\mail.dm"
 #include "code\game\objects\items\mantis.dm"
 #include "code\game\objects\items\manuals.dm"
+#include "code\game\objects\items\materials.dm"
 #include "code\game\objects\items\miscellaneous.dm"
 #include "code\game\objects\items\mop.dm"
 #include "code\game\objects\items\nitrium_crystals.dm"

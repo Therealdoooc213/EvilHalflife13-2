@@ -293,10 +293,10 @@
 	pass_flags = PASSTABLE | PASSMOB | PASSCOMPUTER
 	combat_mode = TRUE
 	mob_biotypes = MOB_ROBOTIC
-	health = 25
-	maxHealth = 25
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	health = 35
+	maxHealth = 35
+	melee_damage_lower = 18
+	melee_damage_upper = 18
 	attack_vis_effect = ATTACK_EFFECT_SLASH
 	wound_bonus = -10
 	bare_wound_bonus = 20

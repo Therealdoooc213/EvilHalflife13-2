@@ -213,7 +213,7 @@
 /datum/supply_pack/security/armory/manhacks
 	name = "Viscerator Crate"
 	desc = "Contains three activatable viscerators. Requires Armory access to open."
-	cost = 350
+	cost = 450
 	contains = list(/obj/item/grenade/spawnergrenade/manhacks,
 					/obj/item/grenade/spawnergrenade/manhacks,
 					/obj/item/grenade/spawnergrenade/manhacks)

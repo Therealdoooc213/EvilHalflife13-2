@@ -374,4 +374,13 @@
 	)
 	category = CAT_MISC
 
-/obj/item/reagent_containers/food/snacks/grown/ash_flora/mushroom_cap
+/datum/crafting_recipe/viscerator
+	name = "Viscerator"
+	result = /obj/item/grenade/spawnergrenade/manhacks
+	time = 5 SECONDS
+	reqs = list(
+		/obj/item/machinepiece/viscerator = 1,
+		/obj/item/circuitmaterial = 1,
+		/obj/item/stack/cable_coil = 5
+	)
+	category = CAT_MISC

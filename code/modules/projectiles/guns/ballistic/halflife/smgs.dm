@@ -8,5 +8,5 @@
 	bolt_type = BOLT_TYPE_LOCKING
 	mag_display = TRUE
 	show_bolt_icon = FALSE
-	burst_size = 4
+	burst_size = 3
 	fire_delay = 1

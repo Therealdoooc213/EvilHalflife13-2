@@ -126,6 +126,7 @@
 	junk_loot = list(
 		/obj/item/trash/plate,
 		/obj/item/stack/rods,
+		/obj/item/reagent_containers/glass/beaker/waterbottle/empty,
 		/obj/item/shard
 	)
 	common_loot = list(

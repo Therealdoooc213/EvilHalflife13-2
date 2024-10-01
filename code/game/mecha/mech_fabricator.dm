@@ -56,6 +56,7 @@
 								"Cyborg",
 								"Cybernetics",
 								"Implants",
+								"Machinery",
 								"Misc"
 								)
 

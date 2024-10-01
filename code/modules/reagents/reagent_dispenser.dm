@@ -7,8 +7,8 @@
 	anchored = FALSE
 	pressure_resistance = 2*ONE_ATMOSPHERE
 	max_integrity = 300
-	var/tank_volume = 1000 //In units, how much the dispenser can hold
-	var/reagent_id = /datum/reagent/water //The ID of the reagent that the dispenser uses
+	var/tank_volume = 300 //In units, how much the dispenser can hold
+	var/reagent_id = /datum/reagent/water/unpurified //The ID of the reagent that the dispenser uses
 
 /obj/structure/reagent_dispensers/take_damage(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = TRUE, attack_dir, armour_penetration = 0)
 	. = ..()
@@ -42,7 +42,7 @@
 
 /obj/structure/reagent_dispensers/watertank
 	name = "water tank"
-	desc = "A water tank."
+	desc = "A water tank containing some unpurified water. Likely not entirely safe for human consumption, but will work fine for plants."
 	icon_state = "water"
 
 /obj/structure/reagent_dispensers/watertank/high

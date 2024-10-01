@@ -777,6 +777,7 @@
 
 	loot = list(
 				/obj/item/reagent_containers/food/drinks/soda_cans/breenwater = 3,
+				/obj/item/reagent_containers/glass/beaker/waterbottle/empty,
 				/obj/item/storage/box/halflife/ration = 2,
 				/obj/item/reagent_containers/food/snacks/rationpack/lowgrade,
 				/obj/item/storage/fancy/cigarettes/cigars,
@@ -828,6 +829,8 @@
 				/obj/item/clothing/glasses/eyepatch,
 				/obj/item/clothing/suit/jacket,
 				/obj/item/clothing/suit/jacket/miljacket,
+				/obj/item/clothing/gloves/fishing,
+				/obj/item/clothing/head/fishing,
 				/obj/item/clothing/mask/bandana/black
 				)
 

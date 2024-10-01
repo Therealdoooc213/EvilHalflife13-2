@@ -4,7 +4,6 @@
 #define SCANGATE_DISEASE 		"Disease"
 #define SCANGATE_GUNS 			"Guns"
 #define SCANGATE_WANTED			"Wanted"
-#define SCANGATE_SPECIES		"Species"
 #define SCANGATE_NUTRITION		"Nutrition"
 
 #define SCANGATE_HUMAN			"human"
@@ -204,5 +203,4 @@
 #undef SCANGATE_DISEASE
 #undef SCANGATE_GUNS
 #undef SCANGATE_WANTED
-#undef SCANGATE_SPECIES
 #undef SCANGATE_NUTRITION

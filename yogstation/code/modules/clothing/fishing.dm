@@ -1,6 +1,6 @@
 /obj/item/clothing/head/fishing
 	name = "fishing cap"
-	desc = "She said she's down to fish!"
+	desc = "A old bucket hat, often worn by fishers. Wearing it might help you reel in a better catch."
 	icon_state = "fishing_cap"
 	item_state = "fishing_cap"
 	worn_icon = 'yogstation/icons/mob/clothing/head/head.dmi'
@@ -24,7 +24,7 @@
 
 /obj/item/clothing/gloves/fishing
 	name = "fishing gloves"
-	desc = "Packin my tackle box down by the brook."
+	desc = "An old pair of gloves seemingly designed for fishing. May help you reel in a better catch."
 	icon_state = "fishing_gloves"
 	item_state = "fishing_gloves"
 	worn_icon = 'yogstation/icons/mob/clothing/hands/hands.dmi'

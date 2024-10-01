@@ -6,9 +6,18 @@
 	name = "Airlock Electronics"
 	id = "airlock_board"
 	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(/datum/material/iron = 50, /datum/material/glass = 50)
+	materials = list(/datum/material/iron = 1000, /datum/material/glass = 1000)
 	build_path = /obj/item/electronics/airlock
 	category = list("initial", "Electronics")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/circuitchip
+	name = "Circuit Chip"
+	id = "circuitchip"
+	build_type = AUTOLATHE
+	materials = list(/datum/material/iron = 1000, /datum/material/glass = 1000)
+	build_path = /obj/item/circuitmaterial
+	category = list("initial","Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
 /datum/design/metal
@@ -295,3 +304,4 @@
 	build_path = /obj/item/clothing/neck/stethoscope
 	category = list("initial", "Medical", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
+
