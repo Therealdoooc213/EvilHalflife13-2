@@ -144,6 +144,12 @@
 	layer = CURSE_LAYER
 	plane = FULLSCREEN_PLANE
 
+/atom/movable/screen/fullscreen/grain
+	icon_state = "grain"
+	alpha = 5
+	layer = GRAIN_LAYER
+	plane = FULLSCREEN_PLANE
+
 /atom/movable/screen/fullscreen/impaired
 	icon_state = "impairedoverlay"
 

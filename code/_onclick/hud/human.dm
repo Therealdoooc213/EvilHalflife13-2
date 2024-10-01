@@ -81,6 +81,7 @@
 /datum/hud/human/New(mob/living/carbon/human/owner)
 	..()
 	owner.overlay_fullscreen("see_through_darkness", /atom/movable/screen/fullscreen/see_through_darkness)
+	owner.overlay_fullscreen("grain", /atom/movable/screen/fullscreen/grain)
 
 	var/widescreen_layout = FALSE
 	if(owner.client?.prefs?.read_preference(/datum/preference/toggle/widescreen))

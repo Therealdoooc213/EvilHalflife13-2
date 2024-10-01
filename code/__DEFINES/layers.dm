@@ -262,6 +262,7 @@
 #define CURSE_LAYER 6
 #define ECHO_LAYER 7
 #define PARRY_LAYER 8
+#define GRAIN_LAYER 9
 
 #define FOV_EFFECT_LAYER 100
 

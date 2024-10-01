@@ -3,6 +3,8 @@
 	..()
 	var/atom/movable/screen/using
 
+	owner.overlay_fullscreen("grain", /atom/movable/screen/fullscreen/grain)
+
 	using = new /atom/movable/screen/drop(src)
 	using.icon = ui_style
 	using.screen_loc = ui_drone_drop
