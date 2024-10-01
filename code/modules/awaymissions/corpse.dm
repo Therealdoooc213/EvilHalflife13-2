@@ -252,3 +252,24 @@
 /obj/effect/mob_spawn/human/corpse/assistant
 	name = "Assistant"
 	outfit = /datum/outfit/job/citizen
+
+/obj/effect/mob_spawn/cityscanner
+	name = "dormant city scanner"
+	desc = "A dormant city scanner bot. You'll have to wait for an available Overwatch AI subsystem to take control of it."
+	icon = 'icons/obj/halflife/machines.dmi'
+	icon_state = "cityscanner"
+	density = FALSE
+	anchored = FALSE
+
+	mob_type = /mob/living/simple_animal/hostile/hl2bot/cityscanner
+	mob_name = "city scanner"
+	death = FALSE
+	roundstart = FALSE
+	short_desc = "You are a City Scanner, constructed by the combine"
+	flavour_text = "Scan the city for possible anti-citizens and report anything you see over the radio."
+
+/obj/effect/mob_spawn/cityscanner/Initialize(mapload)
+	. = ..()
+	var/area/A = get_area(src)
+	if(A)
+		notify_ghosts("A city scanner has been created in [A.name].", 'sound/effects/shovel_dig.ogg', source = src, action = NOTIFY_ATTACKORBIT, flashwindow = FALSE)

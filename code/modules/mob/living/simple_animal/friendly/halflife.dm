@@ -47,9 +47,11 @@
 	icon = 'icons/mob/halflife.dmi'
 	icon_state = "cityscanner"
 	icon_living = "cityscanner"
+	friendly = "scans"
+	loot = list(/obj/item/circuitmaterial)
 	del_on_death = 1
-	health = 50
-	maxHealth = 50
+	health = 60
+	maxHealth = 60
 	unsuitable_atmos_damage = 0
 	wander = 0
 	speed = -0.33
@@ -81,3 +83,4 @@
 
 /mob/living/simple_animal/hostile/hl2bot/cityscanner/OpenFire()
 	playsound(src, 'sound/creatures/cityscanner/scanner_photo1.ogg', 40, FALSE)
+	ranged_cooldown = world.time + ranged_cooldown_time

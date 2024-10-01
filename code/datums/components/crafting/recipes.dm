@@ -384,3 +384,14 @@
 		/obj/item/stack/cable_coil = 5
 	)
 	category = CAT_MISC
+
+/datum/crafting_recipe/cityscanner
+	name = "City Scanner"
+	result = /obj/effect/mob_spawn/cityscanner
+	time = 5 SECONDS
+	reqs = list(
+		/obj/item/machinepiece/scanner = 1,
+		/obj/item/circuitmaterial = 2,
+		/obj/item/stack/cable_coil = 5
+	)
+	category = CAT_MISC

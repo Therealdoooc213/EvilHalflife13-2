@@ -27,7 +27,7 @@
 	var/no_crab_state = "zombie_dead_nocrab"
 	var/crabless_possible = TRUE
 	var/headcrabspawn = /mob/living/simple_animal/hostile/halflife/headcrab
-	var/idle_sound_chance = 50
+	var/idle_sound_chance = 40
 	var/sound_vary = TRUE
 	var/fungalheal = FALSE
 	var/aggro_sound = 'sound/creatures/halflife/zombieaggro.ogg'
@@ -36,14 +36,14 @@
 /mob/living/simple_animal/hostile/halflife/zombie/Aggro()
 	. = ..()
 	set_combat_mode(TRUE)
-	if(prob(idle_sound_chance))
+	if(prob(50))
 		playsound(src, aggro_sound, 50, sound_vary)
 
 /mob/living/simple_animal/hostile/halflife/zombie/Life(seconds_per_tick = SSMOBS_DT, times_fired)
 	..()
 	if(stat)
 		return
-	if(prob(10))
+	if(prob(idle_sound_chance))
 		var/chosen_sound = pick(idle_sounds)
 		playsound(src, chosen_sound, 50, sound_vary)
 	//If there is fungal infestation on the ground, and the zombie can heal off of it, do so

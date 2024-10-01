@@ -51,5 +51,14 @@
 	build_type = MECHFAB
 	build_path = /obj/item/machinepiece/viscerator
 	materials = list(/datum/material/iron=4000, /datum/material/glass=4000)
-	construction_time = 200
+	construction_time = 150
+	category = list("Machinery")
+
+/datum/design/scanner_frame
+	name = "Scanner Frame"
+	id = "scanner_frame"
+	build_type = MECHFAB
+	build_path = /obj/item/machinepiece/scanner
+	materials = list(/datum/material/iron=12000, /datum/material/glass=4000)
+	construction_time = 250
 	category = list("Machinery")
