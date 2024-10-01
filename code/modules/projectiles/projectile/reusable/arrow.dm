@@ -135,7 +135,7 @@
 	icon_state = "rebar"
 	damage = 50
 	embed_chance = 0.5
-	armour_penetration = 30
+	armour_penetration = 35
 
 /obj/projectile/bullet/reusable/arrow/magic
 	name = "magic arrow"

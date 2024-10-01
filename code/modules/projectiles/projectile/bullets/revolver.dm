@@ -83,9 +83,9 @@
 
 /obj/projectile/bullet/a357
 	name = ".357 magnum bullet"
-	damage = 35
+	damage = 40
 	armour_penetration = 25
-	wound_bonus = -35
+	wound_bonus = -40
 	wound_falloff_tile = -2.5
 	can_ricoshot = TRUE
 

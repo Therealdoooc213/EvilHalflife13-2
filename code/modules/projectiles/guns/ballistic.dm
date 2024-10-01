@@ -120,7 +120,7 @@
 		/obj/item/attachment/grip/vertical,
 	)
 	max_attachments = 4
-	recoil = 0.3
+	recoil = 0.5
 
 /obj/item/gun/ballistic/Initialize(mapload)
 	. = ..()

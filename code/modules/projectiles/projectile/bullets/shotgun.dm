@@ -97,7 +97,7 @@
 
 /obj/projectile/bullet/pellet/shotgun_buckshot
 	name = "buckshot pellet"
-	damage = 10 //Total of 60
+	damage = 12 //Total of 72
 	wound_bonus = 10
 	bare_wound_bonus = 12
 	wound_falloff_tile = -2 // low damage + additional dropoff will already curb wounding potential anything past point blank
