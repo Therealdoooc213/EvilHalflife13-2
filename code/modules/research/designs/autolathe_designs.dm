@@ -78,10 +78,18 @@
 	name = "Fire Extinguisher"
 	id = "extinguisher"
 	build_type = AUTOLATHE | PROTOLATHE
-	materials = list(/datum/material/iron = 90)
+	materials = list(/datum/material/iron = 150)
 	build_path = /obj/item/extinguisher
 	category = list("initial","Tools","Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
+/datum/design/flashlight
+	name = "Flashlight"
+	id = "flashlight"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 500, /datum/material/glass = 250)
+	build_path = /obj/item/flashlight
+	category = list("initial","Tools","Equipment")
 
 /datum/design/camera
 	name = "Camera"

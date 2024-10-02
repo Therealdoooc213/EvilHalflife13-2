@@ -14,6 +14,8 @@
 	mag_display = TRUE
 	pin = /obj/item/firing_pin/implant/mindshield
 
+/obj/item/gun/ballistic/automatic/ar2/nopin
+	pin = null
 
 //old rifles that are exclusively loot. Similar to the AR2, but slightly less accurate, and no armor piercing by default.
 /obj/item/gun/ballistic/automatic/m4a1

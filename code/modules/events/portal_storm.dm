@@ -59,7 +59,7 @@
 	set waitfor = 0
 	sound_to_playing_players('sound/magic/lightning_chargeup.ogg', volume = 50)
 	sleep(8 SECONDS)
-	priority_announce("Massive bluespace anomaly detected en route to [station_name()]. Brace for impact.")
+	priority_announce("Warning. Portal storm event detected near this district. All units, prepare to Isolate, Clamp, Innoculate.")
 	sleep(2 SECONDS)
 	sound_to_playing_players('sound/magic/lightningbolt.ogg', volume = 50)
 
@@ -241,3 +241,17 @@
 		anomaly_types -= anomaly
 
 	time_to_end()
+
+/datum/round_event_control/xen
+	name = "Portal Storm: Xenian Creatures"
+	typepath = /datum/round_event/portal_storm/xen
+	weight = 2
+	max_occurrences = 1
+	min_players = 15
+	earliest_start = 30 MINUTES
+
+/datum/round_event/portal_storm/xen
+	boss_types = list(/mob/living/simple_animal/hostile/halflife/zombie/zombine = 2)
+	hostile_types = list(/mob/living/simple_animal/hostile/halflife/zombie = 6,\
+						/mob/living/simple_animal/hostile/halflife/zombie/fast = 2,\
+						/mob/living/simple_animal/hostile/halflife/headcrab = 4)

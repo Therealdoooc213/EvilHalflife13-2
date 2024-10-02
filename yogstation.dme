@@ -2509,6 +2509,7 @@
 #include "code\modules\events\supermatter_surge.dm"
 #include "code\modules\events\swarmer.dm"
 #include "code\modules\events\tzimisce.dm"
+#include "code\modules\events\vortigaunt.dm"
 #include "code\modules\events\wormholes.dm"
 #include "code\modules\events\zombie_infection.dm"
 #include "code\modules\events\holiday\halloween.dm"

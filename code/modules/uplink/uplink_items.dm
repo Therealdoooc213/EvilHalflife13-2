@@ -253,19 +253,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/gun/ballistic/automatic/pistol/usp
 	cost = 8
 
-/datum/uplink_item/dangerous/smg
-	name = "MP7 SMG"
-	desc = "A SMG which packs a bunch with it's large bursts."
-	item = /obj/item/gun/ballistic/automatic/mp7
-	cost = 15
-	surplus = 50
-
-/datum/uplink_item/dangerous/m4a1
-	name = "M4A1 Rifle"
-	desc = "A old but still working service rifle with firepower, accuracy, and armor penetration to boot. Ammo may be difficult to find."
-	item = /obj/item/gun/ballistic/automatic/m4a1
-	cost = 20
-
 /datum/uplink_item/armor
 	category = UPLINK_CATEGORY_HARDSUITS
 
@@ -313,12 +300,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	desc = "An additional 18-round 9mm magazine, compatible with the USP Match pistol."
 	item = /obj/item/ammo_box/magazine/usp9mm
 	cost = 4
-
-/datum/uplink_item/ammo/smg
-	name = "4.6x30mm SMG Magazine"
-	desc = "A large capacity 45 round magazine for use with the MP7 SMG."
-	item = /obj/item/ammo_box/magazine/mp7
-	cost = 5
 
 /datum/uplink_item/ammo/rebar
 	name = "Rebar Bolt"

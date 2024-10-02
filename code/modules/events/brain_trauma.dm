@@ -1,7 +1,8 @@
 /datum/round_event_control/brain_trauma
 	name = "Spontaneous Brain Trauma"
 	typepath = /datum/round_event/brain_trauma
-	weight = 25
+	max_occurrences = 1
+	weight = 10
 
 /datum/round_event/brain_trauma
 	fakeable = FALSE
@@ -28,8 +29,8 @@
 
 	var/trauma_type = pickweight(list(
 		BRAIN_TRAUMA_MILD = 60,
-		BRAIN_TRAUMA_SEVERE = 30,
-		BRAIN_TRAUMA_SPECIAL = 10
+		BRAIN_TRAUMA_SEVERE = 0,
+		BRAIN_TRAUMA_SPECIAL = 0
 	))
 
 	H.gain_trauma_type(trauma_type, resistance)

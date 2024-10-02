@@ -42,4 +42,5 @@
 	icon = 'icons/obj/guns/halflife/projectile.dmi'
 	icon_state = "colt_python"
 	item_state = "colt_python"
-	spread = 3 //less spread
+	spread = 5 //less spread
+	recoil = 2 //lots of recoil though

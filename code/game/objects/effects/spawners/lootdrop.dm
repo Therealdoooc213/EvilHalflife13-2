@@ -756,6 +756,7 @@
 				/obj/item/radio/off/halflife = 2,
 				/obj/item/ammo_casing/reusable/arrow/rebar,
 				/obj/item/flashlight/seclite,
+				/obj/item/flashlight = 2,
 				/obj/item/kitchen/knife/makeshift,
 				/obj/item/lighter/greyscale = 2,
 				/obj/item/stack/tape = 2,
@@ -781,9 +782,9 @@
 
 	loot = list(
 				/obj/item/reagent_containers/food/drinks/soda_cans/breenwater = 3,
-				/obj/item/reagent_containers/glass/beaker/waterbottle/empty,
-				/obj/item/storage/box/halflife/ration = 2,
-				/obj/item/reagent_containers/food/snacks/rationpack/lowgrade,
+				/obj/item/reagent_containers/glass/beaker/waterbottle/empty = 2,
+				/obj/item/storage/box/halflife/ration,
+				/obj/item/reagent_containers/food/snacks/rationpack/lowgrade = 2,
 				/obj/item/storage/fancy/cigarettes/cigars,
 				/obj/item/clothing/mask/cigarette/cigar,
 				/obj/item/storage/fancy/cigarettes,
