@@ -76,3 +76,23 @@
 				/obj/item/stack/tape = 1)
 	time = 10 SECONDS
 	category = CAT_WEAPON_RANGED
+
+/datum/crafting_recipe/m4a1
+	name = "M4A1"
+	result = /obj/item/gun/ballistic/automatic/m4a1/no_mag
+	reqs = list(/obj/item/stack/sheet/metal = 7,
+				/obj/item/weaponcrafting/frame/m4a1 = 1,
+				/obj/item/weaponcrafting/receiver = 1,
+				/obj/item/stack/tape = 2)
+	time = 10 SECONDS
+	category = CAT_WEAPON_RANGED
+
+/datum/crafting_recipe/spas12
+	name = "SPAS12"
+	result = /obj/item/gun/ballistic/shotgun/spas12
+	reqs = list(/obj/item/stack/sheet/metal = 7,
+				/obj/item/weaponcrafting/frame/spas12 = 1,
+				/obj/item/weaponcrafting/receiver = 1,
+				/obj/item/stack/tape = 1)
+	time = 10 SECONDS
+	category = CAT_WEAPON_RANGED

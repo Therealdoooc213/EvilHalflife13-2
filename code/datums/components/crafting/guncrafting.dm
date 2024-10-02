@@ -32,3 +32,13 @@
 	name = "broken mp7"
 	desc = "A frame for a MP7 smg. With some handiwork and materials, you may be able to craft this into a working one."
 	icon_state = "mp7"
+
+/obj/item/weaponcrafting/frame/m4a1
+	name = "broken m4a1"
+	desc = "A frame for a M4A1 rifle. With some handiwork and materials, you may be able to craft this into a working one."
+	icon_state = "m4a1"
+
+/obj/item/weaponcrafting/frame/spas12
+	name = "broken spas12"
+	desc = "A frame for a SPAS12 shotgun. With some handiwork and materials, you may be able to craft this into a working one."
+	icon_state = "spas12"

@@ -45,6 +45,8 @@
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
 
+/obj/item/gun/ballistic/automatic/m4a1/no_mag
+	spawnwithmagazine = FALSE
 
 //the crossbow
 

@@ -76,7 +76,7 @@
 //custom key blank
 /obj/item/customblank //i'd prefer not to make a seperate item for this honestly
 	name = "blank custom key"
-	desc = "A key without its teeth carved in. A screwdriver may be able to set the teeth."
+	desc = "A key without its teeth carved in. A screwdriver may be able to set the teeth by right clicking it, and then left clicking to finish it."
 	icon_state = "brass"
 	icon = 'icons/obj/halflife/keys.dmi'
 	w_class = WEIGHT_CLASS_TINY
@@ -109,7 +109,7 @@
 //custom lock unfinished
 /obj/item/customlock
 	name = "unfinished lock"
-	desc = "A lock without its pins set. You may be able to set the pins with a screwdriver."
+	desc = "A lock without its pins set. You may be able to set the pins with a screwdriver by leftclicking the lock, and finishing it by rightclicking."
 	icon_state = "brass"
 	icon = 'icons/obj/halflife/locks.dmi'
 	w_class = WEIGHT_CLASS_SMALL
