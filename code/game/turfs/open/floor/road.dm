@@ -43,6 +43,9 @@
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
+/turf/open/floor/plating/ground/dirt/alt
+	icon_state = "greenerdirt"
+
 /turf/open/floor/plating/ground/rockunder
 	gender = PLURAL
 	name = "dirt"

@@ -30,6 +30,13 @@
 	name = "\improper Alley Ways"
 	ambient_buzz = 'sound/ambience/tone_alley.ogg'
 
+/area/halflife/outdoors/forest
+	name = "\improper Forested Outlands"
+	ambient_buzz = 'sound/ambience/forest/wind_light02_loop.ogg'
+	ambient_buzz_vol = 10
+	ambience_index = AMBIENCE_HLFOREST
+	max_ambience_cooldown = 30 SECONDS
+	min_ambience_cooldown = 10 SECONDS
 
 /area/halflife/indoors
 	name = "\improper Indoors"

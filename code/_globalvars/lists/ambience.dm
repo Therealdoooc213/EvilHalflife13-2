@@ -192,6 +192,17 @@ GLOBAL_LIST_INIT(hlsewers_ambience,list(
 	'sound/ambience/brokensymmetry.ogg',
 	'sound/ambience/ambiruin5.ogg',))
 	
+
+GLOBAL_LIST_INIT(hlforest_ambience,list(
+	'sound/ambience/forest/chicka1.ogg', 
+	'sound/ambience/forest/crik1.ogg', 
+	'sound/ambience/forest/dist_birds1.ogg', 
+	'sound/ambience/forest/dist_birds2.ogg',
+	'sound/ambience/forest/dist_birds3.ogg',
+	'sound/ambience/forest/peckr1.ogg',
+	'sound/ambience/forest/squeek1.ogg',
+	'sound/ambience/forest/buzz1.ogg',))
+
 GLOBAL_LIST_INIT(halflife_ambient_music,list(
 	'sound/ambience/trainstation.ogg', 
 	'sound/ambience/vaguevoices.ogg', 
@@ -216,6 +227,7 @@ GLOBAL_LIST_INIT(ambience_assoc,list(
 	AMBIENCE_HLOUTSIDE = GLOB.hloutside_ambience,
 	AMBIENCE_HLINSIDE = GLOB.hlinside_ambience,
 	AMBIENCE_HLSEWERS = GLOB.hlsewers_ambience,
+	AMBIENCE_HLFOREST = GLOB.hlforest_ambience,
 	AMBIENCE_NONE = list()))
 
 
