@@ -35,6 +35,7 @@
 	ambient_buzz = 'sound/ambience/forest/wind_light02_loop.ogg'
 	ambient_buzz_vol = 10
 	ambience_index = AMBIENCE_HLFOREST
+	sound_environment = SOUND_ENVIRONMENT_FOREST
 	max_ambience_cooldown = 30 SECONDS
 	min_ambience_cooldown = 10 SECONDS
 

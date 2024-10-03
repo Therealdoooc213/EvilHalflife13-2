@@ -245,13 +245,13 @@
 /datum/round_event_control/xen
 	name = "Portal Storm: Xenian Creatures"
 	typepath = /datum/round_event/portal_storm/xen
-	weight = 2
+	weight = 5
 	max_occurrences = 1
 	min_players = 15
 	earliest_start = 30 MINUTES
 
 /datum/round_event/portal_storm/xen
 	boss_types = list(/mob/living/simple_animal/hostile/halflife/zombie/zombine = 2)
-	hostile_types = list(/mob/living/simple_animal/hostile/halflife/zombie = 6,\
+	hostile_types = list(/mob/living/simple_animal/hostile/halflife/zombie = 8,\
 						/mob/living/simple_animal/hostile/halflife/zombie/fast = 2,\
 						/mob/living/simple_animal/hostile/halflife/headcrab = 4)

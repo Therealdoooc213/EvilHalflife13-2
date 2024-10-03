@@ -111,7 +111,7 @@
 	flags_1 = CONDUCT_1
 	item_flags = SURGICAL_TOOL
 	tool_behaviour = TOOL_DRILL
-	force = 10
+	force = 12
 	w_class = WEIGHT_CLASS_NORMAL
 	attack_verb = list("drilled")
 	sharpness = SHARP_POINTY
@@ -151,7 +151,7 @@
 	item_flags = SURGICAL_TOOL
 	tool_behaviour = TOOL_SCALPEL
 
-	force = 4
+	force = 12
 	w_class = WEIGHT_CLASS_TINY
 	throwforce = 5
 	throw_speed = 3
@@ -162,7 +162,7 @@
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	sharpness = SHARP_EDGED
 	wound_bonus = 2
-	bare_wound_bonus = 4
+	bare_wound_bonus = 8
 
 /obj/item/scalpel/Initialize(mapload)
 	. = ..()
@@ -173,7 +173,7 @@
 	desc = "Ultra-sharp blade attached directly to your bone for extra-accuracy."
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "scalpel"
-	force = 4
+	force = 12
 	w_class = WEIGHT_CLASS_TINY
 	throwforce = 5
 	throw_speed = 3
@@ -208,7 +208,7 @@
 	flags_1 = CONDUCT_1
 	item_flags = SURGICAL_TOOL
 	tool_behaviour = TOOL_SAW
-	force = 8
+	force = 12
 	w_class = WEIGHT_CLASS_NORMAL
 	throwforce = 9
 	throw_speed = 2
@@ -217,7 +217,7 @@
 	attack_verb = list("attacked", "slashed", "sawed", "cut")
 	sharpness = SHARP_EDGED
 	wound_bonus = 5
-	bare_wound_bonus = 3
+	bare_wound_bonus = 5
 
 /obj/item/circular_saw/Initialize(mapload)
 	. = ..()
@@ -229,7 +229,7 @@
 	desc = "A small but very fast spinning saw. Edges dulled to prevent accidental cutting inside of the surgeon."
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "saw"
-	force = 8
+	force = 12
 	w_class = WEIGHT_CLASS_SMALL
 	throwforce = 9
 	throw_speed = 2

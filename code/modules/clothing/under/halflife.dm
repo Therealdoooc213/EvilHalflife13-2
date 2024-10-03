@@ -21,7 +21,7 @@
 												'sound/movement/civilprotection/gear3.ogg',\
 												'sound/movement/civilprotection/gear4.ogg',\
 												'sound/movement/civilprotection/gear5.ogg',\
-												'sound/movement/civilprotection/gear6.ogg'), 75)
+												'sound/movement/civilprotection/gear6.ogg'), 30, 100, 0)
 
 /obj/item/clothing/under/combine/civilprotection/divisionallead
 	name = "divisional lead jumpsuit"
@@ -46,7 +46,7 @@
 												'sound/movement/overwatch/gear3.ogg',\
 												'sound/movement/overwatch/gear4.ogg',\
 												'sound/movement/overwatch/gear5.ogg',\
-												'sound/movement/overwatch/gear6.ogg'), 75)
+												'sound/movement/overwatch/gear6.ogg'), 30, 100, 0)
 
 
 /obj/item/clothing/under/combine/overwatch/red

@@ -46,6 +46,15 @@
 	has_alternate_states = TRUE 
 	has_base_states = TRUE 
 
+/turf/open/floor/plating/indoor/woodc/fancy
+	icon_state = "wood_fancy"
+
+/turf/open/floor/plating/indoor/woodc/wide
+	icon_state = "wood_wide"
+
+/turf/open/floor/plating/indoor/woodc/mosaic
+	icon_state = "wood_mosaic"
+
 /turf/open/floor/plating/indoor/grimy
 	icon_state = "grimy"
 
@@ -74,6 +83,12 @@
 	has_alternate_states = TRUE
 	alternate_states = 1
 	footstep = FOOTSTEP_CONCRETE
+
+/turf/open/floor/plating/indoor/concrete/small
+	icon_state = "concrete_small"
+	has_alternate_states = TRUE 
+	has_base_states = TRUE
+	alternate_states = 2
 
 /turf/open/floor/plating/indoor/concrete/bricks
 	icon_state = "concrete_bricks"
