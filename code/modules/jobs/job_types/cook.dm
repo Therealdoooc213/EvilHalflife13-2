@@ -32,3 +32,4 @@
 	suit = /obj/item/clothing/suit/apron/chef
 	head = /obj/item/clothing/head/chefhat
 	uniform = /obj/item/clothing/under/citizen
+	r_pocket = /obj/item/hl2key/kitchen

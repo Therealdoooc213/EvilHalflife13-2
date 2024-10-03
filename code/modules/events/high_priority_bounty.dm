@@ -1,12 +1,12 @@
 /datum/round_event_control/high_priority_bounty
 	name = "High Priority Bounty"
 	typepath = /datum/round_event/high_priority_bounty
-	max occurrences = 0
+	max occurrences = 1
 	weight = 20
 	earliest_start = 10
 
 /datum/round_event/high_priority_bounty/announce(fake)
-	priority_announce("Central Command has issued a high-priority cargo bounty. Details have been sent to all bounty consoles.", "Nanotrasen Bounty Program")
+	priority_announce("Overwatch has issued a high-priority cargo bounty. Details have been sent to all bounty consoles.", "Combine Bounty Program")
 
 /datum/round_event/high_priority_bounty/start()
 	var/datum/bounty/B

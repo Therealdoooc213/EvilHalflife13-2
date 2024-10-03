@@ -251,7 +251,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	name = "USP Match"
 	desc = "A common 9mm pistol, easy to conceal and use."
 	item = /obj/item/gun/ballistic/automatic/pistol/usp
-	cost = 8
+	cost = 9
 
 /datum/uplink_item/armor
 	category = UPLINK_CATEGORY_HARDSUITS
@@ -340,6 +340,19 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	desc = "This device will disrupt any nearby outgoing radio communication when activated. Blocks suit sensors, but does not affect binary chat."
 	item = /obj/item/jammer
 	cost = 5
+
+/datum/uplink_item/stealthy_tools/agent_card
+	name = "Agent Identification Card"
+	desc = "A modified ID fitted with custom electronics and tools. \
+			You are able to modify the card's name and displayed job, and steal access from other cards with it."
+	item = /obj/item/card/id/syndicate
+	cost = 5
+
+/datum/uplink_item/device_tools/thermal
+	name = "Thermal Imaging Glasses"
+	desc = "Glasses which let you see people through walls by reading their heat signatures."
+	item = /obj/item/clothing/glasses/thermal
+	cost = 4
 
 /datum/uplink_item/stealthy_tools/lockpick
 	name = "Lockpick"

@@ -1,9 +1,12 @@
 #define PRINTER_TIMEOUT 10
 
 /obj/machinery/computer/bounty
-	name = "\improper Nanotrasen bounty console"
-	desc = "Used to check and claim bounties offered by Nanotrasen."
-	icon_screen = "bounty"
+	name = "\improper Combine bounty console"
+	desc = "Used to check and claim bounties offered by Overwatch."
+	icon_state = "med_console"
+	icon_keyboard = null
+	icon_screen = null
+	req_one_access = list(ACCESS_SECURITY, ACCESS_DETECTIVE)
 	circuit = /obj/item/circuitboard/computer/bounty
 	light_color = "#E2853D"//orange
 	var/printer_ready = 0 //cooldown var
@@ -22,7 +25,7 @@
 
 /obj/item/paper/bounty_printout/Initialize(mapload)
 	. = ..()
-	info = "<h2>Nanotrasen Cargo Bounties</h2></br>"
+	info = "<h2>Overwatch Cargo Bounties</h2></br>"
 	update_appearance(UPDATE_ICON)
 	for(var/datum/bounty/B in GLOB.bounties_list)
 		if(B.claimed)

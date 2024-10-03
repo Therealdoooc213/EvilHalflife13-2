@@ -141,7 +141,7 @@
 /datum/supply_pack/security/armory/mp7
 	name = "MP7 Crate"
 	desc = "Contains two MP7 submachine guns. Requires Armory access to open."
-	cost = 900
+	cost = 950
 	contains = list(/obj/item/gun/ballistic/automatic/mp7,
 					/obj/item/gun/ballistic/automatic/mp7)
 	crate_name = "mp7 gun crate"
@@ -159,7 +159,7 @@
 /datum/supply_pack/security/armory/spas12
 	name = "SPAS-12 Crate"
 	desc = "Contains two SPAS-12 shotguns. Requires Armory access to open."
-	cost = 900
+	cost = 950
 	contains = list(/obj/item/gun/ballistic/shotgun/spas12,
 					/obj/item/gun/ballistic/shotgun/spas12)
 	crate_name = "spas-12 gun crate"
@@ -177,7 +177,7 @@
 /datum/supply_pack/security/armory/coltpython
 	name = "Colt Python Crate"
 	desc = "Contains two Colt Python revolvers. Requires Armory access to open."
-	cost = 900
+	cost = 1000
 	contains = list(/obj/item/gun/ballistic/revolver/coltpython,
 					/obj/item/gun/ballistic/revolver/coltpython)
 	crate_name = "colt python gun crate"
@@ -195,7 +195,7 @@
 /datum/supply_pack/security/armory/usp
 	name = "USP Match Crate"
 	desc = "Contains two USP Match pistols. Requires Armory access to open."
-	cost = 600
+	cost = 650
 	contains = list(/obj/item/gun/ballistic/automatic/pistol/usp,
 					/obj/item/gun/ballistic/automatic/pistol/usp)
 	crate_name = "usp match gun crate"

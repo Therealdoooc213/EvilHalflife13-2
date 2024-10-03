@@ -29,4 +29,5 @@
 	jobtype = /datum/job/bartender
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	uniform = /obj/item/clothing/under/citizen
+	r_pocket = /obj/item/hl2key/bar
 	
