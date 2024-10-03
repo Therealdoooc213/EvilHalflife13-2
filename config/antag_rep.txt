@@ -50,7 +50,7 @@ ANTAG_REP Janitor 5
 ANTAG_REP Lawyer 5
 ANTAG_REP Medical_Doctor 7 # God bless our med staff
 ANTAG_REP Mime 4
-ANTAG_REP Quartermaster 6
+ANTAG_REP Union Foreman 6
 ANTAG_REP Roboticist 5
 ANTAG_REP Union_Scientist 5
 ANTAG_REP Shaft_Miner 6

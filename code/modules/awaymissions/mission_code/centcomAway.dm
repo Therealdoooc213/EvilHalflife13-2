@@ -51,7 +51,7 @@
 /obj/item/paper/fluff/awaymissions/centcom/gateway_memo
 	name = "Memo to XCC-P5831 QM"
 	info = "<b>From: XCC-P5831 Management Office</b><br>\
-	<b>To: Rolf Ingram, XCC-P5831 Quartermaster</b><br>\
+	<b>To: Rolf Ingram, XCC-P5831 Union Foreman</b><br>\
 	Hey, Rolf, once you pack that gateway into the ferry hangar, <i>make absolutely sure</i> \
 	to deactivate it! As you may know, SS13 has recently got its network up and running, \
 	which means that until we get this gate shipped off to the next colonization staging \

@@ -19348,7 +19348,7 @@
 /area/science/robotics/mechbay)
 "edT" = (
 /obj/machinery/door/airlock/mining/glass{
-	name = "Quartermaster"
+	name = "Union Foreman"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
@@ -29000,8 +29000,8 @@
 /obj/structure/table,
 /obj/machinery/photocopier/faxmachine{
 	density = 0;
-	department = "Quartermaster";
-	name = "Quartermaster's Fax Machine"
+	department = "Union Foreman";
+	name = "Union Foreman's Fax Machine"
 	},
 /obj/effect/turf_decal/trimline/brown/filled/line/lower,
 /turf/open/floor/plasteel,
@@ -42522,7 +42522,7 @@
 /obj/machinery/power/apc{
 	areastring = "/area/quartermaster/qm";
 	dir = 1;
-	name = "Quartermaster APC";
+	name = "Union Foreman APC";
 	pixel_y = 23
 	},
 /obj/structure/cable{
@@ -46960,7 +46960,7 @@
 /area/engine/atmos/foyer)
 "nVq" = (
 /obj/machinery/camera{
-	c_tag = "Quartermaster's Office";
+	c_tag = "Union Foreman's Office";
 	dir = 4
 	},
 /obj/item/radio/intercom{
@@ -57004,7 +57004,7 @@
 /area/engine/atmos/distro)
 "rDa" = (
 /obj/machinery/door/airlock/mining/glass{
-	name = "Quartermaster"
+	name = "Union Foreman"
 	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
@@ -68217,7 +68217,7 @@
 "vGJ" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
-	department = "Quartermaster's Desk";
+	department = "Union Foreman's Desk";
 	departmentType = 2;
 	pixel_x = -30
 	},

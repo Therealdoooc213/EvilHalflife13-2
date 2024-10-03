@@ -315,7 +315,7 @@
 	"Psychiatrist" = list("medical","brown"),
 	"Union Scientist" = list("science","purple"),
 	"Roboticist" = list("science","black"),
-	"Quartermaster" = list("cargo","silver"),
+	"Union Foreman" = list("cargo","silver"),
 	"Cargo Technician" = list("cargo","brown"),
 	"Shaft Miner" = list("cargo","black"),
 	"Mining Medic" = list("cargo","blue"),

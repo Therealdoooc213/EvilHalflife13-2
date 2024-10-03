@@ -306,7 +306,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 						dat += "<li><a href='byond://?src=[REF(src)];choice=45'>[PDAIMG(cuffs)]Security Records</A></li>"
 						dat += "</ul>"
 					if(cartridge.access & CART_QUARTERMASTER)
-						dat += "<h4>Quartermaster Functions:</h4>"
+						dat += "<h4>Union Foreman Functions:</h4>"
 						dat += "<ul>"
 						dat += "<li><a href='byond://?src=[REF(src)];choice=47'>[PDAIMG(crate)]Supply Records</A></li>"
 						dat += "<li><a href='byond://?src=[REF(src)];choice=48'>[PDAIMG(crate)]Ore Silo Logs</a></li>"

@@ -131,7 +131,7 @@
 	item_state = "banner_cargo"
 	lefthand_file = 'icons/mob/inhands/equipment/banners_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/banners_righthand.dmi'
-	job_loyalties = list("Cargo Technician", "Shaft Miner", "Quartermaster")
+	job_loyalties = list("Cargo Technician", "Shaft Miner", "Union Foreman")
 	warcry = "Hail Cargonia!"
 
 /obj/item/banner/cargo/mundane

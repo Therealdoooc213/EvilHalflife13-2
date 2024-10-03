@@ -66,6 +66,11 @@
 	desc = "This key will open doors in the restaurant."
 	lockid = "kitchen"
 
+/obj/item/hl2key/factory
+	name = "factory key"
+	desc = "This key will open doors in the factory."
+	lockid = "factory"
+
 //custom key
 /obj/item/hl2key/custom
 	name = "custom key"

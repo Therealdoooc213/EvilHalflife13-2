@@ -1558,7 +1558,7 @@ obj/item/toy/turn_tracker
 	toysay = "Go ahead, make my day."
 
 /obj/item/toy/figure/qm
-	name = "Quartermaster action figure"
+	name = "Union Foreman action figure"
 	icon_state = "qm"
 	toysay = "Please sign this form in triplicate and we will see about geting you a welding mask within 3 business days."
 

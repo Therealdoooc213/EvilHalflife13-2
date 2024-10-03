@@ -115,7 +115,7 @@
 #define ACCESS_MINING "mining"
 /// Access to the "off-station" Mining Station, which contains gear dedicated for miners to do their job best, as well as seek shelter from the inhospitable elements.
 #define ACCESS_MINING_STATION "mining_station"
-/// Access for the Quartermaster's personal quarters in mapping, as well as some other QM-related things.
+/// Access for the Union Foreman's personal quarters in mapping, as well as some other QM-related things.
 #define ACCESS_QM "qm"
 
 

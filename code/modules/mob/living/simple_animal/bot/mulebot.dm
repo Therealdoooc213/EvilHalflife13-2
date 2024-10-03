@@ -1,6 +1,6 @@
 
 
-// Mulebot - carries crates around for Quartermaster
+// Mulebot - carries crates around for Union Foreman
 // Navigates via floor navbeacons
 // Remote Controlled from QM's PDA
 

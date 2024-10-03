@@ -44,18 +44,6 @@
 
 	smells_like = "bureaucracy"
 
-// Special handling to avoid lighting up the entirety of supply whenever there's a HoP.
-/datum/job/head_of_personnel/areas_to_light_up(minimal_access = TRUE)
-	return minimal_lightup_areas | GLOB.command_lightup_areas
-
-//only pet worth reviving
-/datum/job/hop/get_mail_goodies(mob/recipient)
-	. = ..()
-	// Strange Reagent if the pet is dead.
-	for(var/mob/living/simple_animal/pet/dog/corgi/Ian/staff_pet in GLOB.dead_mob_list)
-		. += list(/datum/reagent/medicine/strange_reagent = 20)
-		break
-
 /datum/job/hop/after_spawn(mob/living/carbon/human/H, mob/M)
 	. = ..()
 	H.faction += "combine"
@@ -68,7 +56,7 @@
 
 	ears = /obj/item/radio/headset/heads/hop
 	uniform = /obj/item/clothing/under/citizen
-	head = /obj/item/clothing/head/hardhat
+	head = /obj/item/clothing/head/hardhat/white
 	gloves = /obj/item/clothing/gloves/color/yellow
 	belt = /obj/item/melee/classic_baton/telescopic
 

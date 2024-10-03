@@ -308,13 +308,13 @@
 
 /datum/skillcape/quartermaster
 	name = "cape of the quartermaster"
-	job = "Quartermaster"
+	job = "Union Foreman"
 	path = /obj/item/clothing/neck/skillcape/quartermaster
 	id = "qm"
 
 /datum/skillcape/trimmed/quartermaster
 	name = "cape of the grand quartermaster"
-	job = "Quartermaster"
+	job = "Union Foreman"
 	path = /obj/item/clothing/neck/skillcape/trimmed/quartermaster
 	id = "qm_trimmed"
 

@@ -178,7 +178,7 @@
 					else if (!usingBeacon)//find a suitable supplypod landing zone in cargobay
 						landingzone = GLOB.areas_by_type[/area/quartermaster/storage]
 						if (!landingzone)
-							WARNING("[src] couldnt find a Quartermaster/Storage (aka cargobay) area on the station, and as such it has set the supplypod landingzone to the area it resides in.")
+							WARNING("[src] couldnt find a Union Foreman/Storage (aka cargobay) area on the station, and as such it has set the supplypod landingzone to the area it resides in.")
 							landingzone = get_area(src)
 						for(var/turf/open/floor/T in landingzone.get_turfs_from_all_zlevels())//uses default landing zone
 							if(T.is_blocked_turf())

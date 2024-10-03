@@ -1016,7 +1016,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 //Service
 
 /area/quartermaster
-	name = "Quartermasters"
+	name = "Union Foremans"
 	icon_state = "quart"
 	minimap_color = "#936f3c"
 	airlock_wires = /datum/wires/airlock/service
@@ -1045,7 +1045,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	sound_environment = SOUND_AREA_LARGE_ENCLOSED
 
 /area/quartermaster/qm
-	name = "Quartermaster's Office"
+	name = "Union Foreman's Office"
 	icon_state = "quart"
 
 /area/quartermaster/miningdock

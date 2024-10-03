@@ -219,7 +219,7 @@
 	circuit = /obj/item/circuitboard/computer/security/labor
 
 /obj/machinery/computer/security/qm
-	name = "\improper Quartermaster's camera console"
+	name = "\improper Union Foreman's camera console"
 	desc = "A console with access to the mining, auxiliary base and vault camera networks."
 	network = list("mine", "auxbase", "vault")
 	circuit = /obj/item/circuitboard/computer/security/qm

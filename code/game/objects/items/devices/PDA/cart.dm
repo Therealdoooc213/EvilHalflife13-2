@@ -127,7 +127,7 @@
 
 /obj/item/cartridge/quartermaster
 	name = "space parts & space vendors cartridge"
-	desc = "Perfect for the Quartermaster on the go!"
+	desc = "Perfect for the Union Foreman on the go!"
 	icon_state = "cart-q"
 	access = CART_QUARTERMASTER
 	bot_access_flags = MULE_BOT

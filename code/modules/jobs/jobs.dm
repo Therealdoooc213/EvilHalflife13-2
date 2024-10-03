@@ -81,7 +81,7 @@ GLOBAL_LIST_INIT(science_lightup_areas, 		\
 
 GLOBAL_LIST_INIT(original_supply_positions, list(
 	"Labor Lead",
-	"Quartermaster",
+	"Union Foreman",
 	"Cargo Technician",
 	"Shaft Miner"))
 

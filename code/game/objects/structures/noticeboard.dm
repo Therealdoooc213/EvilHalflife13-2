@@ -122,8 +122,8 @@
 	req_access = list(ACCESS_RD)
 
 /obj/structure/noticeboard/qm
-	name = "Quartermaster's Notice Board"
-	desc = "Important notices from the Quartermaster."
+	name = "Union Foreman's Notice Board"
+	desc = "Important notices from the Union Foreman."
 	req_access = list(ACCESS_QM)
 
 /obj/structure/noticeboard/staff

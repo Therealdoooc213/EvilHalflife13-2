@@ -68,7 +68,7 @@
 			jobs_to_revolt = list("Research Director","Union Scientist", "Roboticist")
 			nation_name = pick("Sci", "Griffa", "Explosi", "Mecha", "Xeno", "Nani", "Cyto")
 		if("Supply")
-			jobs_to_revolt = list("Quartermaster", "Cargo Technician", "Shaft Miner")
+			jobs_to_revolt = list("Union Foreman", "Cargo Technician", "Shaft Miner")
 			nation_name = pick("Cargo", "Guna", "Suppli", "Mule", "Crate", "Ore", "Mini", "Shaf")
 		if("Service") //the few, the proud, the technically aligned
 			jobs_to_revolt = list("Bartender", "Cook", "Botanist", "Clown", "Mime", "Janitor", "Chaplain")
