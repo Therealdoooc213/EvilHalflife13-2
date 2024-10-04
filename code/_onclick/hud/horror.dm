@@ -4,7 +4,7 @@
 	screen_loc = ui_lingchemdisplay
 
 /datum/hud/chemical_counter
-	ui_style = 'icons/mob/screen_midnight.dmi'
+	ui_style = 'icons/mob/screen_dark.dmi'
 	var/atom/movable/screen/horror_chemicals/chemical_counter
 
 /datum/hud/chemical_counter/New(mob/owner)

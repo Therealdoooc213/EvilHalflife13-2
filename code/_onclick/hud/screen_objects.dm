@@ -88,13 +88,13 @@
 
 /atom/movable/screen/craft
 	name = "crafting menu"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "craft"
 	screen_loc = ui_crafting
 
 /atom/movable/screen/area_creator
 	name = "create new area"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "area_edit"
 	screen_loc = ui_building
 
@@ -109,7 +109,7 @@
 
 /atom/movable/screen/language_menu
 	name = "language menu"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "talk_wheel"
 	screen_loc = ui_language_menu
 
@@ -120,7 +120,7 @@
 
 /atom/movable/screen/ghost/pai
 	name = "pAI Candidate"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "pai_setup"
 	screen_loc = ui_ghost_pai
 
@@ -130,7 +130,7 @@
 
 /atom/movable/screen/ghost/med_scan
 	name = "Toggle Medical Scan"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "med_scan"
 	screen_loc = ui_ghost_med
 
@@ -140,7 +140,7 @@
 
 /atom/movable/screen/ghost/chem_scan
 	name = "Toggle Chemical Scan"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "chem_scan"
 	screen_loc = ui_ghost_chem
 
@@ -150,7 +150,7 @@
 
 /atom/movable/screen/ghost/nanite_scan
 	name = "Toggle Nanite Scan"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "nanite_scan"
 	screen_loc = ui_ghost_nanite
 
@@ -160,7 +160,7 @@
 
 /atom/movable/screen/ghost/wound_scan
 	name = "Toggle Wound Scan"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "wound_scan"
 	screen_loc = ui_ghost_wound
 
@@ -306,7 +306,7 @@
 
 /atom/movable/screen/drop
 	name = "drop"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "act_drop"
 	plane = HUD_PLANE
 
@@ -316,7 +316,7 @@
 
 /atom/movable/screen/combattoggle
 	name = "toggle combat mode"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "combat_off"
 	screen_loc = ui_combat_toggle
 
@@ -360,7 +360,7 @@
 
 /atom/movable/screen/mov_intent
 	name = "run/walk toggle"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "running"
 
 /atom/movable/screen/mov_intent/Click()
@@ -381,7 +381,7 @@
 
 /atom/movable/screen/pull
 	name = "stop pulling"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "pull"
 
 /atom/movable/screen/pull/Click()
@@ -395,7 +395,7 @@
 
 /atom/movable/screen/resist
 	name = "resist"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "act_resist"
 	plane = HUD_PLANE
 
@@ -406,7 +406,7 @@
 
 /atom/movable/screen/rest
 	name = "rest"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "act_rest"
 	plane = HUD_PLANE
 
@@ -451,7 +451,7 @@
 
 /atom/movable/screen/throw_catch
 	name = "throw/catch"
-	icon = 'icons/mob/screen_midnight.dmi'
+	icon = 'icons/mob/screen_dark.dmi'
 	icon_state = "act_throw_off"
 
 /atom/movable/screen/throw_catch/Click()

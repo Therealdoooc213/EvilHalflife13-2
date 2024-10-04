@@ -259,7 +259,7 @@
 
 		var/obj/item/lockpick/P = I
 		
-		var/picktime = 50
+		var/picktime = 40
 		var/pickchance = 60
 		var/moveup = 10
 
