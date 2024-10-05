@@ -190,7 +190,7 @@
 
 /obj/structure/table/halflife/no_smooth/wood/end
 	name = "console end"
-	desc = "A separate optional add-on for your Vault-Tec console. More storage for books you never read!"
+	desc = "A separate optional add-on for your console. More storage for books you never read!"
 	icon_state = "table_wood_end"
 
 // Wood Large tables //
@@ -218,7 +218,7 @@
 
 /obj/structure/table/halflife/no_smooth/large/wood/stand
 	name = "wood console"
-	desc = "A smooth Vault-Tec branded console, designed specifically in mind for your brand new Radiation King! But those days are now over. Mostly just looks good in a room."
+	desc = "A smooth console, designed specifically in mind for your brand new Radiation King! But those days are now over. Mostly just looks good in a room."
 	icon_state = "stand_wood"
 
 /obj/structure/table/halflife/no_smooth/large/wood/stand/alt
