@@ -10,10 +10,10 @@
 	random_sensor = FALSE
 	can_adjust = FALSE
 
-//Brig Physician
+//Medical Officer
 /obj/item/clothing/under/yogs/rank/physician
-	name = "brig physician's jumpsuit"
-	desc = "A verstile blue and white uniform honored to hard working brig physicians who help with injured prisoners and security personel."
+	name = "medical officer's jumpsuit"
+	desc = "A verstile blue and white uniform honored to hard working medical officers who help with injured prisoners and security personel."
 	icon_state = "recovery"
 	item_state = "recovery"
 	alt_covers_chest = TRUE
@@ -23,7 +23,7 @@
 	mutantrace_variation = DIGITIGRADE_VARIATION
 
 /obj/item/clothing/under/yogs/rank/physician/white
-	name = "white brig physician's jumpsuit"
+	name = "white medical officer's jumpsuit"
 	desc = "A classic jumpsuit that connects you to your medsci brothers and sisters."
 	icon_state = "secwhite"
 	item_state = "secwhite"
@@ -32,7 +32,7 @@
 	random_sensor = FALSE
 
 /obj/item/clothing/under/yogs/rank/physician/white/skirt
-	name = "white brig physician's jumpskirt"
+	name = "white medical officer's jumpskirt"
 	desc = "A classic jumpskirt that connects you to your medsci brothers and sisters."
 	icon_state = "secwhite_skirt"
 	item_state = "secwhite_skirt"

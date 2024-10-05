@@ -166,12 +166,12 @@
 	item_state = "det-trimmed"
 
 /obj/item/clothing/neck/skillcape/physician
-	name = "cape of the brig physician"
+	name = "cape of the medical officer"
 	icon_state = "brigphys-skillcape"
 	item_state = "brigphys-skillcape"
 
 /obj/item/clothing/neck/skillcape/trimmed/physician
-	name = "cape of the grand brig physician"
+	name = "cape of the grand medical officer"
 	icon_state = "brigphys-trimmed"
 	item_state = "brigphys-trimmed"
 

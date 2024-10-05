@@ -129,13 +129,13 @@
 	id = "detective_trimmed"
 
 /datum/skillcape/physician
-    name = "cape of the brig physician"
-    job = "Brig Physician"
+    name = "cape of the medical officer"
+    job = "Medical Officer"
     path = /obj/item/clothing/neck/skillcape/physician
 
 /datum/skillcape/trimmed/physician
-    name = "cape of the grand brig physician"
-    job = "Brig Physician"
+    name = "cape of the grand medical officer"
+    job = "Medical Officer"
     path = /obj/item/clothing/neck/skillcape/trimmed/physician
 
 /datum/skillcape/network_admin

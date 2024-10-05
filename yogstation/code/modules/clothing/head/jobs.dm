@@ -16,9 +16,9 @@
 	desc = "A beret with a dark turquoise color and a reflective cross on the top. Has MM embossed into it."
 	armor = list(melee = 10, bullet = 10, laser = 0,energy = 0, bomb = 0, bio = 50, rad = 0, fire = 50, acid = 50)
 
-//Brig Physician
+//Medical Officer
 /obj/item/clothing/head/soft/emt/phys
-	name = "Brig Physician's cap"
+	name = "Medical Officer's cap"
 	desc = "It's a baseball hat with a dark brown color and a reflective cross on the top. Has BP embossed into it."
 	icon = 'yogstation/icons/obj/clothing/hats.dmi'
 	worn_icon = 'yogstation/icons/mob/clothing/head/head.dmi'
@@ -26,13 +26,13 @@
 	soft_type = "emtsec"
 
 /obj/item/clothing/head/beret/med/phys
-	name = "Brig Physician's beret"
+	name = "Medical Officer's beret"
 	desc = "A white beret with a red cross finely threaded into it. It has that sterile smell about it."
 	icon_state = "beret_phys"
 
 /obj/item/clothing/head/beret/corpsec/phys
 	name = "corporate physician beret"
-	desc = "A special black beret for the mundane life of a corporate brig physician."
+	desc = "A special black beret for the mundane life of a corporate medical officer."
 	icon = 'yogstation/icons/obj/clothing/hats.dmi'
 	worn_icon = 'yogstation/icons/mob/clothing/head/head.dmi'
 	icon_state = "beret_corporate_phys"

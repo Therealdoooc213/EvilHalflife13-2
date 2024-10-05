@@ -50,7 +50,7 @@ GLOBAL_DATUM_INIT(crewmonitor, /datum/crewmonitor, new)
 	jobs["Paramedic"] = 25 //Yogs: Added IDs for this job
 	jobs["Psychiatrist"] = 26 //Yogs: Added IDs for this job
 	jobs["Mining Medic"] = 27 //Yogs: Added IDs for this job
-	jobs["Brig Physician"] = 28 //Yogs: Added IDs for this job
+	jobs["Medical Officer"] = 28 //Yogs: Added IDs for this job
 	jobs["Research Director"] = 30
 	jobs["Union Scientist"] = 31
 	jobs["Roboticist"] = 32

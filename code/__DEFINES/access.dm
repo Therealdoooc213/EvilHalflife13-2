@@ -47,7 +47,7 @@
 #define ACCESS_ARMORY "armory"
 /// Access for the Detective, their office, and medical data console. Always mixed with ACCESS_SECURITY in the security office/delivery windoor, and the arrivals and departure sec checkpoints.
 #define ACCESS_DETECTIVE "detective"
-/// Access for the Brig Physician and their locker, also used for the Brig Infirmary doors.
+/// Access for the Medical Officer and their locker, also used for the Brig Infirmary doors.
 #define ACCESS_BRIG_PHYS "brig_phys"
 /// The "Weapons Permit" Access, or the one that lets you walk past secbots without them charging at you as you hold your weaponry.
 #define ACCESS_WEAPONS_PERMIT "weapons_permit"

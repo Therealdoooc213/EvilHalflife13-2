@@ -218,7 +218,7 @@
 
 //Clothing Bags
 /obj/item/storage/backpack/duffelbag/clothing/sec/physician
-	name = "Brig Physician's clothing duffelbag"
+	name = "Medical Officer's clothing duffelbag"
 	desc = "A large duffel bag filled with clothing."
 
 /obj/item/storage/backpack/duffelbag/clothing/sec/physician/PopulateContents()

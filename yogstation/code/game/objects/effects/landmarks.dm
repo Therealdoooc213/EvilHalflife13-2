@@ -30,8 +30,8 @@ GLOBAL_LIST_EMPTY(chosen_station_templates)
 	icon_state = "Tourist"
 
 /obj/effect/landmark/start/yogs/brigphsyician
-	name = "Brig Physician"
-	icon_state = "Brig Physician"
+	name = "Medical Officer"
+	icon_state = "Medical Officer"
 
 /obj/effect/landmark/stationroom
 	var/list/template_names = list()

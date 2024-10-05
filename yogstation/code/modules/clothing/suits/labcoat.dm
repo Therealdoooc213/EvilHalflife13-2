@@ -12,14 +12,14 @@
 	icon_state = "labcoat_mining"
 	item_state = "labcoat_mining"
 
-//Brig Physician
+//Medical Officer
 /obj/item/clothing/suit/toggle/labcoat/emt/physician
-	name = "brig physician's jacket"
+	name = "medical officer's jacket"
 	desc = "A protective jacket for medical emergencies on off-world planets. Has BP embossed into it."
 	icon_state = "labcoat_emtsec"
 
 /obj/item/clothing/suit/toggle/labcoat/physician
-	name = "brig physician's labcoat"
+	name = "medical officer's labcoat"
 	desc = "A white labcoat with red medical crosses. Has BP embossed into it."
 	icon_state = "labcoat_sec"
 	item_state = "labcoat_sec"

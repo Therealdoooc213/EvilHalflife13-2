@@ -53,6 +53,15 @@
 	SSwardrobe.provide_type(/obj/item/reagent_containers/pill/patch/medkit/vial, src)
 	update_appearance(UPDATE_ICON)
 
+
+/obj/item/storage/belt/civilprotection/medicfull/PopulateContents()
+	SSwardrobe.provide_type(/obj/item/melee/baton/loaded, src)
+	SSwardrobe.provide_type(/obj/item/barrier_taperoll/police, src)
+	SSwardrobe.provide_type(/obj/item/flashlight/seclite, src)
+	SSwardrobe.provide_type(/obj/item/reagent_containers/pill/patch/medkit/vial, src)
+	SSwardrobe.provide_type(/obj/item/reagent_containers/pill/patch/medkit/vial, src)
+	update_appearance(UPDATE_ICON)
+
 /obj/item/storage/belt/civilprotection/divisionleadfull/PopulateContents()
 	SSwardrobe.provide_type(/obj/item/ammo_box/a357, src)
 	SSwardrobe.provide_type(/obj/item/restraints/handcuffs, src)

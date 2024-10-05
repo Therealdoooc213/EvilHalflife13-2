@@ -15,7 +15,7 @@
 	icon_state = "brig_infirmary"
 
 /area/security/physician
-	name = "Brig Physician's Office"
+	name = "Medical Officer's Office"
 	icon_state = "physician"
 
 /area/maintenance

@@ -65,7 +65,7 @@
 	name = "Syndicate Infiltrator"
 	antag_datum = /datum/antagonist/traitor
 	antag_flag = ROLE_TRAITOR
-	protected_roles = list("Civil Protection Officer", "Warden", "Detective", "Divisional Lead", "District Administrator", "Labor Lead", "Chief Engineer", "Chief Medical Officer", "Research Director", "Brig Physician")
+	protected_roles = list("Civil Protection Officer", "Warden", "Detective", "Divisional Lead", "District Administrator", "Labor Lead", "Chief Engineer", "Chief Medical Officer", "Research Director", "Medical Officer")
 	restricted_roles = list("AI","Cyborg", "Synthetic")
 	required_candidates = 1
 	weight = 7

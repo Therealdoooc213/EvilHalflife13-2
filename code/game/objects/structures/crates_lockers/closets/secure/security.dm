@@ -297,7 +297,7 @@
 
 //Yogs Start: Brig Phys Closet
 /obj/structure/closet/secure_closet/physician
-	name = "\improper brig physician's cabinet"
+	name = "\improper medical officer's cabinet"
 	icon = 'yogstation/icons/obj/closet.dmi'
 	icon_state = "physician"
 

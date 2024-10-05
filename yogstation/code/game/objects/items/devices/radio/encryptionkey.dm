@@ -6,6 +6,6 @@
 
 /obj/item/encryptionkey/headset_medsec
 	name = "medical security radio encryption key"
-	desc = "An encryption key for brig physician headsets. To access the medical channel, use :m. For security, use :s."
+	desc = "An encryption key for medical officer headsets. To access the medical channel, use :m. For security, use :s."
 	icon_state = "sec_cypherkey"
 	channels = list("Security" = 1, "Medical" = 1)

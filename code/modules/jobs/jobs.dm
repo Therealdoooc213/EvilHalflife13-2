@@ -42,7 +42,7 @@ GLOBAL_LIST_INIT(original_medical_positions, list(
 	"Paramedic",
 	"Psychiatrist",
 	"Mining Medic",
-	"Brig Physician"))
+	"Medical Officer"))
 
 GLOBAL_LIST_INIT(medical_lightup_areas, 	\
 	typecacheof(list(						\
@@ -154,7 +154,7 @@ GLOBAL_LIST_INIT(alt_medical_positions, list(
 	"EMT", "Paramedic Trainee", "Rapid Response Medic", "Space Search & Rescue",
 	"Counsellor", "Therapist", "Mentalist",
 	"Mining Medical Support", "Lavaland Medical Care Unit", "Junior Mining Medic", "Planetside Health Officer", "Land Search & Rescue",
-	"Security Medic", "Security Medical Support", "Penitentiary Medical Care Unit", "Junior Brig Physician", "Detention Center Health Officer"))
+	"Security Medic", "Security Medical Support", "Penitentiary Medical Care Unit", "Junior Medical Officer", "Detention Center Health Officer"))
 
 GLOBAL_LIST_INIT(alt_science_positions, list(
 	"Chief Science Officer", "Head of Research", "Chief Technology Officer",
@@ -263,7 +263,7 @@ GLOBAL_PROTECT(exp_specialmap)
 	var/static/regex/psych_expand = new("psychiatrist")
 	var/static/regex/clerk_expand = new("clerk")
 	var/static/regex/para_expand = new("paramedic")
-	var/static/regex/phys_expand = new("brig physician")
+	var/static/regex/phys_expand = new("medical officer")
 	// yogs end
 
 	job = lowertext(job)
@@ -287,7 +287,7 @@ GLOBAL_PROTECT(exp_specialmap)
 	job = psych_expand.Replace(job, "psychiatrist")
 	job = clerk_expand.Replace(job, "clerk")
 	job = para_expand.Replace(job, "paramedic")
-	job = phys_expand.Replace(job, "brig physician")
+	job = phys_expand.Replace(job, "medical officer")
 	// yogs end
 	return job
 

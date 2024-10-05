@@ -17,7 +17,7 @@
 	. = ..()
 
 /obj/item/modular_computer/laptop/preset/paramedic/brig_physician
-	desc = "A low-end laptop often used by brig physicians."
+	desc = "A low-end laptop often used by medical officers."
 /obj/item/modular_computer/laptop/preset/paramedic/brig_physician/Initialize(mapload)
 	starting_files |= list(
 		new /datum/computer_file/program/secureye

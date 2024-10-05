@@ -17,7 +17,7 @@
 	light_color = LIGHT_COLOR_LIGHT_CYAN
 
 /obj/item/pda/physician
-	name = "\improper antique brig physician PDA"
+	name = "\improper antique medical officer PDA"
 	default_cartridge = /obj/item/cartridge/medical
 	icon_state = "pda-physician"
 	light_color = LIGHT_COLOR_RED

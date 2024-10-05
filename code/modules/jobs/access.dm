@@ -483,7 +483,7 @@
 				"Atmospheric Technician", "Chief Medical Officer", "Union Doctor", "Chemist", "Geneticist", "Virologist",
 				// yogs start - Yog jobs
 				"Research Director", "Union Scientist", "Roboticist", "Divisional Lead", "Warden", "Detective", "Civil Protection Officer",
-				"Network Admin", "Mining Medic", "Paramedic", "Psychiatrist", "Clerk", "Tourist", "Space Bartender", "Artist", "Brig Physician", "Synthetic")
+				"Network Admin", "Mining Medic", "Paramedic", "Psychiatrist", "Clerk", "Tourist", "Space Bartender", "Artist", "Medical Officer", "Synthetic")
 				// yogs end
 
 /// Gets all jobs with hud icons

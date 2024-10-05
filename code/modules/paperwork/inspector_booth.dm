@@ -333,7 +333,7 @@
 	"Warden" = list("security","black"),
 	"Civil Protection Officer" = list("security","red"),
 	"Detective" = list("security","brown"),
-	"Brig Physician" = list("security","blue"),
+	"Medical Officer" = list("security","blue"),
 	"Lawyer" = list("security","purple")
 	)
 	if (real_job in idfluff)
