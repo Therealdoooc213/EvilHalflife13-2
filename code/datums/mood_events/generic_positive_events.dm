@@ -64,8 +64,6 @@
 	description = "<span class='nicegreen'>I've been honked!</span>\n"
 	mood_change = 2
 	timeout = 4 MINUTES
-	special_screen_obj = "honked_nose"
-	special_screen_replace = FALSE
 
 /datum/mood_event/saved_life
 	description = "<span class='nicegreen'>It feels good to save a life.</span>\n"
@@ -95,8 +93,6 @@
 	description = span_nicegreen("I'm a fucking badass and everyone around me knows it. Just look at them; they're all fucking shaking at the mere thought of me around.\n")
 	mood_change = 15
 	hidden = TRUE
-	special_screen_obj = "badass_sun"
-	special_screen_replace = FALSE
 
 /datum/mood_event/creeping
 	description = "<span class='greentext'>The voices have released their hooks on my mind! I feel free again!</span>\n" //creeps get it when they are around their obsession
