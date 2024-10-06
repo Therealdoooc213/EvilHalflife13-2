@@ -4,8 +4,8 @@
 	orbit_icon = "seedling"
 	department_head = list("Labor Lead")
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the labor lead"
 
 	outfit = /datum/outfit/job/botanist

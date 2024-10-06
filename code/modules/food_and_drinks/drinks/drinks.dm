@@ -292,8 +292,8 @@
 	isGlass = FALSE
 
 /obj/item/reagent_containers/food/drinks/ale
-	name = "Magm-Ale"
-	desc = "A true dorf's drink of choice."
+	name = "Ale Bottle"
+	desc = "A bottle of old but still good Ale."
 	icon_state = "alebottle"
 	item_state = "beer"
 	list_reagents = list(/datum/reagent/consumable/ethanol/ale = 30)
