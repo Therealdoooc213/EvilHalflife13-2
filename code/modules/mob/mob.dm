@@ -748,6 +748,16 @@
 		to_chat(usr, span_boldnotice("You must be dead to use this!"))
 		return
 
+	if(RESPAWN_FLAG_FREE)
+		pass() // Normal respawn
+
+	if(RESPAWN_FLAG_DISABLED)
+		if (!check_rights_for(usr.client, R_ADMIN))
+			to_chat(usr, span_boldnotice("Respawning is not enabled!"))
+			return
+		if (tgui_alert(usr, "Respawning is currently disabled, do you want to use your permissions to circumvent it?", "Respawn", list("Yes", "No")) != "Yes")
+			return
+
 	if(!check_respawn_delay())
 		return
 

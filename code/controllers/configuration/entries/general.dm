@@ -175,6 +175,18 @@
 
 /datum/config_entry/flag/norespawn
 
+/datum/config_entry/flag/allow_respawn
+	default = RESPAWN_FLAG_NEW_CHARACTER
+
+/datum/config_entry/flag/allow_respawn/ValidateAndSet(str_val)
+	if(!VASProcCallGuard(str_val))
+		return FALSE
+	var/val_as_num = text2num(str_val)
+	if(val_as_num in list(RESPAWN_FLAG_DISABLED, RESPAWN_FLAG_FREE, RESPAWN_FLAG_NEW_CHARACTER))
+		config_entry_value = val_as_num
+		return TRUE
+	return FALSE
+
 /// Determines how long (in deciseconds) before a player is allowed to respawn.
 /datum/config_entry/number/respawn_delay
 	config_entry_value = 12000

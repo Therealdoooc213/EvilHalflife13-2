@@ -4,7 +4,7 @@
 	icon_state = "ration_dispenser"
 	panel_type = "panel2"
 	product_ads = "Stay nutritionally satisfied.;A hungry citizen is a inefficient citizen.;Consume delicious rations.;The most flavorful food around."
-	products = list(/obj/item/storage/box/halflife/ration = 10)
+	products = list(/obj/item/storage/box/halflife/ration = 15)
 	resistance_flags = FIRE_PROOF
 	refill_canister = /obj/item/vending_refill/ration
 	default_price = 40

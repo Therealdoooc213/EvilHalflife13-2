@@ -35,6 +35,6 @@
 
 	ears = /obj/item/radio/headset
 	uniform = /obj/item/clothing/under/citizen
-	head = /obj/item/clothing/head/hardhat
+	head = /obj/item/clothing/head/hardhat/dblue
 	r_pocket = /obj/item/hl2key/factory
 

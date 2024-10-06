@@ -11,8 +11,8 @@
 	dynamic_hair_suffix = "+generic"
 	hattable = FALSE
 	light_system = MOVABLE_LIGHT
-	light_range = 4
-	light_power = 0.8
+	light_range = 3
+	light_power = 0.6
 	light_on = FALSE
 
 	dog_fashion = /datum/dog_fashion/head

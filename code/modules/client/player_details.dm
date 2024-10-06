@@ -7,6 +7,8 @@
 	var/byond_version = "Unknown"
 	/// World.time this player last died
 	var/time_of_death = 0
+	/// Numbers are stored as strings
+	var/list/joined_as_slots
 
 /proc/log_played_names(ckey, ...)
 	if(!ckey)
