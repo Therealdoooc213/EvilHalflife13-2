@@ -20,7 +20,6 @@
 	user.SetImmobilized(0)
 	user.SetParalyzed(0)
 	user.reagents.add_reagent(/datum/reagent/medicine/changelingadrenaline, 10)
-	user.reagents.add_reagent(/datum/reagent/medicine/changelinghaste, 2) //For a really quick burst of speed
 	user.adjustStaminaLoss(-75)
 	user.clear_stamina_regen() // We already cleared our stamina, don't continue healing
 	return TRUE

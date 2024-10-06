@@ -353,9 +353,9 @@
 		return
 	else
 		linked_alert.icon_state = "fleshmend"
-	owner.adjustBruteLoss(-10, FALSE)
-	owner.adjustFireLoss(-5, FALSE)
-	owner.adjustOxyLoss(-10)
+	owner.adjustBruteLoss(-8, FALSE)
+	owner.adjustFireLoss(-4, FALSE)
+	owner.adjustOxyLoss(-8)
 	if(!iscarbon(owner))
 		return
 	var/mob/living/carbon/C = owner

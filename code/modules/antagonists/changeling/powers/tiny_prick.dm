@@ -71,7 +71,7 @@
 	helptext = "The victim will transform much like a changeling would. Does not provide a warning to others. Mutations will not be transferred, and monkeys will become human. Stings on already transformed targets won't last as long."
 	button_icon_state = "sting_transform"
 	sting_icon = "sting_transform"
-	chemical_cost = 20
+	chemical_cost = 30
 	dna_cost = 1
 	var/datum/changelingprofile/selected_dna = null
 
@@ -113,7 +113,7 @@
 			var/mob/living/carbon/human/OldDNA = new /mob/living/carbon/human()
 			OldDNA.real_name = C.real_name
 			C.dna.transfer_identity(OldDNA)
-			addtimer(CALLBACK(src, PROC_REF(revert), C, OldDNA), 10 MINUTES, TIMER_UNIQUE)
+			addtimer(CALLBACK(src, PROC_REF(revert), C, OldDNA), 8 MINUTES, TIMER_UNIQUE)
 			ADD_TRAIT(C, CHANGESTING_TRAIT, "recentsting")
 		else
 			to_chat(user, span_notice("We notice that [target.name]'s DNA is already in turmoil from the previous sting."))
@@ -142,7 +142,7 @@
 
 /obj/item/melee/arm_blade/false
 	desc = "A grotesque mass of flesh that used to be your arm. On the bright side, at least you can cut wood with this."
-	force = 20 //yogs -- worse than armblade but still not terrible
+	force = 18 //yogs -- worse than armblade but still not terrible
 	//daily reminder that xantam is a closet furry
 	fake = TRUE
 
@@ -206,38 +206,6 @@
 		changeling.add_new_profile(target)
 	return TRUE*/ //yogs end
 
-/datum/action/changeling/sting/mute
-	name = "Mute Sting"
-	desc = "We silently sting a human, completely silencing them for a short time. Costs 40 chemicals."
-	helptext = "Does not provide a warning to the victim that they have been stung, until they try to speak and cannot."
-	button_icon_state = "sting_mute"
-	sting_icon = "sting_mute"
-	chemical_cost = 40
-	dna_cost = 2
-
-/datum/action/changeling/sting/mute/sting_action(mob/user, mob/living/carbon/target)
-	log_combat(user, target, "stung", "mute sting")
-	if(target.reagents)
-		target.reagents.add_reagent(/datum/reagent/toxin/mutetoxin, 17)
-	return TRUE
-
-/datum/action/changeling/sting/blind
-	name = "Blind Sting"
-	desc = "We temporarily blind our victim. Costs 40 chemicals."
-	helptext = "This sting completely blinds a target for a short time, and leaves them with blurred vision for a long time."
-	button_icon_state = "sting_blind"
-	sting_icon = "sting_blind"
-	chemical_cost = 40
-	dna_cost = 1
-
-/datum/action/changeling/sting/blind/sting_action(mob/user, mob/living/carbon/target)
-	log_combat(user, target, "stung", "blind sting")
-	to_chat(target, span_danger("Your eyes burn horrifically!"))
-	target.become_nearsighted(EYE_DAMAGE)
-	target.blind_eyes(20)
-	target.adjust_eye_blur(40)
-	return TRUE
-
 /datum/action/changeling/sting/LSD
 	name = "Hallucination Sting"
 	desc = "We cause mass terror to our victim. Costs 10 chemicals."
@@ -250,7 +218,7 @@
 /datum/action/changeling/sting/LSD/sting_action(mob/user, mob/living/carbon/target)
 	log_combat(user, target, "stung", "LSD sting")
 	if(target.reagents)
-		target.reagents.add_reagent(/datum/reagent/toxin/mindbreaker/changeling, 30)
+		target.reagents.add_reagent(/datum/reagent/toxin/mindbreaker/changeling, 20)
 	return TRUE
 
 /datum/action/changeling/sting/cryo
@@ -266,5 +234,5 @@
 /datum/action/changeling/sting/cryo/sting_action(mob/user, mob/target)
 	log_combat(user, target, "stung", "cryo sting")
 	if(target.reagents)
-		target.reagents.add_reagent(/datum/reagent/consumable/frostoil, 30)
+		target.reagents.add_reagent(/datum/reagent/consumable/frostoil, 10)
 	return TRUE

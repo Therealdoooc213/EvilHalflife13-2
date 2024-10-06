@@ -1,18 +1,20 @@
 /// The duration of the fakedeath coma.
-#define LING_FAKEDEATH_TIME 40 SECONDS
+#define LING_FAKEDEATH_TIME 120 SECONDS
 #define LING_DEAD_GENETICDAMAGE_HEAL_CAP	50	//The lowest value of geneticdamage handle_changeling() can take it to while dead.
 /// The number of recent spoken lines to gain on absorbing a mob
 #define LING_ABSORB_RECENT_SPEECH 8
 
 /datum/antagonist/changeling
-	name = "Changeling"
-	roundend_category  = "changelings"
-	antagpanel_category = "Changeling"
+	name = "Xenian Horror"
+	roundend_category  = "xenian horrors"
+	antagpanel_category = "Xenian Horror"
 	show_to_ghosts = TRUE
+	show_in_antagpanel = TRUE
 	job_rank = ROLE_CHANGELING
 	antag_hud_name = "changeling"
 	antag_moodlet = /datum/mood_event/changeling
 	ui_name = "AntagInfoChangeling"
+	preview_outfit = /datum/outfit/obsessed
 
 	var/you_are_greet = TRUE
 	var/give_objectives = TRUE
@@ -26,8 +28,8 @@
 	var/absorbedcount = 0
 	var/trueabsorbs = 0//dna gained using absorb, not dna sting
 	var/chem_charges = 50 // chems we have on spawn
-	var/chem_storage = 125 // max chems
-	var/chem_recharge_rate = 2 // how fast we restore chems
+	var/chem_storage = 100 // max chems
+	var/chem_recharge_rate = 1 // how fast we restore chems
 	var/chem_recharge_slowdown = 0 // how much is our chem restore rate hampered (keep at 0)
 	var/sting_range = 2
 	var/changelingID = "Changeling"
@@ -35,7 +37,7 @@
 	var/was_absorbed = FALSE //if they were absorbed by another ling already.
 	var/isabsorbing = 0
 	var/islinking = 0
-	var/geneticpoints = 10
+	var/geneticpoints = 8
 	var/purchasedpowers = list()
 
 	var/mimicing = ""
@@ -103,6 +105,7 @@
 		forge_objectives()
 	handle_clown_mutation(owner.current, "You have evolved beyond your clownish nature, allowing you to wield weapons without harming yourself.")
 	owner.current.grant_all_languages(FALSE, FALSE, TRUE)	//Grants omnitongue. We are able to transform our body after all.
+	owner.current.cmode_music = 'sound/music/combat/disrupted.ogg'
 	return ..()
 
 /datum/antagonist/changeling/on_removal()

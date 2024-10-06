@@ -1,6 +1,6 @@
 /datum/action/changeling/fakedeath
 	name = "Reviving Stasis"
-	desc = "We fall into a stasis, allowing us to regenerate and trick our enemies. Costs 15 chemicals."
+	desc = "We fall into a stasis, allowing us to regenerate and trick our enemies. This takes about two minutes to complete. Costs 15 chemicals."
 	button_icon_state = "fake_death"
 	chemical_cost = 1 // fucking jelly was right, I blame ling for merging it >:(
 	dna_cost = 0
@@ -16,7 +16,7 @@
 	if(revive_ready)
 		INVOKE_ASYNC(src, PROC_REF(revive), user)
 		revive_ready = FALSE
-		chemical_cost = 15
+		chemical_cost = 25
 		to_chat(user, span_notice("We have revived ourselves."))
 		build_all_button_icons(UPDATE_BUTTON_NAME|UPDATE_BUTTON_ICON)
 		var/datum/antagonist/changeling/C = user.mind.has_antag_datum(/datum/antagonist/changeling)
@@ -57,6 +57,7 @@
 	// Manually call this (outside of revive/fullheal) so we can pass our blacklist
 	user.regenerate_limbs(dont_regenerate)
 	user.regenerate_organs()
+	user.Paralyze(10) //for balancing, they cant move for one second once revived
 
 /datum/action/changeling/fakedeath/proc/ready_to_regenerate(mob/user)
 	if(!user?.mind)
@@ -98,7 +99,7 @@
 		desc = "We arise once more."
 	else
 		name = "Reviving Stasis"
-		desc = "We fall into a stasis, allowing us to regenerate and trick our enemies."
+		desc = "We fall into a stasis, allowing us to regenerate and trick our enemies. This takes about two minutes."
 	return ..()
 
 /datum/action/changeling/fakedeath/apply_button_icon(atom/movable/screen/movable/action_button/current_button, force)
