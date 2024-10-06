@@ -69,7 +69,7 @@
 
 
 /datum/keybinding/mob/toggle_move_intent
-	hotkey_keys = list("C")
+	hotkey_keys = list("Shift")
 	name = "toggle_move_intent"
 	full_name = "Hold to toggle move intent"
 	description = "Held down to cycle to the other move intent, release to cycle back"

@@ -191,6 +191,8 @@
 ///You become a Marine that can eat crayons!!!
 #define TRAIT_MARINE  "marine"
 
+#define TRAIT_NOSTAM
+
 /// Whether we're sneaking, from the alien sneak ability.
 /// Maybe worth generalizing into a general "is sneaky" / "is stealth" trait in the future.
 #define TRAIT_ALIEN_SNEAK "sneaking_alien"

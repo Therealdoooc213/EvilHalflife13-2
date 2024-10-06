@@ -126,7 +126,7 @@
 	var/can_toggle_combat = TRUE
 
 	/// The movement intent of the mob (run/wal)
-	var/m_intent = MOVE_INTENT_RUN//Living
+	var/m_intent = MOVE_INTENT_WALK//Living
 
 	/// The last known IP of the client who was in this mob
 	var/lastKnownIP = null

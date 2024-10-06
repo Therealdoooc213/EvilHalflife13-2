@@ -45,3 +45,5 @@
 			if(m_intent == MOVE_INTENT_RUN)
 				adjust_nutrition(-(HUNGER_FACTOR/10))
 				adjust_hydration(-(HUNGER_FACTOR/4))
+	if(m_intent == MOVE_INTENT_RUN)
+		adjustStaminaLoss(1)
