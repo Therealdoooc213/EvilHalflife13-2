@@ -47,3 +47,5 @@
 				adjust_hydration(-(HUNGER_FACTOR/4))
 	if(m_intent == MOVE_INTENT_RUN)
 		adjustStaminaLoss(1)
+		if(getStaminaLoss() > 60) //automatically stop running once you're very tired.
+			toggle_move_intent()
