@@ -9,6 +9,12 @@
 	var/has_base_states = FALSE //for starting variety (mainly wood)
 	var/base_states = 1
 
+/turf/open/floor/plating/indoor/Initialize()
+	. = ..()
+	if(has_alternate_states)
+		if(prob(45))
+			icon_state = "[icon_state]_[rand(1,(alternate_states))]"
+
 /turf/open/floor/plating/indoor/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
 	return
 
@@ -112,7 +118,7 @@
 
 /turf/open/floor/plating/indoor/tile
 	icon_state = "grey"
-	alternate_states = 8
+	alternate_states = 3
 	has_alternate_states = TRUE 
 	has_base_states = TRUE
 

@@ -7,9 +7,19 @@
 	light_power = 0.25
 	light_range = 0.25
 	var/border_icon
+	var/has_alternate_states = FALSE //for damage, alts etc.
+	var/alternate_states = 1
+	var/has_base_states = FALSE //for starting variety (mainly wood)
+	var/base_states = 1
 
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR
 	canSmoothWith = SMOOTH_GROUP_OPEN_FLOOR
+
+/turf/open/floor/plating/ground/Initialize()
+	. = ..()
+	if(has_alternate_states)
+		if(prob(25))
+			icon_state = "[icon_state]_[rand(1,(alternate_states))]"
 
 /turf/open/floor/plating/ground/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
 	return
@@ -61,6 +71,19 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	light_power = 0
 	light_range = 0
+
+
+/turf/open/floor/plating/ground/brickroad
+	name = "\proper road"
+	desc = "A stretch of road."
+	baseturfs = /turf/open/floor/plating/ground/brickroad
+	icon = 'icons/turf/halflifefloor/stonebrick.dmi'
+	icon_state = "brick"
+	base_icon_state = "brick"
+	footstep = FOOTSTEP_CONCRETE
+	has_base_states = TRUE
+	has_alternate_states = TRUE
+	alternate_states = 8
 
 /turf/open/floor/plating/ground/road
 	name = "\proper road"

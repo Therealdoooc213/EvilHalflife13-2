@@ -1,8 +1,8 @@
-//wall sprites from civ13
+//wall sprites from tgmc
 /turf/closed/wall/halflife
 	name = "wall"
 	desc = "A sturdy wall."
-	max_integrity = 3000
+	max_integrity = 1500
 	baseturfs = /turf/open/floor/plating/ground/dirt
 
 /turf/closed/wall/halflife/try_decon(obj/item/I, mob/user, turf/T, modifiers)

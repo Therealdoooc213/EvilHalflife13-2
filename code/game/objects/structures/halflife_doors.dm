@@ -311,7 +311,7 @@
 	icon_state = "metal_closed"
 	door_type = "metal"
 	assemblytype = /obj/item/stack/sheet/metal
-	max_integrity = 1000 //its metal
+	max_integrity = 750 //its metal
 	armor = list(MELEE = 65, BULLET = 80, LASER = 75, ENERGY = 50, BOMB = 30, BIO = 100, FIRE = 60, ACID = 100)
 	damage_deflection = 25
 	hitted_sound = 'sound/halflifesounds/halflifeeffects/metal_door_hit.ogg'
@@ -431,7 +431,7 @@
 	icon_state = "metal_window_closed"
 	door_type = "metal_window"
 	passthrough_chance = 40 //Small window!
-	max_integrity = 1800 //its metal
+	max_integrity = 750 //its metal
 	armor = list(MELEE = 65, BULLET = 80, LASER = 75, ENERGY = 50, BOMB = 30, BIO = 100, FIRE = 60, ACID = 100)
 	damage_deflection = 25
 	hitted_sound = 'sound/halflifesounds/halflifeeffects/metal_door_hit.ogg'

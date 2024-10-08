@@ -27,7 +27,7 @@
 	heavyfootstep = FOOTSTEP_WATER
 	plane = FLOOR_PLANE
 	layer = TURF_LAYER_WATER_BASE
-	slowdown = 0.5
+	slowdown = 0.75
 	light_power = 0.25 //water is reflective, or has glowing contaminants inside of it...
 	light_range = 0.25
 	light_color = "#0486b9" 
