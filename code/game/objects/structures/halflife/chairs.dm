@@ -390,3 +390,9 @@
 	icon_state = "diner_chair"
 	buildstacktype = /obj/item/stack/sheet/metal
 	buildstackamount = 1
+
+/obj/structure/chair/sofa/bench
+	name = "bench"
+	desc = "An old bench for you to rest upon."
+	icon = 'icons/obj/chairs.dmi'
+	icon_state = "bench"

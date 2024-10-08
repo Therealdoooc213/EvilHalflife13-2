@@ -79,12 +79,14 @@
 	watertop = /obj/effect/overlay/halflife/water/top/shallow
 	depth = 1
 
+/*
 /turf/open/halflife/water/Initialize()
 	. = ..()
 	new watereffect(src)
 	new watertop(src)
 	if(z == 2)
 		z_to_change = -100
+*/
 
 /obj/effect/overlay/halflife/water
 	name = "water"
@@ -155,7 +157,7 @@
 									"<span class='notice'>You start lowering yourself in the deep water.</span>")
 					if(do_mob(user, M, 20))
 						M.swimming = TRUE
-						addtimer(CALLBACK(src, PROC_REF(transfer_mob_layer), M), 0.2 SECONDS)
+						//addtimer(CALLBACK(src, PROC_REF(transfer_mob_layer), M), 0.2 SECONDS)
 						M.forceMove(src)
 						to_chat(user, "<span class='notice'>You lower yourself in the deep water.</span>")
 						//M.adjust_bodytemperature(coldness)
@@ -165,7 +167,7 @@
 									"<span class='notice'>You start lowering [M] in the deep water.")
 					if(do_mob(user, M, 20))
 						M.swimming = TRUE
-						addtimer(CALLBACK(src, PROC_REF(transfer_mob_layer), M), 0.2 SECONDS)
+						//addtimer(CALLBACK(src, PROC_REF(transfer_mob_layer), M), 0.2 SECONDS)
 						M.forceMove(src)
 						to_chat(user, "<span class='notice'>You lower [M] in the deep water.</span>")
 						//M.adjust_bodytemperature(coldness)
@@ -181,7 +183,7 @@
 		if(!iswater(get_step(src, direction)))
 			M.swimming = FALSE
 			M.layer = initial(M.layer)
-			M.plane = (initial(M.plane) + z_to_change) //absolutely terrible, but im desperate
+			//M.plane = (initial(M.plane) + z_to_change) //absolutely terrible, but im desperate
 
 /turf/open/halflife/water/Entered(atom/A, turf/OL)
 	..()
@@ -191,7 +193,7 @@
 	if(isliving(A))
 		var/mob/living/M = A
 		var/mob/living/carbon/H = M
-		addtimer(CALLBACK(src, PROC_REF(transfer_mob_layer), M), 0.2 SECONDS)
+		//addtimer(CALLBACK(src, PROC_REF(transfer_mob_layer), M), 0.2 SECONDS)
 		if(!(M.swimming))
 			switch(depth)
 				if(3)

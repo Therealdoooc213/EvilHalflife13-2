@@ -615,10 +615,11 @@
 	if(dir == WEST)
 		pixel_x = -16
 		pixel_y = 0
-
+/*
 /obj/machinery/door/unpowered/halflife/seethrough/fence/open()
 	. = ..()
 	plane = GAME_PLANE
+*/
 
 /obj/machinery/door/unpowered/halflife/seethrough/fence/close()
 	. = ..()
@@ -626,7 +627,7 @@
 		for(var/atom/movable/M in get_turf(src))
 			if(M.density && M != src) //something is blocking the door
 				return
-	plane = initial(plane)
+	//plane = initial(plane)
 
 //Barbed Wire Fence
 
