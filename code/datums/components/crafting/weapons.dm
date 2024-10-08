@@ -67,6 +67,16 @@
 	time = 10 SECONDS
 	category = CAT_WEAPON_RANGED
 
+/datum/crafting_recipe/usp
+	name = "Colt Python"
+	result = /obj/item/gun/ballistic/revolver/coltpython
+	reqs = list(/obj/item/stack/sheet/metal = 5,
+				/obj/item/weaponcrafting/frame/coltpython = 1,
+				/obj/item/weaponcrafting/receiver = 1,
+				/obj/item/stack/tape = 1)
+	time = 10 SECONDS
+	category = CAT_WEAPON_RANGED
+
 /datum/crafting_recipe/mp7
 	name = "MP7"
 	result = /obj/item/gun/ballistic/automatic/mp7/no_mag
