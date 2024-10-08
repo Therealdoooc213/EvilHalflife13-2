@@ -4,7 +4,7 @@
 	baseturfs = /turf/open/floor/plating/dirt
 	turf_flags = NO_RUST
 	tiled_dirt = FALSE
-	light_power = 0.25
+	light_power = 0.20
 	light_range = 0.25
 	var/border_icon
 	var/has_alternate_states = FALSE //for damage, alts etc.
@@ -18,7 +18,7 @@
 /turf/open/floor/plating/ground/Initialize()
 	. = ..()
 	if(has_alternate_states)
-		if(prob(25))
+		if(prob(20))
 			icon_state = "[icon_state]_[rand(1,(alternate_states))]"
 
 /turf/open/floor/plating/ground/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
@@ -130,14 +130,19 @@
 	name = "sidewalk"
 	desc = "Paved tiles specifically designed for walking upon."
 	baseturfs = /turf/open/floor/plating/ground/sidewalk
-	icon = 'icons/turf/sidewalk.dmi'
-	icon_state = "sidewalk-255"
+	icon = 'icons/turf/halflifefloor/sidewalk.dmi'
+	icon_state = "sidewalk"
 	base_icon_state = "sidewalk"
 	footstep = FOOTSTEP_CONCRETE
+	has_base_states = TRUE
+	has_alternate_states = TRUE
+	alternate_states = 4
 
-	smoothing_flags = SMOOTH_BITMASK | SMOOTH_BORDER
+	//smoothing_flags = SMOOTH_BITMASK | SMOOTH_BORDER
 
 
+/*
 /turf/open/floor/plating/ground/sidewalk/Initialize()
 	. = ..()
 	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_icon)), 1)
+*/

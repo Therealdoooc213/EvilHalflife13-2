@@ -64,7 +64,8 @@
 	layer = ABOVE_ALL_MOB_LAYER
 	plane = ABOVE_GAME_PLANE
 	light_range = 3
-	light_color = "#a5ddf0"
+	light_power = 1.25
+	light_color = "#658cac"
 	max_integrity = 2000
 	pixel_x = -32
 	pixel_y = 8
