@@ -282,3 +282,6 @@
 #define ORGAN_INSIDE_BODY_TRAIT "organ_inside_body"
 /// Trait when something was labelled by a pen.
 #define PEN_LABEL_TRAIT "pen_label"
+
+#define SKILLCHIP_TRAIT "skillchip"
+#define SKILL_TRAIT "skill"

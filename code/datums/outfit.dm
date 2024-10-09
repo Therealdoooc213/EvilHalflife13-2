@@ -98,6 +98,13 @@
 	  */
 	var/list/implants = null
 
+	/**
+	  * Any skillchips the mob should have in their brain.
+	  *
+	  * Format of this list is (typepath, typepath, typepath)
+	  */
+	var/list/skillchips = null
+
 	/// Any clothing accessory item
 	var/accessory = null
 
@@ -228,6 +235,20 @@
 			for(var/implant_type in implants)
 				var/obj/item/implant/I = SSwardrobe.provide_type(implant_type, H)
 				I.implant(H, null, TRUE)
+
+		// Insert the skillchips associated with this outfit into the target.
+		if(skillchips)
+			for(var/skillchip_path in skillchips)
+				var/obj/item/skillchip/skillchip_instance = SSwardrobe.provide_type(skillchip_path)
+				var/implant_msg = H.implant_skillchip(skillchip_instance)
+				if(implant_msg)
+					stack_trace("Failed to implant [H] with [skillchip_instance], on job [src]. Failure message: [implant_msg]")
+					qdel(skillchip_instance)
+					return
+
+				var/activate_msg = skillchip_instance.try_activate_skillchip(TRUE, TRUE)
+				if(activate_msg)
+					CRASH("Failed to activate [H]'s [skillchip_instance], on job [src]. Failure message: [activate_msg]")
 
 	H.update_body()
 	return TRUE

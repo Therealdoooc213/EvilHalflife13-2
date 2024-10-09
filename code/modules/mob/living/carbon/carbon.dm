@@ -1254,3 +1254,14 @@
 /mob/living/carbon/clear_stamina_regen()
 	for(var/obj/item/bodypart/B in bodyparts)
 		B.stamina_cache = list()
+
+/// Modifies max_skillchip_count and updates active skillchips
+/mob/living/carbon/proc/adjust_skillchip_complexity_modifier(delta)
+	skillchip_complexity_modifier += delta
+
+	var/obj/item/organ/brain/brain = getorganslot(ORGAN_SLOT_BRAIN)
+
+	if(!brain)
+		return
+
+	brain.update_skillchips()

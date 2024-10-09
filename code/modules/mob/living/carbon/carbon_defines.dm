@@ -86,6 +86,9 @@
 	/// Only load in visual organs
 	var/visual_only_organs = FALSE
 
+	/// Simple modifier for whether this mob can handle greater or lesser skillchip complexity. See /datum/mutation/human/biotechcompat/ for example.
+	var/skillchip_complexity_modifier = 0
+
 	COOLDOWN_DECLARE(bleeding_message_cd)
 
 	var/list/image/infra_images

@@ -290,3 +290,6 @@
 
 /// One can breath under water, you get me?
 #define TRAIT_WATER_BREATHING "water_breathing"
+
+/// This person fires guns with more accuracy
+#define TRAIT_GOOD_AIM			"good_aim"

@@ -279,3 +279,13 @@
 		if(!getorganslot(ORGAN_SLOT_EARS))
 			var/obj/item/organ/ears/ears = new()
 			ears.Insert(src)
+
+/// Called before organs are replaced in regenerate_organs with new ones
+/obj/item/organ/proc/before_organ_replacement(obj/item/organ/replacement)
+	SHOULD_CALL_PARENT(TRUE)
+
+	SEND_SIGNAL(src, COMSIG_ORGAN_BEING_REPLACED, replacement)
+
+	// If we're being replace with an identical type we should take organ damage
+	//if(replacement.type == type)
+		//replacement.setOrganLoss(damage)

@@ -375,6 +375,8 @@
 	if(ishuman(user)) //nice shootin' tex
 		var/mob/living/carbon/human/H = user
 		bonus_spread += H.dna.species.aiminginaccuracy
+		if(HAS_TRAIT(H, TRAIT_GOOD_AIM))
+			bonus_spread -= 5
 	var/randomized_bonus_spread = rand(0, bonus_spread)
 
 	if(burst_size > 1)

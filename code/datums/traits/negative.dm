@@ -141,11 +141,11 @@
 
 /datum/quirk/poor_aim/add()
 	var/mob/living/carbon/human/H = quirk_holder
-	H.dna.species.aiminginaccuracy += 25
+	H.dna.species.aiminginaccuracy += 20
 
 /datum/quirk/poor_aim/remove()
 	var/mob/living/carbon/human/H = quirk_holder
-	H?.dna?.species?.aiminginaccuracy -= 25
+	H?.dna?.species?.aiminginaccuracy -= 20
 
 /datum/quirk/prosopagnosia
 	name = "Prosopagnosia"
