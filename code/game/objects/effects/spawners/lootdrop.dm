@@ -772,6 +772,8 @@
 				/obj/item/reagent_containers/medspray/sterilizine,
 				/obj/item/reagent_containers/pill/patch/medkit,
 				/obj/item/reagent_containers/pill/patch/medkit/vial = 2,
+				/obj/item/circuitboard/machine/skill_station,
+				/obj/item/skillchip/fitness,
 				/obj/item/storage/firstaid/toxin
 				)
 

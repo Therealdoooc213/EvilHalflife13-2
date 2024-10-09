@@ -26,7 +26,7 @@
 	starting_node = TRUE
 	display_name = "Cyborg Construction"
 	description = "Sapient robots with preloaded tool modules and programmable laws."
-	design_ids = list("borg_r_arm", "borg_l_arm", "borg_r_leg", "borg_l_leg", "cyborgrecharger", "viscerator_frame", "biopin", "scanner_frame")
+	design_ids = list("borg_r_arm", "borg_l_arm", "borg_r_leg", "borg_l_leg", "cyborgrecharger", "viscerator_frame", "biopin", "scanner_frame", "aiming_skillchip", "engineer_skillchip", "doctor_skillchip", "fitness_skillchip", "painsuppress_skillchip")
 
 /datum/techweb_node/mech
 	id = "mecha"
