@@ -1072,6 +1072,7 @@ update_label("John Doe", "Clowny")
 /obj/item/card/id/departmental_budget
 	name = "departmental card (FUCK)"
 	desc = "Provides access to the departmental budget."
+	icon_state = "budget"
 	var/department_ID = ACCOUNT_CIV
 	var/department_name = ACCOUNT_CIV_NAME
 	registered_age = null
