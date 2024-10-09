@@ -79,6 +79,7 @@
 	mask = /obj/item/clothing/mask/gas/civilprotection/divisional
 	belt = /obj/item/storage/belt/civilprotection/divisionleadfull
 
+	skillchips = list(/obj/item/skillchip/aiming, /obj/item/skillchip/fitness) //The DvL comes pre-augmented
 	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert)
 
 

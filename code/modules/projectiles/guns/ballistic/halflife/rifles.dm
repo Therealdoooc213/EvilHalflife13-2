@@ -7,7 +7,8 @@
 	fire_sound = "sound/weapons/halflife/ar2fire.ogg"
 	mag_type = /obj/item/ammo_box/magazine/ar2
 	force = 10
-	spread = 7
+	spread = 12
+	semi_auto_spread = 11
 	recoil = 0.8
 	fire_delay = 2
 	burst_size = 2
@@ -35,7 +36,8 @@
 	force = 10
 	fire_delay = 2
 	burst_size = 2
-	spread = 8
+	spread = 14
+	semi_auto_spread = 13
 	recoil = 1
 	can_suppress = FALSE
 	can_bayonet = TRUE

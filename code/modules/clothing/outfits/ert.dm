@@ -399,7 +399,7 @@
 	ears = /obj/item/radio/headset/civilprotection/divisional/overwatch
 	belt = /obj/item/storage/belt/civilprotection/overwatch
 	l_pocket = /obj/item/reagent_containers/pill/patch/medkit
-	skillchips = list(/obj/item/skillchip/aiming, /obj/item/skillchip/fitness) //Skilled soldiers
+	skillchips = list(/obj/item/skillchip/overwatch) //Skilled soldiers
 	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert)
 
 	back = null

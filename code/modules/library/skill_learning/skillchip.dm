@@ -415,3 +415,13 @@
 	complexity = 2
 	activate_message = span_notice("You feel your sense of pain numb.")
 	deactivate_message = span_notice("Your sense of pain returns to normal.")
+
+/obj/item/skillchip/overwatch
+	name = "Overwatch skillchip package"
+	auto_traits = list(TRAIT_RESISTDAMAGESLOWDOWN, TRAIT_ATHLETIC, TRAIT_GOOD_AIM)
+	skill_name = "OTA augmentation package"
+	skill_description = "This chip will better your aim, suppress pain, and increase physical fitness all in one."
+	skill_icon = "skull"
+	complexity = 3
+	activate_message = span_notice("You feel highly trained in combat functionality.")
+	deactivate_message = span_notice("Your combat functionality seems to dim.")
