@@ -257,7 +257,7 @@
 	icon_state = "penlight_cmo"
 	light_range = 4
 	uv_power = 2
-	toolspeed = 0.5
+	toolspeed = 0.75
 	tool_behaviour = TOOL_CAUTERY
 
 /obj/item/flashlight/pen/paramedic/advanced/ignition_effect(atom/A, mob/user)

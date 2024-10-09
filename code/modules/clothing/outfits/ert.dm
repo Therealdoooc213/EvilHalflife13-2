@@ -399,7 +399,8 @@
 	ears = /obj/item/radio/headset/civilprotection/divisional/overwatch
 	belt = /obj/item/storage/belt/civilprotection/overwatch
 	l_pocket = /obj/item/reagent_containers/pill/patch/medkit
-	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert, /obj/item/organ/cyberimp/chest/nutriment/plus, /obj/item/organ/cyberimp/chest/reviver)
+	skillchips = list(/obj/item/skillchip/aiming, /obj/item/skillchip/fitness) //Skilled soldiers
+	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert)
 
 	back = null
 
@@ -412,6 +413,7 @@
 	H.eye_color = "#b9b9b9" 
 	H.update_body()
 	H.update_hair()
+	ADD_TRAIT(H, TRAIT_NOHUNGER, OUTFIT_TRAIT) //OTA dont need to eat or drink
 
 /datum/outfit/ert/overwatch/spas12
 	name = "OTA Shotgun Unit"

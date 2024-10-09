@@ -28,7 +28,7 @@
 	drop_sound = 'sound/items/handling/multitool_drop.ogg'
 	pickup_sound =  'sound/items/handling/multitool_pickup.ogg'
 	var/obj/machinery/buffer // simple machine buffer for device linkage
-	toolspeed = 1
+	toolspeed = 1.5
 	usesound = 'sound/weapons/empty.ogg'
 	var/mode = 0
 
@@ -117,7 +117,7 @@
 /obj/item/multitool/cyborg
 	name = "multitool"
 	desc = "Optimised and stripped-down version of a regular multitool."
-	toolspeed = 0.5
+	toolspeed = 1
 
 /obj/item/multitool/abductor
 	name = "alien multitool"
@@ -131,7 +131,7 @@
 	desc = "As crappy as it is, its still mostly the same as a standard issue Nanotrasen one."
 	icon = 'icons/obj/improvised.dmi'
 	icon_state = "multitool_makeshift"
-	toolspeed = 2
+	toolspeed = 2.5
 
 /obj/item/multitool/makeshift/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	..()

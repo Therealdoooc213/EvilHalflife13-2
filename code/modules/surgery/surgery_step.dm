@@ -110,11 +110,14 @@
 
 	// If we have a tool, use it
 	if((tool && tool.use_tool(target, user, time * speed_mod, robo_check = TRUE)) || do_after(user, time * speed_mod, target))
-		var/prob_chance = 100
+		var/prob_chance = 80
 
 		if(implement_type)	//this means it isn't a require hand or any item step.
 			prob_chance = implements[implement_type]
 		prob_chance *= surgery.get_probability_multiplier()
+
+		if(HAS_TRAIT(user, TRAIT_DOCTOR)) //the doctor skillchip increases success chance substantially
+			prob_chance *= 1.25
 
 		// Blood splatters on tools and user
 		if(tool && prob(bloody_chance))

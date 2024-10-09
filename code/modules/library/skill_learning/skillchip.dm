@@ -375,5 +375,43 @@
 	skill_name = "Aim Assist"
 	skill_description = "This chip will tune your eyesight and brain to better hit targets with a firearm."
 	skill_icon = "gun"
+	complexity = 2
 	activate_message = span_notice("You feel better able to line up a shot.")
 	deactivate_message = span_notice("Your vision dims a bit, as targets look harder to hit.")
+
+/obj/item/skillchip/engineer
+	name = "Engineering skillchip"
+	auto_traits = list(TRAIT_ENGINEER)
+	skill_name = "Tool Speed"
+	skill_description = "This chip will implant engineering knowledge, and let you use tools faster."
+	skill_icon = "toolbox"
+	activate_message = span_notice("You feel you know how to use engineering tools.")
+	deactivate_message = span_notice("You lose the knowledge of operating engineering tools correctly.")
+
+/obj/item/skillchip/doctor
+	name = "Medical skillchip"
+	auto_traits = list(TRAIT_DOCTOR)
+	skill_name = "Medical Speed"
+	skill_description = "This chip will implant medical knowledge, and let you use surgery tools faster and with more precision."
+	skill_icon = "plus"
+	activate_message = span_notice("You feel you know how to use surgical tools.")
+	deactivate_message = span_notice("You lose the knowledge of operating surgical tools correctly.")
+
+/obj/item/skillchip/fitness
+	name = "Fitness skillchip"
+	auto_traits = list(TRAIT_ATHLETIC)
+	skill_name = "Physical Fitness"
+	skill_description = "This chip will automatically tune your body to better be able to run."
+	skill_icon = "person-running"
+	activate_message = span_notice("You feel like running will be a bit easier now.")
+	deactivate_message = span_notice("You lose confidence in your running ability.")
+
+/obj/item/skillchip/painsuppress
+	name = "Pain Suppressor skillchip"
+	auto_traits = list(TRAIT_RESISTDAMAGESLOWDOWN)
+	skill_name = "Pain Suppression"
+	skill_description = "This chip will supress your sense of pain, letting you power through it more easily."
+	skill_icon = "skull"
+	complexity = 2
+	activate_message = span_notice("You feel your sense of pain numb.")
+	deactivate_message = span_notice("Your sense of pain returns to normal.")

@@ -26,7 +26,7 @@
 	pickup_sound =  'sound/items/handling/wirecutter_pickup.ogg'
 
 	tool_behaviour = TOOL_WIRECUTTER
-	toolspeed = 1
+	toolspeed = 1.5
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 30)
 	var/random_color = TRUE
 	var/static/list/wirecutter_colors = list(
@@ -75,7 +75,7 @@
 	icon_state = "cutters_brass"
 	item_state = "cutters_brass"
 	random_color = FALSE
-	toolspeed = 0.5
+	toolspeed = 1
 
 /obj/item/wirecutters/abductor
 	name = "alien wirecutters"
@@ -90,7 +90,7 @@
 /obj/item/wirecutters/cyborg
 	name = "wirecutters"
 	desc = "This cuts wires."
-	toolspeed = 0.5
+	toolspeed = 1
 
 /obj/item/wirecutters/makeshift
 	name = "makeshift wirecutters"
@@ -98,7 +98,7 @@
 	icon = 'icons/obj/improvised.dmi'
 	icon_state = "cutters_makeshift"
 	item_state = "cutters_makeshift"
-	toolspeed = 0.5
+	toolspeed = 2
 	random_color = FALSE
 
 /obj/item/wirecutters/makeshift/afterattack(atom/target, mob/user, proximity_flag, click_parameters)

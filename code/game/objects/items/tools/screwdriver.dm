@@ -29,7 +29,7 @@
 	pickup_sound =  'sound/items/handling/screwdriver_pickup.ogg'
 
 	tool_behaviour = TOOL_SCREWDRIVER
-	toolspeed = 1
+	toolspeed = 1.5
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 30)
 	sharpness = SHARP_POINTY
 	var/random_color = TRUE //if the screwdriver uses random coloring
@@ -74,7 +74,7 @@
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	icon_state = "screwdriver_brass"
 	item_state = "screwdriver_brass"
-	toolspeed = 0.5
+	toolspeed = 1
 	random_color = FALSE
 
 /obj/item/screwdriver/abductor
@@ -99,7 +99,7 @@
 	icon = 'icons/obj/improvised.dmi'
 	icon_state = "screwdriver_makeshift"
 	item_state = "screwdriver_makeshift"
-	toolspeed = 2
+	toolspeed = 2.5
 	random_color = FALSE
 
 /obj/item/screwdriver/makeshift/afterattack(atom/target, mob/user, proximity_flag, click_parameters)

@@ -18,7 +18,7 @@
 
 	attack_verb = list("bashed", "battered", "bludgeoned", "whacked")
 	tool_behaviour = TOOL_WRENCH
-	toolspeed = 1
+	toolspeed = 1.5
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 30)
 
 /obj/item/wrench/suicide_act(mob/user)
@@ -29,14 +29,14 @@
 /obj/item/wrench/cyborg
 	name = "automatic wrench"
 	desc = "An advanced robotic wrench. Can be found in construction cyborgs."
-	toolspeed = 0.5
+	toolspeed = 1
 
 /obj/item/wrench/brass
 	name = "brass wrench"
 	desc = "A brass wrench. It's faintly warm to the touch."
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	icon_state = "wrench_brass"
-	toolspeed = 0.5
+	toolspeed = 1
 
 /obj/item/wrench/abductor
 	name = "alien wrench"
@@ -87,7 +87,7 @@
 	desc = "A crude, self-wrought wrench with common uses. Can be found in your hand."
 	icon = 'icons/obj/improvised.dmi'
 	icon_state = "wrench_makeshift"
-	toolspeed = 0.5
+	toolspeed = 1
 
 /obj/item/wrench/makeshift/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	..()

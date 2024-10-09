@@ -234,6 +234,8 @@
 /// Trait applied by element
 #define ELEMENT_TRAIT(source) "element_trait_[source]"
 
+//applied by outfits
+#define OUTFIT_TRAIT "outfit"
 
 // unique trait sources, still defines
 #define CLONING_POD_TRAIT "cloning-pod"
@@ -291,5 +293,16 @@
 /// One can breath under water, you get me?
 #define TRAIT_WATER_BREATHING "water_breathing"
 
+// Skillchip skills ------
+
 /// This person fires guns with more accuracy
-#define TRAIT_GOOD_AIM			"good_aim"
+#define TRAIT_GOOD_AIM	"good_aim"
+
+//faster tool usage
+#define TRAIT_ENGINEER	"engineer"
+
+//faster surgical tool usage
+#define TRAIT_DOCTOR	"doctor"
+
+//Less stamina drain when running
+#define TRAIT_ATHLETIC	"ATHLETIC"

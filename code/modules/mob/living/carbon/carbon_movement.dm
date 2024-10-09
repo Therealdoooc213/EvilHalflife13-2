@@ -46,6 +46,9 @@
 				adjust_nutrition(-(HUNGER_FACTOR/10))
 				adjust_hydration(-(HUNGER_FACTOR/4))
 	if(m_intent == MOVE_INTENT_RUN)
-		adjustStaminaLoss(1)
+		if(HAS_TRAIT(src, TRAIT_ATHLETIC)) //Athletic skillchip lets you run for far longer
+			adjustStaminaLoss(0.75)
+		else
+			adjustStaminaLoss(1)
 		if(getStaminaLoss() > 60) //automatically stop running once you're very tired.
 			toggle_move_intent()

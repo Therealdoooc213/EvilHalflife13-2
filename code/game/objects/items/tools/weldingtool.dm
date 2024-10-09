@@ -38,7 +38,7 @@
 	var/burned_fuel_for = 0	//when fuel was last removed
 	heat = 3800
 	tool_behaviour = TOOL_WELDER
-	toolspeed = 1
+	toolspeed = 1.5
 	wound_bonus = 10
 	bare_wound_bonus = 15
 	var/mutable_appearance/sparks
@@ -303,7 +303,7 @@
 /obj/item/weldingtool/largetank/cyborg
 	name = "integrated welding tool"
 	desc = "An advanced welder designed to be used in robotic systems."
-	toolspeed = 0.5
+	toolspeed = 1
 
 /obj/item/weldingtool/largetank/cyborg/cyborg_unequip(mob/user)
 	if(!isOn())
@@ -353,7 +353,7 @@
 	change_icons = 0
 	can_off_process = 1
 	light_range = 1
-	toolspeed = 0.5
+	toolspeed = 1
 	var/nextrefueltick = 0
 
 /obj/item/weldingtool/experimental/brass
@@ -379,7 +379,7 @@
 	desc = "A MacGyver-style welder."
 	icon = 'icons/obj/improvised.dmi'
 	icon_state = "welder_makeshift"
-	toolspeed = 2
+	toolspeed = 2.5
 	max_fuel = 10
 	materials = list(MAT_METAL=140)
 

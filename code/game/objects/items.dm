@@ -123,7 +123,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	var/sharpness = SHARP_NONE
 
 	var/tool_behaviour = NONE
-	var/toolspeed = 1
+	var/toolspeed = 1.5
 
 	//The list of slots by priority. equip_to_appropriate_slot() uses this list. Doesn't matter if a mob type doesn't have a slot.
 	var/list/slot_equipment_priority = null // for default list, see /mob/proc/equip_to_appropriate_slot()
@@ -965,8 +965,8 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 		return
 	delay *= toolspeed
 
-	if(((IS_ENGINEERING(user) || (robo_check && IS_JOB(user, "Roboticist"))) && (tool_behaviour in MECHANICAL_TOOLS)) || (IS_MEDICAL(user) && (tool_behaviour in MEDICAL_TOOLS)))
-		delay *= 0.8 // engineers and doctors use their own tools faster
+	if(((HAS_TRAIT(user, TRAIT_ENGINEER) || (robo_check && IS_JOB(user, "Roboticist"))) && (tool_behaviour in MECHANICAL_TOOLS)) || (HAS_TRAIT(user, TRAIT_DOCTOR) && (tool_behaviour in MEDICAL_TOOLS)))
+		delay *= 0.6 // engineers and doctors use their own tools faster
 
 	if(volume) // Play tool sound at the beginning of tool usage.
 		play_tool_sound(target, volume)
