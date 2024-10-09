@@ -290,10 +290,6 @@
 /obj/structure/table/halflife/metal/grate,
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/hydroponics)
-"cJ" = (
-/obj/machinery/paystand/register,
-/turf/open/floor/plating/indoor/woodc/mosaic,
-/area/halflife/indoors)
 "cK" = (
 /obj/structure/chair/comfy/halflife/armchair,
 /obj/effect/landmark/start/city_administrator,
@@ -1368,10 +1364,6 @@
 /obj/structure/flora/ausbushes/palebush,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors)
-"kX" = (
-/obj/structure/table/halflife/no_smooth/metal,
-/turf/open/floor/plating/indoor/tile,
-/area/halflife/indoors/scienceunion)
 "kY" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 1
@@ -1472,6 +1464,10 @@
 /obj/structure/window/fulltile,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/laborunion)
+"lN" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/scienceunion)
 "lO" = (
 /obj/item/reagent_containers/food/snacks/meat/slab/chicken,
 /obj/item/reagent_containers/food/snacks/meat/slab/chicken,
@@ -2238,10 +2234,6 @@
 /obj/machinery/bounty_board{
 	pixel_y = 25
 	},
-/turf/open/floor/plating/indoor/tile,
-/area/halflife/indoors/scienceunion)
-"rW" = (
-/obj/machinery/skill_station,
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/scienceunion)
 "rX" = (
@@ -3240,6 +3232,10 @@
 "Bk" = (
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/scienceunion)
+"Bm" = (
+/obj/machinery/door/unpowered/halflife/wood,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
 "Bq" = (
 /obj/machinery/door/unpowered/halflife/metal,
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -3332,6 +3328,10 @@
 	dir = 8
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
+"Ck" = (
+/obj/machinery/paystand/register,
+/turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors)
 "Cn" = (
 /obj/machinery/door/unpowered/halflife/metal{
@@ -4658,6 +4658,10 @@
 	},
 /turf/open/floor/plating/indoor/carpet,
 /area/halflife/indoors/townhall)
+"Qe" = (
+/obj/machinery/skill_station,
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/scienceunion)
 "Qi" = (
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors)
@@ -5261,10 +5265,6 @@
 /turf/open/floor/plating/indoor/metal/walkway{
 	dir = 1
 	},
-/area/halflife/indoors)
-"Wd" = (
-/obj/machinery/door/unpowered/halflife/wood,
-/turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors)
 "Wh" = (
 /obj/machinery/light/small{
@@ -32144,7 +32144,7 @@ uy
 NC
 uy
 NC
-cJ
+Ck
 Fp
 pH
 Iw
@@ -32378,7 +32378,7 @@ NC
 DU
 NC
 NC
-Wd
+Bm
 no
 no
 Iw
@@ -33315,8 +33315,8 @@ DZ
 xv
 Mj
 Jz
-kX
-rW
+lN
+Qe
 Jz
 Iw
 Iw

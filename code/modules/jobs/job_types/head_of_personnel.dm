@@ -61,3 +61,5 @@
 	belt = /obj/item/melee/classic_baton/telescopic
 
 	implants = list(/obj/item/implant/mindshield)
+	skillchips = list(/obj/item/skillchip/engineer)
+	

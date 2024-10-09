@@ -36,3 +36,6 @@
 	ears = /obj/item/radio/headset
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+
+	skillchips = list(/obj/item/skillchip/doctor)
+

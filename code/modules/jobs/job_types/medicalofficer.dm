@@ -63,3 +63,5 @@
 	belt = /obj/item/storage/belt/civilprotection/medicfull
 
 	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert)
+	skillchips = list(/obj/item/skillchip/doctor)
+	
