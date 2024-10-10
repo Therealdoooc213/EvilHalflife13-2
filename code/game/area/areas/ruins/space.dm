@@ -264,7 +264,7 @@
 	icon_state = "panelsAP"
 
 /area/ruin/space/has_grav/ancientstation/engi
-	name = "Charlie Station Engineering"
+	name = "Charlie Union Engineering"
 	icon_state = "engine"
 
 /area/ruin/space/has_grav/ancientstation/comm

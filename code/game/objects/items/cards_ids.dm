@@ -1055,9 +1055,9 @@ update_label("John Doe", "Clowny")
 	access = list(ACCESS_RUINS_GENERAL)
 
 /obj/item/card/id/away/old/eng
-	name = "Charlie Station Engineer's ID card"
-	desc = "A faded Charlie Station ID card. You can make out the rank \"Station Engineer\"."
-	assignment = "Charlie Station Engineer"
+	name = "Charlie Union Engineer's ID card"
+	desc = "A faded Charlie Station ID card. You can make out the rank \"Union Engineer\"."
+	assignment = "Charlie Union Engineer"
 	originalassignment = "Engineer"
 	access = list(ACCESS_RUINS_GENERAL, ACCESS_RUINS_ENGINEERING)
 

@@ -38,4 +38,4 @@
 	icon_state = "bulletproof"
 	item_state = "armor"
 	blood_overlay_type = "armor"
-	armor = list(MELEE = 15, BULLET = 30, LASER = 10, ENERGY = 10, BOMB = 20, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 10)
+	armor = list(MELEE = 15, BULLET = 25, LASER = 10, ENERGY = 10, BOMB = 20, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 10)

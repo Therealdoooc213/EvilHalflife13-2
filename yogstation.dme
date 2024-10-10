@@ -2701,6 +2701,7 @@
 #include "code\modules\jobs\job_types\captain.dm"
 #include "code\modules\jobs\job_types\centcom.dm"
 #include "code\modules\jobs\job_types\cook.dm"
+#include "code\modules\jobs\job_types\engineer.dm"
 #include "code\modules\jobs\job_types\foreman.dm"
 #include "code\modules\jobs\job_types\head_of_personnel.dm"
 #include "code\modules\jobs\job_types\head_of_security.dm"

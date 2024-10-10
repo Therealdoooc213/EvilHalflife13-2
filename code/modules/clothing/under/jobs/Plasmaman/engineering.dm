@@ -9,7 +9,7 @@
 
 /obj/item/clothing/under/plasmaman/engineering
 	name = "engineering envirosuit"
-	desc = "An envirosuit with orange and yellow stripes decoring its exterior, designed for station engineers. Offers better protection from fire and acid."
+	desc = "An envirosuit with orange and yellow stripes decoring its exterior, designed for union engineers. Offers better protection from fire and acid."
 	icon_state = "engineer_envirosuit"
 	item_state = "engineer_envirosuit"
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 100, RAD = 10, FIRE = 95, ACID = 95)

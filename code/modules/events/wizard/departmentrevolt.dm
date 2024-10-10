@@ -62,7 +62,7 @@
 			jobs_to_revolt = list("Chief Medical Officer", "Union Doctor", "Chemist", "Geneticist", "Virologist")
 			nation_name = pick("Mede", "Healtha", "Recova", "Chemi", "Geneti", "Viro", "Psych")
 		if("Engineering")
-			jobs_to_revolt = list("Chief Engineer", "Station Engineer", "Atmospheric Technician")
+			jobs_to_revolt = list("Chief Engineer", "Union Engineer", "Atmospheric Technician")
 			nation_name = pick("Atomo", "Engino", "Power", "Teleco")
 		if("Science")
 			jobs_to_revolt = list("Research Director","Union Scientist", "Roboticist")

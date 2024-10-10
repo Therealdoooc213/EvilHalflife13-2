@@ -16,7 +16,7 @@
 		"Chief Engineer" = list("engineering","silver"),
 		"Research Director" = list("science","silver"),
 		"Chief Medical Officer" = list("medical","silver"),
-		"Station Engineer" = list("engineering","yellow"),
+		"Union Engineer" = list("engineering","yellow"),
 		"Atmospheric Technician" = list("engineering","white"),
 		"Network Admin" = list("engineering","green"),
 		"Union Doctor" = list("medical","blue"),

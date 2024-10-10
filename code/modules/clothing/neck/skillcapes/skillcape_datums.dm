@@ -163,14 +163,14 @@
 	id = "atmos_trimmed"
 
 /datum/skillcape/engineer
-	name = "cape of the station engineer"
-	job = "Station Engineer"
+	name = "cape of the union engineer"
+	job = "Union Engineer"
 	path = /obj/item/clothing/neck/skillcape/engineer
 	id = "engineer"
 
 /datum/skillcape/trimmed/engineer
-	name = "cape of the grand station engineer"
-	job = "Station Engineer"
+	name = "cape of the grand union engineer"
+	job = "Union Engineer"
 	path = /obj/item/clothing/neck/skillcape/trimmed/engineer
 	id = "engineer_trimmed"
 

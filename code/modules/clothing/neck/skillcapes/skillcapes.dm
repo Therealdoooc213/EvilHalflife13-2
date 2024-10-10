@@ -198,12 +198,12 @@
 	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/neck/skillcape/engineer
-	name = "cape of the station engineer"
+	name = "cape of the union engineer"
 	icon_state = "engi-skillcape"
 	item_state = "engi-skillcape"
 
 /obj/item/clothing/neck/skillcape/trimmed/engineer
-	name = "cape of the grand station engineer"
+	name = "cape of the grand union engineer"
 	icon_state = "engi-trimmed"
 	item_state = "engi-trimmed"
 

@@ -2,6 +2,8 @@
 /mob/living/proc/run_armor_check(def_zone = null, attack_flag = MELEE, absorb_text = null, soften_text = null, armour_penetration, penetrated_text)
 	var/armor = getarmor(def_zone, attack_flag)
 
+	armor *= (rand(75,125) / 100) //Armor effectiveness is random, varied between 75% up to 125%.
+
 	//the if "armor" check is because this is used for everything on /living, including humans
 	if(status_flags & GODMODE)
 		visible_message(span_danger("A strange force protects [src], [p_they()] can't be damaged!"), span_userdanger("A strange force protects you!"))

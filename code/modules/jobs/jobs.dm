@@ -15,7 +15,7 @@ GLOBAL_LIST_INIT(command_lightup_areas, typecacheof(list(
 
 GLOBAL_LIST_INIT(original_engineering_positions, list(
 	"Chief Engineer",
-	"Station Engineer",
+	"Union Engineer",
 	"Atmospheric Technician",
 	"Network Admin"))
 
@@ -275,7 +275,7 @@ GLOBAL_PROTECT(exp_specialmap)
 	job = ce_expand.Replace(job, "chief engineer")
 	job = qm_expand.Replace(job, "quartermaster")
 	job = sec_expand.Replace(job, "Civil Protection Officer")
-	job = engi_expand.Replace(job, "station engineer")
+	job = engi_expand.Replace(job, "union engineer")
 	job = atmos_expand.Replace(job, "atmospheric technician")
 	job = doc_expand.Replace(job, "union doctor")
 	job = mine_expand.Replace(job, "shaft miner")
