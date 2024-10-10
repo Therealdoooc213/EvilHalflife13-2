@@ -359,14 +359,6 @@
 	},
 /turf/open/floor/plating/indoor/metal/grate,
 /area/halflife/indoors/sewer)
-"dg" = (
-/obj/structure/table/halflife/no_smooth/metal,
-/obj/item/gun/ballistic/automatic/mp7,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/plating/indoor/tile,
-/area/halflife/indoors/townhall)
 "dj" = (
 /obj/structure/chair/halflife/metal/blue,
 /obj/effect/decal/cleanable/blood,
@@ -627,6 +619,12 @@
 	name = "divisional leads office"
 	},
 /turf/open/floor/plating/indoor/woodc/fancy,
+/area/halflife/indoors/townhall)
+"fo" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/obj/item/clothing/suit/armor/civilprotection/trenchcoat,
+/obj/item/clothing/suit/armor/civilprotection/trenchcoat,
+/turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/townhall)
 "fp" = (
 /turf/closed/wall/halflife/metal,
@@ -1250,6 +1248,13 @@
 /obj/machinery/computer/arcade/minesweeper,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/slums)
+"jE" = (
+/obj/structure/chair/halflife/metal/blue{
+	dir = 4
+	},
+/obj/effect/landmark/start/engineer,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/productioncenter)
 "jG" = (
 /obj/structure/window/fulltile,
 /turf/open/floor/plating/indoor/showroom,
@@ -1288,6 +1293,17 @@
 /obj/structure/halflife/trash/food/glass,
 /turf/open/floor/plating/indoor/tiled10,
 /area/halflife/indoors/distributioncenter)
+"jP" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/obj/item/gun/ballistic/automatic/mp7,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/item/ammo_box/magazine/mp7,
+/obj/item/ammo_box/magazine/mp7,
+/obj/item/ammo_box/magazine/mp7,
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/townhall)
 "jQ" = (
 /obj/structure/chair/halflife/metal/folding{
 	dir = 8
@@ -3231,10 +3247,6 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/scienceunion)
-"zJ" = (
-/obj/effect/landmark/start/engineer,
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/halflife/indoors/productioncenter)
 "zM" = (
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/clothing/gloves/color/latex/nitrile,
@@ -4434,13 +4446,6 @@
 "KE" = (
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/townhall)
-"KK" = (
-/obj/structure/table/halflife/no_smooth/metal,
-/obj/item/ammo_box/magazine/mp7,
-/obj/item/ammo_box/magazine/mp7,
-/obj/item/ammo_box/magazine/mp7,
-/turf/open/floor/plating/indoor/tile,
-/area/halflife/indoors/townhall)
 "KN" = (
 /obj/machinery/light/small,
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -5276,6 +5281,10 @@
 /obj/structure/bed/halflife/mattress/stale,
 /turf/open/floor/plating/indoor/carpet,
 /area/halflife/indoors/townhall)
+"SA" = (
+/obj/effect/landmark/start/engineer,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/productioncenter)
 "SC" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -5552,13 +5561,6 @@
 	},
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors)
-"UZ" = (
-/obj/structure/chair/halflife/metal/blue{
-	dir = 4
-	},
-/obj/effect/landmark/start/engineer,
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/halflife/indoors/productioncenter)
 "Vb" = (
 /obj/structure/chair/halflife/wood{
 	dir = 8
@@ -24847,7 +24849,7 @@ TY
 TY
 TY
 ty
-zJ
+SA
 UQ
 uo
 UQ
@@ -25084,7 +25086,7 @@ ty
 UQ
 UQ
 UQ
-UZ
+jE
 bc
 ty
 sv
@@ -32149,8 +32151,8 @@ ME
 XQ
 Ds
 rA
-dg
-KK
+jP
+fo
 RL
 Qm
 XQ

@@ -4,6 +4,11 @@
 	icon_state = "civilprotection"
 	item_state = "armoralt"
 
+/obj/item/clothing/suit/armor/civilprotection/trenchcoat
+	name = "civil protection trench coat"
+	desc = "A modified standard vest with a partial trenchcoat. Provides no additional protection, but is good as an identifier."
+	icon_state = "cp_trenchcoat"
+
 /obj/item/clothing/suit/armor/civilprotection/divisional
 	name = "divisional lead vest"
 	desc = "Kevlar weave protective vest. Provides a good level of protection to the chest."
