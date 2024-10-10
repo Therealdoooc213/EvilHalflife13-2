@@ -697,3 +697,15 @@
 	max_integrity = 900
 	damage_deflection = 20
 	armor = list(MELEE = 70, BULLET = 80, LASER = 50, ENERGY = 60, BOMB = 40, BIO = 100, FIRE = 40, ACID = 100)
+
+/obj/structure/halflife/breencast
+	name = "breencast"
+	desc = "He'll blather stuff at you no matter what city you are in."
+	icon = 'icons/obj/halflife/breencast.dmi'
+	icon_state = "breencast"
+	anchored = TRUE
+	density = FALSE
+	layer = ABOVE_MOB_LAYER
+	max_integrity = 500
+	projectile_passchance = 30
+
