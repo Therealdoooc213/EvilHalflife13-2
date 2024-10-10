@@ -85,6 +85,9 @@
 		var/obj/item/stack/sheet/S = W
 		if(istype(S, /obj/item/stack/sheet/metal))
 			if(state == GIRDER_DISPLACED)
+				to_chat(user, span_warning("The frame isn't secured!"))
+				return
+			/*
 				if(S.get_amount() < 2)
 					to_chat(user, span_warning("You need two sheets of metal to create a false wall!"))
 					return
@@ -97,6 +100,7 @@
 					var/obj/structure/falsewall/F = new (loc)
 					transfer_fingerprints_to(F)
 					qdel(src)
+			*/
 			else
 				if(S.get_amount() < 2)
 					to_chat(user, span_warning("You need two sheets of metal to finish a wall!"))
@@ -108,11 +112,11 @@
 					S.use(2)
 					to_chat(user, span_notice("You add the plating."))
 					var/turf/T = get_turf(src)
-					T.place_on_top(/turf/closed/wall)
+					T.place_on_top(/turf/closed/wall/halflife/metal/weak)
 					transfer_fingerprints_to(T)
 					qdel(src)
 				return
-
+/*
 		if(istype(S, /obj/item/stack/sheet/plasteel))
 			if(state == GIRDER_DISPLACED)
 				if(S.get_amount() < 2)
@@ -155,6 +159,7 @@
 						transfer_fingerprints_to(R)
 						qdel(src)
 					return
+*/
 
 		if(S.sheettype && S.sheettype != "runed")
 			var/M = S.sheettype

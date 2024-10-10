@@ -2,8 +2,9 @@
 /turf/closed/wall/halflife
 	name = "wall"
 	desc = "A sturdy wall."
-	max_integrity = 1500
+	max_integrity = 1200
 	baseturfs = /turf/open/floor/plating/ground/dirt
+	deconstructible = FALSE
 
 /turf/closed/wall/halflife/try_decon(obj/item/I, mob/user, turf/T, modifiers)
 	return FALSE
@@ -28,4 +29,8 @@
 	desc = "A sturdy wall made of metal."
 	icon_state = "urban_wall_regular-0"
 	base_icon_state = "urban_wall_regular"
+	deconstructible = TRUE
 
+/turf/closed/wall/halflife/metal/weak
+	desc = "A wall made of metal."
+	max_integrity = 300

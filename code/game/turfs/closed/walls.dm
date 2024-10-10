@@ -38,6 +38,8 @@
 	var/smash_flags = ENVIRONMENT_SMASH_WALLS|ENVIRONMENT_SMASH_RWALLS
 	/// A turf that will replace this turf when this turf is destroyed
 	var/decon_type
+	///Can you deconstruct this?
+	var/deconstructible = TRUE
 
 	var/list/dent_decals
 
@@ -261,6 +263,9 @@
 
 /turf/closed/wall/proc/try_decon(obj/item/I, mob/user, turf/T, modifiers)
 	if(!(modifiers && modifiers[RIGHT_CLICK]))
+		return FALSE
+
+	if(!deconstructible)
 		return FALSE
 
 	if(I.tool_behaviour == TOOL_WELDER)
