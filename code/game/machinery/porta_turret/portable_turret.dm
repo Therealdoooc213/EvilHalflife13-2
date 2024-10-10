@@ -25,6 +25,7 @@
 
 	var/raised = 0			//if the turret cover is "open" and the turret is raised
 	var/raising= 0			//if the turret is currently opening or closing its cover
+	var/alwaysmovable = 0   //if you can move it regardless if it is raised or not
 
 	max_integrity = 160		//the turret's health
 	integrity_failure = 80
@@ -100,7 +101,7 @@
 
 /obj/machinery/porta_turret/update_icon_state()
 	. = ..()
-	if(!anchored)
+	if(!anchored && !alwaysmovable)
 		icon_state = "turretCover"
 		return
 	if(stat & BROKEN)
@@ -191,7 +192,7 @@
 	add_fingerprint(usr)
 
 	if(href_list["power"] && !locked)
-		if(anchored)	//you can't turn a turret on/off if it's not anchored/secured
+		if(anchored || alwaysmovable)	//you can't turn a turret on/off if it's not anchored/secured
 			on = !on	//toggle on/off
 		else
 			to_chat(usr, span_notice("It has to be secured first!"))
@@ -218,7 +219,7 @@
 		interact(usr)
 
 /obj/machinery/porta_turret/power_change()
-	if(!anchored || (stat & BROKEN) || !powered())
+	if(!anchored && !alwaysmovable || (stat & BROKEN) || !powered())
 		remove_control()
 	return ..()
 
@@ -242,24 +243,25 @@
 				qdel(src)
 
 	else if((I.tool_behaviour == TOOL_WRENCH) && (!on))
-		if(raised)
+		if(raised && !alwaysmovable)
 			return
 
 		//This code handles moving the turret around. After all, it's a portable turret!
 		if(!anchored && !isinspace())
 			setAnchored(TRUE)
-			invisibility = INVISIBILITY_MAXIMUM
-			update_appearance(UPDATE_ICON)
 			to_chat(user, span_notice("You secure the exterior bolts on the turret."))
 			if(has_cover)
 				cover = new /obj/machinery/porta_turret_cover(loc) //create a new turret. While this is handled in process(), this is to workaround a bug where the turret becomes invisible for a split second
 				cover.parent_turret = src //make the cover's parent src
+				invisibility = INVISIBILITY_MAXIMUM
+				update_appearance(UPDATE_ICON)
 		else if(anchored)
 			setAnchored(FALSE)
 			to_chat(user, span_notice("You unsecure the exterior bolts on the turret."))
 			power_change()
 			invisibility = 0
-			qdel(cover) //deletes the cover, and the turret instance itself becomes its own cover.
+			if(has_cover)
+				qdel(cover) //deletes the cover, and the turret instance itself becomes its own cover.
 
 	else if(I.GetID())
 		//Behavior lock/unlock mangement
@@ -516,7 +518,7 @@
 	return
 
 /obj/machinery/porta_turret/proc/shootAt(atom/movable/target)
-	if(!raised) //the turret has to be raised in order to fire - makes sense, right?
+	if(!raised && !alwaysmovable) //the turret has to be raised in order to fire - makes sense, right?
 		return
 
 	if(!(obj_flags & EMAGGED))	//if it hasn't been emagged, cooldown before shooting again
@@ -995,7 +997,7 @@
 	var/obj/item/ammo_box/mag = mag_type
 	var/obj/item/ammo_casing/primary_ammo = initial(mag.ammo_type)
 
-	.["base_icon_state"] = "syndie"
+	.["base_icon_state"] = "combine"
 	.["stun_projectile"] = initial(primary_ammo.projectile_type)
 	.["stun_projectile_sound"] = initial(primary_ammo.fire_sound)
 	.["lethal_projectile"] = .["stun_projectile"]
@@ -1092,3 +1094,23 @@
 				on = FALSE
 				spawn(100)
 					on = TRUE
+
+/obj/machinery/porta_turret/combine
+	name = "turret"
+	icon_state = "combine_lethal"
+	base_icon_state = "combine"
+	installation = /obj/item/gun/ballistic/automatic/ar2
+	shot_delay = 10
+	invisibility = 0
+	density = TRUE
+	desc = "A combine made turret which shoots at specified targets with a high power pulse gun."
+	req_access = list(ACCESS_SECURITY)
+	faction = list("combine")
+	has_cover = 0
+	always_up = 1
+	use_power = NO_POWER_USE
+	scan_range = 9
+	mode = TURRET_LETHAL
+	anchored = 0
+	raised = 1
+	alwaysmovable = TRUE

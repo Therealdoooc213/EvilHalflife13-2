@@ -599,6 +599,12 @@
 "fc" = (
 /turf/open/floor/plating/ground/brickroad,
 /area/halflife/indoors/sewer/tunnel)
+"fd" = (
+/obj/structure/table/halflife/no_smooth/large/wood/square{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors/laborunion)
 "fe" = (
 /obj/structure/halflife/trash/papers/two,
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -2690,6 +2696,12 @@
 /obj/machinery/light/small,
 /turf/open/floor/plating/indoor/showroom,
 /area/halflife/indoors/bar)
+"uQ" = (
+/obj/structure/chair/halflife/wood{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors/laborunion)
 "uT" = (
 /obj/structure/table/halflife/no_smooth/large/metal{
 	dir = 8
@@ -2926,6 +2938,13 @@
 	},
 /turf/open/floor/plating/indoor/tiled10,
 /area/halflife/indoors/distributioncenter)
+"wY" = (
+/obj/structure/table/halflife/no_smooth/large/wood/square{
+	dir = 1
+	},
+/obj/item/reagent_containers/glass/coffee_cup,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors/laborunion)
 "xc" = (
 /obj/structure/halflife/trash/bricks,
 /turf/open/floor/plating/ground/sidewalk,
@@ -3356,6 +3375,12 @@
 	},
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/productioncenter)
+"Aw" = (
+/obj/machinery/door/unpowered/halflife/wood{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors/laborunion)
 "Ax" = (
 /obj/structure/table/halflife/no_smooth/wood/stand,
 /obj/machinery/light/small,
@@ -3492,6 +3517,10 @@
 	},
 /turf/open/floor/plating/indoor/showroom,
 /area/halflife/indoors/restaurant)
+"BT" = (
+/obj/item/reagent_containers/food/drinks/bottle/coffeepot,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors/laborunion)
 "BW" = (
 /turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors/townhall)
@@ -28704,10 +28733,10 @@ Iw
 Iw
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
+Hb
+Hb
+Hb
+Aw
 Iw
 Iw
 Iw
@@ -28817,16 +28846,16 @@ Hb
 Yi
 Yi
 Hb
-NC
-NC
-NC
-NC
-NC
-NC
-NC
-NC
-NC
-NC
+Iw
+Iw
+Iw
+Iw
+Hb
+fd
+uQ
+Yi
+Iw
+Iw
 Iw
 IN
 NT
@@ -28939,11 +28968,11 @@ Hb
 Hb
 Hb
 Hb
-NC
-NC
-NC
-NC
-NC
+Yi
+uQ
+Yi
+Iw
+Iw
 Iw
 IN
 NT
@@ -29056,11 +29085,11 @@ ce
 ce
 Wv
 Hb
-NC
-NC
-NC
-NC
-NC
+Md
+Yi
+Yi
+Iw
+Iw
 Iw
 IN
 NT
@@ -29173,11 +29202,11 @@ Rf
 BF
 lk
 Hb
-NC
-NC
-NC
-NC
-NC
+wY
+uQ
+Yi
+Iw
+Iw
 Iw
 IN
 NT
@@ -29290,11 +29319,11 @@ Hb
 DI
 xS
 Hb
-NC
-NC
-NC
-NC
-NC
+BT
+uQ
+Yi
+Iw
+Iw
 Iw
 IN
 NT
@@ -29407,9 +29436,9 @@ Ua
 Yi
 Yi
 Hb
-Iw
-Iw
-Iw
+Hb
+Hb
+Hb
 Iw
 Iw
 Iw
