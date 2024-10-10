@@ -30,6 +30,17 @@
 	time = 1 SECONDS
 	category = CAT_WEAPON_MELEE
 
+
+/datum/crafting_recipe/improvisedshotgun
+	name = "Improvised Shotgun"
+	result = /obj/item/gun/ballistic/shotgun/doublebarrel/improvised
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+				/obj/item/restraints/handcuffs/cable = 1,
+				/obj/item/weaponcrafting/stock = 1,
+				/obj/item/stack/tape = 1)
+	time = 12 SECONDS
+	category = CAT_WEAPON_RANGED
+
 /datum/crafting_recipe/improvisedslug
 	name = "Improvised Shotgun Shell"
 	result = /obj/item/ammo_casing/shotgun/improvised

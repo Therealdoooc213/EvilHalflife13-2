@@ -406,3 +406,10 @@
 		/obj/item/stack/cable_coil = 5
 	)
 	category = CAT_MISC
+
+/datum/crafting_recipe/gunstock
+	name = "Wooden Gun Stock"
+	result = /obj/item/weaponcrafting/stock
+	reqs = list(/obj/item/stack/sheet/mineral/wood = 3)
+	time = 10 SECONDS
+	category = CAT_MISC

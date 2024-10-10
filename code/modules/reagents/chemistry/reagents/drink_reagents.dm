@@ -351,6 +351,7 @@
 	glass_icon_state = "glass_brown"
 	glass_name = "glass of coffee"
 	glass_desc = "Don't drop it, or you'll send scalding liquid and glass shards everywhere."
+	hydration_factor = 2 //hydrating, but caffiene is a diuretic
 
 /datum/reagent/consumable/coffee/overdose_process(mob/living/M)
 	. = ..()
