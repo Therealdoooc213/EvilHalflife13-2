@@ -32,6 +32,8 @@
 	var/list/color_cutoffs = null
 	var/no_glasses
 	var/damaged	= TRUE	//damaged indicates that our eyes are undergoing some level of negative effect,starts as true so it removes the impaired vision overlay if it is replacing damaged eyes
+	/// Native FOV that will be applied if a config is enabled
+	var/native_fov = FOV_90_DEGREES
 
 /obj/item/organ/eyes/Insert(mob/living/carbon/M, special = FALSE, drop_if_replaced = FALSE, initialising)
 	. = ..()
@@ -44,6 +46,8 @@
 			eye_color = HMN.eye_color
 		HMN.dna.update_ui_block(DNA_EYE_COLOR_BLOCK) //updates eye icon
 		HMN.update_body()
+	if(CONFIG_GET(flag/native_fov) && native_fov)
+		M.add_fov_trait(type, native_fov)
 	M.update_tint()
 	owner.update_sight()
 
@@ -54,6 +58,8 @@
 		HMN.eye_color = old_eye_color
 		HMN.dna.update_ui_block(DNA_EYE_COLOR_BLOCK)
 		HMN.update_body()
+	if(native_fov)
+		M.remove_fov_trait(type)
 	M.cure_blind(list(EYE_DAMAGE)) // can't be blind from eye damage if there's no eye to be damaged, still blind from not having eyes though
 	M.cure_nearsighted(list(EYE_DAMAGE)) // likewise for nearsightedness
 	M.set_eye_blur(0) // no eyes to blur

@@ -2039,7 +2039,11 @@
 
 	var/heal_amount = 0.25
 	if(ishumanbasic(M)) //indomitable human spirit
-		heal_amount *= 2
+		heal_amount *= 1.5
+
+	var/datum/component/mood/mood = M.GetComponent(/datum/component/mood)
+	if(mood) //higher moods make you more 'determined', and you heal more
+		heal_amount += (mood.mood_level/10)
 
 	for(var/thing in M.all_wounds)
 		var/datum/wound/W = thing
@@ -2048,7 +2052,6 @@
 			wounded_part.heal_damage(heal_amount, heal_amount)
 		M.adjustStaminaLoss(-heal_amount*REM) // the more wounds, the more stamina regen
 	..()
-
 
 /datum/reagent/plaguebacteria
 	name = "Yersinia pestis"

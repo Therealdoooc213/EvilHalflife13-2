@@ -9,6 +9,7 @@
 
 	update_damage_hud()
 	update_health_hud()
+	update_fov_client()
 	update_sight()
 
 	var/turf/T = get_turf(src)
