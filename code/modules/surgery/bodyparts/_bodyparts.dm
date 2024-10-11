@@ -1,4 +1,4 @@
-#define STAMINA_REGENERATION_COEFFICIENT 0.65 // How effective stamina regeneration is, with 1 being 100%
+#define STAMINA_REGENERATION_COEFFICIENT 0.50 // How effective stamina regeneration is, with 1 being 100%
 
 /obj/item/bodypart
 	name = "limb"

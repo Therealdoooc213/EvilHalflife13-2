@@ -43,19 +43,27 @@
 			var/nutrition_ratio = 0
 			switch(nutrition)
 				if(0 to NUTRITION_LEVEL_STARVING)
-					nutrition_ratio = 0.2
+					nutrition_ratio = 0.1
 				if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
-					nutrition_ratio = 0.4
+					nutrition_ratio = 0.3
 				if(NUTRITION_LEVEL_HUNGRY to NUTRITION_LEVEL_FED)
-					nutrition_ratio = 0.6
+					nutrition_ratio = 0.4
 				if(NUTRITION_LEVEL_FED to NUTRITION_LEVEL_WELL_FED)
-					nutrition_ratio = 0.8
+					nutrition_ratio = 0.6
 				else
 					nutrition_ratio = 1
+			switch(hydration) //Better hydration means better blood regen
+				if(0 to HYDRATION_LEVEL_DEHYDRATED)
+					nutrition_ratio += 0.1
+				if(HYDRATION_LEVEL_SMALLTHIRST to HYDRATION_LEVEL_HYDRATED)
+					nutrition_ratio += 0.2
+				if(HYDRATION_LEVEL_HYDRATED to HYDRATION_LEVEL_FULL)
+					nutrition_ratio += 0.4
 			if(satiety > 80)
 				nutrition_ratio *= 1.25
 			nutrition_ratio *= heart_ratio
 			adjust_nutrition(-nutrition_ratio * HUNGER_FACTOR)
+			adjust_hydration(-nutrition_ratio * HUNGER_FACTOR)
 			blood_volume = min(BLOOD_VOLUME_NORMAL(src), blood_volume + 0.5 * nutrition_ratio)
 
 		//Effects of bloodloss
