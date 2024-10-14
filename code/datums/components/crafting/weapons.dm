@@ -78,7 +78,7 @@
 	time = 10 SECONDS
 	category = CAT_WEAPON_RANGED
 
-/datum/crafting_recipe/usp
+/datum/crafting_recipe/revolver
 	name = "Colt Python"
 	result = /obj/item/gun/ballistic/revolver/coltpython
 	reqs = list(/obj/item/stack/sheet/metal = 5,
