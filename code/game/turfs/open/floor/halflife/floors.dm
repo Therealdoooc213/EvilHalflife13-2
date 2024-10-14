@@ -128,6 +128,8 @@
 	has_alternate_states = TRUE 
 	has_base_states = TRUE
 
+/turf/open/floor/plating/indoor/tile/navy/cold
+	initial_gas_mix = TCOMMS_ATMOS
 
 
 /turf/open/floor/plating/indoor/metal

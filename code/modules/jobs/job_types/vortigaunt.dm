@@ -35,3 +35,4 @@
 /datum/job/janitor/after_spawn(mob/living/carbon/human/H, mob/M)
 	. = ..()
 	H.set_species(/datum/species/vortigaunt)
+	H.remove_all_quirks()

@@ -26,6 +26,11 @@ map city13_central
 	votable
 endmap
 
+map yogstation
+	voteweight 0.7
+	votable
+endmap
+
 # Debug-only maps.
 
 map multiz_debug

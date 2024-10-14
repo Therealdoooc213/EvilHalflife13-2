@@ -13,8 +13,8 @@
 
 
 /mob/living/silicon/ai
-	name = "Overwatch"
-	real_name = "Overwatch"
+	name = "Dispatch"
+	real_name = "Dispatch"
 	icon = 'icons/mob/ai.dmi'
 	icon_state = "ai"
 	move_resist = MOVE_FORCE_VERY_STRONG

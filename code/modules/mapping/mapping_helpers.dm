@@ -81,6 +81,9 @@
 	name = "lavaland baseturf editor"
 	baseturf = /turf/open/lava/smooth/lava_land_surface
 
+/obj/effect/baseturf_helper/halflife/surface
+	name = "halflife baseturf editor"
+	baseturf = /turf/open/floor/plating/ground/dirt
 
 /obj/effect/mapping_helpers
 	icon = 'icons/effects/mapping_helpers.dmi'

@@ -1,15 +1,15 @@
 /datum/job/ai
-	title = "Overwatch"
+	title = "AI"
 	description = "NOT CURRENTLY PLAYABLE, DONT BOTHER SELECTING THIS."
 	orbit_icon = "eye"
 	auto_deadmin_role_flags = DEADMIN_POSITION_SILICON|DEADMIN_POSITION_CRITICAL
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "your laws"
 	req_admin_notify = TRUE
 	minimal_player_age = 30
-	exp_requirements = 180
+	exp_requirements = 0
 	exp_type = EXP_TYPE_CREW
 	exp_type_department = EXP_TYPE_SILICON
 	display_order = JOB_DISPLAY_ORDER_AI
@@ -18,8 +18,6 @@
 	departments_list = list(
 		/datum/job_department/silicon,
 	)
-
-	alt_titles = list("Station Central Processor", "Central Silicon Intelligence", "Cyborg Overlord")
 
 	//this should never be seen because of the way olfaction works but just in case
 	smells_like = "chained intellect"
@@ -72,7 +70,7 @@
 
 /datum/job/ai/announce(mob/living/silicon/ai/AI)
 	. = ..()
-	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(minor_announce), "[AI] has been downloaded to the central AI network.")) //YOGS - removed the co-ordinates
+	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(minor_announce), "An artificial Dispatch unit has been assigned to the district's network.")) //YOGS - removed the co-ordinates
 
 /datum/job/ai/config_check()
 	return CONFIG_GET(flag/allow_ai)
