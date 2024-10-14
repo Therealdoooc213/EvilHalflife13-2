@@ -56,9 +56,9 @@ GLOBAL_LIST_INIT(available_depts_sec, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICA
 /datum/job/officer/after_spawn(mob/living/carbon/human/H, mob/M)
 	. = ..()
 	H.faction += "combine"
-	var/r = rand(100,9000)
+	var/r = rand(100,900)
 	while (used_numbers.Find(r))
-		r = rand(100,9000)
+		r = rand(100,900)
 	used_numbers += r
 	if(istype(H.wear_id, /obj/item/card/id))
 		var/obj/item/card/id/ID = H.wear_id

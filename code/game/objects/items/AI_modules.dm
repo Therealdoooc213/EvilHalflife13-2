@@ -187,7 +187,7 @@
 	name = "toy AI"
 	desc = "A little toy model AI core with real law uploading action!" // This is the only tell that shows you can upload with this.
 	icon = 'icons/obj/toy.dmi'
-	icon_state = "AI"
+	icon_state = "Dispatch"
 	show_laws = FALSE
 
 /obj/item/aiModule/ion/toyAI/Initialize(mapload)

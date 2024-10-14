@@ -83,7 +83,7 @@
 #define MC_PRINT "PRINT"
 #define MC_CELL "CELL"
 #define MC_CHARGE "CHARGE"
-#define MC_AI "AI"
+#define MC_AI "Dispatch"
 #define MC_SENSORS "SENSORS"
 #define MC_AI_NETWORK "AINETWORK"
 

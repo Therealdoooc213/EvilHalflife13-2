@@ -747,7 +747,7 @@
 	icon_state = "panelscorched"
 	},
 /area/ruin/unpowered)
-"AI" = (
+"Dispatch" = (
 /obj/structure/table,
 /obj/item/paper_bin,
 /obj/item/pen/invisible,

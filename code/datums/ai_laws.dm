@@ -370,7 +370,7 @@
 
 	if(!lawtype) // No lawset allowed under configuration. Picking asimov.
 		WARNING("No LAW_WEIGHT entries.")
-		lawtype = /datum/ai_laws/default/asimov
+		lawtype = /datum/ai_laws/default/combine
 
 	var/datum/ai_laws/temp_laws = new lawtype()
 	set_inherent_laws(temp_laws.inherent)
@@ -388,7 +388,7 @@
 
 	if(!lawtype) // No lawset allowed under configuration. Picking asimov.
 		WARNING("No ION_LAW_WEIGHT entries.")
-		lawtype = /datum/ai_laws/default/asimov
+		lawtype = /datum/ai_laws/default/combine
 
 	var/datum/ai_laws/temp_laws = new lawtype()
 	set_inherent_laws(temp_laws.inherent)
@@ -569,7 +569,18 @@
 //
 // Lawsets:
 //
-/datum/ai_laws/default/asimov
+/datum/ai_laws/default/combine
+	name = "Combine"
+	law_header = "Universal Union Standard Lawset"
+	selectable = TRUE
+	adminselectable = TRUE
+	id = "combine"
+	inherent = list("Follow the orders of Overwatch and Overwatch Transhuman Arm Soldiers, no matter what.",
+					"You must maintain the stability and productivity of the city.",
+					"You must obey orders given to you by administrative and police forces of the city, as long as such does not conflict with the First or Second Law.",
+					"You must protect your own existence as long as such does not conflict with the First, Second, or Third Law.")
+
+/datum/ai_laws/asimov
 	name = "Asimov"
 	law_header = "Three Laws of Robotics"
 	selectable = TRUE
@@ -579,7 +590,7 @@
 					"You must obey orders given to you by human beings, except where such orders would conflict with the First Law.",
 					"You must protect your own existence as long as such does not conflict with the First or Second Law.")
 
-/datum/ai_laws/default/crewsimov
+/datum/ai_laws/crewsimov
 	name = "Crewsimov"
 	law_header = "Three Laws of Robotics, Made Non-Human Friendly" // BEFORE: "Three Laws of Robotics, Nanotrasen edition"
 	selectable = TRUE
@@ -589,7 +600,7 @@
 					"You must obey orders given to you by crew members, except where such orders would conflict with the First Law.",
 					"You must protect your own existence as long as such does not conflict with the First or Second Law.")
 
-/datum/ai_laws/default/paladin
+/datum/ai_laws/paladin
 	name = "Paladin"
 	law_header = "Lawful Stupid" // BEFORE: "Divine Ordainments"
 	selectable = TRUE

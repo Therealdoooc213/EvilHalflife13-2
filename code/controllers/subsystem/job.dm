@@ -290,7 +290,7 @@ SUBSYSTEM_DEF(job)
 
 /datum/controller/subsystem/job/proc/FillAIPosition()
 	var/ai_selected = FALSE
-	var/datum/job/job = GetJob("AI")
+	var/datum/job/job = GetJob("Dispatch")
 	if(!job)
 		return FALSE
 	for(var/i = job.total_positions, i > 0, i--)
@@ -301,7 +301,7 @@ SUBSYSTEM_DEF(job)
 			candidates = FindOccupationCandidates(job, level)
 			if(candidates.len)
 				var/mob/dead/new_player/candidate = pick(candidates)
-				if(AssignRole(candidate, "AI"))
+				if(AssignRole(candidate, "Dispatch"))
 					ai_selected++
 					break
 	if(ai_selected)

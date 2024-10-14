@@ -45,7 +45,7 @@
 		restricted_jobs += "Assistant"
 
 	if(CONFIG_GET(flag/protect_AI_from_traitor))
-		restricted_jobs += "AI"
+		restricted_jobs += "Dispatch"
 
 	var/num_traitors = 1
 
@@ -140,7 +140,7 @@
 			continue
 		if(applicant.mind.assigned_role in restricted_jobs)
 			continue
-		if(!(applicant.mind.assigned_role in GLOB.command_positions + GLOB.engineering_positions + GLOB.medical_positions + GLOB.science_positions + GLOB.supply_positions + GLOB.civilian_positions + GLOB.security_positions + list("AI", "Cyborg")))
+		if(!(applicant.mind.assigned_role in GLOB.command_positions + GLOB.engineering_positions + GLOB.medical_positions + GLOB.science_positions + GLOB.supply_positions + GLOB.civilian_positions + GLOB.security_positions + list("Dispatch", "Cyborg")))
 			continue
 		if(applicant.mind.quiet_round)
 			continue

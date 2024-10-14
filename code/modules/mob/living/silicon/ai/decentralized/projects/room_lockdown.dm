@@ -1,3 +1,4 @@
+/*
 /datum/ai_project/room_lockdown
 	name = "Room Lockdown"
 	description = "This ability will allow you to close and bolt all working doors, and trigger the fire alarms in a clicked area after a short delay and announcement."
@@ -70,3 +71,4 @@
 	if(uses < 1)
 		to_chat(owner, span_danger("No uses left!"))
 		return FALSE
+*/

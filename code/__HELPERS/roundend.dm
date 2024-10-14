@@ -35,7 +35,7 @@
 				else if(issilicon(L))
 					category = "silicons"
 					if(isAI(L))
-						mob_data += list("module" = "AI")
+						mob_data += list("module" = "Dispatch")
 					if(isAI(L))
 						mob_data += list("module" = "pAI")
 					if(iscyborg(L))

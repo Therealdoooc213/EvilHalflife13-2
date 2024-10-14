@@ -225,7 +225,7 @@
 				src.active1 = null
 				src.active2 = null
 				src.authenticated = 1
-				src.rank = "AI"
+				src.rank = "Dispatch"
 				src.screen = 1
 			else if(IsAdminGhost(usr))
 				src.active1 = null

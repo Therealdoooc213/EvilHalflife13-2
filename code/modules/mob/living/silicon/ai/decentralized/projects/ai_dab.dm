@@ -1,3 +1,4 @@
+/*
 /datum/ai_project/dab
 	name = "D.A.B"
 	description = "By varying the current levels in various components it should be possible to mimic the humanoid action of 'dabbing'"
@@ -16,3 +17,4 @@
 		datacores.DabAnimation(angle = light_dab_angle , speed = light_dab_speed)
 
 	stop()
+*/

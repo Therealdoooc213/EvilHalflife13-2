@@ -104,7 +104,7 @@ export const NtosRobotactContent = (props, context) => {
                   {borgType}
                 </LabeledList.Item>
                 <LabeledList.Item
-                  label="AI">
+                  label="Dispatch">
                   {masterAI.slice(0, 17)}
                 </LabeledList.Item>
                 <LabeledList.Item

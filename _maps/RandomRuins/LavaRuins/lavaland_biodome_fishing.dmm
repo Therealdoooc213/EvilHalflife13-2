@@ -1018,7 +1018,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/ruin/powered/fishing/hall)
-"AI" = (
+"Dispatch" = (
 /obj/machinery/smartfridge/drying_rack,
 /obj/effect/turf_decal/trimline/white/filled/line{
 	dir = 6

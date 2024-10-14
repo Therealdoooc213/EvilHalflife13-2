@@ -1240,7 +1240,7 @@
 "Az" = (
 /turf/open/floor/plating/indoor/showroom,
 /area/halflife/indoors)
-"AI" = (
+"Dispatch" = (
 /obj/structure/halflife/fence/corner/wire,
 /obj/structure/halflife/fence/vertical/wire/east,
 /turf/open/floor/plating/ground/sidewalk,

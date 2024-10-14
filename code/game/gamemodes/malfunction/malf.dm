@@ -18,11 +18,11 @@
 
 /datum/game_mode/malf/get_players_for_role(role)
 	.=..()
-	var/datum/job/ai/job = SSjob.GetJob("AI")
+	var/datum/job/ai/job = SSjob.GetJob("Dispatch")
 	for(var/datum/mind/candidate in .)
-		if(is_banned_from(candidate.current.ckey, "AI") || QDELETED(candidate) || !job.player_old_enough(candidate.current.client) || job.required_playtime_remaining(candidate.current.client))
+		if(is_banned_from(candidate.current.ckey, "Dispatch") || QDELETED(candidate) || !job.player_old_enough(candidate.current.client) || job.required_playtime_remaining(candidate.current.client))
 			. -= candidate
-		if(candidate.current.client.prefs.exp["AI"] < time_required) // Cant play AI unless you are over 10 hours.
+		if(candidate.current.client.prefs.exp["Dispatch"] < time_required) // Cant play AI unless you are over 10 hours.
 			. -= candidate
 	return .
 
@@ -31,7 +31,7 @@
 	var/did_assign = FALSE
 	while(!did_assign && antag_candidates.len > 0) {
 		AI = antag_pick(antag_candidates)
-		did_assign = SSjob.AssignRole(AI.current, "AI")
+		did_assign = SSjob.AssignRole(AI.current, "Dispatch")
 	}
 	return did_assign
 

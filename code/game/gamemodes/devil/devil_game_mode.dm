@@ -4,14 +4,14 @@
 	report_type = "devil"
 	antag_flag = ROLE_DEVIL
 	false_report_weight = 1
-	protected_jobs = list("Lawyer", "Curator", "Chaplain", "Divisional Lead", "District Administrator", "AI")
+	protected_jobs = list("Lawyer", "Curator", "Chaplain", "Divisional Lead", "District Administrator", "Dispatch")
 	required_players = 25
 	required_enemies = 1
 	recommended_enemies = 4
 	reroll_friendly = 1
 	enemy_minimum_age = 0
 	title_icon = "devil"
-	restricted_jobs = list("Cyborg", "AI", "Synthetic")
+	restricted_jobs = list("Cyborg", "Dispatch", "Synthetic")
 	protected_jobs = list("Civil Protection Officer", "Warden", "Detective", "Divisional Lead", "District Administrator", "Labor Lead", "Chief Engineer", "Chief Medical Officer", "Research Director", "Medical Officer") //YOGS -  added the hop and medical officer
 
 	var/traitors_possible = 4 //hard limit on devils if scaling is turned off

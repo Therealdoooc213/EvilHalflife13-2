@@ -343,8 +343,8 @@ GLOBAL_VAR_INIT(say_disabled, FALSE)
 	for(var/job in subtypesof(/datum/job))
 		var/datum/job/JB = new job
 		switch(JB.title)
-			if("AI")
-				final.Insert(icon('icons/mob/ai.dmi', "ai", SOUTH, 1), "AI")
+			if("Dispatch")
+				final.Insert(icon('icons/mob/ai.dmi', "ai", SOUTH, 1), "Dispatch")
 			if("Cyborg")
 				final.Insert(icon('icons/mob/robots.dmi', "robot", SOUTH, 1), "Cyborg")
 			else

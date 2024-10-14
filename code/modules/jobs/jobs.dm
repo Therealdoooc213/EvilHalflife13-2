@@ -126,7 +126,7 @@ GLOBAL_LIST_INIT(security_lightup_areas,	\
 )
 
 GLOBAL_LIST_INIT(original_nonhuman_positions, list(
-	"AI",
+	"Dispatch",
 	"Cyborg",
 	"pAI"))
 

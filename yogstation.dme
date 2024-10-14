@@ -3013,6 +3013,7 @@
 #include "code\modules\mob\living\silicon\ai\decentralized\projects\ai_huds.dm"
 #include "code\modules\mob\living\silicon\ai\decentralized\projects\ai_translation.dm"
 #include "code\modules\mob\living\silicon\ai\decentralized\projects\camera_mobility.dm"
+#include "code\modules\mob\living\silicon\ai\decentralized\projects\camera_viewrange.dm"
 #include "code\modules\mob\living\silicon\ai\decentralized\projects\coolant_manager.dm"
 #include "code\modules\mob\living\silicon\ai\decentralized\projects\cyborg_management.dm"
 #include "code\modules\mob\living\silicon\ai\decentralized\projects\examine.dm"

@@ -39,7 +39,7 @@
 	report_type = "cult"
 	antag_flag = ROLE_CULTIST
 	false_report_weight = 10
-	restricted_jobs = list("Chaplain","AI", "Cyborg", "Civil Protection Officer", "Warden", "Detective", "Divisional Lead", "District Administrator", "Labor Lead", "Research Director", "Chief Engineer", "Chief Medical Officer", "Medical Officer", "Synthetic") //Yogs: Added Medical Officer
+	restricted_jobs = list("Chaplain","Dispatch", "Cyborg", "Civil Protection Officer", "Warden", "Detective", "Divisional Lead", "District Administrator", "Labor Lead", "Research Director", "Chief Engineer", "Chief Medical Officer", "Medical Officer", "Synthetic") //Yogs: Added Medical Officer
 	protected_jobs = list()
 	required_players = 24
 	required_enemies = 4

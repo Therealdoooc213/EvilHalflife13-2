@@ -1,6 +1,6 @@
 /datum/job/ai
-	title = "AI"
-	description = "NOT CURRENTLY PLAYABLE, DONT BOTHER SELECTING THIS."
+	title = "Dispatch"
+	description = "Monitor cameras and biosignals, while utilizing remote access to operate machinery such as forcefields and turrets."
 	orbit_icon = "eye"
 	auto_deadmin_role_flags = DEADMIN_POSITION_SILICON|DEADMIN_POSITION_CRITICAL
 	faction = "Station"

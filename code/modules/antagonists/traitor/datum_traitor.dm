@@ -1,5 +1,5 @@
 #define TRAITOR_HUMAN "human"
-#define TRAITOR_AI	  "AI"
+#define TRAITOR_AI	  "Dispatch"
 
 /datum/antagonist/traitor
 	name = "Rebel Spy"
@@ -50,16 +50,19 @@
 
 /datum/antagonist/traitor/apply_innate_effects(mob/living/mob_override)
 	. = ..()
-	var/mob/living/silicon/ai/A = mob_override || owner.current
-	if(istype(A) && traitor_kind == TRAITOR_AI)
-		A.hack_software = TRUE
+	//var/mob/living/silicon/ai/A = mob_override || owner.current
+	//if(istype(A) && traitor_kind == TRAITOR_AI)
+		//A.hack_software = TRUE
 	handle_clown_mutation(owner.current, "Your training has allowed you to overcome your clownish nature, allowing you to wield weapons without harming yourself.")
 
+
+/*
 /datum/antagonist/traitor/remove_innate_effects(mob/living/mob_override)
 	. = ..()
 	var/mob/living/silicon/ai/A = mob_override || owner.current
 	if(istype(A)  && traitor_kind == TRAITOR_AI)
 		A.hack_software = FALSE
+*/
 
 /datum/antagonist/traitor/on_removal()
 	//Remove malf powers.

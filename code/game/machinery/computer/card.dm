@@ -29,7 +29,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	var/change_position_cooldown = 30
 	//Jobs you cannot open new positions for
 	var/list/blacklisted = list(
-		"AI",
+		"Dispatch",
 		"Assistant",
 		"Cyborg",
 		"Synthetic",

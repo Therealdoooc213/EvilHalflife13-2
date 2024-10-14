@@ -1884,7 +1884,7 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/indestructible,
 /area/awaymission/vr/syndicate)
-"AI" = (
+"Dispatch" = (
 /obj/structure/closet/crate/large,
 /obj/effect/turf_decal/stripes/line{
 	dir = 10

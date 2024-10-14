@@ -358,7 +358,7 @@ DEFAULT_LAWS 3
 ## See datums\ai_laws.dm for the full law lists
 
 ## standard-ish laws. These are fairly ok to run
-RANDOM_LAWS asimov
+RANDOM_LAWS combine
 #RANDOM_LAWS asimovpp
 #RANDOM_LAWS paladin
 #RANDOM_LAWS robocop

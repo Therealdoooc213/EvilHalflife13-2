@@ -105,6 +105,10 @@ GLOBAL_VAR_INIT(announcing_vox, 0)
 		to_chat(src, span_notice("Please wait [DisplayTimeText(GLOB.announcing_vox - world.time)]."))
 		return
 
+	if(AI_VOX_ENABLED == 0)
+		to_chat(src, span_notice("VOX sounds are currently disabled."))
+		return
+
 	var/list/types_list = list("Victor (male)", "Verity (female)", "Oscar (military)") //Victor is vox_sounds_male, Verity is vox_sounds, Oscar is vox_sounds_military
 	if(!is_banned_from(ckey, "Voice Announcements"))
 		types_list += "Use Microphone"

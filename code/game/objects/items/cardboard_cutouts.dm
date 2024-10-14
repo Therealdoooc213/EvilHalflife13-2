@@ -124,7 +124,7 @@
 			desc = "A cardboard cutout of a traitor."
 			icon_state = "cutout_traitor"
 		if("Nuke Op")
-			name = "[pick("Unknown", "COMMS", "Telecomms", "AI", "stealthy op", "STEALTH", "sneakybeaky", "MEDIC", "Medic")]"
+			name = "[pick("Unknown", "COMMS", "Telecomms", "Dispatch", "stealthy op", "STEALTH", "sneakybeaky", "MEDIC", "Medic")]"
 			desc = "A cardboard cutout of a nuclear operative."
 			icon_state = "cutout_fluke"
 		if("Cultist")

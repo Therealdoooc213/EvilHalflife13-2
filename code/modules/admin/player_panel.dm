@@ -236,7 +236,7 @@
 
 				else if(issilicon(M)) //silicon
 					if(isAI(M))
-						M_job = "AI"
+						M_job = "Dispatch"
 					else if(ispAI(M))
 						M_job = ROLE_PAI
 					else if(iscyborg(M))

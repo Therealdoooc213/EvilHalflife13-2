@@ -1,3 +1,4 @@
+/*
 /datum/ai_project/rgb
 	name = "RGB Lighting"
 	description = "By varying the current levels in the lighting subsystems of your servers, you can make pretty colors."
@@ -19,3 +20,4 @@
 	for(var/obj/machinery/ai/data_core/datacores in GLOB.data_cores)
 		datacores.stoptheparty()
 	..()
+*/

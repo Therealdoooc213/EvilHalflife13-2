@@ -194,7 +194,7 @@
 		else if(R.designation)
 			jobname = R.designation
 		else if(istype(R, /mob/living/silicon/ai))
-			jobname = "AI"
+			jobname = "Dispatch"
 		else if(istype(R, /mob/living/silicon/pai))
 			jobname = "pAI"
 		else

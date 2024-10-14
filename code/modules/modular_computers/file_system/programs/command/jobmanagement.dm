@@ -13,7 +13,7 @@
 	var/change_position_cooldown = 30
 	//Jobs you cannot open new positions for
 	var/list/blacklisted = list(
-		"AI",
+		"Dispatch",
 		"Assistant",
 		"Cyborg",
 		"Synthetic",

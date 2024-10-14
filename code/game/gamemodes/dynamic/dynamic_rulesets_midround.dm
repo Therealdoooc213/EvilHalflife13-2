@@ -168,7 +168,7 @@
 	antag_datum = /datum/antagonist/traitor
 	antag_flag = ROLE_TRAITOR
 	protected_roles = list("Civil Protection Officer", "Warden", "Detective", "Divisional Lead", "District Administrator", "Labor Lead", "Chief Engineer", "Chief Medical Officer", "Research Director", "Medical Officer")
-	restricted_roles = list("Cyborg", "AI", "Positronic Brain", "Synthetic")
+	restricted_roles = list("Cyborg", "Dispatch", "Positronic Brain", "Synthetic")
 	required_candidates = 1
 	weight = 7
 	cost = 10
@@ -230,7 +230,7 @@
 	name = "Nuclear Assault"
 	antag_flag = ROLE_REBEL
 	antag_datum = /datum/antagonist/nukeop
-	enemy_roles = list("AI", "Cyborg", "Civil Protection Officer", "Warden","Detective","Divisional Lead", "District Administrator")
+	enemy_roles = list("Dispatch", "Cyborg", "Civil Protection Officer", "Warden","Detective","Divisional Lead", "District Administrator")
 	required_enemies = list(3,3,3,3,2,2,1,1,0,0)
 	required_candidates = 5
 	weight = 2

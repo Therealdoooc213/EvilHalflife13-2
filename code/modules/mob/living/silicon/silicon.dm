@@ -41,7 +41,7 @@
 	var/updating = FALSE //portable camera camerachunk update
 	///Whether we have been emagged
 	var/emagged = FALSE
-	var/hack_software = FALSE //Will be able to use hacking actions
+	var/hack_software = TRUE //Will be able to use hacking actions
 	var/interaction_range = 7			//wireless control range
 	///The reference to the built-in tablet that borgs carry.
 	var/obj/item/modular_computer/tablet/integrated/modularInterface
@@ -51,6 +51,7 @@
 	. = ..()
 	GLOB.silicon_mobs += src
 	faction += "silicon"
+	faction += "combine"
 	for(var/datum/atom_hud/data/diagnostic/diag_hud in GLOB.huds)
 		diag_hud.add_atom_to_hud(src)
 	if(islist(armor))
@@ -399,7 +400,7 @@
 			else if(designation)
 				jobname = designation
 			else if(istype(src, /mob/living/silicon/ai))
-				jobname = "AI"
+				jobname = "Dispatch"
 			else if(istype(src, /mob/living/silicon/pai))
 				jobname = "pAI"
 			else

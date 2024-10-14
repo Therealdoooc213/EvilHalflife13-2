@@ -12,7 +12,7 @@
 	icon_state = "plating"
 	overfloor_placed = FALSE
 	underfloor_accessibility = UNDERFLOOR_INTERACTABLE
-	baseturfs = /turf/baseturf_bottom
+	baseturfs = /turf/open/floor/plating
 	footstep = FOOTSTEP_PLATING
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW

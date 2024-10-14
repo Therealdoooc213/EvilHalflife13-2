@@ -4,7 +4,7 @@
 	report_type = "Bloodsucker"
 	antag_flag = ROLE_BLOODSUCKER
 	false_report_weight = 10
-	restricted_jobs = list("AI", "Cyborg", "Synthetic")
+	restricted_jobs = list("Dispatch", "Cyborg", "Synthetic")
 	protected_jobs = list(
 		"District Administrator", "Labor Lead", "Divisional Lead",
 		"Research Director", "Chief Engineer", "Chief Medical Officer", "Curator", 

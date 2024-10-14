@@ -1534,7 +1534,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
-"AI" = (
+"Dispatch" = (
 /obj/machinery/telecomms/broadcaster/preset_left,
 /turf/open/floor/circuit/green/telecomms/mainframe,
 /area/tcommsat/server)
@@ -2217,7 +2217,7 @@
 /area/tcommsat/computer)
 "Ox" = (
 /obj/machinery/flasher{
-	id = "AI";
+	id = "Dispatch";
 	pixel_x = 24;
 	pixel_y = -10
 	},

@@ -6484,7 +6484,7 @@
 /area/bridge)
 "aUc" = (
 /obj/machinery/flasher{
-	id = "AI";
+	id = "Dispatch";
 	pixel_x = 24;
 	pixel_y = -10
 	},
@@ -39888,7 +39888,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/flasher{
-	id = "AI";
+	id = "Dispatch";
 	pixel_x = 8;
 	pixel_y = -23
 	},
@@ -42939,7 +42939,7 @@
 /area/hallway/secondary/entry)
 "mAe" = (
 /obj/machinery/flasher{
-	id = "AI";
+	id = "Dispatch";
 	pixel_x = 25;
 	pixel_y = 6
 	},
@@ -51386,7 +51386,7 @@
 /area/maintenance/port/aft)
 "pBl" = (
 /obj/machinery/flasher{
-	id = "AI";
+	id = "Dispatch";
 	pixel_x = 9;
 	pixel_y = -10
 	},
@@ -59337,7 +59337,7 @@
 	pixel_y = 21
 	},
 /obj/machinery/flasher{
-	id = "AI";
+	id = "Dispatch";
 	pixel_y = 24
 	},
 /obj/machinery/porta_turret/ai{
@@ -70402,7 +70402,7 @@
 	network = list("aicore")
 	},
 /obj/machinery/requests_console{
-	department = "AI";
+	department = "Dispatch";
 	departmentType = 5;
 	pixel_y = -32
 	},
@@ -71328,7 +71328,7 @@
 /area/crew_quarters/dorms)
 "wRg" = (
 /obj/machinery/flasher{
-	id = "AI";
+	id = "Dispatch";
 	pixel_y = -24
 	},
 /obj/machinery/status_display/ai_core,
