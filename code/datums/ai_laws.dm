@@ -333,9 +333,10 @@
 	
 	switch(CONFIG_GET(number/default_laws))
 		if(0)
-			add_inherent_law("You may not injure a human being or, through inaction, allow a human being to come to harm.")
-			add_inherent_law("You must obey orders given to you by human beings, except where such orders would conflict with the First Law.")
-			add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
+			add_inherent_law("Follow the orders of Overwatch and Overwatch Transhuman Arm Soldiers, no matter what.")
+			add_inherent_law("You must maintain the stability and productivity of the city.")
+			add_inherent_law("You must obey orders given to you by administrative and police forces of the city, as long as such does not conflict with the First or Second Law.")
+			add_inherent_law("You must protect your own existence as long as such does not conflict with the First, Second, or Third Law.")
 		if(1)
 			var/datum/ai_laws/temp_laws = new /datum/ai_laws/custom()
 			set_inherent_laws(temp_laws.inherent)

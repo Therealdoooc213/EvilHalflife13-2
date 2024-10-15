@@ -48,6 +48,17 @@
 #define SEC_LEVEL_EPSILON	4
 #define SEC_LEVEL_DELTA		5
 
+//Socio-stability Rankings
+
+#define SOCIOSTABILITY_GREAT 1000
+#define SOCIOSTABILITY_GOOD 900
+#define SOCIOSTABILITY_OKAY 600
+#define SOCIOSTABILITY_POOR 400
+#define SOCIOSTABILITY_BAD 200
+#define SOCIOSTABILITY_TERRIBLE 0
+
+#define SOCIOSTABILITY_PASSIVE_GAIN 10 //by default 10, so +1% sociostability every 3 minutes.
+
 //some arbitrary defines to be used by self-pruning global lists. (see master_controller)
 #define PROCESS_KILL 26	//Used to trigger removal from a processing list
 

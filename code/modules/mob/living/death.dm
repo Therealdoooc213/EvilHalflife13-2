@@ -75,6 +75,7 @@ GLOBAL_VAR_INIT(permadeath, FALSE)
 		I.on_mob_death(src, gibbed)
 	if(mind && mind.name && mind.active && !istype(T.loc, /area/centcom/ctf))
 		deadchat_broadcast(" has died at <b>[get_area_name(T)]</b>.", "<b>[mind.name]</b>", follow_target = src, turf_target = T, message_type=DEADCHAT_DEATHRATTLE)
+		SSsociostability.modifystability(-10) //Sociostability is reduced by 1% for any person's death
 	if(mind)
 		mind.store_memory("Time of death: [tod]", 0)
 	remove_from_alive_mob_list()
