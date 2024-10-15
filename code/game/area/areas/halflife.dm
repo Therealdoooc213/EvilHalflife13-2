@@ -38,6 +38,7 @@
 	sound_environment = SOUND_ENVIRONMENT_FOREST
 	max_ambience_cooldown = 30 SECONDS
 	min_ambience_cooldown = 10 SECONDS
+	daylight_multiplier = 0.35
 
 /area/halflife/indoors
 	name = "\improper Indoors"

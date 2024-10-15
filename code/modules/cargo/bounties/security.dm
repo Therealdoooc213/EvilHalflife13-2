@@ -10,3 +10,9 @@
 	reward = 300
 	required_count = 3
 	wanted_types = list(/obj/machinery/recharger)
+
+/datum/bounty/item/security/multifunctiontool
+	name = "Multifunction Electrical Tool"
+	description = "Electrical subversion tools have recently been on the rise. Ship one to the citadel for immediate study."
+	reward = 450
+	wanted_types = list(/obj/item/card/emag/halflife)

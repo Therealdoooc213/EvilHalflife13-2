@@ -144,7 +144,7 @@ SUBSYSTEM_DEF(economy)
   * the energy harvester and adds the cash from that to the budget.
   */
 /datum/controller/subsystem/economy/proc/eng_payout()
-	var/engineering_cash = 3000
+	var/engineering_cash = 2000
 	engineering_check.count()
 	var/station_integrity = 100
 	if(GLOB.start_state)

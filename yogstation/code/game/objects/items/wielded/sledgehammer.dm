@@ -10,7 +10,7 @@
 	item_state = "sledgehammer"
 	lefthand_file = 'icons/mob/inhands/weapons/hammers_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/hammers_righthand.dmi'
-	force = 3 /// The weapon requires two hands
+	force = 6 /// The weapon requires two hands
 	throwforce = 18
 	throw_range = 3 /// Doesn't throw very far
 	sharpness = SHARP_NONE
@@ -21,8 +21,6 @@
 	materials = list(/datum/material/iron=6000)
 	w_class = WEIGHT_CLASS_HUGE
 	slot_flags = ITEM_SLOT_BACK
-	wound_bonus = -15
-	bare_wound_bonus = 15
 
 /obj/item/melee/sledgehammer/Initialize(mapload)
 	. = ..()
