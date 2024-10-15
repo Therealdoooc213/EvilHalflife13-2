@@ -34,3 +34,8 @@
 	icon_state = "cityscannerframe"
 	w_class = WEIGHT_CLASS_NORMAL
 	materials = list(/datum/material/iron=12000, /datum/material/glass=4000)
+
+/obj/item/machinepiece/multifunctiontool
+	name = "Broken Multifunction Tool"
+	desc = "A broken frame for a multifunction electrical tool. You may be able to craft it into a functioning one."
+	icon_state = "alyxtool"

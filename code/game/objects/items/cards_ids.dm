@@ -117,6 +117,36 @@
 	if(!A.emag_act(user, src) && ((charges + 1) > max_charges)) // This is here because some emag_act use sleep and that could mess things up.
 		charges++ // No charge usage if they fail (likely because either no interaction or already emagged).
 
+/obj/item/card/emag/halflife
+	desc = "A handheld tool which can short out combine forcefields and machinery. Can be recharged with uranium."
+	name = "multifunction electrical tool"
+	icon_state = "alyxtool"
+	icon = 'icons/obj/tools.dmi'
+	item_state = null
+	recharge_rate = 0
+	var/emagging //are we currently emagging something
+
+/obj/item/card/emag/halflife/afterattack(atom/target, mob/user, proximity)
+	if(charges >= 1)
+		if(emagging)
+			return
+		if(!proximity && prox_check) //left in for badmins
+			return
+		emagging = TRUE
+		if(do_after(user, rand(5, 10) SECONDS, target))
+			charges--
+			if(prob(10))
+				to_chat(user, span_notice("[src] emits a zap, though appears to have failed in it's circumvention attempt."))
+				emagging = FALSE
+				return
+			log_combat(user, target, "attempted to emag")
+			if(!target.emag_act(user, src) && !((charges + 1) > max_charges))
+				charges++
+		emagging = FALSE
+
+/obj/item/card/emag/halflife/empty
+	charges = 0
+
 /obj/item/card/emag/bluespace
 	name = "bluespace cryptographic sequencer"
 	desc = "It's a blue card with a magnetic strip attached to some circuitry. It appears to have some sort of transmitter attached to it."

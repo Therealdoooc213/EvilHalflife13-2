@@ -204,6 +204,17 @@
 	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_WRENCH, TOOL_WELDER)
 	category = CAT_STRUCTURES
 
+/datum/crafting_recipe/forcefield
+	name = "Civil Protection Forcefield"
+	result = /obj/machinery/turnstile/brig/halflife/forcefield/civilprotection/nodirectional
+	time = 15 SECONDS
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+		        /obj/item/stock_parts/micro_laser = 3,
+				/obj/item/circuitmaterial = 2,
+		        /obj/item/stack/cable_coil = 10)
+	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_WRENCH, TOOL_WELDER)
+	category = CAT_STRUCTURES
+
 /datum/crafting_recipe/woodenmug
 	name = "Wooden Mug"
 	result = /obj/item/reagent_containers/glass/woodmug
@@ -217,6 +228,27 @@
 				/datum/reagent/consumable/caramel = 5)
 	result = /obj/item/stack/tape
 	time = 1
+	category = CAT_MISC
+
+/datum/crafting_recipe/receiver
+	name = "Modular Receiver"
+	result = /obj/item/weaponcrafting/receiver
+	time = 15 SECONDS
+	reqs = list(/obj/item/stack/sheet/metal = 2,
+		        /obj/item/stack/sheet/plasteel = 1,
+		        /obj/item/stack/cable_coil = 3)
+	tool_behaviors = list(TOOL_SCREWDRIVER)
+	category = CAT_MISC
+
+/datum/crafting_recipe/multifunctiontool
+	name = "Multifunction Electrical Tool"
+	result = /obj/item/card/emag/halflife/empty
+	time = 10 SECONDS
+	reqs = list(/obj/item/stack/sheet/metal = 2,
+				/obj/item/circuitmaterial = 1,
+		        /obj/item/machinepiece/multifunctiontool = 1,
+		        /obj/item/stack/tape = 1)
+	tool_behaviors = list(TOOL_SCREWDRIVER)
 	category = CAT_MISC
 
 /datum/crafting_recipe/medkit

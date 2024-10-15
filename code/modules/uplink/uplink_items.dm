@@ -360,6 +360,12 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/lockpick
 	cost = 2
 
+/datum/uplink_item/stealthy_tools/multifunctiontool
+	name = "Multifunction Tool"
+	desc = "A handheld device which can be used to short out combine machinery and forcefields. Must be recharged with uranium."
+	item = /obj/item/card/emag/halflife
+	cost = 8
+
 /datum/uplink_item/misc
 	category = UPLINK_CATEGORY_MISC
 

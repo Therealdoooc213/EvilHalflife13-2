@@ -100,6 +100,15 @@
 	icon_state = "forcefield_map"
 	forcefield = TRUE
 
+/obj/machinery/turnstile/brig/halflife/forcefield/emag_act(mob/user, obj/item/card/emag/emag_card)
+	if(on)
+		on = !on
+		icon_state = "forcefield_off"
+	else
+		on = !on
+		icon_state = "forcefield"
+	return TRUE
+
 /obj/machinery/turnstile/brig/halflife/forcefield/nodirectional
 	desc = "A forcefield which only allows those to pass who have proper access. You may be able to turn it off with the proper access."
 	directional = FALSE

@@ -745,6 +745,7 @@
 	loot = list(
 				/obj/item/crowbar/large = 2,
 				/obj/item/screwdriver,
+				/obj/item/weldingtool,
 				/obj/item/storage/backpack/satchel/leather,
 				/obj/item/storage/backpack/satchel,
 				/obj/item/storage/backpack/satchel/flat,
@@ -759,13 +760,14 @@
 				/obj/item/flashlight = 2,
 				/obj/item/kitchen/knife/makeshift,
 				/obj/item/lighter/greyscale = 2,
-				/obj/item/stack/tape = 2,
+				/obj/item/stack/tape = 3,
 				/obj/item/camera,
 				/obj/item/stack/cable_coil/yellow = 2,
 				/obj/item/stack/sheet/cloth,
 				/obj/item/stack/sheet/metal/five,
 				/obj/item/stack/sheet/metal = 2,
 				/obj/item/stack/sheet/glass = 2,
+				/obj/item/stack/sheet/mineral/uranium,
 				/obj/item/stack/sheet/mineral/wood = 2,
 				/obj/item/weaponcrafting/receiver = 3,
 				/obj/item/reagent_containers/syringe,
@@ -833,11 +835,13 @@
 				/obj/item/clothing/gloves/color/black,
 				/obj/item/clothing/head/beret/vintage,
 				/obj/item/clothing/head/soft/black,
+				/obj/item/clothing/head/flatcap,
 				/obj/item/clothing/glasses/eyepatch,
 				/obj/item/clothing/suit/jacket,
 				/obj/item/clothing/suit/jacket/miljacket,
 				/obj/item/clothing/gloves/fishing,
 				/obj/item/clothing/head/fishing,
+				/obj/item/clothing/head/welding,
 				/obj/item/clothing/mask/bandana/black
 				)
 
@@ -875,6 +879,7 @@
 				/obj/item/gun/ballistic/automatic/pistol/m1911,
 				/obj/item/gun/ballistic/automatic/pistol/m1911/no_mag,
 				/obj/item/weaponcrafting/frame/m4a1,
+				/obj/item/machinepiece/multifunctiontool = 2,
 				/obj/item/grenade/syndieminibomb/bouncer,
 				/obj/item/kitchen/knife/combat = 2,
 				/obj/item/clothing/suit/armor/kevlar = 2
