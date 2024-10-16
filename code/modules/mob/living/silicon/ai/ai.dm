@@ -81,10 +81,10 @@
 
 	var/mob/camera/ai_eye/eyeobj
 	//How fast you move your camera
-	var/sprint = 10
+	var/sprint = 8
 	var/cooldown = 0
 	var/acceleration = 1
-	var/max_camera_sprint = 50
+	var/max_camera_sprint = 40
 
 	var/mob/living/silicon/robot/deployed_shell = null //For shell control
 	var/datum/action/innate/deploy_shell/deploy_action = new
