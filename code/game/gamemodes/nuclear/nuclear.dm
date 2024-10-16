@@ -5,7 +5,7 @@
 	config_tag = "nuclear"
 	report_type = "nuclear"
 	false_report_weight = 10
-	required_players = 20 // scales with player count, 1 rebel for every 10 players, rounded down
+	required_players = 18 // scales with player count, 1 rebel for every 9 players, rounded down
 	required_enemies = 2 // needs more than one person to make a team
 	recommended_enemies = 5
 	antag_flag = ROLE_REBEL
@@ -27,7 +27,7 @@
 	var/leader_antag_datum_type = /datum/antagonist/nukeop/leader
 
 /datum/game_mode/nuclear/pre_setup()
-	var/n_agents = min(round(num_players() / 10), antag_candidates.len, agents_possible)
+	var/n_agents = min(round(num_players() / 9), antag_candidates.len, agents_possible)
 	if(n_agents >= required_enemies)
 		for(var/i = 0, i < n_agents, ++i)
 			var/datum/mind/new_op = antag_pick(antag_candidates)

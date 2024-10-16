@@ -137,11 +137,13 @@
 			charges--
 			if(prob(10))
 				to_chat(user, span_notice("[src] emits a zap, though appears to have failed in it's circumvention attempt."))
+				playsound(src, 'sound/effects/zap1.ogg', 20, 1)
 				emagging = FALSE
 				return
 			log_combat(user, target, "attempted to emag")
 			if(!target.emag_act(user, src) && !((charges + 1) > max_charges))
 				charges++
+			playsound(src, 'sound/effects/zap1.ogg', 20, 1)
 		emagging = FALSE
 
 /obj/item/card/emag/halflife/empty

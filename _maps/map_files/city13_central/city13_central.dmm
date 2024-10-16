@@ -22,6 +22,15 @@
 	},
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/sewer)
+"aj" = (
+/obj/structure/ethernet_cable{
+	icon_state = "4-8"
+	},
+/obj/structure/ethernet_cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plating,
+/area/halflife/indoors)
 "ak" = (
 /obj/machinery/door/unpowered/halflife/wood{
 	dir = 8
@@ -46,6 +55,12 @@
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/slums)
+"as" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/ground/sidewalk,
+/area/halflife/indoors/sewer/tunnel)
 "au" = (
 /obj/machinery/door/unpowered/halflife/seethrough/metal,
 /turf/open/floor/plating/indoor/showroom,
@@ -88,6 +103,23 @@
 	},
 /turf/open/floor/plating/indoor/woodc/fancy,
 /area/halflife/indoors/laborunion)
+"aH" = (
+/obj/machinery/ai/networking{
+	label = "Computer Science";
+	roundstart_connection = "Main Core"
+	},
+/obj/structure/ethernet_cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/button/door{
+	id = "aicoredoor";
+	name = "AI Chamber entrance shutters control";
+	pixel_x = -23;
+	pixel_y = 21;
+	req_access = list("ai_master")
+	},
+/turf/open/floor/plating,
+/area/halflife/indoors)
 "aJ" = (
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/woodc/wide,
@@ -557,6 +589,15 @@
 "dV" = (
 /turf/open/openspace,
 /area/halflife/indoors/productioncenter)
+"dW" = (
+/obj/structure/ethernet_cable{
+	icon_state = "4-8"
+	},
+/obj/structure/ethernet_cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating,
+/area/halflife/indoors)
 "dZ" = (
 /obj/structure/closet/crate,
 /obj/item/clothing/head/soft,
@@ -1727,13 +1768,6 @@
 /obj/machinery/vending/hydronutrients,
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/hydroponics)
-"ls" = (
-/obj/structure/fluff/traveltile{
-	aportalgoesto = "outlands_underground";
-	aportalid = "city_underground"
-	},
-/turf/open/floor/plating/indoor/metal/grate,
-/area/halflife/indoors/sewer)
 "lu" = (
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/restaurant)
@@ -1893,6 +1927,10 @@
 	},
 /turf/open/floor/plating/indoor/grooved2,
 /area/halflife/indoors/townhall)
+"mL" = (
+/obj/machinery/turnstile/brig/halflife/forcefield/science/nodirectional,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "mM" = (
 /obj/effect/turf_decal/siding/thinplating/corner{
 	dir = 1
@@ -2432,6 +2470,15 @@
 	},
 /turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors)
+"qI" = (
+/obj/machinery/camera{
+	c_tag = "Dispatch Core Room"
+	},
+/obj/machinery/porta_turret/combine{
+	on = 0
+	},
+/turf/open/floor/plasteel/dark/telecomms,
+/area/halflife/indoors)
 "qK" = (
 /obj/machinery/door/unpowered/halflife/metal,
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -2646,6 +2693,12 @@
 /turf/open/floor/plating/indoor/metal/pipe/corner{
 	dir = 1
 	},
+/area/halflife/indoors)
+"rY" = (
+/obj/structure/sign/directions/science{
+	dir = 1
+	},
+/turf/closed/wall/halflife/brick,
 /area/halflife/indoors)
 "rZ" = (
 /obj/machinery/medical_kiosk,
@@ -2922,6 +2975,17 @@
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
+"tK" = (
+/obj/structure/window/fulltile{
+	max_integrity = 150
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "aisecdoor";
+	name = "AI Chamber entrance shutters"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/halflife/indoors)
 "tL" = (
 /turf/closed/indestructible/syndicate,
 /area/halflife/outdoors)
@@ -3888,6 +3952,9 @@
 "AW" = (
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors)
+"AZ" = (
+/turf/open/floor/plating,
+/area/halflife/indoors)
 "Bb" = (
 /turf/open/floor/plating/indoor/woodc/fancy,
 /area/halflife/indoors/townhall)
@@ -3935,6 +4002,17 @@
 "Bx" = (
 /turf/open/floor/plating/indoor/showroom,
 /area/halflife/indoors/townhall)
+"BA" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/machinery/button/door{
+	id = "aisecdoor";
+	name = "AI Chamber entrance shutters control";
+	pixel_x = -23;
+	pixel_y = 21;
+	req_access = list("ai_master")
+	},
+/turf/open/floor/plasteel/dark/telecomms,
+/area/halflife/indoors)
 "BD" = (
 /obj/structure/halflife/trash/wood,
 /turf/open/floor/plating/ground/sidewalk,
@@ -3965,6 +4043,13 @@
 /area/halflife/indoors/sewer)
 "BO" = (
 /turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors)
+"BP" = (
+/obj/structure/ethernet_cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/ai/server_cabinet/prefilled,
+/turf/open/floor/plating,
 /area/halflife/indoors)
 "BR" = (
 /obj/structure/table/halflife/metal/heavy,
@@ -4157,6 +4242,10 @@
 	},
 /turf/open/floor/plating/indoor/carpet/shaggy/violet,
 /area/halflife/indoors/bar)
+"Dl" = (
+/obj/machinery/atmospherics/pipe/manifold/cyan/hidden,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/halflife/indoors)
 "Ds" = (
 /obj/structure/table/halflife/no_smooth/metal,
 /obj/item/gun/ballistic/automatic/pistol/usp,
@@ -4358,6 +4447,16 @@
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/woodc/wide,
 /area/halflife/indoors/slums)
+"EJ" = (
+/obj/machinery/ai/networking{
+	label = "Main Core";
+	roundstart_connection = "Computer Science"
+	},
+/obj/structure/ethernet_cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/halflife/indoors)
 "EK" = (
 /obj/machinery/door/unpowered/halflife/wood,
 /turf/open/floor/plating/indoor/showroom,
@@ -5025,6 +5124,10 @@
 	},
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors)
+"JS" = (
+/obj/structure/chair/office/halflife/blue,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "JT" = (
 /obj/machinery/camera{
 	c_tag = "Bar Apartment Block"
@@ -5046,6 +5149,15 @@
 /obj/structure/window/fulltile,
 /turf/open/floor/plating/indoor/tiled10,
 /area/halflife/indoors/bar)
+"JZ" = (
+/obj/structure/fans/tiny,
+/obj/machinery/turnstile/brig/halflife/forcefield/science,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "aisecdoor";
+	name = "AI Chamber entrance shutters"
+	},
+/turf/open/floor/plating,
+/area/halflife/indoors)
 "Ka" = (
 /obj/item/storage/pill_bottle/dice,
 /obj/structure/table/halflife/wood/bar,
@@ -5439,6 +5551,15 @@
 /obj/effect/turf_decal/siding/thinplating,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors)
+"Na" = (
+/obj/machinery/atmospherics/pipe/manifold/cyan/hidden{
+	dir = 8
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark/telecomms,
+/area/halflife/indoors)
 "Nb" = (
 /obj/machinery/bounty_board{
 	pixel_y = 25
@@ -5449,6 +5570,10 @@
 /obj/machinery/door/unpowered/halflife/wood,
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/townhall)
+"Nd" = (
+/obj/machinery/door/unpowered/halflife/seethrough/metal,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "Nf" = (
 /obj/structure/holohoop{
 	dir = 8
@@ -5684,6 +5809,13 @@
 	},
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors)
+"OQ" = (
+/obj/structure/fluff/traveltile{
+	aportalgoesto = "outlands_underground";
+	aportalid = "city_underground"
+	},
+/turf/open/floor/plating/indoor/metal/grate,
+/area/halflife/indoors/sewer)
 "OT" = (
 /obj/structure/table/halflife/no_smooth/dice/pristine,
 /obj/machinery/light/small,
@@ -5911,6 +6043,10 @@
 "QQ" = (
 /turf/open/floor/plating/indoor/metal/grate,
 /area/halflife/indoors/slums)
+"QR" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer/on,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/halflife/indoors)
 "QT" = (
 /obj/machinery/door/unpowered/halflife/metal{
 	dir = 4
@@ -6200,6 +6336,13 @@
 	},
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors)
+"SR" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
+	external_pressure_bound = 120;
+	name = "server vent"
+	},
+/turf/open/floor/plasteel/dark/telecomms,
+/area/halflife/indoors)
 "SU" = (
 /obj/structure/table/halflife/wood/bar,
 /obj/item/deskbell,
@@ -6250,6 +6393,12 @@
 	},
 /turf/open/floor/plating/ground/sidewalk,
 /area/halflife/outdoors)
+"To" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark/telecomms,
+/area/halflife/indoors)
 "Tp" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 9
@@ -6287,12 +6436,23 @@
 "TF" = (
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/outdoors)
+"TH" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/halflife/indoors)
 "TJ" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/floor/plating/indoor/metal/grate,
 /area/halflife/indoors/sewer)
+"TK" = (
+/obj/structure/ethernet_cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/ai/data_core,
+/turf/open/floor/plating,
+/area/halflife/indoors)
 "TL" = (
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/bar)
@@ -6741,18 +6901,16 @@
 /obj/structure/halflife/trash/food/dinner,
 /turf/open/floor/plating/indoor/carpet,
 /area/halflife/indoors/restaurant)
+"Xd" = (
+/obj/structure/table/halflife/metal/heavy,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "Xe" = (
 /obj/structure/chair/halflife/metal/folding{
 	dir = 4
 	},
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/sewer)
-"Xi" = (
-/obj/machinery/camera{
-	c_tag = "Dispatch Core Room"
-	},
-/turf/open/floor/plasteel/dark/telecomms,
-/area/halflife/indoors)
 "Xk" = (
 /obj/machinery/door/unpowered/halflife/metal{
 	dir = 8;
@@ -6772,6 +6930,12 @@
 /obj/machinery/light/small,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors)
+"Xr" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plating/ground/sidewalk,
+/area/halflife/indoors/sewer/tunnel)
 "Xs" = (
 /obj/structure/table/halflife/no_smooth/wood,
 /turf/open/floor/plating/indoor/carpet,
@@ -7019,6 +7183,12 @@
 /obj/machinery/vending/breenwater,
 /turf/open/floor/plating/indoor/tiled10,
 /area/halflife/indoors/trainstation)
+"Zj" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer/on{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark/telecomms,
+/area/halflife/indoors)
 "Zl" = (
 /obj/structure/rack,
 /obj/item/circuitboard/machine/chem_master,
@@ -20066,7 +20236,7 @@ Qp
 Qp
 Qp
 Qp
-ls
+OQ
 fp
 xE
 xE
@@ -20183,7 +20353,7 @@ Qp
 Qp
 Qp
 Qp
-ls
+OQ
 fp
 xE
 xE
@@ -20300,7 +20470,7 @@ Qp
 Qp
 Qp
 Qp
-ls
+OQ
 fp
 xE
 xE
@@ -23894,13 +24064,13 @@ Iw
 Iw
 Iw
 Iw
+rj
+JS
+Xd
 Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
+QR
+Na
+Zj
 Iw
 Iw
 Iw
@@ -24011,13 +24181,13 @@ Iw
 Iw
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
+rj
+rj
+Xd
+tK
+SR
+Dl
+TK
 Iw
 Iw
 Iw
@@ -24129,12 +24299,12 @@ Iw
 Iw
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
+Pb
+Xd
+tK
+SR
+Dl
+Ts
 Iw
 Iw
 Iw
@@ -24242,17 +24412,17 @@ Mw
 WE
 IN
 Iw
+rj
+rj
+rj
 Iw
+rj
+Xd
 Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
+aH
+tQ
+dW
+AZ
 Iw
 Iw
 Iw
@@ -24358,17 +24528,17 @@ NT
 Mw
 WE
 IN
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
+Nd
+rj
+rj
+rj
+mL
+rj
+rj
+JZ
+BA
+Dl
+Ts
 Iw
 Iw
 Iw
@@ -24476,16 +24646,16 @@ Mw
 WE
 IN
 Iw
+rj
+NK
+rj
 Iw
 Iw
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
-Iw
-Iw
+TH
+Oo
+BP
 Iw
 Iw
 Iw
@@ -24600,9 +24770,9 @@ Iw
 Iw
 Iw
 Iw
-Iw
-Iw
-Iw
+wx
+To
+wx
 Iw
 Iw
 Iw
@@ -31180,7 +31350,7 @@ uW
 XG
 XG
 XG
-XG
+Xr
 XG
 XG
 XG
@@ -31648,7 +31818,7 @@ uW
 XG
 XG
 XG
-XG
+as
 XG
 XG
 XG
@@ -35907,7 +36077,7 @@ Ze
 Iw
 Rr
 Rr
-Iw
+rY
 IN
 NT
 Mw
@@ -36248,8 +36418,8 @@ sP
 sv
 Iw
 Iw
-wx
-Ts
+EJ
+aj
 Mu
 Iw
 Iw
@@ -36365,7 +36535,7 @@ sP
 sv
 Iw
 Iw
-Xi
+qI
 CK
 tQ
 OK
