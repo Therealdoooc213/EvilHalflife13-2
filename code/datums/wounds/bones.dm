@@ -211,6 +211,7 @@
 	wound_flags = (BONE_WOUND)
 	status_effect_type = /datum/status_effect/wound/blunt/moderate
 	scar_keyword = "bluntmoderate"
+	woundpain = 25
 
 /datum/wound/blunt/moderate/crush()
 	if(prob(33))
@@ -322,6 +323,7 @@
 	internal_bleeding_chance = 40
 	wound_flags = (BONE_WOUND | ACCEPTS_GAUZE | MANGLES_BONE)
 	regen_ticks_needed = 120 // ticks every 2 seconds, 240 seconds, so roughly 4 minutes default
+	woundpain = 40
 
 /// Compound Fracture (Critical Blunt)
 /datum/wound/blunt/critical
@@ -346,6 +348,7 @@
 	internal_bleeding_chance = 60
 	wound_flags = (BONE_WOUND | ACCEPTS_GAUZE | MANGLES_BONE)
 	regen_ticks_needed = 240 // ticks every 2 seconds, 480 seconds, so roughly 8 minutes default
+	woundpain = 50
 
 // doesn't make much sense for "a" bone to stick out of your head
 /datum/wound/blunt/critical/apply_wound(obj/item/bodypart/L, silent = FALSE, datum/wound/old_wound = null, smited, attack_direction = null)

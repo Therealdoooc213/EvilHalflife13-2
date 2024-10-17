@@ -2038,8 +2038,6 @@
 	volume = min(volume, WOUND_DETERMINATION_MAX)
 
 	var/heal_amount = 0.25
-	if(ishumanbasic(M)) //indomitable human spirit
-		heal_amount *= 1.5
 
 	var/datum/component/mood/mood = M.GetComponent(/datum/component/mood)
 	if(mood) //higher moods make you more 'determined', and you heal more

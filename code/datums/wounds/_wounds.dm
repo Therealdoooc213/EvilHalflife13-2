@@ -90,6 +90,9 @@
 	/// What flags apply to this wound
 	var/wound_flags = (FLESH_WOUND | BONE_WOUND | ACCEPTS_GAUZE)
 
+	/// How much pain this wound causes while on a mob
+	var/woundpain = 0
+
 /datum/wound/Destroy()
 	if(attached_surgery)
 		QDEL_NULL(attached_surgery)

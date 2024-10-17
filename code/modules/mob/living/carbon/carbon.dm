@@ -1,5 +1,7 @@
 /mob/living/carbon
 	blood_volume = BLOOD_VOLUME_GENERIC
+	var/last_painstun = 0
+	var/painstuncooldown = 125
 
 /mob/living/carbon/Initialize(mapload)
 	. = ..()

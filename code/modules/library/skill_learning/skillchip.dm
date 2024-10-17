@@ -408,7 +408,7 @@
 
 /obj/item/skillchip/painsuppress
 	name = "Pain Suppressor skillchip"
-	auto_traits = list(TRAIT_RESISTDAMAGESLOWDOWN)
+	auto_traits = list(TRAIT_RESISTDAMAGESLOWDOWN, TRAIT_LESSPAIN)
 	skill_name = "Pain Suppression"
 	skill_description = "This chip will supress your sense of pain, letting you power through it more easily."
 	skill_icon = "skull"
@@ -418,7 +418,7 @@
 
 /obj/item/skillchip/overwatch
 	name = "Overwatch skillchip package"
-	auto_traits = list(TRAIT_RESISTDAMAGESLOWDOWN, TRAIT_ATHLETIC, TRAIT_GOOD_AIM)
+	auto_traits = list(TRAIT_RESISTDAMAGESLOWDOWN, TRAIT_ATHLETIC, TRAIT_GOOD_AIM, TRAIT_LESSPAIN)
 	skill_name = "OTA augmentation package"
 	skill_description = "This chip will better your aim, suppress pain, and increase physical fitness all in one."
 	skill_icon = "skull"

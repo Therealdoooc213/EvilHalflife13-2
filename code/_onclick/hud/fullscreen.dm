@@ -134,6 +134,11 @@
 	layer = CURSE_LAYER
 	plane = FULLSCREEN_PLANE
 
+/atom/movable/screen/fullscreen/flashholder
+	icon_state = ""
+	layer = CRIT_LAYER
+	plane = FULLSCREEN_PLANE
+
 /atom/movable/screen/fullscreen/hive_mc
 	icon_state = "hive_mc"
 	layer = CURSE_LAYER
@@ -247,3 +252,17 @@
 	icon_state = "blue_eye"
 	plane = FULLSCREEN_PLANE
 	layer = CURSE_LAYER
+
+/mob/proc/flash_fullscreen(state)
+	var/atom/movable/screen/fullscreen/flashholder/screen = screens["flashholder"]
+
+	if(!screen)
+		screen = new /atom/movable/screen/fullscreen/flashholder()
+		screens["flashholder"] = screen
+
+	if(client && screen.should_show_to(src))
+		screen.update_for_view(client.view)
+		client.screen += screen
+
+	flick(state,screen)
+	return screen

@@ -100,10 +100,12 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	var/pressuremod = 1
 	/// multiplier for EMP severity
 	var/emp_mod = 1
+	/// multiplier for pain severity
+	var/pain_mod = 1
 	///Type of damage attack does
 	var/attack_type = BRUTE
 	///lowest possible punch damage. if this is set to 0, punches will always miss
-	var/punchdamagelow = 1
+	var/punchdamagelow = 5
 	///highest possible punch damage
 	var/punchdamagehigh = 10
 	///damage at which punches from this race will stun //yes it should be to the attacked race but it's not useful that way even if it's logical
@@ -1686,6 +1688,14 @@ GLOBAL_LIST_EMPTY(features_by_species)
 					H.update_damage_overlays()
 			else//no bodypart, we deal damage with a more general method.
 				H.adjustBruteLoss(damage * hit_percent * brutemod * H.physiology.brute_mod)
+			if(damage > 15 && !HAS_TRAIT(H, TRAIT_NOPAIN))
+				shake_camera(H, 1, 1)
+			if(damage < 10)
+				H.flash_fullscreen("redflash1")
+			else if(damage < 25)
+				H.flash_fullscreen("redflash2")
+			else if(damage >= 25)
+				H.flash_fullscreen("redflash3")
 		if(BURN)
 			H.damageoverlaytemp = 20
 			if(BP)
@@ -1693,6 +1703,14 @@ GLOBAL_LIST_EMPTY(features_by_species)
 					H.update_damage_overlays()
 			else
 				H.adjustFireLoss(damage * hit_percent * burnmod * H.physiology.burn_mod)
+			if(damage > 15 && !HAS_TRAIT(H, TRAIT_NOPAIN))
+				shake_camera(H, 1, 1)
+			if(damage < 10)
+				H.flash_fullscreen("redflash1")
+			else if(damage < 20)
+				H.flash_fullscreen("redflash2")
+			else if(damage >= 20)
+				H.flash_fullscreen("redflash3")
 		if(TOX)
 			H.adjustToxLoss(damage * hit_percent * toxmod * H.physiology.tox_mod)
 		if(OXY)

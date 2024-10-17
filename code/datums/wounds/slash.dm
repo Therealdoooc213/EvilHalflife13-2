@@ -249,6 +249,7 @@
 	threshold_penalty = 10
 	status_effect_type = /datum/status_effect/wound/slash/moderate
 	scar_keyword = "slashmoderate"
+	woundpain = 10
 
 /datum/wound/slash/severe
 	name = "Open Laceration"
@@ -266,6 +267,7 @@
 	demotes_to = /datum/wound/slash/moderate
 	status_effect_type = /datum/status_effect/wound/slash/severe
 	scar_keyword = "slashsevere"
+	woundpain = 20
 
 /datum/wound/slash/critical
 	name = "Weeping Avulsion"
@@ -284,6 +286,7 @@
 	status_effect_type = /datum/status_effect/wound/slash/critical
 	scar_keyword = "slashcritical"
 	wound_flags = (FLESH_WOUND | ACCEPTS_GAUZE | MANGLES_FLESH)
+	woundpain = 30
 
 // Subtype for cleave (heretic spell)
 /datum/wound/slash/critical/cleave
