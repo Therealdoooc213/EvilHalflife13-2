@@ -12,7 +12,11 @@
 
 /datum/mood_event/maxpain
 	description = "<span class='boldwarning'>I'M IN SO MUCH PAIN!!!</span>\n"
-	mood_change = -10
+	mood_change = -15
+
+/datum/mood_event/seriouspain
+	description = "<span class='warning'>Fuck, I'm in some serious pain...</span>\n"
+	mood_change = -8
 
 /datum/mood_event/suffocation
 	description = "<span class='boldwarning'>CAN'T... BREATHE...</span>\n"

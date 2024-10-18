@@ -211,7 +211,7 @@
 	wound_flags = (BONE_WOUND)
 	status_effect_type = /datum/status_effect/wound/blunt/moderate
 	scar_keyword = "bluntmoderate"
-	woundpain = 25
+	woundpain = 20
 
 /datum/wound/blunt/moderate/crush()
 	if(prob(33))

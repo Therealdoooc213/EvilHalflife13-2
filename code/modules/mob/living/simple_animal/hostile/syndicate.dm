@@ -296,10 +296,10 @@
 	health = 45
 	maxHealth = 45
 	melee_damage_lower = 18
-	melee_damage_upper = 18
+	melee_damage_upper = 22
 	attack_vis_effect = ATTACK_EFFECT_SLASH
 	wound_bonus = -10
-	bare_wound_bonus = 20
+	bare_wound_bonus = 15
 	sharpness = SHARP_EDGED
 	obj_damage = 0
 	environment_smash = ENVIRONMENT_SMASH_NONE

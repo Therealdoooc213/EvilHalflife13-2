@@ -593,7 +593,7 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 		var/painpercent = get_complex_pain()
 
 		if(world.time > last_painstun + painstuncooldown)
-			var/probby = 25
+			var/probby = 45
 			if(lying || IsKnockdown())
 				if(prob(3) && (painpercent >= 80) )
 					emote("scream")
@@ -602,9 +602,11 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 				if(painpercent >= 100)
 					if(prob(probby))
 						last_painstun = world.time
+						shake_camera(src, 1, 1)
 						Immobilize(1 SECONDS)
 						emote("scream")
-						adjust_stutter(5 SECONDS)
+						flash_fullscreen("redflash3")
+						adjust_stutter(8 SECONDS)
 						sleep(1 SECONDS)
 						Paralyze(6 SECONDS)
 						adjust_confusion(10 SECONDS)
@@ -620,6 +622,8 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 
 		if(painpercent >= 100)
 			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "pain", /datum/mood_event/maxpain)
+		else if(painpercent >= 60)
+			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "pain", /datum/mood_event/seriouspain)
 
 /mob/living/carbon/proc/get_complex_pain()
 	var/amt = 0
@@ -637,7 +641,7 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 				BPinteg += WO.woundpain
 //		BPinteg = min(((totwound / BP.max_damage) * 100) + BPinteg, initial(BP.max_damage))
 //		if(BPinteg > amt) //this is here to ensure that pain doesn't add up, but is rather picked from the worst limb
-		amt += ((BPinteg) * dna.species.pain_mod)
+		amt += ((BPinteg) * dna.species.pain_mod) - (get_drunk_amount()/5) //inebriation reduces percieved pain
 		if(HAS_TRAIT(src, TRAIT_LESSPAIN)) //lesspain simply reduces pain by an amount
-			amt -= 25
+			amt -= 10
 	return amt
