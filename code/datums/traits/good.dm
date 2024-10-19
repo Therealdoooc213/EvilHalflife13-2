@@ -201,3 +201,13 @@
 	gain_text = span_notice("You feel like crafting some stuff.")
 	lose_text = span_danger("You lose the itch to craft.")
 	medical_record_text = "Patient is unusually speedy when creating crafts."
+
+/datum/quirk/masochist //positive moodlets instead of negative for pain
+	name = "Masochist"
+	desc = "You're built wrong... You feel pain, and it is still debillitating, but you crave and love that feeling regardless."
+	icon = "skull-crossbones"
+	value = 5
+	mob_trait = TRAIT_MASOCHIST
+	gain_text = span_notice("You crave pain.")
+	lose_text = span_danger("You lose your cravings of pain.")
+	medical_record_text = "Patient receives a rush of dopamine when pain neurocepters fire."

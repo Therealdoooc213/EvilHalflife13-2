@@ -201,13 +201,21 @@
 	timeout = 2 MINUTES
 
 /datum/mood_event/adrenaline
-	description = span_nicegreen("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!\n")
+	description = span_nicegreen("I'M FEELING THE ADRENALINE KICK IN!\n")
 	mood_change = 10
 
 /datum/mood_event/ice_cream
 	description = span_nicegreen("I recently enjoyed some nice and cool ice cream.\n")
 	mood_change = 2
 	timeout = 2 MINUTES
+
+/datum/mood_event/lovemaxpain
+	description = "<span class='boldwarning'>THE PAIN, IT HURTS SO GOOD!!!</span>\n"
+	mood_change = 12
+
+/datum/mood_event/loveseriouspain
+	description = "<span class='warning'>Fuck, it hurts so much, but feels so good...</span>\n"
+	mood_change = 6
 
 /datum/mood_event/area
 	description = "" //Fill this out in the area

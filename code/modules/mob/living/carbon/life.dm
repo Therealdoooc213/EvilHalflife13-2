@@ -621,9 +621,15 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 							adjust_confusion(1 SECONDS)
 
 		if(painpercent >= 100)
-			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "pain", /datum/mood_event/maxpain)
+			if(HAS_TRAIT(src, TRAIT_MASOCHIST))
+				SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "pain", /datum/mood_event/lovemaxpain)
+			else
+				SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "pain", /datum/mood_event/maxpain)
 		else if(painpercent >= 60)
-			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "pain", /datum/mood_event/seriouspain)
+			if(HAS_TRAIT(src, TRAIT_MASOCHIST))
+				SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "pain", /datum/mood_event/loveseriouspain)
+			else
+				SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "pain", /datum/mood_event/seriouspain)
 
 /mob/living/carbon/proc/get_complex_pain()
 	var/amt = 0
