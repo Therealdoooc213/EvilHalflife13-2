@@ -5,7 +5,7 @@
 	config_tag = "nuclear"
 	report_type = "nuclear"
 	false_report_weight = 10
-	required_players = 18 // scales with player count, 1 rebel for every 9 players, rounded down
+	required_players = 16 // scales with player count, 1 rebel for every 8 players, rounded down
 	required_enemies = 2 // needs more than one person to make a team
 	recommended_enemies = 5
 	antag_flag = ROLE_REBEL
@@ -13,9 +13,7 @@
 	title_icon = "nukeops"
 
 	announce_span = "danger"
-	announce_text = "Syndicate forces are approaching the station in an attempt to destroy it!\n\
-	<span class='danger'>Operatives</span>: Secure the nuclear authentication disk and use your nuke to destroy the station.\n\
-	<span class='notice'>Crew</span>: Defend the nuclear authentication disk and ensure that it leaves with you on the emergency shuttle."
+	announce_text = "Rebel forces have been spotted in the area making bold moves. Be ready."
 
 	var/const/agents_possible = 5 //If we ever need more syndicate agents.
 	var/nukes_left = 1 // Call 3714-PRAY right now and order more nukes! Limited offer!
@@ -27,7 +25,7 @@
 	var/leader_antag_datum_type = /datum/antagonist/nukeop/leader
 
 /datum/game_mode/nuclear/pre_setup()
-	var/n_agents = min(round(num_players() / 9), antag_candidates.len, agents_possible)
+	var/n_agents = min(round(num_players() / 8), antag_candidates.len, agents_possible)
 	if(n_agents >= required_enemies)
 		for(var/i = 0, i < n_agents, ++i)
 			var/datum/mind/new_op = antag_pick(antag_candidates)

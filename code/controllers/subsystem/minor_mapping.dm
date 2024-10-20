@@ -37,7 +37,7 @@ SUBSYSTEM_DEF(minor_mapping)
 			num_mice -= 1
 			M = null
 
-/datum/controller/subsystem/minor_mapping/proc/place_satchels(satchel_amount = 10)
+/datum/controller/subsystem/minor_mapping/proc/place_satchels(satchel_amount = 0)
 	var/list/turfs = find_satchel_suitable_turfs()
 	///List of areas where satchels should not be placed.
 	var/list/blacklisted_area_types = list(

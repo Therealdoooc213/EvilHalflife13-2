@@ -17454,6 +17454,9 @@
 /obj/structure/window/reinforced,
 /turf/open/floor/grass,
 /area/centcom/tdome/tdomeadmin)
+"cKc" = (
+/turf/closed/wall/halflife/wood,
+/area/halflife/outdoors/forest)
 "cNm" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -17781,6 +17784,10 @@
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre,
 /area/centcom/syndicate_mothership)
+"gbD" = (
+/obj/effect/spawner/lootdrop/halflife/loot/alcohol,
+/turf/open/floor/plating/ground/dirt/alt,
+/area/halflife/outdoors/forest)
 "ggU" = (
 /obj/machinery/door/airlock/centcom{
 	name = "CentCom"
@@ -18485,6 +18492,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/syndicate_mothership/control)
+"lTb" = (
+/obj/structure/bonfire,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/outdoors/forest)
 "lVu" = (
 /obj/machinery/light{
 	dir = 1
@@ -19082,6 +19093,10 @@
 	icon_state = "info11"
 	},
 /area/centcom/testchamber)
+"qmZ" = (
+/obj/effect/spawner/lootdrop/halflife/loot/consumables,
+/turf/open/floor/plating/ground/dirt/alt,
+/area/halflife/outdoors/forest)
 "qty" = (
 /obj/machinery/light,
 /turf/open/floor/engine,
@@ -19415,6 +19430,10 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors)
+"tAZ" = (
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/outdoors/forest)
 "tFv" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -41003,7 +41022,7 @@ kmM
 kmM
 tly
 kiN
-kmM
+cKc
 kiN
 kmM
 kmM
@@ -41260,7 +41279,7 @@ tly
 kmM
 kmM
 kmM
-kmM
+cKc
 kmM
 tly
 kmM
@@ -41268,7 +41287,7 @@ kmM
 tly
 kmM
 gSt
-gSt
+gbD
 jmq
 rZV
 aaa
@@ -41523,7 +41542,7 @@ kmM
 kmM
 kmM
 kmM
-kmM
+lTb
 hNt
 kmM
 jmq
@@ -41778,10 +41797,10 @@ gSt
 kmM
 tly
 gSt
+cKc
+tAZ
 gSt
-kmM
-gSt
-gSt
+qmZ
 kmM
 jmq
 rZV
@@ -42808,7 +42827,7 @@ kmM
 kmM
 kmM
 gSt
-gSt
+cKc
 kmM
 kmM
 jmq
@@ -43065,8 +43084,8 @@ kmM
 kmM
 tly
 hNt
-gSt
-kmM
+cKc
+cKc
 kmM
 jmq
 rZV
@@ -49453,12 +49472,12 @@ gSt
 kmM
 kmM
 kiN
-kmM
+jmq
 kmM
 hNt
 gSt
 kmM
-kmM
+djM
 djM
 djM
 djM
@@ -49706,16 +49725,16 @@ jmq
 jmq
 jmq
 jmq
-kmM
-kmM
-kmM
+jmq
+jmq
+jmq
 kmM
 kmM
 trS
-gSt
-kmM
+djM
+djM
 tly
-kmM
+djM
 djM
 djM
 djM
@@ -49972,7 +49991,7 @@ kmM
 gSt
 kmM
 kmM
-kmM
+djM
 djM
 djM
 djM
@@ -51505,15 +51524,15 @@ jmq
 jmq
 jmq
 jmq
-kmM
-kmM
+jmq
+jmq
 gSt
 kiN
-kmM
+jmq
 kiN
-kmM
-gSt
-gSt
+jmq
+jmq
+jmq
 kiN
 kmM
 djM

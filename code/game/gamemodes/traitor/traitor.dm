@@ -21,9 +21,7 @@
 	title_icon = "traitor"
 
 	announce_span = "danger"
-	announce_text = "There are Syndicate agents on the station!\n\
-	<span class='danger'>Traitors</span>: Accomplish your objectives.\n\
-	<span class='notice'>Crew</span>: Do not let the traitors succeed!"
+	announce_text = "Possible signs of undercover resistance movements have been spotted."
 
 	var/list/datum/mind/pre_traitors = list()
 	var/traitors_possible = 4 //hard limit on traitors if scaling is turned off
