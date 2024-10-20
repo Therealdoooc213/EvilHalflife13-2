@@ -15,6 +15,8 @@
 	harm_intent_damage = 5
 	melee_damage_lower = 21
 	melee_damage_upper = 21
+	wound_bonus = 5
+	bare_wound_bonus = 5
 	attack_vis_effect = ATTACK_EFFECT_CLAW
 	attacktext = "claws"
 	attack_sound = 'sound/creatures/halflife/zombieattack.ogg'
@@ -173,6 +175,7 @@
 	harm_intent_damage = 5
 	melee_damage_lower = 10
 	melee_damage_upper = 10
+	bare_wound_bonus = 10
 	attack_vis_effect = ATTACK_EFFECT_BITE
 	ranged = 1 //for leaping
 	attacktext = "bites"
