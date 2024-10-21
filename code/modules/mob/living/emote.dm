@@ -198,6 +198,13 @@
 	message_mime = "appears to groan!"
 	stat_allowed = SOFT_CRIT
 
+/datum/emote/living/paingroan
+	key = "paingroan"
+	key_third_person = "groans"
+	message = "groans in pain!"
+	message_mime = "appears to groan in pain!"
+	stat_allowed = SOFT_CRIT
+
 /datum/emote/living/grimace
 	key = "grimace"
 	key_third_person = "grimaces"

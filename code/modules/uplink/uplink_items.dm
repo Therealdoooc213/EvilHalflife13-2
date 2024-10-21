@@ -35,7 +35,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 		if (gamemode == /datum/game_mode/nuclear) 					// uplink code kind of needs a redesign
 			nuclear_team = locate() in GLOB.antagonist_teams	// the team discounts could be a in a GLOB with this design but it would make sense for them to be team specific...
 		if (!nuclear_team)
-			create_uplink_sales(2, "Discounted Gear", 1, sale_items, filtered_uplink_items)
+			create_uplink_sales(3, "Discounted Gear", 1, sale_items, filtered_uplink_items)
 		else
 			if (!nuclear_team.team_discounts)
 				// create 5 unlimited stock discounts
@@ -343,7 +343,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/stealthy_tools/agent_card
 	name = "Agent Identification Card"
-	desc = "A modified ID fitted with custom electronics and tools. \
+	desc = "A modified ID fitted with custom electronics, anti-tracking functionality, and tools. \
 			You are able to modify the card's name and displayed job, and steal access from other cards with it."
 	item = /obj/item/card/id/syndicate
 	cost = 5
@@ -381,6 +381,18 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	name = "Bear Trap"
 	desc = "Bears may not exist anymore, but you can still trap and ambush traitorous loyalists and other combine with this. A wrench will be needed to make them effective."
 	item = /obj/item/restraints/legcuffs/beartrap
+	cost = 2
+
+/datum/uplink_item/misc/balaclava
+	name = "Balaclava"
+	desc = "A simple balaclava. Nothing special about it, but you can hide your face and identity with it, to better get away with crimes."
+	item = /obj/item/clothing/mask/balaclava
+	cost = 1
+
+/datum/uplink_item/misc/rebelencryptionkey
+	name = "Rebel Encryption Key"
+	desc = "An encryption key that allows access to a private rebel communications channel when put inside a headset radio."
+	item = /obj/item/encryptionkey/syndicate
 	cost = 2
 
 /datum/uplink_item/misc/toolbox

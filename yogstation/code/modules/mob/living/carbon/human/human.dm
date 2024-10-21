@@ -10,6 +10,9 @@
 /mob/living/carbon/human/species/szlachta
 	race = /datum/species/szlachta
 
+/mob/living/carbon/human/species/vortigaunt
+	race = /datum/species/vortigaunt
+
 /mob/living/carbon/human/get_blood_state()
 	if((NOBLOOD in dna.species.species_traits) || (STABLEBLOOD in dna.species.species_traits)) //Can't have blood problems if your species doesn't have any blood, innit?
 		return BLOOD_SAFE

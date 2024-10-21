@@ -24,7 +24,7 @@
 		. += span_notice("It can access the following channels; [jointext(examine_text_list, ", ")].")
 
 /obj/item/encryptionkey/syndicate
-	name = "syndicate encryption key"
+	name = "rebel encryption key"
 	icon_state = "syn_cypherkey"
 	channels = list(RADIO_CHANNEL_SYNDICATE = 1)
 	syndie = TRUE//Signifies that it de-crypts Syndicate transmissions

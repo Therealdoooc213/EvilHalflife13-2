@@ -77,6 +77,7 @@
 
 /datum/antagonist/ert/overwatch
 	outfit = /datum/outfit/ert/overwatch
+	role = "UNIT-"
 
 /datum/antagonist/ert/overwatch/mp7
 	outfit = /datum/outfit/ert/overwatch/mp7

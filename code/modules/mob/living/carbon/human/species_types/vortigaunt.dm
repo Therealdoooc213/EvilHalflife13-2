@@ -29,7 +29,7 @@
 
 /datum/species/vortigaunt/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	. = ..()
-	C.real_name = "vortigaunt"
+	C.real_name = "vortigaunt [rand(111,999)]"
 	C.name = C.real_name
 	if(C.mind)
 		C.mind.name = C.real_name

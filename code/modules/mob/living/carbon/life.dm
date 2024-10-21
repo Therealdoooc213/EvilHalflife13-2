@@ -593,7 +593,7 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 		var/painpercent = get_complex_pain()
 
 		if(world.time > last_painstun + painstuncooldown)
-			var/probby = 45
+			var/probby = 40
 			if(lying || IsKnockdown())
 				if(prob(3) && (painpercent >= 80) )
 					emote("scream")
@@ -609,19 +609,19 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 						adjust_stutter(8 SECONDS)
 						sleep(1 SECONDS)
 						adjust_confusion(10 SECONDS)
-						if(prob(50))
+						if(painpercent >= 150)
 							Paralyze(6 SECONDS)
-						else
-							Paralyze(4 SECONDS)
 					else
 						last_painstun = world.time
 						//emote("scream")
 						adjust_stutter(5 SECONDS)
+						flash_fullscreen("redflash2")
 				else
 					if(painpercent >= 60)
-						if(probby)
-							//emote("scream")
-							adjust_confusion(1 SECONDS)
+						if(prob(probby/4))
+							emote("paingroan")
+							adjust_stutter(3 SECONDS)
+							flash_fullscreen("redflash2")
 
 		if(painpercent >= 100)
 			if(HAS_TRAIT(src, TRAIT_MASOCHIST))
@@ -633,6 +633,8 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 				SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "pain", /datum/mood_event/loveseriouspain)
 			else
 				SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "pain", /datum/mood_event/seriouspain)
+		else
+			SEND_SIGNAL(src, COMSIG_CLEAR_MOOD_EVENT, "pain")
 
 /mob/living/carbon/proc/get_complex_pain()
 	var/amt = 0

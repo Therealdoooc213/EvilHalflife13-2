@@ -28,11 +28,12 @@
 
 	neck = /obj/item/clothing/neck/anti_magic_collar
 	ears = /obj/item/radio/headset //so they can hear orders given to them
-	id_type = null
 	uniform = null
 	shoes = null
 
+/datum/outfit/job/vortigaunt_slave/pre_equip(mob/living/carbon/human/H)
+	H.set_species(/datum/species/vortigaunt)
+
 /datum/job/janitor/after_spawn(mob/living/carbon/human/H, mob/M)
 	. = ..()
-	H.set_species(/datum/species/vortigaunt)
 	H.remove_all_quirks()
