@@ -13,7 +13,7 @@
 	speak_chance = 1
 	speak = list("G-GOD HELP ME!","OH G-GOD!","K-KILL ME!")
 	harm_intent_damage = 5
-	melee_damage_lower = 21
+	melee_damage_lower = 19
 	melee_damage_upper = 21
 	wound_bonus = 5
 	bare_wound_bonus = 5
@@ -86,8 +86,8 @@
 	maxHealth = 100
 	health = 100
 	speak_chance = 0
-	melee_damage_lower = 8
-	melee_damage_upper = 10
+	melee_damage_lower = 7
+	melee_damage_upper = 9
 	rapid_melee = 4 //attacks quite fast
 	attack_sound = 'sound/creatures/halflife/fastzombieattack.ogg'
 	combat_mode = TRUE

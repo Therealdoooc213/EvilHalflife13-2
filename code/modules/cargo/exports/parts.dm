@@ -22,7 +22,7 @@
 	export_types = list(/obj/item/reagent_containers/food/snacks/meat/slab/xen)
 
 /datum/export/watercanister
-	cost = 50
+	cost = 60
 	unit_name = "water canister"
 	export_types = list(/obj/item/water_canister)
 

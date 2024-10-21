@@ -608,8 +608,11 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 						flash_fullscreen("redflash3")
 						adjust_stutter(8 SECONDS)
 						sleep(1 SECONDS)
-						Paralyze(6 SECONDS)
 						adjust_confusion(10 SECONDS)
+						if(prob(50))
+							Paralyze(6 SECONDS)
+						else
+							Paralyze(4 SECONDS)
 					else
 						last_painstun = world.time
 						//emote("scream")

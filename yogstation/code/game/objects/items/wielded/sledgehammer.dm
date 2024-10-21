@@ -10,7 +10,8 @@
 	item_state = "sledgehammer"
 	lefthand_file = 'icons/mob/inhands/weapons/hammers_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/hammers_righthand.dmi'
-	force = 6 /// The weapon requires two hands
+	force = 10 /// The weapon requires two hands
+	wound_bonus = 5
 	throwforce = 18
 	throw_range = 3 /// Doesn't throw very far
 	sharpness = SHARP_NONE

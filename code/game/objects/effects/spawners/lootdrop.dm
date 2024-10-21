@@ -776,6 +776,8 @@
 				/obj/item/reagent_containers/pill/patch/medkit/vial = 2,
 				/obj/item/circuitboard/machine/skill_station,
 				/obj/item/skillchip/fitness,
+				/obj/item/skillchip/painsuppress,
+				/obj/item/skillchip/aiming,
 				/obj/item/storage/firstaid/toxin
 				)
 

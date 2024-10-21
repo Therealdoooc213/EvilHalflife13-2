@@ -88,7 +88,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	merge_type = /obj/item/stack/sheet/metal
 	grind_results = list(/datum/reagent/iron = 20)
 	point_value = 2
-	tableVariant = /obj/structure/table
+	tableVariant = /obj/structure/table/halflife/metal/constructed
 	matter_amount = 4
 
 /obj/item/stack/sheet/metal/ratvar_act()
@@ -150,7 +150,7 @@ GLOBAL_LIST_INIT(plasteel_recipes, list ( \
 	merge_type = /obj/item/stack/sheet/plasteel
 	grind_results = list(/datum/reagent/iron = 20, /datum/reagent/toxin/plasma = 20)
 	point_value = 25
-	tableVariant = /obj/structure/table/reinforced
+	tableVariant = /obj/structure/table/halflife/metal/heavy
 	matter_amount = 12
 
 /obj/item/stack/sheet/plasteel/Initialize(mapload, new_amount, merge = TRUE)
