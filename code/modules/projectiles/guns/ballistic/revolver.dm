@@ -279,8 +279,9 @@
 	icon_state = "derringer" // Icon by SynnGraffkin https://github.com/Whitesands13/Whitesands/pull/655
 	w_class = WEIGHT_CLASS_TINY
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/derringer
-	fire_sound_volume = 40
-	fire_delay = 0 // Pow pow!
+	fire_sound_volume = 100
+	fire_delay = 12
+	recoil = 4 //terrible recoil. It is firing 357 rounds from an incredibly small gun.
 	can_spin = FALSE
 
 /obj/item/gun/ballistic/revolver/derringer/attackby(obj/item/A, mob/user, params)

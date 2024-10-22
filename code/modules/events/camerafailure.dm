@@ -1,7 +1,7 @@
 /datum/round_event_control/camera_failure
 	name = "Camera Failure"
 	typepath = /datum/round_event/camera_failure
-	weight = 100
+	weight = 10
 	max_occurrences = 0
 	alert_observers = FALSE
 
@@ -19,4 +19,4 @@
 			continue
 		if(C.status)
 			C.toggle_cam(null, 0)
-		iterations *= 2.5
+		iterations *= 5

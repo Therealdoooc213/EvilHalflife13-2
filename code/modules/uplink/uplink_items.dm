@@ -241,6 +241,12 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/kitchen/knife/combat
 	cost = 5
 
+/datum/uplink_item/dangerous/derringer
+	name = "Derringer"
+	desc = "An old derringer loaded in 357. Has a terrible kick, and only loads two rounds. However, it is incredibly small and easy to conceal almost anywhere, while still being very deadly."
+	item = /obj/item/gun/ballistic/revolver/derringer 
+	cost = 5
+
 /datum/uplink_item/dangerous/crossbow
 	name = "Rebar Crossbow"
 	desc = "A heated rebar crossbow. Pretty good for being jury rigged, it has accurate and high damage single shots, with ammo you can hand craft."
@@ -305,6 +311,12 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	name = "Rebar Bolt"
 	desc = "A simple piece of sharpened rebar for use with the crossbow."
 	item = /obj/item/ammo_casing/reusable/arrow/rebar
+	cost = 1
+
+/datum/uplink_item/ammo/a357
+	name = "357 Magnum Round"
+	desc = "A singular 357 magnum round. Can be used with the derringer, or a colt python revolver."
+	item = /obj/item/ammo_casing/a357 
 	cost = 1
 
 /datum/uplink_item/explosives/c4
@@ -391,9 +403,9 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/misc/rebelencryptionkey
 	name = "Rebel Encryption Key"
-	desc = "An encryption key that allows access to a private rebel communications channel when put inside a headset radio."
+	desc = "An encryption key that allows access to a private rebel communications channel when put inside a headset radio. In addition, it allows listening in to all city wide radio channels."
 	item = /obj/item/encryptionkey/syndicate
-	cost = 2
+	cost = 6
 
 /datum/uplink_item/misc/toolbox
 	name = "Full Toolbox"

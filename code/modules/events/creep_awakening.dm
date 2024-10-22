@@ -3,7 +3,7 @@
 	typepath = /datum/round_event/obsessed
 	max_occurrences = 1
 	weight = 5
-	min_players = 20
+	min_players = 15
 
 /datum/round_event/obsessed
 	fakeable = FALSE

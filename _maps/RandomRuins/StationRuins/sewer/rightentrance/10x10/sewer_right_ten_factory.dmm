@@ -1,0 +1,205 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/machinery/recycler,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"c" = (
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"d" = (
+/obj/item/radio/intercom{
+	pixel_y = -30
+	},
+/turf/open/floor/plating/indoor/metal/grate/border/warning,
+/area/halflife/indoors/sewer)
+"f" = (
+/obj/structure/frame/machine,
+/obj/item/wrench,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/sewer)
+"i" = (
+/obj/structure/halflife/trash/wood,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"j" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/sewer)
+"q" = (
+/obj/structure/halflife/trash/papers,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/sewer)
+"s" = (
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"u" = (
+/obj/structure/table/halflife/metal/heavy,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/sewer)
+"y" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"C" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"D" = (
+/obj/structure/frame/machine,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/sewer)
+"G" = (
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/sewer)
+"H" = (
+/turf/open/floor/plating/indoor/metal/grate/border/warning,
+/area/halflife/indoors/sewer)
+"O" = (
+/obj/structure/table/halflife/metal/heavy,
+/obj/structure/halflife/trash/glass/basic,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"Q" = (
+/obj/structure/table/halflife/metal/heavy,
+/obj/item/circuitboard/machine/autolathe,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/sewer)
+"R" = (
+/obj/structure/frame/machine,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"S" = (
+/turf/closed/wall/halflife/metal,
+/area/halflife/indoors/sewer)
+"Z" = (
+/obj/structure/halflife/trash/papers/three,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+
+(1,1,1) = {"
+S
+S
+S
+S
+S
+S
+S
+S
+S
+S
+"}
+(2,1,1) = {"
+S
+c
+c
+c
+H
+G
+G
+G
+u
+S
+"}
+(3,1,1) = {"
+S
+s
+c
+c
+H
+q
+G
+G
+Q
+S
+"}
+(4,1,1) = {"
+S
+a
+Z
+c
+H
+G
+G
+G
+D
+S
+"}
+(5,1,1) = {"
+S
+c
+c
+y
+H
+G
+G
+G
+G
+S
+"}
+(6,1,1) = {"
+S
+S
+S
+S
+d
+S
+S
+S
+S
+S
+"}
+(7,1,1) = {"
+S
+R
+c
+c
+H
+G
+G
+j
+G
+S
+"}
+(8,1,1) = {"
+S
+O
+c
+c
+H
+G
+G
+G
+f
+S
+"}
+(9,1,1) = {"
+S
+c
+i
+c
+H
+G
+G
+G
+D
+S
+"}
+(10,1,1) = {"
+S
+S
+S
+S
+C
+S
+S
+S
+S
+S
+"}

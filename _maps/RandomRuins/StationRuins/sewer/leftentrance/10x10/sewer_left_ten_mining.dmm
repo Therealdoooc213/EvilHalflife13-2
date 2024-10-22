@@ -1,0 +1,177 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"k" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"p" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"t" = (
+/obj/structure/ore_box,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"w" = (
+/obj/structure/closet/crate,
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"y" = (
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"A" = (
+/turf/closed/wall/halflife/metal,
+/area/halflife/indoors/sewer)
+"B" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"J" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"Q" = (
+/obj/structure/halflife/road_barrier,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"X" = (
+/obj/structure/closet/crate,
+/obj/item/pickaxe,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"Y" = (
+/obj/structure/closet/crate,
+/obj/item/t_scanner/adv_mining_scanner/lesser,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"Z" = (
+/obj/structure/closet/crate,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+
+(1,1,1) = {"
+A
+A
+k
+A
+A
+A
+A
+A
+A
+A
+"}
+(2,1,1) = {"
+A
+y
+y
+Q
+y
+y
+J
+y
+Y
+A
+"}
+(3,1,1) = {"
+A
+y
+y
+y
+y
+y
+A
+y
+w
+A
+"}
+(4,1,1) = {"
+A
+y
+p
+Q
+y
+y
+A
+y
+Z
+A
+"}
+(5,1,1) = {"
+A
+A
+A
+A
+y
+y
+A
+y
+Z
+A
+"}
+(6,1,1) = {"
+A
+t
+y
+A
+y
+y
+A
+A
+A
+A
+"}
+(7,1,1) = {"
+A
+t
+y
+A
+y
+y
+A
+y
+X
+A
+"}
+(8,1,1) = {"
+A
+t
+y
+J
+y
+y
+A
+B
+Z
+A
+"}
+(9,1,1) = {"
+A
+t
+y
+A
+y
+y
+J
+y
+w
+A
+"}
+(10,1,1) = {"
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+"}

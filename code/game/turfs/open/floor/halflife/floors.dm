@@ -67,6 +67,12 @@
 /turf/open/floor/plating/indoor/showroom
 	icon_state = "showroomfloor"
 
+/turf/open/floor/plating/indoor/sterile
+	icon_state = "sterileplate"
+
+/turf/open/floor/plating/indoor/sterilesquares
+	icon_state = "sterilesquares"
+
 /turf/open/floor/plating/indoor/greentile
 	icon_state = "greentile"
 
@@ -75,6 +81,9 @@
 
 /turf/open/floor/plating/indoor/grooved2
 	icon_state = "grooved2"
+
+/turf/open/floor/plating/indoor/lino
+	icon_state = "lino"
 
 /turf/open/floor/plating/indoor/tiled9
 	icon_state = "tiled9"

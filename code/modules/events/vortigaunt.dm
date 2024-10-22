@@ -2,7 +2,8 @@
 	name = "Spawn Vortigaunt"
 	typepath = /datum/round_event/ghost_role/vortigaunt
 	max_occurrences = 1
-	min_players = 30
+	min_players = 15
+	weight = 5
 	earliest_start = 20 MINUTES
 	dynamic_should_hijack = TRUE
 

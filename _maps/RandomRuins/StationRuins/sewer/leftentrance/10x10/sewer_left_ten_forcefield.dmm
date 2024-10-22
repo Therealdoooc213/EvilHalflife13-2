@@ -1,0 +1,201 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"b" = (
+/obj/machinery/turnstile/brig/halflife/forcefield/civilprotection/nodirectional{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"e" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"f" = (
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"h" = (
+/obj/structure/table/halflife/metal/grate,
+/obj/effect/spawner/lootdrop/halflife/loot/rare,
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"i" = (
+/turf/closed/wall/halflife/metal,
+/area/halflife/indoors/sewer)
+"o" = (
+/obj/structure/halflife/road_barrier/concrete/alt,
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"u" = (
+/obj/structure/table/halflife/metal/grate,
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"v" = (
+/obj/structure/sign/poster/halflife/combine/four{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"x" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"y" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"C" = (
+/obj/structure/table/halflife/metal/grate,
+/obj/effect/spawner/lootdrop/halflife/loot/clothing,
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"J" = (
+/obj/structure/table/halflife/metal/grate,
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"K" = (
+/obj/structure/table/halflife/metal/grate,
+/obj/effect/spawner/lootdrop/halflife/loot/ammo,
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"L" = (
+/obj/structure/table/halflife/metal/grate,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"S" = (
+/obj/machinery/light/small,
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"X" = (
+/obj/structure/sign/poster/halflife/combine{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+
+(1,1,1) = {"
+i
+i
+i
+i
+i
+i
+i
+y
+i
+i
+"}
+(2,1,1) = {"
+i
+J
+u
+J
+f
+i
+X
+f
+f
+i
+"}
+(3,1,1) = {"
+i
+J
+f
+f
+f
+i
+o
+f
+f
+i
+"}
+(4,1,1) = {"
+i
+u
+f
+o
+f
+b
+f
+f
+S
+i
+"}
+(5,1,1) = {"
+i
+f
+x
+o
+f
+i
+f
+f
+f
+i
+"}
+(6,1,1) = {"
+i
+i
+i
+i
+v
+i
+i
+i
+i
+i
+"}
+(7,1,1) = {"
+i
+L
+f
+e
+f
+i
+f
+f
+h
+i
+"}
+(8,1,1) = {"
+i
+C
+f
+i
+f
+b
+f
+f
+K
+i
+"}
+(9,1,1) = {"
+i
+J
+f
+i
+f
+i
+f
+x
+K
+i
+"}
+(10,1,1) = {"
+i
+i
+i
+i
+i
+i
+i
+i
+i
+i
+"}

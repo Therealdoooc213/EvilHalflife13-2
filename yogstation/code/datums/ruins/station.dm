@@ -297,6 +297,21 @@
 	suffix = "sewer_left_ten_medical.dmm"
 	name = "sewer left_ten_medical"
 
+/datum/map_template/ruin/station/sewer/leftentrance/tenxten/locked
+	id = "left_ten_locked"
+	suffix = "sewer_left_ten_locked.dmm"
+	name = "sewer left_ten_locked"
+
+/datum/map_template/ruin/station/sewer/leftentrance/tenxten/mining
+	id = "left_ten_mining"
+	suffix = "sewer_left_ten_mining.dmm"
+	name = "sewer left_ten_mining"
+
+/datum/map_template/ruin/station/sewer/leftentrance/tenxten/forcefield
+	id = "left_ten_forcefield"
+	suffix = "sewer_left_ten_forcefield.dmm"
+	name = "sewer left_ten_forcefield"
+
 ///The base for 10x10 right rooms
 /datum/map_template/ruin/station/sewer/rightentrance/tenxten
 	prefix = "_maps/RandomRuins/StationRuins/sewer/rightentrance/10x10/"
@@ -325,3 +340,13 @@
 	id = "right_ten_infested2"
 	suffix = "sewer_right_ten_infested2.dmm"
 	name = "sewer right_ten_infested2"
+
+/datum/map_template/ruin/station/sewer/rightentrance/tenxten/doors
+	id = "right_ten_doors"
+	suffix = "sewer_right_ten_doors.dmm"
+	name = "sewer right_ten_doors"
+
+/datum/map_template/ruin/station/sewer/rightentrance/tenxten/factory
+	id = "right_ten_factory"
+	suffix = "sewer_right_ten_factory.dmm"
+	name = "sewer right_ten_factory"

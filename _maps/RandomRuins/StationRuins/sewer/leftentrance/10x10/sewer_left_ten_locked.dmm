@@ -1,0 +1,177 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"l" = (
+/obj/structure/table/halflife/metal/heavy,
+/obj/effect/spawner/lootdrop/halflife/loot/ammo,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"p" = (
+/obj/structure/table/halflife/metal/heavy,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"t" = (
+/obj/structure/halflife/trash/cardboard,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"v" = (
+/obj/structure/table/halflife/metal/heavy,
+/obj/structure/halflife/trash/food/dinner,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"x" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"A" = (
+/turf/closed/wall/halflife/metal,
+/area/halflife/indoors/sewer)
+"F" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"L" = (
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"Q" = (
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"W" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	keylock = 1;
+	locked = 1
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"Y" = (
+/obj/structure/table/halflife/metal/heavy,
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"Z" = (
+/obj/structure/halflife/trash/bricks,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+
+(1,1,1) = {"
+A
+A
+A
+A
+A
+A
+F
+A
+A
+A
+"}
+(2,1,1) = {"
+A
+p
+p
+Y
+Q
+A
+L
+L
+L
+A
+"}
+(3,1,1) = {"
+A
+v
+Q
+Q
+Q
+A
+L
+Q
+L
+A
+"}
+(4,1,1) = {"
+A
+Y
+Q
+Q
+Q
+W
+L
+Q
+L
+A
+"}
+(5,1,1) = {"
+A
+p
+Q
+Q
+Q
+A
+L
+Q
+L
+A
+"}
+(6,1,1) = {"
+A
+Q
+Q
+Q
+Q
+A
+x
+Q
+L
+A
+"}
+(7,1,1) = {"
+A
+Q
+Z
+Q
+Y
+A
+L
+Q
+L
+A
+"}
+(8,1,1) = {"
+A
+Q
+Q
+Q
+l
+A
+L
+Q
+L
+A
+"}
+(9,1,1) = {"
+A
+Q
+Q
+Q
+p
+A
+L
+L
+t
+A
+"}
+(10,1,1) = {"
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+"}

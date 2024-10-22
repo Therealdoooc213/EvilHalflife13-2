@@ -1,7 +1,7 @@
 /datum/round_event_control/disease_outbreak
 	name = "Disease Outbreak"
 	typepath = /datum/round_event/disease_outbreak
-	max_occurrences = 0
+	max_occurrences = 1
 	min_players = 10
 	weight = 5
 
@@ -14,7 +14,7 @@
 
 
 /datum/round_event/disease_outbreak/announce(fake)
-	priority_announce("Confirmed outbreak of level 7 viral biohazard aboard [station_name()]. All personnel must contain the outbreak.", "Biohazard Alert", ANNOUNCER_OUTBREAK7)
+	priority_announce("Warning. Confirmed viral outbreak detected in your district. Antibiotics, prepare to Clamp, Isolate, Contain.", "Overwatch Biohazard Alert")
 
 /datum/round_event/disease_outbreak/setup()
 	announceWhen = rand(15, 30)
@@ -29,7 +29,7 @@
 	*/
 
 	if(!virus_type && !advanced_virus)
-		virus_type = pick(/datum/disease/advance/flu, /datum/disease/advance/cold, /datum/disease/sleepy)
+		virus_type = pick(/datum/disease/flu, /datum/disease/cold, /datum/disease/sleepy)
 
 	for(var/mob/living/carbon/human/H in shuffle(GLOB.alive_mob_list))
 		var/turf/T = get_turf(H)

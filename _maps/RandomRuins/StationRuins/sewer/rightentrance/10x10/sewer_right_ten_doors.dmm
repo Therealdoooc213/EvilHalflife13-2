@@ -1,0 +1,191 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"c" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"e" = (
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/indoor/checkered,
+/area/halflife/indoors/sewer)
+"g" = (
+/turf/open/floor/plating/indoor/grooved2,
+/area/halflife/indoors/sewer)
+"h" = (
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"j" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"n" = (
+/turf/closed/wall/halflife/metal,
+/area/halflife/indoors/sewer)
+"p" = (
+/mob/living/simple_animal/hostile/halflife/headcrab,
+/turf/open/floor/plating/indoor/checkered,
+/area/halflife/indoors/sewer)
+"t" = (
+/turf/open/floor/plating/indoor/checkered,
+/area/halflife/indoors/sewer)
+"w" = (
+/turf/open/floor/plating/indoor/lino,
+/area/halflife/indoors/sewer)
+"x" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"A" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/checkered,
+/area/halflife/indoors/sewer)
+"B" = (
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"E" = (
+/turf/open/floor/plating/indoor/grooved,
+/area/halflife/indoors/sewer)
+"L" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/lino,
+/area/halflife/indoors/sewer)
+"N" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"O" = (
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"X" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/metal,
+/area/halflife/indoors/sewer)
+"Z" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/grooved,
+/area/halflife/indoors/sewer)
+
+(1,1,1) = {"
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+"}
+(2,1,1) = {"
+n
+h
+c
+g
+L
+w
+w
+n
+B
+n
+"}
+(3,1,1) = {"
+n
+n
+n
+g
+n
+w
+w
+L
+B
+n
+"}
+(4,1,1) = {"
+n
+E
+Z
+g
+n
+n
+n
+n
+B
+n
+"}
+(5,1,1) = {"
+n
+n
+n
+g
+n
+t
+p
+n
+B
+n
+"}
+(6,1,1) = {"
+n
+n
+g
+g
+A
+t
+e
+n
+B
+n
+"}
+(7,1,1) = {"
+n
+n
+g
+n
+n
+n
+n
+n
+X
+n
+"}
+(8,1,1) = {"
+n
+g
+g
+x
+O
+n
+B
+B
+B
+n
+"}
+(9,1,1) = {"
+n
+g
+g
+n
+O
+j
+B
+B
+B
+n
+"}
+(10,1,1) = {"
+n
+n
+n
+n
+N
+n
+n
+n
+n
+n
+"}

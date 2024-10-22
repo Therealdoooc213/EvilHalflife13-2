@@ -884,5 +884,6 @@
 				/obj/item/machinepiece/multifunctiontool = 2,
 				/obj/item/grenade/syndieminibomb/bouncer,
 				/obj/item/kitchen/knife/combat = 2,
+				/obj/item/stack/telecrystal/five,
 				/obj/item/clothing/suit/armor/kevlar = 2
 				)

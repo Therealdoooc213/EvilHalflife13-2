@@ -1114,3 +1114,6 @@
 	anchored = 0
 	raised = 1
 	alwaysmovable = TRUE
+
+/obj/machinery/porta_turret/combine/off
+	on = FALSE
