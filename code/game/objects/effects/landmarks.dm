@@ -93,6 +93,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Union Engineer"
 	icon_state = "Station Engineer"
 
+/obj/effect/landmark/start/cleanup_technician
+	name = "Cleanup Technician"
+	icon_state = "Station Engineer"
+
 /obj/effect/landmark/start/shaft_miner
 	name = "Shaft Miner"
 	icon_state = "Shaft Miner"

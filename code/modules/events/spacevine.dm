@@ -2,8 +2,8 @@
 	name = "Spacevine"
 	typepath = /datum/round_event/spacevine
 	weight = 15
-	max occurrences = 0
-	min_players = 25
+	max occurrences = 1
+	min_players = 15
 
 /datum/round_event/spacevine
 	fakeable = FALSE
@@ -13,7 +13,7 @@
 
 	var/obj/structure/spacevine/SV = new()
 
-	for(var/area/maintenance/A in GLOB.areas)
+	for(var/area/halflife/indoors/slums/A in GLOB.areas)
 		for(var/turf/F in A.get_turfs_from_all_zlevels())
 			if(F.Enter(SV))
 				turfs += F
@@ -281,7 +281,7 @@
 
 // SPACE VINES (Note that this code is very similar to Biomass code)
 /obj/structure/spacevine
-	name = "space vines"
+	name = "xenian vines"
 	desc = "An extremely expansionistic species of vine."
 	icon = 'icons/effects/spacevines.dmi'
 	icon_state = "Light1"
@@ -334,7 +334,7 @@
 	var/override = 0
 	for(var/datum/spacevine_mutation/SM in mutations)
 		override += SM.on_chem(src, R)
-	if(!override && istype(R, /datum/reagent/toxin/plantbgone))
+	if(!override && istype(R, /datum/reagent/toxin/plantbgone) || istype(R, /datum/reagent/toxin/cleanupsolution))
 		if(prob(50))
 			qdel(src)
 

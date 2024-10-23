@@ -27,6 +27,7 @@
 		"Psychiatrist" = list("medical","brown"),
 		"Union Scientist" = list("science","purple"),
 		"Cargo Technician" = list("cargo","brown"),
+		"Cleanup Technician" = list("cargo","yellow"),
 		"Shaft Miner" = list("cargo","black"),
 		"Bartender" = list("civillian","black"),
 		"Botanist" = list("civillian","blue"),

@@ -197,9 +197,10 @@
 	name = "survival knife"
 	icon_state = "survivalknife"
 	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 35, "embedded_fall_chance" = 10)
-	desc = "A hunting grade survival knife."
-	force = 15
-	throwforce = 15
+	desc = "A knife rated for use against xenian fauna and infestations. Sharp and deadly."
+	force = 17
+	throwforce = 17
+	wound_bonus = 10
 	bayonet = TRUE
 
 /obj/item/kitchen/knife/combat/bone

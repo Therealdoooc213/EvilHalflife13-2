@@ -480,7 +480,7 @@
 /proc/get_all_jobs()
 	return list("Citizen", "District Administrator", "Labor Lead", "Bartender", "Cook", "Botanist", "Union Foreman", "Cargo Technician",
 				"Shaft Miner", "Clown", "Mime", "Janitor", "Curator", "Lawyer", "Chaplain", "Chief Engineer", "Union Engineer",
-				"Atmospheric Technician", "Chief Medical Officer", "Union Doctor", "Chemist", "Geneticist", "Virologist",
+				"Atmospheric Technician", "Chief Medical Officer", "Union Doctor", "Chemist", "Geneticist", "Virologist", "Cleanup Technician",
 				// yogs start - Yog jobs
 				"Research Director", "Union Scientist", "Roboticist", "Divisional Lead", "Warden", "Detective", "Civil Protection Officer",
 				"Network Admin", "Mining Medic", "Paramedic", "Psychiatrist", "Clerk", "Tourist", "Space Bartender", "Artist", "Medical Officer", "Synthetic")

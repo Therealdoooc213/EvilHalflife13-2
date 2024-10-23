@@ -83,6 +83,7 @@ GLOBAL_LIST_INIT(original_supply_positions, list(
 	"Labor Lead",
 	"Union Foreman",
 	"Cargo Technician",
+	"Cleanup Technician",
 	"Shaft Miner"))
 
 GLOBAL_LIST_INIT(supply_lightup_areas,			\

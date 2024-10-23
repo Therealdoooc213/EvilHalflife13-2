@@ -317,6 +317,7 @@
 	"Roboticist" = list("science","black"),
 	"Union Foreman" = list("cargo","silver"),
 	"Cargo Technician" = list("cargo","brown"),
+	"Cleanup Technician" = list("cargo","yellow"),
 	"Shaft Miner" = list("cargo","black"),
 	"Mining Medic" = list("cargo","blue"),
 	"Bartender" = list("civillian","black"),
