@@ -122,6 +122,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/yogs/infiltrator_base/jail)
+"acG" = (
+/obj/machinery/ntnet_relay,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/outdoors)
 "acQ" = (
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
@@ -17456,15 +17460,6 @@
 /obj/structure/window/reinforced,
 /turf/open/floor/grass,
 /area/centcom/tdome/tdomeadmin)
-"cMn" = (
-/obj/machinery/door/unpowered/halflife/metal/red{
-	dir = 8;
-	keylock = 1;
-	locked = 1;
-	lockid = "rebel"
-	},
-/turf/open/floor/plating/indoor/woodc/mosaic,
-/area/halflife/indoors)
 "cNm" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -17490,6 +17485,15 @@
 "cQn" = (
 /turf/closed/wall/halflife/metal,
 /area/centcom/evac)
+"cRD" = (
+/obj/machinery/door/unpowered/halflife/metal/red{
+	dir = 8;
+	keylock = 1;
+	locked = 1;
+	lockid = "rebel"
+	},
+/turf/open/floor/plating/indoor/lino,
+/area/halflife/indoors)
 "cSn" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -17510,11 +17514,6 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/plating/indoor/metal,
 /area/halflife/outdoors/forest)
-"cVC" = (
-/obj/structure/bed/halflife/bedframe/wire,
-/obj/structure/bed/halflife/mattress/stale,
-/turf/open/floor/plating/indoor/woodc/mosaic,
-/area/halflife/indoors)
 "cYf" = (
 /obj/structure/chair/comfy/halflife/ergo{
 	dir = 4
@@ -17566,6 +17565,10 @@
 "djq" = (
 /obj/effect/landmark/start/nukeop_leader,
 /turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
+"djK" = (
+/obj/structure/dresser,
+/turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors)
 "djM" = (
 /turf/closed/wall/halflife/metal,
@@ -17720,6 +17723,16 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/grass,
 /area/centcom/tdome/tdomeadmin)
+"ezb" = (
+/obj/structure/mirror{
+	pixel_x = 24
+	},
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 11
+	},
+/turf/open/floor/plating/indoor/lino,
+/area/halflife/indoors)
 "ezz" = (
 /obj/structure/chair/comfy/halflife/ergo{
 	dir = 1
@@ -18129,6 +18142,14 @@
 /obj/effect/mapping_helpers/airlock/access/all/admin/general,
 /turf/open/floor/plasteel,
 /area/centcom/control)
+"iuc" = (
+/obj/machinery/shower{
+	dir = 8;
+	pixel_y = -4
+	},
+/obj/structure/drain,
+/turf/open/floor/plating/indoor/lino,
+/area/halflife/indoors)
 "iuu" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Commander's Quarters"
@@ -18149,10 +18170,6 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer/tunnel)
-"ixE" = (
-/obj/machinery/ntnet_relay,
-/turf/open/floor/plating/indoor/woodc,
-/area/halflife/outdoors)
 "iyi" = (
 /turf/closed/wall/halflife/brick,
 /area/halflife/indoors)
@@ -18242,6 +18259,9 @@
 /area/halflife/indoors)
 "jqO" = (
 /turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors)
+"jAu" = (
+/turf/open/floor/plating/indoor/lino,
 /area/halflife/indoors)
 "jBX" = (
 /obj/machinery/door/airlock/centcom{
@@ -18957,6 +18977,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/syndicate_mothership/control)
+"ohQ" = (
+/turf/closed/indestructible/syndicate,
+/area/halflife/outdoors)
 "okx" = (
 /obj/machinery/door/unpowered/halflife/metal/red{
 	keylock = 1;
@@ -18987,16 +19010,6 @@
 /obj/structure/rack,
 /turf/open/floor/plasteel/dark,
 /area/yogs/infiltrator_base)
-"ozX" = (
-/obj/structure/mirror{
-	pixel_x = 24
-	},
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 11
-	},
-/turf/open/floor/plating/indoor/lino,
-/area/halflife/indoors)
 "oAH" = (
 /obj/machinery/light{
 	dir = 1
@@ -19025,6 +19038,11 @@
 	},
 /turf/open/floor/engine,
 /area/centcom/syndicate_mothership)
+"oEC" = (
+/obj/structure/bed/halflife/bedframe/wire,
+/obj/structure/bed/halflife/mattress/stale,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
 "oGz" = (
 /obj/structure/table/halflife/metal/grate,
 /turf/open/floor/plating/indoor/concrete/small,
@@ -19094,6 +19112,12 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors)
+"pjr" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
 "pjW" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/poddoor/shutters{
@@ -19129,15 +19153,16 @@
 	},
 /turf/open/floor/plating/indoor/metal,
 /area/centcom/ferry)
+"pxS" = (
+/obj/structure/table/halflife/no_smooth/wood/stand,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
 "pyV" = (
 /obj/structure/table/halflife/metal/grate,
 /obj/item/ammo_box/magazine/usp9mm,
 /obj/item/ammo_box/magazine/usp9mm,
 /obj/item/hatchet/wooden,
 /turf/open/floor/plating/indoor/metal/plate,
-/area/halflife/indoors)
-"pFp" = (
-/turf/open/floor/plating/indoor/lino,
 /area/halflife/indoors)
 "pGP" = (
 /obj/structure/flora/tree/jungle/small,
@@ -19272,10 +19297,6 @@
 /obj/structure/table/halflife/metal/heavy,
 /turf/open/floor/plating/indoor/grooved2,
 /area/centcom/ferry)
-"qxS" = (
-/obj/machinery/telecomms/allinone,
-/turf/open/floor/plating/indoor/woodc,
-/area/halflife/outdoors)
 "qzY" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -19325,8 +19346,7 @@
 	},
 /turf/open/floor/plating/ground/brickroad,
 /area/halflife/outdoors/forest)
-"rdQ" = (
-/obj/structure/table/halflife/no_smooth/wood/stand,
+"raG" = (
 /turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors)
 "rhy" = (
@@ -19370,12 +19390,6 @@
 /obj/structure/table/halflife/no_smooth/metal,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/centcom/ferry)
-"rtC" = (
-/obj/structure/toilet{
-	pixel_y = 18
-	},
-/turf/open/floor/plating/indoor/lino,
-/area/halflife/indoors)
 "rup" = (
 /turf/open/floor/plasteel,
 /area/centcom/control)
@@ -19390,12 +19404,6 @@
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/plasteel/dark,
 /area/yogs/infiltrator_base)
-"rvM" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/plating/indoor/woodc/mosaic,
-/area/halflife/indoors)
 "rxZ" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -19461,10 +19469,6 @@
 "rZV" = (
 /turf/closed/indestructible/syndicate,
 /area/halflife/outdoors/forest)
-"sbc" = (
-/obj/structure/dresser,
-/turf/open/floor/plating/indoor/woodc/mosaic,
-/area/halflife/indoors)
 "shs" = (
 /obj/machinery/light{
 	dir = 4
@@ -19628,9 +19632,6 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
-"trU" = (
-/turf/closed/indestructible/syndicate,
-/area/halflife/outdoors)
 "tFv" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -19736,6 +19737,12 @@
 "upb" = (
 /turf/open/floor/plating/indoor/metal/walkway,
 /area/centcom/ferry)
+"upg" = (
+/obj/structure/toilet{
+	pixel_y = 18
+	},
+/turf/open/floor/plating/indoor/lino,
+/area/halflife/indoors)
 "ury" = (
 /obj/structure/flora/tree/jungle,
 /turf/open/floor/plating/ground/dirt,
@@ -19775,15 +19782,6 @@
 "uAN" = (
 /turf/open/floor/plating/ground/sidewalk,
 /area/halflife/indoors/sewer/tunnel)
-"uCv" = (
-/obj/machinery/door/unpowered/halflife/metal/red{
-	dir = 8;
-	keylock = 1;
-	locked = 1;
-	lockid = "rebel"
-	},
-/turf/open/floor/plating/indoor/lino,
-/area/halflife/indoors)
 "uDo" = (
 /obj/item/storage/firstaid/toxin,
 /obj/item/storage/firstaid/o2{
@@ -19840,6 +19838,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/tdome/tdomeobserve)
+"uUl" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/lino,
+/area/halflife/indoors)
 "uUN" = (
 /obj/machinery/door/unpowered/halflife/metal{
 	dir = 4
@@ -19862,6 +19866,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ctf)
+"uYu" = (
+/obj/machinery/door/unpowered/halflife/metal/red{
+	dir = 8;
+	keylock = 1;
+	locked = 1;
+	lockid = "rebel"
+	},
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
 "vbn" = (
 /turf/open/floor/plating/indoor/metal/grate/border/warning,
 /area/halflife/indoors)
@@ -19901,9 +19914,6 @@
 /obj/structure/window/reinforced,
 /turf/open/floor/grass,
 /area/centcom/tdome/tdomeadmin)
-"vnG" = (
-/turf/open/floor/plating/indoor/woodc/mosaic,
-/area/halflife/indoors)
 "vqc" = (
 /obj/effect/landmark/xeno_spawn,
 /turf/open/floor/plating/ground/dirt,
@@ -19949,14 +19959,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/ferry)
-"vDl" = (
-/obj/machinery/shower{
-	dir = 8;
-	pixel_y = -4
-	},
-/obj/structure/drain,
-/turf/open/floor/plating/indoor/lino,
-/area/halflife/indoors)
 "vDN" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/effect/turf_decal/trimline/secred/filled/corner/lower,
@@ -20104,6 +20106,10 @@
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
+"wwr" = (
+/obj/machinery/telecomms/allinone,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/outdoors)
 "wyt" = (
 /turf/open/floor/plating/ground/sidewalk,
 /area/halflife/outdoors/forest)
@@ -20189,12 +20195,6 @@
 "xcC" = (
 /turf/open/floor/plating/indoor/grooved2,
 /area/centcom/ferry)
-"xfp" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/plating/indoor/lino,
-/area/halflife/indoors)
 "xfr" = (
 /turf/open/floor/plating/indoor/metal/walkway/corner{
 	dir = 1
@@ -52059,7 +52059,7 @@ kmM
 kmM
 kmM
 kmM
-kmM
+trS
 kmM
 gSt
 kmM
@@ -57980,7 +57980,7 @@ kmM
 kmM
 tly
 kiN
-gSt
+eJp
 gSt
 kmM
 gSt
@@ -58488,7 +58488,7 @@ kmM
 kmM
 kmM
 kmM
-kmM
+trS
 kmM
 kmM
 kiN
@@ -58749,12 +58749,12 @@ kmM
 ury
 kmM
 kmM
+kiN
 kmM
 kmM
 kmM
 kmM
-kmM
-kmM
+trS
 hNt
 kmM
 jmq
@@ -59004,7 +59004,7 @@ kmM
 kmM
 kmM
 kmM
-kmM
+trS
 kmM
 kmM
 kmM
@@ -59260,11 +59260,11 @@ jmq
 jmq
 jmq
 jmq
-jmq
-kmM
-kmM
 kiN
-jmq
+kmM
+kmM
+kmM
+ury
 jmq
 jmq
 jmq
@@ -59517,11 +59517,11 @@ jmq
 jmq
 jmq
 jmq
-jmq
-jmq
 kmM
-jmq
-jmq
+tly
+kmM
+kmM
+kmM
 jmq
 jmq
 jmq
@@ -59766,26 +59766,26 @@ rZV
 rZV
 rZV
 rZV
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-wUp
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-rZV
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+kiN
+kmM
+kiN
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
 rZV
 aaa
 afZ
@@ -60023,27 +60023,27 @@ aaa
 aaa
 aaa
 rZV
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-bxB
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+kmM
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
+jmq
 rZV
-aaa
 aaa
 afZ
 agc
@@ -60281,18 +60281,18 @@ aaa
 aaa
 rZV
 iyi
-sZR
-sZR
-sZR
-qfK
-sZR
 iyi
-bxB
-qzY
 iyi
-bxB
-qzY
-bxB
+iyi
+iyi
+iyi
+iyi
+iyi
+iyi
+iyi
+wUp
+iyi
+iyi
 iyi
 iyi
 iyi
@@ -60300,7 +60300,7 @@ iyi
 iyi
 iyi
 rZV
-aaa
+rZV
 aaa
 afZ
 afZ
@@ -60538,18 +60538,18 @@ aaa
 aaa
 rZV
 iyi
-bBW
+iyi
+iyi
+iyi
+iyi
+iyi
+iyi
+iyi
+iyi
+iyi
 bxB
-bxB
-bxB
-bxB
-okx
-bxB
-bxB
-pjn
-bxB
-bxB
-bxB
+iyi
+iyi
 iyi
 iyi
 iyi
@@ -60795,17 +60795,17 @@ aaa
 aaa
 rZV
 iyi
-lpB
-bxB
-djq
-mor
+sZR
+sZR
+sZR
+qfK
 sZR
 iyi
 bxB
-bxB
+qzY
 iyi
 bxB
-bxB
+qzY
 bxB
 iyi
 iyi
@@ -61039,9 +61039,9 @@ aaa
 aaa
 aaa
 aaa
-trU
-trU
-trU
+ohQ
+ohQ
+ohQ
 aaa
 aaa
 aaa
@@ -61052,18 +61052,18 @@ aaa
 aaa
 rZV
 iyi
-iSs
-iSs
-iSs
-soo
-laj
-iyi
+bBW
 bxB
 bxB
-iyi
-iyi
-suJ
-iyi
+bxB
+bxB
+okx
+bxB
+bxB
+pjn
+bxB
+bxB
+bxB
 iyi
 iyi
 iyi
@@ -61296,9 +61296,9 @@ aaa
 aaa
 aaa
 aaa
-trU
-ixE
-trU
+ohQ
+acG
+ohQ
 aaa
 aaa
 aaa
@@ -61309,18 +61309,18 @@ aaa
 aaa
 rZV
 iyi
-iyi
-iyi
-iyi
-iyi
-iyi
+lpB
+bxB
+djq
+mor
+sZR
 iyi
 bxB
-yer
+bxB
 iyi
-lpB
-mwE
-cAD
+bxB
+bxB
+bxB
 iyi
 iyi
 iyi
@@ -61553,9 +61553,9 @@ aaa
 aaa
 aaa
 aaa
-trU
-trU
-trU
+ohQ
+ohQ
+ohQ
 aaa
 aaa
 aaa
@@ -61566,18 +61566,18 @@ aaa
 aaa
 rZV
 iyi
-fcV
-idi
-qmK
-kYS
-jqO
-vOS
+iSs
+iSs
+iSs
+soo
+laj
+iyi
 bxB
 bxB
-tGG
-lpB
-iQI
-lpB
+iyi
+iyi
+suJ
+iyi
 iyi
 iyi
 iyi
@@ -61810,9 +61810,9 @@ aaa
 aaa
 aaa
 aaa
-trU
-qxS
-trU
+ohQ
+wwr
+ohQ
 aaa
 aaa
 aaa
@@ -61823,22 +61823,22 @@ aaa
 aaa
 rZV
 iyi
-jqO
-jqO
-jqO
-jqO
-jqO
+iyi
+iyi
+iyi
+iyi
+iyi
 iyi
 bxB
-bxB
+yer
 iyi
 lpB
-wht
-ecx
+mwE
+cAD
 iyi
-qKa
-fon
-qKa
+iyi
+iyi
+iyi
 iyi
 iyi
 rZV
@@ -62067,9 +62067,9 @@ aaa
 aaa
 aaa
 aaa
-trU
-trU
-trU
+ohQ
+ohQ
+ohQ
 aaa
 aaa
 aaa
@@ -62080,22 +62080,22 @@ aaa
 aaa
 rZV
 iyi
-wkV
-pyV
-gqY
-get
-evO
-iyi
+fcV
+idi
+qmK
+kYS
+jqO
+vOS
 bxB
 bxB
+tGG
+lpB
+iQI
+lpB
 iyi
 iyi
 iyi
 iyi
-iyi
-pOX
-vbn
-qKa
 iyi
 iyi
 rZV
@@ -62337,21 +62337,21 @@ aaa
 aaa
 rZV
 iyi
-iyi
-iyi
-iyi
-iyi
-iyi
+jqO
+jqO
+jqO
+jqO
+jqO
 iyi
 bxB
 bxB
-krF
-xhN
-xhN
-xhN
+iyi
+lpB
+wht
+ecx
 iyi
 qKa
-vbn
+fon
 qKa
 iyi
 iyi
@@ -62594,20 +62594,20 @@ aaa
 aaa
 rZV
 iyi
+wkV
+pyV
+gqY
+get
+evO
 iyi
-iyi
-hdE
-nsF
-lpB
-tGG
 bxB
-yer
+bxB
 iyi
-nml
-cUV
-ujI
 iyi
-qKa
+iyi
+iyi
+iyi
+pOX
 vbn
 qKa
 iyi
@@ -62853,20 +62853,20 @@ rZV
 iyi
 iyi
 iyi
-oGz
-lpB
-lpB
+iyi
+iyi
+iyi
 iyi
 bxB
 bxB
+krF
+xhN
+xhN
+xhN
 iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-pML
-iyi
+qKa
+vbn
+qKa
 iyi
 iyi
 rZV
@@ -63108,22 +63108,22 @@ aaa
 aaa
 rZV
 iyi
-mkU
-xER
-lpB
-lpB
-jqJ
 iyi
-bxB
-bxB
-bxB
-bxB
-bxB
-bxB
-bxB
-qzY
-bxB
 iyi
+hdE
+nsF
+lpB
+tGG
+bxB
+yer
+iyi
+nml
+cUV
+ujI
+iyi
+qKa
+vbn
+qKa
 iyi
 iyi
 rZV
@@ -63365,21 +63365,21 @@ aaa
 aaa
 rZV
 iyi
-xER
-kAa
+iyi
+iyi
+oGz
 lpB
 lpB
-hdE
 iyi
 bxB
 bxB
-bxB
-cBw
-bxB
-bxB
-bxB
-bxB
-rls
+iyi
+iyi
+iyi
+iyi
+iyi
+iyi
+pML
 iyi
 iyi
 iyi
@@ -63622,21 +63622,21 @@ aaa
 aaa
 rZV
 iyi
-nzh
-gbY
-laF
+mkU
+xER
 lpB
+lpB
+jqJ
 iyi
-iyi
-iyi
-iyi
-cMn
-iyi
-iyi
-iyi
-uCv
-iyi
-iyi
+bxB
+bxB
+bxB
+bxB
+bxB
+bxB
+bxB
+qzY
+bxB
 iyi
 iyi
 iyi
@@ -63879,21 +63879,21 @@ aaa
 aaa
 rZV
 iyi
+xER
+kAa
+lpB
+lpB
+hdE
 iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-cVC
-vnG
-cVC
-iyi
-rtC
-pFp
-pFp
-iyi
+bxB
+bxB
+bxB
+cBw
+bxB
+bxB
+bxB
+bxB
+rls
 iyi
 iyi
 iyi
@@ -64135,25 +64135,25 @@ aaa
 aaa
 aaa
 rZV
-rZV
-rZV
-rZV
-rZV
-rZV
-rZV
-rZV
 iyi
-sbc
-vnG
-rdQ
+nzh
+gbY
+laF
+lpB
 iyi
-pFp
-pFp
-pFp
 iyi
-rZV
-rZV
-rZV
+iyi
+iyi
+uYu
+iyi
+iyi
+iyi
+cRD
+iyi
+iyi
+iyi
+iyi
+iyi
 rZV
 aaa
 aaa
@@ -64391,27 +64391,27 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
 rZV
 iyi
-cVC
-rvM
-cVC
 iyi
-ozX
-xfp
-vDl
+iyi
+iyi
+iyi
+iyi
+iyi
+iyi
+oEC
+raG
+oEC
+iyi
+upg
+jAu
+jAu
+iyi
+iyi
+iyi
 iyi
 rZV
-aaa
-aaa
-aaa
 aaa
 aaa
 afZ
@@ -64648,27 +64648,27 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+rZV
+rZV
+rZV
+rZV
+rZV
+rZV
+rZV
 rZV
 iyi
+djK
+raG
+pxS
 iyi
-iyi
-iyi
-iyi
-iyi
-iyi
-iyi
+jAu
+jAu
+jAu
 iyi
 rZV
-aaa
-aaa
-aaa
+rZV
+rZV
+rZV
 aaa
 aaa
 afZ
@@ -64913,15 +64913,15 @@ aaa
 aaa
 aaa
 rZV
-rZV
-rZV
-rZV
-rZV
-rZV
-rZV
-rZV
-rZV
-rZV
+iyi
+oEC
+pjr
+oEC
+iyi
+ezb
+uUl
+iuc
+iyi
 rZV
 aaa
 aaa
@@ -65169,17 +65169,17 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+rZV
+iyi
+iyi
+iyi
+iyi
+iyi
+iyi
+iyi
+iyi
+iyi
+rZV
 aaa
 aaa
 aaa
@@ -65426,17 +65426,17 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+rZV
+rZV
+rZV
+rZV
+rZV
+rZV
+rZV
+rZV
+rZV
+rZV
+rZV
 aaa
 aaa
 aaa

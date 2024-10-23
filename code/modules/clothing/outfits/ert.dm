@@ -419,6 +419,9 @@
 	name = "OTA Shotgun Unit"
 	suit_store = /obj/item/gun/ballistic/shotgun/spas12
 	belt = /obj/item/storage/belt/civilprotection/overwatch/spas12
+	mask = /obj/item/clothing/mask/gas/civilprotection/overwatch/red
+	uniform = /obj/item/clothing/under/combine/overwatch/red
+	suit = /obj/item/clothing/suit/armor/overwatch/red
 
 /datum/outfit/ert/overwatch/mp7
 	name = "OTA SMG Unit"

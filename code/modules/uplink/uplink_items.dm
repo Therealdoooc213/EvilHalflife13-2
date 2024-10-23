@@ -325,7 +325,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			an assembly to it in order to alter the way it detonates. It can be attached to almost all objects and has a modifiable timer with a \
 			minimum setting of 10 seconds."
 	item = /obj/item/grenade/plastic/c4
-	cost = 2
+	cost = 3
 
 /datum/uplink_item/explosives
 	category = UPLINK_CATEGORY_EXPLOSIVES
@@ -341,8 +341,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	desc = "A home-made explosive with a attached mouse trap. When activated, you can put it into a container, and it will explode when opened."
 	item = /obj/item/grenade/pipebomb
 	cost = 4
-
-	/obj/item/grenade/pipebomb
 
 /datum/uplink_item/stealthy_tools
 	category = UPLINK_CATEGORY_STEALTH_GADGETS

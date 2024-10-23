@@ -115,6 +115,10 @@
 	item_state = "swat"
 	armor = list(MELEE = 20, BULLET = 35, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 80, RAD = 80, FIRE = 80, ACID = 80, WOUND = 5)
 
+/obj/item/clothing/mask/gas/civilprotection/medical
+	name = "medical officer mask"
+	icon_state = "medicalofficer"
+
 /obj/item/clothing/mask/gas/civilprotection/overwatch
 	name = "overwatch soldier mask"
 	desc = "Heavy duty armored mask for the overwatch transhuman team."
@@ -122,3 +126,6 @@
 	item_state = "swat"
 	armor = list(MELEE = 20, BULLET = 35, LASER = 20, ENERGY = 20, BOMB = 20, BIO = 80, RAD = 80, FIRE = 80, ACID = 80, WOUND = 10)
 	overwatch = TRUE
+
+/obj/item/clothing/mask/gas/civilprotection/overwatch/red
+	icon_state = "overwatch_red"

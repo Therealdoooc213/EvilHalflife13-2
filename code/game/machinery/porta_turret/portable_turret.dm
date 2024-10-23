@@ -61,6 +61,7 @@
 	var/stun_all = 0		//if this is active, the turret shoots everything that isn't security or head of staff
 	var/check_anomalies = 1	//checks if it can shoot at unidentified lifeforms (ie xenos)
 	var/shoot_unloyal = 0	//checks if it can shoot people that aren't loyalty implantd
+	var/shoot_loyal = 0	//opposite of the above var
 
 	var/attacked = 0		//if set to 1, the turret gets pissed off and shoots at people nearby (unless they have sec access!)
 
@@ -470,8 +471,8 @@
 /obj/machinery/porta_turret/proc/assess_perp(mob/living/carbon/human/perp)
 	var/threatcount = 0	//the integer returned
 
-	if(obj_flags & EMAGGED)
-		return 10	//if emagged, always return 10.
+	//if(obj_flags & EMAGGED)
+		//return 10	//if emagged, always return 10.
 
 	if((stun_all || attacked) && !allowed(perp))
 		//if the turret has been attacked or is angry, target all non-sec people
@@ -499,6 +500,10 @@
 	if(shoot_unloyal)
 		if (!HAS_TRAIT(perp, TRAIT_MINDSHIELD))
 			threatcount += 4
+
+	if(shoot_loyal)
+		if (HAS_TRAIT(perp, TRAIT_MINDSHIELD))
+			threatcount += 6
 
 	return threatcount
 
@@ -1117,3 +1122,20 @@
 
 /obj/machinery/porta_turret/combine/off
 	on = FALSE
+
+/obj/machinery/porta_turret/combine/emag_act(mob/user, obj/item/card/emag/emag_card)
+	if(obj_flags & EMAGGED)
+		return FALSE
+	to_chat(user, span_warning("You modify [src]'s threat assessment circuits to shoot combine authorised individuals."))
+	visible_message("[src] hums oddly...")
+	obj_flags |= EMAGGED
+	locked = FALSE
+	req_access = null
+	shoot_loyal = TRUE
+	check_records = 0
+	criminals = 0
+	auth_weapons = 0
+	faction += ROLE_SYNDICATE
+	faction -= "combine"
+	on = TRUE
+	return TRUE

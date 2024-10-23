@@ -50,10 +50,8 @@
 
 
 /obj/item/clothing/under/combine/overwatch/red
-	name = "overwatch jumpsuit"
 	desc = "Red full-body suit which includes kevlar weaving to provide extra protection."
-	icon_state = "rsecurity"
-	item_state = "r_suit"
+	icon_state = "overwatch_red"
 
 /obj/item/clothing/under/combine/overwatch/elite
 	name = "overwatch jumpsuit"

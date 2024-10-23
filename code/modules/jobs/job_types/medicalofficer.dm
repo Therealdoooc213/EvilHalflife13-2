@@ -54,12 +54,12 @@
 	ears = /obj/item/radio/headset/civilprotection
 	uniform = /obj/item/clothing/under/combine/civilprotection
 	gloves = /obj/item/clothing/gloves/color/civilprotection
-	suit = /obj/item/clothing/suit/armor/civilprotection
+	suit = /obj/item/clothing/suit/armor/civilprotection/medical
 	suit_store = /obj/item/gun/ballistic/automatic/pistol/usp
 	shoes = /obj/item/clothing/shoes/jackboots/civilprotection
 	glasses = /obj/item/clothing/glasses/hud/security/civilprotection/medical
 
-	mask = /obj/item/clothing/mask/gas/civilprotection
+	mask = /obj/item/clothing/mask/gas/civilprotection/medical
 	belt = /obj/item/storage/belt/civilprotection/medicfull
 
 	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert)

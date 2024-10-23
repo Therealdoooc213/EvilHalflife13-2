@@ -610,10 +610,10 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 						sleep(1 SECONDS)
 						adjust_confusion(10 SECONDS)
 						if(painpercent >= 150)
-							Paralyze(6 SECONDS)
+							Paralyze(5 SECONDS)
 					else
 						last_painstun = world.time
-						//emote("scream")
+						emote("paingroan")
 						adjust_stutter(5 SECONDS)
 						flash_fullscreen("redflash2")
 				else

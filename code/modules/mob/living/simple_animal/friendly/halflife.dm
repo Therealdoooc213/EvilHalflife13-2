@@ -2,6 +2,8 @@
 	var/radio_key = null //which channels can the bot listen to
 	var/radio_channel = RADIO_CHANNEL_COMMON //The bot's default radio channel
 	var/obj/item/radio/Radio //The bot's radio, for speaking to people.
+	var/obj/machinery/camera/builtInCamera = null
+	var/nocamera = FALSE //Should the bot have a built in camera or not?
 	var/data_hud_type
 	hud_possible = list(DIAG_STAT_HUD, DIAG_BOT_HUD, DIAG_HUD, DIAG_PATH_HUD = HUD_LIST_LIST) //Diagnostic HUD views
 
@@ -15,6 +17,12 @@
 	Radio.subspace_transmission = TRUE
 	Radio.canhear_range = 0 // anything greater will have the bot broadcast the channel as if it were saying it out loud.
 	Radio.recalculateChannels()
+	if(!nocamera && !builtInCamera)
+		builtInCamera = new (src)
+		builtInCamera.c_tag = real_name
+		builtInCamera.network = list("ss13")
+		builtInCamera.internal_light = FALSE
+		builtInCamera.built_in = src
 
 	//If a bot has its own HUD (for player bots), provide it.
 	if(data_hud_type)
