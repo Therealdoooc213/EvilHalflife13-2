@@ -89,7 +89,7 @@
 			H.stop_sound_channel(CHANNEL_HEARTBEAT)
 			beat = BEAT_NONE
 	if(HAS_TRAIT(owner, TRAIT_FAT) && owner.stat != DEAD) //yogs: being fat causes heart damage
-		owner.adjustOrganLoss(ORGAN_SLOT_HEART, maxHealth * STANDARD_ORGAN_DECAY, 85) //eat happy, eat healthy
+		owner.adjustOrganLoss(ORGAN_SLOT_HEART, maxHealth * STANDARD_ORGAN_DECAY/2, 85) //eat happy, eat healthy
 		if(damage >= 80 && beating)
 			if(prob(1))
 				if(owner.stat == CONSCIOUS)

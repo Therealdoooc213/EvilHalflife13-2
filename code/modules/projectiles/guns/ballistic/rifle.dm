@@ -129,7 +129,7 @@ obj/item/gun/ballistic/rifle/attackby(obj/item/A, mob/user, params)
 
 /obj/item/gun/ballistic/rifle/boltaction/enchanted/vort_blast
 	name = "vortal blast"
-	desc = "Galunga."
+	desc = "Galunga. Do not attempt to dual wield."
 	slot_flags = 0
 	pin = /obj/item/firing_pin/magic
 	guns_left = 0

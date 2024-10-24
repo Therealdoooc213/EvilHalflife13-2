@@ -350,3 +350,20 @@
 	id = "right_ten_factory"
 	suffix = "sewer_right_ten_factory.dmm"
 	name = "sewer right_ten_factory"
+
+// CITY SPAWNS
+
+//SOUTH
+
+/datum/map_template/ruin/station/city/southentrance/tenxten
+	prefix = "_maps/RandomRuins/StationRuins/city/southentrance/10x10/"
+
+/datum/map_template/ruin/station/city/southentrance/tenxten/gambling
+	id = "south_ten_gambling"
+	suffix = "city_south_ten_gambling.dmm"
+	name = "city south_ten_gambling"
+
+/datum/map_template/ruin/station/city/southentrance/tenxten/lockedapartment
+	id = "south_ten_lockedapartment"
+	suffix = "city_south_ten_lockedapartment.dmm"
+	name = "city south_ten_lockedapartment"

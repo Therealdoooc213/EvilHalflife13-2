@@ -214,6 +214,10 @@
 	icon_state = "beretdurathread"
 	armor = list(MELEE = 15, BULLET = 5, LASER = 15, ENERGY = 5, BOMB = 10, BIO = 0, RAD = 0, FIRE = 30, ACID = 5, WOUND = 5)
 
+/obj/item/clothing/head/beret/durathread/unitednations
+	name = "old blue beret"
+	desc =  "A reinforced beret from before the war. The blue and writing has long since faded, but it looks like it may have once been united nations property."
+
 //Security
 
 /obj/item/clothing/head/HoS

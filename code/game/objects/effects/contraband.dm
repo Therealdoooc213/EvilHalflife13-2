@@ -60,6 +60,8 @@
 	var/poster_item_desc = "This hypothetical poster item should not exist, let's be honest here."
 	var/poster_item_icon_state = "rolled_poster"
 
+	var/socio_modify = FALSE //tearing down some posters may effect sociostability
+
 /obj/structure/sign/poster/Initialize(mapload)
 	. = ..()
 	if(random_basetype)
@@ -110,6 +112,8 @@
 		return
 	visible_message("[user] rips [src] in a single, decisive motion!" )
 	playsound(src.loc, 'sound/items/poster_ripped.ogg', 100, 1)
+	if(socio_modify) //tearing down some posters may effect sociostability
+		SSsociostability.modifystability(-5)
 
 	var/obj/structure/sign/poster/ripped/R = new(loc)
 	R.pixel_y = pixel_y
@@ -719,6 +723,7 @@
 	name = "Combine Poster"
 	desc = "A poster celebrating the combine's rule."
 	icon_state = "combine1"
+	socio_modify = TRUE
 
 /obj/structure/sign/poster/halflife/combine/two
 	desc = "A poster advertising you to join the ranks of the civil protection."

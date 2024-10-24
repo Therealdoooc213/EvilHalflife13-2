@@ -1,0 +1,228 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/chair/office/halflife/blue{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"b" = (
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"c" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	keylock = 1;
+	locked = 1
+	},
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"d" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"e" = (
+/obj/structure/window/fulltile,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"g" = (
+/obj/machinery/door/unpowered/halflife/wood,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"i" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/lino,
+/area/halflife/indoors)
+"j" = (
+/obj/structure/table/halflife/no_smooth/wood/stand,
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/indoor/carpet/blue,
+/area/halflife/indoors)
+"l" = (
+/obj/structure/closet/crate/bin,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"m" = (
+/obj/structure/table/halflife/no_smooth/wood,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"p" = (
+/obj/structure/curtain,
+/turf/open/floor/plating/indoor/lino,
+/area/halflife/indoors)
+"t" = (
+/obj/structure/closet/cabinet,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"u" = (
+/obj/structure/sign/poster/halflife/combine/four{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"y" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"G" = (
+/obj/structure/table/halflife/no_smooth/large/wood/desk,
+/obj/structure/halflife/trash/papers,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"H" = (
+/obj/structure/table/halflife/no_smooth/wood,
+/turf/open/floor/plating/indoor/carpet/blue,
+/area/halflife/indoors)
+"I" = (
+/obj/structure/closet/cabinet,
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"J" = (
+/turf/closed/wall/halflife/brick,
+/area/halflife/indoors)
+"L" = (
+/obj/structure/bed/halflife/bedframe/wire,
+/turf/open/floor/plating/indoor/carpet/blue,
+/area/halflife/indoors)
+"S" = (
+/obj/structure/halflife/trash/wood,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"T" = (
+/turf/open/floor/plating/indoor/carpet/blue,
+/area/halflife/indoors)
+"W" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+
+(1,1,1) = {"
+J
+J
+J
+J
+J
+J
+J
+J
+J
+J
+"}
+(2,1,1) = {"
+J
+I
+b
+b
+J
+b
+S
+d
+b
+J
+"}
+(3,1,1) = {"
+J
+G
+a
+b
+g
+b
+b
+b
+b
+J
+"}
+(4,1,1) = {"
+J
+W
+b
+m
+J
+J
+J
+u
+b
+c
+"}
+(5,1,1) = {"
+J
+b
+b
+t
+J
+i
+J
+b
+b
+J
+"}
+(6,1,1) = {"
+J
+J
+J
+J
+J
+p
+J
+b
+b
+e
+"}
+(7,1,1) = {"
+J
+H
+T
+d
+b
+b
+J
+b
+b
+e
+"}
+(8,1,1) = {"
+J
+L
+T
+b
+b
+b
+g
+b
+b
+e
+"}
+(9,1,1) = {"
+J
+j
+T
+b
+b
+b
+J
+y
+l
+J
+"}
+(10,1,1) = {"
+J
+J
+J
+J
+J
+J
+J
+J
+J
+J
+"}

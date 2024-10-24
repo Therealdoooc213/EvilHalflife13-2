@@ -13,8 +13,9 @@
 	speak_chance = 1
 	speak = list("G-GOD HELP ME!","OH G-GOD!","K-KILL ME!")
 	harm_intent_damage = 5
-	melee_damage_lower = 19
+	melee_damage_lower = 18
 	melee_damage_upper = 21
+	sharpness = SHARP_EDGED
 	wound_bonus = 5
 	bare_wound_bonus = 5
 	attack_vis_effect = ATTACK_EFFECT_CLAW
@@ -176,6 +177,7 @@
 	melee_damage_lower = 10
 	melee_damage_upper = 10
 	bare_wound_bonus = 10
+	sharpness = SHARP_EDGED
 	attack_vis_effect = ATTACK_EFFECT_BITE
 	ranged = 1 //for leaping
 	attacktext = "bites"

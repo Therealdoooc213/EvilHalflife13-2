@@ -709,3 +709,6 @@
 	max_integrity = 500
 	projectile_passchance = 30
 
+/obj/structure/halflife/breencast/Destroy()
+	. = ..()
+	SSsociostability.modifystability(-30) //Destroying the central breencast is rather bad for stability

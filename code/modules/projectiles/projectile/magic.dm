@@ -433,6 +433,7 @@
 	armour_penetration = 20
 	armor_flag = MAGIC 
 	hitsound = 'sound/weapons/halflife/attack_shoot.ogg'
+	speed = 0.4
 
 /obj/projectile/magic/locker
 	name = "locker bolt"

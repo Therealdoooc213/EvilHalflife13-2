@@ -1,0 +1,212 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"b" = (
+/obj/structure/table/halflife/wood/bar,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"c" = (
+/obj/structure/table/halflife/no_smooth/dice/pristine,
+/turf/open/floor/plating/indoor/carpet/violet,
+/area/halflife/indoors)
+"j" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"k" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"n" = (
+/obj/structure/window/fulltile,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"p" = (
+/obj/structure/table/halflife/wood/bar,
+/obj/structure/halflife/trash/glass/basic,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"r" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/carpet/violet,
+/area/halflife/indoors)
+"u" = (
+/obj/structure/halflife/trash/cardboard,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"x" = (
+/obj/structure/chair/halflife/metal/stool,
+/turf/open/floor/plating/indoor/carpet/violet,
+/area/halflife/indoors)
+"B" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"E" = (
+/obj/structure/chair/halflife/metal/red{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"G" = (
+/turf/closed/wall/halflife/brick,
+/area/halflife/indoors)
+"I" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/structure/chair/halflife/metal/stool,
+/turf/open/floor/plating/indoor/carpet/violet,
+/area/halflife/indoors)
+"J" = (
+/obj/structure/table/halflife/no_smooth/large/cards,
+/obj/item/toy/cards/deck,
+/turf/open/floor/plating/indoor/carpet/violet,
+/area/halflife/indoors)
+"M" = (
+/obj/structure/chair/halflife/metal/stool,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"P" = (
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"S" = (
+/obj/machinery/jukebox,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"V" = (
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"W" = (
+/obj/structure/table/halflife/no_smooth/dice/pristine,
+/obj/item/storage/pill_bottle/dice,
+/turf/open/floor/plating/indoor/carpet/violet,
+/area/halflife/indoors)
+"Y" = (
+/turf/open/floor/plating/indoor/carpet/violet,
+/area/halflife/indoors)
+
+(1,1,1) = {"
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+"}
+(2,1,1) = {"
+G
+Y
+I
+Y
+x
+Y
+r
+Y
+P
+n
+"}
+(3,1,1) = {"
+G
+Y
+c
+Y
+c
+Y
+J
+Y
+P
+n
+"}
+(4,1,1) = {"
+G
+Y
+x
+Y
+x
+Y
+Y
+Y
+P
+G
+"}
+(5,1,1) = {"
+G
+Y
+W
+Y
+c
+Y
+Y
+Y
+P
+k
+"}
+(6,1,1) = {"
+G
+Y
+x
+Y
+x
+Y
+Y
+Y
+E
+G
+"}
+(7,1,1) = {"
+G
+b
+p
+b
+p
+M
+P
+P
+E
+G
+"}
+(8,1,1) = {"
+G
+u
+V
+V
+b
+M
+P
+P
+P
+G
+"}
+(9,1,1) = {"
+G
+V
+B
+V
+V
+P
+j
+P
+S
+G
+"}
+(10,1,1) = {"
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+"}

@@ -61,8 +61,8 @@
 /datum/reagent/drug/nicotine/overdose_process(mob/living/M)
 	M.adjustToxLoss(0.1*REM, 0)
 	M.adjustOxyLoss(1.1*REM, 0)
-	M.adjustOrganLoss(ORGAN_SLOT_LUNGS, 2*REM)
-	M.adjustOrganLoss(ORGAN_SLOT_HEART, 1.25*REM)
+	M.adjustOrganLoss(ORGAN_SLOT_LUNGS, 1.5*REM)
+	M.adjustOrganLoss(ORGAN_SLOT_HEART, 1*REM)
 	..()
 	. = 1
 

@@ -778,6 +778,7 @@
 				/obj/item/skillchip/fitness,
 				/obj/item/skillchip/painsuppress,
 				/obj/item/skillchip/aiming,
+				/obj/item/clothing/head/beret/durathread/unitednations,
 				/obj/item/storage/firstaid/toxin
 				)
 
@@ -844,6 +845,7 @@
 				/obj/item/clothing/gloves/fishing,
 				/obj/item/clothing/head/fishing,
 				/obj/item/clothing/head/welding,
+				/obj/item/clothing/head/beret/durathread/unitednations,
 				/obj/item/clothing/mask/bandana/black
 				)
 
