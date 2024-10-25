@@ -12,6 +12,13 @@
 	mutantrace_variation = DIGITIGRADE_VARIATION
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 60, RAD = 0, FIRE = 0, ACID = 0)
 
+
+/obj/item/clothing/mask/gas/cwuengi
+	name = "gas mask"
+	desc = "An engineering grade gas mask for civil union workers."
+	icon_state = "cwuengi"
+	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
+
 // **** Atmos gas mask ****
 
 /obj/item/clothing/mask/gas/atmos

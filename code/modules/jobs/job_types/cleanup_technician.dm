@@ -9,6 +9,7 @@
 	supervisors = "the union foreman and labor lead"
 	exp_requirements = 0
 	exp_type = EXP_TYPE_CREW
+	cmode_music = 'sound/music/combat/crawlyard.ogg'
 
 	outfit = /datum/outfit/job/cleanup_technician
 
