@@ -60,6 +60,16 @@
 	/// How many zones (body parts, not precise) we have disabled so far, for naming purposes
 	var/zones_disabled
 
+	///These power suit vars are mainly for combine uniforms and the HEV suit
+	///Is this a powered suit that requires recharging to be fully effective?
+	var/powered_suit = FALSE
+	///How much active armor power does this suit have?
+	var/suit_power = 0
+	///What is the max amount of active armor power this suit can have?
+	var/max_suit_power = 0
+	///Slowdown inflicted when the suit is out of power
+	var/unpoweredslowdown = 0
+
 /obj/item/clothing/Initialize(mapload)
 	if(CHECK_BITFIELD(clothing_flags, VOICEBOX_TOGGLABLE))
 		actions_types += /datum/action/item_action/toggle_voice_box
@@ -144,6 +154,19 @@
 	damage_by_parts[def_zone] += damage_dealt
 	if(damage_by_parts[def_zone] > limb_integrity)
 		disable_zone(def_zone, damage_type)
+
+//adjust power level for powered clothing items
+/obj/item/clothing/proc/adjust_suitpower(change, damage)
+	if(!powered_suit)
+		return
+	if(damage)
+		suit_power -= change/4
+	else
+		suit_power += change
+	if(suit_power > max_suit_power)
+		suit_power = max_suit_power
+	if(suit_power < 0)
+		suit_power = 0
 
 /**
   * disable_zone() is used to disable a given bodypart's protection on our clothing item, mainly from [/obj/item/clothing/proc/take_damage_zone()]
@@ -278,6 +301,8 @@
 
 	if(armor.bio || armor.bomb || armor.bullet || armor.energy || armor.laser || armor.melee || armor.fire || armor.acid|| flags_cover & HEADCOVERSMOUTH || flags_cover & HEADCOVERSEYES)
 		. += "<span class='notice'>It has a <a href='?src=[REF(src)];list_armor=1'>tag</a> listing its protection classes.</span>"
+	if(powered_suit)
+		. += "<span class='notice'>It's power levels indicate it is at [(suit_power/max_suit_power)*100]% charge level.</span>"
 
 /obj/item/clothing/Topic(href, href_list)
 	. = ..()

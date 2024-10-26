@@ -45,10 +45,20 @@
 			if(m_intent == MOVE_INTENT_RUN)
 				adjust_nutrition(-(HUNGER_FACTOR/10))
 				adjust_hydration(-(HUNGER_FACTOR/4))
+		
 	if(m_intent == MOVE_INTENT_RUN)
-		if(HAS_TRAIT(src, TRAIT_ATHLETIC)) //Athletic skillchip lets you run for far longer
-			adjustStaminaLoss(0.75)
-		else
-			adjustStaminaLoss(1)
+		var/staminatolose = 1.25
+		if(ishuman(src))
+			var/mob/living/carbon/human/H = src
+			if(H.w_uniform)
+				if(H.w_uniform.powered_suit && H.w_uniform.suit_power > 0) //a powered suit lessens the fatigue of running
+					H.w_uniform.adjust_suitpower(1, TRUE)
+					staminatolose -= 0.25
+
+				
+		if(HAS_TRAIT(src, TRAIT_ATHLETIC)) //Athletic skillchip lets you run for longer
+			staminatolose -= 0.25
+
+		adjustStaminaLoss(staminatolose)
 		if(getStaminaLoss() > 60) //automatically stop running once you're very tired.
 			toggle_move_intent()

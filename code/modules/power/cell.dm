@@ -235,6 +235,12 @@
 	desc = "A power cell with an even higher capacity than the base model!"
 	maxcharge = 5000
 
+/obj/item/stock_parts/cell/darkenergy
+	name = "dark energy power cell"
+	desc = "A high capacity power cell built using dark energy."
+	maxcharge = 10000
+	chargerate = 1500
+
 /obj/item/stock_parts/cell/secborg
 	name = "security borg rechargeable D battery"
 	maxcharge = 600	//600 max charge / 100 charge per shot = six shots

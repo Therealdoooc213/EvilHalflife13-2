@@ -1271,6 +1271,9 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		// Clothing slowdown
 		if(H.wear_suit)
 			. += H.wear_suit.slowdown
+		if(H.w_uniform)
+			if(H.w_uniform.powered_suit && H.w_uniform.suit_power < 1)
+				. += H.w_uniform.unpoweredslowdown
 		if(H.shoes)
 			. += H.shoes.slowdown
 		if(H.back)

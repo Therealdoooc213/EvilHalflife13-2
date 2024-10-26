@@ -21,7 +21,7 @@
 
 /obj/item/clothing/suit/toggle/labcoat/md
 	name = "union doctor's labcoat"
-	desc = "A white labcoat with blue medical crosses."
+	desc = "A white labcoat with medical crosses."
 	icon_state = "labcoat_md"
 	item_state = "labcoat_md"
 

@@ -846,6 +846,7 @@
 				/obj/item/clothing/head/fishing,
 				/obj/item/clothing/head/welding,
 				/obj/item/clothing/head/beret/durathread/unitednations,
+				/obj/item/clothing/suit/armor/browncoat,
 				/obj/item/clothing/mask/bandana/black
 				)
 

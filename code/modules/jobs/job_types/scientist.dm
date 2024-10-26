@@ -34,6 +34,7 @@
 	jobtype = /datum/job/scientist
 
 	uniform = /obj/item/clothing/under/citizen
+	suit = /obj/item/clothing/suit/toggle/labcoat
 	accessory = /obj/item/clothing/accessory/armband/science
 	ears = /obj/item/radio/headset
 	shoes = /obj/item/clothing/shoes/sneakers/white

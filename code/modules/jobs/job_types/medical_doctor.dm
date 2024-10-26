@@ -32,6 +32,7 @@
 	name = "Union Doctor"
 	jobtype = /datum/job/doctor
 	uniform = /obj/item/clothing/under/citizen
+	suit = /obj/item/clothing/suit/toggle/labcoat/md
 	accessory = /obj/item/clothing/accessory/armband/medblue
 	ears = /obj/item/radio/headset
 	shoes = /obj/item/clothing/shoes/sneakers/white

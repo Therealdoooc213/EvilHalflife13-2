@@ -1,3 +1,5 @@
+#define STIMULANT_INJECTION_DELAY (60 SECONDS)
+
 /obj/item/clothing/under/combine
 	armor = list(MELEE = 15, BULLET = 15, LASER = 20,ENERGY = 20, BOMB = 20, BIO = 20, RAD = 20, FIRE = 30, ACID = 30, WOUND = 5)
 	max_integrity = 250
@@ -6,6 +8,87 @@
 	sensor_mode = SENSOR_COORDS
 	random_sensor = FALSE
 	worn_icon = 'icons/mob/clothing/uniform/halflife.dmi'
+
+	powered_suit = TRUE
+	suit_power = 50
+	max_suit_power = 100
+	unpoweredslowdown = 0.25
+
+	var/mob/living/carbon/owner
+
+	COOLDOWN_DECLARE(next_damage_notify)
+	COOLDOWN_DECLARE(next_stimulant)
+
+	var/static/list/funny_signals = list(
+		COMSIG_CARBON_GAIN_WOUND = PROC_REF(handle_wound_add),
+		COMSIG_MOB_APPLY_DAMAGE = PROC_REF(handle_damage)
+	)
+
+/obj/item/clothing/under/combine/equipped(mob/M, slot)
+	. = ..()
+	if(slot == ITEM_SLOT_ICLOTHING && iscarbon(M))
+		for(var/k in funny_signals)
+			RegisterSignal(M, k, funny_signals[k])
+		owner = M
+	else
+		for(var/k in funny_signals)
+			UnregisterSignal(M, k)
+
+/obj/item/clothing/under/combine/Destroy()
+	owner = null
+	return ..()
+
+/obj/item/clothing/under/combine/dropped(mob/M)
+	. = ..()
+	for(var/k in funny_signals)
+		UnregisterSignal(M, k)
+
+//Wounds
+/obj/item/clothing/under/combine/proc/handle_wound_add(mob/living/carbon/C, datum/wound/W, obj/item/bodypart/L)
+
+	SIGNAL_HANDLER
+
+	if(W.severity >= WOUND_SEVERITY_MODERATE)
+		administer_stimulant()
+
+/obj/item/clothing/under/combine/proc/administer_stimulant()
+	SIGNAL_HANDLER
+	if(!owner.reagents)
+		return
+	if(!COOLDOWN_FINISHED(src, next_stimulant))
+		return
+
+	if(suit_power > 20)
+		adjust_suitpower(80, TRUE)
+		to_chat(owner, span_warning("Suit detects extreme user damage. Administering Class A-3 Stimulant Medication Supplements."))
+		owner.reagents.add_reagent(/datum/reagent/medicine/morphine, 2)
+		owner.reagents.add_reagent(/datum/reagent/medicine/tricordrazine, 3)
+	else
+		to_chat(owner, span_warning("Suit power insufficient to administer stimulants."))
+
+	COOLDOWN_START(src, next_stimulant, STIMULANT_INJECTION_DELAY)
+	return TRUE
+
+//General Damage
+/obj/item/clothing/under/combine/proc/handle_damage(mob/living/carbon/C, damage, damagetype, def_zone)
+	SIGNAL_HANDLER
+
+	if(!COOLDOWN_FINISHED(src, next_damage_notify))
+		return
+
+	if(damage < 5 || owner.maxHealth <= 0)
+		return
+
+	var/health_percent = owner.health / owner.maxHealth
+	if(health_percent > 0.50 && !prob(damage * 4))
+		return
+
+	switch(health_percent)
+		if(0.76 to INFINITY)
+			return
+		else
+			COOLDOWN_START(src, next_damage_notify, 30 SECONDS)
+			administer_stimulant()
 
 /obj/item/clothing/under/combine/civilprotection
 	name = "civil protection jumpsuit"
@@ -36,6 +119,7 @@
 	item_state = "syndicate-black"
 	has_sensor = LOCKED_SENSORS
 	max_integrity = 400
+	suit_power = 100
 	armor = list(MELEE = 20, BULLET = 20, LASER = 25,ENERGY = 25, BOMB = 25, BIO = 30, RAD = 30, FIRE = 30, ACID = 30, WOUND = 10)
 
 /obj/item/clothing/under/combine/overwatch/Initialize(mapload)
@@ -101,3 +185,5 @@
 	desc = "A well made black suit, specially designed for the district administrator."
 	icon_state = "lawyer_black"
 	item_state = "lawyer_black"
+
+#undef STIMULANT_INJECTION_DELAY

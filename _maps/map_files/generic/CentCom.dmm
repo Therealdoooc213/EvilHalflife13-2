@@ -19164,6 +19164,14 @@
 /obj/item/hatchet/wooden,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors)
+"pzO" = (
+/obj/machinery/combine_recharger{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/metal/walkway{
+	dir = 1
+	},
+/area/centcom/ferry)
 "pGP" = (
 /obj/structure/flora/tree/jungle/small,
 /turf/open/floor/plating/ground/dirt/alt,
@@ -20251,6 +20259,12 @@
 	},
 /turf/closed/indestructible/riveted,
 /area/centcom/control)
+"xgX" = (
+/obj/machinery/combine_recharger{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/metal/plate,
+/area/centcom/ferry)
 "xhp" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "XCCsec1";
@@ -50347,7 +50361,7 @@ gJz
 rLt
 rLt
 wca
-fhs
+pzO
 jgN
 quV
 cem
@@ -52670,7 +52684,7 @@ upb
 xxo
 wca
 wca
-nxg
+xgX
 nxg
 nxg
 nxg

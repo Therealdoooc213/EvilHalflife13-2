@@ -1,4 +1,11 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ac" = (
+/obj/machinery/camera{
+	c_tag = "East Road Checkpoint Interior";
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "ae" = (
 /obj/structure/table/halflife/no_smooth/wood,
 /obj/structure/halflife/trash/food/glass,
@@ -475,6 +482,12 @@
 /obj/structure/table/optable,
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/hospital)
+"dh" = (
+/obj/structure/sign/poster/halflife/combine{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "di" = (
 /obj/machinery/camera{
 	c_tag = "Labor Union Break Room";
@@ -636,6 +649,12 @@
 "eh" = (
 /turf/closed/wall/halflife/brick,
 /area/halflife/outdoors/alley)
+"ei" = (
+/obj/machinery/combine_recharger{
+	pixel_x = -32
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "ej" = (
 /obj/machinery/griddle,
 /turf/open/floor/plating/indoor/showroom,
@@ -1708,6 +1727,12 @@
 /obj/structure/flora/ausbushes/palebush,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors)
+"kX" = (
+/obj/machinery/combine_recharger{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "la" = (
 /turf/open/floor/plating/indoor/metal/pipe,
 /area/halflife/indoors)
@@ -4012,6 +4037,12 @@
 	},
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/productioncenter)
+"Ag" = (
+/obj/machinery/combine_recharger{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/scienceunion)
 "Ah" = (
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/alley)
@@ -6043,6 +6074,12 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors)
+"NM" = (
+/obj/machinery/combine_recharger{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/trainstation)
 "NO" = (
 /obj/structure/fluff/traveltile{
 	aportalgoesto = "outlands_underground";
@@ -6072,6 +6109,13 @@
 "NV" = (
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/indoors/sewer)
+"NW" = (
+/obj/machinery/camera{
+	c_tag = "West Road Checkpoint Interior";
+	dir = 10
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "NY" = (
 /obj/structure/closet/secure_closet/freezer,
 /turf/open/floor/plating/indoor/sterilesquares,
@@ -7218,6 +7262,12 @@
 	},
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/townhall)
+"Wr" = (
+/obj/machinery/combine_recharger{
+	pixel_x = -32
+	},
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors/townhall)
 "Wt" = (
 /obj/structure/table/halflife/no_smooth/large/wood/desk,
 /obj/effect/spawner/lootdrop/halflife/loot/clothing,
@@ -7629,6 +7679,12 @@
 /obj/structure/flora/xen/tinyshrooms,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/slums)
+"Zr" = (
+/obj/machinery/combine_recharger{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/townhall)
 "Zs" = (
 /obj/machinery/light/small,
 /turf/open/floor/plating/indoor/woodc,
@@ -7637,6 +7693,12 @@
 /obj/item/storage/fancy/candle_box,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/restaurant)
+"Zv" = (
+/obj/structure/sign/poster/halflife/combine/two{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "Zw" = (
 /obj/structure/alien/weeds/node,
 /turf/open/floor/plating/ground/dirt,
@@ -28244,10 +28306,10 @@ Mw
 WE
 IN
 Iw
-Iw
-Iw
-Iw
-Iw
+dh
+rj
+ei
+AE
 Iw
 Iw
 Iw
@@ -28360,11 +28422,11 @@ NT
 Mw
 WE
 IN
-Iw
-Iw
-Iw
-Iw
-Iw
+hJ
+rj
+rj
+vi
+rj
 Iw
 Iw
 Iw
@@ -28478,10 +28540,10 @@ Mw
 WE
 IN
 Iw
-Iw
-Iw
-Iw
-Iw
+Zv
+rj
+rj
+NW
 Iw
 Iw
 Iw
@@ -32819,7 +32881,7 @@ eI
 eI
 eI
 eI
-Ny
+NM
 Ru
 qK
 ZT
@@ -33459,7 +33521,7 @@ XQ
 ME
 ME
 XQ
-nx
+Zr
 LD
 LD
 LD
@@ -34047,7 +34109,7 @@ zr
 LD
 LD
 RF
-LD
+Wr
 hi
 tb
 XQ
@@ -36187,7 +36249,7 @@ zI
 Jz
 sv
 Iw
-rj
+Pb
 rj
 rj
 ix
@@ -36294,7 +36356,7 @@ DZ
 DZ
 DZ
 Jz
-DZ
+Ag
 cC
 uO
 Jz
@@ -36304,7 +36366,7 @@ Bk
 Jz
 sv
 Iw
-rj
+kX
 rj
 rj
 rj
@@ -37124,7 +37186,7 @@ rj
 rj
 Iw
 rj
-rj
+ac
 rj
 KR
 rj

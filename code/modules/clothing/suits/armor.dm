@@ -44,6 +44,18 @@
 	item_state = "blueshift"
 	custom_premium_price = 600
 
+/obj/item/clothing/suit/armor/browncoat
+	name = "brown overcoat"
+	desc = "A well padded overcoat which offers a small amount of protection."
+	icon_state = "brownover"
+	item_state = "greatcoat"
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	armor = list(MELEE = 10, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 20, ACID = 20, WOUND = 0)
+	cold_protection = CHEST|GROIN|LEGS|ARMS
+	heat_protection = CHEST|GROIN|LEGS|ARMS
+	strip_delay = 80
+	clothing_flags = THICKMATERIAL
+
 /obj/item/clothing/suit/armor/hos
 	name = "armored greatcoat"
 	desc = "A greatcoat enhanced with a special alloy for some extra protection and style for those with a commanding presence."
