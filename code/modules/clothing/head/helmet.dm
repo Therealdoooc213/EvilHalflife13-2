@@ -545,3 +545,7 @@
 	// Does not cover additional limbs like vest does
 	plating = K
 
+/obj/item/clothing/head/helmet/military
+	desc = "An old military helmet in disrepair. Protects your head, just not as good as it used to."
+	icon_state = "military"
+	armor = list(MELEE = 25, BULLET = 20, LASER = 15,ENERGY = 10, BOMB = 25, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 10)

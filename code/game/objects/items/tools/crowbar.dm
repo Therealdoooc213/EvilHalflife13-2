@@ -63,6 +63,10 @@
 	. = ..()
 	AddComponent(/datum/component/cleave_attack, no_multi_hit=TRUE) // it's big
 
+/obj/item/crowbar/large/freeman
+	desc = "It looks like you could pry things Free with this, man. It looks aged, but somehow more dangerous."
+	force = 30
+
 /obj/item/crowbar/cyborg
 	name = "hydraulic crowbar"
 	desc = "A hydraulic prying tool, compact but powerful. Designed to replace crowbar in construction cyborgs."

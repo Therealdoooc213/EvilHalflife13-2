@@ -19,6 +19,21 @@
 	icon_state = "cwuengi"
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
 
+/obj/item/clothing/mask/gas/hl2
+	desc = "An old, but still relatively good looking gas mask. Hopefully it's filters hold up still."
+
+/obj/item/clothing/mask/gas/hl2/modern
+	icon_state = "moderngasmask"
+
+/obj/item/clothing/mask/gas/hl2/military
+	icon_state = "military_gasmask"
+
+/obj/item/clothing/mask/gas/hl2/russia
+	icon_state = "russiamask"
+
+/obj/item/clothing/mask/gas/hl2/swat
+	icon_state = "swatmask"
+
 // **** Atmos gas mask ****
 
 /obj/item/clothing/mask/gas/atmos

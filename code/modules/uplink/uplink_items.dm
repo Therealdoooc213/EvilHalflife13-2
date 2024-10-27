@@ -35,7 +35,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 		if (gamemode == /datum/game_mode/nuclear) 					// uplink code kind of needs a redesign
 			nuclear_team = locate() in GLOB.antagonist_teams	// the team discounts could be a in a GLOB with this design but it would make sense for them to be team specific...
 		if (!nuclear_team)
-			create_uplink_sales(3, "Discounted Gear", 1, sale_items, filtered_uplink_items)
+			create_uplink_sales(4, "Discounted Gear", 1, sale_items, filtered_uplink_items)
 		else
 			if (!nuclear_team.team_discounts)
 				// create 5 unlimited stock discounts
@@ -147,19 +147,27 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	surplus = 0
 	cant_discount = TRUE
 
+/datum/uplink_item/bundles_TC/bundle_A
+	name = "Rebel Supply Kit"
+	desc = "Rebel Bundles are specialized groups of items that arrive in a plain box. \
+			These items are collectively worth more than 20 telecrystals, but you do not know which specialization \
+			you will receive. May contain discontinued and/or exotic items."
+	item = /obj/item/storage/box/syndicate/bundle_A
+	cost = 20 //These are 20 TC for a reason; sacrifice modularity for a pre-determined kit that will define your strategy
+
 /datum/uplink_item/bundles_TC/surplus
 	name = "Syndicate Surplus Crate"
-	desc = "A dusty crate from the back of the Syndicate warehouse. Rumored to contain a valuable assortment of items, \
+	desc = "A dusty crate from the back of the Rebel warehouse. Rumored to contain a valuable assortment of items, \
 			but you never know. Contents are sorted to always be worth 50 TC."
 	item = /obj/structure/closet/crate
 	cost = 20
-	player_minimum = 25
+	player_minimum = 22
 	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops, /datum/game_mode/infiltration) // yogs: infiltration
 	var/starting_crate_value = 50
 
 /datum/uplink_item/bundles_TC/surplus/super
 	name = "Super Surplus Crate"
-	desc = "A dusty SUPER-SIZED from the back of the Syndicate warehouse. Rumored to contain a valuable assortment of items, \
+	desc = "A dusty SUPER-SIZED from the back of the Rebel warehouse. Rumored to contain a valuable assortment of items, \
 			but you never know. Contents are sorted to always be worth 125 TC."
 	cost = 40
 	player_minimum = 40
@@ -261,6 +269,12 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 
 /datum/uplink_item/armor
 	category = UPLINK_CATEGORY_HARDSUITS
+
+/datum/uplink_item/armor/browncoat
+	name = "Brown Overcoat"
+	desc = "A lightly protective overcoat. Nowhere near as protective as combine armor, but covers all but your head, and still lets you carry a gun."
+	item = /obj/item/clothing/suit/armor/browncoat
+	cost = 2
 
 /datum/uplink_item/armor/civilprotectionvest
 	name = "Civil Protection vest"

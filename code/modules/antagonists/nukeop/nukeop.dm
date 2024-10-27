@@ -327,7 +327,7 @@
 			purchases += H.generate_render(show_key = FALSE)
 	text += printplayerlist(members)
 	text += "<br>"
-	text += "(Syndicates used [TC_uses] TC) [purchases]"
+	text += "(Rebels used [TC_uses] TC) [purchases]"
 
 	parts += text
 	handle_achievements()

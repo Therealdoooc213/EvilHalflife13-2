@@ -1,11 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"ac" = (
-/obj/machinery/camera{
-	c_tag = "East Road Checkpoint Interior";
-	dir = 8
-	},
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/halflife/indoors)
 "ae" = (
 /obj/structure/table/halflife/no_smooth/wood,
 /obj/structure/halflife/trash/food/glass,
@@ -194,6 +187,10 @@
 /obj/structure/table/halflife/metal/heavy,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/productioncenter)
+"bd" = (
+/obj/item/clothing/head/helmet/imperial,
+/turf/closed/wall/halflife/brick,
+/area/halflife/indoors/townhall)
 "be" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 4
@@ -482,12 +479,6 @@
 /obj/structure/table/optable,
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/hospital)
-"dh" = (
-/obj/structure/sign/poster/halflife/combine{
-	pixel_y = 32
-	},
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/halflife/indoors)
 "di" = (
 /obj/machinery/camera{
 	c_tag = "Labor Union Break Room";
@@ -649,12 +640,6 @@
 "eh" = (
 /turf/closed/wall/halflife/brick,
 /area/halflife/outdoors/alley)
-"ei" = (
-/obj/machinery/combine_recharger{
-	pixel_x = -32
-	},
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/halflife/indoors)
 "ej" = (
 /obj/machinery/griddle,
 /turf/open/floor/plating/indoor/showroom,
@@ -1239,13 +1224,6 @@
 /obj/structure/bed/halflife/mattress/old,
 /turf/open/floor/plating/indoor/carpet/blue,
 /area/halflife/indoors)
-"ib" = (
-/obj/structure/rack,
-/obj/item/circuitboard/machine/cell_charger,
-/obj/item/circuitboard/machine/cell_charger,
-/obj/item/circuitboard/machine/decontamination_unit,
-/turf/open/floor/plating/indoor/metal/plate,
-/area/halflife/indoors/productioncenter)
 "ic" = (
 /obj/machinery/light/small,
 /obj/structure/table/halflife/metal/heavy,
@@ -1322,6 +1300,14 @@
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors)
+"iF" = (
+/obj/item/circuitboard/machine/recharger,
+/obj/item/circuitboard/machine/recharger,
+/obj/item/circuitboard/machine/recharger,
+/obj/item/circuitboard/machine/recharger,
+/obj/item/circuitboard/machine/combinerecharger,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/scienceunion)
 "iI" = (
 /obj/effect/spawner/lootdrop/halflife/loot/ammo,
 /turf/open/floor/plating/indoor/woodc,
@@ -1522,6 +1508,12 @@
 /obj/machinery/door/unpowered/halflife/metal,
 /turf/open/floor/plating/indoor/checkered,
 /area/halflife/indoors/townhall)
+"jJ" = (
+/obj/machinery/combine_recharger{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "jK" = (
 /obj/machinery/door/unpowered/halflife/seethrough/metal{
 	dir = 4
@@ -1727,12 +1719,6 @@
 /obj/structure/flora/ausbushes/palebush,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors)
-"kX" = (
-/obj/machinery/combine_recharger{
-	pixel_y = 32
-	},
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/halflife/indoors)
 "la" = (
 /turf/open/floor/plating/indoor/metal/pipe,
 /area/halflife/indoors)
@@ -2004,6 +1990,12 @@
 	},
 /turf/open/floor/plating/ground/brickroad,
 /area/halflife/outdoors)
+"mN" = (
+/obj/structure/sign/poster/halflife/combine/two{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "mQ" = (
 /obj/structure/table/halflife/no_smooth/metal,
 /turf/open/floor/plating/indoor/tile/navy,
@@ -2111,14 +2103,6 @@
 	dir = 1
 	},
 /turf/open/floor/plating/indoor/tile,
-/area/halflife/indoors/scienceunion)
-"nB" = (
-/obj/item/circuitboard/machine/recharger,
-/obj/item/circuitboard/machine/recharger,
-/obj/item/circuitboard/machine/recharger,
-/obj/item/circuitboard/machine/recharger,
-/obj/item/circuitboard/machine/recharger,
-/turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/scienceunion)
 "nC" = (
 /obj/structure/toilet{
@@ -2681,6 +2665,13 @@
 	},
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/laborunion)
+"rt" = (
+/obj/machinery/camera{
+	c_tag = "West Road Checkpoint Interior";
+	dir = 10
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "ru" = (
 /obj/structure/table/halflife/metal/alt,
 /obj/structure/halflife/trash/books/pile_alt,
@@ -3736,6 +3727,13 @@
 /obj/structure/ethernet_cable,
 /turf/open/floor/plating,
 /area/halflife/indoors)
+"yi" = (
+/obj/machinery/camera{
+	c_tag = "East Road Checkpoint Interior";
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "yj" = (
 /obj/structure/table/halflife/wood/bar,
 /turf/open/floor/plating/indoor/carpet,
@@ -4037,12 +4035,6 @@
 	},
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/productioncenter)
-"Ag" = (
-/obj/machinery/combine_recharger{
-	pixel_y = 32
-	},
-/turf/open/floor/plating/indoor/tile,
-/area/halflife/indoors/scienceunion)
 "Ah" = (
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/alley)
@@ -4636,6 +4628,12 @@
 	},
 /turf/open/floor/plating/indoor/tiled9,
 /area/halflife/indoors/hospital)
+"Er" = (
+/obj/machinery/combine_recharger{
+	pixel_x = -32
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "Es" = (
 /obj/structure/window/fulltile,
 /turf/open/floor/plating/indoor/woodc,
@@ -4803,6 +4801,12 @@
 "Fx" = (
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/productioncenter)
+"Fz" = (
+/obj/machinery/combine_recharger{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/scienceunion)
 "FB" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 8
@@ -5022,6 +5026,15 @@
 /obj/machinery/door/unpowered/halflife/wood,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/slums)
+"GZ" = (
+/obj/structure/rack,
+/obj/item/circuitboard/machine/cell_charger,
+/obj/item/circuitboard/machine/cell_charger,
+/obj/item/circuitboard/machine/decontamination_unit,
+/obj/item/circuitboard/machine/combinerecharger,
+/obj/item/circuitboard/machine/combinerecharger,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/productioncenter)
 "Ha" = (
 /obj/machinery/atmospherics/pipe/manifold4w/cyan/hidden,
 /turf/open/floor/plasteel/dark/telecomms,
@@ -5263,6 +5276,12 @@
 	},
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/productioncenter)
+"IE" = (
+/obj/machinery/combine_recharger{
+	pixel_x = -32
+	},
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors/townhall)
 "II" = (
 /obj/structure/closet/crate,
 /obj/item/defibrillator/loaded,
@@ -5326,6 +5345,12 @@
 	},
 /turf/open/floor/plating/indoor/showroom,
 /area/halflife/indoors/restaurant)
+"Jb" = (
+/obj/machinery/combine_recharger{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/trainstation)
 "Jc" = (
 /obj/structure/table/halflife/no_smooth/cable_reel,
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -6074,12 +6099,6 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors)
-"NM" = (
-/obj/machinery/combine_recharger{
-	pixel_y = 32
-	},
-/turf/open/floor/plating/indoor/tile,
-/area/halflife/indoors/trainstation)
 "NO" = (
 /obj/structure/fluff/traveltile{
 	aportalgoesto = "outlands_underground";
@@ -6109,13 +6128,6 @@
 "NV" = (
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/indoors/sewer)
-"NW" = (
-/obj/machinery/camera{
-	c_tag = "West Road Checkpoint Interior";
-	dir = 10
-	},
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/halflife/indoors)
 "NY" = (
 /obj/structure/closet/secure_closet/freezer,
 /turf/open/floor/plating/indoor/sterilesquares,
@@ -6431,6 +6443,12 @@
 /obj/structure/halflife/trash/books/pile,
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/scienceunion)
+"QE" = (
+/obj/structure/sign/poster/halflife/combine{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "QG" = (
 /obj/structure/table/halflife/no_smooth/large/wood/square,
 /turf/open/floor/plating/indoor/woodc/wide,
@@ -7262,12 +7280,6 @@
 	},
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/townhall)
-"Wr" = (
-/obj/machinery/combine_recharger{
-	pixel_x = -32
-	},
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors/townhall)
 "Wt" = (
 /obj/structure/table/halflife/no_smooth/large/wood/desk,
 /obj/effect/spawner/lootdrop/halflife/loot/clothing,
@@ -7539,6 +7551,12 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/trainstation)
+"Yr" = (
+/obj/machinery/combine_recharger{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/townhall)
 "Yu" = (
 /obj/structure/table/halflife/metal/grate,
 /obj/machinery/plantgenes,
@@ -7679,12 +7697,6 @@
 /obj/structure/flora/xen/tinyshrooms,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/slums)
-"Zr" = (
-/obj/machinery/combine_recharger{
-	pixel_y = 32
-	},
-/turf/open/floor/plating/indoor/tile,
-/area/halflife/indoors/townhall)
 "Zs" = (
 /obj/machinery/light/small,
 /turf/open/floor/plating/indoor/woodc,
@@ -7693,12 +7705,6 @@
 /obj/item/storage/fancy/candle_box,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/restaurant)
-"Zv" = (
-/obj/structure/sign/poster/halflife/combine/two{
-	pixel_y = 32
-	},
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/halflife/indoors)
 "Zw" = (
 /obj/structure/alien/weeds/node,
 /turf/open/floor/plating/ground/dirt,
@@ -26799,7 +26805,7 @@ Iw
 sv
 sv
 ty
-ib
+GZ
 Zl
 Fx
 IC
@@ -28306,9 +28312,9 @@ Mw
 WE
 IN
 Iw
-dh
-rj
-ei
+QE
+ix
+Er
 AE
 Iw
 Iw
@@ -28540,10 +28546,10 @@ Mw
 WE
 IN
 Iw
-Zv
+mN
 rj
 rj
-NW
+rt
 Iw
 Iw
 Iw
@@ -32696,7 +32702,7 @@ ME
 XQ
 XQ
 XQ
-XQ
+bd
 XQ
 XQ
 gg
@@ -32881,7 +32887,7 @@ eI
 eI
 eI
 eI
-NM
+Jb
 Ru
 qK
 ZT
@@ -33521,7 +33527,7 @@ XQ
 ME
 ME
 XQ
-Zr
+Yr
 LD
 LD
 LD
@@ -34109,7 +34115,7 @@ zr
 LD
 LD
 RF
-Wr
+IE
 hi
 tb
 XQ
@@ -36356,7 +36362,7 @@ DZ
 DZ
 DZ
 Jz
-Ag
+Fz
 cC
 uO
 Jz
@@ -36366,7 +36372,7 @@ Bk
 Jz
 sv
 Iw
-kX
+jJ
 rj
 rj
 rj
@@ -36821,7 +36827,7 @@ vI
 Jz
 sV
 El
-nB
+iF
 NB
 Jz
 vA
@@ -37186,7 +37192,7 @@ rj
 rj
 Iw
 rj
-ac
+yi
 rj
 KR
 rj

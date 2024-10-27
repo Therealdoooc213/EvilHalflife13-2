@@ -847,6 +847,8 @@
 				/obj/item/clothing/head/welding,
 				/obj/item/clothing/head/beret/durathread/unitednations,
 				/obj/item/clothing/suit/armor/browncoat,
+				/obj/item/clothing/mask/gas/hl2/swat,
+				/obj/item/clothing/mask/gas/hl2/russia,
 				/obj/item/clothing/mask/bandana/black
 				)
 
@@ -874,8 +876,6 @@
 				/obj/item/weaponcrafting/frame/usp = 2,
 				/obj/item/weaponcrafting/frame/mp7 = 3,
 				/obj/item/clothing/suit/armor/civilprotection = 3,
-				/obj/item/radio/off/halflife,
-				/obj/item/crowbar/large,
 				/obj/item/clothing/under/citizen/rebel,
 				/obj/item/weaponcrafting/frame/spas12,
 				/obj/item/weaponcrafting/frame/coltpython,
@@ -888,5 +888,6 @@
 				/obj/item/grenade/syndieminibomb/bouncer,
 				/obj/item/kitchen/knife/combat = 2,
 				/obj/item/stack/telecrystal/five,
-				/obj/item/clothing/suit/armor/kevlar = 2
+				/obj/item/clothing/suit/armor/kevlar = 2,
+				/obj/item/clothing/head/helmet/military
 				)

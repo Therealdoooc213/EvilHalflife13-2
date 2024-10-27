@@ -413,9 +413,9 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	extended = !extended
 	playsound(src.loc, 'sound/weapons/batonextend.ogg', 15, 1)
 	if(extended)
-		force = 20
+		force = 25
 		w_class = WEIGHT_CLASS_NORMAL
-		throwforce = 23
+		throwforce = 30
 		icon_state = "switchblade_ext"
 		attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 		hitsound = 'sound/weapons/bladeslice.ogg'
@@ -441,7 +441,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 /obj/item/switchblade/backstab/examine(mob/user)
 	. = ..()
-	. += span_danger("\The [src] has a [nt ? "Nanotrasen" : "Syndicate"] marking on the blade.")
+	. += span_danger("\The [src] has a [nt ? "Nanotrasen" : "Rebel"] marking on the blade. Try stabbing people in the back.")
 
 /obj/item/switchblade/backstab/Initialize(mapload)
 	. = ..()

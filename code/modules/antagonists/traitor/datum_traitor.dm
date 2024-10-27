@@ -41,6 +41,7 @@
 
 	SSticker.mode.traitors += owner
 	owner.special_role = special_role
+	owner.current.cmode_music = 'sound/music/combat/lgorbifold.ogg'
 	if(give_objectives)
 		forge_traitor_objectives()
 	finalize_traitor()

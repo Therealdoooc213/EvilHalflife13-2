@@ -12,7 +12,7 @@
 	exp_requirements = 0
 	exp_type = EXP_TYPE_CREW
 
-	cmode_music = 'sound/music/combat/apprehensionandevasion.ogg'
+	cmode_music = 'sound/music/combat/branescan.ogg'
 
 	outfit = /datum/outfit/job/medofficer
 
@@ -25,7 +25,7 @@
 	mind_traits = list(TRAIT_LAW_ENFORCEMENT_METABOLISM)
 
 	display_order = JOB_DISPLAY_ORDER_SECURITY_OFFICER
-	minimal_character_age = 18 //Just a few months of boot camp, not a whole year
+	minimal_character_age = 26 //Needs medical training and bootcamp
 	var/static/list/used_numbers = list()
 
 	departments_list = list(

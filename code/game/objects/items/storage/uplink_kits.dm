@@ -25,117 +25,68 @@
 	name = initial(name)
 
 /obj/item/storage/box/syndicate/bundle_A/PopulateContents()
-	switch (pickweight(list("recon" = 2, "bloodyspai" = 3, "stealth" = 2, "guns" = 2, "murder" = 2, "implant" = 1, "hacker" = 3, "sabotage" = 3, "sniper" = 1, "metaops" = 1)))
-		if("recon") //28ish TC
-			new /obj/item/clothing/glasses/thermal/xray(src) //Would argue 6 TC. Thermals are 4 TC but work on organic targets in darkness
-			new /obj/item/storage/briefcase/launchpad(src) //6 TC
-			new	/obj/item/binoculars(src) //1 TC, maybe. Very good but mining medic/detective get them for free
-			new /obj/item/encryptionkey/syndicate(src) //2 TC
-			new /obj/item/storage/box/syndie_kit/space(src) //4 TC
-			new /obj/item/grenade/syndieminibomb/concussion/frag(src) //Minibomb with one less range on each part except for fire. 3-4 TC.
-			new /obj/item/grenade/syndieminibomb/concussion/frag(src) //See above
-			new /obj/item/flashlight/emp(src) //2 TC
+	switch (pickweight(list("spy" = 5, "agent" = 5, "saboteur" = 5, "operator" = 2, "freeman" = 1, "soldier" = 1)))
+		if("spy") //39ish TC. Stealth specialist
+			new /obj/item/clothing/glasses/thermal(src) //4 TC
+			new /obj/item/card/emag/halflife(src) //8 TC
+			new	/obj/item/binoculars(src) //1 TC
+			new	/obj/item/lockpick(src) //2 TC
+			new /obj/item/clothing/mask/balaclava(src) //1 TC
+			new /obj/item/switchblade/backstab(src) //~6 TC
+			new /obj/item/card/id/syndicate(src) //5 TC
+			new /obj/item/encryptionkey/syndicate(src) //6 TC
+			new /obj/item/radio/headset(src) //~1 TC
+			new /obj/item/storage/backpack/satchel/flat(src) //3 TC
 
-		if("bloodyspai") //30 TCish
-			new /obj/item/clothing/under/chameleon/syndicate(src) //1 TC, has only two parts of the massive kit
-			new /obj/item/clothing/mask/chameleon/syndicate(src) //See above
-			new /obj/item/card/id/syndicate(src) //2 TC
-			new /obj/item/multitool/ai_detect(src) //1 TC
-			new /obj/item/encryptionkey/syndicate(src) //2 TC
-			new /obj/item/reagent_containers/syringe/mulligan(src) //4 TC
-			new /obj/item/switchblade/backstab(src) //3 TC
-			new /obj/item/storage/fancy/cigarettes/cigpack_syndicate (src) //2 TC (for now)
-			new /obj/item/flashlight/emp(src) //2 TC
-			new /obj/item/chameleon(src) //7 TC
-			new /obj/item/card/emag(src) //6 TC
+		if("agent") //34 TCish. Killer spy agent.
+			new /obj/item/clothing/glasses/thermal(src) //4 TC
+			new /obj/item/card/id/syndicate(src) //5 TC
+			new /obj/item/card/emag/halflife(src) //8 TC
+			new	/obj/item/lockpick(src) //2 TC
+			new /obj/item/gun/ballistic/automatic/pistol/usp(src) //9 TC
+			new /obj/item/clothing/suit/armor/browncoat(src) //2 TC
+			new /obj/item/storage/backpack/satchel/flat(src) //3 TC
 
-		if("stealth") //32 TC
-			new /obj/item/gun/energy/kinetic_accelerator/crossbow(src) //10 TC
-			new /obj/item/pen/blue/sleepy(src) //4 TC
-			new /obj/item/chameleon(src) //7 TC
-			new /obj/item/clothing/glasses/thermal/syndi(src) //4 TC
-			new /obj/item/flashlight/emp(src) //2 TC
-			new /obj/item/jammer(src) //5 TC
+		if("saboteur") //37 TC. Sabotage shit!
+			new /obj/item/grenade/plastic/c4(src) //3 TC
+			new /obj/item/grenade/plastic/c4(src) //3 TC
+			new /obj/item/card/emag/halflife(src) //8 TC
+			new	/obj/item/lockpick(src) //2 TC
+			new	/obj/item/restraints/legcuffs/beartrap(src) //2 TC
+			new	/obj/item/restraints/legcuffs/beartrap(src) //2 TC
+			new	/obj/item/storage/box/syndie_kit/chemical(src) //5 TC
+			new	/obj/item/grenade/pipebomb(src) //4 TC
+			new	/obj/item/storage/toolbox/syndicate(src) //4 TC
+			new /obj/item/storage/backpack/satchel(src) //~3 TC
 
-		if("guns") //Total cost of 29 TC
-			new /obj/item/gun/ballistic/revolver(src) //6 TC
-			new /obj/item/gun/ballistic/revolver(src) //6 TC
-			new /obj/item/gun/ballistic/automatic/pistol(src) //6 TC
-			new /obj/item/gun/ballistic/automatic/pistol(src) //6 TC
-			new /obj/item/ammo_box/a357(src) //1 TC for two
-			new /obj/item/ammo_box/a357(src) //See above
-			new /obj/item/ammo_box/a357(src) //1 TC for two
-			new /obj/item/ammo_box/a357(src) //See above
-			new /obj/item/ammo_box/magazine/m10mm(src) //1 TC for two
-			new /obj/item/ammo_box/magazine/m10mm(src) //See above
-			new /obj/item/ammo_box/magazine/m10mm(src) //1 TC for two
-			new /obj/item/ammo_box/magazine/m10mm(src) //See above
-			new /obj/item/storage/belt/holster/syndicate(src) //A holster for your four guns. It could be 1 TC I guess, since the tactical webbing can't hold normal items?
-			new /obj/item/clothing/gloves/color/latex/nitrile(src) //Free?
-			new /obj/item/clothing/mask/gas/clown_hat(src) //Free?
-			new /obj/item/clothing/under/suit/really_black(src) //Free?
+		if("operator") //30 TC. The standard rebel. Wreck some havoc.
+			new /obj/item/clothing/suit/armor/civilprotection(src) //4 TC
+			new /obj/item/clothing/under/citizen/rebel(src) //4 TC
+			new /obj/item/clothing/head/beanie/black(src) //0 TC
+			new	/obj/item/clothing/gloves/fingerless(src) //0 TC
+			new	/obj/item/clothing/accessory/armband/rebel(src) //0 TC
+			new	/obj/item/gun/ballistic/automatic/pistol/usp(src) //9 TC
+			new	/obj/item/reagent_containers/pill/patch/medkit/vial(src) //1 TC
+			new	/obj/item/ammo_box/magazine/usp9mm(src) //4 TC
+			new	/obj/item/storage/belt/civilprotection(src) //4 TC
+			new	/obj/item/clothing/mask/balaclava(src) //1 TC
+			new /obj/item/storage/backpack/satchel/flat(src) //3 TC
 
-		if("murder") //Total cost of 28 TC
-			new /obj/item/melee/transforming/energy/sword/saber(src) //8 TC
-			new /obj/item/clothing/glasses/thermal/syndi(src) //4 TC
-			new /obj/item/card/emag(src) //6 TC
-			new /obj/item/clothing/shoes/chameleon/noslip/syndicate(src) //2 TC
-			new /obj/item/encryptionkey/syndicate(src) //2 TC
-			new /obj/item/grenade/syndieminibomb(src) //6 TC
+		if("freeman") //54 TCish. Freeman? I'm coming with you!
+			new /obj/item/clothing/suit/armor/nerd(src) //40 TC
+			new /obj/item/clothing/under/citizen/rebel(src) //4 TC
+			new /obj/item/crowbar/large/freeman(src) //~5 TC?
+			new	/obj/item/reagent_containers/pill/patch/medkit/vial(src) //1 TC
+			new	/obj/item/reagent_containers/pill/patch/medkit/vial(src) //1 TC
+			new /obj/item/storage/backpack/satchel/flat(src) //3 TC
 
-		if("implant") //28 TC cost, then you get a spare 10 for a total of 38 TC (fair and balanced™)
-			new /obj/item/implanter/freedom(src) //5 TC
-			new /obj/item/implanter/uplink/precharged(src) //4 TC + 10 to use
-			new /obj/item/implanter/emp(src) //1 TC, kit with 5 grenades costs 2
-			new /obj/item/implanter/adrenalin(src) //8 TC
-			new /obj/item/implanter/explosive(src) //2 TC, nukies only
-			new /obj/item/implanter/storage(src) //8 TC
-
-		if("hacker") //29 TC cost
-			new /obj/item/aiModule/hacked(src) //4 TC
-			new /obj/item/card/emag(src) //6 TC
-			new /obj/item/encryptionkey/binary(src) //2 TC
-			new /obj/item/aiModule/ion/toyAI(src) //Um, free...?
-			new /obj/item/multitool/ai_detect(src) //1 TC
-			new /obj/item/storage/toolbox/syndicate/real(src) //2 TC
-			new /obj/item/camera_bug(src) //1 TC
-			new /obj/item/card/id/syndicate(src) //2 TC
-			new /obj/item/flashlight/emp(src) //2 TC
-			new /obj/item/computer_hardware/hard_drive/portable/syndicate/bomberman(src) //6 TC
-			new /obj/item/clothing/glasses/hud/diagnostic/sunglasses(src) //RD glasses. 1 TC, if that
-			new /obj/item/pen/red/edagger(src) //2 TC
-
-		if("sabotage") //Maybe 30 TC?
-			new /obj/item/grenade/plastic/c4 (src) //1 TC
-			new /obj/item/grenade/plastic/c4 (src) //1 TC
-			new /obj/item/doorCharge(src) //2 TC
-			new /obj/item/doorCharge(src) //2 TC
-			new /obj/item/camera_bug(src) //1 TC
-			new /obj/item/sbeacondrop/powersink(src) //8 TC
-			new /obj/item/computer_hardware/hard_drive/portable/syndicate/bomberman(src) //6 TC
-			new /obj/item/storage/toolbox/syndicate/real(src) //2 TC
-			new /obj/item/pizzabox/bomb(src) //6 TC
-			new /obj/item/storage/box/syndie_kit/emp(src) //2 TC
-
-		if("sniper") //28 TC, you only get 11 shots total with the sniper and 14 with the revolver. A mini-ebow would probably be better than the sniper in a normal traitor game
-			new /obj/item/gun/ballistic/rifle/sniper_rifle(src) //12 TC, nukies only
-			new /obj/item/ammo_box/magazine/sniper_rounds/penetrator(src) //5 TC, nukies only
-			new /obj/item/gun/ballistic/revolver(src) //6 TC
-			new /obj/item/ammo_box/a357/heartpiercer(src) //1 TC
-			new /obj/item/clothing/glasses/thermal/syndi(src) //4 TC
-			new /obj/item/clothing/gloves/color/latex/nitrile(src) //Free?
-			new /obj/item/clothing/mask/gas/clown_hat(src) //Free?
-			new /obj/item/clothing/under/suit/really_black(src) //Free?
-
-		if("metaops") //30 TC
-			new /obj/item/clothing/suit/space/hardsuit/syndi(src) //8 TC
-			new /obj/item/gun/ballistic/shotgun/bulldog/unrestricted(src) //8 TC, nukies only
-			new /obj/item/implanter/explosive(src) //2 TC, nukies only
-			new /obj/item/ammo_box/magazine/m12g(src) //2 TC, nukies only
-			new /obj/item/ammo_box/magazine/m12g(src) //2 TC, nukies only
-			new /obj/item/grenade/plastic/c4 (src) //1 TC
-			new /obj/item/grenade/plastic/c4 (src) //1 TC
-			new /obj/item/card/emag(src) //6 TC
+		if("soldier") //39 TCish. One man army.
+			new /obj/item/clothing/suit/armor/kevlar(src) //~3 TC
+			new /obj/item/clothing/under/citizen/rebel(src) //4 TC
+			new /obj/item/kitchen/knife/combat(src) //5 TC
+			new	/obj/item/gun/ballistic/automatic/m4a1(src) //~20 TC
+			new	/obj/item/clothing/head/beret/durathread/unitednations(src) //~2 TC
+			new /obj/item/storage/backpack/satchel/flat(src) //3 TC
 
 /obj/item/storage/box/syndicate/bundle_B/PopulateContents()
 	switch (pickweight(list("v" = 2, "oddjob" = 2, "neo" = 1, "ninja" = 1, "darklord" = 1, "white_whale_holy_grail" = CARP_CARP_CARP, "mad_scientist" = 2, "bee" = 2, "mr_freeze" = 2, "gang_boss" = 1, "solo" = 1)))

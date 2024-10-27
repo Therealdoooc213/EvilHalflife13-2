@@ -1167,6 +1167,15 @@
 	req_components = list(/obj/item/stock_parts/capacitor = 1)
 	needs_anchored = FALSE
 
+/obj/item/circuitboard/machine/combinerecharger
+	name = "Combine Recharger (Machine Board)"
+	greyscale_colors = CIRCUIT_COLOR_SECURITY
+	build_path = /obj/machinery/combine_recharger
+	req_components = list(
+		/obj/item/stock_parts/micro_laser = 2,
+		/obj/item/stack/cable_coil = 5,
+		/obj/item/stock_parts/capacitor = 2)
+
 /obj/item/circuitboard/machine/techfab/department/security
 	name = "\improper Departmental Techfab (Machine Board) - Security"
 	greyscale_colors = CIRCUIT_COLOR_SECURITY
