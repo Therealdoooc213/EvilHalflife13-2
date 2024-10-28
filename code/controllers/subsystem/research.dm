@@ -33,7 +33,7 @@ SUBSYSTEM_DEF(research)
 	var/list/errored_datums = list()
 	var/list/point_types = list()				//typecache style type = TRUE list
 	//----------------------------------------------
-	var/list/single_server_income = list(TECHWEB_POINT_TYPE_GENERIC = 54.3)
+	var/list/single_server_income = list(TECHWEB_POINT_TYPE_GENERIC = 42.4)
 	var/multiserver_calculation = FALSE
 	var/last_income = 0
 	//^^^^^^^^ ALL OF THESE ARE PER SECOND! ^^^^^^^^
@@ -46,6 +46,7 @@ SUBSYSTEM_DEF(research)
 	//Aiming for 1.5 hours to max R&D
 	//[88nodes * 5000points/node] / [1.5hr * 90min/hr * 60s/min]
 	//Around 450000 points max???
+	//won't be true anymore in half life 13^, too lazy to calculate
 
 /datum/controller/subsystem/research/Initialize()
 	point_types = TECHWEB_POINT_TYPE_LIST_ASSOCIATIVE_NAMES

@@ -5,7 +5,7 @@
 	id = "base"
 	starting_node = TRUE
 	display_name = "Basic Research Technology"
-	description = "NT default research technologies."
+	description = "Combine default research technologies."
 	// Default research tech, prevents bricking
 	/*
 	design_ids = list("basic_matter_bin", "basic_cell", "basic_scanning", "basic_capacitor", "basic_micro_laser", "micro_mani", "desttagger", "handlabel", "packagewrap",
@@ -20,6 +20,7 @@
 	display_name = "Man Machine Interface"
 	description = "A slightly Frankensteinian device that allows human brains to interface natively with software APIs."
 	design_ids = list("mmi")
+	prereq_ids = list("base")
 
 /datum/techweb_node/cyborg
 	id = "cyborg"
@@ -27,25 +28,7 @@
 	display_name = "Cyborg Construction"
 	description = "Sapient robots with preloaded tool modules and programmable laws."
 	design_ids = list("borg_r_arm", "borg_l_arm", "borg_r_leg", "borg_l_leg", "cyborgrecharger", "viscerator_frame", "biopin", "scanner_frame", "aiming_skillchip", "engineer_skillchip", "doctor_skillchip", "fitness_skillchip", "painsuppress_skillchip")
-
-/datum/techweb_node/mech
-	id = "mecha"
-	starting_node = TRUE
-	display_name = "Mechanical Exosuits"
-	description = "Mechanized exosuits that are several magnitudes stronger and more powerful than the average human."
-
-/datum/techweb_node/mech_tools
-	id = "mech_tools"
-	starting_node = TRUE
-	display_name = "Basic Exosuit Equipment"
-	description = "Various tools fit for basic mech units"
-
-/datum/techweb_node/clarke
-	id = "mecha_clarke"
-	display_name = "EXOSUIT: Clarke"
-	description = "Clarke exosuit designs"
-	prereq_ids = list("engineering")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	prereq_ids = list("base")
 
 /datum/techweb_node/basic_tools
 	id = "basic_tools"
@@ -53,6 +36,7 @@
 	display_name = "Basic Tools"
 	description = "Basic mechanical, electronic, surgical and botanical tools."
 	//design_ids = list("screwdriver", "wrench", "wirecutters", "crowbar", "multitool", "welding_tool", "tscanner", "analyzer", "cable_coil", "pipe_painter", "airlock_painter", "decal_painter", "tile_painter", "scalpel", "circular_saw", "bonesetter", "surgicaldrill", "retractor", "cautery", "hemostat", "syringe", "cultivator", "plant_analyzer", "shovel", "spade", "hatchet",  "mop", "cable_coil", "rpd", "analyzer", "tscanner", "large_welding_tool", "geigercounter")
+	prereq_ids = list("base")
 
 /////////////////////////Biotech/////////////////////////
 /datum/techweb_node/biotech
@@ -109,7 +93,6 @@
 	design_ids = list("surgery_heal_brute_upgrade","surgery_heal_burn_upgrade")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
 
-
 /datum/techweb_node/adv_surgery
 	id = "adv_surgery"
 	display_name = "Advanced Surgery"
@@ -125,14 +108,6 @@
 	prereq_ids = list("adv_surgery")
 	design_ids = list("surgery_pacify","surgery_vein_thread","surgery_muscled_veins","surgery_nerve_splice","surgery_nerve_ground","surgery_ligament_hook","surgery_ligament_reinforcement","surgery_viral_bond", "surgery_heal_combo_upgrade", "surgery_dna_recovery", "surgery_exp_dissection")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-
-/datum/techweb_node/alien_surgery
-	id = "alien_surgery"
-	display_name = "Alien Surgery"
-	description = "Abductors did nothing wrong."
-	prereq_ids = list("exp_surgery", "alientech")
-	design_ids = list("surgery_zombie","surgery_heal_combo_upgrade_femto", "surgery_brainwashing", "surgery_ext_dissection")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7000)
 
 /////////////////////////data theory tech/////////////////////////
 /datum/techweb_node/datatheory //Computer science
@@ -163,7 +138,7 @@
 	id = "anomaly_research"
 	display_name = "Anomaly Research"
 	description = "Unlock the potential of the mysterious anomalies that appear on station."
-	prereq_ids = list("adv_engi", "practical_bluespace")
+	prereq_ids = list("adv_engi")
 	design_ids = list("reactive_armor", "anomaly_quiver", "anomaly_neutralizer")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 
@@ -183,64 +158,6 @@
 	design_ids = list("smes", "super_cell", "hyper_cell", "super_capacitor", "superpacman", "mrspacman", "power_turbine", "power_turbine_console", "power_compressor", "circulator", "teg")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
-/////////////////////////Bluespace tech/////////////////////////
-/datum/techweb_node/bluespace_basic //Bluespace-memery
-	id = "bluespace_basic"
-	display_name = "Basic Bluespace Theory"
-	description = "Basic studies into the mysterious alternate dimension known as bluespace."
-	prereq_ids = list("base")
-	design_ids = list("beacon", "telesci_gps", "bluespace_crystal")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-
-/datum/techweb_node/bluespace_travel
-	id = "bluespace_travel"
-	display_name = "Bluespace Travel"
-	description = "Application of Bluespace for static teleportation technology."
-	prereq_ids = list("practical_bluespace")
-	design_ids = list("tele_station", "tele_hub", "teleconsole", "quantumpad", "launchpad", "launchpad_console", "bluespace_pod", "bluespace_pipe")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-
-/datum/techweb_node/micro_bluespace
-	id = "micro_bluespace"
-	display_name = "Miniaturized Bluespace Research"
-	description = "Extreme reduction in space required for bluespace engines, leading to portable bluespace technology."
-	prereq_ids = list("bluespace_travel", "practical_bluespace", "high_efficiency")
-	design_ids = list("bluespace_matter_bin", "femto_mani", "bluespacebodybag", "triphasic_scanning", "quantum_keycard", "wormholeprojector")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
-
-/datum/techweb_node/advanced_bluespace
-	id = "bluespace_storage"
-	display_name = "Advanced Bluespace Storage"
-	description = "With the use of bluespace we can create even more advanced storage devices than we could have ever done"
-	prereq_ids = list("micro_bluespace", "janitor")
-	design_ids = list("bag_holding")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-
-/datum/techweb_node/practical_bluespace
-	id = "practical_bluespace"
-	display_name = "Applied Bluespace Research"
-	description = "Using bluespace to make things faster and better."
-	prereq_ids = list("bluespace_basic", "engineering")
-	design_ids = list("bs_rped","minerbag_holding", "bluespacebeaker", "bluespacevial", "bluespacesyringe", "phasic_scanning", "roastingstick", "ore_silo", "xenobioconsole")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-
-/datum/techweb_node/bluespace_power
-	id = "bluespace_power"
-	display_name = "Bluespace Power Technology"
-	description = "Even more powerful.. power!"
-	prereq_ids = list("adv_power", "practical_bluespace")
-	design_ids = list("bluespace_cell", "quadratic_capacitor")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-
-/datum/techweb_node/unregulated_bluespace
-	id = "unregulated_bluespace"
-	display_name = "Unregulated Bluespace Research"
-	description = "Bluespace technology using unstable or unbalanced procedures, prone to damaging the fabric of bluespace. Outlawed by galactic conventions."
-	prereq_ids = list("bluespace_travel", "syndicate_basic")
-	design_ids = list("desynchronizer")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-
-
 /////////////////////////plasma tech/////////////////////////
 /datum/techweb_node/basic_plasma
 	id = "basic_plasma"
@@ -255,39 +172,6 @@
 	description = "Research on how to fully exploit the power of plasma."
 	prereq_ids = list("basic_plasma")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-
-/////////////////////////shuttle tech/////////////////////////
-/datum/techweb_node/basic_shuttle_tech
-	id = "basic_shuttle"
-	display_name = "Basic Shuttle Research"
-	description = "Research the technology required to create and use basic shuttles."
-	prereq_ids = list("bluespace_travel", "adv_engi")
-	design_ids = list("shuttle_creator", "engine_plasma", "engine_heater", "shuttle_control", "shuttle_docker", "engine_ion", "engine_capacitor_bank")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
-
-/datum/techweb_node/shuttle_route_upgrade
-	id = "shuttle_route_upgrade"
-	display_name = "Route Optimisation Upgrade"
-	description = "Research into bluespace tunnelling, allowing us to reduce flight times by up to 20%!"
-	prereq_ids = list("basic_shuttle")
-	design_ids = list("disk_shuttle_route")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-
-/datum/techweb_node/shuttle_route_upgrade_hyper
-	id = "shuttle_route_upgrade_hyper"
-	display_name = "Hyperlane Optimisation Upgrade"
-	description = "Research into bluespace hyperlane, allowing us to reduce flight times by up to 40%!"
-	prereq_ids = list("shuttle_route_upgrade", "micro_bluespace")
-	design_ids = list("disk_shuttle_route_hyper")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-
-/datum/techweb_node/shuttle_route_upgrade_void
-	id = "shuttle_route_upgrade_void"
-	display_name = "Nullspace Breaching Upgrade"
-	description = "Research into voidspace tunnelling, allowing us to significantly reduce flight times."
-	prereq_ids = list("shuttle_route_upgrade_hyper", "alientech")
-	design_ids = list("disk_shuttle_route_void", "engine_void")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 12500)
 
 /////////////////////////robotics tech/////////////////////////
 /datum/techweb_node/robotics
@@ -338,7 +222,7 @@
 	id = "cyborg_upgrades_engineering_adv"
 	display_name = "Cyborg Upgrades: Advanced Engineering"
 	description = "Advanced upgrades that can only be used on cyborgs with a engineering-related module."
-	prereq_ids = list("cyborg_upgrades_engineering", "practical_bluespace", "exp_tools")
+	prereq_ids = list("cyborg_upgrades_engineering", "exp_tools")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
 /datum/techweb_node/cyborg_upgrades_nvg
@@ -456,7 +340,7 @@
 	id = "telecomms"
 	display_name = "Telecommunications Technology"
 	description = "Subspace transmission technology for near-instant communications devices."
-	prereq_ids = list("comptech", "bluespace_basic")
+	prereq_ids = list("comptech")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	design_ids = list("s-receiver", "s-bus", "s-broadcaster", "s-processor", "s-hub", "s-server", "s-relay", "comm_monitor", "comm_server",
 	"s-ansible", "s-filter", "s-amplifier", "ntnet_relay", "s-treatment", "s-analyzer", "s-crystal", "s-transmitter", "s-traffic", "s-messaging")
@@ -534,6 +418,7 @@ datum/techweb_node/cyber_organs/New()
 	description = "We have the technology to replace him."
 	prereq_ids = list("cyber_organs","robotics")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1500)
+	hidden = TRUE
 
 /datum/techweb_node/cyber_implants
 	id = "cyber_implants"
@@ -671,7 +556,7 @@ datum/techweb_node/cyber_organs/New()
 	display_name = "Advanced RCD designs upgrade"
 	description = "Unlocks new RCD designs."
 	design_ids = list("rcd_upgrade_silo_link")
-	prereq_ids = list("rcd_upgrade", "bluespace_travel")
+	prereq_ids = list("rcd_upgrade")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
 /////////////////////////weaponry tech/////////////////////////
@@ -793,20 +678,12 @@ datum/techweb_node/cyber_organs/New()
 	design_ids = list("mag_v38_frost", "mag_v38_talon")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
-/datum/techweb_node/gravity_gun
-	id = "gravity_gun"
-	display_name = "One-point Bluespace-gravitational Manipulator"
-	description = "Fancy wording for gravity gun."
-	prereq_ids = list("adv_weaponry", "bluespace_travel")
-	design_ids = list("gravitygun")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-
 /datum/techweb_node/experimental_ammo
 	id = "experimental_ammo"
 	display_name = "Experimental Ammunition"
 	description = "We're hitting levels of power that shouldn't be possible."
 	prereq_ids = list("exotic_ammo")
-	design_ids = list("techshotshell", "mag_v38_bluespace", "mag_oldsmg_kraken", "mag_oldsmg_snakebite")
+	design_ids = list("techshotshell", "mag_oldsmg_kraken", "mag_oldsmg_snakebite")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
 /////////////////////////Nanites/////////////////////////
@@ -883,40 +760,6 @@ datum/techweb_node/cyber_organs/New()
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000, TECHWEB_POINT_TYPE_NANITES = 4000)
 
 ////////////////////////Alien technology////////////////////////
-/datum/techweb_node/alientech //AYYYYYYYYLMAOO tech
-	id = "alientech"
-	display_name = "Alien Technology"
-	description = "Things used by the greys."
-	prereq_ids = list("biotech","engineering")
-	boost_item_paths = list(/obj/item/gun/energy/alien, /obj/item/scalpel/alien, /obj/item/hemostat/alien, /obj/item/retractor/alien, /obj/item/circular_saw/alien,
-	/obj/item/cautery/alien, /obj/item/surgicaldrill/alien, /obj/item/screwdriver/abductor, /obj/item/wrench/abductor, /obj/item/crowbar/abductor, /obj/item/multitool/abductor,
-	/obj/item/weldingtool/abductor, /obj/item/wirecutters/abductor, /obj/item/circuitboard/machine/abductor, /obj/item/abductor/baton, /obj/item/abductor)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
-	hidden = TRUE
-	design_ids = list("alienalloy", "mind_flayer")
-
-/datum/techweb_node/alien_bio
-	id = "alien_bio"
-	display_name = "Alien Biological Tools"
-	description = "Advanced biological tools."
-	prereq_ids = list("alientech", "adv_biotech")
-	design_ids = list("alien_scalpel", "alien_hemostat", "alien_retractor", "alien_saw", "alien_drill", "alien_cautery", "mindmachine_hub", "mindmachine_pod")
-	boost_item_paths = list(/obj/item/gun/energy/alien, /obj/item/scalpel/alien, /obj/item/hemostat/alien, /obj/item/retractor/alien, /obj/item/circular_saw/alien,
-	/obj/item/cautery/alien, /obj/item/surgicaldrill/alien, /obj/item/screwdriver/abductor, /obj/item/wrench/abductor, /obj/item/crowbar/abductor, /obj/item/multitool/abductor,
-	/obj/item/weldingtool/abductor, /obj/item/wirecutters/abductor, /obj/item/circuitboard/machine/abductor, /obj/item/abductor/baton, /obj/item/abductor)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-	hidden = TRUE
-
-/datum/techweb_node/alien_engi
-	id = "alien_engi"
-	display_name = "Alien Engineering"
-	description = "Alien engineering tools"
-	prereq_ids = list("alientech", "adv_engi")
-	design_ids = list("alien_wrench", "alien_wirecutters", "alien_screwdriver", "alien_crowbar", "alien_welder", "alien_multitool")
-	boost_item_paths = list(/obj/item/screwdriver/abductor, /obj/item/wrench/abductor, /obj/item/crowbar/abductor, /obj/item/multitool/abductor,
-	/obj/item/weldingtool/abductor, /obj/item/wirecutters/abductor, /obj/item/circuitboard/machine/abductor, /obj/item/abductor/baton, /obj/item/abductor)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-	hidden = TRUE
 
 /datum/techweb_node/syndicate_basic
 	id = "syndicate_basic"
@@ -953,14 +796,6 @@ datum/techweb_node/cyber_organs/New()
 	prereq_ids = list("ai_cpu_advanced")
 	research_costs = list(TECHWEB_POINT_TYPE_AI = 5000)
 
-/datum/techweb_node/ai_cpu_bluespace
-	id = "ai_cpu_bluespace"
-	display_name = "Bluespace Neural Processing"
-	description = "Breakthroughts in bluespace allows the fabrication of ultra fast NPUs. This however comes at the expense of greatly higher power consumption."
-	design_ids = list("bluespace_ai_cpu")
-	prereq_ids = list("ai_cpu_advanced", "practical_bluespace")
-	research_costs = list(TECHWEB_POINT_TYPE_AI = 10000)
-
 /datum/techweb_node/ai_ram_high_cap
 	id = "ai_ram_high_cap"
 	display_name = "High Capacity Memory Sticks"
@@ -976,16 +811,6 @@ datum/techweb_node/cyber_organs/New()
 	design_ids = list("ram3")
 	prereq_ids = list("ai_ram_high_cap")
 	research_costs = list(TECHWEB_POINT_TYPE_AI = 5000)
-
-/datum/techweb_node/ai_ram_bluespace
-	id = "ai_ram_bluespace"
-	display_name = "Bluespace Memory Sticks"
-	description = "Breakthroughs in bluespace technology allows memory chips to store data in special bluespace pockets. Greatly improves data density at the cost of higher fabrication costs."
-	design_ids = list("ram4")
-	prereq_ids = list("ai_ram_hyper", "practical_bluespace")
-	research_costs = list(TECHWEB_POINT_TYPE_AI = 7500)
-
-
 
 /datum/techweb_node/ai_cpu_1
 	id = "ai_cpu_2"
@@ -1008,14 +833,6 @@ datum/techweb_node/cyber_organs/New()
 	prereq_ids = list("ai_ram_2", "ai_cpu_2")
 	research_costs = list(TECHWEB_POINT_TYPE_AI = 5000)
 
-/datum/techweb_node/ai_architecture_bluespace
-	id = "ai_arch_bluespace"
-	display_name = "Bluespace Computing"
-	description = "Bluespace advances allow the instant teleportation of data across a server rack. This acts as a gateway to the final tier of computing."
-	prereq_ids = list("ai_arch_256", "practical_bluespace")
-	research_costs = list(TECHWEB_POINT_TYPE_AI = 7500)
-
-
 /datum/techweb_node/ai_cpu_2
 	id = "ai_cpu_3"
 	display_name = "Advanced CPU Sockets"
@@ -1025,9 +842,9 @@ datum/techweb_node/cyber_organs/New()
 
 /datum/techweb_node/ai_cpu_3
 	id = "ai_cpu_4"
-	display_name = "Bluespace CPU Sockets"
+	display_name = "Ultra Advanced CPU Sockets"
 	description = "Instant teleportation of data across CPU caches allows the installation of a fourth CPU core."
-	prereq_ids = list("ai_arch_bluespace", "ai_cpu_3")
+	prereq_ids = list("ai_cpu_3")
 	research_costs = list(TECHWEB_POINT_TYPE_AI = 10000)
 
 /datum/techweb_node/ai_ram_2
@@ -1039,9 +856,9 @@ datum/techweb_node/cyber_organs/New()
 
 /datum/techweb_node/ai_ram_3
 	id = "ai_ram_4"
-	display_name = "Bluespace Memory Bus"
-	description = "Bluespace teleportation allows the removal of all bottlenecks. Allows for the introduction of a fourth memory module."
-	prereq_ids = list("ai_ram_3", "ai_arch_bluespace")
+	display_name = "Ultra Advanced Memory Bus"
+	description = "High-tech Combine teleportation allows the removal of all bottlenecks. Allows for the introduction of a fourth memory module."
+	prereq_ids = list("ai_ram_3")
 	research_costs = list(TECHWEB_POINT_TYPE_AI = 8000)
 
 /proc/total_techweb_points()

@@ -21,7 +21,7 @@
 
 /obj/machinery/combine_recharger/examine(mob/user)
 	. = ..()
-	. += span_notice("It's capacity is at '[(capacity/capacity_max)*100]%'.")
+	. += span_notice("Its capacity is at '[(capacity/capacity_max)*100]%'.")
 
 /obj/machinery/combine_recharger/attack_hand(mob/living/carbon/human/H, modifiers)
 	. = ..()
