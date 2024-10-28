@@ -60,5 +60,7 @@
 	gloves = /obj/item/clothing/gloves/color/yellow
 	belt = /obj/item/melee/classic_baton/telescopic
 
+	r_pocket = /obj/item/hl2key/townhall
+
 	implants = list(/obj/item/implant/mindshield)
 	

@@ -88,7 +88,7 @@
 
 /area/halflife/indoors/bunker
 	ambient_buzz = 'sound/ambience/bunker2.ogg'
-	ambient_buzz_vol = 80
+	ambient_buzz_vol = 70
 
 /area/halflife/indoors/sewer
 	name = "\improper Sewers"
@@ -105,4 +105,4 @@
 /area/halflife/indoors/sewer/tunnel
 	name = "\improper Tunnels"
 	ambient_buzz = 'sound/ambience/bunker1.ogg'
-	ambient_buzz_vol = 90
+	ambient_buzz_vol = 80

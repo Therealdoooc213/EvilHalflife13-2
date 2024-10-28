@@ -97,10 +97,10 @@
 		return TRUE
 
 /obj/item/implanter/mindshield
-	name = "implanter (mindshield)"
+	name = "implanter (combine authorisation signal)"
 	imp_type = /obj/item/implant/mindshield
 
 /obj/item/implantcase/mindshield
-	name = "implant case - 'Mindshield'"
-	desc = "A glass case containing a mindshield implant."
+	name = "implant case - 'Combine Signal'"
+	desc = "A glass case containing a combine authorisation signal implant."
 	imp_type = /obj/item/implant/mindshield

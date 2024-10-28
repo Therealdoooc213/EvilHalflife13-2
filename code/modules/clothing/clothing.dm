@@ -302,7 +302,7 @@
 	if(armor.bio || armor.bomb || armor.bullet || armor.energy || armor.laser || armor.melee || armor.fire || armor.acid|| flags_cover & HEADCOVERSMOUTH || flags_cover & HEADCOVERSEYES)
 		. += "<span class='notice'>It has a <a href='?src=[REF(src)];list_armor=1'>tag</a> listing its protection classes.</span>"
 	if(powered_suit)
-		. += "<span class='notice'>It's power levels indicate it is at [(suit_power/max_suit_power)*100]% charge level.</span>"
+		. += "<span class='notice'>Its power levels indicate it is at [(suit_power/max_suit_power)*100]% charge level.</span>"
 
 /obj/item/clothing/Topic(href, href_list)
 	. = ..()

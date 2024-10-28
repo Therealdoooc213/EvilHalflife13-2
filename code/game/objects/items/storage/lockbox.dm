@@ -92,7 +92,7 @@
 			icon_state = icon_closed
 
 /obj/item/storage/lockbox/loyalty
-	name = "lockbox of mindshield implants"
+	name = "lockbox of combine authorisation implants"
 	req_access = list(ACCESS_SECURITY)
 
 /obj/item/storage/lockbox/loyalty/PopulateContents()

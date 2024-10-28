@@ -164,10 +164,12 @@
 
 	if((obj_flags & EMAGGED) && emag_doses_left < 0)
 		owner.reagents.add_reagent(/datum/reagent/medicine/morphine, 3)
+		owner.reagents.add_reagent(/datum/reagent/medicine/tricordrazine, 5)
 		SOUND_BEEP('sound/voice/nerdsuit/beep_3.ogg')
 		add_queue('sound/voice/nerdsuit/morphine.ogg',2 SECONDS)
 	else
 		owner.reagents.add_reagent(/datum/reagent/medicine/stimulants, 5)
+		owner.reagents.add_reagent(/datum/reagent/medicine/tricordrazine, 5)
 		SOUND_BEEP('sound/voice/nerdsuit/beep_3.ogg')
 		add_queue('sound/voice/nerdsuit/stimulants.ogg',2 SECONDS)
 		emag_doses_left--
