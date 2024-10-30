@@ -269,6 +269,10 @@
 /obj/effect/landmark/stationroom/sewer/rightentrance/tenxten,
 /turf/template_noop,
 /area/halflife/indoors/sewer)
+"bG" = (
+/obj/machinery/rnd/production/protolathe/department/medical,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/hospital)
 "bI" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -2421,6 +2425,10 @@
 	},
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/townhall)
+"oU" = (
+/obj/machinery/rnd/production/protolathe/department/engineering,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/productioncenter)
 "oW" = (
 /obj/machinery/mineral/unloading_machine{
 	dir = 1;
@@ -3214,13 +3222,6 @@
 /obj/structure/flora/xen/leafy,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/outdoors)
-"tY" = (
-/obj/structure/table/halflife/no_smooth/large/metal{
-	dir = 8
-	},
-/obj/item/reagent_containers/syringe,
-/turf/open/floor/plating/indoor/sterilesquares,
-/area/halflife/indoors/hospital)
 "ub" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	external_pressure_bound = 140;
@@ -3757,6 +3758,13 @@
 /obj/machinery/vending/breenwater,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/laborunion)
+"xp" = (
+/obj/structure/table/halflife/no_smooth/large/metal{
+	dir = 8
+	},
+/obj/item/defibrillator/loaded,
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/hospital)
 "xr" = (
 /turf/closed/wall/halflife/brick,
 /area/halflife/outdoors)
@@ -3810,6 +3818,10 @@
 /obj/effect/spawner/lootdrop/halflife/loot/consumables,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/sewer)
+"xI" = (
+/obj/machinery/rnd/production/protolathe/department/science,
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/scienceunion)
 "xM" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -5492,11 +5504,6 @@
 	},
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/townhall)
-"II" = (
-/obj/structure/closet/crate,
-/obj/item/defibrillator/loaded,
-/turf/open/floor/plating/indoor/metal/plate,
-/area/halflife/indoors/hospital)
 "IK" = (
 /turf/open/floor/plating/indoor/metal/pipe/intersection{
 	dir = 8
@@ -5516,6 +5523,13 @@
 	},
 /turf/open/floor/plating/ground/sidewalk,
 /area/halflife/outdoors)
+"IQ" = (
+/obj/machinery/computer/rdconsole/production{
+	dir = 4;
+	req_access = list("engineering")
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/productioncenter)
 "IR" = (
 /obj/machinery/door/unpowered/halflife/metal,
 /turf/open/floor/plating/indoor/lino,
@@ -7413,6 +7427,10 @@
 	},
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/trainstation)
+"Vy" = (
+/obj/machinery/rnd/production/circuit_imprinter/department/science,
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/scienceunion)
 "VA" = (
 /obj/machinery/camera{
 	c_tag = "Town Hall Beds";
@@ -7522,6 +7540,13 @@
 /obj/machinery/door/unpowered/halflife/metal,
 /turf/open/floor/plating/indoor/showroom,
 /area/halflife/indoors/hospital)
+"Wn" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/machinery/rnd/production/circuit_imprinter,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/productioncenter)
 "Wo" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 5
@@ -26845,9 +26870,9 @@ LC
 CS
 Et
 ty
-SA
-UQ
-uo
+IQ
+oU
+Wn
 UQ
 UQ
 Qk
@@ -27079,7 +27104,7 @@ IC
 RS
 FC
 ty
-UQ
+SA
 UQ
 sT
 jE
@@ -33479,7 +33504,7 @@ hK
 MZ
 bx
 Gs
-tY
+xp
 bx
 bx
 hK
@@ -34767,7 +34792,7 @@ Iw
 Iw
 sv
 hK
-II
+bG
 GK
 uG
 CD
@@ -36158,7 +36183,7 @@ IN
 Jz
 yz
 DZ
-DZ
+Vy
 DZ
 Jz
 rV
@@ -36390,7 +36415,7 @@ Mw
 WE
 IN
 Jz
-DZ
+xI
 DZ
 DZ
 DZ

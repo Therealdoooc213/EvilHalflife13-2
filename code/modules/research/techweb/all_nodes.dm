@@ -14,6 +14,149 @@
 	"rglass","plasteel","plastitanium","plasmaglass","plasmareinforcedglass","titaniumglass","plastitaniumglass","wallframe/flasher", "rsf", "rls", "oven_tray", "bounced_radio", "signaler", "signalbutton", "inspector_booth", "intercom_frame", "infrared_emitter", "health_sensor", "timer", "voice_analyser", "camera_assembly", "newscaster_frame", "prox_sensor", "flashlight", "extinguisher", "pocketfireextinguisher")
 	*/
 
+
+
+
+/datum/techweb_node/cyborg
+	id = "cyborg"
+	starting_node = TRUE
+	display_name = "Cybernetic Prosthetics"
+	description = "Cybernetic limb replacements. More durable than human flesh, and useful if you lost a limb."
+	design_ids = list("borg_r_arm", "borg_l_arm", "borg_r_leg", "borg_l_leg", "cyborgrecharger")
+	prereq_ids = list("base")
+
+/datum/techweb_node/city_scanner
+	id = "city_scanner"
+	display_name = "City Scanner Construction"
+	description = "Allows the construction of City Scanners from combine fabricators."
+	design_ids = list("scanner_frame")
+	prereq_ids = list("base")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 750)
+
+/datum/techweb_node/viscerator
+	id = "viscerator"
+	display_name = "Viscerator Construction"
+	description = "Allows the construction of Viscerators from combine fabricators."
+	design_ids = list("viscerator_frame")
+	prereq_ids = list("base")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 750)
+
+/datum/techweb_node/biopin
+	id = "biopin"
+	display_name = "Biopin Construction"
+	description = "Create advanced bio-signal locked firing pins from combine fabricators."
+	design_ids = list("biopin")
+	prereq_ids = list("base")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+
+/datum/techweb_node/skillchip_basic
+	id = "skillchip_basic"
+	display_name = "Skillchip Theory"
+	description = "Construct advanced memory modules which insert at the base of the brain stem using a dedicated machine, and teach the user important skills."
+	design_ids = list("fitness_skillchip")
+	prereq_ids = list("base")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+
+/datum/techweb_node/skillchip_combat
+	id = "skillchip_combat"
+	display_name = "Combat Skillchips"
+	description = "Research the ability to create advanced combat-grade skillchips."
+	design_ids = list("aiming_skillchip", "painsuppress_skillchip")
+	prereq_ids = list("skillchip_basic")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4000)
+
+/datum/techweb_node/skillchip_job
+	id = "skillchip_job"
+	display_name = "Job Skillchips"
+	description = "Research the ability to create advanced workplace knowledge and teaching skillchips."
+	design_ids = list("engineer_skillchip", "doctor_skillchip")
+	prereq_ids = list("skillchip_basic")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+
+/datum/techweb_node/biotech
+	id = "biotech"
+	display_name = "Biological Technology"
+	description = "Technology relating to biological functions of the human and non-human body."	//the MC, silly!
+	prereq_ids = list("base")
+	design_ids = list("chem_heater", "chem_master", "chem_dispenser", "pandemic", "defibrillator", "defibmount", "surgical_mat", "operating", "healthanalyzer", "medspray", "genescanner", "rollerbed")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+
+/datum/techweb_node/adv_biotech
+	id = "adv_biotech"
+	display_name = "Advanced Biotechnology"
+	description = "Advanced Bio-tech for advanced applications."
+	prereq_ids = list("biotech")
+	design_ids = list("hypospray", "piercesyringe", "hypospraypierceupg", "hyposprayspeedupg", "pinpointer_crew", "smoke_machine", "meta_beaker", "healthanalyzer_advanced", "harvester", "holobarrier_med", "detective_scanner", "detective_scanner_advanced" , "defibrillator_compact", "vialbox")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+
+/datum/techweb_node/cyber_organs
+	id = "cyber_organs"
+	display_name = "Cybernetic Organs"
+	description = "We have the technology to rebuild him."
+	prereq_ids = list("adv_biotech")
+	design_ids = list("cybernetic_heart", "cybernetic_liver", "cybernetic_lungs", "cybernetic_stomach", "cybernetic_ears", "cybernetic_appendix")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1250)
+
+/datum/techweb_node/cyber_organs_upgraded
+	id = "cyber_organs_upgraded"
+	display_name = "Upgraded Cybernetic Organs"
+	description = "We have the technology to upgrade him."
+	prereq_ids = list("cyber_organs")
+	design_ids = list("cybernetic_heart_u", "cybernetic_liver_u", "cybernetic_lungs_u", "cybernetic_stomach_u")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1500)
+
+/datum/techweb_node/cyber_implants
+	id = "cyber_implants"
+	display_name = "Cybernetic Implants"
+	description = "Electronic implants that improve humans."
+	prereq_ids = list("adv_biotech", "datatheory")
+	design_ids = list("ci-nutriment", "ci-breather", "ci-gloweyes", "ci-meson", "ci-welding", "ci-medhud", "ci-sechud", "ci-scihud", "ci-diaghud")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+
+/datum/techweb_node/adv_cyber_implants
+	id = "adv_cyber_implants"
+	display_name = "Advanced Cybernetic Implants"
+	description = "Upgraded and more powerful cybernetic implants."
+	prereq_ids = list("neural_programming", "cyber_implants","integrated_HUDs")
+	design_ids = list("ci-toolset", "ci-surgery", "ci-reviver", "ci-nutrimentplus")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+
+/datum/techweb_node/combat_cyber_implants
+	id = "combat_cyber_implants"
+	display_name = "Combat Cybernetic Implants"
+	description = "Military grade combat implants to improve performance."
+	prereq_ids = list("adv_cyber_implants","weaponry","NVGtech","high_efficiency")
+	design_ids = list("ci-antidrop", "ci-antistun")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+
+/////////////////////////Advanced Surgery/////////////////////////
+/datum/techweb_node/imp_wt_surgery
+	id = "imp_wt_surgery"
+	display_name = "Improved Wound-Tending Surgery"
+	description = "Who would have known being more gentle with a hemostat decreases patient pain?"
+	prereq_ids = list("biotech")
+	design_ids = list("surgery_heal_brute_upgrade","surgery_heal_burn_upgrade")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1250)
+
+
+/datum/techweb_node/adv_surgery
+	id = "adv_surgery"
+	display_name = "Advanced Surgery"
+	description = "When simple medicine doesn't cut it."
+	prereq_ids = list("imp_wt_surgery")
+	design_ids = list("surgery_lobotomy", "surgery_heal_brute_upgrade_femto","surgery_heal_burn_upgrade_femto","surgery_heal_combo", "surgery_revival", "surgery_adv_dissection")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1500)
+
+/datum/techweb_node/exp_surgery
+	id = "exp_surgery"
+	display_name = "Experimental Surgery"
+	description = "When evolution isn't fast enough."
+	prereq_ids = list("adv_surgery")
+	design_ids = list("surgery_pacify","surgery_vein_thread","surgery_muscled_veins","surgery_nerve_splice","surgery_nerve_ground","surgery_ligament_hook","surgery_ligament_reinforcement","surgery_viral_bond", "surgery_heal_combo_upgrade", "surgery_dna_recovery", "surgery_exp_dissection")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
+
+/*
+
 /datum/techweb_node/mmi
 	id = "mmi"
 	starting_node = TRUE
@@ -759,6 +902,8 @@ datum/techweb_node/cyber_organs/New()
 	design_ids = list("spreading_nanites","mitosis_nanites")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000, TECHWEB_POINT_TYPE_NANITES = 4000)
 
+
+
 ////////////////////////Alien technology////////////////////////
 
 /datum/techweb_node/syndicate_basic
@@ -778,6 +923,8 @@ datum/techweb_node/cyber_organs/New()
 		if(!UI.item || !UI.illegal_tech)
 			continue
 		boost_item_paths |= UI.item	//allows deconning to unlock.
+
+*/
 
 ////////////////////////AI Hardware////////////////////////
 /datum/techweb_node/ai_cpu_advanced
