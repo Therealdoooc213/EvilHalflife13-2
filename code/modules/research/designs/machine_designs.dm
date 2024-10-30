@@ -732,6 +732,14 @@
 	category = list ("Engineering Machinery")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
+/datum/design/board/combine_recharger
+	name = "Machine Design (Combine Recharger)"
+	desc = "The circuit board for a suit recharging unit."
+	id = "combine_recharger"
+	build_path = /obj/item/circuitboard/machine/combinerecharger
+	category = list ("Engineering Machinery")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
+
 /datum/design/board/crystallizer
 	name = "Machine Design (Crystallizer)"
 	desc = "The circuit board for a crystallizer."

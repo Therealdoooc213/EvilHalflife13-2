@@ -87,7 +87,7 @@
 	description = "Advanced Bio-tech for advanced applications."
 	prereq_ids = list("biotech")
 	design_ids = list("hypospray", "piercesyringe", "hypospraypierceupg", "hyposprayspeedupg", "pinpointer_crew", "smoke_machine", "meta_beaker", "healthanalyzer_advanced", "harvester", "holobarrier_med", "detective_scanner", "detective_scanner_advanced" , "defibrillator_compact", "vialbox")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
 
 /datum/techweb_node/cyber_organs
 	id = "cyber_organs"
@@ -154,6 +154,31 @@
 	prereq_ids = list("adv_surgery")
 	design_ids = list("surgery_pacify","surgery_vein_thread","surgery_muscled_veins","surgery_nerve_splice","surgery_nerve_ground","surgery_ligament_hook","surgery_ligament_reinforcement","surgery_viral_bond", "surgery_heal_combo_upgrade", "surgery_dna_recovery", "surgery_exp_dissection")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
+
+
+/datum/techweb_node/combine_recharger
+	id = "combine_recharger"
+	display_name = "Combine Recharger Construction"
+	description = "Create circuit boards for designing combine suit rechargers."
+	design_ids = list("combine_recharger")
+	prereq_ids = list("base")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
+
+/datum/techweb_node/camera_theory
+	id = "camera_theory"
+	display_name = "Camera Theory"
+	description = "Create body cameras which can be put around the neck and viewed from."
+	design_ids = list("bodycam")
+	prereq_ids = list("base")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
+
+/datum/techweb_node/high_efficiency
+	id = "high_efficiency"
+	display_name = "High Efficiency Parts"
+	description = "Finely-tooled manufacturing techniques allow for more efficient machine parts."
+	prereq_ids = list("base")
+	design_ids = list("adv_capacitor", "adv_scanning", "nano_mani", "high_micro_laser", "adv_matter_bin")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 6000)
 
 /*
 

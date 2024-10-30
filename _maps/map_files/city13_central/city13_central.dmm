@@ -279,6 +279,15 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/slums)
+"bK" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/chair/halflife/metal/blue{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/scienceunion)
 "bN" = (
 /obj/structure/chair/halflife/metal/blue,
 /obj/effect/landmark/start/cleanup_technician,
@@ -504,6 +513,10 @@
 	},
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors)
+"dd" = (
+/obj/machinery/rnd/production/circuit_imprinter,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/productioncenter)
 "de" = (
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/woodc,
@@ -2136,6 +2149,13 @@
 /obj/item/pickaxe,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/productioncenter)
+"nm" = (
+/obj/machinery/rnd/production/protolathe/department/engineering,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/productioncenter)
 "nn" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 8
@@ -2425,10 +2445,6 @@
 	},
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/townhall)
-"oU" = (
-/obj/machinery/rnd/production/protolathe/department/engineering,
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/halflife/indoors/productioncenter)
 "oW" = (
 /obj/machinery/mineral/unloading_machine{
 	dir = 1;
@@ -3222,6 +3238,13 @@
 /obj/structure/flora/xen/leafy,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/outdoors)
+"tY" = (
+/obj/machinery/light/small,
+/obj/structure/chair/halflife/metal/blue{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/scienceunion)
 "ub" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	external_pressure_bound = 140;
@@ -3385,6 +3408,12 @@
 /obj/machinery/light/small,
 /turf/open/floor/plating/indoor/grooved,
 /area/halflife/indoors/hospital)
+"vc" = (
+/obj/structure/table/halflife/metal/heavy,
+/obj/item/storage/part_replacer,
+/obj/item/storage/part_replacer,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/productioncenter)
 "vd" = (
 /obj/structure/chair/office/halflife/blue{
 	dir = 1
@@ -3818,6 +3847,12 @@
 /obj/effect/spawner/lootdrop/halflife/loot/consumables,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/sewer)
+"xH" = (
+/obj/structure/chair/halflife/metal/blue{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/scienceunion)
 "xI" = (
 /obj/machinery/rnd/production/protolathe/department/science,
 /turf/open/floor/plating/indoor/tile,
@@ -4434,6 +4469,12 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors)
+"BY" = (
+/obj/structure/table/halflife/metal/heavy,
+/obj/item/storage/toolbox/mechanical,
+/obj/machinery/light/small,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/productioncenter)
 "BZ" = (
 /turf/open/floor/plating/ground/brickroad,
 /area/halflife/outdoors/alley)
@@ -5002,12 +5043,6 @@
 "Fx" = (
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/productioncenter)
-"Fz" = (
-/obj/machinery/combine_recharger{
-	pixel_y = 32
-	},
-/turf/open/floor/plating/indoor/tile,
-/area/halflife/indoors/scienceunion)
 "FB" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 8
@@ -6951,10 +6986,6 @@
 /obj/structure/table/halflife/no_smooth/metal,
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/townhall)
-"Sh" = (
-/obj/machinery/light/small,
-/turf/open/floor/plating/indoor/tile,
-/area/halflife/indoors/scienceunion)
 "Si" = (
 /obj/effect/landmark/observer_start,
 /turf/open/floor/plating/ground/sidewalk,
@@ -7540,13 +7571,6 @@
 /obj/machinery/door/unpowered/halflife/metal,
 /turf/open/floor/plating/indoor/showroom,
 /area/halflife/indoors/hospital)
-"Wn" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/machinery/rnd/production/circuit_imprinter,
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/halflife/indoors/productioncenter)
 "Wo" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 5
@@ -26871,8 +26895,8 @@ CS
 Et
 ty
 IQ
-oU
-Wn
+nm
+dd
 UQ
 UQ
 Qk
@@ -27224,8 +27248,8 @@ ty
 ty
 or
 ty
-bc
-Ae
+vc
+BY
 ty
 sv
 sv
@@ -35479,11 +35503,11 @@ Mw
 WE
 IN
 ey
-nz
-DZ
-DZ
-DZ
-Sh
+bK
+xH
+tv
+xH
+tY
 Jz
 Iw
 Iw
@@ -36654,7 +36678,7 @@ DZ
 DZ
 DZ
 iK
-Fz
+DZ
 cC
 uO
 Jz

@@ -355,7 +355,7 @@
 	materials = list(/datum/material/iron = 1000, /datum/material/glass = 1000, /datum/material/gold = 500)
 	build_path = /obj/item/clothing/neck/bodycam/
 	category = list("Equipment")
-	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 
 /datum/design/ticket_remote
 	name = "Ticket Machine Remote"

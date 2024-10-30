@@ -27,6 +27,18 @@
 	ui_x = -64
 	ui_y = -64
 
+/datum/techweb_node/combine_recharger
+	ui_x = -96
+	ui_y = -96
+
+/datum/techweb_node/camera_theory
+	ui_x = -128
+	ui_y = -128
+
+/datum/techweb_node/high_efficiency
+	ui_x = -128
+	ui_y = -192
+
 /datum/techweb_node/skillchip_basic
 	ui_x = 192
 	ui_y = -192
