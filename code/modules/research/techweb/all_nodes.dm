@@ -428,14 +428,6 @@
 	prereq_ids = list("cyborg_upgrades_utility", "janitor")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 500) // Roleplay discount.
 
-/datum/techweb_node/ai
-	id = "ai"
-	display_name = "Artificial Intelligence"
-	description = "AI unit research."
-	prereq_ids = list("base")
-	design_ids = list("server_cabinet", "networking_machine", "subcontroller", "synth_pod", "ai_data_core", "ai_core_display", "ai_server_overview", "ram1", "basic_ai_cpu", "aifixer", "safeguard_module", "onehuman_module", "reporter_module", "protectstation_module", "quarantine_module", "oxygen_module", "freeform_module", "reset_module", "purge_module", "remove_module", "freeformcore_module", "asimov_module", "crewsimov_module", "paladin_module", "tyrant_module", "overlord_module", "ceo_module", "cowboy_module", "mother_module", "silicop_module", "construction_module", "metaexperiment_module", "researcher_module", "siliconcollective_module", "spotless_module", "clown_module", "chapai_module", "druid_module", "detective_module", "default_module", "intellicard")
-	research_costs = list(TECHWEB_POINT_TYPE_AI = 1000)
-
 /////////////////////////EMP tech/////////////////////////
 /datum/techweb_node/emp_basic //EMP tech for some reason
 	id = "emp_basic"
@@ -952,6 +944,14 @@ datum/techweb_node/cyber_organs/New()
 */
 
 ////////////////////////AI Hardware////////////////////////
+
+	id = "ai"
+	display_name = "Artificial Intelligence"
+	description = "AI unit research."
+	prereq_ids = list("base")
+	design_ids = list("server_cabinet", "networking_machine", "subcontroller", "ai_data_core", "ai_core_display", "ai_server_overview", "ram1", "basic_ai_cpu", "aifixer", "freeform_module", "reset_module", "purge_module", "remove_module", "freeformcore_module", "default_module", "intellicard")
+	research_costs = list(TECHWEB_POINT_TYPE_AI = 1000)
+
 /datum/techweb_node/ai_cpu_advanced
 	id = "ai_cpu_advanced"
 	display_name = "Advanced Neural Processing"

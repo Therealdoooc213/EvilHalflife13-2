@@ -297,7 +297,7 @@
 	..()
 	if(special != HEART_SPECIAL_SHADOWIFY)
 		blade = new/obj/item/light_eater
-		blade.force = 25
+		blade.force = 21
 		blade.armour_penetration = 35
 		M.put_in_hands(blade)
 	START_PROCESSING(SSobj, src)

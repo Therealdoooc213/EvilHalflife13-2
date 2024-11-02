@@ -13,6 +13,7 @@
 	fire_delay = 2
 	burst_size = 2
 	mag_display = TRUE
+	weapon_weight = WEAPON_MEDIUM
 	pin = /obj/item/firing_pin/implant/mindshield
 
 /obj/item/gun/ballistic/automatic/ar2/nopin

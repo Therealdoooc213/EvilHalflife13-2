@@ -7,6 +7,7 @@
 	mag_type = /obj/item/ammo_box/magazine/mp7
 	bolt_type = BOLT_TYPE_LOCKING
 	mag_display = TRUE
+	weapon_weight = WEAPON_MEDIUM
 	show_bolt_icon = FALSE
 	burst_size = 3
 	fire_delay = 1

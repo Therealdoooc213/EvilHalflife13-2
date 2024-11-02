@@ -49,7 +49,7 @@
 
 	if(lockhash)
 		GLOB.lockhashes += lockhash
-	else if(locked)
+	else if(locked || keylock)
 		if(lockid)
 			if(GLOB.lockids[lockid])
 				lockhash = GLOB.lockids[lockid]

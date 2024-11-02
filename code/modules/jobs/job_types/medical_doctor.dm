@@ -4,8 +4,8 @@
 	orbit_icon = "staff-snake"
 	department_head = list("Labor Lead")
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the labor lead"
 	exp_requirements = 180
 	exp_type = EXP_TYPE_CREW

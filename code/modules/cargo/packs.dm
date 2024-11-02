@@ -109,6 +109,25 @@
 					/obj/item/clothing/suit/armor/civilprotection)
 	crate_name = "armor crate"
 
+/datum/supply_pack/security/baton
+	name = "Stun Baton Crate"
+	desc = "Three unloaded stun batons that require power cells."
+	cost = 300
+	access_view = ACCESS_SECURITY
+	contains = list(/obj/item/melee/baton,
+					/obj/item/melee/baton,
+					/obj/item/melee/baton)
+	crate_name = "baton crate"
+
+/datum/supply_pack/security/riotshield
+	name = "Riot Shield Crate"
+	desc = "Three riot shields designed for blocking melee attacks."
+	cost = 400
+	access_view = ACCESS_SECURITY
+	contains = list(/obj/item/shield/riot,
+					/obj/item/shield/riot,
+					/obj/item/shield/riot)
+	crate_name = "riot shield crate"
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////// Armory //////////////////////////////////////////
@@ -139,11 +158,11 @@
 	crate_name = "osipr ammo crate"
 
 /datum/supply_pack/security/armory/mp7
-	name = "MP7 Crate"
-	desc = "Contains two MP7 submachine guns. Requires Armory access to open."
-	cost = 950
-	contains = list(/obj/item/gun/ballistic/automatic/mp7,
-					/obj/item/gun/ballistic/automatic/mp7)
+	name = "MP7 Frame Crate"
+	desc = "Contains two MP7 submachine gun frames that must be assembled. Requires Armory access to open."
+	cost = 700
+	contains = list(/obj/item/weaponcrafting/frame/mp7,
+					/obj/item/weaponcrafting/frame/mp7)
 	crate_name = "mp7 gun crate"
 
 /datum/supply_pack/security/armory/mp7ammo
@@ -157,11 +176,11 @@
 	crate_name = "mp7 ammo crate"
 
 /datum/supply_pack/security/armory/spas12
-	name = "SPAS-12 Crate"
-	desc = "Contains two SPAS-12 shotguns. Requires Armory access to open."
-	cost = 950
-	contains = list(/obj/item/gun/ballistic/shotgun/spas12,
-					/obj/item/gun/ballistic/shotgun/spas12)
+	name = "SPAS-12 Frame Crate"
+	desc = "Contains two SPAS-12 shotgun frames that must be assembled. Requires Armory access to open."
+	cost = 700
+	contains = list(/obj/item/weaponcrafting/frame/spas12,
+					/obj/item/weaponcrafting/frame/spas12)
 	crate_name = "spas-12 gun crate"
 
 /datum/supply_pack/security/armory/shotgunammo
@@ -175,11 +194,11 @@
 	crate_name = "buckshot crate"
 
 /datum/supply_pack/security/armory/coltpython
-	name = "Colt Python Crate"
-	desc = "Contains two Colt Python revolvers. Requires Armory access to open."
-	cost = 1000
-	contains = list(/obj/item/gun/ballistic/revolver/coltpython,
-					/obj/item/gun/ballistic/revolver/coltpython)
+	name = "Colt Python Frame Crate"
+	desc = "Contains two Colt Python revolver frames that must be assembled. Requires Armory access to open."
+	cost = 750
+	contains = list(/obj/item/weaponcrafting/frame/coltpython,
+					/obj/item/weaponcrafting/frame/coltpython)
 	crate_name = "colt python gun crate"
 
 /datum/supply_pack/security/armory/revolverammo
@@ -194,10 +213,10 @@
 
 /datum/supply_pack/security/armory/usp
 	name = "USP Match Crate"
-	desc = "Contains two USP Match pistols. Requires Armory access to open."
-	cost = 650
-	contains = list(/obj/item/gun/ballistic/automatic/pistol/usp,
-					/obj/item/gun/ballistic/automatic/pistol/usp)
+	desc = "Contains two USP Match pistol frames that must be assembled. Requires Armory access to open."
+	cost = 400
+	contains = list(/obj/item/weaponcrafting/frame/usp,
+					/obj/item/weaponcrafting/frame/usp)
 	crate_name = "usp match gun crate"
 
 /datum/supply_pack/security/armory/uspammo
@@ -218,6 +237,15 @@
 					/obj/item/grenade/spawnergrenade/manhacks,
 					/obj/item/grenade/spawnergrenade/manhacks)
 	crate_name = "viscerator crate"
+
+/datum/supply_pack/security/armory/receivers
+	name = "Modular Receiver Crate"
+	desc = "Contains three modular firearm receivers, necessary for putting firearms together. Requires Armory access to open."
+	cost = 300
+	contains = list(/obj/item/weaponcrafting/receiver,
+					/obj/item/weaponcrafting/receiver,
+					/obj/item/weaponcrafting/receiver)
+	crate_name = "modular receiver crate"
 
 
 //////////////////////////////////////////////////////////////////////////////

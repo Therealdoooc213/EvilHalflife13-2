@@ -2,7 +2,7 @@
 /turf/closed/wall/halflife
 	name = "wall"
 	desc = "A sturdy wall."
-	max_integrity = 1200
+	max_integrity = 1000
 	baseturfs = /turf/open/floor/plating/ground/dirt
 	deconstructible = FALSE
 

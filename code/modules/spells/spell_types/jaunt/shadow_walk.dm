@@ -6,6 +6,7 @@
 	button_icon = 'icons/mob/actions/actions_minor_antag.dmi'
 	button_icon_state = "ninja_cloak"
 
+	cooldown_time = 2 SECONDS
 	spell_requirements = NONE
 	jaunt_type = /obj/effect/dummy/phased_mob/shadow
 

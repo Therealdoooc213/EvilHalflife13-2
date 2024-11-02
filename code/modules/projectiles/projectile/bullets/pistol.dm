@@ -2,7 +2,7 @@
 
 /obj/projectile/bullet/c9mm
 	name = "9mm bullet"
-	damage = 24
+	damage = 22
 	wound_bonus = 10
 
 /obj/projectile/bullet/c9mm/ap

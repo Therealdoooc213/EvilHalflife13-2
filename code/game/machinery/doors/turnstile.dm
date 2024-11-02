@@ -156,3 +156,11 @@
 /obj/machinery/turnstile/brig/halflife/forcefield/botany/nodirectional
 	desc = "A forcefield which only allows those to pass who have proper access. You may be able to turn it off with the proper access."
 	directional = FALSE
+
+/obj/machinery/turnstile/brig/halflife/forcefield/maint
+	name = "Combine Work Zone Forcefield"
+	req_access = list(ACCESS_MAINT_TUNNELS)
+
+/obj/machinery/turnstile/brig/halflife/forcefield/maint/nodirectional
+	desc = "A forcefield which only allows those to pass who have proper access. You may be able to turn it off with the proper access."
+	directional = FALSE

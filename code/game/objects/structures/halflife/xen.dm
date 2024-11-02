@@ -90,3 +90,23 @@
 	foodtype = GROSS
 	icon = 'icons/obj/halflife/xenflora.dmi'
 	icon_state = "spore"
+
+/obj/structure/flora/xen/mound
+	name = "xen mound"
+	desc = "A disgusting, slimey, solid mound of goop. You may be able to break it for something."
+	icon_state = "mound"
+	light_range = 1.5
+	light_power = 1.5
+	light_color = "#1a994f"
+	breakmats = /obj/item/reagent_containers/food/snacks/xenslime
+
+/obj/item/reagent_containers/food/snacks/xenslime
+	name = "xenian slime"
+	desc = "A gross mass of slime. The inner contents look liquid and slosh about, while the outer shell is constantly coagulating. Interesting..."
+	tastes = list("slime" = 1)
+	filling_color = "#0f6e37"
+	bitesize = 4
+	list_reagents = list(/datum/reagent/medicine/coagulant = 4, /datum/reagent/toxin/staminatoxin = 4, /datum/reagent/consumable/ethanol = 4)
+	foodtype = GROSS
+	icon = 'icons/obj/halflife/xenflora.dmi'
+	icon_state = "slime"

@@ -215,6 +215,17 @@
 	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_WRENCH, TOOL_WELDER)
 	category = CAT_STRUCTURES
 
+/datum/crafting_recipe/maintforcefield
+	name = "Engineering/Infestation Control Forcefield"
+	result = /obj/machinery/turnstile/brig/halflife/forcefield/maint/nodirectional
+	time = 15 SECONDS
+	reqs = list(/obj/item/stack/sheet/metal = 10,
+		        /obj/item/stock_parts/micro_laser = 3,
+				/obj/item/circuitmaterial = 2,
+		        /obj/item/stack/cable_coil = 10)
+	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_WRENCH, TOOL_WELDER)
+	category = CAT_STRUCTURES
+
 /datum/crafting_recipe/combineturret
 	name = "Combine Turret"
 	result = /obj/machinery/porta_turret/combine/off
