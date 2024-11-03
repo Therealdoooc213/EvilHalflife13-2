@@ -99,6 +99,8 @@
 	light_power = 1.5
 	light_color = "#1a994f"
 	breakmats = /obj/item/reagent_containers/food/snacks/xenslime
+	density = 1
+	max_integrity = 100
 
 /obj/item/reagent_containers/food/snacks/xenslime
 	name = "xenian slime"

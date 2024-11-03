@@ -83,6 +83,35 @@
 				span_notice("You somehow manage to mess up gathering the perfectly fine scrap wood. It melts away before your very eyes..."))
 			qdel(src)
 
+/obj/structure/halflife/trash/garbage
+	name = "trash bags"
+	desc = "A collection of trash. Incomplete without you."
+	icon_state = "trashbags_1"
+	var/searched = FALSE
+
+/obj/structure/halflife/trash/garbage/Initialize(mapload)
+	. = ..()
+	icon_state = pick("trashbags_1","trashbags_2","trashbags_3","trashbags_4","trashbags_5","trashbags_6")
+
+/obj/structure/halflife/trash/garbage/attack_hand_secondary(mob/living/user, list/modifiers)
+	. = ..()
+	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
+		return
+	if(searched)
+		span_notice("It's already been searched.")
+		return
+	user.visible_message(span_notice("[user] begins to sift through the [src] for anything useful."), \
+		span_notice("You begin to dig through the [src] for something interesting."))
+	if(do_after(user, 7 SECONDS, src))
+		if(prob(20))
+			user.visible_message(span_notice("[user] finds something inside the [src]."), \
+				span_notice("You find something interesting inside the [src]."))
+			new /obj/effect/spawner/lootdrop/halflife/loot(loc, rand(1,2))
+		else
+			user.visible_message(span_notice("[user] finds nothing inside the [src]."), \
+				span_notice("Nothing good..."))
+		searched = TRUE
+
 /obj/structure/halflife/trash/food
 	name = "DO NOT USE ME - base type food trash"
 	desc = "I am a base type and if you see me in the map someone made a mistake."
