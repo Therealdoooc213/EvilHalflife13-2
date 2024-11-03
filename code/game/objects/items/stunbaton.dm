@@ -320,4 +320,17 @@
 	icon = 'icons/obj/module.dmi'
 	icon_state = "cyborg_upgrade3"
 
+/obj/item/melee/baton/heavy
+	name = "heavy stun baton"
+	desc = "A heavy version of the standard civil protection baton. Excels at beating people's skulls in. Pretty good for stunning too."
+	icon_state = "heavybaton"
+	slot_flags = ITEM_SLOT_BELT
+	force = 20
+	wound_bonus = 10
+	throwforce = 10
+	w_class = WEIGHT_CLASS_BULKY
+	attack_verb = list("bashed")
+	stamina_damage = 35
 
+/obj/item/melee/baton/heavy/loaded //this one starts with a cell pre-installed.
+	preload_cell_type = /obj/item/stock_parts/cell/high

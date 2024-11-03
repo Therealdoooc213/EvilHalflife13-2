@@ -303,22 +303,23 @@
 		/obj/item/stack/medical/bone_gel,
 		/obj/item/holosign_creator/medical,
 		/obj/item/holosign_creator/firstaid,
+		/obj/item/flashlight/seclite,
 		/obj/item/sequence_scanner
 		))
 
-/obj/item/storage/belt/medical/chief
-	name = "\improper Chief Medical Officer's toolbelt"
+/obj/item/storage/belt/medical/officer
+	name = "\improper Medical Officer's toolbelt"
 	desc = "Holds tools, looks snazzy."
 	icon_state = "medicalbelt_cmo"
 	item_state = "medical_cmo"
 
-/obj/item/storage/belt/medical/chief/full/PopulateContents()
-	SSwardrobe.provide_type(/obj/item/scalpel/advanced, src)
-	SSwardrobe.provide_type(/obj/item/retractor/advanced, src)
+/obj/item/storage/belt/medical/officer/full/PopulateContents()
 	SSwardrobe.provide_type(/obj/item/cautery/advanced, src)
-	SSwardrobe.provide_type(/obj/item/pinpointer/crew, src)
-	SSwardrobe.provide_type(/obj/item/sensor_device, src)
-	SSwardrobe.provide_type(/obj/item/healthanalyzer/advanced, src)
+	SSwardrobe.provide_type(/obj/item/reagent_containers/pill/patch/medkit/vial, src)
+	SSwardrobe.provide_type(/obj/item/reagent_containers/pill/patch/medkit/vial, src)
+	SSwardrobe.provide_type(/obj/item/reagent_containers/pill/patch/medkit/vial, src)
+	SSwardrobe.provide_type(/obj/item/flashlight/seclite, src)
+	SSwardrobe.provide_type(/obj/item/healthanalyzer, src)
 
 /obj/item/storage/belt/security
 	name = "security belt"

@@ -38,10 +38,10 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			create_uplink_sales(4, "Discounted Gear", 1, sale_items, filtered_uplink_items)
 		else
 			if (!nuclear_team.team_discounts)
-				// create 5 unlimited stock discounts
-				create_uplink_sales(5, "Discounted Team Gear", -1, sale_items, filtered_uplink_items)
-				// Create 10 limited stock discounts
-				create_uplink_sales(10, "Limited Stock Team Gear", 1, sale_items, filtered_uplink_items)
+				// create 1 unlimited stock discount
+				create_uplink_sales(1, "Discounted Team Gear", -1, sale_items, filtered_uplink_items)
+				// Create 4 limited stock discounts
+				create_uplink_sales(4, "Limited Stock Team Gear", 1, sale_items, filtered_uplink_items)
 				nuclear_team.team_discounts = list("Discounted Team Gear" = filtered_uplink_items["Discounted Team Gear"], "Limited Stock Team Gear" = filtered_uplink_items["Limited Stock Team Gear"])
 			else
 				for(var/cat in nuclear_team.team_discounts)

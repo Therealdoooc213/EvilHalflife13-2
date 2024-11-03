@@ -3,7 +3,7 @@
 	icon = 'icons/obj/weapons/shield.dmi'
 	slowdown = 0.2
 	item_flags = SLOWS_WHILE_IN_HAND
-	armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 0, BOMB = 30, BIO = 0, RAD = 0, FIRE = 80, ACID = 70)
+	armor = list(MELEE = 50, BULLET = 0, LASER = 50, ENERGY = 0, BOMB = 30, BIO = 0, RAD = 0, FIRE = 80, ACID = 70)
 	var/block_force = 20
 	var/block_flags = SHIELD_BLOCK_FLAGS
 

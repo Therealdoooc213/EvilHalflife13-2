@@ -152,7 +152,7 @@
 	blocks_shove_knockdown = TRUE
 	strip_delay = 80
 	equip_delay_other = 60
-	slowdown = 0.33
+	slowdown = 0.25
 	mutantrace_variation = DIGITIGRADE_VARIATION
 
 /obj/item/clothing/suit/armor/bone

@@ -7,10 +7,9 @@
 	layer = 2.9
 	density = TRUE
 	var/list/inventory = list()
-	var/list/allowed_types = list(/obj/item/ammo_box/magazine/recharge/ntusp)
+	var/list/allowed_types = list()
 	
-	contents = newlist(/obj/item/gun/energy/disabler, 
-					   /obj/item/gun/ballistic/automatic/pistol/ntusp)
+	contents = newlist(/obj/item/gun/ballistic/automatic/pistol/usp, /obj/item/melee/baton/heavy/loaded)
 
 
 /obj/machinery/armaments_dispenser/Initialize(mapload)
@@ -62,10 +61,6 @@
 					new mag(loc)
 			else
 				return FALSE
-			if(prob(0.1)) //Easteregg of the exploit that allowed you to buy an actual real ratvar mob
-				playsound(src, 'sound/magic/clockwork/ark_activation.ogg', 50, 0)
-				visible_message(message = "<span class='big_brass'>Ratvar has risen! ...from the vendor?</span>")
-				new /obj/item/toy/plush/plushvar(loc)
 			C.registered_account.sec_weapon_claimed = TRUE
 			return TRUE
 	return FALSE

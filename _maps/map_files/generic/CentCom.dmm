@@ -389,6 +389,12 @@
 /obj/structure/closet/syndicate/personal,
 /turf/open/floor/pod/light,
 /area/yogs/infiltrator_base)
+"afx" = (
+/obj/structure/table/halflife/metal/grate,
+/obj/item/weaponcrafting/receiver,
+/obj/item/weaponcrafting/receiver,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/bunker)
 "afX" = (
 /turf/closed/indestructible/riveted,
 /area/start)
@@ -17295,6 +17301,13 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/syndicate_mothership/control)
+"bxA" = (
+/obj/structure/table/halflife/metal/grate,
+/obj/item/stack/tape,
+/obj/item/stack/tape,
+/obj/item/stack/tape,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/bunker)
 "bAR" = (
 /turf/open/floor/plating/indoor/lino,
 /area/halflife/indoors/bunker)
@@ -17472,15 +17485,6 @@
 /obj/machinery/vending/liberationstation,
 /turf/open/floor/plasteel,
 /area/centcom/testchamber)
-"cND" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/structure/table/halflife/metal/grate,
-/obj/item/storage/belt/pouch,
-/obj/item/storage/belt/pouch,
-/turf/open/floor/plating/indoor/metal/plate,
-/area/halflife/indoors/bunker)
 "cOr" = (
 /obj/effect/turf_decal/trimline/secred/filled/line/lower{
 	dir = 6
@@ -17896,14 +17900,6 @@
 /obj/effect/mapping_helpers/airlock/access/all/admin/general,
 /turf/open/floor/plasteel,
 /area/centcom/control)
-"gjG" = (
-/obj/structure/table/halflife/metal/grate,
-/obj/item/stack/sheet/mineral/sandbags{
-	amount = 5
-	},
-/obj/item/storage/box/lights/bulbs,
-/turf/open/floor/plating/indoor/metal/plate,
-/area/halflife/indoors/bunker)
 "gko" = (
 /obj/machinery/turnstile/brig/halflife/forcefield/nodirectional{
 	dir = 1
@@ -18220,11 +18216,6 @@
 "iyd" = (
 /turf/open/floor/plating/indoor/grooved2,
 /area/halflife/indoors/bunker)
-"izY" = (
-/obj/structure/table/halflife/metal/grate,
-/obj/item/machinepiece/multifunctiontool,
-/turf/open/floor/plating/indoor/metal/plate,
-/area/halflife/indoors/bunker)
 "iBl" = (
 /turf/open/floor/plating/indoor/metal/walkway/corner,
 /area/centcom/ferry)
@@ -18408,6 +18399,13 @@
 	},
 /turf/closed/indestructible/riveted,
 /area/centcom/control)
+"jWP" = (
+/obj/structure/table/halflife/metal/grate,
+/obj/item/stack/sheet/mineral/sandbags{
+	amount = 5
+	},
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/bunker)
 "jZR" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -18446,6 +18444,10 @@
 	icon_state = "info3"
 	},
 /area/centcom/testchamber)
+"kmi" = (
+/obj/machinery/nuclearbomb/syndicate,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/outdoors)
 "kmM" = (
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
@@ -18516,6 +18518,14 @@
 	name = "Central Primary Hallway"
 	},
 /area/centcom/syndicate_mothership)
+"kIB" = (
+/obj/structure/table/halflife/metal/grate,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/item/hatchet/wooden,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/bunker)
 "kMR" = (
 /turf/open/indestructible/wiki/info{
 	icon_state = "info28"
@@ -18597,13 +18607,6 @@
 	dir = 1
 	},
 /turf/open/floor/plating/indoor/grooved2,
-/area/halflife/indoors/bunker)
-"ltx" = (
-/obj/structure/table/halflife/metal/grate,
-/obj/item/ammo_box/magazine/usp9mm,
-/obj/item/ammo_box/magazine/usp9mm,
-/obj/item/hatchet/wooden,
-/turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/bunker)
 "lzu" = (
 /obj/machinery/light/small{
@@ -19194,15 +19197,6 @@
 "pJM" = (
 /turf/closed/indestructible/abductor,
 /area/bluespace_locker)
-"pJQ" = (
-/obj/structure/table/halflife/metal/grate,
-/obj/item/stack/tape,
-/obj/item/stack/tape,
-/obj/item/stack/tape,
-/obj/item/weaponcrafting/receiver,
-/obj/item/weaponcrafting/receiver,
-/turf/open/floor/plating/indoor/metal/plate,
-/area/halflife/indoors/bunker)
 "pKt" = (
 /obj/structure/chair/office/dark{
 	dir = 1
@@ -19492,6 +19486,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/centcom/syndicate_mothership)
+"sjX" = (
+/obj/structure/table/halflife/metal/grate,
+/obj/item/ammo_box/magazine/usp9mm,
+/obj/item/ammo_box/magazine/usp9mm,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/bunker)
 "smK" = (
 /obj/machinery/door/unpowered/halflife/metal,
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -19722,15 +19722,6 @@
 /obj/effect/landmark/start/nukeop_leader,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/bunker)
-"tYv" = (
-/obj/structure/table/halflife/metal/grate,
-/obj/item/grenade/plastic/c4,
-/obj/item/grenade/plastic/c4,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/plating/indoor/metal/plate,
-/area/halflife/indoors/bunker)
 "uav" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/plasteel/dark,
@@ -19745,6 +19736,14 @@
 /obj/effect/turf_decal/trimline/secred/filled/line/lower,
 /turf/open/floor/plasteel/dark,
 /area/centcom/syndicate_mothership)
+"uhp" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/structure/table/halflife/metal/grate,
+/obj/item/storage/box/lights/bulbs,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/bunker)
 "uiX" = (
 /obj/structure/mecha_wreckage/seraph,
 /turf/open/floor/plating/asteroid/snow/temperatre,
@@ -62117,10 +62116,10 @@ aaa
 aaa
 rZV
 wpx
-pJQ
-izY
-cND
-gjG
+bxA
+afx
+uhp
+jWP
 gFn
 qvo
 eAl
@@ -62361,9 +62360,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+ohQ
+kmi
+ohQ
 aaa
 aaa
 aaa
@@ -62618,9 +62617,9 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
+ohQ
+ohQ
+ohQ
 aaa
 aaa
 aaa
@@ -62632,8 +62631,8 @@ aaa
 rZV
 wpx
 gUB
-ltx
-tYv
+sjX
+kIB
 liS
 uCc
 wpx

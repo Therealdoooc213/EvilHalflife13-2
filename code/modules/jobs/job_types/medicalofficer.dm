@@ -60,7 +60,7 @@
 	glasses = /obj/item/clothing/glasses/hud/security/civilprotection/medical
 
 	mask = /obj/item/clothing/mask/gas/civilprotection/medical
-	belt = /obj/item/storage/belt/civilprotection/medicfull
+	belt = /obj/item/storage/belt/medical/officer/full
 
 	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert)
 	skillchips = list(/obj/item/skillchip/doctor)

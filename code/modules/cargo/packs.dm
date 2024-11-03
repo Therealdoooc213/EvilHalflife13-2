@@ -109,6 +109,17 @@
 					/obj/item/clothing/suit/armor/civilprotection)
 	crate_name = "armor crate"
 
+/datum/supply_pack/security/riotarmor
+	name = "Riot Armor Crate"
+	desc = "Two sets of riot control armor that excels at stopping blunt force trauma, cuts, and lacerations from close range. Does little against firearms, however."
+	cost = 450
+	access_view = ACCESS_SECURITY
+	contains = list(/obj/item/clothing/suit/armor/riot,
+					/obj/item/clothing/suit/armor/riot,
+					/obj/item/clothing/head/helmet/riot,
+					/obj/item/clothing/head/helmet/riot)
+	crate_name = "riot armor crate"
+
 /datum/supply_pack/security/baton
 	name = "Stun Baton Crate"
 	desc = "Three unloaded stun batons that require power cells."
@@ -246,6 +257,15 @@
 					/obj/item/weaponcrafting/receiver,
 					/obj/item/weaponcrafting/receiver)
 	crate_name = "modular receiver crate"
+
+/datum/supply_pack/security/armory/heavybaton
+	name = "Heavy Stun Baton Crate"
+	desc = "Three unloaded heavy stun batons that require power cells. These heavy versions are more bulky and hard to carry, but carry a lot more force, and slightly more stunning power."
+	cost = 350
+	access_view = ACCESS_SECURITY
+	contains = list(/obj/item/melee/baton/heavy,
+					/obj/item/melee/baton/heavy)
+	crate_name = "heavy baton crate"
 
 
 //////////////////////////////////////////////////////////////////////////////

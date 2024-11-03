@@ -134,7 +134,7 @@
 	round_credits += "<center><h1>The [syndicate_name()] Operatives:</h1>"
 	len_before_addition = round_credits.len
 	for(var/datum/mind/operative in nuke_team.members)
-		round_credits += "<center><h2>[operative.name] as a nuclear operative</h2>"
+		round_credits += "<center><h2>[operative.name] as a rebel operative</h2>"
 	if(len_before_addition == round_credits.len)
 		round_credits += list("<center><h2>The operatives blew themselves up!</h2>", "<center><h2>Their remains could not be identified!</h2>")
 		round_credits += "<br>"
