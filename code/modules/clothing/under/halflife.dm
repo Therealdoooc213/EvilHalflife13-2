@@ -140,9 +140,8 @@
 /obj/item/clothing/under/combine/overwatch/elite
 	name = "overwatch jumpsuit"
 	desc = "Full-body reinforced suit which includes kevlar weaving to provide extra protection."
-	icon_state = "rsecurity"
-	item_state = "r_suit"
-	armor = list(MELEE = 25, BULLET = 25, LASER = 30,ENERGY = 30, BOMB = 30, BIO =40, RAD = 40, FIRE = 40, ACID = 30, WOUND = 10)
+	icon_state = "overwatch_white"
+	armor = list(MELEE = 25, BULLET = 25, LASER = 30,ENERGY = 30, BOMB = 30, BIO = 40, RAD = 40, FIRE = 40, ACID = 30, WOUND = 10)
 
 /obj/item/clothing/under/citizen
 	name = "citizen jumpsuit"

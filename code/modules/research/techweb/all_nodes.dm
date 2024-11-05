@@ -945,6 +945,7 @@ datum/techweb_node/cyber_organs/New()
 
 ////////////////////////AI Hardware////////////////////////
 
+/datum/techweb_node/ai
 	id = "ai"
 	display_name = "Artificial Intelligence"
 	description = "AI unit research."

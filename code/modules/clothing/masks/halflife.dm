@@ -129,3 +129,8 @@
 
 /obj/item/clothing/mask/gas/civilprotection/overwatch/red
 	icon_state = "overwatch_red"
+
+/obj/item/clothing/mask/gas/civilprotection/overwatch/elite
+	name = "overwatch elite soldier mask"
+	icon_state = "overwatch_white"
+	armor = list(MELEE = 20, BULLET = 40, LASER = 20, ENERGY = 20, BOMB = 25, BIO = 80, RAD = 80, FIRE = 80, ACID = 80, WOUND = 10)

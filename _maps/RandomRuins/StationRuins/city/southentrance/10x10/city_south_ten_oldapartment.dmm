@@ -1,0 +1,198 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"d" = (
+/obj/structure/bed/halflife/bedframe/wire,
+/turf/open/floor/plating/indoor/carpet/shaggy/violet,
+/area/halflife/indoors)
+"e" = (
+/obj/machinery/light/small/broken{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"k" = (
+/obj/structure/window/fulltile,
+/obj/structure/barricade/wooden/crude,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"n" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"o" = (
+/obj/structure/table/halflife/no_smooth/wood,
+/obj/structure/halflife/trash/glass/basic,
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"s" = (
+/obj/structure/halflife/trash/garbage,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"u" = (
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"A" = (
+/obj/structure/halflife/trash/wood,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"B" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"D" = (
+/turf/closed/wall/halflife/brick,
+/area/halflife/indoors)
+"F" = (
+/obj/structure/halflife/trash/cardboard,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"G" = (
+/obj/structure/halflife/trash/bricks,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"L" = (
+/obj/structure/halflife/trash/garbage,
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"M" = (
+/obj/structure/halflife/trash/garbage,
+/turf/open/floor/plating/indoor/carpet/shaggy/violet,
+/area/halflife/indoors)
+"P" = (
+/obj/machinery/light/small/broken{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"Q" = (
+/obj/structure/halflife/trash/food/dinner,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
+"T" = (
+/turf/open/floor/plating/indoor/carpet/shaggy/violet,
+/area/halflife/indoors)
+"Y" = (
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+
+(1,1,1) = {"
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+"}
+(2,1,1) = {"
+D
+u
+D
+u
+u
+D
+s
+u
+G
+D
+"}
+(3,1,1) = {"
+D
+u
+u
+G
+s
+D
+u
+u
+u
+k
+"}
+(4,1,1) = {"
+D
+s
+u
+u
+u
+D
+D
+u
+s
+D
+"}
+(5,1,1) = {"
+D
+u
+u
+u
+u
+P
+A
+u
+u
+n
+"}
+(6,1,1) = {"
+D
+D
+B
+D
+D
+u
+u
+u
+s
+D
+"}
+(7,1,1) = {"
+D
+o
+Y
+T
+D
+u
+u
+u
+u
+k
+"}
+(8,1,1) = {"
+D
+e
+Y
+M
+D
+u
+u
+u
+D
+D
+"}
+(9,1,1) = {"
+D
+L
+Y
+d
+D
+F
+u
+u
+Q
+D
+"}
+(10,1,1) = {"
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+"}

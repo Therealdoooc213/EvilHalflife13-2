@@ -367,3 +367,13 @@
 	id = "south_ten_lockedapartment"
 	suffix = "city_south_ten_lockedapartment.dmm"
 	name = "city south_ten_lockedapartment"
+
+/datum/map_template/ruin/station/city/southentrance/tenxten/oldapartment
+	id = "south_ten_oldapartment"
+	suffix = "city_south_ten_oldapartment.dmm"
+	name = "city south_ten_lockedapartment"
+
+/datum/map_template/ruin/station/city/southentrance/tenxten/laundromat
+	id = "south_ten_laundromat"
+	suffix = "city_south_ten_laundromat.dmm"
+	name = "city south_ten_laundromat"

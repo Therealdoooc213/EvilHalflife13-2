@@ -259,9 +259,9 @@
 
 		var/obj/item/lockpick/P = I
 		
-		var/picktime = 40
+		var/picktime = 30
 		var/pickchance = 60
-		var/moveup = 10
+		var/moveup = 20
 
 		pickchance *= P.picklvl
 		pickchance = clamp(pickchance, 1, 95)

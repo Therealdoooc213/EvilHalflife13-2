@@ -95,6 +95,17 @@
 	. = ..()
 	name_source = "OTA [rand(111,999)]"
 
+/datum/antagonist/ert/riotpolice
+	outfit = /datum/outfit/ert/riotpolice
+	role = "UNIT-"
+
+/datum/antagonist/ert/riotpolice/pistol
+	outfit = /datum/outfit/ert/riotpolice/pistol
+
+/datum/antagonist/ert/riotpolice/New()
+	. = ..()
+	name_source = "VICE [rand(111,999)]"
+
 /datum/antagonist/ert/deathsquad/apply_innate_effects(mob/living/mob_override)
 	ADD_TRAIT(owner, TRAIT_DISK_VERIFIER, DEATHSQUAD_TRAIT)
 

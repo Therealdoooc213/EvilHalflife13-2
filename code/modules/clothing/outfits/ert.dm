@@ -435,6 +435,9 @@
 
 /datum/outfit/ert/overwatch/ar2/elite
 	name = "OTA Elite Unit"
+	mask = /obj/item/clothing/mask/gas/civilprotection/overwatch/elite
+	uniform = /obj/item/clothing/under/combine/overwatch/elite
+	suit = /obj/item/clothing/suit/armor/overwatch/elite
 
 /datum/outfit/ert/overwatch/ar2/elite/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
@@ -442,3 +445,35 @@
 		return
 	var/datum/martial_art/cqc/elitecqc = new
 	elitecqc.teach(H)
+
+/datum/outfit/ert/riotpolice
+	name = "Metropolice Riot Unit"
+
+	ears = /obj/item/radio/headset/civilprotection
+	uniform = /obj/item/clothing/under/combine/civilprotection
+	gloves = /obj/item/clothing/gloves/color/civilprotection
+	suit = /obj/item/clothing/suit/armor/riot
+	suit_store = /obj/item/melee/baton/heavy/loaded
+	shoes = /obj/item/clothing/shoes/jackboots/civilprotection
+	glasses = /obj/item/clothing/glasses/hud/security/civilprotection
+	head = /obj/item/clothing/head/helmet/riot
+
+	mask = /obj/item/clothing/mask/gas/civilprotection
+	belt = /obj/item/storage/belt/civilprotection/full
+
+	implants = list(/obj/item/implant/mindshield, /obj/item/implant/biosig_ert)
+
+	back = /obj/item/shield/riot
+
+/datum/outfit/ert/riotpolice/pre_equip(mob/living/carbon/human/H)
+	H.faction += "combine"
+	H.cmode_music = 'sound/music/combat/apprehensionandevasion.ogg'
+	H.facial_hair_style = "Shaved"
+	H.hair_style = "Bald"
+	H.update_hair()
+
+/datum/outfit/ert/riotpolice/pistol
+	name = "Metropolice Riot Pistol Unit"
+
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/usp
+	ears = /obj/item/radio/headset/civilprotection/divisional/overwatch

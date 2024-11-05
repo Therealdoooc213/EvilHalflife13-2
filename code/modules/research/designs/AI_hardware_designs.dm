@@ -11,7 +11,7 @@
 
 /datum/design/ram/ram1
 	name = "standard memory"
-	desc = "Salvaged from decommisioned experiments at NT-CONLAB."
+	desc = "Salvaged from decommisioned computers found in homes."
 	id = "ram1"
 	
 	capacity = 1
@@ -35,7 +35,7 @@
 
 /datum/design/ram/ram4
 	name = "bluespace memory"
-	desc = "Using bluespace based technology it's possible to make increase RAM capacity without decreasing speed."
+	desc = "Using bluespace based technology it's possible to increase RAM capacity without decreasing speed."
 	id = "ram4"
 
 	capacity = 4

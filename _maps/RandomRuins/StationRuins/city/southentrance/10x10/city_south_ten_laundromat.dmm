@@ -1,0 +1,187 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"b" = (
+/turf/open/floor/plating/indoor/concrete/small,
+/area/space)
+"f" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/obj/machinery/light/small,
+/turf/open/floor/plating/indoor/grooved2,
+/area/space)
+"j" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/space)
+"n" = (
+/obj/structure/halflife/trash/garbage,
+/turf/open/floor/plating/indoor/grooved2,
+/area/space)
+"q" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/space)
+"w" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/obj/structure/halflife/trash/glass/cans,
+/turf/open/floor/plating/indoor/grooved2,
+/area/space)
+"x" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/space)
+"y" = (
+/obj/machinery/washing_machine,
+/turf/open/floor/plating/indoor/grooved2,
+/area/space)
+"C" = (
+/obj/machinery/door/unpowered/halflife/seethrough/metal,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/space)
+"D" = (
+/obj/structure/chair/halflife/metal{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/grooved2,
+/area/space)
+"O" = (
+/turf/open/floor/plating/indoor/grooved2,
+/area/space)
+"R" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/turf/open/floor/plating/indoor/grooved2,
+/area/space)
+"V" = (
+/turf/closed/wall/halflife/brick,
+/area/space)
+"Z" = (
+/obj/structure/chair/halflife/metal{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/grooved2,
+/area/space)
+
+(1,1,1) = {"
+V
+V
+V
+V
+V
+V
+V
+V
+V
+V
+"}
+(2,1,1) = {"
+V
+y
+O
+Z
+x
+Z
+O
+O
+y
+V
+"}
+(3,1,1) = {"
+V
+R
+O
+O
+b
+O
+O
+O
+R
+V
+"}
+(4,1,1) = {"
+V
+y
+O
+O
+b
+O
+O
+O
+y
+V
+"}
+(5,1,1) = {"
+V
+q
+b
+b
+b
+b
+b
+b
+b
+C
+"}
+(6,1,1) = {"
+V
+y
+O
+O
+b
+O
+O
+O
+y
+V
+"}
+(7,1,1) = {"
+V
+R
+O
+O
+b
+O
+O
+O
+f
+V
+"}
+(8,1,1) = {"
+V
+R
+O
+O
+b
+O
+O
+O
+w
+V
+"}
+(9,1,1) = {"
+V
+y
+O
+D
+j
+D
+n
+O
+y
+V
+"}
+(10,1,1) = {"
+V
+V
+V
+V
+V
+V
+V
+V
+V
+V
+"}

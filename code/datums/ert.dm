@@ -28,6 +28,14 @@
 	mission = "Stabilize the city, detain city officials, kill all citizens who do not comply."
 	polldesc = "an elite Overwatch Strike Team"
 
+/datum/ert/riotpolice
+	roles = list(/datum/antagonist/ert/riotpolice)
+	leader_role = /datum/antagonist/ert/riotpolice/pistol
+	rename_team = "Metropolice Riot Team"
+	code = "Red"
+	mission = "Stabilize the city, and detain or kill any malignant citizens."
+	polldesc = "a metropolice riot team"
+
 /datum/ert/blue
 	opendoors = FALSE
 	code = "Blue"

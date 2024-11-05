@@ -10,8 +10,12 @@
 
 /obj/item/clothing/suit/armor/civilprotection/trenchcoat
 	name = "civil protection trench coat"
-	desc = "A modified standard vest with a partial trenchcoat. Provides no additional protection, but is good as an identifier."
+	desc = "A modified standard vest with a partial trenchcoat. Provides protection for your arms and legs, but will slightly slow you down."
 	icon_state = "cp_trenchcoat"
+	slowdown = 0.25
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	cold_protection = CHEST|GROIN|LEGS|ARMS
+	heat_protection = CHEST|GROIN|LEGS|ARMS
 
 /obj/item/clothing/suit/armor/civilprotection/divisional
 	name = "divisional lead vest"
@@ -33,8 +37,7 @@
 /obj/item/clothing/suit/armor/overwatch/elite
 	name = "overwatch elite chestpiece"
 	desc = "Reinforced white kevlar weave surrounding a ceramic plated core. Provides incredible chest protection."
-	icon_state = "armoralt"
-	item_state = "armoralt"
+	icon_state = "overwatch_white"
 	armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 40, BOMB = 40, BIO = 50, RAD = 50, FIRE = 50, ACID = 50, WOUND = 20)
 
 //old armor found only as loot

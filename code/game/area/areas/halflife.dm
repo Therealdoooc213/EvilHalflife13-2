@@ -106,3 +106,6 @@
 	name = "\improper Tunnels"
 	ambient_buzz = 'sound/ambience/bunker1.ogg'
 	ambient_buzz_vol = 80
+
+/area/halflife/indoors/sewer/cave
+	name = "\improper Mining Caves"
