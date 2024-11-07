@@ -1,6 +1,6 @@
 /datum/job/hos
 	title = "Divisional Lead"
-	description = "Command the civil protection team, ensure the safety of the administrator and labor lead, take over for the District Administrator if necessary."
+	description = "Command the civil protection team, and act as Overwatch's ground agent in the city. Should a conflict of interest occur, you are expected to side with Overwatch."
 	orbit_icon = "user-shield"
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY|DEADMIN_POSITION_CRITICAL
 	department_head = list("District Administrator")

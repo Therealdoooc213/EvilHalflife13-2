@@ -310,6 +310,7 @@
 	minbodytemp = 0
 	mob_size = MOB_SIZE_TINY
 	movement_type = FLYING
+	move_to_delay = 2 //super fast spinny death machine
 	limb_destroyer = 1
 	speak_emote = list("states")
 	bubble_icon = BUBBLE_SYNDIBOT

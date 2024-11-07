@@ -202,7 +202,8 @@
 	name = "emergency shuttle"
 	shuttle_id = "emergency"
 	dir = EAST
-	port_direction = WEST
+	port_direction = NORTH
+	train = TRUE
 	var/sound_played = 0 //If the launch sound has been sent to all players on the shuttle itself
 
 /obj/docking_port/mobile/emergency/Initialize(mapload)

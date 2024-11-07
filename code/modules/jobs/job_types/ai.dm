@@ -1,6 +1,6 @@
 /datum/job/ai
 	title = "Dispatch"
-	description = "Monitor cameras and biosignals, while utilizing remote access to operate machinery such as forcefields and turrets."
+	description = "Monitor cameras and biosignals, while utilizing remote access to operate machinery such as forcefields and turrets. In addition act as an extension of Overwatch, and carry out any orders they may give."
 	orbit_icon = "eye"
 	auto_deadmin_role_flags = DEADMIN_POSITION_SILICON|DEADMIN_POSITION_CRITICAL
 	faction = "Station"

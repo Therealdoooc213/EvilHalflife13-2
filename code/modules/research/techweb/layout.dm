@@ -32,8 +32,12 @@
 	ui_y = -96
 
 /datum/techweb_node/camera_theory
-	ui_x = -128
-	ui_y = -128
+	ui_x = 32
+	ui_y = -256
+
+/datum/techweb_node/security_tech
+	ui_x = 32
+	ui_y = -196
 
 /datum/techweb_node/high_efficiency
 	ui_x = -128

@@ -325,8 +325,7 @@
 			victim.blind_eyes(10)
 			victim.set_confusion_if_lower(10 SECONDS)
 			victim.damageoverlaytemp = 75
-			victim.Paralyze(10 SECONDS)
-			M.adjustStaminaLoss(3)
+			M.adjustStaminaLoss(20)
 			return
 		else if ( eyes_covered ) // Eye cover is better than mouth cover
 			if(prob(20))
@@ -334,17 +333,16 @@
 			victim.adjust_eye_blur(4)
 			victim.set_confusion_if_lower(5 SECONDS)
 			victim.damageoverlaytemp = 50
-			M.adjustStaminaLoss(3)
+			M.adjustStaminaLoss(5)
 			return
 		else // Oh dear :D
-			if(prob(60))
+			if(prob(80))
 				victim.emote("scream")
 			victim.adjust_eye_blur(14)
 			victim.blind_eyes(10)
 			victim.set_confusion_if_lower(12 SECONDS)
 			victim.damageoverlaytemp = 100
-			victim.Paralyze(14 SECONDS)
-			M.adjustStaminaLoss(5)
+			M.adjustStaminaLoss(40)
 		victim.update_damage_hud()
 
 /datum/reagent/consumable/condensedcapsaicin/on_mob_life(mob/living/carbon/M)

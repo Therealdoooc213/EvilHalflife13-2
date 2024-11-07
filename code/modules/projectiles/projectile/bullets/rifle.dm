@@ -101,3 +101,12 @@
 	damage = 30
 	wound_bonus = -10
 	armour_penetration = 20
+
+/obj/projectile/bullet/flechette
+	name = "flechette"
+	icon_state = "flechette"
+	damage = 25
+	wound_bonus = -10
+	bare_wound_bonus = 5
+	armour_penetration = -20
+	hitsound = 'sound/creatures/halflife/hunter/flechette_flesh_impact1.ogg'

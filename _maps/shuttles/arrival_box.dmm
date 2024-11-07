@@ -8,11 +8,11 @@
 	},
 /turf/open/floor/plating/indoor/metal/plate,
 /area/shuttle/arrival)
-"k" = (
-/obj/machinery/door/unpowered/halflife/seethrough/metal{
-	dir = 4
+"d" = (
+/obj/machinery/light/small{
+	dir = 8
 	},
-/obj/structure/fans/tiny/invisible,
+/obj/structure/table/halflife/no_smooth/metal,
 /turf/open/floor/plating/indoor/grooved,
 /area/shuttle/arrival)
 "l" = (
@@ -35,29 +35,18 @@
 /obj/structure/table/halflife/no_smooth/metal,
 /turf/open/floor/plating/indoor/grooved,
 /area/shuttle/arrival)
+"z" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/grooved,
+/area/shuttle/arrival)
 "B" = (
 /obj/docking_port/mobile/arrivals{
 	dir = 2
 	},
 /turf/closed/wall/halflife/metal,
-/area/shuttle/arrival)
-"E" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/structure/chair/comfy/halflife/diner{
-	dir = 8
-	},
-/turf/open/floor/plating/indoor/grooved,
-/area/shuttle/arrival)
-"K" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/structure/chair/comfy/halflife/diner{
-	dir = 4
-	},
-/turf/open/floor/plating/indoor/grooved,
 /area/shuttle/arrival)
 "L" = (
 /obj/machinery/light/small,
@@ -72,6 +61,13 @@
 "T" = (
 /turf/open/floor/plating/indoor/metal/plate,
 /area/shuttle/arrival)
+"U" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/table/halflife/no_smooth/metal,
+/turf/open/floor/plating/indoor/grooved,
+/area/shuttle/arrival)
 "W" = (
 /turf/open/floor/plating/indoor/grooved,
 /area/shuttle/arrival)
@@ -82,7 +78,10 @@ m
 m
 m
 m
+m
 s
+m
+m
 m
 m
 m
@@ -91,30 +90,24 @@ a
 (2,1,1) = {"
 m
 m
-l
 v
-K
+l
+d
+l
 W
+l
+d
 v
 l
 m
 m
 "}
 (3,1,1) = {"
-m
-T
-T
-T
-T
-T
-T
-T
-T
-m
-"}
-(4,1,1) = {"
 B
 c
+T
+T
+T
 T
 T
 T
@@ -124,37 +117,31 @@ T
 L
 m
 "}
-(5,1,1) = {"
-m
-T
-T
-T
-T
-T
-T
-T
-T
-m
-"}
-(6,1,1) = {"
+(4,1,1) = {"
 m
 m
-M
 v
-E
+M
+z
+M
 W
+M
+U
 v
 M
 m
 m
 "}
-(7,1,1) = {"
+(5,1,1) = {"
 a
 m
 m
 m
 m
-k
+m
+s
+m
+m
 m
 m
 m

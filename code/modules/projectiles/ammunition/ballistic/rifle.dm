@@ -91,3 +91,9 @@
 	desc = "A OSIPR grade pulse round."
 	caliber = CALIBER_10MM
 	projectile_type = /obj/projectile/bullet/pulse/ar2
+
+/obj/item/ammo_casing/caseless/flechette
+	name = "flechette"
+	desc = "A flechette."
+	caliber = CALIBER_10MM
+	projectile_type = /obj/projectile/bullet/flechette

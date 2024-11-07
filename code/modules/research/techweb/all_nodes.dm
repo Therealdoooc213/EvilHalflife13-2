@@ -169,8 +169,16 @@
 	display_name = "Camera Theory"
 	description = "Create body cameras which can be put around the neck and viewed from."
 	design_ids = list("bodycam")
-	prereq_ids = list("base")
+	prereq_ids = list("security_tech")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3000)
+
+/datum/techweb_node/security_tech
+	id = "security_tech"
+	display_name = "Security Tech"
+	description = "Create machinery and items which function for checkpoints or basic police work."
+	design_ids = list("scanner_gate")
+	prereq_ids = list("base")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
 
 /datum/techweb_node/high_efficiency
 	id = "high_efficiency"

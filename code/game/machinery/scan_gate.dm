@@ -4,11 +4,13 @@
 #define SCANGATE_DISEASE 		"Disease"
 #define SCANGATE_GUNS 			"Guns"
 #define SCANGATE_WANTED			"Wanted"
+#define SCANGATE_SPECIES		"Species"
 #define SCANGATE_NUTRITION		"Nutrition"
 
 #define SCANGATE_HUMAN			"human"
+#define SCANGATE_LIZARD			"lizard"
+#define SCANGATE_FLY			"fly"
 #define SCANGATE_JELLY			"jelly"
-#define SCANGATE_POD			"pod"
 #define SCANGATE_GOLEM			"golem"
 #define SCANGATE_ZOMBIE			"zombie"
 
@@ -27,6 +29,7 @@
 	var/scangate_mode = SCANGATE_NONE
 	var/disease_threshold = DISEASE_SEVERITY_MINOR
 	var/nanite_cloud = 1
+	var/detect_species = SCANGATE_HUMAN
 	var/reverse = FALSE //If true, signals if the scan returns false
 	var/detect_nutrition = NUTRITION_LEVEL_FAT
 
@@ -41,7 +44,7 @@
 	else
 		. += span_notice("The control panel is unlocked. Swipe an ID to lock it.")
 
-/obj/machinery/scanner_gate/Crossed(atom/movable/AM)
+/obj/machinery/scanner_gate/Cross(atom/movable/AM, turf/target)
 	. = ..()
 	auto_scan(AM)
 
@@ -111,6 +114,26 @@
 				var/mob/living/carbon/C = M
 				if(get_disease_severity_value(C.check_virus()) >= get_disease_severity_value(disease_threshold))
 					beep = TRUE
+		if(SCANGATE_SPECIES)
+			if(ishuman(M))
+				var/mob/living/carbon/human/H = M
+				var/datum/species/scan_species = /datum/species/human
+				switch(detect_species)
+					if(SCANGATE_LIZARD)
+						scan_species = /datum/species/lizard
+					if(SCANGATE_FLY)
+						scan_species = /datum/species/fly
+					if(SCANGATE_JELLY)
+						scan_species = /datum/species/jelly
+					if(SCANGATE_GOLEM)
+						scan_species = /datum/species/golem
+					if(SCANGATE_ZOMBIE)
+						scan_species = /datum/species/zombie
+				if(is_species(H, scan_species))
+					beep = TRUE
+				if(detect_species == SCANGATE_ZOMBIE) //Can detect dormant zombies
+					if(H.getorganslot(ORGAN_SLOT_ZOMBIE))
+						beep = TRUE
 		if(SCANGATE_GUNS)
 			for(var/I in M.get_contents())
 				if(istype(I, /obj/item/gun))
@@ -157,6 +180,7 @@
 	data["reverse"] = reverse
 	data["nanite_cloud"] = nanite_cloud
 	data["disease_threshold"] = disease_threshold
+	data["target_species"] = detect_species
 	data["target_nutrition"] = detect_nutrition
 	return data
 
@@ -183,6 +207,11 @@
 			var/new_cloud = text2num(params["new_cloud"])
 			nanite_cloud = clamp(round(new_cloud, 1), 1, 100)
 			. = TRUE
+		//Some species are not scannable, like abductors (too unknown), androids (too artificial) or skeletons (too magic)
+		if("set_target_species")
+			var/new_species = params["new_species"]
+			detect_species = new_species
+			. = TRUE
 		if("set_target_nutrition")
 			var/new_nutrition = params["new_nutrition"]
 			var/nutrition_list = list(
@@ -203,4 +232,11 @@
 #undef SCANGATE_DISEASE
 #undef SCANGATE_GUNS
 #undef SCANGATE_WANTED
+#undef SCANGATE_SPECIES
 #undef SCANGATE_NUTRITION
+
+#undef SCANGATE_HUMAN
+#undef SCANGATE_LIZARD
+#undef SCANGATE_JELLY
+#undef SCANGATE_GOLEM
+#undef SCANGATE_ZOMBIE

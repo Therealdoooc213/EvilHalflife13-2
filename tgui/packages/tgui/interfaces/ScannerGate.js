@@ -13,6 +13,33 @@ const DISEASE_THEASHOLD_LIST = [
   'BIOHAZARD',
 ];
 
+const TARGET_SPECIES_LIST = [
+  {
+    name: 'Human',
+    value: 'human',
+  },
+  {
+    name: 'Lizardperson',
+    value: 'lizard',
+  },
+  {
+    name: 'Flyperson',
+    value: 'fly',
+  },
+  {
+    name: 'Jellyperson',
+    value: 'jelly',
+  },
+  {
+    name: 'Golem',
+    value: 'golem',
+  },
+  {
+    name: 'Zombie',
+    value: 'zombie',
+  },
+];
+
 const TARGET_NUTRITION_LIST = [
   {
     name: 'Starving',

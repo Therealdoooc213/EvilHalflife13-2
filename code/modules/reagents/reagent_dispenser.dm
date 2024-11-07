@@ -120,23 +120,14 @@
 	density = FALSE
 	reagent_id = /datum/reagent/consumable/condensedcapsaicin
 
-/obj/structure/reagent_dispensers/peppertank/Initialize(mapload)
-	. = ..()
-	if(prob(1))
-		desc = "IT'S PEPPER TIME, BITCH!"
-	// I am cheating
-	// Sets 1/3 of the tank to be pepperspray coloring
-	reagents.remove_reagent(reagent_id, tank_volume / 3)
-	reagents.add_reagent(/datum/reagent/colorful_reagent/crayonpowder/red/pepperspray, tank_volume / 3)
-
 /obj/structure/reagent_dispensers/water_cooler
 	name = "liquid cooler"
 	desc = "A machine that dispenses liquid to drink."
 	icon = 'icons/obj/vending.dmi'
 	icon_state = "water_cooler"
 	anchored = TRUE
-	tank_volume = 500
-	var/paper_cups = 25 //Paper cups left from the cooler
+	tank_volume = 200
+	var/paper_cups = 20 //Paper cups left from the cooler
 
 /obj/structure/reagent_dispensers/water_cooler/examine(mob/user)
 	. = ..()

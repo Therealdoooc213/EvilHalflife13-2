@@ -38,14 +38,38 @@
 	},
 /turf/open/floor/plating/indoor/grooved,
 /area/shuttle/escape)
+"gn" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/grooved,
+/area/shuttle/escape)
 "gD" = (
 /obj/structure/chair/comfy/halflife/captain{
 	dir = 4
 	},
 /turf/open/floor/plating/indoor/grooved,
 /area/shuttle/escape)
+"ja" = (
+/obj/structure/chair/comfy/halflife/diner{
+	dir = 8
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/grooved,
+/area/shuttle/escape)
+"kO" = (
+/obj/machinery/light/small,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/shuttle/escape)
 "lJ" = (
 /turf/closed/wall/halflife/metal,
+/area/shuttle/escape)
+"mW" = (
+/obj/structure/closet/crate,
+/turf/open/floor/plating/indoor/metal/plate,
 /area/shuttle/escape)
 "tA" = (
 /obj/structure/table/halflife/no_smooth/metal,
@@ -63,11 +87,18 @@
 	},
 /turf/open/floor/plating/indoor/grooved,
 /area/shuttle/escape)
-"Ew" = (
-/obj/machinery/light{
-	dir = 1
+"Fx" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/obj/machinery/light/small{
+	dir = 8
 	},
 /turf/open/floor/plating/indoor/grooved,
+/area/shuttle/escape)
+"GQ" = (
+/obj/structure/table/halflife/no_smooth/large/metal/desk{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/metal/plate,
 /area/shuttle/escape)
 "Hg" = (
 /obj/structure/chair/comfy/halflife/captain{
@@ -84,6 +115,21 @@
 "HH" = (
 /turf/open/floor/plating/indoor/metal/plate,
 /area/shuttle/escape)
+"Lp" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/grooved,
+/area/shuttle/escape)
+"Px" = (
+/obj/structure/chair/comfy/halflife/diner{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/grooved,
+/area/shuttle/escape)
 "Rn" = (
 /obj/machinery/door/unpowered/halflife/seethrough/metal{
 	dir = 8
@@ -91,15 +137,12 @@
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating/indoor/grooved,
 /area/shuttle/escape)
-"UT" = (
-/obj/structure/table/halflife/no_smooth/metal,
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/plating/indoor/grooved,
-/area/shuttle/escape)
 "Vv" = (
 /turf/open/floor/plating/indoor/grooved,
+/area/shuttle/escape)
+"Yj" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/metal/plate,
 /area/shuttle/escape)
 "YE" = (
 /obj/structure/chair/comfy/halflife/diner,
@@ -124,6 +167,9 @@ lJ
 lJ
 lJ
 lJ
+lJ
+lJ
+lJ
 aa
 "}
 (2,1,1) = {"
@@ -134,14 +180,17 @@ lJ
 lJ
 dn
 Vv
-dn
-UT
-dn
+Px
 tA
 dn
-Vv
-UT
+Fx
 dn
+Vv
+Fx
+dn
+lJ
+mW
+mW
 lJ
 bi
 bk
@@ -163,12 +212,15 @@ HH
 HH
 HH
 lJ
+HH
+HH
+lJ
 bi
 bk
 "}
 (4,1,1) = {"
 cU
-Ew
+Lp
 Vv
 cY
 HH
@@ -182,6 +234,9 @@ YE
 HH
 HH
 HH
+Yj
+HH
+kO
 lJ
 bi
 bk
@@ -203,6 +258,9 @@ HH
 HH
 HH
 lJ
+HH
+HH
+lJ
 bi
 bk
 "}
@@ -214,14 +272,17 @@ lJ
 lJ
 fK
 Vv
-fK
-UT
-fK
+ja
 tA
 fK
-Vv
-UT
+gn
 fK
+Vv
+gn
+fK
+lJ
+HH
+GQ
 lJ
 bi
 bk
@@ -240,6 +301,9 @@ lJ
 lJ
 lJ
 Rn
+lJ
+lJ
+lJ
 lJ
 lJ
 lJ

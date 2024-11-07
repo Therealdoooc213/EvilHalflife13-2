@@ -10,7 +10,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	visor_flags = BLOCK_GAS_SMOKE_EFFECT | MASKINTERNALS
 	flags_inv = HIDEFACIALHAIR|HIDEFACE|HIDEEYES|HIDEEARS|HIDEHAIR
-	flags_cover = MASKCOVERSMOUTH
+	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH
 	visor_flags_cover = MASKCOVERSMOUTH
 	modifies_speech = TRUE
 	vchange = 1
@@ -133,4 +133,4 @@
 /obj/item/clothing/mask/gas/civilprotection/overwatch/elite
 	name = "overwatch elite soldier mask"
 	icon_state = "overwatch_white"
-	armor = list(MELEE = 20, BULLET = 40, LASER = 20, ENERGY = 20, BOMB = 25, BIO = 80, RAD = 80, FIRE = 80, ACID = 80, WOUND = 10)
+	armor = list(MELEE = 20, BULLET = 45, LASER = 20, ENERGY = 20, BOMB = 25, BIO = 80, RAD = 80, FIRE = 80, ACID = 80, WOUND = 10)

@@ -211,7 +211,7 @@
 //pepperspray
 /obj/item/reagent_containers/spray/pepper
 	name = "pepperspray"
-	desc = "Manufactured by UhangInc, used to blind and down an opponent quickly. Now contains red dye to mark fleeing suspects!"
+	desc = "Old world pepper spray bottles. Aim and spray into somebody's eyes or mouth to heavily disorient them, or even bring them down."
 	icon = 'icons/obj/misc.dmi'
 	icon_state = "pepperspray"
 	item_state = "pepperspray"
@@ -220,7 +220,7 @@
 	volume = 60
 	stream_range = 4
 	amount_per_transfer_from_this = 5
-	list_reagents = list(/datum/reagent/consumable/condensedcapsaicin = 40, /datum/reagent/colorful_reagent/crayonpowder/red/pepperspray = 20) //red dye)
+	list_reagents = list(/datum/reagent/consumable/condensedcapsaicin = 60)
 
 /obj/item/reagent_containers/spray/pepper/empty //for protolathe printing
 	list_reagents = null

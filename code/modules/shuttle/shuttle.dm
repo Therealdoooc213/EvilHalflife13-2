@@ -39,6 +39,9 @@
 	///are we registered in SSshuttles?
 	var/registered = FALSE
 
+	///Do we play train sounds or shuttle sounds?
+	var/train = FALSE
+
 ///register to SSshuttles
 /obj/docking_port/proc/register()
 	if(registered)
@@ -1067,10 +1070,16 @@
 	switch(phase)
 		if(HYPERSPACE_WARMUP)
 			selected_sound = "hyperspace_begin"
+			if(train)
+				selected_sound = "train_begin"
 		if(HYPERSPACE_LAUNCH)
 			selected_sound = "hyperspace_progress"
+			if(train)
+				selected_sound = "train_progress"
 		if(HYPERSPACE_END)
 			selected_sound = "hyperspace_end"
+			if(train)
+				selected_sound = "train_end"
 		else
 			CRASH("Invalid hyperspace sound phase: [phase]")
 	// This previously was played from each door at max volume, and was one of the worst things I had ever seen.

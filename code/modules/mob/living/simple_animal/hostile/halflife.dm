@@ -93,6 +93,7 @@
 	attack_sound = 'sound/creatures/halflife/fastzombieattack.ogg'
 	combat_mode = TRUE
 	move_to_delay = 3
+	speed = -1
 	ranged = 1 //for jumping
 	deathsound = 'sound/creatures/halflife/fastzombiedeath.ogg'
 	no_crab_state = "fastzombie_nocrab"
@@ -237,3 +238,58 @@
 	icon_dead = "armoredheadcrab_dead"
 	maxHealth = 70
 	health = 70
+
+
+
+
+/mob/living/simple_animal/hostile/halflife/hunter
+	name = "Hunter"
+	desc = "A large tripod synth. Armored, and deadly."
+	icon = 'icons/mob/halflife_large.dmi'
+	icon_state = "hunter"
+	icon_living = "hunter"
+	icon_dead = "hunter_dead"
+	faction = list("combine")
+	mob_biotypes = MOB_ORGANIC
+	stat_attack = UNCONSCIOUS
+	maxHealth = 360
+	health = 360
+	harm_intent_damage = 25
+	melee_damage_lower = 20
+	melee_damage_upper = 25
+	sharpness = SHARP_EDGED
+	bare_wound_bonus = 10
+	attack_vis_effect = ATTACK_EFFECT_CLAW
+	attacktext = "claws"
+	attack_sound = 'sound/creatures/halflife/hunter/hunter_skewer1.ogg'
+	combat_mode = TRUE
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	minbodytemp = 0
+	status_flags = CANPUSH
+	footstep_type = FOOTSTEP_MOB_HUNTER
+	speed = -1
+	deathsound = 'sound/creatures/halflife/hunter/hunter_die3.ogg'
+	var/aggro_sound = list('sound/creatures/halflife/hunter/hunter_foundenemy1.ogg', 'sound/creatures/halflife/hunter/hunter_foundenemy2.ogg', 'sound/creatures/halflife/hunter/hunter_foundenemy3.ogg')
+	var/idle_sounds = list('sound/creatures/halflife/hunter/hunter_idle1.ogg', 'sound/creatures/halflife/hunter/hunter_idle2.ogg', 'sound/creatures/halflife/hunter/hunter_idle3.ogg')
+
+	ranged = 1
+	rapid = 3
+	retreat_distance = 4
+	minimum_distance = 4
+	projectilesound = 'sound/creatures/halflife/hunter/hunter_fire1.ogg'
+	casingtype = /obj/item/ammo_casing/caseless/flechette
+
+/mob/living/simple_animal/hostile/halflife/hunter/Aggro()
+	. = ..()
+	set_combat_mode(TRUE)
+	if(prob(50))
+		var/chosen_sound = pick(aggro_sound)
+		playsound(src, chosen_sound, 50, FALSE)
+
+/mob/living/simple_animal/hostile/halflife/hunter/Life(seconds_per_tick = SSMOBS_DT, times_fired)
+	..()
+	if(stat)
+		return
+	if(prob(15))
+		var/chosen_sound = pick(idle_sounds)
+		playsound(src, chosen_sound, 50, FALSE)
