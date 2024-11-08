@@ -27,3 +27,9 @@
 	if(ispath(uplink_type, /obj/item/uplink/nuclear) || tc) // /obj/item/uplink/nuclear understands 0 tc
 		var/obj/item/U = new uplink_type(H, H.key, tc)
 		H.equip_to_slot_or_del(U, ITEM_SLOT_BACKPACK)
+
+/datum/outfit/refugee
+	name = "Rebel"
+
+	uniform = /obj/item/clothing/under/citizen/refugee
+	shoes = /obj/item/clothing/shoes/brownboots

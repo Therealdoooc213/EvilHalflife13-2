@@ -12,7 +12,7 @@
   */
 
 ///slam combo string
-#define SLAM_COMBO "HD"
+#define SLAM_COMBO "HDH"
 ///kick combo string
 #define KICK_COMBO "DD"
 ///pressure combo string
@@ -91,7 +91,7 @@
 		return TRUE
 
 	A.do_attack_animation(D, ATTACK_EFFECT_PUNCH)
-	var/attack_verb = pick("CQC'd", "Big Bossed")
+	var/attack_verb = pick("tactfully strikes", "chops")
 
 
 	if(!(A.mobility_flags & MOBILITY_STAND) && (D.mobility_flags & MOBILITY_STAND))
@@ -147,7 +147,7 @@
 ////////////////////////////////////////////////////////////////////////////////////
 //-------------------------------------Grab---------------------------------------//
 ////////////////////////////////////////////////////////////////////////////////////
-///CQC grab, stuns for 1.5 seconds on use
+///CQC grab, stuns for 0.5 seconds on use
 /datum/martial_art/cqc/grab_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
 	if(!can_use(A))
 		return FALSE
@@ -156,13 +156,13 @@
 
 	var/old_grab_state = A.grab_state
 	D.grabbedby(A)
-	addtimer(CALLBACK(A, TYPE_PROC_REF(/mob/living, changeNext_move), CLICK_CD_RAPID)) //gotta do it this way because grabs are weird
+	addtimer(CALLBACK(A, TYPE_PROC_REF(/mob/living, changeNext_move), CLICK_CD_RANGE)) //gotta do it this way because grabs are weird
 	//no, invoke async doesn't work. Yes, this works despite the lack of time included in the parameters
 
 	if(A.grab_state == GRAB_AGGRESSIVE && A.grab_state != old_grab_state)
 		D.visible_message(span_warning("[A] locks [D] into a restraining position!"), span_userdanger("[A] locks you into a restraining position!"))
 		log_combat(A, D, "restrained (CQC)")
-		D.Stun(1 SECONDS)
+		D.Stun(0.5 SECONDS)
 	return TRUE
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -348,11 +348,11 @@
 	combined_msg += span_notice("<b>Punching (Combat Mode)</b> Will deal more stamina damage, \
 		and hitting a standing opponent while you are prone will both knock them down and stand you up. Has a reduced attack cooldown.")
 	combined_msg += span_notice("<b>Shoving (Right Click)</b> Immediately disarms the opponent's main hand. Has a reduced attack cooldown.")
-	combined_msg += span_notice("<b>Grabbing (Ctrl Click)</b> Has a significantly reduced attack cooldown, allowing you to quickly increase the strength of your grabs.")
+	combined_msg += span_notice("<b>Grabbing (Ctrl Click)</b> Has a reduced attacking cooldown, allowing you to more quickly increase the strength of your grabs.")
 
 	combined_msg += "[span_notice("Dislocate")]: Disarm Harm. Disables the targeted limb or a random limb if the head or chest are targeted."
 	combined_msg += "[span_notice("CQC Kick")]: Disarm Disarm. Knocks a standing opponent away and slows them. Deals heavy stamina damage and briefly muting prone opponents."
-	combined_msg += "[span_notice("Slam")]: Harm Disarm. Slam opponent into the ground, knocking them down and dealing decent stamina damage."
+	combined_msg += "[span_notice("Slam")]: Harm Disarm Harm. Slam opponent into the ground, knocking them down and dealing decent stamina damage."
 	combined_msg += "[span_notice("Discombobulate")]: Harm Harm. Offensive move, deals bonus stamina damage and confuses the target."
 
 	combined_msg += "[span_notice("Restrain")]: Getting a target into an aggressive grab locks them into a restraining position, briefly stunning them."

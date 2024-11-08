@@ -1,8 +1,8 @@
 /datum/round_event_control/fugitives
 	name = "Spawn Fugitives"
 	typepath = /datum/round_event/ghost_role/fugitives
-	max_occurrences = 0
-	min_players = 20
+	max_occurrences = 1
+	min_players = 15
 	earliest_start = 30 MINUTES //deadchat sink, lets not even consider it early on.
 	gamemode_blacklist = list("nuclear")
 
@@ -14,8 +14,7 @@
 /datum/round_event/ghost_role/fugitives/spawn_role()
 	var/list/possible_spawns = list()//Some xeno spawns are in some spots that will instantly kill the refugees, like atmos
 	for(var/turf/X in GLOB.xeno_spawn)
-		if(istype(X.loc, /area/maintenance))
-			possible_spawns += X
+		possible_spawns += X
 	if(!possible_spawns.len)
 		message_admins("No valid spawn locations found, aborting...")
 		return MAP_ERROR
@@ -23,9 +22,9 @@
 	var/list/possible_backstories = list()
 	var/list/candidates = get_candidates(ROLE_FUGITIVE, null, ROLE_FUGITIVE)
 	if(candidates.len >= 1) //solo refugees
-		possible_backstories.Add("waldo")
+		possible_backstories.Add("vortigaunt", "rebel")
 	if(candidates.len >= 2)//group refugees
-		possible_backstories.Add("prisoner", "cultist", "synth")
+		possible_backstories.Add("refugees")
 	if(!possible_backstories.len)
 		return NOT_ENOUGH_PLAYERS
 
@@ -33,9 +32,7 @@
 	var/member_size = min(candidates.len, 5)
 	var/leader
 	switch(backstory)
-		if("cultist","synth") // Yogs -- fixes this switch case
-			leader = pick_n_take(candidates)
-		if("waldo")
+		if("vortigaunt","rebel")
 			member_size = 0 //solo refugees have no leader so the member_size gets bumped to one a bit later
 	var/list/members = list()
 	var/list/spawned_mobs = list()
@@ -53,9 +50,8 @@
 
 //after spawning
 	playsound(src, 'sound/weapons/emitter.ogg', 50, 1)
-	new /obj/item/storage/toolbox/mechanical(landing_turf) //so they can actually escape maint
-	addtimer(CALLBACK(src, PROC_REF(spawn_hunters)), 10 MINUTES)
-	role_name = "fugitive hunter"
+	//addtimer(CALLBACK(src, PROC_REF(spawn_hunters)), 10 MINUTES)
+	//role_name = "fugitive hunter"
 	return SUCCESSFUL_SPAWN
 
 /datum/round_event/ghost_role/fugitives/proc/gear_fugitive(mob/dead/selected, turf/landing_turf, backstory) //spawns normal fugitive
@@ -70,17 +66,12 @@
 	INVOKE_ASYNC(fugitiveantag, TYPE_PROC_REF(/datum/antagonist/fugitive, greet), backstory) //some fugitives have a sleep on their greet, so we don't want to stop the entire antag granting proc with fluff
 
 	switch(backstory)
-		if("prisoner")
-			S.equipOutfit(/datum/outfit/prisoner)
-		if("cultist")
-			S.equipOutfit(/datum/outfit/yalp_cultist)
-			var/datum/action/innate/yalpcomms/comm
-			comm = new
-			comm.Grant(S)
-		if("waldo")
-			S.equipOutfit(/datum/outfit/waldo)
-		if("synth")
-			S.equipOutfit(/datum/outfit/synthetic)
+		if("vortigaunt")
+			S.set_species(/datum/species/vortigaunt)
+		if("rebel")
+			S.equipOutfit(/datum/outfit/rebel)
+		if("refugees")
+			S.equipOutfit(/datum/outfit/refugee)
 	message_admins("[ADMIN_LOOKUPFLW(S)] has been made into a Fugitive by an event.")
 	log_game("[key_name(S)] was spawned as a Fugitive by an event.")
 	spawned_mobs += S

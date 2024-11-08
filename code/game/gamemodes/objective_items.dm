@@ -38,10 +38,26 @@
 	difficulty = 4
 	excludefromjob = list("Divisional Lead", "Warden")
 
+/datum/objective_item/steal/hud
+	name = "a civil protection hud."
+	targetitem = /obj/item/clothing/glasses/hud/security/civilprotection
+	difficulty = 4
+	excludefromjob = list("Divisional Lead", "Warden")
+
 /datum/objective_item/steal/documents
 	name = "the administrator's secret documents."
-	targetitem = /obj/item/documents //Any set of secret documents. Doesn't have to be NT's
+	targetitem = /obj/item/documents //Any set of secret documents. Doesn't have to be combine documents
 	difficulty = 6
+	
+/datum/objective_item/steal/viscerator
+	name = "an inactive viscerator."
+	targetitem = /obj/item/grenade/spawnergrenade/manhacks
+	difficulty = 3
+
+/datum/objective_item/steal/biopin
+	name = "a biolocked firing pin."
+	targetitem = /obj/item/firing_pin/implant/mindshield
+	difficulty = 3
 
 //Unique Objectives
 /datum/objective_item/unique/docs_red

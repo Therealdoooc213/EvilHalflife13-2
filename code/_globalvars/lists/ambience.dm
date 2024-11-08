@@ -168,6 +168,8 @@ GLOBAL_LIST_INIT(hloutside_ambience,list(
 	'sound/ambience/resurrectedteleport.ogg',
 	'sound/ambience/calabiyaumodel.ogg',
 	'sound/ambience/suppressionfield.ogg',
+	'sound/ambience/vlvx_song3.ogg', 
+	'sound/ambience/hl2_song2.ogg', 
 	'sound/ambience/ambiruin6.ogg', ))
 
 GLOBAL_LIST_INIT(hlinside_ambience,list(
@@ -177,6 +179,8 @@ GLOBAL_LIST_INIT(hlinside_ambience,list(
 	'sound/ambience/resurrectedteleport.ogg',
 	'sound/ambience/calabiyaumodel.ogg',
 	'sound/ambience/suppressionfield.ogg',
+	'sound/ambience/vlvx_song3.ogg', 
+	'sound/ambience/hl2_song2.ogg', 
 	'sound/ambience/ambiruin6.ogg', ))
 
 GLOBAL_LIST_INIT(hlsewers_ambience,list(
@@ -188,8 +192,8 @@ GLOBAL_LIST_INIT(hlsewers_ambience,list(
 	'sound/ambience/maintambience.ogg',
 	'sound/ambience/source_corridor2.ogg',
 	'sound/ambience/probablynotaproblem.ogg', 
-	'sound/ambience/suppressionfield.ogg',
-	'sound/ambience/brokensymmetry.ogg',
+	'sound/ambience/vlvx_song3.ogg', 
+	'sound/ambience/hl2_song2.ogg', 
 	'sound/ambience/ambiruin5.ogg',))
 	
 

@@ -92,7 +92,7 @@
 	for(var/datum/mind/M in agents)
 		var/datum/antagonist/agent/cling = M.has_antag_datum(/datum/antagonist/agent)
 		if(cling)
-			round_credits += "<center><h2>[cling.agentID] in the body of [M.name]</h2>"
+			round_credits += "<center><h2>[M.name] as a combine undercover agent</h2>"
 	for(var/datum/mind/traitor in traitors)
 		round_credits += "<center><h2>[traitor.name] as a [syndicate_name()] traitor</h2>"
 	if(len_before_addition == round_credits.len)

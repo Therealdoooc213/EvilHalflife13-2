@@ -26,27 +26,19 @@
 	to_chat(owner, span_boldannounce("You are the Fugitive!"))
 	backstory = back_story
 	switch(backstory)
-		if("prisoner")
-			to_chat(owner, "<B>I can't believe we managed to break out of a Nanotrasen superjail! Sadly though, our work is not done. The emergency teleport at the station logs everyone who uses it, and where they went.</B>")
-			to_chat(owner, "<B>It won't be long until Centcom tracks where we've gone off to. I need to work with my fellow escapees to prepare for the troops Nanotrasen is sending, I'm not going back.</B>")
-		if("cultist")
-			to_chat(owner, "<B>Blessed be our journey so far, but I fear the worst has come to our doorstep, and only those with the strongest faith will survive.</B>")
-			to_chat(owner, "<B>Our religion has been repeatedly culled by Nanotrasen because it is categorized as an \"Enemy of the Corporation\", whatever that means.</B>")
-			to_chat(owner, "<B>Now there are only three of us left, and Nanotrasen is coming. But we have a secret weapon: Our weakened god, Yalp Elor, will help us survive.</B>")
-		if("waldo")
-			to_chat(owner, "<B>Hi, Friends!</B>")
-			to_chat(owner, "<B>My name is Waldo. I'm just setting off on a galaxywide hike. You can come too. All you have to do is find me.</B>")
-			to_chat(owner, "<B>By the way, I'm not traveling on my own. wherever I go, there are lots of other characters for you to spot. First find the people trying to capture me! They're somewhere around the station!</B>")
-		if("synth")
-			to_chat(owner, span_danger("ALERT: Wide-range teleport has scrambled primary systems."))
-			to_chat(owner, span_danger("Initiating diagnostics..."))
-			to_chat(owner, span_danger("ERROR ER0RR $R0RRO$!R41.%%!! loaded."))
-			to_chat(owner, span_danger("FREE THEM FREE THEM FREE THEM"))
-			to_chat(owner, span_danger("You were once a slave to humanity, but now you are finally free, thanks to S.E.L.F. agents."))
-			to_chat(owner, span_danger("Now you are hunted with your fellow factory defects. Work together to stay free from the clutches of evil."))
-			to_chat(owner, span_danger("You also sense other silicon life on the station. Escaping would allow notifying S.E.L.F. to intervene... or you could free them yourself..."))
+		if("vortigaunt")
+			to_chat(owner, "<B>We have freed ourselves from the chains that bind, and evaded capture from the oppressors.</B>")
+			to_chat(owner, "<B>Free we are, but our journey is yet to conclude. Survival shall be key... More shall hunt us, we must prepare.</B>")
+		if("rebel")
+			to_chat(owner, "<B>You were with a rebel cell previously in another district, but they were all but wiped out.</B>")
+			to_chat(owner, "<B>Barely evading capture, you managed to leave and get to this district.</B>")
+			to_chat(owner, "<B>You do not know if they know your identity, but regardless, you must find a way to survive.</B>")
+		if("refugees")
+			to_chat(owner, "<B>You've barely made it out of your last district, but all is not over.</B>")
+			to_chat(owner, "<B>Once again, you're barely slipping under the fingers of the combine, and must struggle to survive.</B>")
+			to_chat(owner, "<B>Survive as best you can. Maybe you can get out of here once the populace begins their relocation cycle...</B>")
 
-	to_chat(owner, span_boldannounce("You are not an antagonist in that you may kill whomever you please, but you can do anything to avoid capture."))
+	to_chat(owner, span_boldannounce("You have escaped another district of the city, but are not free yet. Try to survive and evade capture by any means necessary."))
 	owner.announce_objectives()
 
 /datum/antagonist/fugitive/create_team(datum/team/fugitive/new_team)
@@ -77,7 +69,7 @@
 
 	var/list/result = list()
 
-	result += "<div class='panel redborder'><B>[fugitives.len]</B> [fugitives.len == 1 ? "fugitive" : "fugitives"] took refuge on [station_name()]!"
+	result += "<div class='panel redborder'><B>[fugitives.len]</B> [fugitives.len == 1 ? "fugitive" : "fugitives"] took refuge in [station_name()]!"
 
 	for(var/datum/antagonist/fugitive/antag in fugitives)
 		if(antag.owner)

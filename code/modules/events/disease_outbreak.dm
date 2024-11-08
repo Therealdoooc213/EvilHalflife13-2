@@ -23,13 +23,11 @@
 /datum/round_event/disease_outbreak/start()
 	var/advanced_virus = FALSE
 	max_severity = 3 + max(FLOOR((world.time - control.earliest_start)/6000, 1),0) //3 symptoms at 20 minutes, plus 1 per 10 minutes
-	/*
 	if(prob(20 + (10 * max_severity)))
 		advanced_virus = TRUE
-	*/
 
 	if(!virus_type && !advanced_virus)
-		virus_type = pick(/datum/disease/flu, /datum/disease/cold, /datum/disease/sleepy)
+		virus_type = pick(/datum/disease/advance/flu, /datum/disease/advance/cold, /datum/disease/sleepy, /datum/disease/brainrot, /datum/disease/jitters)
 
 	for(var/mob/living/carbon/human/H in shuffle(GLOB.alive_mob_list))
 		var/turf/T = get_turf(H)

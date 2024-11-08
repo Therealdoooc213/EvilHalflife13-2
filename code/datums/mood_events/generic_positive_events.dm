@@ -89,6 +89,11 @@
 	mood_change = 5
 	hidden = TRUE
 
+/datum/mood_event/agent
+	description = "<span class='nicegreen'>I have been giving a mission by my home district's administrator. I must not let emotions get in the way</span>\n" //Used for combine agents to buff up their mood
+	mood_change = 10
+	hidden = TRUE
+
 /datum/mood_event/badass_antag
 	description = span_nicegreen("I'm a fucking badass and everyone around me knows it. Just look at them; they're all fucking shaking at the mere thought of me around.\n")
 	mood_change = 15
