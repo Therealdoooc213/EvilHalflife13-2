@@ -59,7 +59,7 @@
 
 /datum/game_mode/traitor/agent/post_setup()
 	for(var/datum/mind/agent in agents)
-		agent.add_antag_datum(/datum/antagonist/agent)
+		agent.add_antag_datum(/datum/antagonist/infiltrator)
 	return ..()
 
 /datum/game_mode/traitor/agent/make_antag_chance(mob/living/carbon/human/character) //Assigns agent to latejoiners
@@ -90,7 +90,7 @@
 	round_credits += "<center><h1>The [syndicate_name()] Spies:</h1>"
 	len_before_addition = round_credits.len
 	for(var/datum/mind/M in agents)
-		var/datum/antagonist/agent/cling = M.has_antag_datum(/datum/antagonist/agent)
+		var/datum/antagonist/infiltrator/cling = M.has_antag_datum(/datum/antagonist/infiltrator)
 		if(cling)
 			round_credits += "<center><h2>[M.name] as a combine undercover agent</h2>"
 	for(var/datum/mind/traitor in traitors)

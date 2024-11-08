@@ -14,7 +14,7 @@ SUBSYSTEM_DEF(events)
 	///The lower bound for how soon another random event can be scheduled.
 	var/frequency_lower = 10 MINUTES
 	///The upper bound for how soon another random event can be scheduled.
-	var/frequency_upper = 20 MINUTES
+	var/frequency_upper = 15 MINUTES
 	///Will wizard events be included in the event pool?
 	var/wizardmode = FALSE
 

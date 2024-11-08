@@ -1,13 +1,13 @@
 import { Antagonist, Category } from "../base";
 import { multiline } from "common/string";
 
-export const AGENT_MECHANICAL_DESCRIPTION
+export const INFILTRATOR_MECHANICAL_DESCRIPTION
    = multiline`
       Keep this rival district's influence in check without letting it fall.
    `;
 
 
-const Agent: Antagonist = {
+const Infiltrator: Antagonist = {
   key: "infiltrator",
   name: "Agent",
   description: [
@@ -16,9 +16,9 @@ const Agent: Antagonist = {
       You were sent to keep this district from outpacing your home district, and perhaps grabbing something interesting along the way for your administrator.
       However, should this district fall, your own shall suffer greatly, so you must not push it over the edge either.
     `,
-    AGENT_MECHANICAL_DESCRIPTION,
+    INFILTRATOR_MECHANICAL_DESCRIPTION,
   ],
   category: Category.Midround,
 };
 
-export default Agent;
+export default Infiltrator;

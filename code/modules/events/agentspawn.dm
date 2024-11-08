@@ -57,7 +57,7 @@
 
 	var/mob/living/carbon/human/agent = create_event_agent()
 	Mind.transfer_to(agent)
-	Mind.add_antag_datum(/datum/antagonist/agent)
+	Mind.add_antag_datum(/datum/antagonist/infiltrator)
 
 	spawned_mobs += agent
 	message_admins("[ADMIN_LOOKUPFLW(agent)] has been made into a combine agent by an event.")

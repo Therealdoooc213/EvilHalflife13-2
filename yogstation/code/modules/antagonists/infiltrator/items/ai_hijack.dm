@@ -6,7 +6,7 @@
 
 /obj/item/ai_hijack_device/examine(mob/living/user)
 	. = ..()
-	if (user?.mind?.has_antag_datum(/datum/antagonist/infiltrator))
+	if (user?.mind?.has_antag_datum(/datum/antagonist/syndinfiltrator))
 		. += span_notice("To use, insert it into an unlocked AI control console and select the AI you wish to hijack. [span_italics("This will alert the victim AI!")]")
 
 //MIRRORED IN ai_controlpanel.dm !!!

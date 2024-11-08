@@ -132,7 +132,7 @@
 	for(var/i in 1 to minor)
 		forge_single_objective()
 	for(var/datum/mind/M in members)
-		var/datum/antagonist/infiltrator/I = M.has_antag_datum(/datum/antagonist/infiltrator)
+		var/datum/antagonist/syndinfiltrator/I = M.has_antag_datum(/datum/antagonist/syndinfiltrator)
 		if(I)
 			I.objectives |= objectives
 		M.announce_objectives()

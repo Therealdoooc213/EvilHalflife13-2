@@ -86,7 +86,7 @@ GLOBAL_LIST_INIT(infiltrator_kidnap_areas, typecacheof(list(/area/shuttle/yogs/s
 	for(var/datum/mind/M in SSticker.minds)
 		if(!M || !considered_alive(M) || considered_afk(M) || !M.current || !M.current.client || !ishuman(M.current) || M.quiet_round)
 			continue
-		if (M.has_antag_datum(/datum/antagonist/infiltrator) || M.has_antag_datum(/datum/antagonist/traitor) || M.has_antag_datum(/datum/antagonist/nukeop))
+		if (M.has_antag_datum(/datum/antagonist/syndinfiltrator) || M.has_antag_datum(/datum/antagonist/traitor) || M.has_antag_datum(/datum/antagonist/nukeop))
 			continue
 		if(M.assigned_role in GLOB.command_positions)
 			possible_targets[M] = 25

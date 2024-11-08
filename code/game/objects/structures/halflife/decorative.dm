@@ -275,3 +275,421 @@
 				span_notice("You don't manage to find anything useful from [src]."))
 			if(prob(80)) // SO YOU'RE TELLING ME THERE'S A CHANCE...
 				qdel(src)
+
+/obj/structure/halflife/barrel
+	name = "barrel"
+	desc = "A sealed canister of mystery, closed to time."
+	icon = 'icons/obj/halflife/barrels.dmi'
+	max_integrity = 400
+	anchored = TRUE
+	density = TRUE
+	var/icon_type = null
+	var/amount = 3 //used for icon randomisation amount
+	var/unique = FALSE //used to set if the icon is randomised or not
+	projectile_passchance = 65
+
+/obj/structure/halflife/barrel/deconstruct(disassembled = TRUE)
+	if(!(flags_1 & NODECONSTRUCT_1))
+		new /obj/item/stack/sheet/metal(loc, 3)
+	qdel(src)
+
+/obj/structure/halflife/barrel/Initialize()
+	. = ..()
+	if(!unique)
+		icon_state = "[icon_type]_[rand(1, amount)]"
+
+/obj/structure/halflife/barrel/single
+
+/obj/structure/halflife/barrel/single/grey
+	icon_state = "grey_1"
+	icon_type = "grey"
+
+/obj/structure/halflife/barrel/single/grey/one
+	icon_state = "grey_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/grey/two
+	icon_state = "grey_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/grey/three
+	icon_state = "grey_3"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/red
+	icon_state = "red_1"
+	icon_type = "red"
+
+/obj/structure/halflife/barrel/single/red/one
+	icon_state = "red_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/red/two
+	icon_state = "red_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/red/three
+	icon_state = "red_3"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/yellow
+	icon_state = "yellow_1"
+	icon_type = "yellow"
+
+/obj/structure/halflife/barrel/single/yellow/one
+	icon_state = "yellow_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/yellow/two
+	icon_state = "yellow_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/yellow/three
+	icon_state = "yellow_3"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/label
+	icon_state = "label_1"
+	icon_type = "label"
+
+/obj/structure/halflife/barrel/single/label/one
+	icon_state = "label_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/label/two
+	icon_state = "label_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/label/three
+	icon_state = "label_3"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/hazard
+	icon_state = "hazard_1"
+	icon_type = "hazard"
+
+/obj/structure/halflife/barrel/single/hazard/one
+	icon_state = "hazard_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/hazard/two
+	icon_state = "hazard_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/hazard/three
+	icon_state = "hazard_3"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/redalt
+	icon_state = "red_alt_1"
+	icon_type = "red_alt"
+
+/obj/structure/halflife/barrel/single/redalt/one
+	icon_state = "red_alt_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/redalt/two
+	icon_state = "red_alt_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/redalt/three
+	icon_state = "red_alt_3"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/toxic
+	icon_state = "toxic_1"
+	icon_type = "toxic"
+	amount = 4
+	light_range = 1.5
+	light_color = "#4ba54f"
+
+/obj/structure/halflife/barrel/single/toxic/Initialize()
+	. = ..()
+	AddComponent(/datum/component/radioactive, 100, src, 0, FALSE)
+
+/obj/structure/halflife/barrel/single/toxic/one
+	icon_state = "toxic_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/toxic/two
+	icon_state = "toxic_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/toxic/three
+	icon_state = "toxic_3"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/toxic/four
+	icon_state = "toxic_4"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/waste
+	icon_state = "waste_1"
+	icon_type = "waste"
+
+/obj/structure/halflife/barrel/single/waste/one
+	icon_state = "waste_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/waste/two
+	icon_state = "waste_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/waste/three
+	icon_state = "waste_3"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/flammable
+	icon_state = "flammable_1"
+	icon_type = "flammable"
+
+/obj/structure/halflife/barrel/single/flammable/one
+	icon_state = "flammable_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/flammable/two
+	icon_state = "flammable_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/flammable/three
+	icon_state = "flammable_3"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/warning
+	icon_state = "warning_1"
+	icon_type = "warning"
+
+/obj/structure/halflife/barrel/single/warning/one
+	icon_state = "warning_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/warning/two
+	icon_state = "warning_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/single/warning/three
+	icon_state = "warning_3"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/double
+	name = "barrels"
+	desc = "Sealed canisters of mystery, closed to time."
+	amount = 2
+
+/obj/structure/halflife/barrel/double/grey
+	icon_state = "double_grey_1"
+	icon_type = "double_grey"
+
+/obj/structure/halflife/barrel/double/grey/one
+	icon_state = "double_grey_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/double/grey/two
+	icon_state = "double_grey_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/double/red
+	icon_state = "double_red_1"
+	icon_type = "double_red"
+
+/obj/structure/halflife/barrel/double/red/one
+	icon_state = "double_red_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/double/red/two
+	icon_state = "double_red_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/double/yellow
+	icon_state = "double_yellow_1"
+	icon_type = "double_yellow"
+
+/obj/structure/halflife/barrel/double/yellow/one
+	icon_state = "double_yellow_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/double/yellow/two
+	icon_state = "double_yellow_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/double/waste
+	icon_state = "double_waste_1"
+	icon_type = "double_waste"
+	amount = 1
+
+/obj/structure/halflife/barrel/triple
+	name = "barrels"
+	desc = "Sealed canisters of mystery, closed to time."
+
+/obj/structure/halflife/barrel/triple/grey
+	icon_state = "triple_grey_1"
+	icon_type = "triple_grey"
+
+/obj/structure/halflife/barrel/triple/grey/one
+	icon_state = "triple_grey_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/triple/grey/two
+	icon_state = "triple_grey_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/triple/grey/three
+	icon_state = "triple_grey_3"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/triple/red
+	icon_state = "triple_red_1"
+	icon_type = "triple_red"
+	amount = 2
+
+/obj/structure/halflife/barrel/triple/red/one
+	icon_state = "triple_red_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/triple/red/two
+	icon_state = "triple_red_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/triple/yellow
+	icon_state = "triple_yellow_1"
+	icon_type = "triple_yellow"
+
+/obj/structure/halflife/barrel/triple/yellow/one
+	icon_state = "triple_yellow_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/triple/yellow/two
+	icon_state = "triple_yellow_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/triple/yellow/three
+	icon_state = "triple_yellow_3"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/triple/waste
+	icon_state = "triple_waste_1"
+	icon_type = "triple_waste"
+	amount = 2
+
+/obj/structure/halflife/barrel/triple/waste/one
+	icon_state = "triple_waste_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/triple/waste/two
+	icon_state = "triple_waste_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/quadruple
+	name = "barrels"
+	desc = "Sealed canisters of mystery, closed to time."
+	amount = 1
+
+/obj/structure/halflife/barrel/quadruple/grey
+	icon_state = "quad_grey_1"
+	icon_type = "quad_grey"
+
+/obj/structure/halflife/barrel/quadruple/grey/one
+	icon_state = "quad_grey_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/quadruple/red
+	icon_state = "quad_red_1"
+	icon_type = "quad_red"
+	amount = 2
+
+/obj/structure/halflife/barrel/quadruple/red/one
+	icon_state = "quad_red_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/quadruple/red/two
+	icon_state = "quad_red_2"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/quadruple/yellow
+	icon_state = "quad_yellow_1"
+	icon_type = "quad_yellow"
+
+/obj/structure/halflife/barrel/quadruple/yellow/one
+	icon_state = "quad_yellow_1"
+	unique = TRUE
+
+/obj/structure/halflife/barrel/quadruple/waste
+	icon_state = "quad_waste_1"
+	icon_type = "quad_waste"
+
+/obj/structure/halflife/barrel/quadruple/waste/one
+	icon_state = "quad_waste_1"
+	unique = TRUE
+
+/obj/structure/halflife/tank
+	name = "storage tank"
+	desc = "A large empty storage tank. The contents have long since evaporated."
+	icon = 'icons/obj/halflife/tank.dmi'
+	icon_state = "largetank"
+	max_integrity = 300
+	density = TRUE
+	anchored = TRUE
+
+/obj/structure/halflife/tank/pipe
+	name = "piped storage tank"
+	desc = "A large chemical storage tank with pipes running from it. They don't seem to be attached."
+	icon_state = "largetank_pipe"
+
+/obj/structure/halflife/tank/chemical
+	name = "chemical storage tank"
+	desc = "A large chemical storage tank. It's covered in forboding symbols."
+	icon_state = "largetank_chemical"
+
+/obj/structure/halflife/tank/chemical/huge
+	name = "huge chemical storage tank"
+	desc = "A huge chemical storage tank with pipes running from it. It's covered in forboding symbols."
+	icon_state = "largetank_chemical_huge"
+	pixel_x = -9
+
+/obj/structure/halflife/tank/chemical/container
+	name = "chemical container tank"
+	desc = "A wide chemical container tank. It has one giant forboding symbol in the middle."
+	icon_state = "chemical_container"
+	bound_width = 64
+
+/obj/structure/halflife/tank/chemical/container/broken
+	name = "chemical container tank"
+	desc = "A wide chemical container tank. It has one giant forboding symbol in the middle, it also appears it has exploded from the inside."
+	icon_state = "chemical_container_broken"
+
+// Wooden Pallets //
+
+/obj/structure/halflife/pallet
+	name = "wooden pallet"
+	desc = "A wooden pallet. You could get some good wood off that, probably."
+	icon = 'icons/obj/halflife/miscellaneous.dmi'
+	icon_state = "pallet"
+	max_integrity = 100
+	anchored = TRUE
+	density = FALSE
+
+/obj/structure/halflife/pallet/deconstruct(disassembled = TRUE)
+	if(!(flags_1 & NODECONSTRUCT_1))
+		if(disassembled)
+			new /obj/item/stack/sheet/mineral/wood(loc, 2)
+		else
+			new /obj/item/stack/sheet/mineral/wood(loc, 1)
+	qdel(src)
+
+/obj/structure/halflife/pallet/stack
+	name = "pallet stack"
+	desc = "A stack of wooden pallets. Some good planks in there, still."
+	icon_state = "pallet_stack"
+	max_integrity = 250
+	density = TRUE
+	projectile_passchance = 65
+
+/obj/structure/halflife/pallet/stack/deconstruct(disassembled = TRUE)
+	if(!(flags_1 & NODECONSTRUCT_1))
+		if(disassembled)
+			new /obj/item/stack/sheet/mineral/wood(loc, 3)
+		else
+			new /obj/item/stack/sheet/mineral/wood(loc, 2)
+	qdel(src)
+
+// brix.... //

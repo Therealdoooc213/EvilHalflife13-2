@@ -29,25 +29,25 @@
 /datum/objective_item/steal/ar2
 	name = "a overwatch standard issue pulse rifle."
 	targetitem = /obj/item/gun/ballistic/automatic/ar2
-	difficulty = 5
+	difficulty = 8
 	excludefromjob = list("Divisional Lead", "Warden")
 
 /datum/objective_item/steal/mask
 	name = "a civil protection mask."
 	targetitem = /obj/item/clothing/mask/gas/civilprotection
-	difficulty = 4
+	difficulty = 5
 	excludefromjob = list("Divisional Lead", "Warden")
 
 /datum/objective_item/steal/hud
 	name = "a civil protection hud."
 	targetitem = /obj/item/clothing/glasses/hud/security/civilprotection
-	difficulty = 4
+	difficulty = 5
 	excludefromjob = list("Divisional Lead", "Warden")
 
 /datum/objective_item/steal/documents
 	name = "the administrator's secret documents."
 	targetitem = /obj/item/documents //Any set of secret documents. Doesn't have to be combine documents
-	difficulty = 6
+	difficulty = 10
 	
 /datum/objective_item/steal/viscerator
 	name = "an inactive viscerator."
@@ -58,6 +58,12 @@
 	name = "a biolocked firing pin."
 	targetitem = /obj/item/firing_pin/implant/mindshield
 	difficulty = 3
+
+/datum/objective_item/steal/harddrive
+	name = "the r&d master server's hard drive."
+	targetitem = /obj/item/computer_hardware/hard_drive/cluster/hdd_theft
+	difficulty = 10
+	excludefromjob = list("Scientist")
 
 //Unique Objectives
 /datum/objective_item/unique/docs_red

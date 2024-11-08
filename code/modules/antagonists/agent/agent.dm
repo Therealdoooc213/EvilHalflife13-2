@@ -1,4 +1,4 @@
-/datum/antagonist/agent
+/datum/antagonist/infiltrator
 	name = "Combine Infiltration Agent"
 	roundend_category = "infiltration agents"
 	antagpanel_category = "Infiltration Agent"
@@ -9,18 +9,18 @@
 	show_in_antagpanel = TRUE
 	var/datum/martial_art/cqc/my_kungfu = new
 
-/datum/antagonist/agent/greet()
+/datum/antagonist/infiltrator/greet()
 	owner.current.playsound_local(get_turf(owner.current), 'sound/ambience/combineadvisory.ogg',45,0)
 	to_chat(owner, "<B>Suddenly, your mind flashes as you realize your true mission...</B>")
-	to_chat(owner, span_notice("You are a Infiltration Agent!"))
-	to_chat(owner, "<B>You are an undercover agent from another district in the city.</B>")
-	to_chat(owner, "<B>You were sent to keep this district's influence in check, and take a few things that your administrator may find useful...</B>")
-	to_chat(owner, "<B>Note, if this district falls to the resistance, all districts will feel the consequences, including your own. Keep this one weak, but don't let it fall.</B>")
-	to_chat(owner, "<B>Most importantly, you cannot let your involvement with your home district be known! None must know you are an undercover agent.</B>")
-	to_chat(owner, "<B>Lastly, you were trained in advanced hand to hand combat techniques, you can use them to fight effectively even without weapons, though these attacks don't permanently harm people.</B>")
+	to_chat(owner, span_userdanger("You are a Combine Infiltration Agent!"))
+	to_chat(owner, span_boldnotice("You are an undercover agent from another district in the city."))
+	to_chat(owner, span_notice("You were sent to keep this district's influence in check, and take a few things that your administrator may find useful..."))
+	to_chat(owner, span_notice("Note, if this district falls to the resistance, all districts will feel the consequences, including your own. Keep this one weak, but don't let it fall."))
+	to_chat(owner, span_boldnotice("Most importantly, you cannot let your involvement with your home district be known! None must know you are an undercover agent."))
+	to_chat(owner, span_notice("Lastly, you were trained in advanced hand to hand combat techniques, you can use them to fight effectively even without weapons, though these attacks don't permanently harm people."))
 	owner.announce_objectives()
 
-/datum/antagonist/agent/on_gain()
+/datum/antagonist/infiltrator/on_gain()
 	//Give agent Objective
 	var/datum/objective/agent/agent_objective = new
 	agent_objective.owner = owner
@@ -31,7 +31,7 @@
 	steal_objective.find_target()
 	objectives += steal_objective
 
-	owner.current.cmode_music = 'sound/music/combat/branescan.ogg'
+	owner.current.cmode_music = 'sound/music/combat/penultimatum.ogg'
 
 	return ..()
 
@@ -47,12 +47,12 @@
 	mask = /obj/item/clothing/mask/gas/civilprotection
 	gloves = /obj/item/clothing/gloves/fingerless
 
-/datum/antagonist/agent/apply_innate_effects(mob/living/mob_override)
+/datum/antagonist/infiltrator/apply_innate_effects(mob/living/mob_override)
 	.  = ..()
 	var/mob/living/current_mob = mob_override || owner.current
 	my_kungfu.teach(current_mob, make_temporary = FALSE)
 
-/datum/antagonist/agent/remove_innate_effects(mob/living/mob_override)
+/datum/antagonist/infiltrator/remove_innate_effects(mob/living/mob_override)
 	. = ..()
 	var/mob/living/current_mob = mob_override || owner.current
 	if(my_kungfu)

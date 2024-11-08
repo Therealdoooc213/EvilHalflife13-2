@@ -29,7 +29,24 @@
 		H.equip_to_slot_or_del(U, ITEM_SLOT_BACKPACK)
 
 /datum/outfit/refugee
-	name = "Rebel"
+	name = "Refugee"
 
 	uniform = /obj/item/clothing/under/citizen/refugee
 	shoes = /obj/item/clothing/shoes/brownboots
+	var/list/rhand_items = list(
+		/obj/item/lockpick,
+		/obj/item/kitchen/knife/makeshift,
+		/obj/item/storage/briefcase,
+		/obj/item/reagent_containers/pill/patch/medkit/vial,
+		/obj/item/storage/box/halflife/ration,
+		/obj/item/crowbar/large,
+		/obj/item/gun/ballistic/bow/crossbow/rebar
+		) //Refugees get a random item from this list
+
+/datum/outfit/refugee/post_equip(mob/living/carbon/human/H, visualsOnly=FALSE)
+	if(visualsOnly)
+		return
+	var/chosen = pick(rhand_items)
+	var/turf/T = get_turf(H)
+	var/obj/item/I = new chosen(T)
+	H.put_in_hands(I)

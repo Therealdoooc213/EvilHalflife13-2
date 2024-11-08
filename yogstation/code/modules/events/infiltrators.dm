@@ -54,7 +54,7 @@
 		var/mob/living/carbon/human/new_character = makeBody(c)
 		new_character.mind.assigned_role = "Syndicate Infiltrator"
 		new_character.mind.special_role = "Syndicate Infiltrator"
-		new_character.mind.add_antag_datum(/datum/antagonist/infiltrator, our_team) // Adding the antag datum teleports them to the base anyways.
+		new_character.mind.add_antag_datum(/datum/antagonist/syndinfiltrator, our_team) // Adding the antag datum teleports them to the base anyways.
 		spawned_mobs += new_character
 	our_team.update_objectives()
 	return SUCCESSFUL_SPAWN
