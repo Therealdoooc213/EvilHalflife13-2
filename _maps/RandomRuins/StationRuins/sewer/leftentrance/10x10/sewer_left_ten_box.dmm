@@ -11,7 +11,15 @@
 /obj/item/reagent_containers/glass/bucket,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
+"y" = (
+/obj/structure/halflife/barrel/single/grey/one,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
 "z" = (
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"B" = (
+/obj/structure/halflife/barrel/single/grey/three,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
 "I" = (
@@ -20,8 +28,16 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
+"O" = (
+/obj/structure/halflife/barrel/single/grey/two,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
 "Q" = (
 /turf/open/floor/plating/indoor/metal/grate,
+/area/halflife/indoors/sewer)
+"W" = (
+/obj/structure/halflife/barrel/quadruple/grey,
+/turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
 "Z" = (
 /turf/closed/wall/halflife/metal,
@@ -47,7 +63,7 @@ z
 z
 z
 z
-z
+W
 z
 Z
 "}
@@ -77,7 +93,7 @@ Z
 "}
 (5,1,1) = {"
 Z
-z
+B
 z
 Q
 s
@@ -96,7 +112,7 @@ s
 s
 Q
 z
-z
+O
 Z
 "}
 (7,1,1) = {"
@@ -132,7 +148,7 @@ z
 z
 z
 z
-z
+y
 Z
 "}
 (10,1,1) = {"

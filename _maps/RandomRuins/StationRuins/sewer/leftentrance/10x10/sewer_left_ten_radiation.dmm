@@ -1,0 +1,190 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"c" = (
+/obj/structure/closet/crate/radiation,
+/obj/effect/spawner/lootdrop/halflife,
+/obj/effect/spawner/lootdrop/halflife,
+/obj/effect/spawner/lootdrop/halflife/loot/ammo,
+/obj/effect/spawner/lootdrop/halflife/loot/ammo,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"d" = (
+/obj/effect/decal/cleanable/greenglow/filled,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"f" = (
+/obj/effect/decal/cleanable/greenglow/filled,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"h" = (
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"i" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"q" = (
+/obj/structure/halflife/barrel/triple/waste/two,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"t" = (
+/obj/structure/halflife/barrel/single/toxic/four,
+/obj/effect/decal/cleanable/greenglow/filled,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"u" = (
+/obj/structure/halflife/barrel/single/toxic/one,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"w" = (
+/obj/structure/halflife/barrel/single/toxic/two,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"z" = (
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"E" = (
+/turf/closed/wall/halflife/metal,
+/area/halflife/indoors/sewer)
+"F" = (
+/obj/structure/halflife/barrel/single/toxic/two,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"J" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"L" = (
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"N" = (
+/obj/structure/halflife/barrel/single/toxic/one,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"U" = (
+/obj/structure/halflife/barrel/single/toxic/three,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+
+(1,1,1) = {"
+E
+E
+E
+E
+E
+E
+E
+J
+E
+E
+"}
+(2,1,1) = {"
+E
+f
+z
+z
+F
+E
+L
+z
+L
+E
+"}
+(3,1,1) = {"
+E
+c
+z
+N
+z
+E
+L
+z
+L
+E
+"}
+(4,1,1) = {"
+E
+z
+z
+f
+h
+E
+t
+z
+L
+E
+"}
+(5,1,1) = {"
+E
+N
+z
+z
+N
+E
+E
+f
+L
+E
+"}
+(6,1,1) = {"
+E
+f
+z
+i
+z
+q
+E
+z
+w
+E
+"}
+(7,1,1) = {"
+E
+E
+E
+E
+i
+E
+E
+i
+L
+E
+"}
+(8,1,1) = {"
+E
+L
+L
+L
+z
+f
+i
+z
+d
+E
+"}
+(9,1,1) = {"
+E
+d
+u
+L
+L
+u
+E
+L
+U
+E
+"}
+(10,1,1) = {"
+E
+E
+E
+E
+E
+E
+E
+E
+E
+E
+"}

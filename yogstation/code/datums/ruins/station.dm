@@ -312,6 +312,11 @@
 	suffix = "sewer_left_ten_forcefield.dmm"
 	name = "sewer left_ten_forcefield"
 
+/datum/map_template/ruin/station/sewer/leftentrance/tenxten/radiation
+	id = "left_ten_radiation"
+	suffix = "sewer_left_ten_radiation.dmm"
+	name = "sewer left_ten_radiation"
+
 ///The base for 10x10 right rooms
 /datum/map_template/ruin/station/sewer/rightentrance/tenxten
 	prefix = "_maps/RandomRuins/StationRuins/sewer/rightentrance/10x10/"
