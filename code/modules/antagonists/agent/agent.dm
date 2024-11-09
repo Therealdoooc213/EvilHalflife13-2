@@ -30,6 +30,11 @@
 	steal_objective.owner = owner
 	steal_objective.find_target()
 	objectives += steal_objective
+	//Give a second theft Objective
+	var/datum/objective/steal/steal_objective2 = new
+	steal_objective2.owner = owner
+	steal_objective2.find_target()
+	objectives += steal_objective2
 
 	owner.current.cmode_music = 'sound/music/combat/penultimatum.ogg'
 

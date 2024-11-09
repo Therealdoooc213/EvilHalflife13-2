@@ -744,6 +744,7 @@
 
 	loot = list(
 				/obj/item/crowbar/large = 2,
+				/obj/item/toy/crayon/spraycan,
 				/obj/item/screwdriver,
 				/obj/item/weldingtool,
 				/obj/item/storage/backpack/satchel/leather,

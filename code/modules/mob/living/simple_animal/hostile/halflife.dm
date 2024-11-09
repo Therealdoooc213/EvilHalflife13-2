@@ -269,8 +269,8 @@
 	footstep_type = FOOTSTEP_MOB_HUNTER
 	speed = -1
 	deathsound = 'sound/creatures/halflife/hunter/hunter_die3.ogg'
-	var/aggro_sound = list('sound/creatures/halflife/hunter/hunter_foundenemy1.ogg', 'sound/creatures/halflife/hunter/hunter_foundenemy2.ogg', 'sound/creatures/halflife/hunter/hunter_foundenemy3.ogg')
-	var/idle_sounds = list('sound/creatures/halflife/hunter/hunter_idle1.ogg', 'sound/creatures/halflife/hunter/hunter_idle2.ogg', 'sound/creatures/halflife/hunter/hunter_idle3.ogg')
+	var/aggro_sound = list('sound/creatures/halflife/hunter/hunter_foundenemy1.ogg', 'sound/creatures/halflife/hunter/hunter_foundenemy2.ogg', 'sound/creatures/halflife/hunter/hunter_foundenemy3.ogg', 'sound/creatures/halflife/hunter/hunter_pain.ogg')
+	var/idle_sounds = list('sound/creatures/halflife/hunter/hunter_idle1.ogg', 'sound/creatures/halflife/hunter/hunter_idle2.ogg', 'sound/creatures/halflife/hunter/hunter_idle3.ogg', 'sound/creatures/halflife/hunter/hunter_scan.ogg')
 
 	ranged = 1
 	rapid = 3
@@ -278,6 +278,11 @@
 	minimum_distance = 4
 	projectilesound = 'sound/creatures/halflife/hunter/hunter_fire1.ogg'
 	casingtype = /obj/item/ammo_casing/caseless/flechette
+
+	var/charge_cooldown = 0
+	var/charge_cooldown_time = 10 SECONDS
+
+	var/playstyle_string = span_notice("You are a Hunter, a large synth designed for protecting striders and hunting down malignants in a swift manner. You can fire bursts of flechettes by clicking, and can Alt-Click to charge at an enemy to send them flying.")
 
 /mob/living/simple_animal/hostile/halflife/hunter/Aggro()
 	. = ..()
@@ -293,3 +298,55 @@
 	if(prob(15))
 		var/chosen_sound = pick(idle_sounds)
 		playsound(src, chosen_sound, 50, FALSE)
+
+/mob/living/simple_animal/hostile/halflife/hunter/proc/hunter_charge(move_dir, times_ran)
+	if(times_ran >= 5)
+		return
+	var/turf/T = get_step(get_turf(src), move_dir)
+	if(ismineralturf(T))
+		var/turf/closed/mineral/M = T
+		M.attempt_drill()
+	if(T.density)
+		return
+	for(var/obj/structure/window/W in T.contents)
+		return
+	for(var/obj/machinery/door/D in T.contents)
+		return
+	for(var/obj/structure/halflife/fence/F in T.contents)
+		return
+	for(var/obj/machinery/turnstile/S in T.contents)
+		return
+	forceMove(T)
+	playsound(src,'sound/creatures/halflife/hunter/hunter_footstep1.ogg', 200, 1)
+	var/list/hit_things = list()
+	var/throwtarget = get_edge_target_turf(src, move_dir)
+	for(var/mob/living/L in T.contents - hit_things - src)
+		if(faction_check_mob(L))
+			return
+		hit_things += L
+		visible_message(span_boldwarning("[src] slams into [L]!"))
+		to_chat(L, span_userdanger("[src] slams into you, sending you flying!"))
+		L.safe_throw_at(throwtarget, 5, 1, src)
+		L.Paralyze(20)
+		L.adjustBruteLoss(30)
+		playsound(src,'sound/creatures/halflife/hunter/hunter_chargehit.ogg', 200, 1)
+	addtimer(CALLBACK(src, PROC_REF(hunter_charge), move_dir, (times_ran + 1)), 2)
+
+/mob/living/simple_animal/hostile/halflife/hunter/proc/hunter_begincharge(target)
+	if(charge_cooldown + charge_cooldown_time > world.time)
+		to_chat(src, span_warning("Your charge ability is still on cooldown!"))
+		return
+
+	charge_cooldown = world.time
+	var/dir_to_target = get_dir(get_turf(src), get_turf(target))
+	setDir(dir_to_target)
+	playsound(src,'sound/creatures/halflife/hunter/hunter_charge.ogg', 200, 1)
+	visible_message(span_boldwarning("[src] prepares to charge!"))
+	addtimer(CALLBACK(src, PROC_REF(hunter_charge), dir_to_target, 0), 5)
+
+/mob/living/simple_animal/hostile/halflife/hunter/AltClickOn(atom/A)
+	hunter_begincharge(A)
+
+/mob/living/simple_animal/hostile/halflife/hunter/Login()
+	..()
+	to_chat(src, playstyle_string)

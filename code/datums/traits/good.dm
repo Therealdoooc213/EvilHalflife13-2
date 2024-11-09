@@ -211,3 +211,39 @@
 	gain_text = span_notice("You crave pain.")
 	lose_text = span_danger("You lose your cravings of pain.")
 	medical_record_text = "Patient receives a rush of dopamine when pain neurocepters fire."
+
+/datum/quirk/cyberorgan //random upgraded cybernetic organ
+	name = "Upgraded Cybernetic Organ"
+	desc = "Due to a past incident you lost function of one of your organs, but now have a random upgraded cybernetic organ!"
+	icon = "building-ngo"
+	value = 4
+	medical_record_text = "During physical examination, patient was found to have an upgraded cybernetic organ."
+	var/slot_string = "organ"
+	var/list/organ_list = list(
+		ORGAN_SLOT_LUNGS = /obj/item/organ/lungs/cybernetic/upgraded, 
+		ORGAN_SLOT_HEART = /obj/item/organ/heart/cybernetic/upgraded, 
+		ORGAN_SLOT_LIVER = /obj/item/organ/liver/cybernetic/upgraded,
+	)
+	///String to denote the quality of the organ
+	var/quality = "upgraded cybernetic"
+
+/datum/quirk/cyberorgan/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/list/temp = organ_list.Copy() //pretty sure this is global so i dont want to bugger with it :)
+	if(HAS_TRAIT_FROM(H, TRAIT_TOXINLOVER, SPECIES_TRAIT))
+		temp -= ORGAN_SLOT_LIVER
+	if(HAS_TRAIT_FROM(H, TRAIT_NOBREATH, SPECIES_TRAIT))
+		temp -= ORGAN_SLOT_LUNGS
+	if((NOBLOOD in H.dna?.species.species_traits) || (STABLEBLOOD in H.dna?.species.species_traits))
+		temp -= ORGAN_SLOT_HEART
+	var/organ_type = organ_list[pick(temp)]
+	var/obj/item/organ/prosthetic = new organ_type(quirk_holder)
+	var/obj/item/organ/old_part = H.getorganslot(prosthetic.slot)
+	slot_string = prosthetic.slot
+	prosthetic.Insert(H)
+	qdel(old_part)
+	H.regenerate_icons()
+
+/datum/quirk/cyberorgan/post_add()
+	to_chat(quirk_holder, span_boldannounce("Your [slot_string] has been replaced with an [quality] variant."))
+

@@ -54,6 +54,11 @@
 	targetitem = /obj/item/grenade/spawnergrenade/manhacks
 	difficulty = 3
 
+/datum/objective_item/steal/townhallkey
+	name = "a key to the townhall."
+	targetitem = /obj/item/hl2key/townhall
+	difficulty = 5
+
 /datum/objective_item/steal/biopin
 	name = "a biolocked firing pin."
 	targetitem = /obj/item/firing_pin/implant/mindshield

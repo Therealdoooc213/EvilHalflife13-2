@@ -72,13 +72,6 @@
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/slums)
-"as" = (
-/obj/machinery/camera{
-	c_tag = "Chemistry";
-	dir = 4
-	},
-/turf/open/floor/plating/indoor/sterilesquares,
-/area/halflife/indoors/hospital)
 "av" = (
 /obj/machinery/door/unpowered/halflife/metal,
 /turf/open/floor/plating/indoor/metal/plate,
@@ -936,6 +929,13 @@
 	},
 /turf/open/floor/plasteel/dark/telecomms,
 /area/halflife/indoors)
+"eN" = (
+/obj/machinery/chem_master,
+/obj/effect/turf_decal/trimline/chemorange/warning/lower{
+	dir = 9
+	},
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/hospital)
 "eP" = (
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 10
@@ -1572,10 +1572,6 @@
 /obj/effect/turf_decal/box,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/productioncenter)
-"im" = (
-/obj/effect/landmark/event_spawn,
-/turf/open/floor/plating/indoor/sterilesquares,
-/area/halflife/indoors/hospital)
 "in" = (
 /obj/structure/table/halflife/no_smooth/large/metal,
 /turf/open/floor/plating/indoor/lino,
@@ -2332,13 +2328,6 @@
 	},
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/productioncenter)
-"mj" = (
-/obj/machinery/chem_master,
-/obj/effect/turf_decal/trimline/blue/warning/lower{
-	dir = 9
-	},
-/turf/open/floor/plating/indoor/sterilesquares,
-/area/halflife/indoors/hospital)
 "mk" = (
 /obj/structure/table/halflife/metal/alt,
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -2476,6 +2465,13 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors)
+"mP" = (
+/obj/effect/turf_decal/trimline/chemorange/warning/lower/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/chemorange/warning/lower/corner,
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/hospital)
 "mQ" = (
 /obj/structure/table/halflife/no_smooth/metal,
 /turf/open/floor/plating/indoor/tile/navy,
@@ -3471,6 +3467,13 @@
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/ground/sidewalk,
 /area/halflife/outdoors)
+"so" = (
+/obj/machinery/chem_heater,
+/obj/effect/turf_decal/trimline/chemorange/warning/lower{
+	dir = 6
+	},
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/hospital)
 "sr" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 1
@@ -4155,6 +4158,16 @@
 	},
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/laborunion)
+"vW" = (
+/obj/structure/table/halflife/no_smooth/large/metal{
+	dir = 1
+	},
+/obj/machinery/reagentgrinder,
+/obj/effect/turf_decal/trimline/chemorange/warning/lower{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/hospital)
 "vX" = (
 /obj/machinery/combine_fabricator,
 /turf/open/floor/plating/indoor/tile,
@@ -4343,6 +4356,15 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors)
+"wT" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/chemorange/warning/lower{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/hospital)
 "wV" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/plating/indoor/sterilesquares,
@@ -4520,6 +4542,13 @@
 	},
 /turf/open/floor/plating/ground/sidewalk,
 /area/halflife/indoors/sewer/tunnel)
+"xN" = (
+/obj/machinery/chem_dispenser,
+/obj/effect/turf_decal/trimline/chemorange/warning/lower{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/hospital)
 "xQ" = (
 /obj/structure/closet/crate,
 /obj/effect/spawner/lootdrop/halflife/loot/clothing,
@@ -4639,6 +4668,11 @@
 /obj/structure/table/halflife/wood/bar,
 /turf/open/floor/plating/indoor/carpet,
 /area/halflife/indoors/bar)
+"ym" = (
+/obj/effect/landmark/event_spawn,
+/obj/effect/turf_decal/trimline/chemorange/warning/lower,
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/hospital)
 "yo" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -5814,6 +5848,19 @@
 /obj/machinery/ai/master_subcontroller,
 /turf/open/floor/plating,
 /area/halflife/indoors)
+"Ej" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/obj/item/storage/pill_bottle,
+/obj/item/storage/pill_bottle,
+/obj/item/storage/pill_bottle,
+/obj/item/reagent_containers/glass/bottle,
+/obj/item/reagent_containers/glass/bottle,
+/obj/item/reagent_containers/glass/bottle,
+/obj/effect/turf_decal/trimline/chemorange/warning/lower{
+	dir = 10
+	},
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/hospital)
 "El" = (
 /obj/structure/table/halflife/no_smooth/large/metal{
 	dir = 8
@@ -6068,13 +6115,6 @@
 "FC" = (
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 5
-	},
-/turf/open/floor/plating/indoor/sterilesquares,
-/area/halflife/indoors/hospital)
-"FD" = (
-/obj/machinery/chem_dispenser,
-/obj/effect/turf_decal/trimline/blue/warning/lower{
-	dir = 1
 	},
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/hospital)
@@ -7823,14 +7863,6 @@
 /obj/structure/halflife/trash/garbage,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/indoors/slums)
-"ON" = (
-/obj/item/reagent_containers/glass/beaker/large,
-/obj/item/reagent_containers/syringe,
-/obj/effect/turf_decal/trimline/blue/warning/lower{
-	dir = 5
-	},
-/turf/open/floor/plating/indoor/sterilesquares,
-/area/halflife/indoors/hospital)
 "OO" = (
 /obj/structure/railing{
 	dir = 4
@@ -8253,19 +8285,6 @@
 /obj/structure/table/halflife/no_smooth/large/wood/desk,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/slums)
-"Rp" = (
-/obj/structure/table/halflife/no_smooth/metal,
-/obj/item/storage/pill_bottle,
-/obj/item/storage/pill_bottle,
-/obj/item/storage/pill_bottle,
-/obj/item/reagent_containers/glass/bottle,
-/obj/item/reagent_containers/glass/bottle,
-/obj/item/reagent_containers/glass/bottle,
-/obj/effect/turf_decal/trimline/blue/warning/lower{
-	dir = 10
-	},
-/turf/open/floor/plating/indoor/sterilesquares,
-/area/halflife/indoors/hospital)
 "Rq" = (
 /obj/structure/railing,
 /obj/effect/turf_decal/ramp_middle{
@@ -8560,6 +8579,14 @@
 "SV" = (
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/outdoors)
+"SX" = (
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/syringe,
+/obj/effect/turf_decal/trimline/chemorange/warning/lower{
+	dir = 5
+	},
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/hospital)
 "SY" = (
 /obj/structure/closet/crate,
 /obj/item/storage/box/lights/bulbs,
@@ -8694,16 +8721,6 @@
 	},
 /turf/open/floor/plating/indoor/metal/grate,
 /area/halflife/indoors/sewer)
-"TK" = (
-/obj/structure/table/halflife/no_smooth/large/metal{
-	dir = 1
-	},
-/obj/machinery/reagentgrinder,
-/obj/effect/turf_decal/trimline/blue/warning/lower{
-	dir = 1
-	},
-/turf/open/floor/plating/indoor/sterilesquares,
-/area/halflife/indoors/hospital)
 "TL" = (
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/bar)
@@ -9215,13 +9232,6 @@
 	},
 /turf/open/floor/plating/ground/brickroad,
 /area/halflife/indoors/sewer/tunnel)
-"Wx" = (
-/obj/machinery/chem_heater,
-/obj/effect/turf_decal/trimline/blue/warning/lower{
-	dir = 6
-	},
-/turf/open/floor/plating/indoor/sterilesquares,
-/area/halflife/indoors/hospital)
 "Wy" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -9489,6 +9499,16 @@
 /obj/effect/spawner/lootdrop/halflife/loot/consumables,
 /turf/open/floor/plating/indoor/woodc/wide,
 /area/halflife/indoors/slums)
+"Yg" = (
+/obj/machinery/camera{
+	c_tag = "Chemistry";
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/chemorange/warning/lower{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/hospital)
 "Yh" = (
 /obj/machinery/vending/hydroseeds,
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
@@ -37508,9 +37528,9 @@ sv
 sv
 sv
 hK
-mj
-as
-Rp
+eN
+Yg
+Ej
 hK
 bx
 Rm
@@ -37627,9 +37647,9 @@ Iw
 Iw
 sv
 hK
-FD
+xN
 Mr
-bx
+mP
 ST
 bx
 bx
@@ -37746,9 +37766,9 @@ Iw
 Iw
 sv
 hK
-TK
+vW
 bx
-im
+ym
 VE
 bx
 Bp
@@ -37865,9 +37885,9 @@ no
 Iw
 sv
 hK
-ON
-SH
-Wx
+SX
+wT
+so
 hK
 hK
 Zc
