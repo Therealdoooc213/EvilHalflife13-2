@@ -251,7 +251,7 @@
 	earliest_start = 30 MINUTES
 
 /datum/round_event/portal_storm/xen
-	boss_types = list(/mob/living/simple_animal/hostile/halflife/zombie/zombine = 2)
+	boss_types = list(/mob/living/simple_animal/hostile/halflife/zombie/zombine = 2, /mob/living/simple_animal/hostile/halflife/headcrab/poison = 2)
 	hostile_types = list(/mob/living/simple_animal/hostile/halflife/zombie = 8,\
 						/mob/living/simple_animal/hostile/halflife/zombie/fast = 2,\
 						/mob/living/simple_animal/hostile/halflife/headcrab = 4)

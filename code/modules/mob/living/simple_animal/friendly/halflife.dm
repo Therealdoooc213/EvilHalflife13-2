@@ -80,6 +80,8 @@
 	ranged = 1 //for flashing
 	var/idle_sound_chance = 100
 	var/idle_sounds = list('sound/creatures/cityscanner/cbot_fly_loop.ogg', 'sound/creatures/cityscanner/scanner_scan_loop1.ogg')
+	var/scan_sounds = list('sound/creatures/cityscanner/scanner_scan1.ogg', 'sound/creatures/cityscanner/scanner_scan2.ogg')
+	var/talk_sounds = list('sound/creatures/cityscanner/scanner_talk1.ogg', 'sound/creatures/cityscanner/scanner_talk2.ogg')
 
 /mob/living/simple_animal/hostile/hl2bot/cityscanner/Life(seconds_per_tick = SSMOBS_DT, times_fired)
 	..()
@@ -88,7 +90,17 @@
 	if(prob(idle_sound_chance))
 		var/chosen_sound = pick(idle_sounds)
 		playsound(src, chosen_sound, 50, FALSE)
+		if(prob(10))
+			chosen_sound = pick(scan_sounds)
+			playsound(src, chosen_sound, 50, FALSE)
 
 /mob/living/simple_animal/hostile/hl2bot/cityscanner/OpenFire()
 	playsound(src, 'sound/creatures/cityscanner/scanner_photo1.ogg', 40, FALSE)
 	ranged_cooldown = world.time + ranged_cooldown_time
+
+/mob/living/simple_animal/hostile/hl2bot/cityscanner/say(message, bubble_type, list/spans = list(), sanitize = TRUE, datum/language/language = null, ignore_spam = FALSE, forced = null)
+	..()
+	if(stat)
+		return
+	var/chosen_sound = pick(talk_sounds)
+	playsound(src, chosen_sound, 50, FALSE)

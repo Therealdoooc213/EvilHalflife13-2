@@ -192,6 +192,10 @@
 	var/charging = FALSE
 	var/revving_charge = FALSE
 	var/dash_speed = 1
+	var/dash_delay = 5
+	var/delaysound
+	var/leapsound = 'sound/creatures/halflife/headcrableap.ogg'
+	var/soundvary = TRUE
 
 /mob/living/simple_animal/hostile/halflife/headcrab/OpenFire()
 	if(charging)
@@ -203,7 +207,7 @@
 		charge()
 		ranged_cooldown = world.time + ranged_cooldown_time
 
-/mob/living/simple_animal/hostile/halflife/headcrab/proc/charge(atom/chargeat = target, delay = 5)
+/mob/living/simple_animal/hostile/halflife/headcrab/proc/charge(atom/chargeat = target, delay = dash_delay)
 	if(!chargeat)
 		return
 	var/chargeturf = get_turf(chargeat)
@@ -217,9 +221,11 @@
 	revving_charge = TRUE
 	walk(src, 0)
 	setDir(dir)
+	if(delaysound)
+		playsound(src, delaysound, 40, soundvary)
 	SLEEP_CHECK_DEATH(delay)
 	revving_charge = FALSE
-	playsound(src, 'sound/creatures/halflife/headcrableap.ogg', 40, TRUE)
+	playsound(src, leapsound, 40, soundvary)
 	walk_towards(src, T, dash_speed)
 	SLEEP_CHECK_DEATH(get_dist(src, T) * dash_speed)
 	walk(src, 0) // cancel the movement
@@ -239,7 +245,50 @@
 	maxHealth = 70
 	health = 70
 
+/mob/living/simple_animal/hostile/halflife/headcrab/poison
+	name = "Poison Headcrab"
+	desc = "An extra large and dark headcrab, with pronounced fangs."
+	icon_state = "poisonheadcrab"
+	icon_living = "poisonheadcrab"
+	icon_dead = "poisonheadcrab_dead"
+	maxHealth = 50
+	health = 50
+	dash_delay = 10
+	soundvary = FALSE
 
+	rapid_melee = 0.2 // attacks rather slow
+
+	deathsound = 'sound/creatures/halflife/poison/ph_death.ogg'
+	attack_sound = 'sound/creatures/halflife/poison/ph_poisonbite.ogg'
+	delaysound = 'sound/creatures/halflife/poison/ph_scream.ogg'
+	leapsound = 'sound/creatures/halflife/poison/ph_jump.ogg'
+
+	var/poison_type = /datum/reagent/toxin
+	var/poison_per_attack = 7 //one bite is about 22.5 toxin damage, though it takes quite a while for it to run it's course. Not a whole lot, but it goes through armor, and is generally harder to heal than brute damage.
+
+	var/aggro_sound = 'sound/creatures/halflife/poison/ph_rattle.ogg'
+	var/idle_sounds = list('sound/creatures/halflife/poison/ph_talk1.ogg', 'sound/creatures/halflife/poison/ph_talk2.ogg', 'sound/creatures/halflife/poison/ph_talk3.ogg')
+
+/mob/living/simple_animal/hostile/halflife/headcrab/poison/Aggro()
+	. = ..()
+	set_combat_mode(TRUE)
+	if(prob(50))
+		playsound(src, aggro_sound, 50, soundvary)
+
+/mob/living/simple_animal/hostile/halflife/headcrab/poison/Life(seconds_per_tick = SSMOBS_DT, times_fired)
+	..()
+	if(stat)
+		return
+	if(prob(25))
+		var/chosen_sound = pick(idle_sounds)
+		playsound(src, chosen_sound, 50, soundvary)
+
+/mob/living/simple_animal/hostile/halflife/headcrab/poison/AttackingTarget()
+	..()
+	if(isliving(target))
+		var/mob/living/L = target
+		if(target.reagents)
+			L.reagents.add_reagent(poison_type, poison_per_attack)
 
 
 /mob/living/simple_animal/hostile/halflife/hunter

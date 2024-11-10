@@ -317,6 +317,11 @@
 	suffix = "sewer_left_ten_radiation.dmm"
 	name = "sewer left_ten_radiation"
 
+/datum/map_template/ruin/station/sewer/leftentrance/tenxten/poisoncrab
+	id = "left_ten_poisoncrab"
+	suffix = "sewer_left_ten_poisoncrab.dmm"
+	name = "sewer left_ten_poisoncrab"
+
 ///The base for 10x10 right rooms
 /datum/map_template/ruin/station/sewer/rightentrance/tenxten
 	prefix = "_maps/RandomRuins/StationRuins/sewer/rightentrance/10x10/"
@@ -335,6 +340,11 @@
 	id = "right_ten_headcrabs"
 	suffix = "sewer_right_ten_headcrabs.dmm"
 	name = "sewer right_ten_headcrabs"
+
+/datum/map_template/ruin/station/sewer/rightentrance/tenxten/headcrabs2
+	id = "right_ten_headcrabs2"
+	suffix = "sewer_right_ten_headcrabs2.dmm"
+	name = "sewer right_ten_headcrabs2"
 
 /datum/map_template/ruin/station/sewer/rightentrance/tenxten/infested1
 	id = "right_ten_infested1"
