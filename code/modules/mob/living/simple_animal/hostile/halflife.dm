@@ -161,6 +161,72 @@
 	infest = new(src)
 	infest.Grant(src)
 
+/mob/living/simple_animal/hostile/halflife/zombie/poison
+	name = "Poison Zombie"
+	desc = "A bloated, fleshy human taken over by a parasitic poison headcrab."
+	icon_state = "poisonzombie"
+	icon_living = "poisonzombie"
+	icon_dead = "poisonzombie_dead"
+	maxHealth = 180
+	health = 180
+	move_to_delay = 7
+	speed = 1.2
+	speak = list("Mrrrraaaaghhhhh...","ggg-ggrrahhh...","P-p...o...he-l..")
+	deathsound = 'sound/creatures/halflife/poison/pz_die1.ogg'
+	crabless_possible = FALSE
+	aggro_sound = 'sound/creatures/halflife/poison/pz_alert1.ogg'
+	idle_sounds = list('sound/creatures/halflife/poison/pz_breathe_loop1.ogg')
+	sound_vary = FALSE
+	ranged_cooldown_time = 60
+	ranged = 1
+	var/crabs_left = 3
+	var/nowthrowing = FALSE
+	var/revving_throw = FALSE
+	var/brood_type = /mob/living/simple_animal/hostile/halflife/headcrab/poison
+
+/mob/living/simple_animal/hostile/halflife/zombie/poison/OpenFire()
+	if(nowthrowing)
+		return
+	if(crabs_left < 1)
+		return
+	var/tturf = get_turf(target)
+	if(!isturf(tturf))
+		return
+	if(get_dist(src, target) <= 7)
+		throwcrab()
+		ranged_cooldown = world.time + ranged_cooldown_time
+
+/mob/living/simple_animal/hostile/halflife/zombie/poison/proc/throwcrab(atom/throwat = target, delay = 10)
+	if(!throwat)
+		return
+	var/throwturf = get_turf(throwat)
+	if(!throwturf)
+		return
+	var/dir = get_dir(src, throwturf)
+	var/turf/T = get_ranged_target_turf(throwturf, dir, 2)
+	if(!T)
+		return
+	nowthrowing = TRUE
+	revving_throw = TRUE
+	walk(src, 0)
+	setDir(dir)
+	playsound(src, 'sound/creatures/halflife/poison/pz_warn1.ogg', 40, sound_vary)
+	SLEEP_CHECK_DEATH(delay)
+	revving_throw = FALSE
+	playsound(src, 'sound/creatures/halflife/poison/pz_throw3.ogg', 40, sound_vary)
+	var/mob/living/simple_animal/hostile/halflife/headcrab/poison/P = new brood_type(src.loc)
+	P.charge(T)
+	SLEEP_CHECK_DEATH(delay)
+	nowthrowing = FALSE
+	crabs_left--
+
+/mob/living/simple_animal/hostile/halflife/zombie/poison/Move()
+	if(revving_throw || nowthrowing)
+		return FALSE
+	..()
+
+
+
 //leaping headcrabs
 /mob/living/simple_animal/hostile/halflife/headcrab
 	name = "Headcrab"
