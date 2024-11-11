@@ -520,14 +520,6 @@
 	},
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/hospital)
-"cI" = (
-/obj/structure/table/halflife/no_smooth/metal,
-/obj/item/reagent_containers/pill/patch/medkit,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/plating/indoor/sterilesquares,
-/area/halflife/indoors/townhall)
 "cK" = (
 /obj/structure/chair/comfy/halflife/armchair,
 /obj/effect/landmark/start/city_administrator,
@@ -2391,11 +2383,6 @@
 "mv" = (
 /turf/open/floor/plating/indoor/grooved,
 /area/halflife/indoors/hospital)
-"mx" = (
-/obj/structure/table/halflife/no_smooth/metal,
-/obj/item/reagent_containers/pill/patch/medkit,
-/turf/open/floor/plating/indoor/sterilesquares,
-/area/halflife/indoors/townhall)
 "my" = (
 /obj/structure/sign/poster/halflife/combine/two{
 	pixel_y = 32
@@ -4045,6 +4032,21 @@
 /obj/effect/spawner/lootdrop/halflife/loot/rare,
 /turf/open/floor/plating/indoor/metal/grate,
 /area/halflife/indoors/sewer)
+"vg" = (
+/obj/structure/table/halflife/no_smooth/large/metal{
+	dir = 4
+	},
+/obj/item/clothing/accessory/armband/medblue{
+	name = "medical union armband"
+	},
+/obj/item/clothing/accessory/armband/medblue{
+	name = "medical union armband"
+	},
+/obj/item/clothing/head/nursehat,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/hospital)
 "vi" = (
 /obj/structure/chair/office/halflife/blue,
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -4518,6 +4520,12 @@
 	},
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/scienceunion)
+"xI" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/obj/item/reagent_containers/pill/patch/medkit,
+/obj/item/reagent_containers/pill/patch/medkit,
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/townhall)
 "xL" = (
 /obj/effect/turf_decal/siding/thinplating,
 /obj/structure/halflife/trash/papers/one,
@@ -4969,6 +4977,13 @@
 /obj/structure/chair/sofa/bench,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors)
+"zW" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/iv_drip,
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/townhall)
 "zX" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -8303,20 +8318,6 @@
 /obj/structure/table/halflife/metal/constructed,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/sewer)
-"Rx" = (
-/obj/structure/table/halflife/no_smooth/large/metal{
-	dir = 4
-	},
-/obj/item/clothing/accessory/armband/medblue{
-	name = "medical union armband"
-	},
-/obj/item/clothing/accessory/armband/medblue{
-	name = "medical union armband"
-	},
-/obj/item/clothing/head/nursehat,
-/obj/item/clothing/glasses/hud/health,
-/turf/open/floor/plating/indoor/metal/plate,
-/area/halflife/indoors/hospital)
 "Ry" = (
 /obj/structure/table/halflife/no_smooth/metal,
 /turf/open/floor/plating/indoor/tile,
@@ -38011,7 +38012,7 @@ hK
 aW
 GK
 BQ
-Rx
+vg
 GK
 UF
 hK
@@ -38202,7 +38203,7 @@ WY
 Zz
 NG
 XQ
-cI
+zW
 NG
 NG
 Ff
@@ -38440,7 +38441,7 @@ tV
 NG
 Iv
 XQ
-mx
+xI
 NG
 NG
 JK
@@ -42979,7 +42980,7 @@ rj
 Iw
 fh
 Wc
-rj
+qM
 rj
 rj
 rj
@@ -43574,7 +43575,7 @@ Iw
 Iw
 rj
 Wc
-qM
+rj
 rj
 JL
 Yc

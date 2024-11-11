@@ -33,6 +33,7 @@
 
 	uniform = /obj/item/clothing/under/citizen/refugee
 	shoes = /obj/item/clothing/shoes/brownboots
+	r_pocket = /obj/item/flashlight
 	var/list/rhand_items = list(
 		/obj/item/lockpick,
 		/obj/item/kitchen/knife/makeshift,
