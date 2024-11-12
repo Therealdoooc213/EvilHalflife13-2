@@ -22,9 +22,9 @@
 	qdel(src)
 
 /obj/item/grenade/syndieminibomb/bouncer
-	name = "Grenade"
+	name = "MK3A2 Grenade"
 	desc = "Called a 'Bouncer' by Combine teams, these are light explosive grenades without much kick, that do not do much environmental damage."
-	icon_state = "smokewhite"
+	icon_state = "bouncer"
 
 /obj/item/grenade/syndieminibomb/bouncer/prime()
 	update_mob()

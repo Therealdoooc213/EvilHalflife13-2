@@ -8,8 +8,9 @@
 	faction = list("headcrab")
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	stat_attack = UNCONSCIOUS //braains
-	maxHealth = 120
-	health = 120
+	maxHealth = 100
+	health = 100
+	projectile_bonus_damage = 0.8 //so melee can be competitive against them, while projectiles dont instantly wipe them
 	speak_chance = 1
 	speak = list("G-GOD HELP ME!","OH G-GOD!","K-KILL ME!")
 	harm_intent_damage = 5
@@ -68,8 +69,8 @@
 	icon_state = "zombine"
 	icon_living = "zombie"
 	icon_dead = "zombine_dead"
-	maxHealth = 180
-	health = 180
+	maxHealth = 160
+	health = 160
 	speak = list("S-Sector, nnnot... secur-e-e...","B-Biotics-s...","O-Over...watch... r-r-reserve...")
 	attack_sound = 'sound/creatures/halflife/zombineattack.ogg'
 	deathsound = 'sound/creatures/halflife/zombinedeath.ogg'
@@ -84,8 +85,8 @@
 	icon_living = "fastzombie"
 	icon_dead = "fastzombie_dead"
 	faction = list("headcrab")
-	maxHealth = 100
-	health = 100
+	maxHealth = 80
+	health = 80
 	speak_chance = 0
 	melee_damage_lower = 7
 	melee_damage_upper = 9
@@ -149,8 +150,8 @@
 	icon_living = "fungalzombie"
 	icon_dead = "fungalzombie_dead"
 	no_crab_state = "fungalzombie_nocrab"
-	maxHealth = 180
-	health = 180
+	maxHealth = 160
+	health = 160
 	fungalheal = TRUE
 	move_to_delay = 6
 	headcrabspawn = /mob/living/simple_animal/hostile/halflife/headcrab/armored
@@ -167,8 +168,8 @@
 	icon_state = "poisonzombie"
 	icon_living = "poisonzombie"
 	icon_dead = "poisonzombie_dead"
-	maxHealth = 180
-	health = 180
+	maxHealth = 160
+	health = 160
 	move_to_delay = 7
 	speed = 1.2
 	speak = list("Mrrrraaaaghhhhh...","ggg-ggrrahhh...","P-p...o...he-l..")
@@ -308,8 +309,9 @@
 	icon_state = "armoredheadcrab"
 	icon_living = "armoredheadcrab"
 	icon_dead = "armoredheadcrab_dead"
-	maxHealth = 70
-	health = 70
+	maxHealth = 60
+	health = 60
+	projectile_bonus_damage = 0.8
 
 /mob/living/simple_animal/hostile/halflife/headcrab/poison
 	name = "Poison Headcrab"
@@ -317,8 +319,8 @@
 	icon_state = "poisonheadcrab"
 	icon_living = "poisonheadcrab"
 	icon_dead = "poisonheadcrab_dead"
-	maxHealth = 50
-	health = 50
+	maxHealth = 45
+	health = 45
 	dash_delay = 10
 	soundvary = FALSE
 
@@ -367,8 +369,9 @@
 	faction = list("combine")
 	mob_biotypes = MOB_ORGANIC
 	stat_attack = UNCONSCIOUS
-	maxHealth = 360
-	health = 360
+	maxHealth = 300
+	health = 300
+	projectile_bonus_damage = 0.8 //so melee can be slightly more competitive
 	harm_intent_damage = 25
 	melee_damage_lower = 20
 	melee_damage_upper = 25

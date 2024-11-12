@@ -157,6 +157,7 @@ SUBSYSTEM_DEF(mapping)
 		to_chat(world, span_boldannounce("Virtual reality loaded."))
 
 
+	/*
 	// Generate mining ruins
 	loading_ruins = TRUE
 	var/list/lava_ruins = levels_by_trait(ZTRAIT_LAVA_RUINS)
@@ -181,15 +182,17 @@ SUBSYSTEM_DEF(mapping)
 	seedStation()
 	loading_ruins = FALSE
 	
-	//Load Reebe
+	*/
+
+	//Load Outlands
 	
 	var/list/errorList = list()
-	/*
-	SSmapping.LoadGroup(errorList, "Reebe", "map_files/generic", "City_of_Cogs.dmm", default_traits = ZTRAITS_REEBE, silent = TRUE)
-	if(errorList.len)	// reebe failed to load
-		message_admins("Reebe failed to load!")
-		log_game("Reebe failed to load!")
-	*/
+	
+	SSmapping.LoadGroup(errorList, "Outlands", "map_files/generic", "outlands.dmm", silent = TRUE)
+	if(errorList.len)	// Outlands failed to load
+		message_admins("Outlands failed to load!")
+		log_game("Outlands failed to load!")
+	
 
 	//Load an Arena
 	errorList = list()

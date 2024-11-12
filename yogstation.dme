@@ -3371,6 +3371,8 @@
 #include "code\modules\power\cell.dm"
 #include "code\modules\power\energyharvester.dm"
 #include "code\modules\power\floodlight.dm"
+#include "code\modules\power\fuelcell_recycler.dm"
+#include "code\modules\power\fusion.dm"
 #include "code\modules\power\generator.dm"
 #include "code\modules\power\gravitygenerator.dm"
 #include "code\modules\power\lighting.dm"

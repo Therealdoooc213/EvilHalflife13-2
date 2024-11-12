@@ -26,7 +26,7 @@
 /obj/item/melee/sledgehammer/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/two_handed, \
-		force_wielded = 15, \
+		force_wielded = 18, \
 		wield_callback = CALLBACK(src, PROC_REF(on_wield)), \
 		unwield_callback = CALLBACK(src, PROC_REF(on_unwield)), \
 		require_twohands = TRUE, \

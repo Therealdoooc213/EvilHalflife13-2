@@ -119,7 +119,7 @@
 		return TRUE
 
 /mob/living/simple_animal/bullet_act(obj/projectile/Proj)
-	apply_damage(Proj.damage, Proj.damage_type)
+	apply_damage((Proj.damage * projectile_bonus_damage), Proj.damage_type)
 	last_damage = Proj.name
 	Proj.on_hit(src)
 	return BULLET_ACT_HIT

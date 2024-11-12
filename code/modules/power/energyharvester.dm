@@ -6,7 +6,7 @@
 #define HARDCAP_BUDGET 20000 //last tranche of money for going above and beyond the call of duty until hitting the hardcap
 
 /obj/item/energy_harvester
-	desc = "A Device which upon connection to a node, will harvest the energy and send it to engineerless stations in return for credits, derived from a syndicate powersink model."
+	desc = "A Device which upon connection to a node, will harvest the energy and send it to engineerless cities in return for credits."
 	name = "Energy Harvesting Module"
 	icon_state = "powersink0"
 	icon = 'icons/obj/device.dmi'

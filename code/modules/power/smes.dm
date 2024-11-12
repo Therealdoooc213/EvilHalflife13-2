@@ -228,7 +228,7 @@
 
 
 /obj/machinery/power/smes/proc/chargedisplay()
-	return clamp(round(6.5*charge/capacity),0,6)
+	return clamp(round(6.5*charge/capacity),0,5)
 
 /obj/machinery/power/smes/process()
 	if(stat & BROKEN)

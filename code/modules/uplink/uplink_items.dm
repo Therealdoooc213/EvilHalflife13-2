@@ -390,6 +390,14 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/card/emag/halflife
 	cost = 8
 
+/datum/uplink_item/device_tools/projector
+	name = "Holographic Object Projector"
+	item = /obj/item/device/holoprojector
+	desc = "A device for masters of deception and trickery. This item allows you to scan objects and create \
+			holograms of them. The holograms will dissipate when interacted with. You can replace the stock \
+			parts it comes with to increase the maximum number of holograms and variety of scannable objects."
+	cost = 4
+
 /datum/uplink_item/misc
 	category = UPLINK_CATEGORY_MISC
 

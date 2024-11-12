@@ -49,6 +49,9 @@
 	var/armour_penetration = 0 //How much armour they ignore, as a flat reduction from the targets armour value
 	var/melee_damage_type = BRUTE //Damage type of a simple mob's melee attack, should it do damage.
 	var/list/damage_coeff = list(BRUTE = 1, BURN = 1, TOX = 1, CLONE = 1, STAMINA = 0, OXY = 1) // 1 for full damage , 0 for none , -1 for 1:1 heal from that source
+
+	var/projectile_bonus_damage = 1 //multiplier for damage from projectiles. Should they take extra or less damage from them compared to other sources?
+
 	var/attacktext = "attacks"
 	/// Sound played when the critter attacks.
 	var/attack_sound

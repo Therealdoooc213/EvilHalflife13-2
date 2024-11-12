@@ -721,3 +721,10 @@ Class Procs:
 
 	// couldn't find a proper powered area on loc or adjacent wall, defaulting back to loc and blaming mappers
 	return machine_area
+
+/obj/machinery/proc/start_processing()
+	START_PROCESSING(SSmachines, src)
+
+
+/obj/machinery/proc/stop_processing()
+	STOP_PROCESSING(SSmachines, src)
