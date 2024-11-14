@@ -98,7 +98,8 @@
 	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
 		return
 	if(searched)
-		span_notice("It's already been searched.")
+		user.visible_message(span_notice("[user] examines [src], before turning away."), \
+			span_notice("The [src] have already been searched."))
 		return
 	user.visible_message(span_notice("[user] begins to sift through the [src] for anything useful."), \
 		span_notice("You begin to dig through the [src] for something interesting."))
@@ -670,6 +671,7 @@
 
 /obj/structure/halflife/pallet/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
+		playsound(src.loc, 'sound/halflifesounds/halflifeeffects/wood_deconstruction.ogg', 50, TRUE)
 		if(disassembled)
 			new /obj/item/stack/sheet/mineral/wood(loc, 2)
 		else
@@ -686,6 +688,7 @@
 
 /obj/structure/halflife/pallet/stack/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
+		playsound(src.loc, 'sound/halflifesounds/halflifeeffects/wood_deconstruction.ogg', 50, TRUE)
 		if(disassembled)
 			new /obj/item/stack/sheet/mineral/wood(loc, 3)
 		else
@@ -693,3 +696,109 @@
 	qdel(src)
 
 // brix.... //
+
+
+
+// railings/fence//
+
+/obj/structure/railing/halflife
+	name = "base state halflife guard rail"
+	icon = 'icons/obj/halflife/railings.dmi'
+	layer = ABOVE_MOB_LAYER
+	max_integrity = 150
+	//climbable = FALSE //so we can override TG
+	projectile_passchance = 80
+	pixel_y = 0
+
+/obj/structure/railing/halflife/Initialize()
+	. = ..()
+	if(dir == SOUTH)
+		layer = ABOVE_ALL_MOB_LAYER
+	if(dir == NORTH)
+		layer = ABOVE_ALL_MOB_LAYER
+
+	//AddElement(/datum/element/climbable, climb_time = 3 SECONDS, climb_stun = 0, no_stun = TRUE, jump_over = TRUE, jump_north = 12, jump_south = 17, jump_sides = 12)
+
+/obj/structure/railing/halflife/deconstruct(disassembled = TRUE)
+	if(!(flags_1 & NODECONSTRUCT_1))
+		new /obj/item/stack/sheet/metal(loc)
+	qdel(src)
+
+/obj/structure/railing/halflife/solo
+	name = "guard rail"
+	desc = "A sturdy rail setup with multiple functions, including but not limited to: ensuring you dont fly off the top of a four story tall building"
+	icon_state = "civ_solo"
+
+/obj/structure/railing/halflife/full
+	name = "guard rail"
+	desc = "A sturdy rail setup with multiple functions, including but not limited to: ensuring you dont fly off the top of a four story tall building"
+	icon_state = "civ_full"
+
+/obj/structure/railing/halflife/end
+	name = "guard rail"
+	desc = "A sturdy rail setup with multiple functions, including but not limited to: ensuring you dont fly off the top of a four story tall building"
+	icon_state = "civ_end"
+
+/obj/structure/railing/halflife/solo/industrial
+	desc = "A sturdy rail setup with multiple functions, including but not limited to: ensuring you dont fly off the top of a four story tall building. It's got a slick orange taint, so you know it's to workplace regulations."
+	icon_state = "indus_solo"
+
+/obj/structure/railing/halflife/sewer
+	name = "guard rail"
+	desc = "A rusty guard rail used to prevent you from falling into the region's sewage. Thank the lord it's there."
+	icon_state = "railings_sewer"
+
+// Fences. Huzzah! //
+/obj/structure/railing/halflife/wood
+	name = "wooden fence"
+	desc = "A classic wooden fence. It doesn't get more homely than this."
+	icon_state = "wood_full"
+	projectile_passchance = 70
+
+/obj/structure/railing/halflife/wood/crowbar_act(mob/living/user, obj/item/tool)
+	if(flags_1&NODECONSTRUCT_1)
+		return TRUE
+	..()
+	user.visible_message("<span class='notice'>[user] starts to break \the [src].</span>", \
+		"<span class='notice'>You start to break \the [src].</span>", \
+		"<span class='hear'>You hear splitting wood.</span>")
+	tool.play_tool_sound(src)
+	if(do_after(user, 10 SECONDS * tool.toolspeed, target = src))
+		playsound(src.loc, 'sound/halflifesounds/halflifeeffects/wood_deconstruction.ogg', 50, TRUE)
+		user.visible_message("<span class='notice'>[user] pries \the [src] into pieces.</span>", \
+			"<span class='notice'>You pry \the [src] into pieces.</span>", \
+			"<span class='hear'>You hear splitting wood.</span>")
+		deconstruct(disassembled = TRUE)
+		return TRUE
+
+/obj/structure/railing/halflife/wood/deconstruct(disassembled = TRUE)
+	if(!(flags_1 & NODECONSTRUCT_1))
+		if(disassembled)
+			new /obj/item/stack/sheet/mineral/wood(loc, 3)
+		else
+			new /obj/item/stack/sheet/mineral/wood(loc, 2)
+	qdel(src)
+
+/obj/structure/railing/halflife/wood/examine(mob/user)
+	. = ..()
+	. += deconstruction_hints(user)
+
+/obj/structure/railing/halflife/wood/proc/deconstruction_hints(mob/user)
+	return span_notice("You could use a <b>crowbar</b> or similar prying tool to dismantle [src] for planks and parts.")
+
+/obj/structure/railing/halflife/wood/ending
+	icon_state = "wood_end"
+
+/obj/structure/railing/halflife/wood/single
+	icon_state = "wood_solo"
+
+/obj/structure/railing/halflife/wood/snow
+	name = "wooden fence"
+	desc = "A classic wooden fence. It doesn't get more homely than this."
+	icon_state = "wood_snow_full"
+
+/obj/structure/railing/halflife/wood/snow/ending
+	icon_state = "wood_snow_end"
+
+/obj/structure/railing/halflife/wood/snow/single
+	icon_state = "wood_snow_solo"

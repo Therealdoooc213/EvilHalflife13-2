@@ -138,11 +138,8 @@
 	has_alternate_states = TRUE
 	alternate_states = 4
 
-	//smoothing_flags = SMOOTH_BITMASK | SMOOTH_BORDER
-
-
-/*
-/turf/open/floor/plating/ground/sidewalk/Initialize()
-	. = ..()
-	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, update_icon)), 1)
-*/
+/turf/open/floor/plating/ground/sidewalk/inner
+	baseturfs = /turf/open/floor/plating/ground/sidewalk/inner
+	icon_state = "sidewalkinside"
+	base_icon_state = "sidewalkinside"
+	alternate_states = 2

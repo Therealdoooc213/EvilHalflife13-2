@@ -230,7 +230,7 @@
 				icon_state = "manhole_open"
 				desc = "An open manhole, it still stinks even after all these years. You could use a crowbar or your hands to slide the cover back on."
 				to_chat(user, span_notice("With a lot of effort, you manage to finally get the cover off."))
-				if(prob(10))
+				if(prob(15))
 					to_chat(user, span_userdanger("MY ARM! THE PAIN!"))
 					arm.force_wound_upwards(/datum/wound/blunt/moderate)
 					arm.receive_damage(10)

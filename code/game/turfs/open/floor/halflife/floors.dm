@@ -167,6 +167,9 @@
 /turf/open/floor/plating/indoor/metal/plate
 	icon_state = "steel_solid"
 
+/turf/open/floor/plating/indoor/metal/industrial
+	icon_state = "steel_industrial"
+
 /turf/open/floor/plating/indoor/metal/grate
 	icon_state = "steel_grate"
 

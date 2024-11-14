@@ -157,7 +157,7 @@ SUBSYSTEM_DEF(mapping)
 		to_chat(world, span_boldannounce("Virtual reality loaded."))
 
 
-	/*
+	
 	// Generate mining ruins
 	loading_ruins = TRUE
 	var/list/lava_ruins = levels_by_trait(ZTRAIT_LAVA_RUINS)
@@ -182,7 +182,7 @@ SUBSYSTEM_DEF(mapping)
 	seedStation()
 	loading_ruins = FALSE
 	
-	*/
+	
 
 	//Load Outlands
 	
