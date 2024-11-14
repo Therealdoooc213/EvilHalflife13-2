@@ -1,6 +1,10 @@
 /datum/component/personal_crafting/Initialize()
 	if(ismob(parent))
 		RegisterSignal(parent, COMSIG_MOB_CLIENT_LOGIN, PROC_REF(create_mob_button))
+	/*
+	else // Alt click because workbenches are tables, so putting items on them triggers a click
+		RegisterSignal(parent, COMSIG_CLICK_CTRL, PROC_REF(component_ui_interact_workbench))
+	*/
 
 /datum/component/personal_crafting/proc/create_mob_button(mob/user, client/CL)
 	var/datum/hud/H = user.hud_used
@@ -19,6 +23,7 @@
 	var/display_craftable_only = FALSE
 	var/display_compact = FALSE
 	var/forced_mode = FALSE
+	var/crafting_interface = CRAFTING_BENCH_HANDS
 
 /*	This is what procs do:
 	get_environment - gets a list of things accessable for crafting by user
@@ -151,6 +156,12 @@
 /datum/component/personal_crafting/proc/construct_item(atom/a, datum/crafting_recipe/R)
 	var/list/contents = get_surroundings(a, R.blacklist)
 	var/send_feedback = 1
+				// MOJAVE EDIT - CRAFTING BENCHES START
+	if(ismob(a))
+		//If we're a mob we'll try a do_after; non mobs will instead instantly construct the item
+		if(!do_after(a, R.time, target = a))
+			return "."
+		// MOJAVE EDIT - CRAFTING BENCHES END
 	if(!check_contents(a, R, contents))
 		return ", missing component."
 	if(!check_tools(a, R, contents))
@@ -306,12 +317,24 @@
 		return FALSE
 	return TRUE
 
-/datum/component/personal_crafting/proc/component_ui_interact(atom/movable/screen/craft/image, location, control, params, user)
-	if(user == parent)
-		ui_interact(user)
+// MOJAVE-EDIT
+/datum/component/personal_crafting/proc/component_ui_interact_workbench(datum/source, mob/user)
+	SIGNAL_HANDLER
 
+	//MOJAVE EDIT - Only require user to be the component owner, for hand crafting
+	if(source == parent)
+		INVOKE_ASYNC(src, PROC_REF(ui_interact), user)
+
+/datum/component/personal_crafting/proc/component_ui_interact(atom/movable/screen/craft/image, location, control, params, user)
+	SIGNAL_HANDLER
+
+	if(user == parent)
+		INVOKE_ASYNC(src, PROC_REF(ui_interact), user)
+
+// MOJAVE SUN EDIT BEGIN
 /datum/component/personal_crafting/ui_state(mob/user)
 	return GLOB.not_incapacitated_turf_state
+
 
 /datum/component/personal_crafting/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
@@ -332,10 +355,15 @@
 	for(var/datum/crafting_recipe/recipe as anything in (mode ? GLOB.cooking_recipes : GLOB.crafting_recipes))
 		if(!is_recipe_available(recipe, user))
 			continue
+		// Check we are the correct workbench for this
+		if(!(recipe.crafting_interface & src.crafting_interface) && !(recipe.crafting_interface & CRAFTING_BENCH_HANDS))
+			continue
 		if(check_contents(user, recipe, surroundings) && check_tools(user, recipe, surroundings))
 			craftability["[REF(recipe)]"] = TRUE
 		if(display_craftable_only) // for debugging only
 			craftability["[REF(recipe)]"] = TRUE
+		//if(!(recipe.crafting_interface & src.crafting_interface))
+			//craftability["[REF(recipe)]"] = FALSE
 
 	data["craftability"] = craftability
 	return data
@@ -355,6 +383,9 @@
 
 	for(var/datum/crafting_recipe/recipe as anything in (mode ? GLOB.cooking_recipes : GLOB.crafting_recipes))
 		if(!is_recipe_available(recipe, user))
+			continue
+		// Check we are the correct workbench for this
+		if(!(recipe.crafting_interface & src.crafting_interface) && !(recipe.crafting_interface & CRAFTING_BENCH_HANDS))
 			continue
 
 		if(recipe.category)

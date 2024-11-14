@@ -55,6 +55,7 @@
 	result = /obj/item/storage/belt/utility/makeshift
 	time = 20 SECONDS
 	category = CAT_TOOLS
+	crafting_interface = CRAFTING_BENCH_GENERAL
 
 /datum/crafting_recipe/makeshiftknife
 	name = "Makeshift Knife"

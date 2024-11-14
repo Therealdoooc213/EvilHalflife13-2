@@ -11,6 +11,10 @@
 	},
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/sewer)
+"q" = (
+/obj/structure/table/halflife/no_smooth/large/crafting/workbench,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
 "t" = (
 /obj/structure/ore_box,
 /turf/open/floor/plating/indoor/concrete/small,
@@ -108,7 +112,7 @@ A
 A
 A
 A
-y
+q
 y
 A
 y

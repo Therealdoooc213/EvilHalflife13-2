@@ -1,4 +1,12 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/halflife/trash/papers,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"i" = (
+/obj/structure/table/halflife/no_smooth/large/crafting/weaponbench,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
 "l" = (
 /obj/structure/table/halflife/metal/heavy,
 /obj/effect/spawner/lootdrop/halflife/loot/ammo,
@@ -34,6 +42,10 @@
 /area/halflife/indoors/sewer)
 "L" = (
 /turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"M" = (
+/obj/structure/halflife/trash/papers/three,
+/turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/sewer)
 "Q" = (
 /turf/open/floor/plating/indoor/concrete/small,
@@ -141,8 +153,8 @@ A
 "}
 (8,1,1) = {"
 A
-Q
-Q
+i
+a
 Q
 l
 A
@@ -155,7 +167,7 @@ A
 A
 Q
 Q
-Q
+M
 p
 A
 L

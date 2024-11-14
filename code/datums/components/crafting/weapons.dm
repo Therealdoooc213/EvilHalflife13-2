@@ -60,13 +60,16 @@
 				/obj/item/stack/tape = 1)
 	time = 10 SECONDS
 	category = CAT_WEAPON_RANGED
+	crafting_interface = CRAFTING_BENCH_WEAPONS | CRAFTING_BENCH_GENERAL
 
 /datum/crafting_recipe/rebar
 	name = "Rebar Bolt"
 	result = /obj/item/ammo_casing/reusable/arrow/rebar
 	reqs = list(/obj/item/stack/rods = 3)
 	time = 12 SECONDS
-	category = CAT_WEAPON_RANGED
+	category = CAT_WEAPON_AMMO
+
+
 
 /datum/crafting_recipe/usp
 	name = "USP Match"
@@ -77,6 +80,18 @@
 				/obj/item/stack/tape = 1)
 	time = 10 SECONDS
 	category = CAT_WEAPON_RANGED
+	crafting_interface = CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/pistolbullet
+	name = "9mm Bullet"
+	result = /obj/item/ammo_casing/c9mm
+	reqs = list(/obj/item/stack/sheet/metal = 1,
+				/obj/item/stack/cable_coil = 1,
+				/datum/reagent/fuel = 5)
+	tool_behaviors = list(TOOL_SCREWDRIVER)
+	time = 0.5 SECONDS
+	category = CAT_WEAPON_AMMO
+	crafting_interface = CRAFTING_BENCH_RELOADING
 
 /datum/crafting_recipe/revolver
 	name = "Colt Python"
@@ -87,6 +102,18 @@
 				/obj/item/stack/tape = 1)
 	time = 10 SECONDS
 	category = CAT_WEAPON_RANGED
+	crafting_interface = CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/magnumbullet
+	name = "357 Magnum Bullet"
+	result = /obj/item/ammo_casing/a357
+	reqs = list(/obj/item/stack/sheet/metal = 1,
+				/obj/item/stack/cable_coil = 1,
+				/datum/reagent/fuel = 5)
+	tool_behaviors = list(TOOL_SCREWDRIVER)
+	time = 0.5 SECONDS
+	category = CAT_WEAPON_AMMO
+	crafting_interface = CRAFTING_BENCH_RELOADING
 
 /datum/crafting_recipe/mp7
 	name = "MP7"
@@ -97,6 +124,18 @@
 				/obj/item/stack/tape = 1)
 	time = 10 SECONDS
 	category = CAT_WEAPON_RANGED
+	crafting_interface = CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/mp7bullet
+	name = "4.6x30mm Bullet"
+	result = /obj/item/ammo_casing/c46x30mm
+	reqs = list(/obj/item/stack/sheet/metal = 1,
+				/obj/item/stack/cable_coil = 1,
+				/datum/reagent/fuel = 5)
+	tool_behaviors = list(TOOL_SCREWDRIVER)
+	time = 0.5 SECONDS
+	category = CAT_WEAPON_AMMO
+	crafting_interface = CRAFTING_BENCH_RELOADING
 
 /datum/crafting_recipe/m4a1
 	name = "M4A1"
@@ -107,6 +146,18 @@
 				/obj/item/stack/tape = 2)
 	time = 10 SECONDS
 	category = CAT_WEAPON_RANGED
+	crafting_interface = CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/m4a1bullet
+	name = "5.56 Bullet"
+	result = /obj/item/ammo_casing/a556
+	reqs = list(/obj/item/stack/sheet/metal = 1,
+				/obj/item/stack/cable_coil = 1,
+				/datum/reagent/fuel = 5)
+	tool_behaviors = list(TOOL_SCREWDRIVER)
+	time = 0.5 SECONDS
+	category = CAT_WEAPON_AMMO
+	crafting_interface = CRAFTING_BENCH_RELOADING
 
 /datum/crafting_recipe/spas12
 	name = "SPAS12"
@@ -117,3 +168,15 @@
 				/obj/item/stack/tape = 1)
 	time = 10 SECONDS
 	category = CAT_WEAPON_RANGED
+	crafting_interface = CRAFTING_BENCH_WEAPONS
+
+/datum/crafting_recipe/buckshotshell
+	name = "Buckshot Shell"
+	result = /obj/item/ammo_casing/shotgun/buckshot 
+	reqs = list(/obj/item/stack/sheet/metal = 2,
+				/obj/item/stack/cable_coil = 1,
+				/datum/reagent/fuel = 5)
+	tool_behaviors = list(TOOL_SCREWDRIVER)
+	time = 0.5 SECONDS
+	category = CAT_WEAPON_AMMO
+	crafting_interface = CRAFTING_BENCH_RELOADING

@@ -88,3 +88,13 @@ GLOBAL_LIST_INIT(crafting_category_food, list(
 #define RCD_WINDOW_DIRECTIONAL "directional"
 #define RCD_WINDOW_NORMAL "glass"
 #define RCD_WINDOW_REINFORCED "reinforced glass"
+
+#define CRAFTING_BENCH_HANDS      1<<0
+#define CRAFTING_BENCH_GENERAL    1<<1
+#define CRAFTING_BENCH_ELECTRIC   1<<2
+#define CRAFTING_BENCH_ARMTAILOR  1<<3
+#define CRAFTING_BENCH_WEAPONS    1<<4
+#define CRAFTING_BENCH_RELOADING  1<<5
+#define CRAFTING_BENCH_SMELTER    1<<6
+#define CRAFTING_BENCH_CAMPFIRE   1<<7
+#define CRAFTING_BENCH_CHEM		  1<<8

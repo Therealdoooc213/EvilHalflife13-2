@@ -48,3 +48,12 @@
 	item_state = "armor"
 	blood_overlay_type = "armor"
 	armor = list(MELEE = 15, BULLET = 25, LASER = 10, ENERGY = 10, BOMB = 20, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 10)
+
+//crafted armor vest
+/obj/item/clothing/suit/armor/armored
+	name = "armored vest"
+	desc = "Multiple layers of cloth stitched with cables, and a metal insert placed inside. Not terrible against melee, but provides little protection against firearms."
+	icon_state = "bulletproof"
+	item_state = "armor"
+	blood_overlay_type = "armor"
+	armor = list(MELEE = 15, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, WOUND = 5)

@@ -36,7 +36,6 @@
 	uniform = /obj/item/clothing/under/citizen
 	suit = /obj/item/clothing/suit/radiation/engineer
 	mask = /obj/item/clothing/mask/gas/cwuengi
-	head = /obj/item/clothing/head/welding
 	gloves = /obj/item/clothing/gloves/color/yellow
 	r_pocket = /obj/item/hl2key/factory
 	skillchips = list(/obj/item/skillchip/engineer)

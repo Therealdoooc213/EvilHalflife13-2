@@ -61,6 +61,10 @@
 "H" = (
 /turf/open/floor/plating/indoor/metal/grate/border/warning,
 /area/halflife/indoors/sewer)
+"K" = (
+/obj/structure/table/halflife/no_smooth/large/crafting/workbench,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
 "O" = (
 /obj/structure/table/halflife/metal/heavy,
 /obj/structure/halflife/trash/glass/basic,
@@ -77,6 +81,18 @@
 /area/halflife/indoors/sewer)
 "S" = (
 /turf/closed/wall/halflife/metal,
+/area/halflife/indoors/sewer)
+"T" = (
+/obj/structure/table/halflife/no_smooth/large/crafting/weaponbench,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/sewer)
+"U" = (
+/obj/structure/table/halflife/no_smooth/large/crafting/ammobench,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"W" = (
+/obj/structure/table/halflife/no_smooth/large/crafting/armorbench,
+/turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/sewer)
 "Z" = (
 /obj/structure/halflife/trash/papers/three,
@@ -123,9 +139,9 @@ S
 S
 a
 Z
-c
+U
 H
-G
+W
 G
 G
 D
@@ -159,9 +175,9 @@ S
 S
 R
 c
-c
+K
 H
-G
+T
 G
 j
 G

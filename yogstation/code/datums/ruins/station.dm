@@ -322,6 +322,11 @@
 	suffix = "sewer_left_ten_poisoncrab.dmm"
 	name = "sewer left_ten_poisoncrab"
 
+/datum/map_template/ruin/station/sewer/leftentrance/tenxten/weaponcraft
+	id = "left_ten_weaponcraft"
+	suffix = "sewer_left_ten_weaponcraft.dmm"
+	name = "sewer left_ten_weaponcraft"
+
 ///The base for 10x10 right rooms
 /datum/map_template/ruin/station/sewer/rightentrance/tenxten
 	prefix = "_maps/RandomRuins/StationRuins/sewer/rightentrance/10x10/"
@@ -365,6 +370,11 @@
 	id = "right_ten_factory"
 	suffix = "sewer_right_ten_factory.dmm"
 	name = "sewer right_ten_factory"
+
+/datum/map_template/ruin/station/sewer/rightentrance/tenxten/armory
+	id = "right_ten_armory"
+	suffix = "sewer_right_ten_armory.dmm"
+	name = "sewer right_ten_armory"
 
 // CITY SPAWNS
 

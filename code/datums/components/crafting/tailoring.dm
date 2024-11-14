@@ -23,3 +23,14 @@
 				/obj/item/clothing/under/combine/civilprotection = 1)
 	time = 10 SECONDS
 	category = CAT_CLOTHING
+	crafting_interface = CRAFTING_BENCH_ARMTAILOR
+
+/datum/crafting_recipe/armored_vest
+	name = "Armored Vest"
+	result = /obj/item/clothing/suit/armor/armored
+	reqs = list(/obj/item/stack/sheet/cloth = 3,
+				/obj/item/stack/cable_coil = 2,
+				/obj/item/stack/sheet/metal = 2)
+	time = 10 SECONDS
+	category = CAT_ARMOR
+	crafting_interface = CRAFTING_BENCH_ARMTAILOR

@@ -27,6 +27,11 @@
 	var/always_available = TRUE
 	/// Should only one object exist on the same turf?
 	var/one_per_turf = FALSE
+	// Used to filter crafting recipes based on what you are crafting with
+	// i.e CRAFTING_BENCH_HANDS is the default crafting menu
+	// the general crafting bench only shows recipes with CRAFTING_BENCH_GENERAL, etc.
+	// treat this is a flag, so recipes can be shared between (i.e bandages on GENERAL and ARMTAILOR)
+	var/crafting_interface = CRAFTING_BENCH_HANDS
 
 /datum/crafting_recipe/New()
 	if(!(result in reqs))
@@ -262,6 +267,7 @@
 		        /obj/item/stack/cable_coil = 3)
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	category = CAT_MISC
+	crafting_interface = CRAFTING_BENCH_GENERAL
 
 /datum/crafting_recipe/multifunctiontool
 	name = "Multifunction Electrical Tool"
@@ -273,6 +279,7 @@
 		        /obj/item/stack/tape = 1)
 	tool_behaviors = list(TOOL_SCREWDRIVER)
 	category = CAT_MISC
+	crafting_interface = CRAFTING_BENCH_ELECTRIC
 
 /datum/crafting_recipe/medkit
 	name = "medkit"
@@ -281,6 +288,7 @@
 	result = /obj/item/reagent_containers/pill/patch/medkit
 	time = 3 SECONDS
 	category = CAT_MEDICAL
+	crafting_interface = CRAFTING_BENCH_GENERAL
 
 /datum/crafting_recipe/suture
 	name = "Suture"
@@ -359,6 +367,7 @@
 				/obj/item/stack/rods = 10)
 	tool_paths = list(/obj/item/weldingtool, /obj/item/wirecutters, /obj/item/screwdriver)
 	category = CAT_MEDICAL
+	crafting_interface = CRAFTING_BENCH_ELECTRIC
 
 /datum/crafting_recipe/rightprostheticarm
 	name = "Right Prosthetic Arm"
@@ -369,6 +378,7 @@
 				/obj/item/stack/rods = 10)
 	tool_paths = list(/obj/item/weldingtool, /obj/item/wirecutters, /obj/item/screwdriver)
 	category = CAT_MEDICAL
+	crafting_interface = CRAFTING_BENCH_ELECTRIC
 
 /datum/crafting_recipe/leftprostheticleg
 	name = "Left Prosthetic Leg"
@@ -379,6 +389,7 @@
 				/obj/item/stack/rods = 10)
 	tool_paths = list(/obj/item/weldingtool, /obj/item/wirecutters, /obj/item/screwdriver)
 	category = CAT_MEDICAL
+	crafting_interface = CRAFTING_BENCH_ELECTRIC
 
 /datum/crafting_recipe/rightprostheticleg
 	name = "Right Prosthetic Leg"
@@ -389,6 +400,7 @@
 				/obj/item/stack/rods = 10)
 	tool_paths = list(/obj/item/weldingtool, /obj/item/wirecutters, /obj/item/screwdriver)
 	category = CAT_MEDICAL
+	crafting_interface = CRAFTING_BENCH_ELECTRIC
 
 /datum/crafting_recipe/apprentice_bait
 	name = "Apprentice Bait"
@@ -438,6 +450,7 @@
 		/obj/item/stack/cable_coil = 5
 	)
 	category = CAT_MISC
+	crafting_interface = CRAFTING_BENCH_ELECTRIC
 
 /datum/crafting_recipe/cityscanner
 	name = "City Scanner"
@@ -449,6 +462,7 @@
 		/obj/item/stack/cable_coil = 5
 	)
 	category = CAT_MISC
+	crafting_interface = CRAFTING_BENCH_ELECTRIC
 
 /datum/crafting_recipe/gunstock
 	name = "Wooden Gun Stock"
