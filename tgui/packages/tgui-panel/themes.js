@@ -60,6 +60,8 @@ export const setClientTheme = name => {
       'github.text-color': '#000000',
       'report-issue.background-color': 'none',
       'report-issue.text-color': '#000000',
+      'fullscreen-toggle.background-color': 'none',
+      'fullscreen-toggle.text-color': '#000000',
       'demoview.background-color': 'none',
       'demoview.text-color': '#000000',
       'tickets.background-color': 'none',
@@ -88,6 +90,8 @@ export const setClientTheme = name => {
       'asset_cache_browser.text-color': '#000000',
       'tooltip.background-color': 'none',
       'tooltip.text-color': '#000000',
+      'input.background-color': '#FFFFFF',
+      'input.text-color': '#000000',
     });
   }
   if (name === 'dark') {
@@ -120,6 +124,8 @@ export const setClientTheme = name => {
       'tickets.text-color': COLOR_DARK_TEXT,
       'report-issue.background-color': '#492020',
       'report-issue.text-color': COLOR_DARK_TEXT,
+      'fullscreen-toggle.background-color': '#494949',
+      'fullscreen-toggle.text-color': COLOR_DARK_TEXT,
       // Status and verb tabs
       'output.background-color': COLOR_DARK_BG_DARKER,
       'output.text-color': COLOR_DARK_TEXT,
@@ -144,6 +150,8 @@ export const setClientTheme = name => {
       'asset_cache_browser.text-color': COLOR_DARK_TEXT,
       'tooltip.background-color': COLOR_DARK_BG,
       'tooltip.text-color': COLOR_DARK_TEXT,
+      'input.background-color': COLOR_DARK_BG_DARKER,
+      'input.text-color': COLOR_DARK_TEXT,
     });
   }
 };

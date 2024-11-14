@@ -119,6 +119,14 @@
 	///Messages currently seen by this client
 	var/list/seen_messages
 
+	//Hide top bars
+	var/fullscreen = FALSE
+	//Hide status bar (bottom left)
+	var/show_status_bar = TRUE
+
+	/// If this client has been fully initialized or not
+	var/fully_created = FALSE
+
 	///rate limiting for the crew manifest
 	var/crew_manifest_delay
 
@@ -205,3 +213,7 @@
 
 	var/last_droning_sound
 	var/sound/droning_sound
+
+/// Checks to see if a /client has fully gone through New() as a safeguard against certain operations.
+/// Should return the boolean value of the fully_created var, which should be TRUE if New() has finished running. FALSE otherwise.
+#define VALIDATE_CLIENT_INITIALIZATION(target) (target.fully_created)

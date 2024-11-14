@@ -367,11 +367,6 @@ GLOBAL_LIST_INIT(cable_colors, list(
 	CABLE_COLOR_BROWN = CABLE_HEX_COLOR_BROWN
 ))
 
-// Yog Colors
-
-#define COLOR_INPUT_DISABLED "#F0F0F0"
-#define COLOR_INPUT_ENABLED "#D3B5B5"
-
 /// Change color to red on ANSI terminal output, if enabled with -DANSICOLORS.
 #ifdef ANSICOLORS
 #define TEST_OUTPUT_RED(text) "\x1B\x5B1;31m[text]\x1B\x5B0m"

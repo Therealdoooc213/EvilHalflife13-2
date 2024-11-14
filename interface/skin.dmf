@@ -175,16 +175,6 @@ window "infowindow"
 		is-pane = true
 		outer-size = 656x538
 		inner-size = 640x499
-	elem "demoview"
-		type = BUTTON
-		pos = 480,5
-		size = 80x20
-		anchor1 = 75,0
-		anchor2 = 88,0
-		background-color = none
-		saved-params = "is-checked"
-		text = "View Replay"
-		command = "demoview"
 	elem "info"
 		type = CHILD
 		pos = 0,30
@@ -256,6 +246,15 @@ window "infowindow"
 		saved-params = "is-checked"
 		text = "Report Issue"
 		command = "report-issue"
+	elem "fullscreen-toggle"
+		type = BUTTON
+		pos = 480,5
+		size = 80x20
+		anchor1 = 75,0
+		anchor2 = 88,0
+		saved-params = "is-checked"
+		text = "Fullscreen"
+		command = "fullscreen"
 	elem "tickets"
 		type = BUTTON
 		pos = 560,5
@@ -295,6 +294,7 @@ window "outputwindow"
 		anchor1 = 0,0
 		anchor2 = 100,100
 		is-default = true
+		border = line
 		saved-params = ""
 
 window "popupwindow"

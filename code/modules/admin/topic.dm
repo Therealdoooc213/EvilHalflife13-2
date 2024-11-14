@@ -651,10 +651,6 @@
 			var/message_id = href_list["deletemessageempty"]
 			delete_message(message_id, browse = TRUE)
 
-	else if(href_list["viewdemo"])
-		var/roundnumber = href_list["viewdemo"]
-		usr.client.demoview(roundnumber)
-
 	else if(href_list["editmessage"])
 		if(!check_rights(R_ADMIN))
 			return
