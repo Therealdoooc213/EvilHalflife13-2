@@ -708,6 +708,9 @@
 	layer = ABOVE_MOB_LAYER
 	max_integrity = 500
 	projectile_passchance = 30
+	light_range = 3
+	light_power = 1
+	light_color = "#658cac"
 
 /obj/structure/halflife/breencast/Destroy()
 	. = ..()

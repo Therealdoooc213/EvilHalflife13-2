@@ -91,12 +91,13 @@
 /turf/open/floor/plating/indoor/tiled10
 	icon_state = "tiled10"
 
+/turf/open/floor/plating/indoor/trainfloor
+	icon_state = "train"
+
 
 /turf/open/floor/plating/indoor/concrete
 	icon_state = "concrete_big"
 	desc = "Concrete slabs."
-	has_alternate_states = TRUE
-	alternate_states = 1
 	footstep = FOOTSTEP_CONCRETE
 
 /turf/open/floor/plating/indoor/concrete/small
@@ -122,8 +123,6 @@
 	alternate_states = 3
 	has_alternate_states = TRUE 
 	has_base_states = TRUE
-
-
 
 /turf/open/floor/plating/indoor/tile
 	icon_state = "grey"

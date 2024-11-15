@@ -69,7 +69,7 @@
 
 	ears = /obj/item/radio/headset/heads/captain/alt
 	uniform =  /obj/item/clothing/under/administrator
-	shoes = /obj/item/clothing/shoes/sneakers/brown
+	shoes = /obj/item/clothing/shoes/laceup
 	r_pocket = /obj/item/hl2key/master
 
 	belt = /obj/item/melee/classic_baton/telescopic

@@ -170,19 +170,20 @@
 
 /obj/item/clothing/under/administrator
 	name = "administrator suit"
-	desc = "A well made blue suit, specially designed for the district administrator."
-	worn_icon = 'icons/mob/clothing/uniform/civilian.dmi'
+	desc = "A well made, though aged, burgundy suit. Specially designed for the district administrator."
+	worn_icon = 'icons/mob/clothing/uniform/halflife.dmi'
 	can_adjust = FALSE
 	has_sensor = LOCKED_SENSORS
 	sensor_mode = SENSOR_COORDS
 	random_sensor = FALSE
-	icon_state = "lawyer_blue"
-	item_state = "lawyer_blue"
+	icon_state = "heeledsuit"
+	item_state = "red_stripe"
 
 /obj/item/clothing/under/administrator/black
 	name = "administrator suit"
+	worn_icon = 'icons/mob/clothing/uniform/halflife.dmi'
 	desc = "A well made black suit, specially designed for the district administrator."
-	icon_state = "lawyer_black"
+	icon_state = "formal"
 	item_state = "lawyer_black"
 
 #undef STIMULANT_INJECTION_DELAY

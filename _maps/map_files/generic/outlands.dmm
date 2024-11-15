@@ -17,10 +17,6 @@
 	},
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
-"aI" = (
-/obj/structure/table/halflife/no_smooth/large/crafting/ammobench,
-/turf/open/floor/plating/indoor/concrete/small,
-/area/halflife/indoors/bunker)
 "aM" = (
 /turf/open/floor/plating/indoor/grooved2,
 /area/halflife/indoors/bunker)
@@ -40,6 +36,12 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/sewage_dump)
+"bY" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/bunker)
 "cq" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -103,12 +105,6 @@
 /obj/effect/spawner/lootdrop/halflife/loot/ammo,
 /turf/open/floor/plating/indoor/metal,
 /area/halflife/outdoors/forest)
-"id" = (
-/obj/structure/chair/office/halflife/blue{
-	dir = 4
-	},
-/turf/open/floor/plating/indoor/concrete/small,
-/area/halflife/indoors/bunker)
 "im" = (
 /obj/machinery/door/unpowered/halflife/metal/red{
 	dir = 4
@@ -269,6 +265,10 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
+"sL" = (
+/obj/structure/table/halflife/no_smooth/large/crafting/ammobench,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/bunker)
 "sM" = (
 /obj/structure/table/halflife/metal/grate,
 /obj/item/hl2key/rebel,
@@ -284,21 +284,19 @@
 "tk" = (
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/sewage_dump)
+"ts" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/table/halflife/metal/alt,
+/obj/structure/halflife/trash/glass/basic,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/bunker)
 "tF" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
-/area/halflife/indoors/bunker)
-"tN" = (
-/obj/structure/table/halflife/no_smooth/large/crafting/weaponbench,
-/turf/open/floor/plating/indoor/concrete/small,
-/area/halflife/indoors/bunker)
-"uZ" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
 "vs" = (
 /turf/closed/wall/halflife/brick,
@@ -318,10 +316,6 @@
 	lockid = "rebel"
 	},
 /turf/open/floor/plating/indoor/grooved2,
-/area/halflife/indoors/bunker)
-"wC" = (
-/obj/structure/table/halflife/no_smooth/large/crafting/armorbench,
-/turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
 "wD" = (
 /obj/machinery/light/small{
@@ -358,6 +352,12 @@
 "zT" = (
 /turf/open/floor/plating/indoor/metal/grate/border,
 /area/halflife/indoors/sewer/tunnel)
+"Bk" = (
+/obj/structure/railing/halflife/sewer{
+	dir = 8
+	},
+/turf/open/floor/plating/ground/sidewalk,
+/area/halflife/outdoors/sewage_dump)
 "BL" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/plating/ground/dirt/alt,
@@ -489,12 +489,6 @@
 "It" = (
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
-"Iz" = (
-/obj/structure/railing/halflife/sewer{
-	dir = 4
-	},
-/turf/open/floor/plating/ground/sidewalk,
-/area/halflife/outdoors/sewage_dump)
 "IW" = (
 /turf/closed/indestructible/syndicate,
 /area/halflife/outdoors)
@@ -507,6 +501,12 @@
 /obj/structure/flora/ausbushes/pointybush,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
+"JC" = (
+/obj/structure/railing/halflife/sewer{
+	dir = 4
+	},
+/turf/open/floor/plating/ground/sidewalk,
+/area/halflife/outdoors/sewage_dump)
 "JE" = (
 /obj/structure/flora/tree/jungle/small,
 /turf/open/floor/plating/ground/dirt/alt,
@@ -569,6 +569,16 @@
 /obj/effect/spawner/lootdrop/halflife/loot/consumables,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
+"NE" = (
+/obj/structure/chair/office/halflife/blue{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/bunker)
+"NH" = (
+/obj/structure/table/halflife/no_smooth/large/crafting/weaponbench,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/bunker)
 "NU" = (
 /obj/structure/frame/machine,
 /turf/open/floor/plating/indoor/concrete/small,
@@ -635,6 +645,10 @@
 /obj/structure/flora/tree/jungle,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
+"Tc" = (
+/obj/structure/table/halflife/no_smooth/large/crafting/armorbench,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/bunker)
 "Tf" = (
 /obj/structure/table/halflife/metal/grate,
 /obj/item/reagent_containers/pill/patch/medkit,
@@ -713,12 +727,6 @@
 /obj/effect/spawner/lootdrop/halflife/loot/alcohol,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/forest)
-"Wd" = (
-/obj/structure/railing/halflife/sewer{
-	dir = 8
-	},
-/turf/open/floor/plating/ground/sidewalk,
-/area/halflife/outdoors/sewage_dump)
 "Wx" = (
 /obj/structure/flora/tree/jungle/small,
 /turf/open/floor/plating/ground/dirt,
@@ -776,14 +784,6 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer/tunnel)
-"Zm" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/structure/table/halflife/metal/alt,
-/obj/structure/halflife/trash/glass/basic,
-/turf/open/floor/plating/indoor/concrete/small,
-/area/halflife/indoors/bunker)
 "ZQ" = (
 /obj/structure/table/halflife/metal/grate,
 /obj/item/hl2key/rebel,
@@ -5334,12 +5334,12 @@ OO
 OO
 aa
 iB
-Wd
-Wd
-Wd
+Bk
+Bk
+Bk
 iB
-Wd
-Wd
+Bk
+Bk
 Lg
 Lg
 Lg
@@ -5743,8 +5743,8 @@ OO
 iB
 iB
 iB
-Iz
-Iz
+JC
+JC
 Lg
 Lg
 Lg
@@ -10045,10 +10045,10 @@ MZ
 MZ
 zB
 MT
-tN
+NH
 OV
 OV
-uZ
+bY
 OV
 xQ
 ex
@@ -10151,7 +10151,7 @@ OV
 OV
 OV
 OV
-wC
+Tc
 MT
 ex
 ex
@@ -10249,7 +10249,7 @@ MZ
 MZ
 zB
 MT
-aI
+sL
 OV
 OV
 OV
@@ -10352,7 +10352,7 @@ MZ
 zB
 MT
 OV
-id
+NE
 OV
 hC
 NU
@@ -10454,7 +10454,7 @@ MZ
 zB
 MT
 nL
-Zm
+ts
 lb
 OV
 MT
