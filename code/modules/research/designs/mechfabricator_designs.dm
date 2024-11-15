@@ -97,3 +97,9 @@
 	id = "painsuppress_skillchip"
 	build_type = MECHFAB
 	build_path = /obj/item/skillchip/painsuppress
+
+/datum/design/skillchip/antifatigue
+	name = "Anti-Fatigue Skillchip"
+	id = "antifatigue_skillchip"
+	build_type = MECHFAB
+	build_path = /obj/item/skillchip/antifatigue

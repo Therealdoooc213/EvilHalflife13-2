@@ -188,6 +188,11 @@
 	desc = "You're severely dehydrated. Your body is sluggish and hard to move."
 	icon_state = "dehydrated"
 
+/atom/movable/screen/alert/sleepy
+	name = "Sleepy"
+	desc = "It has been a while since you last slept. Perhaps you could shut your eyes for a while..."
+	icon_state = "sleepy"
+
 /atom/movable/screen/alert/gross
 	name = "Grossed out."
 	desc = "That was kind of gross..."

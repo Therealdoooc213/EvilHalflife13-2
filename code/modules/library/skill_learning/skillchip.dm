@@ -416,9 +416,18 @@
 	activate_message = span_notice("You feel your sense of pain numb.")
 	deactivate_message = span_notice("Your sense of pain returns to normal.")
 
+/obj/item/skillchip/antifatigue
+	name = "Anti-Fatigue skillchip"
+	auto_traits = list(TRAIT_NOSLEEP)
+	skill_name = "Fatigue Suppressant"
+	skill_description = "This chip will allow parts of your brain to cycle into rest modes while you're still awake, and use internal processors to keep mental capacity at standard levels while doing so, combating the need to sleep."
+	skill_icon = "moon"
+	activate_message = span_notice("You feel more energetic.")
+	deactivate_message = span_notice("You feel a bit more sleepy.")
+
 /obj/item/skillchip/overwatch
 	name = "Overwatch skillchip package"
-	auto_traits = list(TRAIT_RESISTDAMAGESLOWDOWN, TRAIT_ATHLETIC, TRAIT_GOOD_AIM, TRAIT_LESSPAIN)
+	auto_traits = list(TRAIT_RESISTDAMAGESLOWDOWN, TRAIT_ATHLETIC, TRAIT_GOOD_AIM, TRAIT_LESSPAIN, TRAIT_NOSLEEP)
 	skill_name = "OTA augmentation package"
 	skill_description = "This chip will better your aim, suppress pain, and increase physical fitness all in one."
 	skill_icon = "skull"

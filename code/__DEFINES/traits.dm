@@ -310,3 +310,5 @@
 #define TRAIT_NOPAIN "nopain"
 #define TRAIT_LESSPAIN "lesspain"
 #define TRAIT_MASOCHIST "masochist"
+
+#define TRAIT_NOSLEEP "nosleep"

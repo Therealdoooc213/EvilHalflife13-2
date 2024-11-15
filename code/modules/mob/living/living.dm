@@ -453,7 +453,12 @@
 		return
 	else
 		if(tgui_alert(usr, "You sure you want to sleep for a while?", "Sleep", list("Yes", "No")) == "Yes")
-			SetSleeping(400) //Short nap
+			to_chat(src, span_notice("You start to shut your eyes..."))
+			if(do_after(src, 5 SECONDS, src))
+				to_chat(src, span_notice("... and drift into a short nap."))
+				SetSleeping(400) //Short nap
+			else
+				to_chat(src, span_notice("... but are disturbed from fully falling asleep."))
 	update_mobility()
 
 /mob/proc/get_contents()

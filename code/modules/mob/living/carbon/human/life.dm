@@ -20,6 +20,8 @@
 
 #define ADRENALINE_THRESHOLD 25
 
+#define TIREDNESS_SLEEPY_THRESHOLD 750 //sleepy about every 25 minutes
+
 /mob/living/carbon/human
 	var/lasthealth
 	COOLDOWN_DECLARE(adrenaline_cooldown)
@@ -42,6 +44,14 @@
 		if(stat != DEAD)
 			//heart attack stuff
 			handle_heart()
+			if(IsSleeping())
+				if(buckled) //sleeping on a bed or something is far nicer than on the hard floor, and will FULLY rest you.
+					adjust_tiredness(-40)
+				else
+					adjust_tiredness(-10)
+			else
+				if(!HAS_TRAIT(src, TRAIT_NOSLEEP))
+					adjust_tiredness(1)
 
 		if(COOLDOWN_FINISHED(src, adrenaline_cooldown) && ((health+ADRENALINE_THRESHOLD) < lasthealth))
 			apply_status_effect(STATUS_EFFECT_ADRENALINE)
@@ -72,6 +82,21 @@
 				heal_bodypart_damage(0.2, 0, 0, TRUE, BODYPART_ORGANIC)
 		return 1
 
+/mob/living/carbon/human/proc/adjust_tiredness(amount)
+	tiredness += amount
+	if(tiredness > TIREDNESS_SLEEPY_THRESHOLD)
+		tiredness = TIREDNESS_SLEEPY_THRESHOLD
+		throw_alert("sleepy", /atom/movable/screen/alert/sleepy)
+		var/datum/component/mood/mood = src.GetComponent(/datum/component/mood)
+		if(mood)
+			mood.add_event(null, "sleepy", /datum/mood_event/sleepy)
+	if(tiredness < (TIREDNESS_SLEEPY_THRESHOLD/2))
+		clear_alert("sleepy")
+		var/datum/component/mood/mood = src.GetComponent(/datum/component/mood)
+		if(mood)
+			mood.clear_event(null, "sleepy")
+	if(tiredness < 0)
+		tiredness = 0
 
 /mob/living/carbon/human/calculate_affecting_pressure(pressure)
 	var/obj/item/clothing/CS = wear_suit

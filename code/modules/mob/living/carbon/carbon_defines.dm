@@ -92,3 +92,6 @@
 	COOLDOWN_DECLARE(bleeding_message_cd)
 
 	var/list/image/infra_images
+
+	//how tired they are, for sleepytime
+	var/tiredness = 0

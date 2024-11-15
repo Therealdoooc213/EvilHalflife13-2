@@ -27,6 +27,11 @@
 	description = "<span class='boldwarning'>I'm dehydrated!</span>\n"
 	mood_change = -12
 
+//sleepy
+/datum/mood_event/sleepy
+	description = "<span class='boldwarning'>I'm very tired...</span>\n"
+	mood_change = -10
+
 //charge
 /datum/mood_event/charged
 	description = "<span class='nicegreen'>I feel the power in my veins!</span>\n"

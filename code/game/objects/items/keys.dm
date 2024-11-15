@@ -81,6 +81,26 @@
 	desc = "This key seems to open some kind of bunker."
 	lockid = "rebel"
 
+/obj/item/hl2key/labor
+	name = "labor union key"
+	desc = "This key will open doors in the labor union."
+	lockid = "laborunion"
+
+/obj/item/hl2key/hospital
+	name = "hospital key"
+	desc = "This key will open doors in the hospital."
+	lockid = "hospital"
+
+/obj/item/hl2key/lab
+	name = "laboratory key"
+	desc = "This key will open doors in the science lab."
+	lockid = "lab"
+
+/obj/item/hl2key/train
+	name = "trainstation key"
+	desc = "This key will open doors in the train station."
+	lockid = "trainstation"
+
 //custom key
 /obj/item/hl2key/custom
 	name = "custom key"

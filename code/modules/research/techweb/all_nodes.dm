@@ -53,7 +53,7 @@
 	id = "skillchip_basic"
 	display_name = "Skillchip Theory"
 	description = "Construct advanced memory modules which insert at the base of the brain stem using a dedicated machine, and teach the user important skills."
-	design_ids = list("fitness_skillchip")
+	design_ids = list("fitness_skillchip", "antifatigue_skillchip")
 	prereq_ids = list("base")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
