@@ -20,8 +20,6 @@
 
 #define ADRENALINE_THRESHOLD 25
 
-#define TIREDNESS_SLEEPY_THRESHOLD 750 //sleepy about every 25 minutes
-
 /mob/living/carbon/human
 	var/lasthealth
 	COOLDOWN_DECLARE(adrenaline_cooldown)
@@ -46,9 +44,9 @@
 			handle_heart()
 			if(IsSleeping())
 				if(buckled) //sleeping on a bed or something is far nicer than on the hard floor, and will FULLY rest you.
-					adjust_tiredness(-40)
+					adjust_tiredness(-40) //sleep is 40 seconds, so 20 life ticks, so -800 tiredness, so full restore
 				else
-					adjust_tiredness(-10)
+					adjust_tiredness(-10) //-200 tiredness on a standard 40 second sleep.
 			else
 				if(!HAS_TRAIT(src, TRAIT_NOSLEEP))
 					adjust_tiredness(1)
@@ -84,18 +82,23 @@
 
 /mob/living/carbon/human/proc/adjust_tiredness(amount)
 	tiredness += amount
-	if(tiredness > TIREDNESS_SLEEPY_THRESHOLD)
-		tiredness = TIREDNESS_SLEEPY_THRESHOLD
+	if(tiredness > TIREDNESS_MAXIMUM_THRESHOLD)
+		tiredness = TIREDNESS_MAXIMUM_THRESHOLD
+	else if(tiredness > TIREDNESS_SLEEPY_THRESHOLD)
 		throw_alert("sleepy", /atom/movable/screen/alert/sleepy)
 		var/datum/component/mood/mood = src.GetComponent(/datum/component/mood)
 		if(mood)
 			mood.add_event(null, "sleepy", /datum/mood_event/sleepy)
-	if(tiredness < (TIREDNESS_SLEEPY_THRESHOLD/2))
+	else if(tiredness > TIREDNESS_TIRED_THRESHOLD)
+		var/datum/component/mood/mood = src.GetComponent(/datum/component/mood)
+		if(mood)
+			mood.add_event(null, "sleepy", /datum/mood_event/sleepy/small)
+	else if(tiredness < TIREDNESS_CLEAR_THRESHOLD)
 		clear_alert("sleepy")
 		var/datum/component/mood/mood = src.GetComponent(/datum/component/mood)
 		if(mood)
 			mood.clear_event(null, "sleepy")
-	if(tiredness < 0)
+	else if(tiredness < 0)
 		tiredness = 0
 
 /mob/living/carbon/human/calculate_affecting_pressure(pressure)

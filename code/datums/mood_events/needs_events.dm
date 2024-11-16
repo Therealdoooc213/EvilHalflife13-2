@@ -30,7 +30,11 @@
 //sleepy
 /datum/mood_event/sleepy
 	description = "<span class='boldwarning'>I'm very tired...</span>\n"
-	mood_change = -10
+	mood_change = -8
+
+/datum/mood_event/sleepy/small
+	description = "<span class='warning'>I'm a bit tired</span>\n"
+	mood_change = -4
 
 //charge
 /datum/mood_event/charged

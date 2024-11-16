@@ -190,7 +190,7 @@
 
 /atom/movable/screen/alert/sleepy
 	name = "Sleepy"
-	desc = "It has been a while since you last slept. Perhaps you could shut your eyes for a while..."
+	desc = "You're very tired. Find somewhere comfortable to lay, and fall asleep. (You can use the Sleep Verb in the IC tab at the top right of your screen)"
 	icon_state = "sleepy"
 
 /atom/movable/screen/alert/gross

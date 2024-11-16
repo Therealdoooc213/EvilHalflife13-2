@@ -1307,6 +1307,9 @@ GLOBAL_LIST_EMPTY(features_by_species)
 			var/grav_force = min(gravity - STANDARD_GRAVITY,3)
 			. += 1 + grav_force
 
+		if(H.tiredness >= TIREDNESS_MAXIMUM_THRESHOLD) //you move slower while exhausted
+			. += 0.5
+
 		if(HAS_TRAIT(H, TRAIT_FAT))
 			. += (1.5 - flight)
 		if(H.bodytemperature < BODYTEMP_COLD_DAMAGE_LIMIT && !HAS_TRAIT(H, TRAIT_RESISTCOLD))
