@@ -227,6 +227,7 @@ Slimecrossing Items
 	tastes = list("gross water" = 3, "sadness" = 3)
 	foodtype = null //Don't ask what went into them. You're better off not knowing.
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
+	var/mood_penalty = /datum/mood_event/gross_food
 
 /obj/item/reagent_containers/food/snacks/rationpack/checkLiked(fraction, mob/M)	//Nobody likes rationpacks. Nobody.
 	if(last_check_time + 50 < world.time)
@@ -236,21 +237,23 @@ Slimecrossing Items
 				to_chat(H,span_notice("That didn't taste very good...")) //No disgust, though. It's just not good tasting.
 				var/datum/component/mood/mood = H.GetComponent(/datum/component/mood)
 				if(mood)
-					mood.add_event(null,"gross_food", /datum/mood_event/gross_food)
+					mood.add_event(null,"gross_food", mood_penalty)
 				last_check_time = world.time
 				return
 	..()
 
 /obj/item/reagent_containers/food/snacks/rationpack/loyalty
 	name = "loyalty-grade nutriment bar"
-	desc = "A 'water' flavored ration nutriment bar. Tastes gross, but at least you won't be hungry. This one is more healthy and filling."
+	desc = "A 'water' flavored ration nutriment bar. It has 'artificial flavor enhancers' and additionals nutriments packed inside."
 	icon_state = "loyaltyrationpack"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 3)
+	mood_penalty = /datum/mood_event/displeasing_food
 
 /obj/item/reagent_containers/food/snacks/rationpack/lowgrade
 	name = "low-grade nutriment bar"
-	desc = "A 'water' flavored ration nutriment bar. Tastes gross, but at least you won't be hungry. This one is less filling than most."
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	desc = "A 'water' flavored ration nutriment bar. Tastes gross, but at least you won't be hungry. This one is less filling than most, and even worse tasting."
+	list_reagents = list(/datum/reagent/consumable/nutriment = 4)
+	mood_penalty = /datum/mood_event/disgusting_food
 
 /obj/item/reagent_containers/food/snacks/rationpack/manufactured
 	name = "manufactured nutriment bar"

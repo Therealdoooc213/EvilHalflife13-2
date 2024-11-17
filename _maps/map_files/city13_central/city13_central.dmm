@@ -766,6 +766,12 @@
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/metal/grate,
 /area/halflife/indoors/sewer)
+"dB" = (
+/obj/structure/railing/halflife/full{
+	dir = 6
+	},
+/turf/open/floor/plating/indoor/tiled10,
+/area/halflife/indoors/distributioncenter)
 "dD" = (
 /obj/structure/table/halflife/metal,
 /obj/structure/reagent_dispensers/peppertank{
@@ -2573,6 +2579,12 @@
 /obj/effect/spawner/lootdrop/halflife/loot/rare,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/outdoors)
+"mo" = (
+/obj/structure/closet/crate,
+/obj/item/storage/box/halflife/ration,
+/obj/item/storage/box/halflife/badration,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/distributioncenter)
 "mr" = (
 /obj/machinery/door/unpowered/halflife/wood{
 	dir = 4;
@@ -2980,6 +2992,13 @@
 	},
 /turf/open/floor/plating/ground/sidewalk,
 /area/halflife/outdoors)
+"ol" = (
+/obj/structure/railing/halflife/full,
+/obj/structure/railing/halflife/full{
+	dir = 10
+	},
+/turf/open/floor/plating/indoor/tiled10,
+/area/halflife/indoors/distributioncenter)
 "on" = (
 /obj/machinery/door/unpowered/halflife/metal{
 	dir = 4;
@@ -3012,6 +3031,12 @@
 	},
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors)
+"oy" = (
+/obj/structure/railing/halflife/end{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/tiled10,
+/area/halflife/indoors/distributioncenter)
 "oz" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -3222,6 +3247,12 @@
 /obj/structure/window/fulltile,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors)
+"pK" = (
+/obj/effect/turf_decal/arrows{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/trainfloor,
+/area/halflife/indoors/trainstation)
 "pM" = (
 /obj/structure/sign/warning/biohazard{
 	pixel_y = 32
@@ -3287,12 +3318,6 @@
 	pixel_y = 26
 	},
 /turf/open/floor/plating/indoor/trainfloor,
-/area/halflife/indoors/trainstation)
-"qc" = (
-/obj/machinery/inspector_booth{
-	dir = 1
-	},
-/turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/trainstation)
 "qd" = (
 /obj/structure/closet/secure_closet/freezer,
@@ -3903,12 +3928,6 @@
 /obj/item/lockpick/combine,
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/townhall)
-"tc" = (
-/obj/structure/railing{
-	dir = 6
-	},
-/turf/open/floor/plating/indoor/tiled10,
-/area/halflife/indoors/distributioncenter)
 "td" = (
 /obj/machinery/door/window/brigdoor{
 	dir = 4;
@@ -5404,6 +5423,10 @@
 	},
 /turf/closed/wall/halflife/brick,
 /area/halflife/outdoors)
+"Af" = (
+/obj/effect/turf_decal/arrows,
+/turf/open/floor/plating/indoor/trainfloor,
+/area/halflife/indoors/trainstation)
 "Ah" = (
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/alley)
@@ -5749,6 +5772,12 @@
 /obj/structure/halflife/trash/glass/basic,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/sewer)
+"BK" = (
+/obj/machinery/inspector_booth{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/trainfloor,
+/area/halflife/indoors/trainstation)
 "BL" = (
 /obj/machinery/shower{
 	dir = 8;
@@ -5862,6 +5891,11 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors)
+"Cl" = (
+/obj/machinery/door/airlock/highsecurity/combine,
+/obj/effect/mapping_helpers/airlock/access/all/security/armory,
+/turf/open/floor/plating/indoor/checkered,
+/area/halflife/indoors/townhall)
 "Cm" = (
 /obj/effect/turf_decal/trimline/engiyellow/warning/lower{
 	dir = 9
@@ -6779,6 +6813,10 @@
 "GK" = (
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/hospital)
+"GP" = (
+/obj/structure/railing/halflife/full,
+/turf/open/floor/plating/indoor/tiled10,
+/area/halflife/indoors/distributioncenter)
 "GQ" = (
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/metal/pipe{
@@ -7061,6 +7099,11 @@
 /obj/effect/landmark/start/foreman,
 /turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors/productioncenter)
+"Ie" = (
+/obj/effect/turf_decal/trimline/dark_red/warning/lower,
+/obj/machinery/porta_turret/combine,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors/townhall)
 "Ig" = (
 /obj/structure/table/halflife/no_smooth/cable_reel,
 /obj/effect/spawner/lootdrop/halflife/loot,
@@ -7145,6 +7188,16 @@
 	},
 /turf/open/floor/plating,
 /area/halflife/indoors)
+"Iz" = (
+/obj/machinery/camera{
+	c_tag = "Ration Distribution Center";
+	dir = 6
+	},
+/obj/structure/railing/halflife/full{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/tiled10,
+/area/halflife/indoors/distributioncenter)
 "IA" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 8
@@ -8028,10 +8081,6 @@
 "ME" = (
 /turf/open/floor/plating/indoor/checkered,
 /area/halflife/indoors/townhall)
-"MF" = (
-/obj/machinery/turnstile/brig/halflife/forcefield/armory/nodirectional,
-/turf/open/floor/plating/indoor/checkered,
-/area/halflife/indoors/townhall)
 "MG" = (
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -8050,16 +8099,6 @@
 /obj/structure/chair/halflife/wood/padded,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors)
-"MM" = (
-/obj/machinery/camera{
-	c_tag = "Ration Distribution Center";
-	dir = 6
-	},
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/open/floor/plating/indoor/tiled10,
-/area/halflife/indoors/distributioncenter)
 "MO" = (
 /turf/open/floor/plating/indoor/carpet/shaggy/violet,
 /area/halflife/indoors/bar)
@@ -8716,10 +8755,6 @@
 /obj/structure/halflife/trash/glass/basic,
 /turf/open/floor/plating/ground/sidewalk/inner,
 /area/halflife/outdoors/alley)
-"PY" = (
-/obj/structure/railing,
-/turf/open/floor/plating/indoor/tiled10,
-/area/halflife/indoors/distributioncenter)
 "Qa" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -8876,11 +8911,6 @@
 	},
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors)
-"QO" = (
-/obj/structure/closet/crate,
-/obj/item/storage/box/halflife/ration,
-/turf/open/floor/plating/indoor/metal/plate,
-/area/halflife/indoors/distributioncenter)
 "QP" = (
 /obj/effect/spawner/lootdrop/halflife/loot/rare,
 /turf/open/floor/plating/ground/dirt,
@@ -9336,13 +9366,6 @@
 /obj/structure/halflife/road_barrier/concrete/alt,
 /turf/open/floor/plating/ground/sidewalk/inner,
 /area/halflife/outdoors/alley)
-"Tg" = (
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/structure/railing,
-/turf/open/floor/plating/indoor/tiled10,
-/area/halflife/indoors/distributioncenter)
 "Ti" = (
 /turf/open/floor/plating/indoor/carpet/green,
 /area/halflife/indoors)
@@ -9813,6 +9836,12 @@
 /obj/structure/table/halflife/metal/alt,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/sewer)
+"Vs" = (
+/obj/effect/turf_decal/arrows{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/trainfloor,
+/area/halflife/indoors/trainstation)
 "Vu" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/plating/indoor/woodc,
@@ -10227,6 +10256,12 @@
 "Xx" = (
 /turf/closed/indestructible/syndicate,
 /area/space)
+"Xy" = (
+/obj/structure/railing/halflife/end{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/tiled10,
+/area/halflife/indoors/distributioncenter)
 "XA" = (
 /obj/machinery/vending/boozeomat,
 /turf/open/floor/plating/indoor/woodc/mosaic,
@@ -10616,11 +10651,6 @@
 	dir = 4
 	},
 /area/halflife/outdoors)
-"Zu" = (
-/obj/machinery/porta_turret/combine/off,
-/obj/effect/turf_decal/trimline/dark_red/warning/lower,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors/townhall)
 "Zv" = (
 /obj/structure/halflife/trash/garbage,
 /turf/open/floor/plating/ground/sidewalk/inner,
@@ -32453,7 +32483,7 @@ eC
 sS
 KW
 HF
-QO
+mo
 Ix
 sS
 fT
@@ -33177,9 +33207,9 @@ sS
 eC
 eC
 sS
-tc
+dB
 Yb
-PY
+Xy
 Yb
 GB
 fT
@@ -33299,8 +33329,8 @@ yo
 eC
 iJ
 Yb
-PY
-PY
+Xy
+GP
 af
 GB
 fT
@@ -33419,9 +33449,9 @@ sS
 eC
 rg
 sS
-MM
-Tg
-PY
+Iz
+ol
+GP
 Yb
 GB
 fT
@@ -33541,8 +33571,8 @@ eC
 eC
 sS
 Ya
-PY
-PY
+GP
+GP
 zA
 sS
 fT
@@ -33662,8 +33692,8 @@ eC
 eC
 sS
 Fs
-PY
-PY
+GP
+GP
 Yb
 sS
 fT
@@ -33783,8 +33813,8 @@ yo
 WC
 sS
 Dz
-PY
-PY
+oy
+oy
 Qx
 sS
 fT
@@ -38065,10 +38095,10 @@ Oe
 Nd
 Nd
 Nd
-Nd
+Vs
 HW
 Nd
-Nd
+Vs
 eI
 cS
 Nd
@@ -38431,8 +38461,8 @@ Nd
 mG
 mG
 Oe
-Nd
-qc
+pK
+BK
 mS
 Nd
 cv
@@ -38729,9 +38759,9 @@ Sp
 rl
 ME
 ME
-MF
+Cl
 nx
-Zu
+Ie
 cQ
 De
 Mm
@@ -38794,7 +38824,7 @@ Nd
 Nd
 Nd
 HW
-Nd
+pK
 eI
 qa
 Nd
@@ -38912,7 +38942,7 @@ Oh
 Nd
 cS
 pX
-Nd
+Af
 Nd
 Nd
 Nd

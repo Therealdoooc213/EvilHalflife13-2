@@ -468,6 +468,17 @@
 					/obj/item/storage/box/halflife/loyaltyration)
 	crate_name = "loyalty-grade ration crate"
 
+/datum/supply_pack/organic/badrations
+	name = "Ration Crate"
+	desc = "A crate of five low-grade ration packs, made for easy distribution." 
+	cost = 75
+	contains = list(/obj/item/storage/box/halflife/badration,
+					/obj/item/storage/box/halflife/badration,
+					/obj/item/storage/box/halflife/badration,
+					/obj/item/storage/box/halflife/badration,
+					/obj/item/storage/box/halflife/badration)
+	crate_name = "low-grade ration crate"
+
 /datum/supply_pack/organic/alcohol
 	name = "Approved Ethanol Crate"
 	desc = "A crate of five Combine Approved Ethanol Beverages, rated for citizen use." 

@@ -116,6 +116,16 @@
 	material_type = /obj/item/stack/sheet/plasteel
 	material_amt = 4
 
+/obj/structure/door_assembly/door_assembly_highsecurity/combine
+	name = "heavy combine door assembly"
+	icon = 'icons/obj/doors/airlocks/highsec/combine.dmi'
+	base_name = "heavy combine door"
+	overlays_file = 'icons/obj/doors/airlocks/highsec/overlays.dmi'
+	airlock_type = /obj/machinery/door/airlock/highsecurity/combine
+	noglass = TRUE
+	material_type = /obj/item/stack/sheet/plasteel
+	material_amt = 4
+
 /obj/structure/door_assembly/door_assembly_vault
 	name = "vault door assembly"
 	icon = 'icons/obj/doors/airlocks/vault/vault.dmi'

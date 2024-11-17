@@ -97,7 +97,7 @@
 	var/orbit_icon
 
 	/// Some jobs have unique combat mode music, because why not?
-	var/cmode_music
+	var/cmode_music = 'sound/music/combat/abandonedinplace.ogg'
 
 	var/datum/species/forced_species
 		/**

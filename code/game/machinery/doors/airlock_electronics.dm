@@ -1,5 +1,5 @@
 /obj/item/electronics/airlock
-	name = "airlock electronics"
+	name = "combine door electronics"
 	req_access = list(ACCESS_MAINT_TUNNELS)
 	custom_price = 5
 
@@ -14,7 +14,7 @@
 
 /obj/item/electronics/airlock/examine(mob/user)
 	. = ..()
-	. += span_notice("Has a neat <i>selection menu</i> for modifying airlock access levels.")
+	. += span_notice("Has a neat <i>selection menu</i> for modifying combine door access levels.")
 
 /obj/item/electronics/airlock/ui_state(mob/user)
 	return GLOB.always_state

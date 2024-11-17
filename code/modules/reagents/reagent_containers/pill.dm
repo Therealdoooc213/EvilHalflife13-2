@@ -14,6 +14,8 @@
 	var/rename_with_volume = FALSE
 	var/self_delay = 0 //pills are instant, this is because patches inheret their aplication from pills
 	var/dissolvable = TRUE
+	///Should it play a sound when succesfully applied?
+	var/apply_sound = FALSE
 
 /obj/item/reagent_containers/pill/Initialize(mapload)
 	. = ..()
@@ -54,6 +56,10 @@
 	if(reagents.total_volume)
 		reagents.reaction(M, apply_type)
 		reagents.trans_to(M, reagents.total_volume, transfered_by = user)
+
+	if(apply_sound)
+		playsound(src, apply_sound, 40, FALSE)
+
 	qdel(src)
 	return TRUE
 

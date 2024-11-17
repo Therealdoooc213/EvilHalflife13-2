@@ -28,12 +28,12 @@
 
 /obj/structure/sign/directions/medical
 	name = "medical bay"
-	desc = "A direction sign, pointing out which way the Medical Bay is."
+	desc = "A direction sign, pointing out which way the Hospital is."
 	icon_state = "direction_med"
 
 /obj/structure/sign/directions/evac
 	name = "escape arm"
-	desc = "A direction sign, pointing out which way the escape shuttle dock is."
+	desc = "A direction sign, pointing out which way the transfer train is."
 	icon_state = "direction_evac"
 
 /obj/structure/sign/directions/supply

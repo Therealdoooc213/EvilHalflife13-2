@@ -37,6 +37,8 @@
 	var/aggro_sound = 'sound/creatures/halflife/zombieaggro.ogg'
 	var/idle_sounds = list('sound/creatures/halflife/zombiesound.ogg', 'sound/creatures/halflife/zombiesound2.ogg', 'sound/creatures/halflife/zombiesound3.ogg')
 
+	cmode_music = 'sound/music/combat/disrupted.ogg' //spooky!
+
 /mob/living/simple_animal/hostile/halflife/zombie/Aggro()
 	. = ..()
 	set_combat_mode(TRUE)
@@ -264,6 +266,8 @@
 	var/leapsound = 'sound/creatures/halflife/headcrableap.ogg'
 	var/soundvary = TRUE
 
+	cmode_music = 'sound/music/combat/disrupted.ogg' //spooky!
+
 /mob/living/simple_animal/hostile/halflife/headcrab/OpenFire()
 	if(charging)
 		return
@@ -401,6 +405,8 @@
 	var/charge_cooldown_time = 10 SECONDS
 
 	var/playstyle_string = span_notice("You are a Hunter, a large synth designed for protecting striders and hunting down malignants in a swift manner. You can fire bursts of flechettes by clicking, and can Alt-Click to charge at an enemy to send them flying.")
+
+	cmode_music = 'sound/music/combat/huntingparty.ogg' //practically a requirement
 
 /mob/living/simple_animal/hostile/halflife/hunter/Aggro()
 	. = ..()

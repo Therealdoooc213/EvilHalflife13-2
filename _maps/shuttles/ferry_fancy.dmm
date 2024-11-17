@@ -15,11 +15,8 @@
 	},
 /turf/open/floor/plating/indoor/metal/plate,
 /area/shuttle/transport)
-"q" = (
+"p" = (
 /obj/structure/fans/tiny/invisible,
-/obj/machinery/door/unpowered/halflife/metal{
-	dir = 8
-	},
 /obj/docking_port/mobile{
 	dir = 8;
 	dwidth = 2;
@@ -30,6 +27,8 @@
 	shuttle_id = "ferry";
 	width = 5
 	},
+/obj/machinery/door/airlock/highsecurity/combine,
+/obj/effect/mapping_helpers/airlock/access/all/admin/captain,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/shuttle/transport)
 "t" = (
@@ -159,7 +158,7 @@ K
 (13,1,1) = {"
 K
 K
-q
+p
 K
 K
 "}

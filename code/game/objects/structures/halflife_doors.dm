@@ -295,10 +295,12 @@
 		user.visible_message("<span class='warning'>[user] unlocks [src].</span>", \
 			"<span class='notice'>I unlock [src].</span>")
 		locked = 0
+		playsound(loc, 'sound/halflifesounds/halflifeeffects/door_unlock.ogg', 40, TRUE)
 	else
 		user.visible_message("<span class='warning'>[user] locks [src].</span>", \
 			"<span class='notice'>I lock [src].</span>")
 		locked = 1
+		playsound(loc, 'sound/halflifesounds/halflifeeffects/door_unlock.ogg', 40, TRUE)
 
 /obj/machinery/door/unpowered/halflife/do_animate(animation)
 	return

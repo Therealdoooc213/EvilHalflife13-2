@@ -17715,12 +17715,6 @@
 	},
 /turf/open/floor/plating/asteroid/snow/temperatre,
 /area/centcom/syndicate_mothership)
-"gaR" = (
-/obj/machinery/door/unpowered/halflife/seethrough/grate,
-/turf/open/floor/plating/indoor/metal/plate{
-	dir = 1
-	},
-/area/centcom/ferry)
 "ggU" = (
 /obj/machinery/door/airlock/centcom{
 	name = "CentCom"
@@ -18906,6 +18900,13 @@
 	dir = 1
 	},
 /area/centcom/ferry)
+"qnL" = (
+/obj/machinery/door/airlock/highsecurity/combine,
+/obj/effect/mapping_helpers/airlock/access/all/admin/captain,
+/turf/open/floor/plating/indoor/metal/plate{
+	dir = 1
+	},
+/area/centcom/ferry)
 "qty" = (
 /obj/machinery/light,
 /turf/open/floor/engine,
@@ -19242,12 +19243,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/centcom/control)
-"tSW" = (
-/obj/machinery/turnstile/brig/halflife/forcefield/nodirectional,
-/turf/open/floor/plating/indoor/metal/plate{
-	dir = 1
-	},
-/area/centcom/ferry)
 "tVg" = (
 /turf/open/indestructible/wiki/info{
 	icon_state = "256"
@@ -48234,8 +48229,8 @@ xir
 gVI
 niU
 gVI
-tSW
-gaR
+gVI
+qnL
 fhs
 fOO
 gzm

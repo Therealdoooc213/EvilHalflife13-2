@@ -521,6 +521,19 @@
 	icon_state = "breenwater"
 	list_reagents = list(/datum/reagent/water = 20)
 
+/obj/item/reagent_containers/food/drinks/soda_cans/breenwater/yellow
+	name = "yellow water can"
+	desc = "A can of Breen's private reserve water. Supposedly, it helps improve your memory! This one is painted yellow, and smells funny."
+	icon_state = "breenwateryellow"
+	list_reagents = list(/datum/reagent/water/unpurified = 20)
+	custom_price = 15
+
+/obj/item/reagent_containers/food/drinks/soda_cans/breenwater/red
+	name = "red water can"
+	desc = "A can of Breen's private reserve water. Supposedly, it helps improve your memory! This one is painted red, and seems more filled."
+	icon_state = "breenwaterred"
+	list_reagents = list(/datum/reagent/water = 30)
+
 /obj/item/reagent_containers/food/drinks/soda_cans/lemon_lime
 	name = "orange soda"
 	desc = "You wanted ORANGE. It gave you Lemon Lime."

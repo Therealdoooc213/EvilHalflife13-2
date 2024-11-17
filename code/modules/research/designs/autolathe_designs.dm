@@ -3,7 +3,7 @@
 ///////////////////////////////////
 
 /datum/design/airlock_board
-	name = "Airlock Electronics"
+	name = "Combine Door Electronics"
 	id = "airlock_board"
 	build_type = AUTOLATHE | PROTOLATHE
 	materials = list(/datum/material/iron = 1000, /datum/material/glass = 1000)

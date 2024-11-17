@@ -231,6 +231,16 @@
 	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_WRENCH, TOOL_WELDER)
 	category = CAT_STRUCTURES
 
+/datum/crafting_recipe/heavycombinedoor
+	name = "Heavy Combine Door Assembly"
+	result = /obj/structure/door_assembly/door_assembly_highsecurity/combine 
+	time = 15 SECONDS
+	reqs = list(/obj/item/stack/sheet/metal = 15,
+				/obj/item/circuitmaterial = 1,
+		        /obj/item/stack/cable_coil = 5)
+	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_WRENCH, TOOL_WELDER)
+	category = CAT_STRUCTURES
+
 /datum/crafting_recipe/combineturret
 	name = "Combine Turret"
 	result = /obj/machinery/porta_turret/combine/off

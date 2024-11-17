@@ -413,6 +413,18 @@
 	rad_insulation = RAD_FULL_INSULATION
 	armor = list(MELEE = 30, BULLET = 30, LASER = 20, ENERGY = 100, BOMB = 10, BIO = 100, RAD = 100, FIRE = 80, ACID = 70) //only changed energy to 100
 
+/obj/machinery/door/airlock/highsecurity/combine
+	name = "heavy combine door"
+	icon = 'icons/obj/doors/airlocks/highsec/combine.dmi'
+	assemblytype = /obj/structure/door_assembly/door_assembly_highsecurity/combine
+	doorOpen = 'sound/machines/combinedoor_open.ogg'
+	doorClose = 'sound/machines/combinedoor_close.ogg'
+	doorDeni = 'sound/machines/combine_button_locked.ogg'
+	boltUp = 'sound/machines/combine_button5.ogg'
+	boltDown = 'sound/machines/combine_button2.ogg'
+	noPower = 'sound/machines/combine_button7.ogg'
+	open_speed = 1 SECONDS
+
 //////////////////////////////////
 /*
 	Shuttle Airlocks

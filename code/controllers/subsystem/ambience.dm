@@ -91,7 +91,7 @@ SUBSYSTEM_DEF(ambience)
 	if(!music || !dreamer)
 		return
 
-	var/sound/combat_music = sound(pick(music), repeat = TRUE, wait = 0, channel = CHANNEL_AMBIENT_EFFECTS, volume = 25)
+	var/sound/combat_music = sound(pick(music), repeat = TRUE, wait = 0, channel = CHANNEL_AMBIENT_EFFECTS, volume = 30)
 	var/sound/sound_killer = sound()
 	sound_killer.channel = CHANNEL_AMBIENT_EFFECTS
 	SEND_SOUND(dreamer, sound_killer) //first clears the sound channel from ambient music

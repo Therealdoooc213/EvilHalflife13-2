@@ -84,6 +84,11 @@
 	mood_change = 3
 	timeout = 4 MINUTES
 
+/datum/mood_event/displeasing_food
+	description = "<span class='warning'>That food wasn't the worst tasting, but it wasn't good tasting either.</span>\n"
+	mood_change = -2
+	timeout = 4 MINUTES
+
 /datum/mood_event/gross_food
 	description = "<span class='warning'>I really didn't like that food.</span>\n"
 	mood_change = -3

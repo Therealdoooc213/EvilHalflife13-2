@@ -55,6 +55,7 @@
 	list_reagents = list(/datum/reagent/medicine/biogel = 20)
 	icon = 'icons/obj/halflife/medkits.dmi'
 	icon_state = "medkit"
+	apply_sound = 'sound/effects/smallmedkit1.ogg'
 
 /obj/item/reagent_containers/pill/patch/medkit/manufactured
 	name = "new medkit"
