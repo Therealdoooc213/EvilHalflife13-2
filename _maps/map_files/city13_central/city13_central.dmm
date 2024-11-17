@@ -591,6 +591,13 @@
 	dir = 1
 	},
 /area/halflife/outdoors)
+"cF" = (
+/obj/structure/closet/secure_closet/evidence,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/townhall)
 "cG" = (
 /obj/effect/landmark/start/medical_doctor,
 /obj/effect/turf_decal/trimline/blue/line{
@@ -1374,12 +1381,6 @@
 	},
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors)
-"gv" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/open/floor/plating/indoor/concrete/bricks,
-/area/halflife/indoors/townhall)
 "gw" = (
 /obj/structure/table/halflife/no_smooth/wood/stand,
 /obj/machinery/light/small,
@@ -4255,10 +4256,6 @@
 "ue" = (
 /obj/machinery/papershredder,
 /turf/open/floor/plating/indoor/woodc/fancy,
-/area/halflife/indoors/townhall)
-"uf" = (
-/obj/structure/closet/secure_closet/evidence,
-/turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/townhall)
 "ug" = (
 /obj/structure/stairs/dark{
@@ -40417,7 +40414,7 @@ KE
 KE
 KE
 KE
-gv
+KE
 XQ
 XQ
 XQ
@@ -40437,8 +40434,8 @@ Tc
 hc
 HT
 XQ
-uf
-Tz
+cF
+LD
 XQ
 GE
 LD

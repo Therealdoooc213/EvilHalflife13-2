@@ -101,7 +101,7 @@
 	icon_state = "pulse"
 	damage = 25
 	wound_bonus = -10
-	armour_penetration = 20
+	armour_penetration = 15
 
 /obj/projectile/bullet/flechette
 	name = "flechette"

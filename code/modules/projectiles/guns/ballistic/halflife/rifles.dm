@@ -57,7 +57,7 @@
 
 /obj/item/gun/ballistic/automatic/m4a1/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/automatic_fire, 0.3 SECONDS)
+	AddComponent(/datum/component/automatic_fire, 0.4 SECONDS)
 
 //the crossbow
 
