@@ -5,6 +5,7 @@
 	desc = "A .357 magnum bullet casing."
 	caliber = CALIBER_357MAG
 	projectile_type = /obj/projectile/bullet/a357
+	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/medium
 
 /obj/item/ammo_casing/a357/ironfeather
 	name = ".357 Ironfeather shell"

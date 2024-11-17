@@ -1648,6 +1648,11 @@
 	},
 /turf/open/floor/plating,
 /area/halflife/indoors)
+"hS" = (
+/obj/effect/turf_decal/trimline/dark_red/warning/lower,
+/obj/machinery/porta_turret/combine,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors/townhall)
 "hT" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/effect/turf_decal/siding/thinplating,
@@ -4316,6 +4321,11 @@
 	},
 /turf/open/floor/plating/indoor/concrete,
 /area/halflife/indoors/trainstation)
+"uS" = (
+/obj/machinery/door/airlock/highsecurity/combine,
+/obj/effect/mapping_helpers/airlock/access/all/security/armory,
+/turf/open/floor/plating/indoor/checkered,
+/area/halflife/indoors/townhall)
 "uT" = (
 /obj/structure/table/halflife/no_smooth/large/metal{
 	dir = 8
@@ -5891,11 +5901,6 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors)
-"Cl" = (
-/obj/machinery/door/airlock/highsecurity/combine,
-/obj/effect/mapping_helpers/airlock/access/all/security/armory,
-/turf/open/floor/plating/indoor/checkered,
-/area/halflife/indoors/townhall)
 "Cm" = (
 /obj/effect/turf_decal/trimline/engiyellow/warning/lower{
 	dir = 9
@@ -6473,6 +6478,10 @@
 /obj/item/circuitboard/machine/server_cabinet,
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors)
+"EQ" = (
+/obj/structure/halflife/trash/glass/cans,
+/turf/open/floor/plating/ground/sidewalk/inner,
+/area/halflife/outdoors/alley)
 "ET" = (
 /obj/machinery/door/unpowered/halflife/seethrough/metal{
 	keylock = 1;
@@ -7099,11 +7108,6 @@
 /obj/effect/landmark/start/foreman,
 /turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors/productioncenter)
-"Ie" = (
-/obj/effect/turf_decal/trimline/dark_red/warning/lower,
-/obj/machinery/porta_turret/combine,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors/townhall)
 "Ig" = (
 /obj/structure/table/halflife/no_smooth/cable_reel,
 /obj/effect/spawner/lootdrop/halflife/loot,
@@ -38759,9 +38763,9 @@ Sp
 rl
 ME
 ME
-Cl
+uS
 nx
-Ie
+hS
 cQ
 De
 Mm
@@ -42454,7 +42458,7 @@ Iw
 Iw
 Iw
 Iw
-Iw
+Zv
 Gx
 Iw
 Iw
@@ -42575,7 +42579,7 @@ Iw
 Iw
 Iw
 Iw
-Iw
+Gx
 Gx
 Iw
 Iw
@@ -42696,7 +42700,7 @@ Iw
 Iw
 Iw
 Iw
-Iw
+EQ
 Gx
 Iw
 Iw

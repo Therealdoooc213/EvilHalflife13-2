@@ -47,6 +47,7 @@
 	var/spread = 15					//Spread induced by the gun itself. SEE LINE BELOW.
 	var/semi_auto_spread = 15			//Equal to the value above by default. The spread that a weapon will have if it is switched to semi-auto from a burst-fire mode.
 	var/randomspread = 1				//Set to 0 for shotguns. This is used for weapons that don't fire all their bullets at once.
+	var/dual_wield_spread = 20 //additional spread when dual wielding
 
 	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'

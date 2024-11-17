@@ -45,6 +45,7 @@
 	desc = "A 9mm bullet casing."
 	caliber = CALIBER_9X19
 	projectile_type = /obj/projectile/bullet/c9mm
+	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/light
 
 /obj/item/ammo_casing/c9mm/ap
 	name = "9mm armor-piercing bullet casing"

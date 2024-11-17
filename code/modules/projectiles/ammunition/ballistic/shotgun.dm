@@ -7,6 +7,7 @@
 	caliber = CALIBER_12GA
 	projectile_type = /obj/projectile/bullet/shotgun/slug
 	materials = list(/datum/material/iron=4000)
+	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/medium
 
 /obj/item/ammo_casing/shotgun/syndie
 	name = "syndicate shotgun slug"

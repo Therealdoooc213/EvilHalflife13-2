@@ -20,3 +20,9 @@
 	var/turf/source = get_turf(user)
 	var/turf/target = get_turf(A)
 	return ISINRANGE(target.x, source.x - view_range[1], source.x + view_range[1]) && ISINRANGE(target.y, source.y - view_range[1], source.y + view_range[1])
+
+/// The default tile-distance between two atoms for one to consider the other as visible.
+#define DEFAULT_SIGHT_DISTANCE 7
+
+/// Checks the visibility between two other objects.
+#define CAN_THEY_SEE(target, source) ((source in viewers(DEFAULT_SIGHT_DISTANCE, target)) || in_range(target, source))

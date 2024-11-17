@@ -5,6 +5,7 @@
 	desc = "A 4.6x30mm bullet casing."
 	caliber = CALIBER_46X30
 	projectile_type = /obj/projectile/bullet/c46x30mm
+	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/light
 
 /obj/item/ammo_casing/c46x30mm/ap
 	name = "4.6x30mm armor-piercing bullet casing"
@@ -50,6 +51,7 @@
 	desc = "A .45 ACP bullet casing."
 	caliber = CALIBER_45ACP
 	projectile_type = /obj/projectile/bullet/c45
+	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/light
 
 /obj/item/ammo_casing/c45/ap
 	name = ".45 armor-piercing bullet casing"

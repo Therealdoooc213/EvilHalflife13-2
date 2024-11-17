@@ -28,3 +28,15 @@
 
 /obj/effect/projectile/muzzle/wormhole
 	icon_state = "wormhole_g"
+
+/obj/effect/projectile/muzzle/large
+	icon_state = "muzzle_flash"
+
+/obj/effect/projectile/muzzle/medium
+	icon_state = "muzzle_medium"
+
+/obj/effect/projectile/muzzle/light
+	icon_state = "muzzle_light"
+
+/obj/effect/projectile/muzzle/pulseround
+	icon_state = "muzzle_pulse"

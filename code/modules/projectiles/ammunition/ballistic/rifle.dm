@@ -36,6 +36,7 @@
 	icon_state = "556-casing"
 	caliber = CALIBER_556NATO
 	projectile_type = /obj/projectile/bullet/a556
+	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/medium
 
 /obj/item/ammo_casing/a556/ap
 	name = "5.56mm armor-piercing bullet casing"
@@ -91,6 +92,7 @@
 	desc = "A OSIPR grade pulse round."
 	caliber = CALIBER_10MM
 	projectile_type = /obj/projectile/bullet/pulse/ar2
+	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/pulse
 
 /obj/item/ammo_casing/caseless/flechette
 	name = "flechette"
