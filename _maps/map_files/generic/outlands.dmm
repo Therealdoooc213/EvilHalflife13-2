@@ -96,6 +96,12 @@
 "ex" = (
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/bunker)
+"fu" = (
+/obj/structure/railing/halflife/wood/single{
+	dir = 1
+	},
+/turf/open/floor/plating/ground/dirt/alt,
+/area/halflife/outdoors/forest)
 "hC" = (
 /obj/structure/halflife/trash/papers/three,
 /turf/open/floor/plating/indoor/concrete/small,
@@ -292,6 +298,10 @@
 /obj/structure/halflife/trash/glass/basic,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
+"tz" = (
+/obj/structure/railing/halflife/wood/single,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/outdoors/sewage_dump)
 "tF" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -346,12 +356,22 @@
 /obj/structure/flora/ausbushes/palebush,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors/forest)
+"yS" = (
+/obj/structure/railing/halflife/wood/single,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/outdoors/forest)
 "zB" = (
 /turf/closed/indestructible/syndicate,
 /area/halflife/outdoors/forest)
 "zT" = (
 /turf/open/floor/plating/indoor/metal/grate/border,
 /area/halflife/indoors/sewer/tunnel)
+"AR" = (
+/obj/structure/railing/halflife/wood/single{
+	dir = 1
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/outdoors/forest)
 "Bk" = (
 /obj/structure/railing/halflife/sewer{
 	dir = 8
@@ -377,6 +397,12 @@
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
+"Df" = (
+/obj/structure/railing/halflife/wood/single{
+	dir = 1
+	},
+/turf/open/floor/plating/ground/sidewalk,
+/area/halflife/outdoors/forest)
 "Dn" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -3322,7 +3348,7 @@ It
 It
 GX
 GX
-GX
+yS
 LN
 dg
 It
@@ -3637,7 +3663,7 @@ GX
 jf
 dg
 GX
-GX
+yS
 GX
 GX
 It
@@ -5139,7 +5165,7 @@ Lg
 Lg
 Lg
 Lg
-aa
+tz
 pB
 It
 GX
@@ -5224,7 +5250,7 @@ GX
 GX
 GX
 GX
-GX
+AR
 GX
 GX
 GX
@@ -5241,7 +5267,7 @@ Lg
 Lg
 Lg
 Lg
-aa
+tz
 aa
 It
 It
@@ -5326,7 +5352,7 @@ EQ
 GX
 OO
 OO
-OO
+Df
 OO
 OO
 OO
@@ -5343,7 +5369,7 @@ Bk
 Lg
 Lg
 Lg
-aa
+tz
 aa
 GX
 GX
@@ -5739,7 +5765,7 @@ GX
 GX
 GX
 GX
-OO
+Df
 iB
 iB
 iB
@@ -5841,7 +5867,7 @@ GX
 GX
 It
 It
-GX
+AR
 aa
 Lg
 Lg
@@ -5943,7 +5969,7 @@ GX
 GX
 Wx
 It
-It
+fu
 aa
 aa
 Lg

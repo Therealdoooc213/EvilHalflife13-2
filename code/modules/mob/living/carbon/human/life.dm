@@ -80,7 +80,7 @@
 				heal_bodypart_damage(0.2, 0, 0, TRUE, BODYPART_ORGANIC)
 		return 1
 
-/mob/living/carbon/human/proc/adjust_tiredness(amount)
+/mob/living/carbon/proc/adjust_tiredness(amount)
 	tiredness += amount
 	if(tiredness > TIREDNESS_MAXIMUM_THRESHOLD)
 		tiredness = TIREDNESS_MAXIMUM_THRESHOLD

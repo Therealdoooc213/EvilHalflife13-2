@@ -818,6 +818,7 @@
 	M.adjust_drowsiness(-6 SECONDS * REM)
 	M.AdjustSleeping(-4 SECONDS, FALSE)
 	M.adjust_dizzy(-4 SECONDS * REM)
+	M.adjust_tiredness(-1) //Good ol' caffeine
 
 /datum/reagent/drug/caffeine/overdose_process(mob/living/M)
 	. = ..()
