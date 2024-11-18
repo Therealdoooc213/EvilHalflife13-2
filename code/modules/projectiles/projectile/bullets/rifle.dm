@@ -99,14 +99,14 @@
 /obj/projectile/bullet/pulse/ar2
 	name = "pulse round"
 	icon_state = "pulse"
-	damage = 25
+	damage = 23
 	wound_bonus = -10
 	armour_penetration = 15
 
 /obj/projectile/bullet/flechette
 	name = "flechette"
 	icon_state = "flechette"
-	damage = 25
+	damage = 20
 	wound_bonus = -10
 	bare_wound_bonus = 5
 	armour_penetration = -20

@@ -6,9 +6,6 @@
 	baseturfs = /turf/open/floor/plating/ground/dirt
 	deconstructible = FALSE
 
-/turf/closed/wall/halflife/try_decon(obj/item/I, mob/user, turf/T, modifiers)
-	return FALSE
-
 /turf/closed/wall/halflife/wood
 	name = "wooden wall"
 	icon = 'icons/turf/walls/halflife/woodwall.dmi'

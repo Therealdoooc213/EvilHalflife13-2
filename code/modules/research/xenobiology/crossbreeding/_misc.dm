@@ -252,6 +252,7 @@ Slimecrossing Items
 /obj/item/reagent_containers/food/snacks/rationpack/lowgrade
 	name = "low-grade nutriment bar"
 	desc = "A 'water' flavored ration nutriment bar. Tastes gross, but at least you won't be hungry. This one is less filling than most, and even worse tasting."
+	icon_state = "lowrationpack"
 	list_reagents = list(/datum/reagent/consumable/nutriment = 4)
 	mood_penalty = /datum/mood_event/disgusting_food
 
@@ -259,6 +260,15 @@ Slimecrossing Items
 	name = "manufactured nutriment bar"
 	desc = "A 'water' flavored ration nutriment bar. Tastes gross, but at least you won't be hungry. This one looks freshly made."
 
+/obj/item/reagent_containers/food/snacks/flavorbar
+	name = "flavor bar"
+	desc = "A slightly sweet, and very small bar of... something. It's not nearly as flavorful as the name may suggest, but it is far better than the nutriment dense bars."
+	icon_state = "flavorbar"
+	bitesize = 1
+	filling_color = "#964B00"
+	tastes = list("artifical flavor" = 3)
+	foodtype = null //Don't ask what went into them. You're better off not knowing.
+	list_reagents = list(/datum/reagent/consumable/sugar = 2)
 
 //Ice stasis block - Chilling Dark Blue
 /obj/structure/ice_stasis

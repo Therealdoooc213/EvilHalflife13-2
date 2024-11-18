@@ -156,17 +156,6 @@
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/woodc/wide,
 /area/halflife/indoors/slums)
-"aK" = (
-/obj/structure/fans/tiny,
-/obj/machinery/turnstile/brig/halflife/forcefield/science{
-	dir = 1
-	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "aicoredoor";
-	name = "AI Chamber entrance shutters"
-	},
-/turf/open/floor/plating,
-/area/halflife/indoors)
 "aM" = (
 /obj/structure/table/halflife/no_smooth/large/wood/desk{
 	dir = 8
@@ -454,21 +443,6 @@
 /obj/structure/bed/halflife/mattress/old,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
-"cj" = (
-/obj/machinery/camera{
-	c_tag = "Officer Staging Area";
-	dir = 8
-	},
-/obj/structure/closet/crate/internals,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/tank/internals/emergency_oxygen/engi,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors/townhall)
 "cl" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 8
@@ -544,22 +518,6 @@
 "cy" = (
 /obj/item/storage/box/halflife/loyaltyration,
 /turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors/townhall)
-"cz" = (
-/obj/structure/table/halflife/wood,
-/obj/item/reagent_containers/food/drinks/bottle/amaretto{
-	desc = "The Administrator's private reserve of alcohol. It tastes amazing, and is a one of a kind amaretto.";
-	pixel_x = -6;
-	pixel_y = 2
-	},
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
-	pixel_x = 6;
-	pixel_y = 6
-	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/open/floor/plating/indoor/woodc/fancy,
 /area/halflife/indoors/townhall)
 "cA" = (
 /obj/machinery/camera{
@@ -937,6 +895,10 @@
 	},
 /turf/open/floor/plating/indoor/metal/pipe,
 /area/halflife/indoors)
+"ew" = (
+/obj/structure/window/fulltile,
+/turf/open/floor/plating/indoor/tiled10,
+/area/halflife/indoors/townhall)
 "ey" = (
 /obj/structure/sign/directions/science,
 /turf/closed/wall/halflife/brick,
@@ -2350,6 +2312,16 @@
 	},
 /turf/open/openspace,
 /area/halflife/outdoors)
+"lf" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "aicoredoor";
+	name = "AI Chamber entrance shutters"
+	},
+/obj/machinery/door/airlock/highsecurity/combine,
+/obj/effect/mapping_helpers/airlock/access/all/science/general,
+/turf/open/floor/plating,
+/area/halflife/indoors)
 "lg" = (
 /obj/structure/halflife/trash/cardboard,
 /turf/open/floor/plating/indoor/woodc/mosaic,
@@ -4386,13 +4358,6 @@
 /obj/item/disk/surgery/brainwashing,
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/scienceunion)
-"uP" = (
-/obj/machinery/door/unpowered/halflife/metal{
-	keylock = 1;
-	lockid = "hospital"
-	},
-/turf/open/floor/plating/indoor/showroom,
-/area/halflife/indoors/hospital)
 "uQ" = (
 /obj/machinery/camera{
 	c_tag = "Train Station Arrivals Lower"
@@ -5139,14 +5104,6 @@
 /obj/structure/halflife/trash/glass/cans,
 /turf/open/floor/plating/ground/sidewalk,
 /area/halflife/outdoors)
-"yq" = (
-/obj/machinery/door/unpowered/halflife/metal{
-	keylock = 1;
-	locked = 1;
-	lockid = "bar"
-	},
-/turf/closed/wall/halflife/brick,
-/area/halflife/indoors/bar)
 "yr" = (
 /obj/machinery/firealarm{
 	pixel_y = 26
@@ -6742,6 +6699,23 @@
 	},
 /turf/open/floor/plating/indoor/metal/industrial,
 /area/halflife/indoors/townhall)
+"Gs" = (
+/obj/structure/table/halflife/wood,
+/obj/item/reagent_containers/food/drinks/bottle/amaretto{
+	desc = "The Administrator's private reserve of alcohol. It tastes amazing, and is a one of a kind amaretto.";
+	pixel_x = -6;
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/item/clothing/mask/cigarette/cigar,
+/turf/open/floor/plating/indoor/woodc/fancy,
+/area/halflife/indoors/townhall)
 "Gu" = (
 /obj/machinery/rnd/server,
 /turf/open/floor/circuit/telecomms/server,
@@ -7020,6 +6994,21 @@
 /obj/structure/curtain,
 /turf/open/floor/plating/indoor/lino,
 /area/halflife/indoors/bar)
+"HI" = (
+/obj/machinery/camera{
+	c_tag = "Officer Staging Area";
+	dir = 8
+	},
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/item/tank/internals/emergency_oxygen/engi,
+/obj/structure/closet/crate,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors/townhall)
 "HL" = (
 /obj/machinery/light/small,
 /turf/open/floor/plating/indoor/woodc/mosaic,
@@ -8369,6 +8358,10 @@
 "NX" = (
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/trainstation)
+"NZ" = (
+/obj/machinery/turnstile/brig/halflife/forcefield/medical,
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/hospital)
 "Oa" = (
 /obj/structure/sign/warning/biohazard{
 	pixel_y = 32
@@ -8828,6 +8821,11 @@
 /obj/effect/turf_decal/trimline/dark_green/filled/line{
 	dir = 6
 	},
+/turf/open/floor/plating/indoor/tile,
+/area/halflife/indoors/hydroponics)
+"Qn" = (
+/obj/effect/turf_decal/trimline/dark_green/filled/lower,
+/obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/hydroponics)
 "Qo" = (
@@ -32358,7 +32356,7 @@ HB
 aE
 xf
 xf
-yq
+Ir
 ft
 ft
 ft
@@ -36256,7 +36254,7 @@ DV
 QU
 fD
 QU
-DV
+Qn
 Iw
 Iw
 Iw
@@ -36498,7 +36496,7 @@ rH
 QU
 PW
 QU
-DV
+Qn
 Iw
 Iw
 Iw
@@ -37530,7 +37528,7 @@ kb
 ds
 gA
 Vm
-XQ
+ew
 fT
 IN
 IN
@@ -37629,7 +37627,7 @@ iY
 XQ
 CL
 gx
-cz
+Gs
 ZV
 nB
 XQ
@@ -38164,7 +38162,7 @@ IN
 hK
 va
 bx
-uP
+NZ
 bx
 fk
 cG
@@ -38256,7 +38254,7 @@ oG
 Vb
 Jr
 ns
-XQ
+ew
 fT
 IN
 IN
@@ -39825,7 +39823,7 @@ XQ
 dD
 xY
 LD
-cj
+HI
 LD
 gN
 XQ
@@ -42614,7 +42612,7 @@ Iw
 Uj
 Ts
 wx
-aK
+lf
 Rr
 pA
 Rr

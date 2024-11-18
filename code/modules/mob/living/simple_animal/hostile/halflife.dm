@@ -31,7 +31,7 @@
 	var/no_crab_state = "zombie_dead_nocrab"
 	var/crabless_possible = TRUE
 	var/headcrabspawn = /mob/living/simple_animal/hostile/halflife/headcrab
-	var/idle_sound_chance = 40
+	var/idle_sound_chance = 30
 	var/sound_vary = TRUE
 	var/fungalheal = FALSE
 	var/aggro_sound = 'sound/creatures/halflife/zombieaggro.ogg'
@@ -394,9 +394,12 @@
 	var/aggro_sound = list('sound/creatures/halflife/hunter/hunter_foundenemy1.ogg', 'sound/creatures/halflife/hunter/hunter_foundenemy2.ogg', 'sound/creatures/halflife/hunter/hunter_foundenemy3.ogg', 'sound/creatures/halflife/hunter/hunter_pain.ogg')
 	var/idle_sounds = list('sound/creatures/halflife/hunter/hunter_idle1.ogg', 'sound/creatures/halflife/hunter/hunter_idle2.ogg', 'sound/creatures/halflife/hunter/hunter_idle3.ogg', 'sound/creatures/halflife/hunter/hunter_scan.ogg')
 
+	robust_searching = TRUE
+
 	ranged = 1
+	ranged_cooldown_time = 25
 	rapid = 3
-	retreat_distance = 4
+	retreat_distance = 2
 	minimum_distance = 4
 	projectilesound = 'sound/creatures/halflife/hunter/hunter_fire1.ogg'
 	casingtype = /obj/item/ammo_casing/caseless/flechette

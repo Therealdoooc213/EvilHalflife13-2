@@ -12,6 +12,7 @@
 	var/is_bourgeois = FALSE // Marks whether we've tried giving them the achievement already, this round.
 	var/bounties_claimed = 0 // Marks how many bounties this person has successfully claimed
 	var/sec_weapon_claimed = FALSE // If this account has claimed a weapon \code\modules\vending\security_armaments.dm
+	var/ration_voucher = FALSE //Do we have a ration voucher assigned to our account right now?
 
 /datum/bank_account/New(newname, job)
 	var/limiter = 0
@@ -83,6 +84,15 @@
 				return TRUE
 	bank_card_talk("ERROR: Credit stipend transfer suspended, unable to contact departmental account.")
 	return FALSE
+
+/datum/bank_account/proc/rationvoucher()
+	if(ration_voucher)
+		bank_card_talk("Your account's previous ration voucher was not used in time, and has been replaced with a new one.")
+		return FALSE
+	else
+		bank_card_talk("A ration voucher has been transferred to your account.")
+		ration_voucher = TRUE
+		return TRUE
 
 /datum/bank_account/proc/bank_card_talk(message, force)
 	if(!message || !bank_cards.len)

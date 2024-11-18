@@ -1530,13 +1530,14 @@
 
 /obj/item/storage/box/halflife/loyaltyration
 	name = "loyalty ration pack"
-	desc = "An improved ration pack, intended for loyalists and civil protection. The food inside is slightly more filling."
+	desc = "An improved ration pack, intended for loyalists and civil protection. The food inside is slightly more filling and flavorful."
 	foldable = null
 	icon_state = "ration-highgrade"
 
 /obj/item/storage/box/halflife/loyaltyration/PopulateContents()
 	new /obj/item/reagent_containers/food/snacks/rationpack/loyalty(src)
 	new /obj/item/reagent_containers/food/drinks/soda_cans/breenwater/red(src)
+	new /obj/item/reagent_containers/food/snacks/flavorbar(src)
 
 /obj/item/storage/box/halflife/badration
 	name = "lowgrade ration pack"
