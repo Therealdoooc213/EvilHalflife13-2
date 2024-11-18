@@ -1,15 +1,14 @@
 SUBSYSTEM_DEF(ration)
 	name = "Rations"
-	wait = 300 MINUTES
+	wait = 30 MINUTES
 	init_order = INIT_ORDER_RATION
 	runlevels = RUNLEVEL_GAME
 	flags = SS_NO_INIT
 
-	var/list/bank_accounts = list() //List of normal accounts (not department accounts)
-
 /datum/controller/subsystem/ration/fire(resumed = 0)
-	for(var/A in bank_accounts)
-		var/datum/bank_account/B = bank_accounts[A]
+	sleep(15 SECONDS) //Incase you join slightly after roundstart, and so it doesnt conflict with starting message.
+	priority_announce("Attention citizens, a new ration cycle has begun. Redeem your accounts voucher at an applicable vending unit.", "Ration Cycle Notice.")
+	for(var/A in SSeconomy.bank_accounts)
+		var/datum/bank_account/B = SSeconomy.bank_accounts[A]
 		B.rationvoucher()	
-	dispatch_announcement_to_players("Attention Citizens, a new ration cycle has begun. Redeem your account's voucher at an applicable vending unit.", GLOB.player_list)
 

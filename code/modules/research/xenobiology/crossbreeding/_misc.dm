@@ -268,7 +268,7 @@ Slimecrossing Items
 	filling_color = "#964B00"
 	tastes = list("artifical flavor" = 3)
 	foodtype = null //Don't ask what went into them. You're better off not knowing.
-	list_reagents = list(/datum/reagent/consumable/sugar = 2)
+	list_reagents = list(/datum/reagent/consumable/astrotame = 1, /datum/reagent/consumable/nutriment = 1)
 
 //Ice stasis block - Chilling Dark Blue
 /obj/structure/ice_stasis

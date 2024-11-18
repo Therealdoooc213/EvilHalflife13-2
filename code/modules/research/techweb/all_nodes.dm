@@ -78,7 +78,7 @@
 	display_name = "Biological Technology"
 	description = "Technology relating to biological functions of the human and non-human body."	//the MC, silly!
 	prereq_ids = list("base")
-	design_ids = list("chem_heater", "chem_master", "chem_dispenser", "pandemic", "defibrillator", "defibmount", "surgical_mat", "operating", "healthanalyzer", "medspray", "genescanner", "rollerbed")
+	design_ids = list("chem_heater", "chem_master", "chem_dispenser", "pandemic", "defibrillator", "defibmount", "operating", "medspray", "rollerbed")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
 /datum/techweb_node/adv_biotech
@@ -117,7 +117,7 @@
 	id = "adv_cyber_implants"
 	display_name = "Advanced Cybernetic Implants"
 	description = "Upgraded and more powerful cybernetic implants."
-	prereq_ids = list("neural_programming", "cyber_implants","integrated_HUDs")
+	prereq_ids = list("cyber_implants")
 	design_ids = list("ci-toolset", "ci-surgery", "ci-reviver", "ci-nutrimentplus")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
@@ -125,7 +125,7 @@
 	id = "combat_cyber_implants"
 	display_name = "Combat Cybernetic Implants"
 	description = "Military grade combat implants to improve performance."
-	prereq_ids = list("adv_cyber_implants","weaponry","NVGtech","high_efficiency")
+	prereq_ids = list("adv_cyber_implants","high_efficiency")
 	design_ids = list("ci-antidrop", "ci-antistun")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 

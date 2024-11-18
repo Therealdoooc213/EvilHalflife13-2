@@ -396,7 +396,7 @@
 /datum/map_template/ruin/station/city/southentrance/tenxten/oldapartment
 	id = "south_ten_oldapartment"
 	suffix = "city_south_ten_oldapartment.dmm"
-	name = "city south_ten_lockedapartment"
+	name = "city south_ten_oldapartment"
 
 /datum/map_template/ruin/station/city/southentrance/tenxten/laundromat
 	id = "south_ten_laundromat"

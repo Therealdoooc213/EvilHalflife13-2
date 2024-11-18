@@ -1,4 +1,4 @@
-/obj/machinery/vending/rationvendor
+/obj/machinery/vending/rationvendor //DEPRECATED FOR THE MOST PART, but i guess you can still use it?
 	name = "\improper Ration Vendor"
 	desc = "High grade, deliciously flavored rations are sold here at an affordable price."
 	icon_state = "ration_dispenser"

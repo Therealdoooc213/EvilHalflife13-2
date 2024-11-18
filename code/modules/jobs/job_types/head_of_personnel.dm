@@ -32,7 +32,7 @@
 
 
 	paycheck = PAYCHECK_COMMAND
-	paycheck_department = ACCOUNT_SRV
+	paycheck_department = ACCOUNT_SEC
 
 	display_order = JOB_DISPLAY_ORDER_HEAD_OF_PERSONNEL
 	minimal_character_age = 26 //Baseline age requirement and competency, as well as ability to assume leadership in shite situations
