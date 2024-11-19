@@ -708,6 +708,7 @@
 #include "code\datums\diseases\fluspanish.dm"
 #include "code\datums\diseases\gastrolisis.dm"
 #include "code\datums\diseases\gbs.dm"
+#include "code\datums\diseases\gutworms.dm"
 #include "code\datums\diseases\heart_failure.dm"
 #include "code\datums\diseases\jitters.dm"
 #include "code\datums\diseases\magnitis.dm"

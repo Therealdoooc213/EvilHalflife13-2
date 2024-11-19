@@ -566,6 +566,8 @@
 				. += "The [D.account_holder] reports a balance of $[D.account_balance]."
 		. += span_info("Alt-Click the ID to pull money from the linked account in the form of holochips.")
 		. += span_info("You can insert credits into the linked account by pressing holochips, cash, or coins against the ID.")
+		if(registered_account.ration_voucher)
+			. += span_info("The account linked to the ID has a redeemable ration voucher assigned to it.")
 		if(registered_account.account_holder == user.real_name)
 			. += span_boldnotice("If you lose this ID card, you can reclaim your account by Alt-Clicking a blank ID card while holding it and entering your account ID number.")
 	else

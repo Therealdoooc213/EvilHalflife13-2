@@ -8,7 +8,7 @@
 	icon_state = "meat"
 	dried_type = /obj/item/reagent_containers/food/snacks/sosjerky/healthy
 	bitesize = 3
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/cooking_oil = 2) //Meat has fats that a food processor can process into cooking oil
+	list_reagents = list(/datum/reagent/consumable/nutriment/raw = 3, /datum/reagent/consumable/cooking_oil = 2) //Meat has fats that a food processor can process into cooking oil
 	slice_path = /obj/item/reagent_containers/food/snacks/meat/raw_cutlet/plain
 	slices_num = 3
 	filling_color = "#FF0000"
@@ -217,7 +217,7 @@
 	name = "bear meat"
 	desc = "A very manly slab of meat."
 	icon_state = "bearmeat"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 12, /datum/reagent/medicine/morphine = 5, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/cooking_oil = 6)
+	list_reagents = list(/datum/reagent/consumable/nutriment/raw = 12, /datum/reagent/medicine/morphine = 5, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/cooking_oil = 6)
 	filling_color = "#FFB6C1"
 	slice_path = /obj/item/reagent_containers/food/snacks/meat/raw_cutlet/bear
 	tastes = list("meat" = 1, "salmon" = 1)
@@ -246,7 +246,7 @@
 	name = "xen flesh"
 	desc = "A slab of alien flesh. May not be entirely safe to eat."
 	icon_state = "xenomeat"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/toxin = 1)
+	list_reagents = list(/datum/reagent/consumable/nutriment/raw = 3, /datum/reagent/toxin = 1)
 	filling_color = "#32CD32"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/xen
 	slice_path = /obj/item/reagent_containers/food/snacks/meat/raw_cutlet/xen
@@ -500,7 +500,7 @@
 	desc = "A raw meat cutlet."
 	icon_state = "rawcutlet"
 	bitesize = 2
-	list_reagents = list(/datum/reagent/consumable/nutriment = 2)
+	list_reagents = list(/datum/reagent/consumable/nutriment/raw = 2)
 	filling_color = "#B22222"
 	tastes = list("meat" = 1)
 	var/meat_type = "meat"

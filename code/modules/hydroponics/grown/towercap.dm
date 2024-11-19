@@ -250,6 +250,7 @@
 				buckle_requires_restraints = TRUE
 				to_chat(user, span_italics("You add a rod to \the [src]."))
 				var/mutable_appearance/rod_underlay = mutable_appearance('icons/obj/hydroponics/equipment.dmi', "bonfire_rod")
+				rod_underlay.plane = src.plane
 				rod_underlay.pixel_y = 16
 				underlays += rod_underlay
 			if("Grill")

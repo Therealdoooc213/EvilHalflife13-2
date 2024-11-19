@@ -1,6 +1,7 @@
 /obj/emitter/fire_smoke
 	alpha = 150
 	particles = new/particles/fire_smoke
+	plane = ABOVE_LIGHTING_PLANE
 
 /obj/emitter/fire_smoke/Initialize(mapload)
 	. = ..()

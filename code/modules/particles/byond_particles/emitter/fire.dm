@@ -1,6 +1,7 @@
 /obj/emitter/fire
 	alpha = 225
 	particles = new/particles/fire
+	plane = ABOVE_LIGHTING_PLANE
 	var/fire_colour = "#FF3300"
 
 //I hate this, i loath everything about having to create an Init because the byond level filters doesn't allow multiple filters to be set at once if this ever gets fixed please ping me -Borbop

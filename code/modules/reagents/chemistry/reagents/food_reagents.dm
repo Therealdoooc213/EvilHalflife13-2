@@ -104,6 +104,17 @@
 		M.satiety += 30
 	. = ..()
 
+/datum/reagent/consumable/nutriment/raw
+	name = "Raw Nutriment"
+	description = "Raw, unsafe nutriments that may possibly harbor dangerous pathogens."
+	reagent_state = SOLID
+	color = "#915037"
+
+/datum/reagent/consumable/nutriment/raw/reaction_mob(mob/living/L, methods=TOUCH, reac_volume, show_message = TRUE, permeability = 1)
+	if((methods & (PATCH|INGEST|INJECT)) || ((methods & VAPOR) && prob(min(reac_volume,100)*permeability)))
+		if(prob(20))
+			L.ForceContractDisease(new /datum/disease/gutworms(), FALSE, TRUE) //Don't eat raw food!
+
 /datum/reagent/consumable/nutriment/protein
 	name = "Protein"
 	description = "A natural polyamide made up of amino acids. An essential constituent of mosts known forms of life."
