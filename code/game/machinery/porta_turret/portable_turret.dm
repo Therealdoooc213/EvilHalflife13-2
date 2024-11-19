@@ -1119,6 +1119,7 @@
 	anchored = 0
 	raised = 1
 	alwaysmovable = TRUE
+	max_integrity = 180
 
 /obj/machinery/porta_turret/combine/off
 	on = FALSE

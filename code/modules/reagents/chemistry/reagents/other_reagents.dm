@@ -182,7 +182,7 @@
 	taste_description = "unpurified water"
 	glass_name = "glass of unpurified water"
 	disgust = 1.25
-	toxicity = 0.1
+	//toxicity = 0.1
 
 /*
  *	Water reaction to turf

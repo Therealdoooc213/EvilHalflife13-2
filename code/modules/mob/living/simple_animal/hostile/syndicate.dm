@@ -295,8 +295,9 @@
 	mob_biotypes = MOB_ROBOTIC
 	health = 45
 	maxHealth = 45
-	melee_damage_lower = 18
-	melee_damage_upper = 22
+	rapid_melee = 2
+	melee_damage_lower = 15
+	melee_damage_upper = 20
 	attack_vis_effect = ATTACK_EFFECT_SLASH
 	wound_bonus = -10
 	bare_wound_bonus = 15

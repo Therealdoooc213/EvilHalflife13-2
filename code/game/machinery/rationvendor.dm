@@ -41,10 +41,22 @@
 			new /obj/item/storage/box/halflife/loyaltyration(loc)
 			playsound(src, 'sound/machines/machine_vend.ogg', 50, TRUE, extrarange = -3)
 			return
+		if((R.fields["criminal"] == WANTED_SUSPECT)) //Suspected people are given shit rations
+			account.ration_voucher = FALSE
+			say("Enjoy your designated meal.")
+			new /obj/item/storage/box/halflife/badration(loc)
+			playsound(src, 'sound/machines/machine_vend.ogg', 50, TRUE, extrarange = -3)
+			return
 	if(account?.account_job?.paycheck_department == ACCOUNT_SEC) //Metrocops and command staff get high grade rations.
 		account.ration_voucher = FALSE
 		say("Enjoy your designated meal.")
 		new /obj/item/storage/box/halflife/loyaltyration(loc)
+		playsound(src, 'sound/machines/machine_vend.ogg', 50, TRUE, extrarange = -3)
+		return
+	if(account?.account_job.title == "Vortigaunt Slave") //Vortigaunt slaves get shitty rations
+		account.ration_voucher = FALSE
+		say("Here is your designated meal, biotic.")
+		new /obj/item/storage/box/halflife/badration(loc)
 		playsound(src, 'sound/machines/machine_vend.ogg', 50, TRUE, extrarange = -3)
 		return
 	account.ration_voucher = FALSE
