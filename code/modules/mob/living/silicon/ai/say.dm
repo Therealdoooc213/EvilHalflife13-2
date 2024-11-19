@@ -67,9 +67,7 @@
 	<font class='bad'>WARNING:</font> Misuse of the announcement system will get you job banned.<BR><BR>
 	Here is a list of words you can type into the 'Announcement' button to create sentences to vocally announce to everyone on the same level at you.<BR>
 	<UL><LI>You can also click on the word to PREVIEW it.</LI>
-	<LI>You can only say 30 words for every announcement.</LI>
-	<LI>Do not use punctuation as you would normally, if you want a pause you can use the full stop and comma characters by separating them with spaces, like so: 'Alpha . Test , Bravo'.</LI>
-	<LI>Numbers are in word format, e.g. eight, sixty, etc </LI>
+	<LI>You can only say one voiceline word for every announcement.</LI>
 	<LI>Sound effects begin with an 's' before the actual word, e.g. scensor</LI>
 	<LI>Use Ctrl+F to see if a word exists in the list.</LI></UL><HR>
 	"}
@@ -109,14 +107,8 @@ GLOBAL_VAR_INIT(announcing_vox, 0)
 		to_chat(src, span_notice("VOX sounds are currently disabled."))
 		return
 
-	var/list/types_list = list("Victor (male)", "Verity (female)", "Oscar (military)") //Victor is vox_sounds_male, Verity is vox_sounds, Oscar is vox_sounds_military
-	if(!is_banned_from(ckey, "Voice Announcements"))
-		types_list += "Use Microphone"
+	var/list/types_list = list("Dispatch") //Dispatch is vox_sounds
 	var/voxType = input(src, "Which voice?", "VOX") in types_list 
-
-	if(voxType == "Use Microphone")
-		voice_announce()
-		return
 
 	var/message = input(src, "WARNING: Misuse of this verb can result in you being job banned. More help is available in 'Announcement Help'", "Announcement", src.last_announcement) as text
 
@@ -135,19 +127,15 @@ GLOBAL_VAR_INIT(announcing_vox, 0)
 	var/list/words = splittext(trim(message), " ")
 	var/list/incorrect_words = list()
 
-	if(words.len > 30)
-		words.len = 30
+	if(words.len > 1)
+		words.len = 1
 
 	for(var/word in words)
 		word = lowertext(trim(word))
 		if(!word)
 			words -= word
 			continue
-		if(!GLOB.vox_sounds[word] && voxType == "Verity (female)") //yogs start - male vox
-			incorrect_words += word
-		if(!GLOB.vox_sounds_male[word] && voxType == "Victor (male)")
-			incorrect_words += word  //yogs end- male vox
-		if(!GLOB.vox_sounds_military[word] && voxType == "Oscar (military)")
+		if(!GLOB.vox_sounds[word] && voxType == "Dispatch")
 			incorrect_words += word
 
 	if(incorrect_words.len)
@@ -165,20 +153,16 @@ GLOBAL_VAR_INIT(announcing_vox, 0)
 		play_vox_word(word, z_coord, null, voxType) //yogs - male vox
 
 
-/proc/play_vox_word(word, z_level, mob/only_listener, voxType = "Verity (female)", pitch = 0) // Yogs -- Pitch variation
+/proc/play_vox_word(word, z_level, mob/only_listener, voxType = "Dispatch", pitch = 0) // Yogs -- Pitch variation
 
 	word = lowertext(word)
 
-	if( (GLOB.vox_sounds[word] && voxType == "Verity (female)") || (GLOB.vox_sounds_male[word] &&voxType == "Victor (male)") || (GLOB.vox_sounds_military[word] &&voxType == "Oscar (military)") ) //yogs - male vox
+	if( (GLOB.vox_sounds[word] && voxType == "Dispatch"))
 
 		var/sound_file //yogs start - male vox
 
-		if(voxType == "Verity (female)")
+		if(voxType == "Dispatch")
 			sound_file = GLOB.vox_sounds[word]
-		else if(voxType == "Victor (male)")
-			sound_file = GLOB.vox_sounds_male[word] //yogs end - male vox
-		else
-			sound_file = GLOB.vox_sounds_military[word]
 
 		var/sound/voice = sound(sound_file, wait = 1, channel = CHANNEL_VOX)
 		voice.status = SOUND_STREAM

@@ -374,7 +374,7 @@
 // AI Toggles
 #define AI_CAMERA_LUMINOSITY	3
 #define AI_VOX // Comment out if you don't want VOX to be enabled and have players download the voice sounds.
-#define AI_VOX_ENABLED 0
+#define AI_VOX_ENABLED 1
 
 // /obj/item/bodypart on_mob_life() retval flag
 #define BODYPART_LIFE_UPDATE_HEALTH (1<<0)

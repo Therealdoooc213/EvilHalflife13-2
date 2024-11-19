@@ -12,6 +12,10 @@
 	},
 /turf/open/floor/plating/indoor/metal/grate/border/warning,
 /area/halflife/indoors/sewer)
+"e" = (
+/obj/structure/reagent_dispensers/fueltank,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/sewer)
 "f" = (
 /obj/structure/frame/machine,
 /obj/item/wrench,
@@ -156,7 +160,7 @@ H
 G
 G
 G
-G
+e
 S
 "}
 (6,1,1) = {"

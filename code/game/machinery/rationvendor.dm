@@ -28,6 +28,10 @@
 		playsound(src, 'sound/machines/combine_button_locked.ogg', 50, TRUE, extrarange = -3)
 		return
 
+	if(!do_after(user, 3 SECONDS, src))
+		to_chat(usr, span_warning("Don't move while the machine is dispensing your ration!"))
+		return
+
 	var/username = user.get_face_name(user.get_id_name())
 	var/datum/data/record/R = find_record("name", username, GLOB.data_core.security)
 	if(R)
