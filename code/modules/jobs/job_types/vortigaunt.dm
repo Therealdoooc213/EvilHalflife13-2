@@ -27,7 +27,7 @@
 	jobtype = /datum/job/janitor
 
 	neck = /obj/item/clothing/neck/anti_magic_collar
-	ears = /obj/item/radio/headset //so they can hear orders given to them
+	r_pocket = /obj/item/radio/off/halflife/vort //so they can hear orders given to them
 	uniform = null
 	shoes = null
 

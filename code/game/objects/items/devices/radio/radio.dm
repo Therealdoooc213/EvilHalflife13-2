@@ -515,3 +515,8 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	icon_state = "radio"
 	name = "old radio"
 	desc = "An old radio that can communicate over specified radio waves."
+
+/obj/item/radio/off/halflife/vort
+	icon_state = "radio"
+	name = "vortigaunt radio"
+	desc = "A standard issue old world radio assigned to vorts so that they can listen to orders given to them over radio waves."

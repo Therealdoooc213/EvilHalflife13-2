@@ -30,8 +30,9 @@
 		if(H.w_uniform.powered_suit && H.w_uniform.suit_power > 0)
 			unset_ranged_ability(owner)
 			adjust_uses(-1)
-			H.reagents.add_reagent(/datum/reagent/drug/caffeine, 8)
+			H.reagents.add_reagent(/datum/reagent/drug/caffeine, 5)
 			H.reagents.add_reagent(/datum/reagent/medicine/tricordrazine, 3)
+			H.adjust_tiredness(-60)
 			to_chat(owner, span_notice("You succesfully inject stimulants into [H]."))
 			to_chat(H, span_notice("Attention unit, Anti-Fatigue Rations are now at 3mg."))
 		else
