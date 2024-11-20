@@ -266,7 +266,7 @@
 	death = FALSE
 	roundstart = FALSE
 	short_desc = "You are a City Scanner, constructed by the combine"
-	flavour_text = "Scan the city for possible anti-citizens and report anything you see over the radio."
+	flavour_text = "Scan the city for possible anti-citizens and report anything you see over the radio. You can prefix your message with '.b' to talk with Dispatch."
 
 /obj/effect/mob_spawn/cityscanner/Initialize(mapload)
 	. = ..()

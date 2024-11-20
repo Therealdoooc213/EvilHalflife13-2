@@ -44,7 +44,9 @@
 	name = "Vortal Blast"
 	cooldown_time = 5 SECONDS
 	desc = "Use the vortessence to ready a vortal bolt in your hand."
-	button_icon_state = "vortblast"
+	button_icon = 'icons/mob/actions/actions_vortal.dmi'
+	button_icon_state = "blast"
+	background_icon_state = "bg_nature"
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC
 
 	item_type = /obj/item/gun/ballistic/rifle/boltaction/enchanted/vort_blast

@@ -1,8 +1,9 @@
 /datum/action/cooldown/spell/touch/vort_heal
 	name = "Mend"
 	desc = "Use the vortessence and ready your hand to be able to heal someone other than yourself."
-	button_icon = 'icons/mob/actions/actions_changeling.dmi'
-	button_icon_state = "fleshmend"
+	background_icon_state = "bg_nature"
+	button_icon = 'icons/mob/actions/actions_vortal.dmi'
+	button_icon_state = "mend"
 
 	cooldown_time = 8 SECONDS
 	spell_requirements = SPELL_REQUIRES_NO_ANTIMAGIC

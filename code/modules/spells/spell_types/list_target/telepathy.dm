@@ -52,3 +52,6 @@
 
 /datum/action/cooldown/spell/list_target/telepathy/vort
 	desc = "Use the vortessence to telepathically transmit a message to the target."
+	button_icon = 'icons/mob/actions/actions_vortal.dmi'
+	button_icon_state = "telepathy"
+	background_icon_state = "bg_nature"
