@@ -137,6 +137,12 @@
 #define TINT_DARKENED 2			//Threshold of tint level to apply weld mask overlay
 #define TINT_BLIND 3			//Threshold of tint level to obscure vision fully
 
+#define ALL_BUT_VORT list("human")
+
+#define VORTS_AND_HUMANS list("human", "vortigaunt")
+
+#define VORTS_ONLY list("vortigaunt")
+
 //Allowed equipment lists for security vests and hardsuits.
 
 GLOBAL_LIST_INIT(advanced_hardsuit_allowed, typecacheof(list(

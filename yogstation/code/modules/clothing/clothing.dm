@@ -1,5 +1,5 @@
 /obj/item/clothing
-	var/list/species_restricted = null //Only these species can wear this kit.
+	var/list/species_restricted = ALL_BUT_VORT //Only these species can wear this kit.
 
 //BS12: Species-restricted clothing check.
 /obj/item/clothing/mob_can_equip(mob/living/M, mob/living/equipper, slot, disable_warning = FALSE, bypass_equip_delay_self = FALSE)

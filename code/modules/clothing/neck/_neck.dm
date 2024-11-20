@@ -205,6 +205,7 @@
 	icon_state = "antimagiccollar"
 	resistance_flags = FIRE_PROOF
 	req_access = list(ACCESS_SEC_BASIC) //what access can unlock a restrictor
+	species_restricted = VORTS_ONLY
 	var/inmate_name = "none"
 
 /obj/item/clothing/neck/anti_magic_collar/Initialize(mapload)
