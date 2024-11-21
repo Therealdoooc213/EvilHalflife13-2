@@ -13,6 +13,7 @@
 	fire_delay = 1
 	spread = 17
 	semi_auto_spread = 16
+	recoil = 0.4
 
 /obj/item/gun/ballistic/automatic/mp7/no_mag
 	spawnwithmagazine = FALSE

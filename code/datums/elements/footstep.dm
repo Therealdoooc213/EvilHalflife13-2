@@ -54,6 +54,10 @@
 			footstep_sounds ='sound/creatures/halflife/hunter/hunter_footstep1.ogg'
 			RegisterSignal(target, COMSIG_MOVABLE_MOVED, PROC_REF(play_simplestep_machine))
 			return
+		if(FOOTSTEP_MOB_ANTLION)
+			footstep_sounds = list('sound/creatures/halflife/antlion/foot1.ogg', 'sound/creatures/halflife/antlion/foot2.ogg', , 'sound/creatures/halflife/antlion/foot3.ogg', 'sound/creatures/halflife/antlion/foot4.ogg')
+			RegisterSignal(target, COMSIG_MOVABLE_MOVED, PROC_REF(play_simplestep_machine))
+			return
 		if(FOOTSTEP_OBJ_MACHINE)
 			footstep_sounds = 'sound/effects/bang.ogg'
 			RegisterSignal(target, COMSIG_MOVABLE_MOVED, PROC_REF(play_simplestep_machine))

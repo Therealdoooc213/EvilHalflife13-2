@@ -8,6 +8,7 @@
 	fire_sound = "sound/weapons/halflife/uspfire.ogg"
 	rack_sound = "sound/weapons/pistolrack.ogg"
 	bolt_drop_sound = "sound/weapons/pistolslidedrop.ogg"
+	recoil = 0.4
 
 /obj/item/gun/ballistic/automatic/pistol/usp/no_mag
 	spawnwithmagazine = FALSE

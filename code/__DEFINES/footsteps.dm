@@ -26,6 +26,7 @@
 #define FOOTSTEP_MOB_SLIME "footstep_slime"
 #define FOOTSTEP_MOB_RUST "footstep_rust"
 #define FOOTSTEP_MOB_HUNTER "footstep_hunter"
+#define FOOTSTEP_MOB_ANTLION "footstep_antlion"
 #define FOOTSTEP_OBJ_MACHINE "footstep_machine"
 #define FOOTSTEP_OBJ_ROBOT "footstep_robot"
 
