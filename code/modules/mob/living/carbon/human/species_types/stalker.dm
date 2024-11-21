@@ -6,7 +6,9 @@
 	nojumpsuit = TRUE
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | ERT_SPAWN
 	siemens_coeff = 0
-	speedmod = 0.5
+	speedmod = 0.66
+	brutemod = 1.25
+	burnmod = 1.25
 	punchdamagelow = 4
 	punchdamagehigh = 8
 	screamsound = 'sound/voice/stalker/stalker_scream.ogg'
@@ -17,7 +19,7 @@
 	species_traits = list(NO_UNDERWEAR,NO_DNA_COPY,NOTRANSSTING,NOEYESPRITES,NOFLASH)
 	inherent_traits = list(TRAIT_NOGUNS, TRAIT_RESISTCOLD, TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,
 							TRAIT_NOBREATH, TRAIT_RADIMMUNE, TRAIT_VIRUSIMMUNE,
-							TRAIT_NOCRITDAMAGE, TRAIT_GENELESS, TRAIT_NOSOFTCRIT, TRAIT_NOPAIN)
+							TRAIT_NOCRITDAMAGE, TRAIT_GENELESS, TRAIT_NOSOFTCRIT, TRAIT_NOHARDCRIT, TRAIT_NOPAIN)
 	mutanteyes = /obj/item/organ/eyes/alien
 	liked_food = MEAT | RAW 
 

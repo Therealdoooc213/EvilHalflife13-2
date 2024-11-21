@@ -1105,7 +1105,7 @@
 	icon_state = "combine_lethal"
 	base_icon_state = "combine"
 	installation = /obj/item/gun/ballistic/automatic/ar2
-	shot_delay = 10
+	shot_delay = 5
 	invisibility = 0
 	density = TRUE
 	desc = "A combine made turret which shoots at specified targets with a high power pulse gun."

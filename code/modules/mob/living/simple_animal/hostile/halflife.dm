@@ -486,6 +486,7 @@
 	icon_state = "antlion"
 	icon_living = "antlion"
 	icon_dead = "antlion_dead"
+	icon_gib = "antlion_gib"
 	faction = list("headcrab")
 	mob_biotypes = MOB_ORGANIC
 	maxHealth = 60
@@ -573,3 +574,6 @@
 	if(prob(15))
 		var/chosen_sound = pick(idle_sounds)
 		playsound(src, chosen_sound, 50, FALSE)
+
+/mob/living/simple_animal/hostile/halflife/antlion/spawn_gibs()
+	new /obj/effect/decal/antlionblood(drop_location(), src, get_static_viruses())

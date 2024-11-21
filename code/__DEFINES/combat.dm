@@ -94,7 +94,7 @@
 
 //click cooldowns, in seconds, used for various combat actions
 #define CLICK_CD_MELEE 0.8 SECONDS
-#define CLICK_CD_RANGE 0.5 SECONDS
+#define CLICK_CD_RANGE 0.4 SECONDS
 #define CLICK_CD_RAPID 0.2 SECONDS
 #define CLICK_CD_CLICK_ABILITY 0.6 SECONDS
 #define CLICK_CD_BREAKOUT 10 SECONDS

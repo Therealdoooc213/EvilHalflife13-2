@@ -2,20 +2,11 @@
 "a" = (
 /turf/template_noop,
 /area/template_noop)
+"j" = (
+/obj/structure/table/halflife/metal/heavy,
+/turf/open/floor/plating/indoor/metal/combine,
+/area/shuttle/transport)
 "m" = (
-/obj/machinery/computer/shuttle/ferry/request{
-	dir = 8
-	},
-/turf/open/floor/plating/indoor/metal/plate,
-/area/shuttle/transport)
-"o" = (
-/obj/structure/chair/comfy/halflife/captain,
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/plating/indoor/metal/plate,
-/area/shuttle/transport)
-"p" = (
 /obj/structure/fans/tiny/invisible,
 /obj/docking_port/mobile{
 	dir = 8;
@@ -29,7 +20,7 @@
 	},
 /obj/machinery/door/airlock/highsecurity/combine,
 /obj/effect/mapping_helpers/airlock/access/all/admin/captain,
-/turf/open/floor/plating/indoor/metal/plate,
+/turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/transport)
 "t" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -39,36 +30,45 @@
 /area/shuttle/transport)
 "u" = (
 /obj/structure/chair/comfy/halflife/captain{
-	dir = 1
+	dir = 4
 	},
-/turf/open/floor/plating/indoor/metal/plate,
+/turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/transport)
-"A" = (
-/turf/open/floor/plating/indoor/metal/plate,
-/area/shuttle/transport)
-"J" = (
-/obj/structure/chair/comfy/halflife/captain,
-/turf/open/floor/plating/indoor/metal/plate,
+"z" = (
+/obj/machinery/computer/shuttle/ferry/request{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/transport)
 "K" = (
 /turf/closed/wall/halflife/metal,
 /area/shuttle/transport)
-"P" = (
-/obj/structure/table/halflife/no_smooth/large/metal,
-/turf/open/floor/plating/indoor/metal/plate,
-/area/shuttle/transport)
-"Q" = (
+"L" = (
 /obj/structure/chair/comfy/halflife/captain{
 	dir = 1
 	},
-/obj/machinery/light,
-/turf/open/floor/plating/indoor/metal/plate,
+/obj/machinery/light/small,
+/turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/transport)
-"Z" = (
+"P" = (
+/turf/open/floor/plating/indoor/metal/combine,
+/area/shuttle/transport)
+"R" = (
 /obj/structure/chair/comfy/halflife/captain{
-	dir = 4
+	dir = 1
 	},
-/turf/open/floor/plating/indoor/metal/plate,
+/turf/open/floor/plating/indoor/metal/combine,
+/area/shuttle/transport)
+"S" = (
+/obj/structure/chair/comfy/halflife/captain,
+/turf/open/floor/plating/indoor/metal/combine,
+/area/shuttle/transport)
+"X" = (
+/obj/structure/chair/comfy/halflife/captain,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/metal/combine,
 /area/shuttle/transport)
 
 (1,1,1) = {"
@@ -94,71 +94,71 @@ t
 "}
 (4,1,1) = {"
 K
-Z
-A
+u
 P
+j
 K
 "}
 (5,1,1) = {"
 K
-m
-A
-A
+z
+P
+j
 K
 "}
 (6,1,1) = {"
 K
-J
-A
-u
+S
+P
+R
 K
 "}
 (7,1,1) = {"
 K
-J
-A
-u
+S
+P
+R
 K
 "}
 (8,1,1) = {"
 K
-J
-A
-u
+S
+P
+R
 K
 "}
 (9,1,1) = {"
 K
-o
-A
-Q
+X
+P
+L
 K
 "}
 (10,1,1) = {"
 K
-J
-A
-u
+S
+P
+R
 K
 "}
 (11,1,1) = {"
 K
-J
-A
-u
+S
+P
+R
 K
 "}
 (12,1,1) = {"
 K
-J
-A
-u
+S
+P
+R
 K
 "}
 (13,1,1) = {"
 K
 K
-p
+m
 K
 K
 "}

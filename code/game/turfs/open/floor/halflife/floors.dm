@@ -151,6 +151,9 @@
 /turf/open/floor/plating/indoor/metal/plate
 	icon_state = "steel_solid"
 
+/turf/open/floor/plating/indoor/metal/combine
+	icon_state = "combine_metal"
+
 /turf/open/floor/plating/indoor/metal/grate
 	icon_state = "steel_grate"
 
@@ -162,9 +165,6 @@
 
 /turf/open/floor/plating/indoor/metal/pipe/intersection
 	icon_state = "pipe_intersection"
-
-/turf/open/floor/plating/indoor/metal/plate
-	icon_state = "steel_solid"
 
 /turf/open/floor/plating/indoor/metal/industrial
 	icon_state = "steel_industrial"

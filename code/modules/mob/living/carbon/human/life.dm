@@ -43,13 +43,17 @@
 			//heart attack stuff
 			handle_heart()
 			if(IsSleeping())
-				if(buckled) //sleeping on a bed or something is far nicer than on the hard floor, and will FULLY rest you.
+				if((locate(/obj/structure/bed) in loc)) //sleeping on a bed or something is far nicer than on the hard floor, and will FULLY rest you.
 					adjust_tiredness(-40) //sleep is 40 seconds, so 20 life ticks, so -800 tiredness, so full restore
 				else
 					adjust_tiredness(-10) //-200 tiredness on a standard 40 second sleep.
 			else
 				if(!HAS_TRAIT(src, TRAIT_NOSLEEP))
 					adjust_tiredness(1)
+					if(nutrition < NUTRITION_LEVEL_STARVING - 50) //starvation and dehydration both make you feel extra tired and weak.
+						adjust_tiredness(1)
+					if(hydration < HYDRATION_LEVEL_DEHYDRATED)
+						adjust_tiredness(1)
 
 		if(COOLDOWN_FINISHED(src, adrenaline_cooldown) && ((health+ADRENALINE_THRESHOLD) < lasthealth))
 			apply_status_effect(STATUS_EFFECT_ADRENALINE)

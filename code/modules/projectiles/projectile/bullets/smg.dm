@@ -28,11 +28,11 @@
 		victim.reagents.add_reagent(/datum/reagent/toxin/venom, 4)
 	return ..()
 
-// 4.6x30mm (WT-550 Autocarbine)
+// 4.6x30mm (MP7)
 
 /obj/projectile/bullet/c46x30mm
 	name = "4.6x30mm bullet"
-	damage = 11
+	damage = 10
 	wound_bonus = 15
 	bare_wound_bonus = 10
 
