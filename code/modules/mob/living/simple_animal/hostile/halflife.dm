@@ -487,10 +487,10 @@
 	icon_living = "antlion"
 	icon_dead = "antlion_dead"
 	icon_gib = "antlion_gib"
-	faction = list("headcrab")
+	faction = list("antlion")
 	mob_biotypes = MOB_ORGANIC
-	maxHealth = 60
-	health = 60
+	maxHealth = 50
+	health = 50
 	projectile_bonus_damage = 0.8 //so melee can be competitive against them, while projectiles dont instantly wipe them
 	harm_intent_damage = 5
 	melee_damage_lower = 15

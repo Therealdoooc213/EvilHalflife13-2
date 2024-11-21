@@ -68,3 +68,10 @@
 	self_delay = 15
 	icon_state = "medvial"
 	
+/obj/item/reagent_containers/pill/patch/grubnugget
+	name = "grub nugget"
+	desc = "A small nugget obtained from an antlion grub. You're not exactly sure what to do with this."
+	list_reagents = list(/datum/reagent/medicine/biogel = 10)
+	self_delay = 15
+	icon = 'icons/mob/halflife.dmi'
+	icon_state = "grub_nugget"

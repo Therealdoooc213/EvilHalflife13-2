@@ -110,3 +110,47 @@
 		return
 	var/chosen_sound = pick(talk_sounds)
 	playsound(src, chosen_sound, 50, FALSE)
+
+//antlion grub
+/mob/living/simple_animal/halflife/grub
+	name = "Antlion Grub"
+	desc = "A large maggot filled with a green, glowing mass."
+	icon = 'icons/mob/halflife.dmi'
+	icon_state = "grub"
+	icon_living = "grub"
+	icon_dead = "grub_dead"
+	faction = list("antlion")
+	mob_biotypes = MOB_ORGANIC
+	maxHealth = 12
+	health = 12
+	wander = 0
+	light_range = 2
+	light_power = 1
+	light_color = "#67ac65"
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	minbodytemp = 0
+	speed = -1
+	loot = list(/obj/item/reagent_containers/pill/patch/grubnugget = 1, /obj/effect/decal/cleanable/insectguts = 1)
+	can_be_held = TRUE
+	held_state = "grub"
+	deathsound = 'sound/creatures/halflife/grub/agrub_squish.ogg'
+	density = FALSE
+	var/squish_chance = 50
+	var/idle_sounds = list('sound/creatures/halflife/grub/idle1.ogg','sound/creatures/halflife/grub/idle2.ogg', ,'sound/creatures/halflife/grub/idle3.ogg', ,'sound/creatures/halflife/grub/idle4.ogg')
+
+/mob/living/simple_animal/halflife/grub/Life(seconds_per_tick = SSMOBS_DT, times_fired)
+	..()
+	if(stat)
+		return
+	if(prob(25))
+		var/chosen_sound = pick(idle_sounds)
+		playsound(src, chosen_sound, 50, FALSE)
+
+/mob/living/simple_animal/halflife/grub/Initialize(mapload)
+	. = ..()
+	AddComponent( \
+		/datum/component/squashable, \
+		squash_chance = squish_chance, \
+		squash_damage = 6, \
+		squash_flags = SQUASHED_ALWAYS_IF_DEAD|SQUASHED_DONT_SQUASH_IN_CONTENTS, \
+	)

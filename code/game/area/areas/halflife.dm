@@ -25,6 +25,7 @@
 /area/halflife/outdoors/sewage_dump
 	name = "\improper Sewage Dump"
 	ambient_buzz = 'sound/ambience/toxic_ambience.ogg'
+	daylight_multiplier = 0.35
 
 /area/halflife/outdoors/alley
 	name = "\improper Alley Ways"
@@ -109,3 +110,6 @@
 
 /area/halflife/indoors/sewer/cave
 	name = "\improper Mining Caves"
+
+/area/halflife/indoors/sewer/outlandscave
+	name = "\improper Outlands Caves"
