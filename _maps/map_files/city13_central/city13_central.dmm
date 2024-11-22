@@ -1645,6 +1645,12 @@
 /obj/structure/bed/halflife/mattress/stained,
 /turf/open/floor/plating/indoor/grooved2,
 /area/halflife/indoors/townhall)
+"hM" = (
+/mob/living/simple_animal/halflife/grub{
+	dir = 8
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/indoors/sewer/cave)
 "hN" = (
 /obj/machinery/camera{
 	c_tag = "Town Hall Cafeteria";
@@ -2134,6 +2140,10 @@
 /obj/structure/halflife/tank,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/outdoors)
+"ki" = (
+/mob/living/simple_animal/mouse,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
 "kk" = (
 /obj/machinery/conveyor{
 	dir = 5;
@@ -2327,6 +2337,12 @@
 "la" = (
 /turf/open/floor/plating/indoor/metal/pipe,
 /area/halflife/indoors)
+"lb" = (
+/mob/living/simple_animal/halflife/grub{
+	dir = 4
+	},
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/indoors/sewer/cave)
 "lc" = (
 /obj/effect/turf_decal/trimline/engiyellow/warning/lower{
 	dir = 1
@@ -6750,6 +6766,10 @@
 	dir = 4
 	},
 /area/halflife/indoors)
+"FV" = (
+/mob/living/simple_animal/mouse,
+/turf/open/floor/plating/indoor/metal/grate,
+/area/halflife/indoors/sewer)
 "FW" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 1
@@ -9828,6 +9848,16 @@
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/scienceunion)
+"UD" = (
+/obj/structure/table/halflife/metal,
+/obj/item/reagent_containers/food/condiment/enzyme{
+	pixel_x = 9;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/pot,
+/obj/item/reagent_containers/food/condiment/soysauce,
+/turf/open/floor/plating/indoor/showroom,
+/area/halflife/indoors/restaurant)
 "UE" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plating/indoor/tiled10,
@@ -10432,15 +10462,6 @@
 /obj/machinery/door/unpowered/halflife/metal,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/sewer)
-"XM" = (
-/obj/structure/table/halflife/metal,
-/obj/item/reagent_containers/food/condiment/soysauce,
-/obj/item/reagent_containers/food/condiment/enzyme{
-	pixel_x = 9;
-	pixel_y = 3
-	},
-/turf/open/floor/plating/indoor/showroom,
-/area/halflife/indoors/restaurant)
 "XN" = (
 /obj/machinery/camera{
 	c_tag = "Prison Cell 1";
@@ -11318,7 +11339,7 @@ Gi
 Gi
 Gi
 Gi
-Gi
+wr
 Gi
 Gi
 Gi
@@ -11437,8 +11458,8 @@ Gi
 Gi
 Gi
 Gi
-Gi
-Gi
+wr
+lb
 Gi
 Gi
 Gi
@@ -11557,10 +11578,10 @@ Gi
 Gi
 Gi
 Gi
-Gi
-Gi
-Gi
-Gi
+wr
+wr
+wr
+wr
 Gi
 Gi
 Gi
@@ -11678,9 +11699,9 @@ Gi
 Gi
 Gi
 Gi
-Gi
-Gi
-Gi
+hM
+wr
+wr
 Gi
 Gi
 Gi
@@ -19814,7 +19835,7 @@ fp
 Qp
 Qp
 Qp
-Qp
+FV
 fp
 Rd
 Rd
@@ -25300,7 +25321,7 @@ fp
 zq
 cD
 bR
-cD
+ki
 fp
 Rd
 Rd
@@ -35398,8 +35419,8 @@ ka
 IN
 IN
 IN
-IN
 cA
+IN
 IN
 AT
 IN
@@ -36078,7 +36099,7 @@ kK
 nd
 VB
 VB
-XM
+UD
 kK
 lu
 lu

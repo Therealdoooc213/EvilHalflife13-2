@@ -25,3 +25,10 @@
 	reward = 250
 	required_count = 5
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/meat/slab/xen)
+
+/datum/bounty/item/assistant/grubnuggets
+	name = "Antlion Grub Nuggets"
+	description = "Samples of antlion larval extract are required for studying purposes."
+	reward = 500
+	required_count = 3
+	wanted_types = list(/obj/item/reagent_containers/pill/patch/grubnugget)

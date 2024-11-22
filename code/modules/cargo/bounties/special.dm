@@ -28,7 +28,7 @@
 
 /datum/bounty/more_bounties
 	name = "More Bounties"
-	description = "Complete enough bounties and CentCom will issue new ones!"
+	description = "Complete enough bounties and Overwatch will issue new ones."
 	reward = 5 // number of bounties
 	var/required_bounties = 5
 

@@ -272,3 +272,16 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/soup/saimin
 	category = CAT_SOUP
+
+/datum/crafting_recipe/food/xenstew
+	name = "Xen Stew"
+	reqs = list(
+		/datum/reagent/water = 30,
+		/obj/item/reagent_containers/glass/pot = 1,
+		/obj/item/reagent_containers/food/snacks/deadmouse = 2,
+		/obj/item/reagent_containers/pill/patch/grubnugget = 1,
+		/obj/item/reagent_containers/food/snacks/xenbranch = 1,
+		/obj/item/reagent_containers/food/snacks/meat/cutlet/xen = 4
+	)
+	result = /obj/item/reagent_containers/food/snacks/soup/xenstew
+	category = CAT_SOUP

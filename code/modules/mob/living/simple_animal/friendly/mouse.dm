@@ -320,21 +320,21 @@ GLOBAL_VAR_INIT(mouse_killed, 0)
 
 /obj/item/reagent_containers/food/snacks/deadmouse
 	name = "dead mouse"
-	desc = "It looks like somebody dropped the bass on it. A Lizard's favorite meal."
+	desc = "It looks like somebody dropped the bass on it."
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "mouse_gray_dead"
 	bitesize = 3
 	eatverb = "devour"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2)
+	list_reagents = list(/datum/reagent/consumable/nutriment/raw = 3, /datum/reagent/consumable/nutriment/vitamin = 2)
 	foodtype = MICE
 	grind_results = list(/datum/reagent/blood = 20, /datum/reagent/liquidgibs = 5)
 	var/meat_type = /obj/item/reagent_containers/food/snacks/meat/slab/mouse
 
 /obj/item/reagent_containers/food/snacks/deadmouse/fat
 	name = "dead fat mouse"
-	desc = "It looks like somebody dropped the bass on it. A Lizard's favorite meal."
+	desc = "It looks like somebody dropped the bass on it."
 	icon_state = "mouse_fat_dead"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 5) //same amount of food, but it's not healthy
+	list_reagents = list(/datum/reagent/consumable/nutriment/raw = 5) //same amount of food, but it's not healthy
 	junkiness = 25
 	foodtype = MICE | JUNKFOOD
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/slab/mouse/fat

@@ -115,6 +115,10 @@
 /obj/structure/halflife/trash/papers/three,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
+"hI" = (
+/mob/living/simple_animal/mouse,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/indoors/sewer/outlandscave)
 "hU" = (
 /obj/structure/table/halflife/metal/grate,
 /obj/effect/spawner/lootdrop/halflife/loot/ammo,
@@ -308,6 +312,10 @@
 "tk" = (
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors/sewage_dump)
+"tm" = (
+/obj/item/reagent_containers/glass/pot,
+/turf/open/floor/plating/ground/dirt/alt,
+/area/halflife/outdoors/forest)
 "ts" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -358,10 +366,6 @@
 /obj/structure/chair/office/halflife/blue,
 /turf/open/floor/plating/indoor/grooved2,
 /area/halflife/indoors/bunker)
-"xm" = (
-/obj/structure/flora/ausbushes/fullgrass,
-/turf/open/floor/plating/indoor/metal,
-/area/halflife/outdoors/forest)
 "xx" = (
 /mob/living/simple_animal/halflife/grub{
 	dir = 8
@@ -640,6 +644,10 @@
 /obj/structure/frame/machine,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
+"OA" = (
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/indoors/sewer/outlandscave)
 "OH" = (
 /mob/living/simple_animal/halflife/grub{
 	dir = 1
@@ -652,6 +660,13 @@
 "OV" = (
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
+"Pi" = (
+/mob/living/simple_animal/mouse,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/outdoors/forest)
+"PI" = (
+/turf/open/halflife/water/sewer/shallow,
+/area/halflife/indoors/sewer/outlandscave)
 "PL" = (
 /turf/closed/indestructible/syndicate,
 /area/halflife/indoors/sewer/tunnel)
@@ -688,6 +703,10 @@
 	},
 /turf/open/floor/plating/ground/brickroad,
 /area/halflife/outdoors/forest)
+"Ri" = (
+/mob/living/simple_animal/hostile/halflife/antlion_worker,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/indoors/sewer/outlandscave)
 "Ro" = (
 /obj/machinery/door/unpowered/halflife/metal/red{
 	keylock = 1;
@@ -721,6 +740,10 @@
 /obj/item/reagent_containers/pill/patch/medkit/vial,
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/bunker)
+"Tm" = (
+/obj/effect/spawner/lootdrop/halflife/loot/ammo,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/indoors/sewer/outlandscave)
 "Ua" = (
 /obj/structure/table/halflife/metal/grate,
 /obj/item/stack/tape,
@@ -1617,8 +1640,8 @@ fv
 fv
 fv
 dZ
-dZ
-dZ
+PI
+PI
 fv
 fv
 fv
@@ -1729,8 +1752,8 @@ xE
 dZ
 fv
 dZ
-dZ
-dZ
+PI
+PI
 fv
 fv
 fv
@@ -1746,7 +1769,7 @@ dZ
 dZ
 fv
 dZ
-dZ
+PI
 fv
 fv
 wG
@@ -1857,7 +1880,7 @@ dZ
 dZ
 dZ
 dZ
-dZ
+PI
 fv
 fv
 fv
@@ -2001,7 +2024,7 @@ dZ
 fv
 dZ
 dZ
-dZ
+PI
 fv
 wG
 el
@@ -2127,7 +2150,7 @@ dZ
 dZ
 dZ
 dZ
-dZ
+PI
 fv
 fv
 wG
@@ -2226,7 +2249,7 @@ fv
 dZ
 xE
 dZ
-dZ
+PI
 fv
 fv
 fv
@@ -2253,8 +2276,8 @@ fv
 fv
 dZ
 xx
-dZ
-dZ
+PI
+PI
 fv
 fv
 wG
@@ -2352,7 +2375,7 @@ fv
 fv
 dZ
 dZ
-dZ
+PI
 fv
 fv
 fv
@@ -2479,7 +2502,7 @@ fv
 dZ
 dZ
 dZ
-dZ
+PI
 fv
 fv
 fv
@@ -2605,7 +2628,7 @@ fv
 fv
 dZ
 dZ
-dZ
+PI
 fv
 fv
 fv
@@ -2734,8 +2757,8 @@ dZ
 dZ
 fv
 fv
-fv
-fv
+PI
+PI
 fv
 fv
 fv
@@ -2860,9 +2883,9 @@ dZ
 dZ
 dZ
 dZ
-dZ
-dZ
-fv
+PI
+PI
+PI
 fv
 fv
 fv
@@ -2987,21 +3010,21 @@ dZ
 dZ
 dZ
 dZ
+PI
+PI
+fv
+fv
+fv
+fv
+fv
+fv
+fv
 dZ
-dZ
 fv
 fv
 fv
 fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
+wG
 fv
 fv
 fv
@@ -3115,20 +3138,20 @@ dZ
 dZ
 dZ
 dZ
+PI
+fv
+fv
+fv
+fv
+fv
+fv
+fv
 dZ
+hI
 fv
 fv
 fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
+wG
 fv
 fv
 fv
@@ -3250,12 +3273,12 @@ fv
 fv
 fv
 fv
+dZ
 fv
 fv
 fv
 fv
-fv
-fv
+wG
 fv
 fv
 fv
@@ -3265,7 +3288,7 @@ dZ
 dZ
 dZ
 dZ
-dZ
+Ri
 fv
 fv
 fv
@@ -3377,12 +3400,12 @@ fv
 fv
 fv
 fv
+dZ
 fv
 fv
 fv
 fv
-fv
-fv
+wG
 fv
 fv
 fv
@@ -3503,13 +3526,13 @@ dZ
 dZ
 dZ
 dZ
+dZ
+dZ
 fv
 fv
 fv
 fv
-fv
-fv
-fv
+wG
 fv
 fv
 fv
@@ -3636,7 +3659,7 @@ fv
 fv
 fv
 fv
-fv
+wG
 fv
 fv
 fv
@@ -3763,7 +3786,7 @@ dZ
 fv
 fv
 fv
-fv
+wG
 fv
 fv
 fv
@@ -3890,7 +3913,7 @@ dZ
 fv
 fv
 fv
-fv
+wG
 fv
 fv
 fv
@@ -4017,7 +4040,7 @@ dZ
 dZ
 fv
 fv
-fv
+wG
 fv
 fv
 fv
@@ -4144,7 +4167,7 @@ dZ
 dZ
 fv
 fv
-fv
+wG
 fv
 fv
 fv
@@ -4271,7 +4294,7 @@ fv
 dZ
 fv
 fv
-fv
+wG
 fv
 fv
 dZ
@@ -4398,7 +4421,7 @@ dZ
 dZ
 fv
 fv
-fv
+wG
 fv
 fv
 dZ
@@ -4525,7 +4548,7 @@ dZ
 dZ
 fv
 fv
-fv
+wG
 fv
 dZ
 dZ
@@ -4652,9 +4675,9 @@ dZ
 fv
 fv
 fv
+wG
 fv
-fv
-dZ
+OA
 dZ
 dZ
 fv
@@ -4779,7 +4802,7 @@ fv
 fv
 fv
 fv
-fv
+wG
 fv
 fv
 fv
@@ -4906,7 +4929,7 @@ fv
 fv
 fv
 fv
-fv
+wG
 fv
 fv
 fv
@@ -5033,6 +5056,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -5045,8 +5069,7 @@ fv
 fv
 fv
 fv
-fv
-fv
+dZ
 dZ
 fv
 fv
@@ -5160,7 +5183,7 @@ fv
 fv
 fv
 fv
-fv
+wG
 fv
 fv
 fv
@@ -5175,7 +5198,7 @@ fv
 fv
 dZ
 dZ
-dZ
+fv
 fv
 fv
 wG
@@ -5287,7 +5310,7 @@ fv
 fv
 fv
 fv
-fv
+wG
 fv
 fv
 fv
@@ -5302,7 +5325,7 @@ fv
 fv
 dZ
 dZ
-dZ
+fv
 fv
 fv
 wG
@@ -5414,6 +5437,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -5427,9 +5451,8 @@ fv
 fv
 fv
 dZ
-xE
 dZ
-dZ
+fv
 fv
 fv
 wG
@@ -5541,6 +5564,9 @@ fv
 fv
 fv
 fv
+wG
+fv
+fv
 fv
 fv
 fv
@@ -5552,11 +5578,8 @@ fv
 fv
 fv
 dZ
-ja
-dZ
-dZ
-dZ
-dZ
+fv
+fv
 fv
 fv
 wG
@@ -5668,6 +5691,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -5677,14 +5701,13 @@ fv
 fv
 fv
 fv
+fv
+fv
+PI
 dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-xx
-dZ
+fv
+fv
+fv
 fv
 wG
 el
@@ -5795,6 +5818,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -5804,14 +5828,13 @@ fv
 fv
 fv
 fv
-xE
+fv
+fv
+PI
 dZ
 dZ
 fv
 fv
-dZ
-dZ
-dZ
 fv
 wG
 el
@@ -5922,6 +5945,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -5930,15 +5954,14 @@ fv
 fv
 fv
 fv
-Ws
+fv
+fv
+fv
+PI
 dZ
 dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-xE
+fv
+fv
 fv
 wG
 el
@@ -6049,6 +6072,10 @@ fv
 fv
 fv
 fv
+wG
+fv
+fv
+fv
 fv
 fv
 fv
@@ -6060,12 +6087,8 @@ fv
 fv
 dZ
 dZ
-dZ
-dZ
-dZ
-dZ
-dZ
-dZ
+fv
+fv
 fv
 wG
 el
@@ -6176,6 +6199,9 @@ fv
 fv
 fv
 fv
+wG
+fv
+fv
 fv
 fv
 fv
@@ -6187,11 +6213,8 @@ fv
 fv
 fv
 dZ
-xE
-dZ
-dZ
+PI
 fv
-dZ
 fv
 fv
 wG
@@ -6303,6 +6326,9 @@ fv
 fv
 fv
 fv
+wG
+fv
+fv
 fv
 fv
 fv
@@ -6314,12 +6340,9 @@ fv
 fv
 fv
 dZ
-xx
-dZ
+PI
 fv
 fv
-dZ
-dZ
 fv
 wG
 el
@@ -6430,6 +6453,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -6444,9 +6468,8 @@ fv
 fv
 dZ
 dZ
-dZ
-dZ
-OH
+PI
+fv
 fv
 wG
 el
@@ -6557,7 +6580,7 @@ fv
 fv
 fv
 fv
-fv
+wG
 fv
 fv
 fv
@@ -6572,8 +6595,8 @@ fv
 fv
 dZ
 dZ
-dZ
-dZ
+PI
+fv
 fv
 wG
 el
@@ -6684,6 +6707,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -6695,12 +6719,11 @@ fv
 fv
 fv
 fv
-fv
-fv
-fv
-dZ
 dZ
 xE
+dZ
+dZ
+fv
 fv
 wG
 el
@@ -6811,6 +6834,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -6820,13 +6844,12 @@ fv
 fv
 fv
 fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
+dZ
+ja
+dZ
+dZ
+dZ
+dZ
 fv
 fv
 wG
@@ -6938,6 +6961,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -6946,15 +6970,14 @@ fv
 fv
 fv
 fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
+dZ
+dZ
+dZ
+dZ
+dZ
+dZ
+xx
+Tm
 fv
 wG
 el
@@ -7065,6 +7088,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -7073,15 +7097,14 @@ fv
 fv
 fv
 fv
+xE
+dZ
+dZ
 fv
 fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
+dZ
+dZ
+dZ
 fv
 wG
 el
@@ -7192,6 +7215,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -7199,16 +7223,15 @@ fv
 fv
 fv
 fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
+Ws
+dZ
+dZ
+dZ
+PI
+PI
+dZ
+dZ
+Ri
 fv
 wG
 el
@@ -7319,6 +7342,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -7327,15 +7351,14 @@ fv
 fv
 fv
 fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
-fv
+OA
+dZ
+dZ
+dZ
+dZ
+dZ
+dZ
+dZ
 fv
 wG
 el
@@ -7370,7 +7393,7 @@ GX
 GX
 oG
 KM
-xm
+iU
 oG
 It
 It
@@ -7428,7 +7451,7 @@ GX
 GX
 Wx
 GX
-It
+tm
 VV
 GX
 EQ
@@ -7446,6 +7469,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -7455,13 +7479,12 @@ fv
 fv
 fv
 fv
+dZ
+xE
+dZ
+dZ
 fv
-fv
-fv
-fv
-fv
-fv
-fv
+dZ
 fv
 fv
 wG
@@ -7573,6 +7596,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -7582,14 +7606,13 @@ fv
 fv
 fv
 fv
+dZ
+xx
+dZ
 fv
 fv
-fv
-fv
-fv
-fv
-fv
-fv
+dZ
+PI
 fv
 wG
 el
@@ -7700,6 +7723,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -7711,12 +7735,11 @@ fv
 fv
 fv
 fv
-fv
-fv
-fv
-fv
-fv
-fv
+dZ
+dZ
+PI
+dZ
+OH
 fv
 wG
 el
@@ -7827,6 +7850,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -7839,11 +7863,10 @@ fv
 fv
 fv
 fv
-fv
-fv
-fv
-fv
-fv
+dZ
+dZ
+dZ
+dZ
 fv
 wG
 el
@@ -7954,6 +7977,7 @@ fv
 fv
 fv
 fv
+wG
 fv
 fv
 fv
@@ -7967,10 +7991,9 @@ fv
 fv
 fv
 fv
-fv
-fv
-fv
-fv
+PI
+PI
+xE
 fv
 wG
 el
@@ -12067,7 +12090,7 @@ It
 GX
 GX
 LN
-GX
+Pi
 oG
 oG
 GX

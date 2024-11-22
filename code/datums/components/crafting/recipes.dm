@@ -496,3 +496,12 @@
 	time = 10 SECONDS
 	category = CAT_MISC
 	crafting_interface = CRAFTING_BENCH_GENERAL
+
+
+/datum/crafting_recipe/metalpot
+	name = "Metal Cooking Pot"
+	result = /obj/item/reagent_containers/glass/pot
+	reqs = list(/obj/item/stack/sheet/metal = 8)
+	time = 12 SECONDS
+	category = CAT_MISC
+	crafting_interface = CRAFTING_BENCH_GENERAL

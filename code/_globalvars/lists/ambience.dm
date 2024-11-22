@@ -207,6 +207,18 @@ GLOBAL_LIST_INIT(hlforest_ambience,list(
 	'sound/ambience/forest/squeek1.ogg',
 	'sound/ambience/forest/buzz1.ogg',))
 
+GLOBAL_LIST_INIT(hlantcaves_ambience,list(
+	'sound/ambience/antcaves/dist_growl3.ogg',
+	'sound/ambience/antcaves/dist_grub1.ogg', 
+	'sound/ambience/antcaves/dist_grub2.ogg', 
+	'sound/ambience/antcaves/dist_grub3.ogg', 
+	'sound/ambience/antcaves/dist_grub4.ogg', 
+	'sound/ambience/antcaves/dist_grub5.ogg', 
+	'sound/ambience/antcaves/rumble1.ogg', 
+	'sound/ambience/antcaves/rumble2.ogg', 
+	'sound/ambience/antcaves/rumble3.ogg',  
+	'sound/ambience/antcaves/dist_growl4.ogg',))
+
 GLOBAL_LIST_INIT(halflife_ambient_music,list(
 	'sound/ambience/trainstation.ogg', 
 	'sound/ambience/vaguevoices.ogg', 
@@ -231,6 +243,7 @@ GLOBAL_LIST_INIT(ambience_assoc,list(
 	AMBIENCE_HLOUTSIDE = GLOB.hloutside_ambience,
 	AMBIENCE_HLINSIDE = GLOB.hlinside_ambience,
 	AMBIENCE_HLSEWERS = GLOB.hlsewers_ambience,
+	AMBIENCE_HLANTCAVES = GLOB.hlantcaves_ambience,
 	AMBIENCE_HLFOREST = GLOB.hlforest_ambience,
 	AMBIENCE_NONE = list()))
 

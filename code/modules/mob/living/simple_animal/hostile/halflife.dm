@@ -518,6 +518,10 @@
 	var/soundvary = FALSE
 	var/aggro_sound = list('sound/creatures/halflife/antlion/pain1.ogg', 'sound/creatures/halflife/antlion/pain2.ogg')
 	var/idle_sounds = list('sound/creatures/halflife/antlion/idle1.ogg','sound/creatures/halflife/antlion/idle2.ogg', ,'sound/creatures/halflife/antlion/idle3.ogg', ,'sound/creatures/halflife/antlion/idle4.ogg', ,'sound/creatures/halflife/antlion/idle5.ogg' )
+	var/spawn_sound
+
+/mob/living/simple_animal/hostile/halflife/antlion/digsound
+	spawn_sound = 'sound/creatures/halflife/antlion/digup1.ogg'
 
 /mob/living/simple_animal/hostile/halflife/antlion/OpenFire()
 	if(charging)
@@ -530,6 +534,11 @@
 	if(get_dist(src, target) <= 7)
 		charge()
 		ranged_cooldown = world.time + ranged_cooldown_time
+
+/mob/living/simple_animal/hostile/halflife/antlion/Initialize(mapload, wizard_summoned)
+	. = ..()
+	if(spawn_sound)
+		playsound(src, spawn_sound, 30, soundvary)
 
 /mob/living/simple_animal/hostile/halflife/antlion/proc/charge(atom/chargeat = target, delay = dash_delay)
 	if(!chargeat)
@@ -577,3 +586,75 @@
 
 /mob/living/simple_animal/hostile/halflife/antlion/spawn_gibs()
 	new /obj/effect/decal/antlionblood(drop_location(), src, get_static_viruses())
+
+//antlions
+/mob/living/simple_animal/hostile/halflife/antlion_worker
+	name = "Antlion Worker"
+	desc = "A large green bug filled to the brim with razer sharp armaments."
+	icon = 'icons/mob/halflife.dmi'
+	icon_state = "antlionworker"
+	icon_living = "antlionworker"
+	icon_dead = "antlionworker_dead"
+	faction = list("antlion")
+	mob_biotypes = MOB_ORGANIC
+	maxHealth = 50
+	health = 50
+	projectile_bonus_damage = 0.8 //so melee can be competitive against them, while projectiles dont instantly wipe them
+	harm_intent_damage = 5
+	melee_damage_lower = 15
+	melee_damage_upper = 20
+	bare_wound_bonus = 10
+	sharpness = SHARP_EDGED
+	attack_vis_effect = ATTACK_EFFECT_SLASH
+	ranged = 1 
+	retreat_distance = 3
+	minimum_distance = 4
+	projectiletype = /obj/projectile/acidspray
+	attacktext = "slashes"
+	attack_sound = 'sound/creatures/halflife/antlion/attack_single1.ogg'
+	combat_mode = TRUE
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	minbodytemp = 0
+	speed = -0.8
+	move_to_delay = 4
+	loot = list(/obj/effect/decal/cleanable/insectguts = 1)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/xen = 1)
+	butcher_difficulty = 50
+	footstep_type = FOOTSTEP_MOB_ANTLION
+	deathsound = 'sound/creatures/halflife/antlion_worker/antlion_burst.ogg'
+	var/soundvary = FALSE
+	var/fire_delay = 10
+	var/aggro_sound = list('sound/creatures/halflife/antlion/pain1.ogg', 'sound/creatures/halflife/antlion/pain2.ogg')
+	var/idle_sounds = list('sound/creatures/halflife/antlion/idle1.ogg','sound/creatures/halflife/antlion/idle2.ogg', ,'sound/creatures/halflife/antlion/idle3.ogg', ,'sound/creatures/halflife/antlion/idle4.ogg', ,'sound/creatures/halflife/antlion/idle5.ogg' )
+
+/mob/living/simple_animal/hostile/halflife/antlion_worker/Aggro()
+	. = ..()
+	set_combat_mode(TRUE)
+	if(prob(40))
+		var/chosen_sound = pick(aggro_sound)
+		playsound(src, chosen_sound, 50, FALSE)
+
+/mob/living/simple_animal/hostile/halflife/antlion_worker/Life(seconds_per_tick = SSMOBS_DT, times_fired)
+	..()
+	if(stat)
+		return
+	if(prob(15))
+		var/chosen_sound = pick(idle_sounds)
+		playsound(src, chosen_sound, 50, FALSE)
+
+/mob/living/simple_animal/hostile/halflife/antlion_worker/spawn_gibs()
+	new /obj/effect/decal/antlionblood(drop_location(), src, get_static_viruses())
+
+/mob/living/simple_animal/hostile/halflife/antlion_worker/OpenFire(atom/A)
+	playsound(src, 'sound/creatures/halflife/antlion_worker/antlion_prefire.ogg', 50, FALSE)
+	sleep(10)
+	Shoot(A)
+	ranged_cooldown = world.time + ranged_cooldown_time
+
+/obj/projectile/acidspray
+	name = "acid spray"
+	icon_state = "acidspray"
+	damage = 40
+	damage_type = BURN
+	nodamage = FALSE
+	hitsound = 'sound/creatures/halflife/antlion_worker/antlion_shoot.ogg'

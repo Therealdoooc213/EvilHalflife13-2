@@ -2,7 +2,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	icon = 'icons/obj/food/soupsalad.dmi'
 	trash = /obj/item/reagent_containers/glass/bowl
-	bitesize = 5
+	bitesize = 4
 	volume = 80
 	list_reagents = list(/datum/reagent/consumable/nutriment = 8, /datum/reagent/water = 5, /datum/reagent/consumable/nutriment/vitamin = 4)
 	tastes = list("tasteless soup" = 1)
@@ -253,3 +253,13 @@
 	tastes = list("eggs"= 1, "onion" = 1, "cabbage" = 1)
 	filling_color = "#9dc530"
 	foodtype = VEGETABLES | EGG | GRAIN
+
+/obj/item/reagent_containers/food/snacks/soup/xenstew
+	name = "xen stew"
+	desc = "A broth of various xenian flora and fauna, with some dead mice for added measure. Hearty, and... edible."
+	icon_state = "xenstew"
+	trash = /obj/item/reagent_containers/glass/pot
+	bonus_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/vitamin = 2)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 20, /datum/reagent/consumable/nutriment/vitamin = 4)
+	tastes = list("aliens" = 1, "meat" = 1)
+	foodtype = MEAT

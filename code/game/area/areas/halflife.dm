@@ -113,3 +113,12 @@
 
 /area/halflife/indoors/sewer/outlandscave
 	name = "\improper Outlands Caves"
+	ambience_index = AMBIENCE_HLANTCAVES
+	max_ambience_cooldown = 25 SECONDS
+	min_ambience_cooldown = 10 SECONDS
+
+/area/halflife/indoors/sewer/antlioncave
+	name = "\improper Infested Caves"
+	ambience_index = AMBIENCE_HLANTCAVES
+	max_ambience_cooldown = 25 SECONDS
+	min_ambience_cooldown = 10 SECONDS

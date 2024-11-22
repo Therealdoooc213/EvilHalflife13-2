@@ -10,6 +10,9 @@
 
 /obj/machinery/ration_vendor/interact(mob/living/carbon/human/user)
 	. = ..()
+	var/ration_quality = 3 //1 is terrible, 2 is lowgrade, 3 is standard, 4 is loyalty, 5 is great
+	var/vortigaunt = FALSE //are they a vortigaunt role?
+
 	if(.)
 		return
 	C = user.get_idcard(TRUE)
@@ -20,7 +23,7 @@
 	if(C.registered_account)
 		account = C.registered_account
 	else
-		say("No account detected.")  //No homeless crew.
+		say("Warning, an account is not detected on your ID card. Contact a local protection team member immediately.")
 		playsound(src, 'sound/machines/combine_button_locked.ogg', 50, TRUE, extrarange = -3)
 		return
 	if(!account.ration_voucher)
@@ -40,31 +43,34 @@
 			playsound(src, 'sound/machines/combine_button_locked.ogg', 50, TRUE, extrarange = -3)
 			return
 		if((R.fields["criminal"] == WANTED_LOYALIST)) //Loyalists get high grade rations
-			account.ration_voucher = FALSE
-			say("Enjoy your designated meal.")
-			new /obj/item/storage/box/halflife/loyaltyration(loc)
-			playsound(src, 'sound/machines/machine_vend.ogg', 50, TRUE, extrarange = -3)
-			return
+			ration_quality++
 		if((R.fields["criminal"] == WANTED_SUSPECT)) //Suspected people are given shit rations
-			account.ration_voucher = FALSE
-			say("Enjoy your designated meal.")
-			new /obj/item/storage/box/halflife/badration(loc)
-			playsound(src, 'sound/machines/machine_vend.ogg', 50, TRUE, extrarange = -3)
-			return
-	if(account?.account_job?.paycheck_department == ACCOUNT_SEC) //Metrocops and command staff get high grade rations.
-		account.ration_voucher = FALSE
-		say("Enjoy your designated meal.")
-		new /obj/item/storage/box/halflife/loyaltyration(loc)
-		playsound(src, 'sound/machines/machine_vend.ogg', 50, TRUE, extrarange = -3)
-		return
+			ration_quality--
+	if(account?.account_job?.paycheck_department == ACCOUNT_SEC) //Metrocops and command staff get higher grade rations.
+		ration_quality++
 	if(account?.account_job.title == "Vortigaunt Slave") //Vortigaunt slaves get shitty rations
-		account.ration_voucher = FALSE
-		say("Here is your designated meal, biotic.")
-		new /obj/item/storage/box/halflife/badration(loc)
-		playsound(src, 'sound/machines/machine_vend.ogg', 50, TRUE, extrarange = -3)
-		return
+		vortigaunt = TRUE
+		ration_quality--
 	account.ration_voucher = FALSE
-	say("Enjoy your designated meal.")
-	new /obj/item/storage/box/halflife/ration(loc)
-	playsound(src, 'sound/machines/machine_vend.ogg', 50, TRUE, extrarange = -3)
+	dispense(ration_quality, vortigaunt)
 	return
+
+/obj/machinery/ration_vendor/proc/dispense(quality, vortigaunt)
+	if(vortigaunt)
+		say("Here is your designated meal, biotic.")
+	else
+		say("Enjoy your designated meal.")
+
+	playsound(src, 'sound/machines/machine_vend.ogg', 50, TRUE, extrarange = -3)
+
+	switch(quality)
+		if(0 to 1)
+			new /obj/item/storage/box/halflife/badration(loc)
+		if(2)
+			new /obj/item/storage/box/halflife/badration(loc)
+		if(3)
+			new /obj/item/storage/box/halflife/ration(loc)
+		if(4)
+			new /obj/item/storage/box/halflife/loyaltyration(loc)
+		if(5 to 10)
+			new /obj/item/storage/box/halflife/loyaltyration(loc)

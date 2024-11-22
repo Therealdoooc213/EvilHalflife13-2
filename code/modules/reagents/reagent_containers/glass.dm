@@ -518,3 +518,14 @@
 	amount_per_transfer_from_this = 0 // No reagent transfer allowed, it's closed
 	possible_transfer_amounts = list(0)
 	to_chat(user, "<span class = 'notice'>You close the lid of [src] and lock it.</span>")
+
+/obj/item/reagent_containers/glass/pot
+	name = "metal pot"
+	desc = "A large pot for cooking in."
+	icon = 'icons/obj/food/containers.dmi'
+	icon_state = "pot"
+	w_class = WEIGHT_CLASS_BULKY
+	resistance_flags = NONE
+	possible_transfer_amounts = list(10, 25, 50, 100)
+	volume = 100
+	materials = list(/datum/material/iron=4000)
