@@ -781,6 +781,8 @@
 				/obj/item/skillchip/painsuppress,
 				/obj/item/skillchip/aiming,
 				/obj/item/clothing/head/beret/durathread/unitednations,
+				/obj/item/customblank,
+				/obj/item/customlock,
 				/obj/item/storage/firstaid/toxin
 				)
 
@@ -851,7 +853,9 @@
 				/obj/item/clothing/suit/armor/browncoat,
 				/obj/item/clothing/mask/gas/hl2/swat,
 				/obj/item/clothing/mask/gas/hl2/russia,
-				/obj/item/clothing/mask/bandana/black
+				/obj/item/clothing/mask/bandana/black,
+				/obj/item/clothing/suit/bio_suit/boiler,
+				/obj/item/clothing/head/bio_hood/boiler
 				)
 
 //ammo

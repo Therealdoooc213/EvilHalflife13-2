@@ -361,7 +361,7 @@
 
 	if(CONFIG_GET(flag/allow_respawn) == RESPAWN_FLAG_NEW_CHARACTER)
 		if("[client.prefs.default_slot]" in client.player_details.joined_as_slots)
-			tgui_alert(usr, "You already have played this character in this round!")
+			tgui_alert(usr, "You already have played this character in this round! Select a different one.")
 			return FALSE
 
 	if(SSshuttle.arrivals)

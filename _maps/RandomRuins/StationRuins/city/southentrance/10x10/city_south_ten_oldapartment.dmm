@@ -30,6 +30,10 @@
 "u" = (
 /turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors)
+"z" = (
+/mob/living/simple_animal/mouse,
+/turf/open/floor/plating/indoor/carpet/shaggy/violet,
+/area/halflife/indoors)
 "A" = (
 /obj/structure/halflife/trash/wood,
 /turf/open/floor/plating/indoor/woodc/mosaic,
@@ -68,9 +72,6 @@
 "Q" = (
 /obj/structure/halflife/trash/food/dinner,
 /turf/open/floor/plating/indoor/woodc/mosaic,
-/area/halflife/indoors)
-"T" = (
-/turf/open/floor/plating/indoor/carpet/shaggy/violet,
 /area/halflife/indoors)
 "Y" = (
 /turf/open/floor/plating/indoor/woodc/wide,
@@ -152,7 +153,7 @@ D
 D
 o
 Y
-T
+z
 D
 u
 u

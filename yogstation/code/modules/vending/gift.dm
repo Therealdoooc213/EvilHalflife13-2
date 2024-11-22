@@ -22,6 +22,8 @@
 					/obj/item/clothing/suit/jacket = 3,
 					/obj/item/clothing/head/beanie/black = 3,
 					/obj/item/clothing/head/flatcap = 3,
+					/obj/item/customlock = 2,
+					/obj/item/customblank = 2,
 					/obj/item/clothing/gloves/fingerless = 3)
 
 	contraband = list(/obj/item/lockpick = 1,

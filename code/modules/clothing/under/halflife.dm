@@ -150,7 +150,7 @@
 	item_state = "r_suit"
 	can_adjust = FALSE
 	has_sensor = LOCKED_SENSORS
-	sensor_mode = SENSOR_COORDS
+	sensor_mode = SENSOR_VITALS
 	random_sensor = FALSE
 	worn_icon = 'icons/mob/clothing/uniform/halflife.dmi'
 

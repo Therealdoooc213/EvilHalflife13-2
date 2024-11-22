@@ -116,9 +116,11 @@
 	ambience_index = AMBIENCE_HLANTCAVES
 	max_ambience_cooldown = 25 SECONDS
 	min_ambience_cooldown = 10 SECONDS
+	ambient_buzz = 'sound/ambience/antcaves/cave_howl_loop1.ogg'
 
 /area/halflife/indoors/sewer/antlioncave
 	name = "\improper Infested Caves"
 	ambience_index = AMBIENCE_HLANTCAVES
 	max_ambience_cooldown = 25 SECONDS
 	min_ambience_cooldown = 10 SECONDS
+	ambient_buzz = 'sound/ambience/antcaves/cave_howl_loop1.ogg'

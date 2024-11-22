@@ -1105,6 +1105,8 @@
 	icon_state = "combine_lethal"
 	base_icon_state = "combine"
 	installation = /obj/item/gun/ballistic/automatic/ar2
+	lethal_projectile_sound = 'sound/weapons/halflife/ar2fire.ogg'
+	stun_projectile_sound = 'sound/weapons/halflife/ar2fire.ogg'
 	shot_delay = 5
 	invisibility = 0
 	density = TRUE

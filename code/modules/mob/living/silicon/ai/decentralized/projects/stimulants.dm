@@ -37,8 +37,8 @@
 			to_chat(H, span_notice("Attention unit, Anti-Fatigue Rations are now at 3mg."))
 		else
 			to_chat(owner, span_warning("Their suit is not able to inject stimulants!"))
-		return FALSE
+			return FALSE
 	else
 		to_chat(owner, span_warning("They are not wearing a suit!"))
 		return FALSE
-	return TRUE
+

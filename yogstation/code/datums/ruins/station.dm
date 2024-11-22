@@ -327,6 +327,11 @@
 	suffix = "sewer_left_ten_weaponcraft.dmm"
 	name = "sewer left_ten_weaponcraft"
 
+/datum/map_template/ruin/station/sewer/leftentrance/tenxten/kitchen
+	id = "left_ten_kitchen"
+	suffix = "sewer_left_ten_kitchen.dmm"
+	name = "sewer left_ten_kitchen"
+
 ///The base for 10x10 right rooms
 /datum/map_template/ruin/station/sewer/rightentrance/tenxten
 	prefix = "_maps/RandomRuins/StationRuins/sewer/rightentrance/10x10/"

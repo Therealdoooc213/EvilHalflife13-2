@@ -1,0 +1,191 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"c" = (
+/obj/structure/halflife/barrel/double/red/two,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"d" = (
+/obj/structure/table/halflife/metal/alt,
+/obj/item/reagent_containers/food/drinks/soda_cans/breenwater,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"g" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"h" = (
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"n" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"o" = (
+/obj/structure/halflife/barrel/double/grey/one,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"p" = (
+/obj/structure/table/halflife/metal/alt,
+/obj/item/reagent_containers/glass/pot,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"s" = (
+/obj/structure/table/halflife/metal/alt,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"v" = (
+/obj/structure/table/halflife/metal/alt,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"G" = (
+/obj/machinery/griddle,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"K" = (
+/obj/structure/table/halflife/metal/alt,
+/obj/item/reagent_containers/food/snacks/deadmouse,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"N" = (
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"P" = (
+/turf/closed/wall/halflife/metal,
+/area/halflife/indoors/sewer)
+"U" = (
+/obj/structure/chair/halflife/metal/broken{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"V" = (
+/obj/structure/table/halflife/metal/alt,
+/obj/item/reagent_containers/food/snacks/xenbranch,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+"W" = (
+/mob/living/simple_animal/hostile/halflife/headcrab,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors/sewer)
+
+(1,1,1) = {"
+P
+P
+P
+P
+P
+n
+P
+P
+P
+P
+"}
+(2,1,1) = {"
+P
+s
+s
+P
+N
+N
+N
+N
+o
+P
+"}
+(3,1,1) = {"
+P
+N
+N
+g
+N
+h
+h
+h
+N
+P
+"}
+(4,1,1) = {"
+P
+N
+N
+P
+c
+N
+N
+N
+N
+P
+"}
+(5,1,1) = {"
+P
+N
+s
+P
+P
+P
+P
+P
+P
+P
+"}
+(6,1,1) = {"
+P
+N
+N
+N
+N
+h
+h
+h
+p
+P
+"}
+(7,1,1) = {"
+P
+s
+s
+N
+N
+P
+G
+h
+V
+P
+"}
+(8,1,1) = {"
+P
+s
+U
+N
+s
+P
+K
+W
+d
+P
+"}
+(9,1,1) = {"
+P
+N
+N
+N
+s
+P
+v
+K
+v
+P
+"}
+(10,1,1) = {"
+P
+P
+P
+P
+P
+P
+P
+P
+P
+P
+"}

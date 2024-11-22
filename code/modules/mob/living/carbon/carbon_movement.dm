@@ -42,7 +42,7 @@
 		else if(nutrition && stat != DEAD)
 			adjust_nutrition(-(HUNGER_FACTOR/10))
 			adjust_hydration(-(HUNGER_FACTOR/4))
-			if(m_intent == MOVE_INTENT_RUN)
+			if(m_intent == MOVE_INTENT_RUN) //Running doubles the amount of hunger/thirst loss.
 				adjust_nutrition(-(HUNGER_FACTOR/10))
 				adjust_hydration(-(HUNGER_FACTOR/4))
 		
