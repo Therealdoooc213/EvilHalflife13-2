@@ -16,6 +16,8 @@
 	exp_type = EXP_TYPE_CREW
 	exp_type_department = EXP_TYPE_COMMAND
 
+	ration_bonus = 3
+
 	cmode_music = 'sound/music/combat/branescan.ogg'
 
 	outfit = /datum/outfit/job/captain

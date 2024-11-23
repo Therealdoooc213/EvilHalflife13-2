@@ -16,6 +16,8 @@
 	base_access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_SURGERY, ACCESS_CLONING,
 					ACCESS_MECH_MEDICAL)
 
+	ration_bonus = 1
+
 	paycheck = PAYCHECK_MEDIUM
 	paycheck_department = ACCOUNT_MED
 

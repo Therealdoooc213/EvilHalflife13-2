@@ -10,6 +10,7 @@
 
 	outfit = /datum/outfit/job/vortigaunt_slave
 
+	ration_bonus = -2
 
 	paycheck = PAYCHECK_ZERO
 	paycheck_department = ACCOUNT_SRV

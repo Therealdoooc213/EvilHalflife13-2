@@ -256,6 +256,13 @@ Slimecrossing Items
 	list_reagents = list(/datum/reagent/consumable/nutriment = 4)
 	mood_penalty = /datum/mood_event/disgusting_food
 
+/obj/item/reagent_containers/food/snacks/rationpack/worstgrade
+	name = "bottom-grade nutriment bar"
+	desc = "A 'water' flavored ration nutriment bar. Tastes gross, but at least you won't be hungry. This one is very unfilling and terrible tasting."
+	icon_state = "lowrationpack"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3)
+	mood_penalty = /datum/mood_event/disgusting_food
+
 /obj/item/reagent_containers/food/snacks/rationpack/manufactured
 	name = "manufactured nutriment bar"
 	desc = "A 'water' flavored ration nutriment bar. Tastes gross, but at least you won't be hungry. This one looks freshly made."

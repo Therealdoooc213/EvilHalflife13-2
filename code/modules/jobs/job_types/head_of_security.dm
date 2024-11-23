@@ -15,6 +15,8 @@
 	exp_type = EXP_TYPE_CREW
 	exp_type_department = EXP_TYPE_SECURITY
 
+	ration_bonus = 3
+
 	cmode_music = 'sound/music/combat/apprehensionandevasion.ogg'
 
 	outfit = /datum/outfit/job/hos

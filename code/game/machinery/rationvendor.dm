@@ -42,15 +42,13 @@
 			say("Warning, your civil status is in question by local protection teams. Please apply.")
 			playsound(src, 'sound/machines/combine_button_locked.ogg', 50, TRUE, extrarange = -3)
 			return
-		if((R.fields["criminal"] == WANTED_LOYALIST)) //Loyalists get high grade rations
+		if((R.fields["criminal"] == WANTED_LOYALIST)) //Loyalists get a higher grade of rations
 			ration_quality++
-		if((R.fields["criminal"] == WANTED_SUSPECT)) //Suspected people are given shit rations
+		if((R.fields["criminal"] == WANTED_SUSPECT)) //Suspected people are given a worse grade of rations
 			ration_quality--
-	if(account?.account_job?.paycheck_department == ACCOUNT_SEC) //Metrocops and command staff get higher grade rations.
-		ration_quality++
-	if(account?.account_job.title == "Vortigaunt Slave") //Vortigaunt slaves get shitty rations
+	if(account?.account_job.title == "Vortigaunt Slave") //Shitty ration bonus handled in job datum, this just lets the ration vendor knows they're a vort
 		vortigaunt = TRUE
-		ration_quality--
+	ration_quality += account?.account_job.ration_bonus //applies job specific ration bonuses
 	account.ration_voucher = FALSE
 	dispense(ration_quality, vortigaunt)
 	return
@@ -65,12 +63,14 @@
 
 	switch(quality)
 		if(0 to 1)
-			new /obj/item/storage/box/halflife/badration(loc)
+			new /obj/item/storage/box/halflife/worstration(loc)
 		if(2)
 			new /obj/item/storage/box/halflife/badration(loc)
 		if(3)
 			new /obj/item/storage/box/halflife/ration(loc)
 		if(4)
+			new /obj/item/storage/box/halflife/betterration(loc)
+		if(5)
 			new /obj/item/storage/box/halflife/loyaltyration(loc)
-		if(5 to 10)
-			new /obj/item/storage/box/halflife/loyaltyration(loc)
+		if(6 to 10)
+			new /obj/item/storage/box/halflife/bestration(loc)

@@ -13,6 +13,7 @@
 	added_access = list()
 	base_access = list(ACCESS_MINING, ACCESS_MECH_MINING)
 
+	ration_bonus = 1
 
 	paycheck = PAYCHECK_MEDIUM
 	paycheck_department = ACCOUNT_CAR

@@ -539,6 +539,12 @@
 	icon_state = "breenwaterred"
 	list_reagents = list(/datum/reagent/water = 30)
 
+/obj/item/reagent_containers/food/drinks/soda_cans/breenwater/green
+	name = "green water can"
+	desc = "A special can of Breen's private reserve water, for the best of the best. Flavored, and topped off to full."
+	icon_state = "breenwatergreen"
+	list_reagents = list(/datum/reagent/water = 30, /datum/reagent/consumable/tonic = 10, /datum/reagent/consumable/sugar = 10)
+
 /obj/item/reagent_containers/food/drinks/soda_cans/lemon_lime
 	name = "orange soda"
 	desc = "You wanted ORANGE. It gave you Lemon Lime."

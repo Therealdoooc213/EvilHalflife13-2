@@ -47,6 +47,9 @@
 	/// What kind of mob type joining players with this job as their assigned role are spawned as.
 	var/spawn_type = /mob/living/carbon/human
 
+	/// Any bonuses to ration quality this job gets.
+	var/ration_bonus = 0
+
 	/// Alternate titles for the job
 	var/list/alt_titles
 	/// If this is set to TRUE, a text is printed to the player when jobs are assigned, telling him that he should let admins know that he has to disconnect.

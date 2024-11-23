@@ -15,6 +15,8 @@
 	exp_type = EXP_TYPE_CREW
 	exp_type_department = EXP_TYPE_CREW
 
+	ration_bonus = 3
+
 	outfit = /datum/outfit/job/hop
 
 	added_access = list(ACCESS_CAPTAIN)
