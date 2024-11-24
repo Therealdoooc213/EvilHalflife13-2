@@ -8,6 +8,8 @@
 	spawn_positions = 2
 	supervisors = "the foreman and labor lead"
 
+	ration_bonus = 1
+
 	outfit = /datum/outfit/job/miner
 
 	paycheck_department = ACCOUNT_CAR

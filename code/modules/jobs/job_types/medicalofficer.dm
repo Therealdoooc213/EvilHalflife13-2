@@ -12,7 +12,7 @@
 	exp_requirements = 0
 	exp_type = EXP_TYPE_CREW
 
-	ration_bonus = 1
+	ration_bonus = 2
 
 	cmode_music = 'sound/music/combat/branescan.ogg'
 

@@ -10,7 +10,7 @@
 
 /obj/machinery/ration_vendor/interact(mob/living/carbon/human/user)
 	. = ..()
-	var/ration_quality = 3 //1 is terrible, 2 is lowgrade, 3 is standard, 4 is loyalty, 5 is great
+	var/ration_quality = 3 //1 is terrible, 2 is lowgrade, 3 is standard, 4 is better/production grade, 5 is loyalty grade, 6 is best grade
 	var/vortigaunt = FALSE //are they a vortigaunt role?
 
 	if(.)
@@ -31,8 +31,13 @@
 		playsound(src, 'sound/machines/combine_button_locked.ogg', 50, TRUE, extrarange = -3)
 		return
 
-	if(!do_after(user, 3 SECONDS, src))
-		to_chat(usr, span_warning("Don't move while the machine is dispensing your ration!"))
+	say("Citizen Account Record detected. Determining ration reward.")
+
+	playsound(src, 'sound/machines/combine_button3.ogg', 50, TRUE, extrarange = -3)
+
+	if(!do_after(user, 4 SECONDS, src))
+		to_chat(usr, span_warning("The machine did not finish determining your ration reward!"))
+		playsound(src, 'sound/machines/combine_button_locked.ogg', 50, TRUE, extrarange = -3)
 		return
 
 	var/username = user.get_face_name(user.get_id_name())
@@ -49,6 +54,17 @@
 	if(account?.account_job.title == "Vortigaunt Slave") //Shitty ration bonus handled in job datum, this just lets the ration vendor knows they're a vort
 		vortigaunt = TRUE
 	ration_quality += account?.account_job.ration_bonus //applies job specific ration bonuses
+
+	say("Ration reward determined. Please wait for ration to be dispensed.")
+
+	playsound(src, 'sound/machines/combine_button5.ogg', 50, TRUE, extrarange = -3)
+
+	sleep(1 SECONDS)
+
+	playsound(src, 'sound/machines/combine_dispense.ogg', 50, TRUE, extrarange = -3)
+
+	sleep(2 SECONDS)
+
 	account.ration_voucher = FALSE
 	dispense(ration_quality, vortigaunt)
 	return

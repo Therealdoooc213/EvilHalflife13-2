@@ -10,7 +10,7 @@
 
 	outfit = /datum/outfit/job/vortigaunt_slave
 
-	ration_bonus = -2
+	ration_bonus = -1 //I HATE VORTS!!!
 
 	paycheck = PAYCHECK_ZERO
 	paycheck_department = ACCOUNT_SRV

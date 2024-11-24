@@ -1535,8 +1535,8 @@
 	icon_state = "ration-bettergrade"
 
 /obj/item/storage/box/halflife/betterration/PopulateContents()
-	new /obj/item/reagent_containers/food/snacks/rationpack/loyalty(src)
-	new /obj/item/reagent_containers/food/drinks/soda_cans/breenwater(src)
+	new /obj/item/reagent_containers/food/snacks/rationpack/box(src)
+	new /obj/item/reagent_containers/food/drinks/soda_cans/breenwater/red(src)
 
 /obj/item/storage/box/halflife/loyaltyration
 	name = "loyalty-grade ration pack"
@@ -1563,7 +1563,7 @@
 
 /obj/item/storage/box/halflife/badration
 	name = "low-grade ration pack"
-	desc = "A downgraded ration pack usually given to misbehaving citizens."
+	desc = "A downgraded ration pack usually given to misbehaving citizens or your average biotic. This is utter garbage."
 	foldable = null
 	icon_state = "ration-lowgrade"
 	custom_price = 25
@@ -1574,7 +1574,7 @@
 
 /obj/item/storage/box/halflife/worstration
 	name = "bottom-grade ration pack"
-	desc = "A downgraded ration pack, usually dumped out onto the floor for despicable citizens and most biotics. You're not sure if you can call the stuff inside edible, even compared to normal rations."
+	desc = "A downgraded ration pack, usually dumped out onto the floor for despicable citizens and exceptionally bad biotics. You're not sure if you can call the stuff inside edible, even compared to normal rations. This is absolutely terrible garbage."
 	foldable = null
 	icon_state = "ration-worstgrade"
 	custom_price = 25

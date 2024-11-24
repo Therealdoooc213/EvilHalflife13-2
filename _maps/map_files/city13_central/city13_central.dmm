@@ -623,6 +623,13 @@
 	},
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/indoors/slums)
+"cP" = (
+/obj/machinery/door/unpowered/halflife/seethrough/metal{
+	keylock = 1;
+	lockid = "trainstation"
+	},
+/turf/open/floor/plating/indoor/trainfloor,
+/area/halflife/indoors/trainstation)
 "cQ" = (
 /obj/structure/rack,
 /obj/item/grenade/barrier,
@@ -7767,13 +7774,6 @@
 "Jz" = (
 /turf/closed/wall/halflife/brick,
 /area/halflife/indoors/scienceunion)
-"JA" = (
-/obj/machinery/door/unpowered/halflife/seethrough/metal{
-	keylock = 1;
-	lockid = "trainstation"
-	},
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors/trainstation)
 "JB" = (
 /obj/structure/ethernet_cable{
 	icon_state = "0-4"
@@ -38223,7 +38223,7 @@ Kw
 EK
 Ux
 IN
-JA
+cP
 Nd
 Nd
 Nd
