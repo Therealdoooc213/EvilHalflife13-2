@@ -188,3 +188,8 @@
 /datum/action/item_action/change_laser_sight_color/apply_button_icon(atom/movable/screen/movable/action_button/button, force)
 	button_icon_state = "laser_sight[att?.is_on ? "_on" : ""]"
 	..()
+
+/obj/item/attachment/laser_sight/combine
+	is_on = TRUE
+	laser_color = rgb(0, 162, 255)
+	actions_list = list(/datum/action/item_action/toggle_laser_sight)

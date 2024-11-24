@@ -1,7 +1,7 @@
 #define STUNBATON_DISCHARGE_INTERVAL 13 //amount of active processes it takes for the stun baton to start discharging
 /obj/item/melee/baton
 	name = "stun baton"
-	desc = "Civil protection issue baton equipped with a toggleable electrocutive function to disable unruly citizens.."
+	desc = "Civil protection issue baton equipped with a toggleable electrocutive function to disable unruly citizens."
 	icon = 'icons/obj/weapons/baton.dmi'
 	icon_state = "stunbaton"
 	item_state = "baton"

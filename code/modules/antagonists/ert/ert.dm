@@ -88,6 +88,9 @@
 /datum/antagonist/ert/overwatch/ar2
 	outfit = /datum/outfit/ert/overwatch/ar2
 
+/datum/antagonist/ert/overwatch/sniper
+	outfit = /datum/outfit/ert/overwatch/sniper
+
 /datum/antagonist/ert/overwatch/ar2/elite
 	outfit = /datum/outfit/ert/overwatch/ar2/elite
 

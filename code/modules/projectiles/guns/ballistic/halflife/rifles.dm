@@ -73,3 +73,45 @@
 	force = 12
 	spread = 0
 	mag_type = /obj/item/ammo_box/magazine/internal/bow/rebar
+
+/obj/item/gun/ballistic/combine_sniper
+	name = "combine sniper rifle"
+	desc = "A pulse based marksmen rifle which fires high velocity, devestating rounds."
+	icon = 'icons/obj/guns/halflife/projectile.dmi'
+	icon_state = "combine_sniper"
+	item_state = "combine_sniper"
+	fire_sound = 'sound/weapons/halflife/sniper.ogg'
+
+	var/charge_sound = 'sound/weapons/halflife/sniper_charge.ogg'
+
+	fire_sound_volume = 60
+	vary_fire_sound = FALSE
+	force = 15
+	recoil = 4
+	weapon_weight = WEAPON_HEAVY
+	fire_delay = 20
+	w_class = WEIGHT_CLASS_BULKY
+
+	zoomable = TRUE
+	zoom_amt = 10 //Long range, enough to see in front of you, but no tiles behind you.
+	zoom_out_amt = 5
+
+	mag_type = /obj/item/ammo_box/magazine/combine_sniper
+	pin = /obj/item/firing_pin/implant/mindshield
+	var/obj/item/attachment/laser_sight/combine/laser
+
+/obj/item/gun/ballistic/combine_sniper/Initialize(mapload)
+	. = ..()
+	laser = new(src)
+	laser.on_attach(src)
+
+/obj/item/gun/ballistic/combine_sniper/afterattack(atom/target, mob/living/user, flag, params)
+	if(laser.is_on == FALSE)
+		to_chat(user, span_userdanger("The laser pointer needs to be on to fire \the [src]!"))
+		return
+	. = ..()
+
+/obj/item/gun/ballistic/combine_sniper/shoot_live_shot(mob/living/user, pointblank = 0, atom/pbtarget = null, message = 1)
+	. = ..()
+	sleep(0.75 SECONDS)
+	playsound(user, charge_sound, fire_sound_volume, vary_fire_sound)

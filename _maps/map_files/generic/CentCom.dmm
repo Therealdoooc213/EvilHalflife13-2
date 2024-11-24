@@ -16346,9 +16346,6 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced,
-/obj/item/gun/energy/beam_rifle{
-	pin = /obj/item/firing_pin
-	},
 /turf/open/floor/plasteel,
 /area/centcom/testchamber)
 "aXv" = (

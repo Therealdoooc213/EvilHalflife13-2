@@ -535,12 +535,6 @@
 /area/awaymission/vr/syndicate)
 "dx" = (
 /obj/structure/rack,
-/obj/item/gun/energy/beam_rifle,
-/obj/item/gun/energy/beam_rifle,
-/obj/item/gun/energy/beam_rifle,
-/obj/item/gun/energy/beam_rifle,
-/obj/item/gun/energy/beam_rifle,
-/obj/item/gun/energy/beam_rifle,
 /turf/open/indestructible,
 /area/awaymission/vr/murderdome)
 "dy" = (

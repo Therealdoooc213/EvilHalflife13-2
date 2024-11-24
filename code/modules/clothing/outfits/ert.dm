@@ -433,6 +433,11 @@
 	suit_store = /obj/item/gun/ballistic/automatic/ar2
 	belt = /obj/item/storage/belt/civilprotection/overwatch/ar2
 
+/datum/outfit/ert/overwatch/sniper
+	name = "OTA Sniper Unit"
+	suit_store = /obj/item/gun/ballistic/combine_sniper
+	belt = /obj/item/storage/belt/civilprotection/overwatch/sniper
+
 /datum/outfit/ert/overwatch/ar2/elite
 	name = "OTA Elite Unit"
 	mask = /obj/item/clothing/mask/gas/civilprotection/overwatch/elite

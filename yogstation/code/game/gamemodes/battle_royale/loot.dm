@@ -274,7 +274,6 @@ GLOBAL_LIST_INIT(battleroyale_weapon, list(
 		/obj/item/gun/ballistic/automatic/k41s = -5,
 		/obj/item/clothing/head/det_hat/evil = -5, //infinite ammo ranged weapon with high dps
 
-		/obj/item/gun/energy/beam_rifle = -6,
 		/obj/item/gun/ballistic/rifle/sniper_rifle = -6,
 		/obj/item/gun/ballistic/automatic/laser/lasgun = -6,
 		/obj/item/gun/ballistic/automatic/laser/laspistol = -6,

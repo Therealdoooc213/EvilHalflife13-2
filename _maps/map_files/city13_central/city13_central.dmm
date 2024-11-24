@@ -258,6 +258,10 @@
 /obj/effect/landmark/start/citizen,
 /turf/open/floor/plating/indoor/carpet,
 /area/halflife/indoors/bar)
+"bi" = (
+/obj/item/reagent_containers/food/drinks/soda_cans/breenwater/red,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors/townhall)
 "bj" = (
 /obj/structure/table/halflife/no_smooth/large/metal{
 	dir = 4
@@ -612,6 +616,14 @@
 	},
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/productioncenter)
+"cM" = (
+/obj/structure/table/halflife/wood,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/item/reagent_containers/food/snacks/flavorbar,
+/turf/open/floor/plating/indoor/woodc/fancy,
+/area/halflife/indoors/townhall)
 "cN" = (
 /obj/structure/halflife/trash/wood,
 /turf/open/floor/plating/ground/sidewalk/inner,
@@ -796,6 +808,13 @@
 	},
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors)
+"dK" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/breenwater/green,
+/turf/open/floor/plating/indoor/carpet/violet,
+/area/halflife/indoors/townhall)
 "dL" = (
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/productioncenter)
@@ -1779,13 +1798,6 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/townhall)
-"iz" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/item/storage/box/halflife/loyaltyration,
-/turf/open/floor/plating/indoor/carpet/violet,
-/area/halflife/indoors/townhall)
 "iA" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -1914,14 +1926,6 @@
 /obj/structure/railing/halflife/solo,
 /turf/open/floor/plating/ground/dirt,
 /area/halflife/outdoors)
-"jb" = (
-/obj/structure/table/halflife/wood,
-/obj/item/storage/box/halflife/loyaltyration,
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/open/floor/plating/indoor/woodc/fancy,
-/area/halflife/indoors/townhall)
 "jc" = (
 /obj/structure/table/halflife/metal/grate,
 /obj/item/reagent_containers/food/drinks/soda_cans/breenwater,
@@ -4542,6 +4546,11 @@
 	},
 /turf/open/floor/plating/indoor/concrete,
 /area/halflife/indoors/trainstation)
+"uS" = (
+/obj/structure/table/halflife/no_smooth/large/metal,
+/obj/item/reagent_containers/food/snacks/rationpack/box,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors/townhall)
 "uT" = (
 /obj/structure/table/halflife/no_smooth/large/metal{
 	dir = 8
@@ -6820,14 +6829,6 @@
 /obj/item/toy/beach_ball/holoball,
 /turf/open/floor/plating/ground/sidewalk/inner,
 /area/halflife/outdoors/alley)
-"Fb" = (
-/obj/item/storage/box/halflife/loyaltyration,
-/obj/structure/table/halflife/wood,
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/open/floor/plating/indoor/woodc/fancy,
-/area/halflife/indoors/townhall)
 "Fd" = (
 /obj/item/surgicaldrill,
 /obj/item/cautery,
@@ -38518,14 +38519,14 @@ XQ
 XQ
 yr
 PV
-iz
+dK
 za
 Wz
 XQ
 Ia
 ME
 XQ
-LD
+bi
 RQ
 LD
 LD
@@ -38760,7 +38761,7 @@ tE
 XQ
 RA
 kE
-jb
+cM
 OY
 Bb
 XQ
@@ -38770,7 +38771,7 @@ XQ
 Uz
 RQ
 CB
-Uz
+uS
 XQ
 TM
 ME
@@ -39365,7 +39366,7 @@ Np
 XQ
 IV
 zo
-Fb
+cM
 Kl
 Bb
 XQ
