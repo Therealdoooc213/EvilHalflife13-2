@@ -86,10 +86,11 @@
 
 	fire_sound_volume = 60
 	vary_fire_sound = FALSE
+	spread = 5 //very accurate
 	force = 15
 	recoil = 4
 	weapon_weight = WEAPON_HEAVY
-	fire_delay = 20
+	fire_delay = 25
 	w_class = WEIGHT_CLASS_BULKY
 
 	zoomable = TRUE
@@ -113,5 +114,5 @@
 
 /obj/item/gun/ballistic/combine_sniper/shoot_live_shot(mob/living/user, pointblank = 0, atom/pbtarget = null, message = 1)
 	. = ..()
-	sleep(0.75 SECONDS)
+	sleep(1.25 SECONDS)
 	playsound(user, charge_sound, fire_sound_volume, vary_fire_sound)
