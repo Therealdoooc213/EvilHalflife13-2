@@ -7,8 +7,8 @@
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | ERT_SPAWN
 	siemens_coeff = 0
 	speedmod = 0.66
-	brutemod = 1.25
-	burnmod = 1.25
+	brutemod = 1.5
+	burnmod = 1.5
 	punchdamagelow = 4
 	punchdamagehigh = 8
 	screamsound = 'sound/voice/stalker/stalker_scream.ogg'

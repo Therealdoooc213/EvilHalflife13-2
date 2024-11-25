@@ -135,7 +135,7 @@
 	held_state = "grub"
 	deathsound = 'sound/creatures/halflife/grub/agrub_squish.ogg'
 	density = FALSE
-	var/squish_chance = 50
+	//var/squish_chance = 50
 	var/idle_sounds = list('sound/creatures/halflife/grub/idle1.ogg','sound/creatures/halflife/grub/idle2.ogg', ,'sound/creatures/halflife/grub/idle3.ogg', ,'sound/creatures/halflife/grub/idle4.ogg')
 
 /mob/living/simple_animal/halflife/grub/Life(seconds_per_tick = SSMOBS_DT, times_fired)
@@ -146,6 +146,8 @@
 		var/chosen_sound = pick(idle_sounds)
 		playsound(src, chosen_sound, 50, FALSE)
 
+//commented out until i figure a way to make antlions not squash their own babies
+/*
 /mob/living/simple_animal/halflife/grub/Initialize(mapload)
 	. = ..()
 	AddComponent( \
@@ -154,3 +156,4 @@
 		squash_damage = 6, \
 		squash_flags = SQUASHED_ALWAYS_IF_DEAD|SQUASHED_DONT_SQUASH_IN_CONTENTS, \
 	)
+*/

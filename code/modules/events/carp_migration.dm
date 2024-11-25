@@ -22,8 +22,17 @@
 /datum/round_event/carp_migration/start()
 	var/mob/living/simple_animal/hostile/halflife/zombie/fish
 	for(var/obj/effect/landmark/carpspawn/C in GLOB.landmarks_list)
-		if(prob(60))
-			fish = new (C.loc)
+		if(prob(SSsociostability.getloss() / 20)) //less sociostability = more dangerous zombies
+			var/type = pickweight(list("zombine" = 40, "fast" = 30, "poison" = 30))
+			switch(type)
+				if("zombine")
+					fish = new /mob/living/simple_animal/hostile/halflife/zombie/zombine(C.loc)
+				if("fast")
+					fish = new /mob/living/simple_animal/hostile/halflife/zombie/fast(C.loc)
+				if("poison")
+					fish = new /mob/living/simple_animal/hostile/halflife/zombie/poison(C.loc)
+		else if(prob(60))
+			fish = new /mob/living/simple_animal/hostile/halflife/zombie(C.loc)
 		else
 			fish = new /mob/living/simple_animal/hostile/halflife/headcrab(C.loc)
 	fishannounce(fish)

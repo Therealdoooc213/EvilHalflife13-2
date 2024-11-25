@@ -201,12 +201,13 @@
 
 /obj/item/clothing/neck/anti_magic_collar
 	name = "vortessence restrictor"
-	desc = "A contraption which prevents vortigaunts from using the vortessence. Alt clicking with a high level identification card may unlock it..."
+	desc = "A contraption which prevents vortigaunts from using the vortessence. Alt clicking with a high level identification card may unlock it, or you can use a high power saw to try to cut it off."
 	icon_state = "antimagiccollar"
 	resistance_flags = FIRE_PROOF
 	req_access = list(ACCESS_SEC_BASIC) //what access can unlock a restrictor
 	species_restricted = VORTS_ONLY
 	var/inmate_name = "none"
+	var/lockactive = FALSE
 
 /obj/item/clothing/neck/anti_magic_collar/Initialize(mapload)
 	..()
@@ -220,6 +221,7 @@
 	. = ..()
 	if((slot & slot_flags))
 		to_chat(user, span_danger("You hear the collar click as it locks around your neck!"))
+		lockactive = TRUE
 		ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT(type))
 		RegisterSignal(user, COMSIG_MOB_RESTRICT_MAGIC, PROC_REF(restrict_casting_magic))
 		inmate_name = user.name
@@ -241,7 +243,44 @@
 
 /obj/item/clothing/neck/anti_magic_collar/proc/unlock()
 	audible_message(span_danger("You hear a click, the restrictor unlocks, and is now removable!"))
+	lockactive = FALSE
 	REMOVE_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT(type))
+
+/obj/item/clothing/neck/anti_magic_collar/attackby(obj/item/W, mob/user, params)
+	if(!lockactive)
+		to_chat(user, span_notice("The collar isn't locked. No point in cutting it."))
+		return
+
+	if(istype(W, /obj/item/circular_saw))
+		var/mob/living/carbon/human/H = user
+
+		if (!H)
+			return
+
+		if(tgui_alert(H, "Are you sure you want to try cutting this collar? It may be very dangerous, even deadly.", "Cut Collar", list("Yes", "No")) == "Yes")
+			to_chat(H, span_userdanger("You start sawing into the collar..."))
+			if(do_after(H, 12 SECONDS, src))
+				playsound(src, 'sound/surgery/saw.ogg', 50, TRUE)
+				var/obj/item/bodypart/head/head = H.get_bodypart("head")
+				if(prob(50))
+					to_chat(H, span_userdanger("The saw slips from the collar, and plunges directly into your neck."))
+					sleep(0.5 SECONDS)
+					H.emote("scream")
+					head.force_wound_upwards(/datum/wound/slash/critical)
+					H.apply_damage(200, BRUTE, head)
+				else if(prob(60))
+					to_chat(H, span_userdanger("The saw digs deep into the collar, but slips and nicks your neck. You quickly pull away for now, but you can retry."))
+					H.apply_damage(25, BRUTE, head)
+				else
+					head.force_wound_upwards(/datum/wound/slash/moderate)
+					H.apply_damage(50, BRUTE, head)
+					to_chat(H, span_userdanger("The saw digs deep into the collar, eventually even reaching the flesh. The pain is unbearable, but you power through and unlock the collar."))
+					H.emote("scream")
+					unlock()
+			else
+				to_chat(H, span_notice("You stop midway, and fail to cut anything."))
+		else
+			to_chat(H, span_notice("You decide to not risk cutting off your head."))
 
 //////////////
 //DOPE BLING//

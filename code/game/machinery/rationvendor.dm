@@ -30,6 +30,10 @@
 		say("You do not have a usable ration voucher in your account.")
 		playsound(src, 'sound/machines/combine_button_locked.ogg', 50, TRUE, extrarange = -3)
 		return
+	if(SSration.cycle_active == FALSE)
+		say("A ration cycle is not currently active.") // You snooze you lose.
+		playsound(src, 'sound/machines/combine_button_locked.ogg', 50, TRUE, extrarange = -3)
+		return
 
 	say("Citizen Account Record detected. Determining ration reward.")
 

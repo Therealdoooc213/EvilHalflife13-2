@@ -1421,6 +1421,12 @@
 /obj/structure/flora/ausbushes/pointybush,
 /turf/open/floor/plating/ground/dirt/alt,
 /area/halflife/outdoors)
+"gD" = (
+/obj/structure/sign/block/twothree{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/ground/sidewalk,
+/area/halflife/outdoors)
 "gE" = (
 /obj/machinery/door/unpowered/halflife/wood{
 	dir = 8
@@ -2947,6 +2953,12 @@
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/on,
 /turf/open/floor/plasteel/dark/telecomms,
 /area/halflife/indoors)
+"nr" = (
+/obj/structure/sign/block/twofour{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/ground/sidewalk,
+/area/halflife/outdoors)
 "ns" = (
 /obj/machinery/vending/breenwater,
 /turf/open/floor/plating/indoor/tiled10,
@@ -7488,13 +7500,6 @@
 	},
 /turf/open/floor/plating/indoor/metal/grate,
 /area/halflife/indoors/sewer)
-"Io" = (
-/obj/structure/table/halflife/metal,
-/obj/machinery/button/door{
-	id = 10
-	},
-/turf/open/floor/plating/indoor/trainfloor,
-/area/halflife/indoors/trainstation)
 "Ip" = (
 /obj/machinery/camera{
 	c_tag = "Factory Engineering";
@@ -7653,6 +7658,12 @@
 	},
 /turf/open/floor/plating/indoor/showroom,
 /area/halflife/indoors/restaurant)
+"Jc" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = 11
+	},
+/turf/open/floor/plating/indoor/trainfloor,
+/area/halflife/indoors/trainstation)
 "Jd" = (
 /obj/machinery/turnstile/brig/halflife/forcefield/science{
 	dir = 4
@@ -8153,12 +8164,6 @@
 	},
 /turf/open/floor/plating/indoor/carpet,
 /area/halflife/indoors/bar)
-"Lx" = (
-/obj/machinery/door/unpowered/halflife/wood{
-	name = "administrators office"
-	},
-/turf/open/floor/plating/indoor/woodc/fancy,
-/area/halflife/indoors/townhall)
 "Lz" = (
 /obj/machinery/camera{
 	c_tag = "Train Station West";
@@ -8767,6 +8772,12 @@
 	},
 /turf/open/floor/plating/indoor/trainfloor,
 /area/halflife/indoors/trainstation)
+"Oi" = (
+/obj/structure/sign/block/onesix{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/ground/sidewalk/inner,
+/area/halflife/outdoors)
 "Oj" = (
 /obj/machinery/camera{
 	c_tag = "East Road Checkpoint";
@@ -9022,6 +9033,14 @@
 	dir = 1
 	},
 /area/halflife/indoors)
+"Pt" = (
+/obj/machinery/door/unpowered/halflife/wood{
+	keylock = 1;
+	lockid = "townhall";
+	name = "administrators office"
+	},
+/turf/open/floor/plating/indoor/woodc/fancy,
+/area/halflife/indoors/townhall)
 "Pu" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/plant_analyzer,
@@ -10392,6 +10411,12 @@
 /obj/effect/turf_decal/loading_area,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/productioncenter)
+"VO" = (
+/obj/structure/sign/block/onefive{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/ground/sidewalk/inner,
+/area/halflife/outdoors)
 "VP" = (
 /obj/machinery/computer/bounty{
 	dir = 1
@@ -10475,6 +10500,20 @@
 	},
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/scienceunion)
+"Wk" = (
+/obj/structure/table/halflife/metal,
+/obj/machinery/button/door{
+	id = 10;
+	name = "left shutter button";
+	pixel_x = -8
+	},
+/obj/machinery/button/door{
+	id = 11;
+	name = "right shutter button";
+	pixel_x = 8
+	},
+/turf/open/floor/plating/indoor/trainfloor,
+/area/halflife/indoors/trainstation)
 "Wl" = (
 /obj/structure/alien/weeds/node,
 /turf/open/floor/plating/ground/dirt,
@@ -11231,10 +11270,6 @@
 /obj/structure/alien/weeds,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
-"ZN" = (
-/obj/machinery/door/unpowered/halflife/wood,
-/turf/closed/wall/halflife/brick,
-/area/halflife/indoors)
 "ZP" = (
 /obj/effect/turf_decal/siding/thinplating,
 /turf/open/floor/plating/ground/dirt/alt,
@@ -30475,7 +30510,7 @@ Iw
 Iw
 Iw
 Iw
-IN
+gD
 Kw
 EK
 Ux
@@ -30566,7 +30601,7 @@ Iw
 Iw
 Iw
 Iw
-fT
+VO
 IN
 Kw
 EK
@@ -33984,7 +34019,7 @@ Qi
 Qi
 Xq
 Iw
-IN
+gD
 Kw
 EK
 Ux
@@ -34196,7 +34231,7 @@ ul
 ul
 Yb
 sS
-fT
+VO
 IN
 Kw
 EK
@@ -38401,7 +38436,7 @@ zn
 qJ
 Yv
 Bb
-Lx
+Pt
 ME
 ME
 XQ
@@ -38824,7 +38859,7 @@ gy
 SO
 gy
 hK
-IN
+nr
 Kw
 EK
 Ux
@@ -39084,7 +39119,7 @@ dM
 Oe
 Nd
 eI
-Io
+Wk
 Nd
 Nd
 eI
@@ -39203,7 +39238,7 @@ Nd
 Nd
 Nd
 gZ
-Nd
+Jc
 eI
 Lj
 Nd
@@ -40004,7 +40039,7 @@ RI
 TT
 kJ
 XQ
-fT
+Oi
 IN
 Kw
 EK
@@ -42817,7 +42852,7 @@ Iw
 rj
 rj
 Iw
-IN
+nr
 Kw
 EK
 Ux
@@ -43306,7 +43341,7 @@ Kw
 EK
 Ux
 IN
-ZN
+DQ
 NC
 NC
 DQ
