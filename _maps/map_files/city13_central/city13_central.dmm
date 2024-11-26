@@ -22,15 +22,6 @@
 /obj/item/reagent_containers/food/condiment/saltshaker,
 /turf/open/floor/plating/indoor/carpet,
 /area/halflife/indoors/restaurant)
-"ah" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/machinery/door/unpowered/halflife/seethrough/grate{
-	dir = 1
-	},
-/turf/open/floor/plating/indoor/metal/plate,
-/area/halflife/indoors/sewer)
 "ai" = (
 /obj/structure/stairs/white{
 	dir = 8
@@ -1007,6 +998,12 @@
 	},
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors)
+"eG" = (
+/obj/structure/table/halflife/metal/grate,
+/obj/item/paper_bin,
+/obj/item/pen,
+/turf/open/floor/plating/indoor/trainfloor,
+/area/halflife/indoors/trainstation)
 "eH" = (
 /obj/structure/halflife/road_barrier{
 	dir = 1
@@ -1802,6 +1799,16 @@
 /obj/item/reagent_containers/food/condiment/peppermill,
 /turf/open/floor/plating/indoor/carpet,
 /area/halflife/indoors/restaurant)
+"iv" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/chair/halflife/metal/blue{
+	dir = 4
+	},
+/obj/effect/landmark/start/citizen,
+/turf/open/floor/plating/indoor/trainfloor,
+/area/halflife/indoors/trainstation)
 "ix" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -6356,11 +6363,6 @@
 	},
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/productioncenter)
-"CI" = (
-/obj/structure/halflife/fence/wire/end/east,
-/obj/structure/halflife/fence/vertical/wire/east,
-/turf/open/floor/plating/indoor/trainfloor,
-/area/halflife/indoors/trainstation)
 "CJ" = (
 /obj/structure/table/halflife/no_smooth/large/wood/desk,
 /obj/item/clothing/head/flatcap,
@@ -7136,6 +7138,10 @@
 /obj/structure/flora/xen/tinyshrooms,
 /turf/open/floor/plating/indoor/metal/grate,
 /area/halflife/indoors/slums)
+"Gp" = (
+/obj/machinery/stalker_chamber,
+/turf/open/floor/plating/indoor/sterilesquares,
+/area/halflife/indoors/scienceunion)
 "Gr" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -8365,6 +8371,10 @@
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors)
+"Mh" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/metal/plate,
+/area/halflife/indoors/sewer)
 "Mi" = (
 /obj/machinery/camera{
 	c_tag = "Plaza Central East";
@@ -8381,12 +8391,6 @@
 	},
 /turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors/scienceunion)
-"Mk" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/plating/indoor/trainfloor,
-/area/halflife/indoors/trainstation)
 "Ml" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 1
@@ -9668,6 +9672,11 @@
 /obj/structure/bed/halflife/mattress/yellowed,
 /turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors/bar)
+"So" = (
+/obj/structure/table/halflife/metal,
+/obj/structure/halflife/trash/food/glass,
+/turf/open/floor/plating/indoor/trainfloor,
+/area/halflife/indoors/trainstation)
 "Sp" = (
 /turf/open/floor/plating/indoor/carpet,
 /area/halflife/indoors/townhall)
@@ -10538,6 +10547,12 @@
 	dir = 8
 	},
 /area/halflife/indoors/sewer)
+"Wb" = (
+/obj/structure/table/halflife/metal,
+/obj/machinery/light/small,
+/obj/structure/halflife/trash/glass/basic,
+/turf/open/floor/plating/indoor/trainfloor,
+/area/halflife/indoors/trainstation)
 "Wc" = (
 /turf/open/floor/plating/indoor/metal/walkway{
 	dir = 1
@@ -19348,9 +19363,9 @@ fp
 Rd
 Rd
 Rd
-Rd
-Rd
-Rd
+fp
+fp
+fp
 fp
 fp
 fp
@@ -19469,13 +19484,13 @@ fp
 Rd
 Rd
 Rd
-Rd
-Rd
-Rd
+fp
+jq
+jq
 fp
 it
-jq
-ah
+fQ
+DK
 jq
 jq
 Ap
@@ -19590,9 +19605,9 @@ fp
 Rd
 Rd
 Rd
-Rd
-Rd
-Rd
+fp
+jq
+jq
 fp
 TA
 jq
@@ -19711,9 +19726,9 @@ fp
 Rd
 Rd
 Rd
-Rd
-Rd
-Rd
+fp
+dl
+jq
 fp
 jq
 jq
@@ -19832,10 +19847,10 @@ fp
 Rd
 Rd
 Rd
-Rd
-Rd
-Rd
 fp
+jq
+jq
+Mh
 jq
 jq
 Vr
@@ -19953,9 +19968,9 @@ fp
 Rd
 Rd
 Rd
-Rd
-Rd
-Rd
+fp
+jq
+jq
 fp
 jq
 Ap
@@ -20074,9 +20089,9 @@ fp
 Rd
 Rd
 Rd
-Rd
-Rd
-Rd
+fp
+fp
+fp
 fp
 fp
 fp
@@ -38816,8 +38831,8 @@ eI
 me
 me
 me
-me
-CI
+Yg
+eI
 eI
 LR
 eI
@@ -38933,13 +38948,13 @@ Qq
 mY
 mY
 Nd
-Mk
-mY
+iv
 mY
 Nd
 mY
 mY
 Oe
+eG
 cv
 eI
 Yu
@@ -39051,9 +39066,8 @@ EK
 Ux
 IN
 Qq
+So
 mG
-mG
-Nd
 Nd
 mG
 mG
@@ -39061,6 +39075,7 @@ Nd
 mG
 mG
 Oe
+Nd
 pK
 BK
 mS
@@ -39175,13 +39190,13 @@ Qq
 dM
 dM
 Nd
-Nd
 dM
 dM
 Nd
 dM
 dM
 Oe
+eG
 Nd
 eI
 Wk
@@ -39301,7 +39316,7 @@ Nd
 Nd
 Nd
 Nd
-Nd
+eI
 gZ
 Jc
 eI
@@ -39900,15 +39915,15 @@ IN
 eI
 EV
 Nd
+Af
 Nd
 Nd
 Nd
 Nd
-Nd
-Nd
+pK
 Nd
 uR
-mG
+Wb
 eI
 eI
 eI
@@ -40024,9 +40039,9 @@ Nd
 Bv
 Oe
 Nd
-Nd
-Nd
 cS
+Nd
+Nd
 Nd
 uR
 mG
@@ -42537,7 +42552,7 @@ DZ
 DZ
 DZ
 Jz
-CF
+Gp
 CF
 kd
 Jz

@@ -640,6 +640,11 @@
 /obj/structure/table/halflife/no_smooth/large/crafting/weaponbench,
 /turf/open/floor/plating/indoor/concrete/small,
 /area/halflife/indoors/bunker)
+"NN" = (
+/obj/effect/spawner/lootdrop/halflife/loot/clothing,
+/obj/effect/decal/cleanable/blood/gibs/old,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/indoors/sewer/outlandscave)
 "NU" = (
 /obj/structure/frame/machine,
 /turf/open/floor/plating/indoor/concrete/small,
@@ -864,6 +869,10 @@
 /obj/structure/dresser,
 /turf/open/floor/plating/indoor/woodc/mosaic,
 /area/halflife/indoors/bunker)
+"Yo" = (
+/obj/effect/spawner/lootdrop/halflife/loot/rare,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/indoors/sewer/outlandscave)
 "YG" = (
 /obj/structure/chair/office/halflife/blue{
 	dir = 1
@@ -2023,7 +2032,7 @@ dZ
 dZ
 fv
 dZ
-dZ
+NN
 PI
 fv
 wG
@@ -7351,7 +7360,7 @@ fv
 fv
 fv
 fv
-OA
+Yo
 dZ
 dZ
 dZ
