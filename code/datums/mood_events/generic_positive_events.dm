@@ -49,7 +49,7 @@
 
 /datum/mood_event/exercise
 	description = "<span class='nicegreen'>Working out releases those endorphins!</span>\n"
-	mood_change = 3
+	mood_change = 2
 	timeout = 5 MINUTES
 
 /datum/mood_event/pet_animal
@@ -207,7 +207,7 @@
 
 /datum/mood_event/adrenaline
 	description = span_nicegreen("I'M FEELING THE ADRENALINE KICK IN!\n")
-	mood_change = 10
+	mood_change = 8
 
 /datum/mood_event/ice_cream
 	description = span_nicegreen("I recently enjoyed some nice and cool ice cream.\n")

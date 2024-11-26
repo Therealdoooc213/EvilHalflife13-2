@@ -74,6 +74,8 @@
 	return
 
 /obj/machinery/ration_vendor/proc/dispense(quality, vortigaunt)
+	SSsociostability.modifystability(1) //Compliance brings stability.
+
 	if(vortigaunt)
 		say("Here is your designated meal, biotic.")
 	else

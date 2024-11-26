@@ -156,7 +156,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	cost = 20 //These are 20 TC for a reason; sacrifice modularity for a pre-determined kit that will define your strategy
 
 /datum/uplink_item/bundles_TC/surplus
-	name = "Syndicate Surplus Crate"
+	name = "Rebel Surplus Crate"
 	desc = "A dusty crate from the back of the Rebel warehouse. Rumored to contain a valuable assortment of items, \
 			but you never know. Contents are sorted to always be worth 50 TC."
 	item = /obj/structure/closet/crate

@@ -714,4 +714,4 @@
 
 /obj/structure/halflife/breencast/Destroy()
 	. = ..()
-	SSsociostability.modifystability(-30) //Destroying the central breencast is rather bad for stability
+	SSsociostability.modifystability(-50) //Destroying the central breencast is rather bad for stability

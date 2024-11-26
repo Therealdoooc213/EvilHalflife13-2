@@ -208,6 +208,7 @@
 	species_restricted = VORTS_ONLY
 	var/inmate_name = "none"
 	var/lockactive = FALSE
+	var/previously_unlocked = FALSE
 
 /obj/item/clothing/neck/anti_magic_collar/Initialize(mapload)
 	..()
@@ -242,8 +243,11 @@
 		unlock()
 
 /obj/item/clothing/neck/anti_magic_collar/proc/unlock()
+	if(!previously_unlocked)
+		SSsociostability.modifystability(-30) //free vorts are generally not good for stability
 	audible_message(span_danger("You hear a click, the restrictor unlocks, and is now removable!"))
 	lockactive = FALSE
+	previously_unlocked = TRUE
 	REMOVE_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT(type))
 
 /obj/item/clothing/neck/anti_magic_collar/attackby(obj/item/W, mob/user, params)

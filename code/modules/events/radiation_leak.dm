@@ -106,6 +106,8 @@
 	// Let ghosts know
 	announce_to_ghosts(the_source_of_our_problems)
 
+	SSsociostability.modifystability(-20) //Decrease stability unless fixed
+
 /datum/round_event/radiation_leak/tick()
 	// Puff some smoke into the air around our machine roughly 3 times before we stop
 	if(activeFor % (endWhen / 3) != 0)
@@ -162,6 +164,7 @@
 		return
 
 	source.balloon_alert(user, "leak repaired")
+	SSsociostability.modifystability(20) //Repairs will return stability.
 	// Force end the event
 	processing = FALSE
 	end()

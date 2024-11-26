@@ -215,6 +215,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "carpspawn"
 	icon_state = "carp_spawn"
 
+//Care packages for rebels are dropped off here when sociostability reaches certain points.
+/obj/effect/landmark/carepackage
+	name = "carepackagespawn"
+	//icon_state = "carp_spawn"
+
 //observer start
 /obj/effect/landmark/observer_start
 	name = "Observer-Start"

@@ -75,6 +75,9 @@
 	message_admins("[ADMIN_LOOKUPFLW(S)] has been made into a Fugitive by an event.")
 	log_game("[key_name(S)] was spawned as a Fugitive by an event.")
 	spawned_mobs += S
+
+	SSsociostability.modifystability(-20) //Spawned fugitives reduce stability, but will raise it back up if succesfully captured.
+
 	return S
 
  //special spawn for one member. it can be used for a special mob or simply to give one normal member special items.
