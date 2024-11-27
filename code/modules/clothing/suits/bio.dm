@@ -80,6 +80,7 @@
 //Siggraph boiler bio suit
 /obj/item/clothing/suit/bio_suit/boiler
 	icon_state = "bio_boiler"
+	slowdown = 0
 
 /obj/item/clothing/head/bio_hood/boiler
 	icon_state = "bio_boiler"

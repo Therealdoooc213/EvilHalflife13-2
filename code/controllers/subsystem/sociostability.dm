@@ -13,6 +13,11 @@ SUBSYSTEM_DEF(sociostability)
 		modifystability(SOCIOSTABILITY_PASSIVE_GAIN)
 
 
+	if(sociostability < SOCIOSTABILITY_POOR) //Poor sociostability means a poor district. Buying power will be reduced by 20%.
+		SSeconomy.pack_price_modifier = 1.2
+	else
+		SSeconomy.pack_price_modifier = 1
+
 	if(sociostability < SOCIOSTABILITY_OKAY && !okay_package_received)
 		drop_package()
 		okay_package_received = TRUE

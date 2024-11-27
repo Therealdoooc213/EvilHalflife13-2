@@ -11,12 +11,12 @@
 //Current Paycheck values. Altering these changes both the cost of items meant for each paygrade, as well as the passive/starting income of each job.
 ///Default paygrade for the Unassigned Job/Unpaid job assignments.
 #define PAYCHECK_ZERO 0
-#define PAYCHECK_ASSISTANT 5
-#define PAYCHECK_MINIMAL 5
-#define PAYCHECK_EASY 7
-#define PAYCHECK_MEDIUM 12
-#define PAYCHECK_HARD 15
-#define PAYCHECK_COMMAND 25
+#define PAYCHECK_ASSISTANT 3
+#define PAYCHECK_MINIMAL 3
+#define PAYCHECK_EASY 5
+#define PAYCHECK_MEDIUM 8
+#define PAYCHECK_HARD 12
+#define PAYCHECK_COMMAND 20
 
 #define STARTING_SEC_BUDGET 750
 #define STARTING_CAR_BUDGET 500

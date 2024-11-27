@@ -62,7 +62,7 @@
 					span_notice("You burrow \the [src] into the water."),
 					span_italics("You hear the splash of water."))
 			else
-				to_chat(user, span_warning("This needs to be anchored over a source of water!"))
+				to_chat(user, span_warning("This needs to be anchored over a harvestable source of water!"))
 		else
 			anchored = 0
 			user.visible_message( \

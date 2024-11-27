@@ -197,6 +197,13 @@
 	color_cutoffs = list(25, 5, 42)
 	lighting_cutoff = LIGHTING_CUTOFF_HIGH
 
+//innate nightvision eyes
+/obj/item/organ/eyes/vort
+	name = "vortigaunt eyes"
+	desc = "It turned out they had them after all!"
+	color_cutoffs = list(25, 5, 42)
+	lighting_cutoff = LIGHTING_CUTOFF_HIGH
+
 /obj/item/organ/eyes/shadow
 	name = "burning red eyes"
 	desc = "Even without their shadowy owner, looking at these eyes gives you a sense of dread."

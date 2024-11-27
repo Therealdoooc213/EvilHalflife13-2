@@ -21,7 +21,7 @@
 	species_traits = list(NO_UNDERWEAR,NO_DNA_COPY,NOTRANSSTING,NOEYESPRITES,NOFLASH)
 	inherent_traits = list(TRAIT_NOGUNS, TRAIT_RESISTCOLD, TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,
 							TRAIT_NOBREATH, TRAIT_RADIMMUNE, TRAIT_VIRUSIMMUNE, TRAIT_NODISMEMBER, TRAIT_GENELESS)
-	mutanteyes = /obj/item/organ/eyes/alien
+	mutanteyes = /obj/item/organ/eyes/vort
 	liked_food = MEAT | RAW 
 	var/datum/action/cooldown/spell/conjure_item/infinite_guns/vort_blast/galunga
 	var/datum/action/cooldown/spell/touch/vort_heal/vortheal

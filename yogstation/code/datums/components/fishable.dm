@@ -131,6 +131,7 @@
 	)
 	common_loot = list(
 		/obj/item/reagent_containers/food/drinks/soda_cans/breenwater,
+		/obj/item/reagent_containers/food/snacks/deadmouse,
 		/obj/item/reagent_containers/food/snacks/bait/worm/leech
 	)
 	uncommon_loot = list(
@@ -141,6 +142,8 @@
 	)
 	rare_loot = list(
 		/obj/item/reagent_containers/food/snacks/fish/squid,
+		/obj/item/weaponcrafting/receiver,
+		/mob/living/simple_animal/hostile/halflife/headcrab/poison,
 		/mob/living/simple_animal/hostile/halflife/headcrab
 	)
 		

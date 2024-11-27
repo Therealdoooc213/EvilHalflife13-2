@@ -454,7 +454,7 @@
 
 	registered_account.adjust_money(cash_money)
 	if(physical_currency)
-		to_chat(user, span_notice("You stuff [I] into [src]. It disappears in a small puff of bluespace smoke, adding [cash_money] credits to the linked account."))
+		to_chat(user, span_notice("You feed [I] into [src]. It enters the card and makes a scanning noise, adding [cash_money] credits to the linked account."))
 	else
 		to_chat(user, span_notice("You insert [I] into [src], adding [cash_money] credits to the linked account."))
 

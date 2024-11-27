@@ -283,6 +283,10 @@ Slimecrossing Items
 	foodtype = null //Don't ask what went into them. You're better off not knowing.
 	list_reagents = list(/datum/reagent/consumable/astrotame = 1, /datum/reagent/consumable/nutriment = 1)
 
+/obj/item/reagent_containers/food/snacks/flavorbar/large
+	name = "large flavor bar"
+	list_reagents = list(/datum/reagent/consumable/astrotame = 1, /datum/reagent/consumable/nutriment = 2)
+
 //Ice stasis block - Chilling Dark Blue
 /obj/structure/ice_stasis
 	name = "ice block"

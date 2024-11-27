@@ -13,7 +13,6 @@
 	var/harvesting = FALSE
 	var/list/operation_order = list() //Order of wich we harvest limbs.
 	var/allow_clothing = FALSE
-	var/allow_living = FALSE
 
 /obj/machinery/stalker_chamber/RefreshParts()
 	interval = 0
@@ -78,7 +77,7 @@
 	operation_order = reverseList(C.bodyparts)   //Chest and head are first in bodyparts, so we invert it to make them suffer more
 	harvesting = TRUE
 	visible_message(span_notice("The [name] begins warming up!"))
-	say("Initializing harvest protocol.")
+	say("Initializing conversion protocol.")
 	warming_up = TRUE
 	update_appearance(UPDATE_ICON)
 	addtimer(CALLBACK(src, PROC_REF(harvest)), interval)
@@ -150,14 +149,6 @@
 		I.play_tool_sound(src, 50)
 		visible_message(span_notice("[usr] pries open \the [src]."), span_notice("You pry open [src]."))
 		open_machine()
-
-/obj/machinery/stalker_chamber/emag_act(mob/user, obj/item/card/emag/emag_card)
-	if(obj_flags & EMAGGED)
-		return FALSE
-	obj_flags |= EMAGGED
-	allow_living = TRUE
-	to_chat(user, span_warning("You overload [src]'s lifesign scanners."))
-	return TRUE
 
 /obj/machinery/stalker_chamber/container_resist(mob/living/user)
 	if(!harvesting)

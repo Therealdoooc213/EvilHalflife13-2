@@ -1527,6 +1527,7 @@
 /obj/item/storage/box/halflife/ration/PopulateContents()
 	new /obj/item/reagent_containers/food/snacks/rationpack(src)
 	new /obj/item/reagent_containers/food/drinks/soda_cans/breenwater(src)
+	new /obj/item/stack/spacecash/c10(src)
 
 /obj/item/storage/box/halflife/betterration
 	name = "production-grade ration pack"
@@ -1537,6 +1538,7 @@
 /obj/item/storage/box/halflife/betterration/PopulateContents()
 	new /obj/item/reagent_containers/food/snacks/rationpack/box(src)
 	new /obj/item/reagent_containers/food/drinks/soda_cans/breenwater/red(src)
+	new /obj/item/stack/spacecash/c20(src)
 
 /obj/item/storage/box/halflife/loyaltyration
 	name = "loyalty-grade ration pack"
@@ -1548,6 +1550,7 @@
 	new /obj/item/reagent_containers/food/snacks/rationpack/loyalty(src)
 	new /obj/item/reagent_containers/food/drinks/soda_cans/breenwater/red(src)
 	new /obj/item/reagent_containers/food/snacks/flavorbar(src)
+	new /obj/item/stack/spacecash/c20(src)
 
 /obj/item/storage/box/halflife/bestration
 	name = "priority-grade ration pack"
@@ -1558,8 +1561,8 @@
 /obj/item/storage/box/halflife/bestration/PopulateContents()
 	new /obj/item/reagent_containers/food/snacks/rationpack/loyalty(src)
 	new /obj/item/reagent_containers/food/drinks/soda_cans/breenwater/green(src)
-	new /obj/item/reagent_containers/food/snacks/flavorbar(src)
-	new /obj/item/reagent_containers/food/snacks/flavorbar(src)
+	new /obj/item/reagent_containers/food/snacks/flavorbar/large(src)
+	new /obj/item/stack/spacecash/c20(src)
 
 /obj/item/storage/box/halflife/badration
 	name = "low-grade ration pack"

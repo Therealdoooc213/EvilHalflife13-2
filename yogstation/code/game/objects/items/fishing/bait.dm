@@ -11,21 +11,21 @@
 	name = "apprentice bait"
 	desc = "A basic bait for an aspiring fisherman"
 	icon_state = "bait_1"
-	fishing_power = 10
+	fishing_power = 20
 	custom_price = 5
 
 /obj/item/reagent_containers/food/snacks/bait/journeyman
 	name = "journeyman bait"
 	desc = "Advanced bait that only a skilled fisherman can use"
 	icon_state = "bait_2"
-	fishing_power = 25
+	fishing_power = 35
 	custom_price = 15
 
 /obj/item/reagent_containers/food/snacks/bait/master
 	name = "master bait"
 	desc = "A masterfully crafted bait that only a master in fishing can harness"
 	icon_state = "bait_3"
-	fishing_power = 35
+	fishing_power = 45
 	custom_price = 25
 	custom_premium_price = 30
 
@@ -45,13 +45,13 @@
 	name = "worm bait"
 	desc = "A gross worm, often found in sewage or other dirty areas."
 	icon_state = "bait_worm"
-	fishing_power = 15
+	fishing_power = 25
 
 /obj/item/reagent_containers/food/snacks/bait/worm/leech //subtype of worm so recipes work for bait
 	name = "leech"
 	desc = "What isn't fun about a little recycling?"
 	icon_state = "leech"
-	fishing_power = 20
+	fishing_power = 30
 
 /obj/item/reagent_containers/food/snacks/bait/worm/leech/attack(mob/living/M, mob/living/user)
 	if(user.combat_mode)
@@ -71,10 +71,10 @@
 	name = "type bait"
 	desc = "Are you talking to me?"
 	icon_state = "bait_t"
-	fishing_power = 25
+	fishing_power = 35
 
 /obj/item/reagent_containers/food/snacks/bait/wild
 	name = "wild bait"
 	desc = "A hand crafted bait that is attractive to most fish"
 	icon_state = "bait_wild"
-	fishing_power = 25
+	fishing_power = 35

@@ -20,8 +20,10 @@
 	inherent_traits = list(TRAIT_NOGUNS, TRAIT_RESISTCOLD, TRAIT_RESISTHIGHPRESSURE,TRAIT_RESISTLOWPRESSURE,
 							TRAIT_NOBREATH, TRAIT_RADIMMUNE, TRAIT_VIRUSIMMUNE,
 							TRAIT_NOCRITDAMAGE, TRAIT_GENELESS, TRAIT_NOSOFTCRIT, TRAIT_NOHARDCRIT, TRAIT_NOPAIN)
-	mutanteyes = /obj/item/organ/eyes/alien
+	mutanteyes = /obj/item/organ/eyes/robotic
 	liked_food = MEAT | RAW 
+	species_language_holder = /datum/language_holder/stalker
+	action_speed_coefficient = 1.2 //their hands are little metal prods, not very dextrous
 
 /datum/species/stalker/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	. = ..()
@@ -30,3 +32,4 @@
 	if(C.mind)
 		C.mind.name = C.real_name
 	C.dna.real_name = C.real_name
+	C.cmode_music = 'sound/music/combat/crawlyard.ogg'

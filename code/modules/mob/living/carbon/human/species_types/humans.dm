@@ -9,7 +9,6 @@
 	disliked_food = GROSS | RAW | MICE
 	liked_food = JUNKFOOD | FRIED | GRILLED
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
-	species_language_holder = /datum/language_holder/english
 
 	smells_like = "soap and superiority"
 
