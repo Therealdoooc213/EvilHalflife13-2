@@ -58,7 +58,10 @@
 	var/static/list/can_ride_typecache = typecacheof(list(/mob/living/carbon/human, /mob/living/simple_animal/slime, /mob/living/simple_animal/parrot))
 	var/lastpuke = 0
 	var/last_fire_update
+	///The Unique ID number code associated with the owner's bank account, assigned at round start.
 	var/account_id
+	/// A randomly generated 5-digit pin to access the bank account. This is stored as a string!
+	var/account_pin
 	var/xylophone = 0 //For the spoooooooky xylophone cooldown
 	var/blood_in_hands = 0
 	///The Examine Panel TGUI.

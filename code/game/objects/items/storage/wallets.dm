@@ -5,7 +5,7 @@
 	base_icon_state = "wallet"
 	w_class = WEIGHT_CLASS_SMALL
 	resistance_flags = FLAMMABLE
-	slot_flags = ITEM_SLOT_ID
+	slot_flags = ITEM_SLOT_ID | ITEM_SLOT_BELT
 
 	var/obj/item/card/id/front_id = null
 	var/list/combined_access
@@ -56,18 +56,10 @@
 		var/mob/living/carbon/human/H = loc
 		if(H.wear_id == src)
 			H.sec_hud_set_ID()
-	update_appearance(UPDATE_ICON)
 
 /obj/item/storage/wallet/Entered(atom/movable/AM)
 	. = ..()
 	refreshID()
-
-/obj/item/storage/wallet/update_icon_state()
-	. = ..()
-	if(front_id)
-		icon_state = "[base_icon_state]_[front_id.icon_state]"
-		return
-	icon_state = base_icon_state
 
 /obj/item/storage/wallet/GetID()
 	return front_id

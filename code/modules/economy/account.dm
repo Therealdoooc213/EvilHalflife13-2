@@ -6,7 +6,10 @@
 	var/datum/job/account_job
 	var/list/bank_cards = list()
 	var/add_to_accounts = TRUE
+	///The Unique ID number code associated with the owner's bank account, assigned at round start.
 	var/account_id
+	/// A randomly generated 5-digit pin to access the bank account. This is stored as a string!
+	var/account_pin
 	var/being_dumped = FALSE //pink levels are rising
 	var/withdrawDelay = 0
 	var/is_bourgeois = FALSE // Marks whether we've tried giving them the achievement already, this round.
@@ -29,6 +32,9 @@
 		SSeconomy.bank_accounts["[account_id]"] = src
 	account_holder = newname
 	account_job = job
+
+	for(var/i in 1 to 4)
+		account_pin = "[account_pin][rand(0, 9)]"
 
 /datum/bank_account/Destroy()
 	if(add_to_accounts)

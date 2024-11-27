@@ -390,7 +390,7 @@
 
 /obj/item/skillchip/doctor
 	name = "Medical skillchip"
-	auto_traits = list(TRAIT_DOCTOR)
+	auto_traits = list(TRAIT_DOCTOR, TRAIT_FASTMED)
 	skill_name = "Medical Speed"
 	skill_description = "This chip will implant medical knowledge, and let you use surgery tools faster and with more precision."
 	skill_icon = "plus"

@@ -68,6 +68,10 @@
 		say("Subject is not organic.")
 		playsound(src, 'sound/machines/buzz-sigh.ogg', 30, 1)
 		return
+	if(isstalker(C))
+		say("Subject is already a converted asset.")
+		playsound(src, 'sound/machines/buzz-sigh.ogg', 30, 1)
+		return
 	return TRUE
 
 /obj/machinery/stalker_chamber/proc/start_harvest()

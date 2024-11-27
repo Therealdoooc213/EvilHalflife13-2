@@ -606,6 +606,7 @@ SUBSYSTEM_DEF(job)
 	if(ishuman(living_mob))
 		var/mob/living/carbon/human/wageslave = living_mob
 		living_mob.add_memory("Your account ID is [wageslave.account_id].")
+		living_mob.add_memory("Your account pin is [wageslave.account_pin].")
 	if(job && living_mob)
 		job.after_spawn(living_mob, M, joined_late) // note: this happens before the mob has a key! M will always have a client, H might not.
 

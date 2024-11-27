@@ -149,6 +149,10 @@
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/woodc/wide,
 /area/halflife/indoors/slums)
+"aL" = (
+/obj/machinery/atm,
+/turf/open/floor/plating/indoor/trainfloor,
+/area/halflife/indoors/trainstation)
 "aM" = (
 /obj/structure/table/halflife/no_smooth/large/wood/desk{
 	dir = 8
@@ -248,6 +252,10 @@
 /obj/structure/halflife/road_barrier/concrete,
 /turf/open/floor/plating/ground/brickroad,
 /area/halflife/outdoors)
+"bf" = (
+/obj/machinery/atm,
+/turf/open/floor/plating/indoor/tiled10,
+/area/halflife/indoors/distributioncenter)
 "bg" = (
 /obj/structure/chair/halflife/metal/stool,
 /obj/effect/landmark/start/citizen,
@@ -5534,6 +5542,10 @@
 /obj/item/kirbyplants/random,
 /turf/open/floor/plating/indoor/carpet/violet,
 /area/halflife/indoors/townhall)
+"zb" = (
+/obj/machinery/atm,
+/turf/open/floor/plating/indoor/tiled10,
+/area/halflife/indoors/bar)
 "zc" = (
 /obj/structure/holohoop{
 	dir = 4
@@ -6714,6 +6726,10 @@
 /obj/structure/window/fulltile,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors)
+"Et" = (
+/obj/machinery/atm,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
 "Ev" = (
 /obj/structure/table/halflife/wood,
 /obj/structure/halflife/trash/food/misc,
@@ -6776,6 +6792,10 @@
 /obj/effect/spawner/lootdrop/halflife/loot,
 /turf/open/floor/plating/indoor/woodc/wide,
 /area/halflife/indoors/slums)
+"EJ" = (
+/obj/machinery/atm,
+/turf/open/floor/plating/ground/sidewalk/inner,
+/area/halflife/outdoors)
 "EK" = (
 /turf/open/floor/plating/ground/brickroad{
 	dir = 1
@@ -32387,7 +32407,7 @@ lj
 Bf
 lj
 lj
-kH
+zb
 kH
 kH
 Dy
@@ -34064,7 +34084,7 @@ sS
 eC
 eC
 sS
-Yb
+bf
 ul
 ul
 Yb
@@ -36982,7 +37002,7 @@ KK
 iC
 gB
 Ty
-fT
+EJ
 IN
 Kw
 EK
@@ -39429,7 +39449,7 @@ EK
 Ux
 IN
 eI
-Nd
+aL
 Nd
 Nd
 Nd
@@ -40006,7 +40026,7 @@ Ux
 IN
 fT
 Iw
-NC
+Et
 Wq
 GD
 Wq

@@ -752,6 +752,7 @@
 				/obj/item/storage/backpack/satchel/flat,
 				/obj/item/storage/belt/fannypack/black,
 				/obj/item/storage/belt/pouch,
+				/obj/item/storage/wallet,
 				/obj/item/storage/briefcase,
 				/obj/item/lockpick,
 				/obj/item/clothing/under/citizen/refugee,

@@ -72,6 +72,7 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 #define isgolem(A) (is_species(A, /datum/species/golem))
 #define isflyperson(A) (is_species(A, /datum/species/fly))
 #define isvortigaunt(A) (is_species(A, /datum/species/vortigaunt))
+#define isstalker(A) (is_species(A, /datum/species/stalker))
 #define isjellyperson(A) (is_species(A, /datum/species/jelly))
 #define isslimeperson(A) (is_species(A, /datum/species/jelly/slime))
 #define isluminescent(A) (is_species(A, /datum/species/jelly/luminescent))

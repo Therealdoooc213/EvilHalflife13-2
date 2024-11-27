@@ -429,39 +429,6 @@
 			if("assignment","registered_name","registered_age")
 				update_label()
 
-/obj/item/card/id/attackby(obj/item/W, mob/user, params)
-	if(istype(W, /obj/item/holochip))
-		insert_money(W, user)
-		return
-	else if(istype(W, /obj/item/stack/spacecash))
-		insert_money(W, user, TRUE)
-		return
-	else if(istype(W, /obj/item/coin))
-		insert_money(W, user, TRUE)
-		return
-	else
-		return ..()
-
-/obj/item/card/id/proc/insert_money(obj/item/I, mob/user, physical_currency)
-	var/cash_money = I.get_item_credit_value()
-	if(!cash_money)
-		to_chat(user, span_warning("[I] doesn't seem to be worth anything!"))
-		return
-
-	if(!registered_account)
-		to_chat(user, span_warning("[src] doesn't have a linked account to deposit [I] into!"))
-		return
-
-	registered_account.adjust_money(cash_money)
-	if(physical_currency)
-		to_chat(user, span_notice("You feed [I] into [src]. It enters the card and makes a scanning noise, adding [cash_money] credits to the linked account."))
-	else
-		to_chat(user, span_notice("You insert [I] into [src], adding [cash_money] credits to the linked account."))
-
-	to_chat(user, span_notice("The linked account now reports a balance of $[registered_account.account_balance]."))
-	qdel(I)
-
-
 /obj/item/card/id/proc/alt_click_can_use_id(mob/living/user)
 	if(!isliving(user))
 		return
@@ -490,67 +457,6 @@
 		to_chat(user, span_warning("The account ID number provided is invalid."))
 		return
 
-	if (world.time < registered_account.withdrawDelay)
-		registered_account.bank_card_talk(span_warning("ERROR: UNABLE TO LOGIN DUE TO SCHEDULED MAINTENANCE. MAINTENANCE IS SCHEDULED TO COMPLETE IN [(registered_account.withdrawDelay - world.time)/10] SECONDS."), TRUE)
-		return
-
-	var/amount_to_remove =  FLOOR(input(user, "How much do you want to withdraw? Current Balance: [registered_account.account_balance]", "Withdraw Funds", 5) as num, 1)
-
-	if(!amount_to_remove || amount_to_remove < 0)
-		to_chat(user, span_warning("You're pretty sure that's not how money works."))
-		return
-	if(!alt_click_can_use_id(user))
-		return
-	if(registered_account.adjust_money(-amount_to_remove))
-		if(!critter_money)
-			var/obj/item/holochip/holochip = new (user.drop_location(), amount_to_remove)
-			user.put_in_hands(holochip)
-			to_chat(user, span_notice("You withdraw [amount_to_remove] credits into a holochip."))
-		else
-			var/mob/living/simple_animal/critter
-			switch(amount_to_remove)
-				if(1 to 10)
-					critter = new /mob/living/simple_animal/mouse(get_turf(src))
-				if(10 to 25)
-					if(prob(50))
-						critter = new /mob/living/simple_animal/hostile/lizard(get_turf(src))
-					else
-						critter = new /mob/living/simple_animal/turtle(get_turf(src))
-				if(25 to 50)
-					if(prob(50))
-						critter = new /mob/living/simple_animal/pet/cat(get_turf(src))
-					else
-						critter = new /mob/living/simple_animal/pet/dog/corgi(get_turf(src))
-				if(50 to 100)
-					if(prob(50))
-						critter = new /mob/living/simple_animal/opossum(get_turf(src))
-					else
-						critter = new /mob/living/simple_animal/pet/catslug(get_turf(src))
-				if(100 to 200)
-					if(prob(50))
-						critter = new /mob/living/simple_animal/pet/fox(get_turf(src))
-					else
-						critter = new /mob/living/simple_animal/hostile/retaliate/poison/snake(get_turf(src))
-				if(200 to 250)
-					critter = new /mob/living/simple_animal/pet/gondola(get_turf(src))
-				if(250 to INFINITY)
-					critter = new /mob/living/simple_animal/cheese(get_turf(src))
-					var/list/candidates = pollCandidatesForMob("Do you want to play as cheese?", ROLE_SENTIENCE, null, ROLE_SENTIENCE, 5 SECONDS, critter, POLL_IGNORE_SENTIENCE_POTION) // see poll_ignore.dm
-					if(!LAZYLEN(candidates))
-						return
-					var/mob/dead/observer/O = pick(candidates)
-					critter.key = O.key
-					critter.sentience_act()
-					to_chat(critter, span_warning(span_danger("CHEESE!")))
-					return
-			var/obj/item/clothing/mob_holder/holder = new (get_turf(src), critter, critter.held_state, critter.held_icon, critter.held_lh, critter.held_rh, \
-																									critter.worn_layer, critter.mob_size, critter.worn_slot_flags)
-			user.put_in_hands(holder)
-		return
-	else
-		var/difference = amount_to_remove - registered_account.account_balance
-		registered_account.bank_card_talk(span_warning("ERROR: The linked account requires [difference] more credit\s to perform that withdrawal."), TRUE)
-
 /obj/item/card/id/examine(mob/user)
 	.=..()
 	if(registered_age)
@@ -564,8 +470,7 @@
 			var/datum/bank_account/D = SSeconomy.get_dep_account(registered_account.account_job.paycheck_department)
 			if(D)
 				. += "The [D.account_holder] reports a balance of $[D.account_balance]."
-		. += span_info("Alt-Click the ID to pull money from the linked account in the form of holochips.")
-		. += span_info("You can insert credits into the linked account by pressing holochips, cash, or coins against the ID.")
+		. += span_info("You can withdraw or insert credits at ATMs located within the District.")
 		if(registered_account.ration_voucher)
 			. += span_info("The account linked to the ID has a redeemable ration voucher assigned to it.")
 		if(registered_account.account_holder == user.real_name)

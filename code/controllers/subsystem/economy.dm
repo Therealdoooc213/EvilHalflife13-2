@@ -205,3 +205,31 @@ SUBSYSTEM_DEF(economy)
 	var/datum/bank_account/D = get_dep_account(ACCOUNT_CIV)
 	if(D)
 		D.adjust_money(min(civ_cash, MAX_GRANT_CIV))
+
+/// Spawns a given amount of money in optimal stacks at the given location.
+/datum/controller/subsystem/economy/proc/spawn_cash_for_amount(amt, spawn_loc)
+	amt = round(amt) // Don't pass in decimals you twat
+	var/thousands = 0
+	var/hundreds = 0
+	var/tens = 0
+	var/ones = 0
+
+	thousands = floor(amt / 1000)
+	amt -= thousands * 1000
+
+	hundreds = floor(amt / 100)
+	amt -= hundreds * 100
+
+	tens = floor(amt / 10)
+	amt -= tens * 10
+
+	ones = amt
+
+	if(thousands)
+		new /obj/item/stack/spacecash/c1000(spawn_loc, thousands)
+	if(hundreds)
+		new /obj/item/stack/spacecash/c100(spawn_loc, hundreds)
+	if(tens)
+		new /obj/item/stack/spacecash/c10(spawn_loc, tens)
+	if(ones)
+		new /obj/item/stack/spacecash/c1(spawn_loc, ones)

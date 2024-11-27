@@ -24,6 +24,7 @@
 					/obj/item/clothing/head/flatcap = 3,
 					/obj/item/customlock = 2,
 					/obj/item/customblank = 2,
+					/obj/item/storage/wallet = 6,
 					/obj/item/storage/box/halflife/badration = 3,
 					/obj/item/clothing/gloves/fingerless = 3)
 
