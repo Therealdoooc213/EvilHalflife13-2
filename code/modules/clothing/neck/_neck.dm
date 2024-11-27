@@ -244,7 +244,7 @@
 
 /obj/item/clothing/neck/anti_magic_collar/proc/unlock()
 	if(!previously_unlocked)
-		SSsociostability.modifystability(-30) //free vorts are generally not good for stability
+		SSsociostability.modifystability(-50) //free vorts are generally not good for stability
 	audible_message(span_danger("You hear a click, the restrictor unlocks, and is now removable!"))
 	lockactive = FALSE
 	previously_unlocked = TRUE

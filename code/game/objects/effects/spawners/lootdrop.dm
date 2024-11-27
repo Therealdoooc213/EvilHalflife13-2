@@ -752,7 +752,7 @@
 				/obj/item/storage/backpack/satchel/flat,
 				/obj/item/storage/belt/fannypack/black,
 				/obj/item/storage/belt/pouch,
-				/obj/item/storage/wallet,
+				/obj/item/storage/wallet = 2,
 				/obj/item/storage/briefcase,
 				/obj/item/lockpick,
 				/obj/item/clothing/under/citizen/refugee,
@@ -784,6 +784,8 @@
 				/obj/item/clothing/head/beret/durathread/unitednations,
 				/obj/item/customblank,
 				/obj/item/customlock,
+				/obj/item/stack/spacecash/c10,
+				/obj/item/stack/spacecash/c20,
 				/obj/item/storage/firstaid/toxin
 				)
 

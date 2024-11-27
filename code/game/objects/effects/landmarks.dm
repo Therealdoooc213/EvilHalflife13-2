@@ -220,6 +220,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "carepackagespawn"
 	//icon_state = "carp_spawn"
 
+//Where random event destabilizers can spawn
+/obj/effect/landmark/destabilizer
+	name = "destabilizerspawn"
+	//icon_state = "carp_spawn"
+
 //observer start
 /obj/effect/landmark/observer_start
 	name = "Observer-Start"

@@ -227,6 +227,7 @@ Slimecrossing Items
 	tastes = list("gross water" = 3, "sadness" = 3)
 	foodtype = null //Don't ask what went into them. You're better off not knowing.
 	list_reagents = list(/datum/reagent/consumable/nutriment = 5)
+	custom_price = 15
 	var/mood_penalty = /datum/mood_event/gross_food
 
 /obj/item/reagent_containers/food/snacks/rationpack/checkLiked(fraction, mob/M)	//Nobody likes rationpacks. Nobody.

@@ -24,8 +24,8 @@
 					/obj/item/clothing/head/flatcap = 3,
 					/obj/item/customlock = 2,
 					/obj/item/customblank = 2,
-					/obj/item/storage/wallet = 6,
-					/obj/item/storage/box/halflife/badration = 3,
+					/obj/item/storage/wallet = 10,
+					/obj/item/reagent_containers/food/snacks/rationpack/box = 5,
 					/obj/item/clothing/gloves/fingerless = 3)
 
 	contraband = list(/obj/item/lockpick = 1,
@@ -33,7 +33,7 @@
 
 	premium = list(/obj/item/storage/backpack = 3,
 				   /obj/item/binoculars = 3,
-				   /obj/item/storage/box/halflife/loyaltyration = 3)
+				   /obj/item/storage/box/halflife/ration = 3)
 
 	payment_department = NO_FREEBIES
 	light_mask = "gifts-light-mask"

@@ -49,6 +49,7 @@
 		new breakmats(loc)
 		for(var/obj/item/I in src)
 			I.forceMove(loc)
+	SSsociostability.modifystability(1) //Clearing infestations is good for city health.
 	qdel(src)
 
 /obj/structure/flora/xen/leafy

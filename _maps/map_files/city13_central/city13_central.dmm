@@ -335,6 +335,16 @@
 "bx" = (
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/hospital)
+"bB" = (
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 4
+	},
+/obj/effect/landmark/destabilizer,
+/turf/open/floor/plating/ground/dirt,
+/area/halflife/outdoors)
 "bC" = (
 /obj/machinery/light/small,
 /turf/open/floor/plating/indoor/carpet/blue,
@@ -471,15 +481,6 @@
 /obj/structure/bed/halflife/mattress/old,
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
-"cl" = (
-/obj/effect/turf_decal/siding/thinplating{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/thinplating{
-	dir = 4
-	},
-/turf/open/floor/plating/ground/dirt,
-/area/halflife/outdoors)
 "cm" = (
 /obj/machinery/door/unpowered/halflife/wood,
 /turf/open/floor/plating/indoor/woodc/wide,
@@ -1600,10 +1601,6 @@
 	},
 /turf/open/floor/plating/ground/sidewalk,
 /area/halflife/outdoors)
-"ho" = (
-/obj/structure/table/halflife/no_smooth/metal,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors/townhall)
 "hp" = (
 /obj/machinery/door/unpowered/halflife/metal,
 /turf/open/floor/plating/indoor/metal/plate,
@@ -2094,7 +2091,7 @@
 	},
 /area/halflife/outdoors)
 "jJ" = (
-/obj/machinery/combine_recharger{
+/obj/machinery/combine_recharger/round_start{
 	pixel_y = 32
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -5998,7 +5995,7 @@
 /turf/open/floor/plating/indoor/concrete/bricks,
 /area/halflife/indoors/sewer)
 "Ba" = (
-/obj/machinery/combine_recharger{
+/obj/machinery/combine_recharger/round_start{
 	pixel_y = 32
 	},
 /obj/structure/window/reinforced{
@@ -6717,7 +6714,7 @@
 /turf/open/floor/plating/indoor/woodc/fancy,
 /area/halflife/indoors/townhall)
 "Er" = (
-/obj/machinery/combine_recharger{
+/obj/machinery/combine_recharger/round_start{
 	pixel_x = -32
 	},
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -7640,7 +7637,7 @@
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/productioncenter)
 "IE" = (
-/obj/machinery/combine_recharger{
+/obj/machinery/combine_recharger/round_start{
 	pixel_x = -32
 	},
 /turf/open/floor/plating/indoor/tile/navy,
@@ -8757,6 +8754,15 @@
 	},
 /turf/open/floor/plating/indoor/sterilesquares,
 /area/halflife/indoors/hospital)
+"NN" = (
+/obj/structure/table/halflife/no_smooth/metal,
+/obj/item/gps,
+/obj/item/gps,
+/obj/item/gps,
+/obj/item/gps,
+/obj/item/gps,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors/townhall)
 "NO" = (
 /obj/structure/fluff/traveltile{
 	aportalgoesto = "outlands_underground";
@@ -8882,6 +8888,10 @@
 /obj/machinery/door/unpowered/halflife/seethrough/bar,
 /turf/open/floor/plating/indoor/grooved2,
 /area/halflife/indoors/townhall)
+"Or" = (
+/obj/effect/landmark/destabilizer,
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors/slums)
 "Ot" = (
 /obj/structure/halflife/pallet/stack,
 /turf/open/floor/plating/indoor/concrete/bricks,
@@ -9315,6 +9325,10 @@
 /obj/structure/window/fulltile,
 /turf/open/floor/plating/indoor/tiled10,
 /area/halflife/indoors/trainstation)
+"Qr" = (
+/obj/effect/landmark/destabilizer,
+/turf/open/floor/plating/indoor/concrete/bricks,
+/area/halflife/indoors)
 "Qt" = (
 /obj/structure/chair/halflife/wood{
 	dir = 1
@@ -9840,7 +9854,7 @@
 /turf/open/floor/plating/ground/sidewalk/inner,
 /area/halflife/outdoors/alley)
 "SX" = (
-/obj/machinery/combine_recharger{
+/obj/machinery/combine_recharger/round_start{
 	pixel_y = 32
 	},
 /turf/open/floor/plating/indoor/trainfloor,
@@ -11233,6 +11247,10 @@
 /obj/machinery/light/small,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors/hospital)
+"Zh" = (
+/obj/effect/landmark/destabilizer,
+/turf/open/floor/plating/indoor/woodc/mosaic,
+/area/halflife/indoors)
 "Zj" = (
 /obj/structure/flora/ausbushes/leafybush,
 /turf/open/floor/plating/ground/dirt/alt,
@@ -33524,7 +33542,7 @@ Iw
 Iw
 qG
 no
-no
+Zh
 no
 zt
 NC
@@ -35291,7 +35309,7 @@ rj
 rj
 rj
 lB
-WX
+no
 no
 no
 WX
@@ -35412,8 +35430,8 @@ Iw
 Iw
 Iw
 Iw
-dG
-Fp
+no
+no
 no
 no
 Fp
@@ -35513,7 +35531,7 @@ Iw
 Iw
 rj
 rj
-rj
+Qr
 Iw
 Iw
 Iw
@@ -40363,7 +40381,7 @@ NG
 Zz
 Gc
 XQ
-ho
+NN
 LD
 LD
 LD
@@ -46858,7 +46876,7 @@ Gx
 GV
 tn
 tn
-tn
+Or
 Td
 OZ
 OZ
@@ -47152,7 +47170,7 @@ Iw
 Iw
 pS
 By
-cl
+bB
 aI
 BY
 kh

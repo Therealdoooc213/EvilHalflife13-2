@@ -18818,7 +18818,7 @@
 /turf/open/floor/plasteel/dark,
 /area/centcom/syndicate_mothership)
 "pzO" = (
-/obj/machinery/combine_recharger{
+/obj/machinery/combine_recharger/round_start{
 	pixel_y = 32
 	},
 /turf/open/floor/plating/indoor/metal/walkway{
@@ -19225,7 +19225,7 @@
 /turf/open/indestructible/brazil/narsie,
 /area/brazil)
 "tNL" = (
-/obj/machinery/combine_recharger{
+/obj/machinery/combine_recharger/round_start{
 	pixel_y = 32
 	},
 /turf/open/floor/plating/indoor/metal/plate{

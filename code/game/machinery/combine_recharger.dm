@@ -7,6 +7,11 @@
 	var/capacity = 50
 	var/capacity_max = 100
 
+	var/round_start = FALSE
+
+/obj/machinery/combine_recharger/round_start
+	round_start = TRUE //so that it deducts sociostability when destroyed
+
 /obj/machinery/combine_recharger/proc/adjust_capacity(change)
 	capacity += change
 	if(capacity > capacity_max)
@@ -54,3 +59,8 @@
 		icon_state = "suitcharger_02"
 	else
 		icon_state = "suitcharger_03"
+
+/obj/machinery/combine_recharger/deconstruct(disassembled = TRUE)
+	. = ..()
+	if(round_start)
+		SSsociostability.modifystability(-20) //Destroying vital roundstart placed combine rechargers is bad for stability.
