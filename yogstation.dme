@@ -1648,6 +1648,7 @@
 #include "code\game\objects\structures\halflife\barriers.dm"
 #include "code\game\objects\structures\halflife\chairs.dm"
 #include "code\game\objects\structures\halflife\decorative.dm"
+#include "code\game\objects\structures\halflife\freeman.dm"
 #include "code\game\objects\structures\halflife\tables.dm"
 #include "code\game\objects\structures\halflife\xen.dm"
 #include "code\game\objects\structures\icemoon\cave_entrance.dm"
