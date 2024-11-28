@@ -3,7 +3,7 @@ SUBSYSTEM_DEF(sociostability)
 	wait = 3 MINUTES
 	init_order = INIT_ORDER_SOCIOSTABILITY
 	runlevels = RUNLEVEL_GAME
-	var/sociostability = SOCIOSTABILITY_GREAT
+	var/sociostability = SOCIOSTABILITY_GOOD
 	var/okay_package_received = FALSE
 	var/poor_package_received = FALSE
 	var/bad_package_received = FALSE
@@ -30,6 +30,9 @@ SUBSYSTEM_DEF(sociostability)
 		drop_package()
 		bad_package_received = TRUE
 		return
+
+	for(var/mob/living/silicon/ai/A in GLOB.ai_list)	//Alert Dispatch of sociostability level
+		to_chat(A, span_warning("Sociostability matrix levels calculated and compiled. Percentage is at [((sociostability / SOCIOSTABILITY_GREAT)*100)]%"))
 
 /datum/controller/subsystem/sociostability/proc/drop_package(amount)
 	var/datum/round_event_control/care_package/PackageControl = new /datum/round_event_control/care_package()

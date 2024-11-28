@@ -4,12 +4,15 @@
 */
 
 /obj/machinery/telecomms/allinone
-	name = "telecommunications mainframe"
-	icon_state = "server"
-	desc = "A compact machine used for portable subspace telecommunications processing."
+	name = "telecommunications mainframe relay"
+	icon_state = "comm_tower"
+	icon = 'icons/port/comm_tower2.dmi'
+	desc = "A communications tower which hosts local frequencies and broadcasts. Required for most radio equipment to function."
 	density = TRUE
 	use_power = NO_POWER_USE
 	idle_power_usage = 0
+	layer = ABOVE_ALL_MOB_LAYER
+	plane = ABOVE_GAME_PLANE
 	var/intercept = FALSE  // If true, only works on the Syndicate frequency.
 
 /obj/machinery/telecomms/allinone/indestructable
@@ -19,7 +22,7 @@
 /obj/machinery/telecomms/allinone/Initialize(mapload)
 	. = ..()
 	id = "Telecommunicatons Mainframe" //Does nothing, just prevents from showing NULL
-	network = "SyndiMain"
+	network = "DistrictMain"
 	if (intercept)
 		freq_listening = list(FREQ_SYNDICATE)
 

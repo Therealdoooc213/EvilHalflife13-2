@@ -3044,6 +3044,7 @@
 #include "code\modules\mob\living\silicon\ai\decentralized\projects\rgb.dm"
 #include "code\modules\mob\living\silicon\ai\decentralized\projects\room_lockdown.dm"
 #include "code\modules\mob\living\silicon\ai\decentralized\projects\self_defense.dm"
+#include "code\modules\mob\living\silicon\ai\decentralized\projects\sociostability.dm"
 #include "code\modules\mob\living\silicon\ai\decentralized\projects\stimulants.dm"
 #include "code\modules\mob\living\silicon\ai\decentralized\projects\surveillance.dm"
 #include "code\modules\mob\living\silicon\ai\decentralized\projects\synth_control.dm"

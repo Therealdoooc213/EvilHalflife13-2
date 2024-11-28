@@ -25,6 +25,8 @@
 					/obj/item/customlock = 2,
 					/obj/item/customblank = 2,
 					/obj/item/storage/wallet = 10,
+					/obj/item/radio/off/halflife = 3,
+					/obj/item/reagent_containers/glass/bottle/welding_fuel = 3,
 					/obj/item/reagent_containers/food/snacks/rationpack/box = 5,
 					/obj/item/clothing/gloves/fingerless = 3)
 

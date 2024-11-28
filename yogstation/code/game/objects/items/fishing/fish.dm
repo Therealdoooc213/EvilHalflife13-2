@@ -57,8 +57,8 @@
 		showoff_overlay = null
 
 /obj/item/reagent_containers/food/snacks/fish/goldfish
-	name = "galactic goldfish"
-	desc = "It's so... small!"
+	name = "goldfish"
+	desc = "Incredible, an actual fish! Though, it just seems like a tiny goldfish."
 	icon_state = "fish_goldfish"
 	min_length = 1
 	max_length = 2
@@ -77,8 +77,8 @@
 	slices_num = 2
 
 /obj/item/reagent_containers/food/snacks/fish/salmon
-	name = "space salmon"
-	desc = "I thought they were supposed to be red..."
+	name = "salmon"
+	desc = "Incredible, an actual fish!"
 	icon_state = "fish_salmon"
 	min_length = 28
 	max_length = 32

@@ -43,6 +43,11 @@
 /datum/component/fishable/sewer
 	loot = new /datum/fishing_loot/sewer
 
+//river fishing
+
+/datum/component/fishable/river
+	loot = new /datum/fishing_loot/river
+
 //LOOT TABLES
 /datum/fishing_loot
 	var/list/junk_loot
@@ -144,6 +149,32 @@
 		/obj/item/reagent_containers/food/snacks/fish/squid,
 		/obj/item/weaponcrafting/receiver,
 		/mob/living/simple_animal/hostile/halflife/headcrab/poison,
+		/mob/living/simple_animal/hostile/halflife/headcrab
+	)
+		
+
+/datum/fishing_loot/river
+	junk_loot = list(
+		/obj/item/trash/plate,
+		/obj/item/stack/rods,
+		/obj/item/reagent_containers/glass/beaker/waterbottle/empty,
+		/obj/item/shard
+	)
+	common_loot = list(
+		/obj/item/reagent_containers/food/drinks/soda_cans/breenwater,
+		/obj/item/reagent_containers/food/snacks/deadmouse,
+		/obj/item/reagent_containers/food/snacks/fish/goldfish,
+		/obj/item/reagent_containers/food/snacks/bait/worm/leech
+	)
+	uncommon_loot = list(
+		/obj/item/reagent_containers/food/snacks/fish/shrimp,
+		/obj/item/water_canister,
+		/obj/item/reagent_containers/food/snacks/xenbranch,
+		/obj/item/reagent_containers/food/drinks/beer/light
+	)
+	rare_loot = list(
+		/obj/item/reagent_containers/food/snacks/fish/squid,
+		/obj/item/reagent_containers/food/snacks/fish/salmon,
 		/mob/living/simple_animal/hostile/halflife/headcrab
 	)
 		

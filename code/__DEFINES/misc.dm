@@ -57,7 +57,7 @@
 #define SOCIOSTABILITY_BAD 200
 #define SOCIOSTABILITY_TERRIBLE 0
 
-#define SOCIOSTABILITY_PASSIVE_GAIN 5 //by default 5, so +0.5% sociostability every 3 minutes.
+#define SOCIOSTABILITY_PASSIVE_GAIN 1 //by default 1, so +0.1% sociostability every 3 minutes.
 
 //some arbitrary defines to be used by self-pruning global lists. (see master_controller)
 #define PROCESS_KILL 26	//Used to trigger removal from a processing list

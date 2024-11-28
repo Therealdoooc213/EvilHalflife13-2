@@ -2699,6 +2699,13 @@
 /obj/effect/spawner/lootdrop/halflife/loot/rare,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/outdoors)
+"mp" = (
+/obj/machinery/camera{
+	c_tag = "Communications Relay";
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors)
 "mr" = (
 /obj/machinery/door/unpowered/halflife/wood{
 	dir = 4;
@@ -3207,6 +3214,10 @@
 "ot" = (
 /obj/structure/table/halflife/no_smooth/metal,
 /turf/open/floor/plating/indoor/carpet/blue,
+/area/halflife/indoors)
+"ov" = (
+/obj/machinery/telecomms/allinone/indestructable,
+/turf/open/floor/plating/indoor/tile,
 /area/halflife/indoors)
 "ow" = (
 /obj/machinery/turnstile/brig/halflife/forcefield/science/nodirectional,
@@ -6765,6 +6776,12 @@
 	},
 /turf/open/floor/plating/indoor/tile/navy,
 /area/halflife/indoors/scienceunion)
+"ED" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors)
 "EE" = (
 /obj/machinery/rnd/production/protolathe/department/science,
 /obj/effect/turf_decal/trimline/purple/warning/lower{
@@ -6883,6 +6900,11 @@
 /obj/effect/spawner/lootdrop/halflife/loot/ammo,
 /turf/open/floor/plating/indoor/metal,
 /area/halflife/indoors/sewer)
+"EZ" = (
+/obj/machinery/door/airlock/highsecurity/combine,
+/obj/effect/mapping_helpers/airlock/access/all/science/general,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors)
 "Fa" = (
 /obj/item/toy/beach_ball/holoball,
 /turf/open/floor/plating/ground/sidewalk/inner,
@@ -9208,10 +9230,6 @@
 	pixel_y = 32
 	},
 /turf/open/floor/plating/ground/sidewalk/inner,
-/area/halflife/outdoors)
-"PN" = (
-/obj/machinery/telecomms/allinone,
-/turf/open/floor/plating/indoor/woodc,
 /area/halflife/outdoors)
 "PO" = (
 /obj/structure/halflife/trash/garbage,
@@ -43904,7 +43922,7 @@ EP
 KL
 WS
 sL
-HV
+BO
 Gj
 Iw
 fT
@@ -44025,7 +44043,7 @@ Iw
 Iw
 Iw
 Iw
-Iw
+EZ
 Iw
 Iw
 fT
@@ -44143,10 +44161,10 @@ HO
 fx
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
+BO
+Rr
+mp
+BO
 Iw
 Iw
 fT
@@ -44264,10 +44282,10 @@ Iw
 Iw
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
+Rr
+ov
+Rr
+Rr
 Iw
 Iw
 fT
@@ -44385,10 +44403,10 @@ Iw
 Iw
 Iw
 Iw
-Iw
-Iw
-Iw
-Iw
+BO
+Rr
+ED
+BO
 Iw
 Iw
 fT
@@ -46289,7 +46307,7 @@ tL
 tL
 tL
 tL
-PN
+tL
 tL
 tL
 tL

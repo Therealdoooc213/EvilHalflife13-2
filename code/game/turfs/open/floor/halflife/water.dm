@@ -32,13 +32,14 @@
 	light_range = 0.25
 	light_color = "#0486b9" 
 	// What type of water it'll give you when you fill a container from it.
-	var/dispensedreagent = /datum/reagent/water/unpurified
+	var/dispensedreagent = /datum/reagent/water/unpurified/river
 	var/next_splash = 1
 	var/atom/watereffect = /obj/effect/overlay/halflife/water/medium
 	var/atom/watertop = /obj/effect/overlay/halflife/water/top/medium
 	var/depth = 0
 	var/coldness = -100
 	var/z_to_change = 0 //absolutely terrible, but im desperate
+	var/sewer = FALSE
 
 /turf/open/halflife/water/attackby(obj/item/W, mob/user, params)
 	. = ..()
@@ -87,6 +88,13 @@
 	if(z == 2)
 		z_to_change = -100
 */
+
+/turf/open/halflife/water/Initialize(mapload)
+	. = ..()
+	if(sewer)
+		AddComponent(/datum/component/fishable/sewer)
+	else
+		AddComponent(/datum/component/fishable/river)
 
 /obj/effect/overlay/halflife/water
 	name = "water"
@@ -272,10 +280,7 @@
 	baseturfs = /turf/open/halflife/water/sewer
 	dispensedreagent = /datum/reagent/water/dirty/sewer
 	light_color = "#013b09" 
-
-/turf/open/halflife/water/sewer/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/fishable/sewer)
+	sewer = TRUE
 
 /turf/open/halflife/water/sewer/deep
 	name = "deep water"

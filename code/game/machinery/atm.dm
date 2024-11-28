@@ -9,6 +9,10 @@
 	pixel_y = 28
 	base_pixel_y = 28
 
+	light_range = 2
+	light_power = 0.75
+	light_color = "#658cac"
+
 	resistance_flags = INDESTRUCTIBLE
 	idle_power_usage = 10
 

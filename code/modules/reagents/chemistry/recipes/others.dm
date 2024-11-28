@@ -1032,3 +1032,11 @@
 	results = list(/datum/reagent/water = 10, /datum/reagent/toxin/sewage = 3)
 	required_reagents = list(/datum/reagent/water/dirty/sewer = 10, /datum/reagent/space_cleaner/bleach = 1)
 
+/datum/chemical_reaction/waterboiling
+	name = "Water Boiling"
+	id = "water_boiling"
+	mix_message = "The water bubbles and boils. Might be safer to drink now."
+	results = list(/datum/reagent/water = 1)
+	required_reagents = list(/datum/reagent/water/unpurified/river = 1)
+	required_temp = 373
+

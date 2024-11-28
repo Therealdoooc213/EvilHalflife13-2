@@ -28,21 +28,6 @@
 	icon = 'icons/port/comm_tower3.dmi'
 	icon_state = "static1_broken"
 
-/obj/structure/halflife/combine/commtower
-	name = "combine comms relay"
-	desc = "A massive vox communication tower of combine origin."
-	icon = 'icons/port/comm_tower2.dmi'
-	icon_state = "comm_tower_off"
-
-/obj/structure/halflife/combine/commtower/powered
-	icon_state = "comm_tower"
-
-/obj/structure/halflife/combine/commtower/damaged
-	icon_state = "comm_tower_broken"
-
-/obj/structure/halflife/combine/commtower/old
-	icon_state = "construct_9_1"
-
 /obj/structure/halflife/combine/coolanttank
 	name = "coolant tank"
 	desc = "A bubbling container of coolant fluid."
@@ -115,25 +100,25 @@
 	icon_state = "generator_on"
 
 
-/obj/structure/halflife/barrel
+/obj/structure/halflife/barrelalt
 	name = "chemical barrel"
 	desc = "..."
 	icon = 'icons/port/objects.dmi'
 	icon_state = "barrel_blue"
 
-/obj/structure/halflife/barrel/green
+/obj/structure/halflife/barrelalt/green
 	icon_state = "barrel_green"
 
-/obj/structure/halflife/barrel/red
+/obj/structure/halflife/barrelalt/red
 	icon_state = "barrel_red"
 
-/obj/structure/halflife/barrel/yellow
+/obj/structure/halflife/barrelalt/yellow
 	icon_state = "barrel_yellow"
 
-/obj/structure/halflife/barrel/white
+/obj/structure/halflife/barrelalt/white
 	icon_state = "barrel_white"
 
-/obj/structure/halflife/barrelmany
+/obj/structure/halflife/barrelaltmany
 	name = "chemical barrel yard"
 	desc = "..."
 	icon = 'icons/port/barrel_yard.dmi'
