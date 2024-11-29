@@ -124,6 +124,22 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	user.visible_message(span_suicide("[user] begins whacking [user.p_them()]self over the head with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!"))
 	return BRUTELOSS
 
+/obj/item/stack/sheet/scrap_metal
+	name = "scrap metal"
+	desc = "Pieces of scrap metal. Not very useful on it's own, but maybe with the right tools you can make it more usable."
+	singular_name = "scrap metal"
+	icon_state = "sheet-scrapmetal"
+	item_state = "sheet-metal"
+	materials = list(/datum/material/iron=(MINERAL_MATERIAL_AMOUNT)/2)
+	throwforce = 10
+	flags_1 = CONDUCT_1
+	resistance_flags = FIRE_PROOF
+	merge_type = /obj/item/stack/sheet/scrap_metal
+	grind_results = list(/datum/reagent/iron = 10)
+	point_value = 1
+	tableVariant = /obj/structure/table/halflife/metal/constructed/cobbled
+	matter_amount = 2
+
 /*
  * Plasteel
  */
@@ -254,6 +270,17 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 
 /obj/item/stack/sheet/mineral/wood/mushroom
 	desc = "Wood made of packed together mushroom shavings that have dried and changed color. Just tough enough to pass as wood."
+
+/obj/item/stack/sheet/mineral/scrap_wood
+	name = "scrap wood"
+	desc = "Destroyed scraps of wood. Not very useful by itself, but maybe with enough you can sift through for a usable plank of wood."
+	singular_name = "scrap wood"
+	icon_state = "sheet-scrapwood"
+	item_state = "sheet-wood"
+	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 0)
+	resistance_flags = FLAMMABLE
+	merge_type = /obj/item/stack/sheet/mineral/scrap_wood
+	grind_results = list(/datum/reagent/cellulose = 10) //no lignocellulose or lignin reagents yet,
 
 /*
  * Bamboo

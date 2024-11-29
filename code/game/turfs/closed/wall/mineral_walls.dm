@@ -150,9 +150,10 @@
 /turf/closed/wall/mineral/wood
 	name = "wooden wall"
 	desc = "A wall with wooden plating. Stiff."
-	icon = 'icons/turf/walls/wood_wall.dmi'
-	icon_state = "wood_wall-0"
-	base_icon_state = "wood_wall"
+	icon = 'icons/turf/walls/halflife/woodwall.dmi'
+	desc = "A sturdy wall made of wood."
+	icon_state = "woodwall-0"
+	base_icon_state = "woodwall"
 	sheet_type = /obj/item/stack/sheet/mineral/wood
 	hardness = 70
 	explosion_block = 0
