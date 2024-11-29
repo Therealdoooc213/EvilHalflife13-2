@@ -813,6 +813,7 @@
 				/obj/item/storage/pill_bottle/happiness,
 				/obj/item/reagent_containers/pill/happiness,
 				/obj/item/reagent_containers/pill/lsd,
+				/obj/item/reagent_containers/food/drinks/mouthwash,
 				/obj/item/reagent_containers/glass/bottle/bleach,
 				/obj/item/reagent_containers/glass/bottle/welding_fuel,
 				/obj/item/reagent_containers/glass/bottle/morphine

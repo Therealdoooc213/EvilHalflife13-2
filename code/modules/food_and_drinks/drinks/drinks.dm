@@ -680,3 +680,10 @@
 	pixel_y = rand(-4,4)
 	if (random_sprite)
 		icon_state = "colocup[rand(0, 6)]"
+
+/obj/item/reagent_containers/food/drinks/mouthwash
+	name = "Mouthwash Bottle"
+	desc = "A bottle of old mouthwash. There's enough sugar in the thing you wonder how it would ever clean your mouth, let alone with how old it is."
+	isGlass = FALSE
+	icon_state = "mouthwash"
+	list_reagents = list(/datum/reagent/consumable/sugar = 15, /datum/reagent/consumable/ethanol = 7, /datum/reagent/water = 28)

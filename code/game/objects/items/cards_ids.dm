@@ -1024,7 +1024,7 @@ update_label("John Doe", "Clowny")
 		if(!B.bank_cards.Find(src))
 			B.bank_cards += src
 		name = "departmental card ([department_name])"
-		desc = "Provides access to the [department_name]."
+		desc = "Provides access to the [department_name]. Due to being a budget card, it has no PIN, and may be bypassed by pressing enter at the PIN screen."
 	SSeconomy.dep_cards += src
 
 /obj/item/card/id/departmental_budget/Destroy()

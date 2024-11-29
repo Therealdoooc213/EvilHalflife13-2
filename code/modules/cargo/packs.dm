@@ -153,7 +153,7 @@
 /datum/supply_pack/security/armory/ar2
 	name = "Unbiolocked OSIPR Crate"
 	desc = "Contains two Overwatch Standard Issue Pulse Rifles. These rifles are unbiolocked, and will not be usable until given a biolocked firing pin. Requires Armory access to open."
-	cost = 1500
+	cost = 1600
 	contains = list(/obj/item/gun/ballistic/automatic/ar2/nopin,
 					/obj/item/gun/ballistic/automatic/ar2/nopin)
 	crate_name = "osipr gun crate"
