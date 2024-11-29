@@ -8,6 +8,10 @@
 	name = "medical officer vest"
 	icon_state = "medicalofficer"
 
+/obj/item/clothing/suit/armor/civilprotection/overseer
+	name = "overseer vest"
+	icon_state = "overseer"
+
 /obj/item/clothing/suit/armor/civilprotection/trenchcoat
 	name = "civil protection trench coat"
 	desc = "A modified standard vest with a partial trenchcoat. Provides protection for your arms and legs, but will slightly slow you down."
@@ -16,6 +20,10 @@
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
 	cold_protection = CHEST|GROIN|LEGS|ARMS
 	heat_protection = CHEST|GROIN|LEGS|ARMS
+
+/obj/item/clothing/suit/armor/civilprotection/trenchcoat/overseer
+	name = "overseer trenchcoat"
+	icon_state = "cp_trenchcoatoverseer"
 
 /obj/item/clothing/suit/armor/civilprotection/divisional
 	name = "divisional lead vest"

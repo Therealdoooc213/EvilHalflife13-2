@@ -482,7 +482,7 @@
 				"Shaft Miner", "Clown", "Mime", "Janitor", "Curator", "Lawyer", "Chaplain", "Chief Engineer", "Union Engineer",
 				"Atmospheric Technician", "Chief Medical Officer", "Union Doctor", "Chemist", "Geneticist", "Virologist", "Cleanup Technician",
 				// yogs start - Yog jobs
-				"Research Director", "Union Scientist", "Roboticist", "Divisional Lead", "Warden", "Detective", "Civil Protection Officer",
+				"Research Director", "Union Scientist", "Roboticist", "Divisional Lead", "Overseer", "Detective", "Civil Protection Officer",
 				"Network Admin", "Mining Medic", "Paramedic", "Psychiatrist", "Clerk", "Tourist", "Space Bartender", "Artist", "Medical Officer", "Synthetic")
 				// yogs end
 

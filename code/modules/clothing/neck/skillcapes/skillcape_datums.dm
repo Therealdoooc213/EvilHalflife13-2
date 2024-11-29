@@ -94,13 +94,13 @@
 
 /datum/skillcape/warden
 	name = "cape of the warden"
-	job = "Warden"
+	job = "Overseer"
 	path = /obj/item/clothing/neck/skillcape/warden
 	id = "warden"
 
 /datum/skillcape/trimmed/warden
 	name = "cape of the grand warden"
-	job = "Warden"
+	job = "Overseer"
 	path = /obj/item/clothing/neck/skillcape/trimmed/warden
 	id = "warden_trimmed"
 

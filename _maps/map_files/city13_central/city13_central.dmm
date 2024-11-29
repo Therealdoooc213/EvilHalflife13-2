@@ -1650,6 +1650,10 @@
 /mob/living/simple_animal/hostile/halflife/zombie/zombine,
 /turf/open/floor/plating/indoor/metal,
 /area/halflife/indoors/sewer)
+"hG" = (
+/obj/effect/landmark/start/overseer,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors/townhall)
 "hJ" = (
 /obj/machinery/turnstile/brig/halflife/forcefield/nodirectional{
 	dir = 1
@@ -7658,12 +7662,6 @@
 	},
 /turf/open/floor/plating/indoor/metal/plate,
 /area/halflife/indoors/productioncenter)
-"IE" = (
-/obj/machinery/combine_recharger/round_start{
-	pixel_x = -32
-	},
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors/townhall)
 "IF" = (
 /obj/structure/table/halflife/no_smooth/metal,
 /obj/item/clothing/gloves/color/civilprotection,
@@ -10616,6 +10614,13 @@
 /obj/structure/halflife/trash/food/misc,
 /turf/open/floor/plating/indoor/carpet/blue,
 /area/halflife/indoors)
+"Wf" = (
+/obj/machinery/combine_recharger/round_start{
+	pixel_x = -32
+	},
+/obj/effect/landmark/start/overseer,
+/turf/open/floor/plating/indoor/tile/navy,
+/area/halflife/indoors/townhall)
 "Wg" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -39918,7 +39923,7 @@ jg
 LD
 RF
 LD
-IE
+Wf
 hi
 tb
 XQ
@@ -40037,7 +40042,7 @@ Tm
 XQ
 XQ
 JH
-LD
+hG
 JG
 LD
 Wu

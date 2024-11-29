@@ -4,7 +4,7 @@
 	report_type = "heresy"
 	antag_flag = ROLE_HERETIC
 	false_report_weight = 5
-	protected_jobs = list("Chaplain","Civil Protection Officer", "Warden", "Detective", "Divisional Lead", "District Administrator", "Labor Lead", "Research Director", "Chief Engineer", "Chief Medical Officer", "Medical Officer") //Yogs: Added Medical Officer
+	protected_jobs = list("Chaplain","Civil Protection Officer", "Overseer", "Detective", "Divisional Lead", "District Administrator", "Labor Lead", "Research Director", "Chief Engineer", "Chief Medical Officer", "Medical Officer") //Yogs: Added Medical Officer
 	restricted_jobs = list("Dispatch", "Cyborg", "Synthetic")
 	required_players = 15
 	required_enemies = 1

@@ -30,19 +30,19 @@
 	name = "a overwatch standard issue pulse rifle."
 	targetitem = /obj/item/gun/ballistic/automatic/ar2
 	difficulty = 8
-	excludefromjob = list("Divisional Lead", "Warden")
+	excludefromjob = list("Divisional Lead", "Overseer")
 
 /datum/objective_item/steal/mask
 	name = "a civil protection mask."
 	targetitem = /obj/item/clothing/mask/gas/civilprotection
 	difficulty = 5
-	excludefromjob = list("Divisional Lead", "Warden")
+	excludefromjob = list("Divisional Lead", "Overseer")
 
 /datum/objective_item/steal/hud
 	name = "a civil protection hud."
 	targetitem = /obj/item/clothing/glasses/hud/security/civilprotection
 	difficulty = 5
-	excludefromjob = list("Divisional Lead", "Warden")
+	excludefromjob = list("Divisional Lead", "Overseer")
 
 /datum/objective_item/steal/documents
 	name = "the administrator's secret documents."

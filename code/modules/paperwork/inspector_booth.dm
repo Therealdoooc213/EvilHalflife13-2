@@ -331,7 +331,7 @@
 	"Artist" = list("civillian","yellow"),
 	"Clerk" = list("civillian","blue"),
 	"Tourist" = list("civillian","yellow"),
-	"Warden" = list("security","black"),
+	"Overseer" = list("security","black"),
 	"Civil Protection Officer" = list("security","red"),
 	"Detective" = list("security","brown"),
 	"Medical Officer" = list("security","blue"),

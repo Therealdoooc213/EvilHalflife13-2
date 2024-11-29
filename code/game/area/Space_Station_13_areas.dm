@@ -931,7 +931,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/security/warden
 	name = "Brig Control"
-	icon_state = "Warden"
+	icon_state = "Overseer"
 	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
 
 /area/security/detectives_office

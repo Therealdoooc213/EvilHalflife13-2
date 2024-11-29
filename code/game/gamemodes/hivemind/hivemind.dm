@@ -4,7 +4,7 @@
 	report_type = "hivemind"
 	antag_flag = ROLE_HIVE
 	false_report_weight = 5
-	protected_jobs = list("Civil Protection Officer", "Warden", "Detective", "Divisional Lead", "District Administrator", "Medical Officer") //Yogs: Added "Medical Officer
+	protected_jobs = list("Civil Protection Officer", "Overseer", "Detective", "Divisional Lead", "District Administrator", "Medical Officer") //Yogs: Added "Medical Officer
 	restricted_jobs = list("Cyborg","Dispatch", "Synthetic")
 	required_players = 24
 	required_enemies = 2

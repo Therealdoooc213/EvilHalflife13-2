@@ -143,7 +143,7 @@ Credit where due:
 	required_enemies = 3
 	recommended_enemies = 3
 	enemy_minimum_age = 14
-	protected_jobs = list("Dispatch", "Cyborg", "Civil Protection Officer", "Warden", "Detective", "Divisional Lead", "District Administrator", "Medical Officer") //Silicons can eventually be converted //Yogs: Added Medical Officer
+	protected_jobs = list("Dispatch", "Cyborg", "Civil Protection Officer", "Overseer", "Detective", "Divisional Lead", "District Administrator", "Medical Officer") //Silicons can eventually be converted //Yogs: Added Medical Officer
 	restricted_jobs = list("Chaplain", "District Administrator", "Synthetic")
 	announce_span = "brass"
 	announce_text = "Servants of Ratvar are trying to summon the Justiciar!\n\

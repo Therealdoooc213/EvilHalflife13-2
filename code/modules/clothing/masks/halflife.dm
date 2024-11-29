@@ -59,12 +59,13 @@
 		"Issuing malcompliant citation" = 'sound/voice/cpvoicelines/issuingmalcompliantcitation.ogg',
 		"Apply" = 'sound/voice/cpvoicelines/apply.ogg',
 		"Hehe" = 'sound/voice/cpvoicelines/chuckle.ogg',
+		"Haha" = 'sound/voice/cpvoicelines/chuckle.ogg',
 		"CP is compromised" = 'sound/voice/cpvoicelines/cpiscompromised.ogg',
 		"Expired" = 'sound/voice/cpvoicelines/expired.ogg',
-		"He's running" = 'sound/voice/cpvoicelines/hesrunning.ogg',
+		"Hes running" = 'sound/voice/cpvoicelines/hesrunning.ogg',
 		"Infection" = 'sound/voice/cpvoicelines/infection.ogg',
 		"CP is overrun we have no containment" = 'sound/voice/cpvoicelines/cpisoverrunwehavenocontainment.ogg',
-		"CP request all units report in" = 'sound/voice/cpvoicelines/cprequestsallunitsreportin.ogg',
+		"all units report in" = 'sound/voice/cpvoicelines/cprequestsallunitsreportin.ogg',
 		"Officer down" = 'sound/voice/cpvoicelines/officerdowniam10-99.ogg',
 		"Officer needs assistance" = 'sound/voice/cpvoicelines/officerneedsassistance.ogg',
 		"Cover me" = 'sound/voice/cpvoicelines/covermegoingin.ogg',
@@ -118,6 +119,10 @@
 /obj/item/clothing/mask/gas/civilprotection/medical
 	name = "medical officer mask"
 	icon_state = "medicalofficer"
+
+/obj/item/clothing/mask/gas/civilprotection/overseer
+	name = "overseer mask"
+	icon_state = "overseer"
 
 /obj/item/clothing/mask/gas/civilprotection/overwatch
 	name = "overwatch soldier mask"

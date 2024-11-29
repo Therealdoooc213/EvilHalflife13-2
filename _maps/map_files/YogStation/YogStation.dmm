@@ -46689,7 +46689,7 @@
 "nSi" = (
 /obj/structure/table,
 /obj/machinery/photocopier/faxmachine{
-	department = "Warden";
+	department = "Overseer";
 	name = "Warden's Fax Machine"
 	},
 /turf/open/floor/plasteel/showroomfloor,

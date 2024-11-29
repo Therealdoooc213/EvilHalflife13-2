@@ -112,7 +112,7 @@ GLOBAL_LIST_INIT(original_civilian_positions, list(
 
 GLOBAL_LIST_INIT(original_security_positions, list(
 	"Divisional Lead",
-	"Warden",
+	"Overseer",
 	"Detective",
 	"Civil Protection Officer"))
 

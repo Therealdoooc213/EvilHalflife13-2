@@ -3,7 +3,7 @@ Assistant
 */
 /datum/job/citizen
 	title = "Citizen"
-	description = "Try to survive, and maybe even earn a better life."
+	description = "Find your own path to survival in this cruel world, whether it be escaping the district, scavening, finding a job, or sucking up to civil protection."
 	orbit_icon = "toolbox"
 	faction = "Station"
 	total_positions = 99

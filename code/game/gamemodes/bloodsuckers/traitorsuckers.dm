@@ -8,7 +8,7 @@
 	protected_jobs = list(
 		"District Administrator", "Labor Lead", "Divisional Lead", 
 		"Research Director", "Chief Engineer", "Chief Medical Officer", "Curator", 
-		"Warden", "Civil Protection Officer", "Detective", "Medical Officer"
+		"Overseer", "Civil Protection Officer", "Detective", "Medical Officer"
 	)
 	required_players = 20
 	required_enemies = 1 // How many of each type are required

@@ -39,7 +39,7 @@
 		"Mime" = list("mime","white"),
 		"Artist" = list("civillian","yellow"),
 		"Clerk" = list("civillian","blue"),
-		"Warden" = list("security","black"),
+		"Overseer" = list("security","black"),
 		"Civil Protection Officer" = list("security","red"),
 		"Detective" = list("security","brown"),
 		"Medical Officer" = list("security","blue"),

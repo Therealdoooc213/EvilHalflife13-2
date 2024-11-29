@@ -12,7 +12,7 @@
 	enemy_minimum_age = 0
 	title_icon = "devil"
 	restricted_jobs = list("Cyborg", "Dispatch", "Synthetic")
-	protected_jobs = list("Civil Protection Officer", "Warden", "Detective", "Divisional Lead", "District Administrator", "Labor Lead", "Chief Engineer", "Chief Medical Officer", "Research Director", "Medical Officer") //YOGS -  added the hop and medical officer
+	protected_jobs = list("Civil Protection Officer", "Overseer", "Detective", "Divisional Lead", "District Administrator", "Labor Lead", "Chief Engineer", "Chief Medical Officer", "Research Director", "Medical Officer") //YOGS -  added the hop and medical officer
 
 	var/traitors_possible = 4 //hard limit on devils if scaling is turned off
 	var/num_modifier = 0 // Used for gamemodes, that are a child of traitor, that need more than the usual.
