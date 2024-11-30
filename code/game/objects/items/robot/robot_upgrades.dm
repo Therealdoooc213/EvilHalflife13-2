@@ -264,7 +264,6 @@
 	languages = list(
 		/datum/language/bonespeak,
 		/datum/language/draconic,
-		/datum/language/vox,
 		/datum/language/english,
 		/datum/language/etherean,
 		/datum/language/felinid,
@@ -281,7 +280,6 @@
 	languages = list(
 		/datum/language/bonespeak,
 		/datum/language/draconic,
-		/datum/language/vox,
 		/datum/language/english,
 		/datum/language/etherean,
 		/datum/language/felinid,

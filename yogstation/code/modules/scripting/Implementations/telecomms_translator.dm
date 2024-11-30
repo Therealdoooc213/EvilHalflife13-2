@@ -197,8 +197,6 @@ GLOBAL_LIST_INIT(allowed_translations, list(
 			oldlangbits = CAT
 		if(/datum/language/english)
 			oldlangbits = ENGLISH
-		if(/datum/language/vox)
-			oldlangbits = VOXPIDGIN
 
 	// Signal data
 	var/datum/n_struct/signal/script_signal = new(list(
@@ -341,8 +339,6 @@ GLOBAL_LIST_INIT(allowed_translations, list(
 			return /datum/language/felinid
 		if(ENGLISH)
 			return /datum/language/english
-		if(VOXPIDGIN)
-			return /datum/language/vox
 
 /datum/n_function/default/mem
 	name = "mem"

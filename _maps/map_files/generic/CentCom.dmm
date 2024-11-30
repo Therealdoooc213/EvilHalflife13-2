@@ -13694,7 +13694,6 @@
 /turf/open/floor/engine,
 /area/centcom/testchamber)
 "aOw" = (
-/obj/effect/landmark/bluespace_locker_origin,
 /turf/open/floor/plasteel/dark,
 /area/bluespace_locker)
 "aOx" = (
@@ -13839,7 +13838,6 @@
 /turf/open/floor/plasteel,
 /area/centcom/supplypod/loading/one)
 "aOQ" = (
-/turf/open/space/bluespace_locker_mirage,
 /area/bluespace_locker)
 "aOR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -15431,7 +15429,6 @@
 /turf/open/floor/plating,
 /area/yogs/infiltrator_base)
 "aUt" = (
-/obj/structure/closet/bluespace/internal,
 /turf/open/indestructible{
 	icon = 'icons/turf/walls/abductor_wall.dmi';
 	icon_state = "abductor_wall-12"

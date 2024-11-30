@@ -506,13 +506,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	limited_stock = 1
 	required_ert_uplink = NT_ERT_TROOPER
 
-/datum/uplink_item/nt/energy_weps/m1911
-	name = "Spur"
-	desc = "A legendary slowly self-charging pistol with massive recoil that deals more damage the more charge it has."
-	item = /obj/item/gun/energy/polarstar/spur
-	cost = 10
-	required_ert_uplink = NT_ERT_TROOPER
-
 /datum/uplink_item/nt/energy_weps/pulsecarbine
 	name = "Pulse Carbine"
 	desc = "A severely lethal energy carbine that fires additionaly fires pulse rounds. Must be recharged instead of reloaded."

@@ -3,6 +3,7 @@ SUBSYSTEM_DEF(sociostability)
 	wait = 3 MINUTES
 	init_order = INIT_ORDER_SOCIOSTABILITY
 	runlevels = RUNLEVEL_GAME
+	flags = SS_NO_INIT
 	var/sociostability = SOCIOSTABILITY_GOOD
 	var/okay_package_received = FALSE
 	var/poor_package_received = FALSE

@@ -48789,7 +48789,6 @@
 	pixel_x = -1;
 	pixel_y = 2
 	},
-/obj/item/book/manual/wiki/xenobiology,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
 "oGM" = (

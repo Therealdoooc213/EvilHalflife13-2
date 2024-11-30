@@ -248,16 +248,6 @@
 	suffix = "meta_reactor.dmm"
 	name = "Meta Nuclear Reactor"
 
-//GaxStation
-
-/datum/map_template/ruin/station/gax
-	prefix = "_maps/RandomRuins/StationRuins/GaxStation/"
-
-/datum/map_template/ruin/station/gax/ai_whale
-	id = "ai_whale"
-	suffix = "ai_whale.dmm"
-	name = "AI Whale"
-
 //The following are sewer templates
 ///Base for all station ruins.
 /datum/map_template/ruin/station/sewer
