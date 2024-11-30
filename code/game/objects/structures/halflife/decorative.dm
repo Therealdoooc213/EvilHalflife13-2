@@ -76,7 +76,7 @@
 		if(prob(90)) // It's... scrap wood already.
 			user.visible_message(span_notice("[user] gathers up the [src]."), \
 				span_notice("You gather up all the [src]."))
-			new /obj/item/stack/sheet/mineral/wood(loc, rand(1,2))
+			new /obj/item/stack/sheet/mineral/scrap_wood(loc, rand(1,2))
 			qdel(src)
 		else
 			user.visible_message(span_notice("[user] somehow messes up gathering the [src]. It melts before their very eyes into nothingness."), \
@@ -104,7 +104,7 @@
 	user.visible_message(span_notice("[user] begins to sift through the [src] for anything useful."), \
 		span_notice("You begin to dig through the [src] for something interesting."))
 	if(do_after(user, 7 SECONDS, src))
-		if(prob(20))
+		if(prob(25))
 			user.visible_message(span_notice("[user] finds something inside the [src]."), \
 				span_notice("You find something interesting inside the [src]."))
 			new /obj/effect/spawner/lootdrop/halflife/loot(loc, rand(1,2))
@@ -673,9 +673,9 @@
 	if(!(flags_1 & NODECONSTRUCT_1))
 		playsound(src.loc, 'sound/halflifesounds/halflifeeffects/wood_deconstruction.ogg', 50, TRUE)
 		if(disassembled)
-			new /obj/item/stack/sheet/mineral/wood(loc, 2)
+			new /obj/item/stack/sheet/mineral/scrap_wood(loc, 3)
 		else
-			new /obj/item/stack/sheet/mineral/wood(loc, 1)
+			new /obj/item/stack/sheet/mineral/scrap_wood(loc, 2)
 	qdel(src)
 
 /obj/structure/halflife/pallet/stack
@@ -690,9 +690,9 @@
 	if(!(flags_1 & NODECONSTRUCT_1))
 		playsound(src.loc, 'sound/halflifesounds/halflifeeffects/wood_deconstruction.ogg', 50, TRUE)
 		if(disassembled)
-			new /obj/item/stack/sheet/mineral/wood(loc, 3)
+			new /obj/item/stack/sheet/mineral/scrap_wood(loc, 5)
 		else
-			new /obj/item/stack/sheet/mineral/wood(loc, 2)
+			new /obj/item/stack/sheet/mineral/scrap_wood(loc, 4)
 	qdel(src)
 
 // brix.... //
@@ -774,9 +774,9 @@
 /obj/structure/railing/halflife/wood/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
 		if(disassembled)
-			new /obj/item/stack/sheet/mineral/wood(loc, 3)
+			new /obj/item/stack/sheet/mineral/scrap_wood(loc, 3)
 		else
-			new /obj/item/stack/sheet/mineral/wood(loc, 2)
+			new /obj/item/stack/sheet/mineral/scrap_wood(loc, 2)
 	qdel(src)
 
 /obj/structure/railing/halflife/wood/examine(mob/user)

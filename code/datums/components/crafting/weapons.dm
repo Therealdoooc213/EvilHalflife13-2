@@ -3,7 +3,7 @@
 /datum/crafting_recipe/IED
 	name = "IED"
 	result = /obj/item/grenade/iedcasing
-	reqs = list(/datum/reagent/fuel = 50,
+	reqs = list(/datum/reagent/fuel = 30,
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/lighter/greyscale = 1,
 				/obj/item/reagent_containers/food/drinks/soda_cans = 1)
@@ -11,6 +11,7 @@
 	time = 1.5 SECONDS
 	category = CAT_WEAPON_RANGED
 
+/* Does not work right now
 /datum/crafting_recipe/molotov
 	name = "Molotov"
 	result = /obj/item/reagent_containers/food/drinks/bottle/molotov
@@ -19,6 +20,7 @@
 	parts = list(/obj/item/reagent_containers/food/drinks/bottle = 1)
 	time = 4 SECONDS
 	category = CAT_WEAPON_RANGED
+*/
 
 // Shank - Makeshift weapon that can embed on throw
 /datum/crafting_recipe/shank

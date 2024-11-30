@@ -432,7 +432,7 @@
 				burn_loss = brute_loss					//40-120 total combined brute + burn
 			damage_clothes(200 - bomb_armor, BRUTE, BOMB)
 			if (!istype(ears, /obj/item/clothing/ears/earmuffs))
-				adjustEarDamage(30, 120)
+				adjustEarDamage(20, 60)
 			if(bomb_armor < 60)
 				Unconscious(20)						//Sufficient protection will stop you from being knocked out
 			Knockdown(200 - (bomb_armor * 1.6)) 	//between ~4 and ~20 seconds of knockdown depending on bomb armor
@@ -443,7 +443,7 @@
 				brute_loss = 12*(2 - round(bomb_armor/60, 0.05))	//4-24 damage total depending on bomb armor
 			damage_clothes(max(40 - bomb_armor, 0), BRUTE, BOMB)
 			if (!istype(ears, /obj/item/clothing/ears/earmuffs))
-				adjustEarDamage(15,60)
+				adjustEarDamage(10,30)
 			Knockdown(max(120 - (bomb_armor * 2),0))	//60 bomb armor prevents knockdown entirely
 
 	take_overall_damage(brute_loss,burn_loss)

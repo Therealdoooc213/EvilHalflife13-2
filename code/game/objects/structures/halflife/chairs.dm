@@ -393,6 +393,6 @@
 
 /obj/structure/chair/sofa/bench
 	name = "bench"
-	desc = "An old bench for you to rest upon."
+	desc = "An old bench, for you to sit upon and think about where it all went so wrong."
 	icon = 'icons/obj/chairs.dmi'
 	icon_state = "bench"

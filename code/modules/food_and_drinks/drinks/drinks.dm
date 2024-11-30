@@ -216,6 +216,8 @@
 	icon_state = "coffee_empty"
 	list_reagents = null
 
+/obj/item/reagent_containers/food/drinks/coffee/empty
+	list_reagents = null
 
 /obj/item/reagent_containers/food/drinks/coffee/update_icon_state()
 	if(lid_open)

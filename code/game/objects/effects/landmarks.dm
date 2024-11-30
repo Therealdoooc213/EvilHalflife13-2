@@ -79,7 +79,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 
 /obj/effect/landmark/start/overseer
 	name = "Overseer"
-	icon_state = "Overseer"
+	icon_state = "Warden"
 
 /obj/effect/landmark/start/city_administrator
 	name = "District Administrator"
