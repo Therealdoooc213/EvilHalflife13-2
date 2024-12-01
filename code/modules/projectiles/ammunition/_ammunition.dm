@@ -77,11 +77,6 @@
 /obj/item/ammo_casing/proc/bounce_away(still_warm = FALSE, bounce_delay = 3)
 	update_appearance(UPDATE_ICON)
 	SpinAnimation(10, 1)
-	var/matrix/M = matrix(transform)
-	M.Turn(rand(-170,170))
-	transform = M
-	pixel_x = rand(-12, 12)
-	pixel_y = rand(-12, 12)
 	var/turf/T = get_turf(src)
 	if(still_warm && T && T.bullet_sizzle)
 		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(playsound), src, 'sound/items/welder.ogg', 20, 1), bounce_delay) //If the turf is made of water and the shell casing is still hot, make a sizzling sound when it's ejected.

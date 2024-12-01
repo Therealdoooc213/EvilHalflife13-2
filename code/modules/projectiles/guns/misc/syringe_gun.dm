@@ -34,7 +34,7 @@
 /obj/item/gun/syringe/can_shoot()
 	return syringes.len
 
-/obj/item/gun/syringe/process_chamber()
+/obj/item/gun/syringe/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE, atom/shooter = null)
 	if(chambered && !chambered.BB) //we just fired
 		recharge_newshot()
 	update_appearance(UPDATE_ICON)

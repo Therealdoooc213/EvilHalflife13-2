@@ -182,7 +182,7 @@
 		zoom(user, user.dir, FALSE) //we can only stay zoomed in if it's in our hands	//yeah and we only unzoom if we're actually zoomed using the gun!!
 
 //called after the gun has successfully fired its chambered ammo.
-/obj/item/gun/proc/process_chamber()
+/obj/item/gun/proc/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE, atom/shooter = null)
 	return FALSE
 
 //check if there's enough ammo/energy/whatever to shoot one time
@@ -351,7 +351,7 @@
 		shoot_with_empty_chamber(user)
 		firing_burst = FALSE
 		return FALSE
-	process_chamber()
+	process_chamber(shooter = user)
 	update_appearance(UPDATE_ICON)
 	return TRUE
 
@@ -409,7 +409,7 @@
 		else
 			shoot_with_empty_chamber(user)
 			return
-		process_chamber()
+		process_chamber(shooter = user)
 		update_appearance(UPDATE_ICON)
 		semicd = TRUE
 		addtimer(CALLBACK(src, PROC_REF(reset_semicd)), fire_delay)

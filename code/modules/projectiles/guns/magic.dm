@@ -78,7 +78,7 @@
 	if (charges && chambered && !chambered.BB)
 		chambered.newshot()
 
-/obj/item/gun/magic/process_chamber()
+/obj/item/gun/magic/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE, atom/shooter = null)
 	if(chambered && !chambered.BB) //if BB is null, i.e the shot has been fired...
 		charges--//... drain a charge
 		recharge_newshot()

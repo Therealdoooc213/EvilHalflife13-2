@@ -6771,10 +6771,6 @@
 /obj/machinery/atm,
 /turf/open/floor/plating/indoor/woodc,
 /area/halflife/indoors)
-"Eu" = (
-/obj/structure/table/halflife/metal,
-/turf/open/floor/plating/indoor/tile/navy,
-/area/halflife/indoors/townhall)
 "Ev" = (
 /obj/structure/table/halflife/wood,
 /obj/structure/halflife/trash/food/misc,
@@ -40378,8 +40374,8 @@ NG
 NG
 Ff
 XQ
-Eu
-xY
+gN
+LD
 nx
 nx
 LD

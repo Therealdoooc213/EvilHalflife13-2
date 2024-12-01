@@ -55,7 +55,7 @@
 	chambered = new ammo_type(src)
 	chambered.newshot(transfer_volume)
 
-/obj/item/gun/water/process_chamber()
+/obj/item/gun/water/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE, atom/shooter = null)
 	chambered = null
 	recharge_newshot()
 

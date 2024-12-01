@@ -450,7 +450,7 @@
 			if(istype(WH))
 				WH.gun = src
 
-/obj/item/gun/energy/wormhole_projector/process_chamber()
+/obj/item/gun/energy/wormhole_projector/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE, atom/shooter = null)
 	..()
 	select_fire()
 

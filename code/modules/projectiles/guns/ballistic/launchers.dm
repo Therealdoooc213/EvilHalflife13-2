@@ -66,7 +66,7 @@
 /obj/item/gun/ballistic/rocketlauncher/unrestricted
 	pin = /obj/item/firing_pin
 
-/obj/item/gun/ballistic/rocketlauncher/process_chamber()
+/obj/item/gun/ballistic/rocketlauncher/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE, atom/shooter = null)
 	magazine.get_round(FALSE)
 
 /obj/item/gun/ballistic/rocketlauncher/equipped()
@@ -172,7 +172,7 @@
 	pin = /obj/item/firing_pin
 	var/reloading_active = FALSE
 
-/obj/item/gun/ballistic/maint_musket/process_chamber()
+/obj/item/gun/ballistic/maint_musket/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE, atom/shooter = null)
 	magazine.get_round(FALSE)
 
 /obj/item/gun/ballistic/maint_musket/attackby(obj/item/A, mob/user, params)

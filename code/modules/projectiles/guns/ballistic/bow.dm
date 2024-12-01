@@ -66,7 +66,7 @@
 	..()
 	nerfed = initial(nerfed)
 
-/obj/item/gun/ballistic/bow/process_chamber()
+/obj/item/gun/ballistic/bow/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE, atom/shooter = null)
 	chambered = null
 	magazine.get_round(FALSE)
 	update_slowdown()
@@ -246,7 +246,7 @@
 	assembly = null
 	return TRUE
 
-/obj/item/gun/ballistic/bow/toy/process_chamber()
+/obj/item/gun/ballistic/bow/toy/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE, atom/shooter = null)
 	..()
 	if(assembly)
 		assembly.pulsed()

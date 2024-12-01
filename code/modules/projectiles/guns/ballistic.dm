@@ -219,18 +219,24 @@
 		. += "[icon_state]_mag_[capacity_number]"
 
 
-/obj/item/gun/ballistic/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE)
-	var/obj/item/ammo_casing/AC = chambered //Find chambered round
+/obj/item/gun/ballistic/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE, atom/shooter = null)
+	var/obj/item/ammo_casing/casing = chambered //Find chambered round
 	if(!semi_auto && from_firing)
-		if(istype(AC) && CHECK_BITFIELD(AC.casing_flags, CASINGFLAG_FORCE_CLEAR_CHAMBER))
+		if(istype(casing) && CHECK_BITFIELD(casing.casing_flags, CASINGFLAG_FORCE_CLEAR_CHAMBER))
 			chambered = null
 		return
-	if(istype(AC)) //there's a chambered round
-		if(CHECK_BITFIELD(AC.casing_flags, CASINGFLAG_FORCE_CLEAR_CHAMBER) && from_firing)
+	if(istype(casing)) //there's a chambered round
+		if(CHECK_BITFIELD(casing.casing_flags, CASINGFLAG_FORCE_CLEAR_CHAMBER) && from_firing)
 			chambered = null
 		else if(casing_ejector || !from_firing)
-			AC.forceMove(drop_location()) //Eject casing onto ground.
-			AC.bounce_away(TRUE)
+			casing.forceMove(drop_location()) //Eject casing onto ground.
+			pixel_x = rand(-4, 4)
+			pixel_y = rand(-4, 4)
+			if(ismob(shooter))
+				pixel_z = 8 //bounce time
+				casing.SpinAnimation(speed = 2 SECONDS, loops = 1)
+				var/angle_of_movement = !isnull(shooter) ? (rand(-3000, 3000) / 100) + dir2angle(turn(shooter.dir, 180)) : rand(-3000, 3000) / 100
+				casing.AddComponent(/datum/component/movable_physics, _horizontal_velocity = rand(450, 550) / 100, _vertical_velocity = rand(400, 450) / 100, _horizontal_friction = rand(20, 24) / 100, _z_gravity = 9.80665, _z_floor = 0, _angle_of_movement = angle_of_movement)
 			chambered = null
 		else if(empty_chamber)
 			chambered = null
@@ -262,7 +268,7 @@
 		bolt_locked = FALSE
 	if (user)
 		to_chat(user, span_notice("You rack the [bolt_wording] of \the [src]."))
-	process_chamber(!chambered, FALSE)
+	process_chamber(!chambered, FALSE, shooter = user)
 	if (bolt_type == BOLT_TYPE_LOCKING && !chambered)
 		bolt_locked = TRUE
 		playsound(src, lock_back_sound, lock_back_sound_volume, lock_back_sound_vary)

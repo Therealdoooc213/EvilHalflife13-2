@@ -30,7 +30,7 @@
 		loc.visible_message(span_warning("A long cable comes out from [loc.name]'s arm!"), span_warning("You extend the buster's wire from your arm."))
 
 
-/obj/item/gun/magic/wire/process_chamber()
+/obj/item/gun/magic/wire/process_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE, atom/shooter = null)
 	. = ..()
 	if(!charges)
 		qdel(src)
