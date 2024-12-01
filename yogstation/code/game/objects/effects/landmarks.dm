@@ -176,13 +176,16 @@ GLOBAL_LIST_EMPTY(chosen_station_templates)
 	template_names = list("sewer left_ten_box", "sewer left_ten_zombie1", "sewer left_ten_zombine1", "sewer left_ten_medical", "sewer left_ten_locked", "sewer left_ten_mining", "sewer left_ten_forcefield", "sewer left_ten_radiation", "sewer left_ten_poisoncrab", "sewer left_ten_weaponcraft", "sewer left_ten_kitchen")
 
 /obj/effect/landmark/stationroom/sewer/rightentrance/tenxten
-	template_names = list("sewer right_ten_box", "sewer right_ten_flooded", "sewer right_ten_headcrabs", "sewer right_ten_headcrabs2", "sewer right_ten_infested1", "sewer right_ten_infested2", "sewer right_ten_doors", "sewer right_ten_factory", "sewer right_ten_armory")
+	template_names = list("sewer right_ten_box", "sewer right_ten_flooded", "sewer right_ten_headcrabs", "sewer right_ten_headcrabs2", "sewer right_ten_infested1", "sewer right_ten_infested2", "sewer right_ten_doors", "sewer right_ten_factory", "sewer right_ten_armory", "sewer right_ten_fishing")
 
 /obj/effect/landmark/stationroom/city
 	unique = TRUE
 
 /obj/effect/landmark/stationroom/city/southentrance/tenxten
 	template_names = list("city south_ten_gambling", "city south_ten_lockedapartment", "city south_ten_oldapartment", "city south_ten_laundromat")
+
+/obj/effect/landmark/stationroom/city/northentrance/tenxten
+	template_names = list("city north_ten_niceapartment", "city north_ten_store")
 
 /// Type of landmark that find all others of the same type, and only spawns count number of ruins at them
 /obj/effect/landmark/stationroom/limited_spawn

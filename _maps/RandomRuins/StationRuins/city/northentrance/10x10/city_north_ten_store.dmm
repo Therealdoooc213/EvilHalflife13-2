@@ -1,0 +1,205 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"c" = (
+/obj/structure/sign/poster/halflife/combine/three{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/concrete,
+/area/halflife/indoors)
+"d" = (
+/turf/open/floor/plating/indoor/concrete,
+/area/halflife/indoors)
+"e" = (
+/turf/closed/wall/halflife/brick,
+/area/halflife/indoors)
+"h" = (
+/obj/structure/halflife/storage/large/shelf{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors)
+"n" = (
+/obj/structure/table/halflife/no_smooth/large/wood/desk,
+/turf/open/floor/plating/indoor/concrete,
+/area/halflife/indoors)
+"p" = (
+/obj/machinery/light/small,
+/turf/open/floor/plating/indoor/concrete,
+/area/halflife/indoors)
+"t" = (
+/obj/machinery/paystand/register,
+/turf/open/floor/plating/indoor/concrete,
+/area/halflife/indoors)
+"w" = (
+/obj/structure/sign/poster/halflife/combine/four{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/indoor/concrete,
+/area/halflife/indoors)
+"y" = (
+/obj/structure/halflife/storage/shelf,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors)
+"F" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/concrete,
+/area/halflife/indoors)
+"H" = (
+/obj/structure/halflife/storage/shelf,
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors)
+"I" = (
+/obj/machinery/door/unpowered/halflife/wood{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/concrete,
+/area/halflife/indoors)
+"J" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/concrete,
+/area/halflife/indoors)
+"N" = (
+/obj/machinery/door/unpowered/halflife/seethrough/metal,
+/turf/open/floor/plating/indoor/concrete,
+/area/halflife/indoors)
+"R" = (
+/obj/structure/halflife/storage/large/shelf{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors)
+"T" = (
+/obj/structure/halflife/storage/large/shelf{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors)
+"W" = (
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors)
+
+(1,1,1) = {"
+e
+e
+e
+e
+e
+e
+e
+e
+e
+e
+"}
+(2,1,1) = {"
+e
+W
+R
+W
+W
+T
+W
+W
+R
+e
+"}
+(3,1,1) = {"
+e
+J
+d
+d
+d
+d
+d
+d
+d
+e
+"}
+(4,1,1) = {"
+e
+c
+d
+d
+d
+d
+F
+d
+d
+e
+"}
+(5,1,1) = {"
+N
+d
+W
+h
+d
+d
+e
+e
+I
+e
+"}
+(6,1,1) = {"
+e
+d
+W
+R
+d
+d
+n
+d
+d
+e
+"}
+(7,1,1) = {"
+e
+w
+d
+d
+d
+d
+t
+d
+d
+e
+"}
+(8,1,1) = {"
+e
+d
+d
+d
+d
+d
+e
+y
+p
+e
+"}
+(9,1,1) = {"
+e
+W
+h
+F
+d
+d
+e
+H
+d
+e
+"}
+(10,1,1) = {"
+e
+e
+e
+e
+e
+e
+e
+e
+e
+e
+"}

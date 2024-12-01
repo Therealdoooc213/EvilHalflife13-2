@@ -1,0 +1,174 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"b" = (
+/obj/item/fishingrod,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"i" = (
+/turf/closed/wall/halflife/metal,
+/area/halflife/indoors/sewer)
+"k" = (
+/obj/structure/halflife/storage/store/metal,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"m" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"r" = (
+/obj/machinery/door/unpowered/halflife/metal{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"w" = (
+/turf/open/halflife/water/sewer/deep,
+/area/halflife/indoors/sewer)
+"H" = (
+/obj/structure/railing/halflife/sewer,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"I" = (
+/obj/structure/halflife/storage/store/metal,
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"K" = (
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"M" = (
+/obj/structure/halflife/storage/large/shelf,
+/obj/item/clothing/head/fishing,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"U" = (
+/obj/structure/halflife/storage/large/shelf,
+/obj/item/reagent_containers/food/snacks/bait/worm,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+"Z" = (
+/obj/machinery/door/unpowered/halflife/metal,
+/turf/open/floor/plating/indoor/concrete/small,
+/area/halflife/indoors/sewer)
+
+(1,1,1) = {"
+i
+i
+i
+i
+i
+i
+i
+i
+i
+i
+"}
+(2,1,1) = {"
+i
+k
+K
+K
+i
+U
+K
+H
+w
+i
+"}
+(3,1,1) = {"
+i
+I
+K
+K
+i
+b
+K
+H
+w
+i
+"}
+(4,1,1) = {"
+i
+k
+K
+K
+i
+K
+K
+H
+w
+i
+"}
+(5,1,1) = {"
+i
+k
+K
+K
+Z
+K
+K
+K
+w
+i
+"}
+(6,1,1) = {"
+i
+k
+K
+K
+i
+m
+K
+H
+w
+i
+"}
+(7,1,1) = {"
+i
+k
+K
+K
+i
+K
+K
+H
+w
+i
+"}
+(8,1,1) = {"
+i
+k
+K
+K
+i
+M
+K
+H
+w
+i
+"}
+(9,1,1) = {"
+i
+k
+K
+K
+i
+K
+K
+H
+w
+i
+"}
+(10,1,1) = {"
+i
+i
+r
+i
+i
+i
+i
+i
+i
+i
+"}

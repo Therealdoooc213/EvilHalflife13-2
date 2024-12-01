@@ -1,0 +1,206 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"b" = (
+/obj/structure/table/halflife/no_smooth/large/wood/desk{
+	dir = 1
+	},
+/obj/effect/spawner/lootdrop/halflife/loot,
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"d" = (
+/turf/open/floor/plating/indoor/carpet,
+/area/halflife/indoors)
+"f" = (
+/obj/structure/chair/comfy/halflife/armchair{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/carpet,
+/area/halflife/indoors)
+"j" = (
+/obj/structure/table/halflife/wood,
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"m" = (
+/obj/structure/halflife/storage/large/clothing,
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"o" = (
+/obj/structure/fireplace,
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"p" = (
+/obj/structure/halflife/storage/bookshelf,
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"q" = (
+/obj/structure/table/halflife/no_smooth/large/wood/stand{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"t" = (
+/obj/machinery/door/unpowered/halflife/seethrough/metal,
+/turf/open/floor/plating/indoor/woodc,
+/area/halflife/indoors)
+"v" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/carpet,
+/area/halflife/indoors)
+"w" = (
+/obj/machinery/light/small,
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"y" = (
+/obj/structure/bed/halflife/bedframe/wood,
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"J" = (
+/turf/closed/wall/halflife/brick,
+/area/halflife/indoors)
+"L" = (
+/obj/machinery/door/unpowered/halflife/wood{
+	dir = 8
+	},
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"M" = (
+/obj/structure/table/halflife/no_smooth/wood/stand,
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"O" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"P" = (
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+"R" = (
+/obj/structure/halflife/storage/shelf/wood/alt{
+	dir = 4
+	},
+/turf/open/floor/plating/indoor/woodc/wide,
+/area/halflife/indoors)
+
+(1,1,1) = {"
+J
+J
+J
+J
+J
+J
+J
+J
+J
+J
+"}
+(2,1,1) = {"
+J
+j
+j
+J
+P
+d
+v
+d
+b
+J
+"}
+(3,1,1) = {"
+t
+P
+P
+J
+o
+d
+f
+d
+P
+J
+"}
+(4,1,1) = {"
+J
+P
+P
+J
+P
+d
+d
+d
+P
+J
+"}
+(5,1,1) = {"
+J
+O
+P
+J
+p
+d
+d
+d
+q
+J
+"}
+(6,1,1) = {"
+J
+P
+P
+J
+p
+P
+P
+P
+P
+J
+"}
+(7,1,1) = {"
+J
+m
+P
+P
+P
+P
+J
+L
+J
+J
+"}
+(8,1,1) = {"
+J
+P
+P
+P
+P
+w
+J
+P
+M
+J
+"}
+(9,1,1) = {"
+J
+P
+P
+R
+P
+R
+J
+O
+y
+J
+"}
+(10,1,1) = {"
+J
+J
+J
+J
+J
+J
+J
+J
+J
+J
+"}

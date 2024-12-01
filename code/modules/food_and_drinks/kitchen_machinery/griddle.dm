@@ -2,7 +2,7 @@
 	name = "griddle"
 	desc = "Because using pans is for pansies."
 	icon = 'icons/obj/machines/kitchenmachines.dmi'
-	icon_state = "griddle1_off"
+	icon_state = "griddle_off"
 	density = TRUE
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 5
@@ -16,8 +16,6 @@
 	var/datum/looping_sound/grill/grill_loop
 	///Whether or not the machine is turned on right now
 	var/on = FALSE
-	///What variant of griddle is this?
-	var/variant = 1
 	///How many shit fits on the griddle?
 	var/max_items = 8
 
@@ -25,7 +23,6 @@
 	. = ..()
 	end_processing() //doesn't start on
 	grill_loop = new(list(src), FALSE)
-	variant = rand(1,3)
 
 /obj/machinery/griddle/attackby(obj/item/I, mob/user, params)
 	if(default_deconstruction_crowbar(I))
@@ -117,6 +114,6 @@
 /obj/machinery/griddle/update_icon_state()
 	. = ..()
 	if(panel_open)
-		icon_state = "griddle[variant]_o"
+		icon_state = "griddle_o"
 	else
-		icon_state = "griddle[variant]_[on ? "on" : "off"]"
+		icon_state = "griddle_[on ? "on" : "off"]"

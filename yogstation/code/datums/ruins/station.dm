@@ -371,6 +371,11 @@
 	suffix = "sewer_right_ten_armory.dmm"
 	name = "sewer right_ten_armory"
 
+/datum/map_template/ruin/station/sewer/rightentrance/tenxten/fishing
+	id = "right_ten_fishing"
+	suffix = "sewer_right_ten_fishing.dmm"
+	name = "sewer right_ten_fishing"
+
 // CITY SPAWNS
 
 //SOUTH
@@ -397,3 +402,18 @@
 	id = "south_ten_laundromat"
 	suffix = "city_south_ten_laundromat.dmm"
 	name = "city south_ten_laundromat"
+
+//NORTH
+
+/datum/map_template/ruin/station/city/northentrance/tenxten
+	prefix = "_maps/RandomRuins/StationRuins/city/northentrance/10x10/"
+
+/datum/map_template/ruin/station/city/northentrance/tenxten/niceapartment
+	id = "north_ten_niceapartment"
+	suffix = "city_north_ten_niceapartment.dmm"
+	name = "city north_ten_niceapartment"
+
+/datum/map_template/ruin/station/city/northentrance/tenxten/store
+	id = "north_ten_store"
+	suffix = "city_north_ten_store.dmm"
+	name = "city north_ten_store"
