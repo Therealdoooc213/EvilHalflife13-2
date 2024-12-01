@@ -44,7 +44,7 @@
 	cached_animate_movement = moving_atom.animate_movement
 	moving_atom.animate_movement = NO_STEPS
 	START_PROCESSING(SSmovablephysics, src)
-	moving_atom.SpinAnimation(speed = 3 SECONDS, loops = 2)
+	moving_atom.SpinAnimation(speed = 2 SECONDS, loops = 1)
 
 ///Alright it's time to stop
 /datum/component/movable_physics/proc/stop_movement()
@@ -69,7 +69,7 @@
 		playsound(moving_atom, a_turf.bullet_bounce_sound, 50, TRUE)
 	else
 		playsound(moving_atom, bounce_sound, 50, TRUE)
-	moving_atom.SpinAnimation(speed = 2 SECONDS, loops = 1)
+	moving_atom.SpinAnimation(speed = 1.5 SECONDS, loops = 1)
 	moving_atom.pixel_z = z_floor
 	horizontal_velocity = max(0, horizontal_velocity + (vertical_velocity * -0.8))
 	vertical_velocity = max(0, ((vertical_velocity * -0.8) - 0.2))
