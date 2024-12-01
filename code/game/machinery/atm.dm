@@ -6,8 +6,8 @@
 	base_icon_state = "atm"
 
 	layer = ABOVE_OBJ_LAYER + 0.001
-	pixel_y = 28
-	base_pixel_y = 28
+	pixel_y = 25
+	base_pixel_y = 25
 
 	light_range = 2
 	light_power = 0.75

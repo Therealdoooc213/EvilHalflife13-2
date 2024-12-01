@@ -79,7 +79,7 @@ export const NtosPdaMsg = (props, context) => {
           </Box> :
           <Box>
             <Section
-              title="SpaceMessenger V4.0.0"
+              title="CombineMessenger V4.0.0"
               buttons={(
                 <Button
                   content="Messages"

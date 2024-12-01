@@ -795,9 +795,12 @@
 	lootcount = 1
 
 	loot = list(
-				/obj/item/reagent_containers/food/drinks/soda_cans/breenwater = 3,
+				/obj/item/reagent_containers/food/drinks/soda_cans/breenwater = 2,
+				/obj/item/reagent_containers/food/drinks/soda_cans/breenwater/red,
+				/obj/item/reagent_containers/food/drinks/soda_cans/breenwater/yellow,
 				/obj/item/reagent_containers/glass/beaker/waterbottle/empty = 2,
 				/obj/item/storage/box/halflife/ration,
+				/obj/item/storage/box/halflife/worstration,
 				/obj/item/reagent_containers/food/snacks/rationpack/lowgrade = 2,
 				/obj/item/storage/fancy/cigarettes/cigars,
 				/obj/item/clothing/mask/cigarette/cigar,

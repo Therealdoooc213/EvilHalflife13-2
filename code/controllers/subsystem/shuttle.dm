@@ -240,12 +240,12 @@ SUBSYSTEM_DEF(shuttle)
 				priority_announce("Catastrophic casualties detected: crisis shuttle protocols activated - jamming recall signals across all frequencies.")
 				emergency.request(null, set_coefficient = ALERT_COEFF_AUTOEVAC_CRITICAL)
 				return
-	if(world.time - SSticker.round_start_time >= 2 HOURS) //auto call the shuttle after 2 hours 
-		emergency_no_recall = TRUE //no recalling after 2 hours
+	if(world.time - SSticker.round_start_time >= 3 HOURS) //auto call the shuttle after 3 hours 
+		emergency_no_recall = TRUE //no recalling after 3 hours
 		if(emergency.timeLeft(1) > SSsecurity_level.current_security_level.shuttle_call_time_mod)
-			var/msg = "Automatically dispatching shuttle due to lack of shift end response."
+			var/msg = "Automatically dispatching train due to lack of cycle end response."
 			message_admins(msg)
-			priority_announce("Dispatching shuttle due to lack of shift end response.")
+			priority_announce("Dispatching train due to lack of cycle end response.")
 			emergency.request(null)
 
 /datum/controller/subsystem/shuttle/proc/block_recall(lockout_timer)

@@ -40,7 +40,7 @@
 		if(device_theme == "syndicate")
 			headername = "Syndix Main Menu"
 		else
-			headername = "NtOS Main Menu"
+			headername = "CmBOS Main Menu"
 		ui = new(user, src, "NtosMain", headername, 400, 500)
 		if(ui.open())
 			ui.send_asset(get_asset_datum(/datum/asset/simple/headers))

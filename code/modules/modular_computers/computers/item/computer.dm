@@ -12,7 +12,7 @@
 	/// Whether the computer is active/opened/it's screen is on.
 	var/screen_on = TRUE
 	/// Sets the theme for the main menu, hardware config, and file browser apps. Overridden by certain non-NT devices.
-	var/device_theme = "ntos"
+	var/device_theme = "ntos_terminal"
 	/// A currently active program running on the computer.
 	var/datum/computer_file/program/active_program = null
 	// A flag that describes this device type
@@ -76,7 +76,7 @@
 	///If the computer has a flashlight/LED light/what-have-you installed
 	var/has_light = FALSE
 	///The brightness of that light
-	var/comp_light_luminosity = 3
+	var/comp_light_luminosity = 2
 	///The color of that light
 	var/comp_light_color = "#FFFFFF"
 

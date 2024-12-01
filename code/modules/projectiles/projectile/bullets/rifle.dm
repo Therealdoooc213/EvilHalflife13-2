@@ -4,6 +4,7 @@
 	name = "5.56mm bullet"
 	damage = 30
 	wound_bonus = -10
+	icon_state = "bullet_large"
 
 /obj/projectile/bullet/a556/ap
 	name = "5.56mm armor-piercing bullet"

@@ -97,6 +97,7 @@
 
 /obj/projectile/bullet/pellet/shotgun_buckshot
 	name = "buckshot pellet"
+	icon_state = "bullet_pellets"
 	damage = 11 //Total of 66
 	wound_bonus = 10
 	bare_wound_bonus = 12

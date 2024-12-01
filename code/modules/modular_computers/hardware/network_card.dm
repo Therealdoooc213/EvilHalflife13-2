@@ -1,6 +1,6 @@
 /obj/item/computer_hardware/network_card
 	name = "network card"
-	desc = "A basic wireless network card for usage with standard NTNet frequencies."
+	desc = "A basic wireless network card for usage with standard combine frequencies."
 	power_usage = 50
 	icon_state = "radio_mini"
 	var/identification_id = null	// Identification ID. Technically MAC address of this device. Can't be changed by user.

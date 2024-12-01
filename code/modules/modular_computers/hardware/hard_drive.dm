@@ -13,7 +13,6 @@
 	///Yog TODO: IT SHOULD BE STATIC BUT IT ISN'T BECAUSE WE HANDLE THE HARD DRIVES AWKWARDLY
 	var/list/datum/computer_file/default_programs = list(
 		/datum/computer_file/program/computerconfig,
-		/datum/computer_file/program/ntnetdownload,
 		/datum/computer_file/program/filemanager,
 	)
 
@@ -220,7 +219,6 @@
 /obj/item/computer_hardware/hard_drive/small/pda
 /obj/item/computer_hardware/hard_drive/small/pda/install_default_programs()
 	..()
-	store_file(new/datum/computer_file/program/themeify(src))
 	store_file(new/datum/computer_file/program/pdamessager(src))
 
 /// For tablets given to nuke ops
