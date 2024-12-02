@@ -124,7 +124,6 @@ GLOBAL_LIST_INIT(battleroyale_armour, list(
 		/obj/item/clothing/suit/space/hardsuit/syndi/elite = -4,
 		/obj/item/clothing/suit/space/hardsuit/carp/dragon = -4,
 
-		/obj/item/shield/energy/bananium = -5,
 		//Weight of -6 - ERT level shit
 		/obj/item/clothing/suit/space/hardsuit/ert/sec = -6,
 		/obj/item/clothing/suit/space/hardsuit/ert/engi = -6,
@@ -219,7 +218,6 @@ GLOBAL_LIST_INIT(battleroyale_weapon, list(
 		/obj/item/melee/baseball_bat/metal_bat = -1,
 		/obj/item/melee/ghost_sword = -1, //snowballer
 		/obj/item/cane/cursed = -1, //shhhhh, don't worry about it, it'll be fine
-		/obj/item/cult_spear = -1,
 		/obj/item/melee/spear/grey_tide = -1,
 		/obj/item/reagent_containers/food/snacks/powercrepe = -1, //lol what?
 
@@ -306,7 +304,6 @@ GLOBAL_LIST_INIT(battleroyale_healing, list(//this one doesn't scale because max
 		/obj/item/bonesetter = 3,
 		/obj/item/storage/firstaid/advanced = 2,
 		/obj/item/reagent_containers/autoinjector/medipen/survival = 2,
-		/obj/item/organ/heart/cursed/wizard = 2, //Rarely used, albiet the healing is incredibly strong
 		/obj/item/reagent_containers/autoinjector/mixi = 2,
 		/obj/item/reagent_containers/autoinjector/derm = 2,
 		/obj/item/reagent_containers/autoinjector/medipen/stimpack/traitor = 1,
@@ -343,7 +340,6 @@ GLOBAL_LIST_INIT(battleroyale_utility, list(//bombs, explosives, anything that's
 
 		/obj/item/teleportation_scroll/apprentice = 0,
 		/obj/effect/spawner/lootdrop/ammobox = 0,
-		/obj/item/warp_whistle = 0,
 		/obj/item/gun/magic/staff/animate = 0, //no clue why you'd want this, but why not
 		/obj/item/autosurgeon/wheelies = 0,
 		/obj/item/grenade/plastic/c4 = 0, //it's c4 all the way down buddy
@@ -373,7 +369,6 @@ GLOBAL_LIST_INIT(battleroyale_utility, list(//bombs, explosives, anything that's
 		/obj/item/storage/belt/military/shadowcloak = -4, // Very strong for short bursts
 		/obj/item/implanter/empshield = -4, //EMP Shields are fairly useful, especially with the now wealth of xray / thermal eyes, among others
 		/obj/item/guardiancreator/carp/random = -4,
-		/obj/item/necromantic_stone = -4,
 		/obj/item/slimecross/stabilized/sepia = -4,
 		/obj/item/melee/skateboard/hoverboard/admin = -4,
 
@@ -388,7 +383,6 @@ GLOBAL_LIST_INIT(battleroyale_utility, list(//bombs, explosives, anything that's
 		/obj/item/autosurgeon/suspicious/spinalspeed = -6, // No opportunity cost speed boost
 
 		/obj/item/storage/belt/wands/full = -7, //not quite spellbook, but some of these wands are FUCKED
-		/obj/item/spellbook = -7, //literally auto-win IF you have the time to use it (a lot of spells are robe locked too)
 		))
 
 /obj/structure/closet/crate/battleroyale
